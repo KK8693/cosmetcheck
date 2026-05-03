@@ -1,9 +1,0 @@
-name = "cosmetcheck"
-compatibility_date = "2026-05-04"
-pages_build_output_dir = ".output"
-
-[env.production]
-vars = { ENVIRONMENT = "production" }
-
-[env.staging]
-vars = { ENVIRONMENT = "staging" }
