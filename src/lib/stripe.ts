@@ -1,0 +1,29 @@
+import Stripe from 'stripe'
+
+if (!process.env.STRIPE_SECRET_KEY) {
+  console.warn('Missing STRIPE_SECRET_KEY environment variable')
+}
+
+export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '', {
+  apiVersion: '2025-01-27.acacia',
+  typescript: true,
+})
+
+// Price IDs (to be configured in Stripe Dashboard)
+export const PRICES = {
+  PRO_MONTHLY: process.env.STRIPE_PRO_MONTHLY_PRICE_ID || 'price_pro_monthly',
+  PRO_YEARLY: process.env.STRIPE_PRO_YEARLY_PRICE_ID || 'price_pro_yearly',
+  TEAM_MONTHLY: process.env.STRIPE_TEAM_MONTHLY_PRICE_ID || 'price_team_monthly',
+} as const
+
+export type SubscriptionTier = 'free' | 'pro' | 'team'
+
+export function getTierFromPrice(priceId: string): SubscriptionTier | null {
+  if (priceId === PRICES.PRO_MONTHLY || priceId === PRICES.PRO_YEARLY) {
+    return 'pro'
+  }
+  if (priceId === PRICES.TEAM_MONTHLY) {
+    return 'team'
+  }
+  return null
+}
