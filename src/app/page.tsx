@@ -7,8 +7,79 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 
+interface CheckResult {
+  isCompliant: boolean
+  violations: Array<{
+    ruleId: string
+    category: string
+    severity: string
+    message: string
+    suggestion: string
+    source: string
+  }>
+  warnings: Array<{
+    ruleId: string
+    category: string
+    severity: string
+    message: string
+    suggestion: string
+    source: string
+  }>
+  info: Array<{
+    ruleId: string
+    category: string
+    severity: string
+    message: string
+    suggestion: string
+    source: string
+  }>
+  summary: {
+    totalIssues: number
+    criticalCount: number
+    warningCount: number
+    infoCount: number
+  }
+  regulationVersion: number
+}
+
 export default function HomePage() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null)
+  const [ingredients, setIngredients] = useState('')
+  const [country, setCountry] = useState<'BR' | 'MX'>('BR')
+  const [isChecking, setIsChecking] = useState(false)
+  const [checkResult, setCheckResult] = useState<CheckResult | null>(null)
+  const [checkError, setCheckError] = useState('')
+
+  const handleCheck = async () => {
+    if (!ingredients.trim()) {
+      setCheckError('请输入产品成分或描述')
+      return
+    }
+    setCheckError('')
+    setIsChecking(true)
+    setCheckResult(null)
+
+    try {
+      const res = await fetch('/api/check', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ingredients,
+          country,
+        }),
+      })
+      const data = await res.json()
+      if (data.success) {
+        setCheckResult(data.data)
+      } else {
+        setCheckError(data.error || '检测失败，请稍后再试')
+      }
+    } catch (err) {
+      setCheckError('网络错误，请稍后再试')
+    } finally {
+      setIsChecking(false)
+    }
+  }
 
   return (
     <div className="min-h-screen">
@@ -29,23 +100,132 @@ export default function HomePage() {
             </p>
 
             {/* Hero Demo */}
-            <div className="mx-auto max-w-xl rounded-2xl bg-white/10 p-6 backdrop-blur-lg md:p-8">
-              <div className="mb-4 text-left">
+            <div className="mx-auto max-w-xl rounded-2xl bg-white/10 p-6 backdrop-blur-lg md:p-8 text-left">
+              <div className="mb-4">
                 <Label className="text-white/80 text-sm">输入产品成分，实时检测合规</Label>
+              </div>
+              <div className="flex gap-2 mb-3">
+                <button
+                  onClick={() => setCountry('BR')}
+                  className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                    country === 'BR'
+                      ? 'bg-white text-[#7c3aed]'
+                      : 'bg-white/10 text-white/70 hover:bg-white/20'
+                  }`}
+                >
+                  巴西 ANVISA
+                </button>
+                <button
+                  onClick={() => setCountry('MX')}
+                  className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                    country === 'MX'
+                      ? 'bg-white text-[#7c3aed]'
+                      : 'bg-white/10 text-white/70 hover:bg-white/20'
+                  }`}
+                >
+                  墨西哥 COFEPRIS
+                </button>
               </div>
               <div className="space-y-3">
                 <Textarea
+                  value={ingredients}
+                  onChange={(e) => setIngredients(e.target.value)}
                   placeholder="例如：Aqua, Glycerin, Niacinamide, Paraben, Hydroquinone..."
                   className="border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[100px]"
                 />
-                <Button className="w-full bg-white text-[#7c3aed] hover:bg-white/90 font-semibold">
-                  免费检测我的产品
+                {checkError && (
+                  <p className="text-red-300 text-sm">{checkError}</p>
+                )}
+                <Button
+                  onClick={handleCheck}
+                  disabled={isChecking}
+                  className="w-full bg-white text-[#7c3aed] hover:bg-white/90 font-semibold"
+                >
+                  {isChecking ? '检测中...' : '免费检测我的产品'}
                 </Button>
               </div>
-              <p className="mt-3 text-xs text-white/60">
+              <p className="mt-3 text-xs text-white/60 text-center">
                 零门槛体验 · 无需注册 · 10秒出结果
               </p>
             </div>
+
+            {/* Results */}
+            {checkResult && (
+              <div className="mx-auto max-w-xl mt-6 rounded-2xl bg-white p-6 text-left text-gray-900">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-lg font-bold">检测结果</h3>
+                  <span
+                    className={`px-3 py-1 rounded-full text-sm font-semibold ${
+                      checkResult.isCompliant
+                        ? 'bg-green-100 text-green-700'
+                        : 'bg-red-100 text-red-700'
+                    }`}
+                  >
+                    {checkResult.isCompliant ? '✅ 合规' : '❌ 不合规'}
+                  </span>
+                </div>
+
+                {checkResult.summary.totalIssues > 0 && (
+                  <div className="flex gap-4 mb-4 text-sm">
+                    {checkResult.summary.criticalCount > 0 && (
+                      <span className="text-red-600 font-medium">
+                        ❌ {checkResult.summary.criticalCount} 严重</span>
+                    )}
+                    {checkResult.summary.warningCount > 0 && (
+                      <span className="text-amber-600 font-medium">
+                        ⚠️ {checkResult.summary.warningCount} 警告</span>
+                    )}
+                    {checkResult.summary.infoCount > 0 && (
+                      <span className="text-blue-600 font-medium">
+                        ℹ️ {checkResult.summary.infoCount} 提示</span>
+                    )}
+                  </div>
+                )}
+
+                {checkResult.violations.length > 0 && (
+                  <div className="space-y-3 mb-4">
+                    <h4 className="text-sm font-semibold text-red-600">❌ 严重问题（必须修复）</h4>
+                    {checkResult.violations.map((v, i) => (
+                      <div key={i} className="bg-red-50 rounded-lg p-3 text-sm">
+                        <p className="font-medium text-red-700">{v.message}</p>
+                        <p className="text-red-600/80 mt-1">建议：{v.suggestion}</p>
+                        <p className="text-xs text-gray-500 mt-1">来源：{v.source}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {checkResult.warnings.length > 0 && (
+                  <div className="space-y-3 mb-4">
+                    <h4 className="text-sm font-semibold text-amber-600">⚠️ 警告（建议修复）</h4>
+                    {checkResult.warnings.map((v, i) => (
+                      <div key={i} className="bg-amber-50 rounded-lg p-3 text-sm">
+                        <p className="font-medium text-amber-700">{v.message}</p>
+                        <p className="text-amber-600/80 mt-1">建议：{v.suggestion}</p>
+                        <p className="text-xs text-gray-500 mt-1">来源：{v.source}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {checkResult.info.length > 0 && (
+                  <div className="space-y-3">
+                    <h4 className="text-sm font-semibold text-blue-600">ℹ️ 提示</h4>
+                    {checkResult.info.map((v, i) => (
+                      <div key={i} className="bg-blue-50 rounded-lg p-3 text-sm">
+                        <p className="font-medium text-blue-700">{v.message}</p>
+                        <p className="text-blue-600/80 mt-1">建议：{v.suggestion}</p>
+                        <p className="text-xs text-gray-500 mt-1">来源：{v.source}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {checkResult.summary.totalIssues === 0 && (
+                  <p className="text-green-600 text-sm">恭喜！暂未发现合规问题。请确保完整成分表已包含。</p>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </section>
