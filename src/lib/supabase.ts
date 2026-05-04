@@ -8,11 +8,8 @@ export function getSupabase() {
     const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
     if (!supabaseUrl || !supabaseAnonKey) {
-      // During build time, return a dummy client
-      if (typeof window === 'undefined') {
-        return null as unknown as ReturnType<typeof createClient>
-      }
-      throw new Error('Supabase URL and Anon Key are required')
+      // During build time or when not configured, return null
+      return null as unknown as ReturnType<typeof createClient>
     }
 
     supabaseClient = createClient(supabaseUrl, supabaseAnonKey)
