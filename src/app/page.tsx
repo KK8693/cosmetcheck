@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
+import SubscribeButton from '@/components/SubscribeButton'
 
 interface CheckResult {
   isCompliant: boolean
@@ -564,7 +565,12 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full bg-[#7c3aed] hover:bg-[#6d28d9]">升级 Pro</Button>
+                <SubscribeButton
+                  priceId="price_pro_monthly"
+                  className="w-full bg-[#7c3aed] hover:bg-[#6d28d9]"
+                >
+                  升级 Pro
+                </SubscribeButton>
               </CardContent>
             </Card>
           </div>
@@ -685,7 +691,7 @@ export default function HomePage() {
             <div>
               <div className="text-white font-semibold mb-4">法律</div>
               <ul className="space-y-2 text-sm">
-                <li>隐私政策</li>
+                <li><a href="/privacy" className="hover:text-white transition-colors">隐私政策</a></li>
                 <li>服务条款</li>
                 <li>GDPR/LGPD/LFPDPPP</li>
               </ul>

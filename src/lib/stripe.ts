@@ -1,13 +1,19 @@
 import Stripe from 'stripe'
 
-if (!process.env.STRIPE_SECRET_KEY) {
-  console.warn('Missing STRIPE_SECRET_KEY environment variable')
-}
+let stripeInstance: Stripe | null = null
 
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '', {
-  apiVersion: '2026-04-22.dahlia',
-  typescript: true,
-})
+export function getStripe(): Stripe {
+  if (!stripeInstance) {
+    if (!process.env.STRIPE_SECRET_KEY) {
+      throw new Error('STRIPE_SECRET_KEY is not configured')
+    }
+    stripeInstance = new Stripe(process.env.STRIPE_SECRET_KEY, {
+      apiVersion: '2026-04-22.dahlia',
+      typescript: true,
+    })
+  }
+  return stripeInstance
+}
 
 // Price IDs (to be configured in Stripe Dashboard)
 export const PRICES = {

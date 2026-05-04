@@ -1,8 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { checkCompliance } from '@/lib/engine'
+import { checkQuotaMiddleware, incrementQuota } from '@/lib/quota'
 
 export async function POST(request: NextRequest) {
   try {
+    // Check quota
+    const { allowed, response } = checkQuotaMiddleware(request)
+    if (!allowed) {
+      return response
+    }
+
     const body = await request.json()
     const { ingredients, description, label, country } = body
 
@@ -13,13 +20,19 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Check if any content is provided
     if (!ingredients && !description && !label) {
       return NextResponse.json(
         { error: 'At least one of ingredients, description, or label is required' },
         { status: 400 }
       )
     }
+
+    // Increment quota
+    const identifier =
+      request.headers.get('x-forwarded-for') ||
+      request.headers.get('x-real-ip') ||
+      'anonymous'
+    incrementQuota(identifier)
 
     // Run compliance check
     const result = checkCompliance({
