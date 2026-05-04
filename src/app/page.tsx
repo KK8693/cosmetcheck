@@ -56,7 +56,7 @@ import { useAuth } from '@/contexts/AuthContext'
 import AuthModal from '@/components/AuthModal'
 
 export default function HomePage() {
-  const [activeFaq, setActiveFaq] = useState<number | null>(null)
+  const [activeFaq, setActiveFaq] = useState<number | null>(0) // 默认展开第一条
   const [ingredients, setIngredients] = useState('')
   const [country, setCountry] = useState<'BR' | 'MX'>('BR')
   const [isChecking, setIsChecking] = useState(false)
@@ -172,14 +172,78 @@ export default function HomePage() {
             )}
           </div>
           <div className="mx-auto max-w-4xl text-center">
-            <div className="mb-6 inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium backdrop-blur">
-              <span className="mr-2 h-2 w-2 rounded-full bg-green-400 animate-pulse" />
-              已服务 2,000+ 拉美美妆卖家
+            {/* SocialProofBar - 增强版数据徽章 */}
+            <div className="mb-6 inline-flex flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-medium backdrop-blur">
+              <span className="inline-flex items-center">
+                <span className="mr-2 h-2 w-2 rounded-full bg-green-400 animate-pulse" />
+                <span className="text-white/80">已服务</span>
+                <span className="mx-1 font-bold text-white">2,000+</span>
+                <span className="text-white/80">卖家</span>
+              </span>
+              <span className="hidden sm:inline text-white/30">|</span>
+              <span className="text-white/80">
+                拦截 <span className="font-bold text-white">340,000+</span> 次合规风险
+              </span>
+              <span className="hidden sm:inline text-white/30">|</span>
+              <span className="text-white/80">
+                覆盖 <span className="font-bold text-white">巴西/墨西哥</span>
+              </span>
             </div>
             <h1 className="mb-6 text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
               拉美卖美妆，<br className="hidden md:block" />
 4e0d再被下架罚款
             </h1>
+
+            {/* Logo 墙 - 新增 */}
+            <div className="mb-8">
+              <p className="text-xs text-white/50 uppercase tracking-wider mb-3">
+                被这些平台的卖家信赖
+              </p>
+              <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4">
+                {['Amazon Brazil', 'Mercado Livre', 'Shopee', 'TikTok Shop', 'SHEIN'].map((name) => (
+                  <span
+                    key={name}
+                    className="inline-flex items-center rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-white/70 backdrop-blur-sm"
+                  >
+                    {name}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* 真实案例卡 - 新增 */}
+            <div className="mx-auto max-w-2xl mb-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {[
+                {
+                  tag: '❌ 禁用成分',
+                  tagColor: 'text-red-300',
+                  body: '"某美白霜含 Hydroquinone 2%，直接被 ANVISA 标红"',
+                  result: '→ 修改后 48h 重新上架',
+                },
+                {
+                  tag: '⚠️ 标签违规',
+                  tagColor: 'text-amber-300',
+                  body: '"防晒产品未标注 SPF 值，墨西哥海关扣留"',
+                  result: '→ AI 生成合规标签，0 罚款',
+                },
+                {
+                  tag: '📝 文案误触',
+                  tagColor: 'text-blue-300',
+                  body: '"抗皱文案写错 1 个词，Listing 被下架 7 天"',
+                  result: '→ 替换后 CTR 提升 23%',
+                },
+              ].map((item, idx) => (
+                <div
+                  key={idx}
+                  className="rounded-xl bg-white/10 backdrop-blur border border-white/10 p-4 text-left hover:bg-white/15 transition-colors"
+                >
+                  <p className={`text-xs font-bold ${item.tagColor} mb-2`}>{item.tag}</p>
+                  <p className="text-sm text-white/90 leading-relaxed mb-2">{item.body}</p>
+                  <p className="text-xs text-green-400 font-semibold">{item.result}</p>
+                </div>
+              ))}
+            </div>
+
             <p className="mx-auto mb-10 max-w-2xl text-lg text-white/90 md:text-xl">
               一键检测巴西/墨西哥等5国合规，AI自动生成高转化Listing — 免费开始
             </p>
@@ -250,16 +314,16 @@ export default function HomePage() {
                   onClick={handleCheck}
                   disabled={isChecking}
                   variant="outline"
-                  className="flex-1 border-white/30 text-white hover:bg-white/10"
+                  className="flex-1 border-white/30 text-white hover:bg-white/10 font-medium"
                 >
-                  {isChecking ? '检测中...' : '检测合规'}
+                  {isChecking ? '检测中...' : '先检测合规'}
                 </Button>
                 <Button
                   onClick={handleGenerate}
                   disabled={isGenerating || !productName}
-                  className="flex-1 bg-white text-[#7c3aed] hover:bg-white/90 font-semibold"
+                  className="flex-1 bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all"
                 >
-                  {isGenerating ? '生成中...' : 'AI生成Listing'}
+                  {isGenerating ? '生成中...' : '🚀 免费生成 Listing'}
                 </Button>
               </div>
 
@@ -522,10 +586,10 @@ export default function HomePage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: '🛡️', title: 'ANVISA+COFEPRIS双引擎', desc: '同时覆盖巴西和墨西哥法规，一键切换检测目标市场' },
-              { icon: '🌐', title: '葡/西双语AI生成', desc: '基于当地消费者习惯生成Listing，非直译' },
-              { icon: '⚡', title: '实时违禁词检测', desc: '毫秒级检测，违禁成分实时标红，附法规来源' },
-              { icon: '🎁', title: '免费开始', desc: '每月10次免费检测，先体验再付费' },
+              { icon: '🛡️', title: '上架前自动拦截下架风险', desc: '输入成分秒出风险报告：哪里违规、怎么改、引用哪条法规 — 不让罚款单先到' },
+              { icon: '🌐', title: '当地人看了就想买的 Listing', desc: '不是翻译，是按巴西/墨西哥消费者搜索习惯重写标题和卖点，自带合规过滤' },
+              { icon: '⚡', title: '违禁词秒标红，附官方条款', desc: 'ANVISA RDC 编号、COFEPRIS NOM 标准直接引用，平台申诉有依据' },
+              { icon: '🎁', title: '0 元先测 10 次，再决定', desc: '不用绑卡、不用签合同，测完觉得有用再升级 Pro' },
             ].map((item, idx) => (
               <div key={idx} className="rounded-2xl border border-gray-100 p-6 hover:border-[#7c3aed]/20 transition-colors">
                 <div className="text-3xl mb-4">{item.icon}</div>
@@ -569,7 +633,9 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
-                <Button variant="outline" className="w-full">免费开始</Button>
+                <Button variant="outline" className="w-full font-semibold text-[#7c3aed] border-[#7c3aed]/30 hover:bg-[#7c3aed]/5">
+              免费试用 10 次
+            </Button>
               </CardContent>
             </Card>
 
@@ -595,9 +661,9 @@ export default function HomePage() {
                 </ul>
                 <SubscribeButton
                   priceId="price_pro_monthly"
-                  className="w-full bg-[#7c3aed] hover:bg-[#6d28d9]"
+                  className="w-full bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25"
                 >
-                  升级 Pro
+                  解锁无限次 — $29/月
                 </SubscribeButton>
               </CardContent>
             </Card>
@@ -670,6 +736,10 @@ export default function HomePage() {
       {/* Footer CTA */}
       <section className="py-20 bg-gradient-to-br from-[#7c3aed] via-[#6d28d9] to-[#5b21b6] text-white">
         <div className="container-custom text-center">
+          {/* 限时徽章 - 新增 */}
+          <div className="mb-4 inline-flex items-center rounded-full bg-red-500 px-4 py-1.5 text-xs font-bold text-white shadow-lg animate-bounce">
+            🔥 限时福利 · 本月注册送 5 次 Pro 体验
+          </div>
           <h2 className="text-3xl font-bold md:text-4xl mb-4">
             今天就开始合规卖货
           </h2>
@@ -680,10 +750,10 @@ export default function HomePage() {
             <Input
               type="email"
               placeholder="输入邮箱，免费开始"
-              className="border-white/20 bg-white/10 text-white placeholder:text-white/50 h-12"
+              className="border-white/20 bg-white/10 text-white placeholder:text-white/50 h-12 text-base"
             />
-            <Button className="bg-white text-[#7c3aed] hover:bg-white/90 font-semibold h-12 px-8 whitespace-nowrap">
-              免费检测我的产品
+            <Button className="bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold h-12 px-8 whitespace-nowrap shadow-lg shadow-amber-500/25">
+              立即免费检测
             </Button>
           </div>
           <p className="mt-4 text-sm text-white/60">

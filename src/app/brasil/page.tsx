@@ -80,7 +80,7 @@ export default function BrasilPage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Palavras proibidas em rótulos</h3>
                 <p className="text-gray-600">
-                  Termos como "tratamento", "cura" e "medicinal" são estritamente proibidos em rótulos de cosméticos. Nossa IA identifica e sugere alternativas compatíveis.
+                  Termos como &quot;tratamento&quot;, &quot;cura&quot; e &quot;medicinal&quot; são estritamente proibidos em rótulos de cosméticos. Nossa IA identifica e sugere alternativas compatíveis.
                 </p>
               </CardContent>
             </Card>

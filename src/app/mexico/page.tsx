@@ -80,7 +80,7 @@ export default function MexicoPage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Palabras prohibidas en etiquetas</h3>
                 <p className="text-gray-600">
-                  Términos como "tratamiento", "cura" y "medicinal" están estrictamente prohibidos en etiquetas de cosméticos. Nuestra IA identifica y sugiere alternativas compatibles.
+                  Términos como &quot;tratamiento&quot;, &quot;cura&quot; y &quot;medicinal&quot; están estrictamente prohibidos en etiquetas de cosméticos. Nuestra IA identifica y sugiere alternativas compatibles.
                 </p>
               </CardContent>
             </Card>
