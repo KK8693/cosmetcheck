@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import SubscribeButton from '@/components/SubscribeButton'
+import { InteractiveDemo } from '@/components/InteractiveDemo'
 
 interface CheckResult {
   isCompliant: boolean
@@ -600,6 +601,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Interactive Demo */}
+      <InteractiveDemo />
 
       {/* Pricing */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
