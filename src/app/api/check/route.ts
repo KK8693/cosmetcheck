@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import { checkCompliance } from '@/lib/engine'
 import { checkQuotaMiddleware, incrementQuota } from '@/lib/quota'
 
+export const runtime = 'edge'
+
 export async function POST(request: NextRequest) {
   try {
     // Check quota

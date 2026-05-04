@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getStripe, PRICES } from '@/lib/stripe'
 
+export const runtime = 'edge'
+
 export async function POST(request: NextRequest) {
   try {
     const stripe = getStripe()
