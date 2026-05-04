@@ -22,6 +22,24 @@ export const supabase = new Proxy({} as ReturnType<typeof createClient>, {
   get(target, prop) {
     const client = getSupabase()
     if (!client) {
+      // Return no-op implementations when Supabase is not configured
+      if (prop === 'auth') {
+        return {
+          getSession: () => Promise.resolve({ data: { session: null }, error: null }),
+          onAuthStateChange: () => ({ data: { subscription: { unsubscribe: () => {} } } }),
+          signInWithPassword: () => Promise.resolve({ data: null, error: null }),
+          signUp: () => Promise.resolve({ data: null, error: null }),
+          signOut: () => Promise.resolve({ data: null, error: null }),
+        }
+      }
+      if (prop === 'from') {
+        return () => ({
+          select: () => ({ eq: () => ({ single: () => Promise.resolve({ data: null, error: null }) }) }),
+          insert: () => Promise.resolve({ data: null, error: null }),
+          update: () => Promise.resolve({ data: null, error: null }),
+          delete: () => Promise.resolve({ data: null, error: null }),
+        })
+      }
       return () => Promise.resolve({ data: null, error: null })
     }
     return (client as unknown as Record<string, () => Promise<unknown>>)[prop as string]
