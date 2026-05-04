@@ -42,6 +42,15 @@ interface CheckResult {
   regulationVersion: number
 }
 
+interface GeneratedListing {
+  title: string
+  description: string
+  bulletPoints: string[]
+  complianceNotes: string[]
+  warnings: string[]
+  language: 'pt-BR' | 'es-MX'
+}
+
 export default function HomePage() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null)
   const [ingredients, setIngredients] = useState('')
@@ -49,6 +58,13 @@ export default function HomePage() {
   const [isChecking, setIsChecking] = useState(false)
   const [checkResult, setCheckResult] = useState<CheckResult | null>(null)
   const [checkError, setCheckError] = useState('')
+
+  // AI Generation state
+  const [productName, setProductName] = useState('')
+  const [productBenefits, setProductBenefits] = useState('')
+  const [isGenerating, setIsGenerating] = useState(false)
+  const [generatedListing, setGeneratedListing] = useState<GeneratedListing | null>(null)
+  const [generateError, setGenerateError] = useState('')
 
   const handleCheck = async () => {
     if (!ingredients.trim()) {
@@ -74,11 +90,50 @@ export default function HomePage() {
       } else {
         setCheckError(data.error || '检测失败，请稍后再试')
       }
-    } catch (err) {
+    } catch {
       setCheckError('网络错误，请稍后再试')
     } finally {
       setIsChecking(false)
     }
+  }
+
+  const handleGenerate = async () => {
+    if (!productName.trim()) {
+      setGenerateError('请输入产品名称')
+      return
+    }
+    setGenerateError('')
+    setIsGenerating(true)
+    setGeneratedListing(null)
+
+    try {
+      const res = await fetch('/api/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          productName,
+          ingredients,
+          benefits: productBenefits,
+          category: 'skincare',
+          targetCountry: country,
+          checkResult: checkResult || undefined,
+        }),
+      })
+      const data = await res.json()
+      if (data.success) {
+        setGeneratedListing(data.data)
+      } else {
+        setGenerateError(data.error || '生成失败，请稍后再试')
+      }
+    } catch {
+      setGenerateError('网络错误，请稍后再试')
+    } finally {
+      setIsGenerating(false)
+    }
+  }
+
+  const copyToClipboard = (text: string) => {
+    navigator.clipboard.writeText(text)
   }
 
   return (
@@ -93,7 +148,8 @@ export default function HomePage() {
               已服务 2,000+ 拉美美妆卖家
             </div>
             <h1 className="mb-6 text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
-              拉美卖美妆，<br className="hidden md:block" />不再被下架罚款
+              拉美卖美妆，<br className="hidden md:block" />
+4e0d再被下架罚款
             </h1>
             <p className="mx-auto mb-10 max-w-2xl text-lg text-white/90 md:text-xl">
               一键检测巴西/墨西哥等5国合规，AI自动生成高转化Listing — 免费开始
@@ -102,7 +158,7 @@ export default function HomePage() {
             {/* Hero Demo */}
             <div className="mx-auto max-w-xl rounded-2xl bg-white/10 p-6 backdrop-blur-lg md:p-8 text-left">
               <div className="mb-4">
-                <Label className="text-white/80 text-sm">输入产品成分，实时检测合规</Label>
+                <Label className="text-white/80 text-sm">输入产品信息，检测并生成合规Listing</Label>
               </div>
               <div className="flex gap-2 mb-3">
                 <button
@@ -126,30 +182,64 @@ export default function HomePage() {
                   墨西哥 COFEPRIS
                 </button>
               </div>
-              <div className="space-y-3">
+
+              {/* Product Name */}
+              <div className="mb-3">
+                <Input
+                  value={productName}
+                  onChange={(e) => setProductName(e.target.value)}
+                  placeholder="产品名称（如：Vitamin C Serum）"
+                  className="border-white/20 bg-white/10 text-white placeholder:text-white/50"
+                />
+              </div>
+
+              {/* Ingredients */}
+              <div className="mb-3">
                 <Textarea
                   value={ingredients}
                   onChange={(e) => setIngredients(e.target.value)}
-                  placeholder="例如：Aqua, Glycerin, Niacinamide, Paraben, Hydroquinone..."
-                  className="border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[100px]"
+                  placeholder="成分（如：Aqua, Glycerin, Niacinamide, Vitamin C... 可选）"
+                  className="border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[80px]"
                 />
-                {checkError && (
-                  <p className="text-red-300 text-sm">{checkError}</p>
-                )}
+              </div>
+
+              {/* Benefits */}
+              <div className="mb-3">
+                <Textarea
+                  value={productBenefits}
+                  onChange={(e) => setProductBenefits(e.target.value)}
+                  placeholder="产品功效（如：美白、保湿、抗衰老... 可选）"
+                  className="border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[60px]"
+                />
+              </div>
+
+              {checkError && <p className="text-red-300 text-sm mb-2">{checkError}</p>}
+              {generateError && <p className="text-red-300 text-sm mb-2">{generateError}</p>}
+
+              <div className="flex gap-2">
                 <Button
                   onClick={handleCheck}
                   disabled={isChecking}
-                  className="w-full bg-white text-[#7c3aed] hover:bg-white/90 font-semibold"
+                  variant="outline"
+                  className="flex-1 border-white/30 text-white hover:bg-white/10"
                 >
-                  {isChecking ? '检测中...' : '免费检测我的产品'}
+                  {isChecking ? '检测中...' : '检测合规'}
+                </Button>
+                <Button
+                  onClick={handleGenerate}
+                  disabled={isGenerating || !productName}
+                  className="flex-1 bg-white text-[#7c3aed] hover:bg-white/90 font-semibold"
+                >
+                  {isGenerating ? '生成中...' : 'AI生成Listing'}
                 </Button>
               </div>
+
               <p className="mt-3 text-xs text-white/60 text-center">
-                零门槛体验 · 无需注册 · 10秒出结果
+                零门槛体验 · 无需注册 · 双语输出
               </p>
             </div>
 
-            {/* Results */}
+            {/* Check Results */}
             {checkResult && (
               <div className="mx-auto max-w-xl mt-6 rounded-2xl bg-white p-6 text-left text-gray-900">
                 <div className="flex items-center justify-between mb-4">
@@ -189,7 +279,6 @@ export default function HomePage() {
                       <div key={i} className="bg-red-50 rounded-lg p-3 text-sm">
                         <p className="font-medium text-red-700">{v.message}</p>
                         <p className="text-red-600/80 mt-1">建议：{v.suggestion}</p>
-                        <p className="text-xs text-gray-500 mt-1">来源：{v.source}</p>
                       </div>
                     ))}
                   </div>
@@ -202,7 +291,6 @@ export default function HomePage() {
                       <div key={i} className="bg-amber-50 rounded-lg p-3 text-sm">
                         <p className="font-medium text-amber-700">{v.message}</p>
                         <p className="text-amber-600/80 mt-1">建议：{v.suggestion}</p>
-                        <p className="text-xs text-gray-500 mt-1">来源：{v.source}</p>
                       </div>
                     ))}
                   </div>
@@ -215,15 +303,101 @@ export default function HomePage() {
                       <div key={i} className="bg-blue-50 rounded-lg p-3 text-sm">
                         <p className="font-medium text-blue-700">{v.message}</p>
                         <p className="text-blue-600/80 mt-1">建议：{v.suggestion}</p>
-                        <p className="text-xs text-gray-500 mt-1">来源：{v.source}</p>
                       </div>
                     ))}
                   </div>
                 )}
 
                 {checkResult.summary.totalIssues === 0 && (
-                  <p className="text-green-600 text-sm">恭喜！暂未发现合规问题。请确保完整成分表已包含。</p>
+                  <p className="text-green-600 text-sm">恭喜！暂未发现合规问题。</p>
                 )}
+              </div>
+            )}
+
+            {/* Generated Listing */}
+            {generatedListing && (
+              <div className="mx-auto max-w-xl mt-6 rounded-2xl bg-white p-6 text-left text-gray-900">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-lg font-bold">AI生成的合规Listing</h3>
+                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#7c3aed]/10 text-[#7c3aed]">
+                    {generatedListing.language === 'pt-BR' ? '🇧🇷 葡语' : '🇲🇽 西语'}
+                  </span>
+                </div>
+
+                {/* Title */}
+                <div className="mb-4">
+                  <div className="flex items-center justify-between mb-1">
+                    <Label className="text-xs font-semibold text-gray-500">标题</Label>
+                    <button
+                      onClick={() => copyToClipboard(generatedListing.title)}
+                      className="text-xs text-[#7c3aed] hover:underline"
+                    >
+                      复制
+                    </button>
+                  </div>
+                  <p className="text-lg font-bold text-gray-900 bg-gray-50 rounded-lg p-3">
+                    {generatedListing.title}
+                  </p>
+                </div>
+
+                {/* Description */}
+                <div className="mb-4">
+                  <div className="flex items-center justify-between mb-1">
+                    <Label className="text-xs font-semibold text-gray-500">描述</Label>
+                    <button
+                      onClick={() => copyToClipboard(generatedListing.description)}
+                      className="text-xs text-[#7c3aed] hover:underline"
+                    >
+                      复制
+                    </button>
+                  </div>
+                  <p className="text-sm text-gray-700 bg-gray-50 rounded-lg p-3 leading-relaxed">
+                    {generatedListing.description}
+                  </p>
+                </div>
+
+                {/* Bullet Points */}
+                <div className="mb-4">
+                  <Label className="text-xs font-semibold text-gray-500 mb-2 block">卖点</Label>
+                  <ul className="space-y-2">
+                    {generatedListing.bulletPoints.map((point, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-gray-700 bg-gray-50 rounded-lg p-3">
+                        <span className="text-[#7c3aed] font-bold mt-0.5">•</span>
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Compliance Notes */}
+                {generatedListing.complianceNotes.length > 0 && (
+                  <div className="mb-4">
+                    <Label className="text-xs font-semibold text-green-600 mb-2 block">✅ 合规说明</Label>
+                    {generatedListing.complianceNotes.map((note, i) => (
+                      <p key={i} className="text-xs text-green-700 bg-green-50 rounded-lg p-2 mb-1">
+                        {note}
+                      </p>
+                    ))}
+                  </div>
+                )}
+
+                {/* Warnings */}
+                {generatedListing.warnings.length > 0 && (
+                  <div>
+                    <Label className="text-xs font-semibold text-amber-600 mb-2 block">⚠️ 注意事项</Label>
+                    {generatedListing.warnings.map((warning, i) => (
+                      <p key={i} className="text-xs text-amber-700 bg-amber-50 rounded-lg p-2 mb-1">
+                        {warning}
+                      </p>
+                    ))}
+                  </div>
+                )}
+
+                <div className="mt-4 pt-4 border-t border-gray-100">
+                  <p className="text-xs text-gray-400">
+                    ⚠️ 本Listing由AI生成，仅供参考。上架前请根据当地法规进行最终确认。
+                  </p>
+                </div>
               </div>
             )}
           </div>
@@ -349,7 +523,6 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Free */}
             <Card className="border-2 border-gray-100">
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Free</h3>
@@ -371,7 +544,6 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            {/* Pro */}
             <Card className="border-2 border-[#7c3aed] relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-[#7c3aed] text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
                 推荐
