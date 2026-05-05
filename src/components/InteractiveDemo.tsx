@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { Button } from './ui/button'
 import { Label } from './ui/label'
 import { Card, CardContent } from './ui/card'
@@ -12,24 +12,36 @@ type Step = 'idle' | 'scanning' | 'violation' | 'fixed'
 export function InteractiveDemo() {
   const [step, setStep] = useState<Step>('idle')
   const [country, setCountry] = useState<'BR' | 'MX'>('BR')
+  const timeoutsRef = useRef<NodeJS.Timeout[]>([])
+
+  const clearAllTimeouts = () => {
+    timeoutsRef.current.forEach(clearTimeout)
+    timeoutsRef.current = []
+  }
 
   const runDemo = () => {
+    clearAllTimeouts()
     setStep('scanning')
     
-    // Step 1: Scanning (1.5s)
-    setTimeout(() => {
+    const t1 = setTimeout(() => {
       setStep('violation')
       
-      // Step 2: Show violation (1.5s)
-      setTimeout(() => {
+      const t2 = setTimeout(() => {
         setStep('fixed')
       }, 1500)
+      timeoutsRef.current.push(t2)
     }, 1500)
+    timeoutsRef.current.push(t1)
   }
 
   const resetDemo = () => {
+    clearAllTimeouts()
     setStep('idle')
   }
+
+  useEffect(() => {
+    return () => clearAllTimeouts()
+  }, [])
 
   return (
     <section className="py-20 bg-gray-50">
@@ -142,7 +154,7 @@ export function InteractiveDemo() {
                       <span className="text-red-500 ml-2">⚠️ 禁用成分</span>
                     </p>
                     <p className="text-red-600 text-xs mt-2">
-                      法规：ANVISA RDC 15/2013 禁止 Hydroquinone 用于美白产品
+                      法规：{country === 'BR' ? 'ANVISA RDC 15/2013 禁止 Hydroquinone 用于美白产品' : 'COFEPRIS NOM-073-SSA1-2015 禁止 Hydroquinone 用于普通化妆品'}
                     </p>
                   </div>
                 </div>
@@ -163,10 +175,10 @@ export function InteractiveDemo() {
                   <p className="text-green-600 font-bold">✓ AI 生成合规 Listing</p>
                   <div className="bg-green-50 rounded-lg p-3 border border-green-200">
                     <p className="text-gray-900 font-semibold">
-                      Sérum Clareador com Alpha Arbutin - 30ml
+                      {country === 'BR' ? 'Sérum Clareador com Alpha Arbutin - 30ml' : 'Suero Clarificante con Alpha Arbutin - 30ml'}
                     </p>
                     <p className="text-gray-600 text-xs mt-1">
-                      ⚠️ 此产品符合 ANVISA 法规要求
+                      ⚠️ 此产品符合 {country === 'BR' ? 'ANVISA' : 'COFEPRIS'} 法规要求
                     </p>
                   </div>
                 </div>

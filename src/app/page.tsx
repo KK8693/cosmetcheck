@@ -192,7 +192,7 @@ export default function HomePage() {
             </div>
             <h1 className="mb-6 text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
               拉美卖美妆，<br className="hidden md:block" />
-4e0d再被下架罚款
+              不再被下架罚款
             </h1>
 
             {/* Logo 墙 - 新增 */}
