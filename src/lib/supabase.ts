@@ -108,3 +108,10 @@ export type Listing = {
   generated_content: Record<string, unknown>
   created_at: string
 }
+
+export type Subscriber = {
+  id: string
+  email: string
+  source: string
+  created_at: string
+}
