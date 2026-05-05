@@ -1,0 +1,26 @@
+export function FeaturesSection() {
+  return (
+    <section className="py-20 bg-white">
+      <div className="container-custom">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-4">核心功能</h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">专为拉美美妆合规设计的AI检测引擎</p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            { icon: '🛡️', title: '上架前自动拦截下架风险', desc: '输入成分秒出风险报告：哪里违规、怎么改、引用哪条法规 — 不让罚款单先到' },
+            { icon: '🌐', title: '当地人看了就想买的 Listing', desc: '不是翻译，是按巴西/墨西哥消费者搜索习惯重写标题和卖点，自带合规过滤' },
+            { icon: '⚡', title: '违禁词秒标红，附官方条款', desc: 'ANVISA RDC 编号、COFEPRIS NOM 标准直接引用，平台申诉有依据' },
+            { icon: '🎁', title: '0 元先测 10 次，再决定', desc: '不用绑卡、不用签合同，测完觉得有用再升级 Pro' },
+          ].map((item, idx) => (
+            <div key={idx} className="rounded-2xl border border-gray-100 p-6 hover:border-[#7c3aed]/20 transition-colors">
+              <div className="text-3xl mb-4">{item.icon}</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
