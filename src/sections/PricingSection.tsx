@@ -71,7 +71,7 @@ export function PricingSection() {
               <h3 className="text-xl font-bold text-gray-900 mb-2">Pro</h3>
               <div className="flex items-baseline mb-2">
                 <span className="text-lg text-gray-400 line-through mr-2">$49</span>
-                <span className="text-5xl font-extrabold text-gray-900">$29</span>
+                <span className="text-4xl md:text-5xl font-extrabold text-gray-900">$29</span>
                 <span className="text-gray-500 ml-2">/月</span>
               </div>
               <p className="text-sm text-gray-500 mb-4">折合约 ¥199/月 · 随时取消</p>
