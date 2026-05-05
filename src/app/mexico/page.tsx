@@ -90,7 +90,7 @@ export default function MexicoPage() {
               </span>
             </div>
 
-            <h1 className="mb-6 text-4xl font-extrabold tracking-tight md:text-6xl">
+            <h1 className="mb-6 text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
               Vende cosméticos en México<br className="hidden md:block" />
               sin ser retirado
             </h1>
@@ -277,7 +277,7 @@ export default function MexicoPage() {
           <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-8">
             <div className="rounded-2xl border-2 border-gray-100 bg-white p-6 text-left">
               <h3 className="text-xl font-bold text-gray-900 mb-2">Free</h3>
-              <div className="text-4xl font-extrabold text-gray-900 mb-2">$0<span className="text-lg text-gray-500">/mes</span></div>
+              <div className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">$0<span className="text-lg text-gray-500">/mes</span></div>
               <p className="text-sm text-gray-500 mb-4">10 verificaciones/mes · Ideal para probar</p>
               <Link href="/?country=MX">
                 <Button variant="outline" className="w-full font-semibold text-[#2563eb] border-[#2563eb]/30">
@@ -290,7 +290,7 @@ export default function MexicoPage() {
                 Preferido
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Pro</h3>
-              <div className="text-4xl font-extrabold text-gray-900 mb-2">$29<span className="text-lg text-gray-500">/mes</span></div>
+              <div className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">$29<span className="text-lg text-gray-500">/mes</span></div>
               <p className="text-sm text-gray-500 mb-4">Verificaciones ilimitadas + IA Listing</p>
               <Link href="/pricing">
                 <Button className="w-full bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold">

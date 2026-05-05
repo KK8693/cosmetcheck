@@ -42,7 +42,7 @@ export default function PricingPage() {
             <span className="mr-2 h-2 w-2 rounded-full bg-green-400 animate-pulse" />
             已有 2,000+ 卖家选择 Pro
           </div>
-          <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl lg:text-6xl mb-4">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4">
             简单透明的定价
           </h1>
           <p className="text-lg text-white/90 max-w-2xl mx-auto">
@@ -85,7 +85,7 @@ export default function PricingPage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Free</h3>
                 <div className="flex items-baseline mb-2">
-                  <span className="text-4xl font-extrabold text-gray-900">$0</span>
+                  <span className="text-3xl md:text-4xl font-extrabold text-gray-900">$0</span>
                   <span className="text-gray-500 ml-2">/月</span>
                 </div>
                 <p className="text-sm text-gray-500 mb-6">适合：每月 ≤10 个 SKU 的测试卖家</p>

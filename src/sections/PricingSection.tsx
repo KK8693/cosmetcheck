@@ -27,7 +27,7 @@ export function PricingSection() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Free</h3>
               <div className="flex items-baseline mb-2">
-                <span className="text-4xl font-extrabold text-gray-900">$0</span>
+                <span className="text-3xl md:text-4xl font-extrabold text-gray-900">$0</span>
                 <span className="text-gray-500 ml-2">/月</span>
               </div>
               <p className="text-sm text-gray-500 mb-6">适合：每月 ≤10 个 SKU 的测试卖家</p>
@@ -108,14 +108,14 @@ export function PricingSection() {
           </Card>
         </div>
         {/* 省钱数据栏 */}
-        <div className="mt-16 grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="mt-12 md:mt-16 grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {[
             { num: 'R$ 8,500', label: '平均避免罚款金额', desc: '基于 200+ 卖家调研' },
             { num: '7 天', label: '平均节省合规时间', desc: '从 2 周缩短到 3 天' },
             { num: '92%', label: 'Listing 审核通过率', desc: 'AI 生成 vs 人工撰写' },
           ].map((item, idx) => (
             <div key={idx} className="bg-white rounded-2xl border border-gray-100 p-6 text-center shadow-sm">
-              <p className="text-4xl font-extrabold text-[#7c3aed] mb-2">{item.num}</p>
+              <p className="text-3xl md:text-4xl font-extrabold text-[#7c3aed] mb-2">{item.num}</p>
               <p className="font-semibold text-gray-900 mb-1">{item.label}</p>
               <p className="text-sm text-gray-500">{item.desc}</p>
             </div>

@@ -183,7 +183,7 @@ export function HeroSection() {
                 覆盖 <span className="font-bold text-white">巴西/墨西哥</span>
               </span>
             </div>
-            <h1 className="mb-6 text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
+            <h1 className="mb-6 text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
               拉美卖美妆，<br className="hidden md:block" />
               不再被下架罚款
             </h1>
