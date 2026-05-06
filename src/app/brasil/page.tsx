@@ -63,7 +63,7 @@ export default function BrasilPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#7c3aed] via-[#6d28d9] to-[#5b21b6] text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#0A4D8C] via-[#1E6BB8] to-[#00A86B] text-white">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-30" />
         <div className="container mx-auto px-4 py-20 md:py-28 relative">
           <div className="mx-auto max-w-4xl text-center">
@@ -117,7 +117,7 @@ export default function BrasilPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/?country=BR">
-                <Button className="bg-white text-[#7c3aed] hover:bg-white/90 font-semibold h-12 px-8">
+                <Button className="bg-white text-[#0A4D8C] hover:bg-white/90 font-semibold h-12 px-8">
                   Verificar meu produto
                 </Button>
               </Link>
@@ -222,7 +222,7 @@ export default function BrasilPage() {
               ].map((item) => (
                 <div key={item.title} className="bg-white rounded-xl p-6 shadow-sm">
                   <div className="flex items-start gap-4">
-                    <CheckCircle className="w-6 h-6 text-[#7c3aed] flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-6 h-6 text-[#0A4D8C] flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-bold text-gray-900">{item.title}</h3>
                       <p className="text-gray-600 mt-1">{item.desc}</p>
@@ -265,7 +265,7 @@ export default function BrasilPage() {
       {/* Pricing CTA */}
       <section className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          <div className="inline-block rounded-full bg-[#7c3aed]/10 px-4 py-1 text-sm font-semibold text-[#7c3aed] mb-4">
+          <div className="inline-block rounded-full bg-[#0A4D8C]/10 px-4 py-1 text-sm font-semibold text-[#0A4D8C] mb-4">
             价值优先
           </div>
           <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-4">
@@ -280,13 +280,13 @@ export default function BrasilPage() {
               <div className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">$0<span className="text-lg text-gray-500">/月</span></div>
               <p className="text-sm text-gray-500 mb-4">每月 10 次检测 · 适合测试</p>
               <Link href="/?country=BR">
-                <Button variant="outline" className="w-full font-semibold text-[#7c3aed] border-[#7c3aed]/30">
+                <Button variant="outline" className="w-full font-semibold text-[#0A4D8C] border-[#0A4D8C]/30">
                   免费开始
                 </Button>
               </Link>
             </div>
-            <div className="rounded-2xl border-2 border-[#7c3aed] bg-gradient-to-b from-[#7c3aed]/5 to-white p-6 text-left relative overflow-hidden">
-              <div className="absolute top-0 right-0 bg-[#7c3aed] text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+            <div className="rounded-2xl border-2 border-[#0A4D8C] bg-gradient-to-b from-[#0A4D8C]/5 to-white p-6 text-left relative overflow-hidden">
+              <div className="absolute top-0 right-0 bg-[#0A4D8C] text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
                 卖家首选
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Pro</h3>
@@ -306,7 +306,7 @@ export default function BrasilPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-12 md:py-20 bg-gradient-to-br from-[#7c3aed] via-[#6d28d9] to-[#5b21b6] text-white">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-[#0A4D8C] via-[#1E6BB8] to-[#00A86B] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold md:text-4xl mb-4">
             Comece a vender com segurança
@@ -315,7 +315,7 @@ export default function BrasilPage() {
             Milhares de vendedores já usam o CosmetCheck para evitar multas da ANVISA. Verifique seu produto gratuitamente agora.
           </p>
           <Link href="/?country=BR">
-            <Button className="bg-white text-[#7c3aed] hover:bg-white/90 font-semibold h-12 px-8">
+            <Button className="bg-white text-[#0A4D8C] hover:bg-white/90 font-semibold h-12 px-8">
               Verificar conformidade ANVISA
             </Button>
           </Link>

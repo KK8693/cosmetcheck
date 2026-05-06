@@ -35,7 +35,7 @@ export default function PricingPage() {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#7c3aed] via-[#6d28d9] to-[#5b21b6] text-white py-20 md:py-28">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#0A4D8C] via-[#1E6BB8] to-[#00A86B] text-white py-20 md:py-28">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-30" />
         <div className="container-custom relative text-center">
           <div className="mb-4 inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium backdrop-blur">
@@ -114,7 +114,7 @@ export default function PricingPage() {
                   ))}
                 </ul>
                 <Link href="/">
-                  <Button variant="outline" className="w-full font-semibold text-[#7c3aed] border-[#7c3aed]/30 hover:bg-[#7c3aed]/5">
+                  <Button variant="outline" className="w-full font-semibold text-[#0A4D8C] border-[#0A4D8C]/30 hover:bg-[#0A4D8C]/5">
                     免费试用 10 次
                   </Button>
                 </Link>
@@ -122,8 +122,8 @@ export default function PricingPage() {
             </Card>
 
             {/* Pro */}
-            <Card className="border-2 border-[#7c3aed] relative overflow-hidden bg-gradient-to-b from-[#7c3aed]/5 to-white">
-              <div className="absolute top-0 right-0 bg-[#7c3aed] text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+            <Card className="border-2 border-[#0A4D8C] relative overflow-hidden bg-gradient-to-b from-[#0A4D8C]/5 to-white">
+              <div className="absolute top-0 right-0 bg-[#0A4D8C] text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
                 最划算 — 卖家首选
               </div>
               <CardContent className="p-8">
@@ -192,7 +192,7 @@ export default function PricingPage() {
                 <tr>
                   <th className="px-6 py-4 font-semibold text-gray-900">功能</th>
                   <th className="px-6 py-4 font-semibold text-gray-900 text-center w-32">Free</th>
-                  <th className="px-6 py-4 font-semibold text-[#7c3aed] text-center w-32">Pro</th>
+                  <th className="px-6 py-4 font-semibold text-[#0A4D8C] text-center w-32">Pro</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
@@ -233,7 +233,7 @@ export default function PricingPage() {
               { num: '24h', label: '客服响应', desc: 'Pro 用户工作日 24h 内回复' },
             ].map((item, idx) => (
               <div key={idx} className="bg-white rounded-2xl border border-gray-100 p-6 text-center shadow-sm">
-                <p className="text-3xl font-extrabold text-[#7c3aed] mb-2">{item.num}</p>
+                <p className="text-3xl font-extrabold text-[#0A4D8C] mb-2">{item.num}</p>
                 <p className="font-semibold text-gray-900 mb-1">{item.label}</p>
                 <p className="text-sm text-gray-500">{item.desc}</p>
               </div>
@@ -258,7 +258,7 @@ export default function PricingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-12 md:py-20 bg-gradient-to-br from-[#7c3aed] via-[#6d28d9] to-[#5b21b6] text-white text-center">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-[#0A4D8C] via-[#1E6BB8] to-[#00A86B] text-white text-center">
         <div className="container-custom">
           <div className="mb-4 inline-flex items-center rounded-full bg-red-500 px-4 py-1.5 text-xs font-bold text-white shadow-lg animate-bounce">
             🔥 限时福利 · 本月注册送 5 次 Pro 体验

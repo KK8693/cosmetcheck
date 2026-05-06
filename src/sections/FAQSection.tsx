@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { ChevronDown } from 'lucide-react'
 
 const faqs = [
   {
@@ -38,7 +39,7 @@ const faqs = [
 ]
 
 export function FAQSection() {
-  const [activeFaq, setActiveFaq] = useState<number | null>(0)
+  const [activeFaq, setActiveFaq] = useState<number | null>(null)
 
   return (
     <section className="py-20 bg-white">
@@ -54,15 +55,21 @@ export function FAQSection() {
                 onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
               >
                 <span className="font-semibold text-gray-900 pr-4">{item.q}</span>
-                <span className={`text-2xl flex-shrink-0 transition-transform ${activeFaq === idx ? 'rotate-45' : ''}`}>
-                  +
-                </span>
+                <ChevronDown
+                  className={`w-5 h-5 flex-shrink-0 text-gray-400 transition-transform duration-300 ease-out ${
+                    activeFaq === idx ? 'rotate-180' : ''
+                  }`}
+                />
               </button>
-              {activeFaq === idx && (
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-out ${
+                  activeFaq === idx ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                }`}
+              >
                 <div className="px-6 pb-6 text-gray-600 leading-relaxed">
                   {item.a}
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>

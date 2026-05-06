@@ -30,7 +30,7 @@ export function HowItWorksSection() {
             <div key={item.step} className="relative">
               <div className="rounded-2xl border border-gray-100 bg-gray-50/50 p-8 hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">{item.icon}</div>
-                <div className="text-sm font-bold text-[#7c3aed] mb-2">步骤 {item.step}</div>
+                <div className="text-sm font-bold text-[#0A4D8C] mb-2">步骤 {item.step}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{item.desc}</p>
               </div>

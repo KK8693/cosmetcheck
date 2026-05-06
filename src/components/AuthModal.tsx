@@ -86,7 +86,7 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
 
           <Button
             type="submit"
-            className="w-full bg-[#7c3aed] hover:bg-[#6d28d9]"
+            className="w-full bg-[#0A4D8C] hover:bg-[#1E6BB8]"
             disabled={loading}
           >
             {loading ? 'Loading...' : isSignUp ? 'Create Account' : 'Sign In'}
@@ -98,7 +98,7 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
                 Already have an account?{' '}
                 <button
                   type="button"
-                  className="text-[#7c3aed] hover:underline font-medium"
+                  className="text-[#0A4D8C] hover:underline font-medium"
                   onClick={() => { setIsSignUp(false); setError(''); setSuccess('') }}
                 >
                   Sign In
@@ -109,7 +109,7 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
                 No account?{' '}
                 <button
                   type="button"
-                  className="text-[#7c3aed] hover:underline font-medium"
+                  className="text-[#0A4D8C] hover:underline font-medium"
                   onClick={() => { setIsSignUp(true); setError(''); setSuccess('') }}
                 >
                   Create Account

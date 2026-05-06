@@ -1,12 +1,14 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { useAuth } from '@/contexts/AuthContext'
 import AuthModal from '@/components/AuthModal'
+import { AnimatedCounter } from '@/components/AnimatedCounter'
+import { AlertTriangle, Info, CheckCircle, XCircle, Zap } from 'lucide-react'
 
 interface CheckResult {
   isCompliant: boolean
@@ -52,7 +54,8 @@ interface GeneratedListing {
   language: 'pt-BR' | 'es-MX'
 }
 export function HeroSection() {
-  const [ingredients, setIngredients] = useState('')
+  // Default demo data - Hydroquinone banned ingredient example
+  const [ingredients, setIngredients] = useState('Aqua, Glycerin, Niacinamide, Hydroquinone, Vitamin C, Parfum')
   const [country, setCountry] = useState<'BR' | 'MX'>('BR')
   const [isChecking, setIsChecking] = useState(false)
   const [checkResult, setCheckResult] = useState<CheckResult | null>(null)
@@ -61,13 +64,46 @@ export function HeroSection() {
   const { user, signOut, quotaUsed, quotaLimit } = useAuth()
 
   // AI Generation state
-  const [productName, setProductName] = useState('')
-  const [productBenefits, setProductBenefits] = useState('')
+  const [productName, setProductName] = useState('Whitening Serum')
+  const [productBenefits, setProductBenefits] = useState('美白、保湿、淡斑')
   const [isGenerating, setIsGenerating] = useState(false)
   const [generatedListing, setGeneratedListing] = useState<GeneratedListing | null>(null)
   const [generateError, setGenerateError] = useState('')
 
+  // Default demo result - Hydroquinone violation
+  const demoResult: CheckResult = {
+    isCompliant: false,
+    violations: [
+      {
+        ruleId: 'ANVISA-RDC-665-2022',
+        category: '禁用成分',
+        severity: 'critical',
+        message: 'Hydroquinone 是巴西 ANVISA 明确禁用的美白成分',
+        suggestion: '建议替换为 α-熊果苷（α-Arbutin）或烟酰胺（Niacinamide）等合规替代成分',
+        source: 'ANVISA RDC 665/2022 - Lista de Substâncias Proibidas'
+      }
+    ],
+    warnings: [],
+    info: [],
+    summary: {
+      totalIssues: 1,
+      criticalCount: 1,
+      warningCount: 0,
+      infoCount: 0
+    },
+    regulationVersion: 2024.1
+  }
+
+  // Show demo result by default on first load
+  const [showDemo, setShowDemo] = useState(true)
+
+  // Use demo result if showDemo is true and no real result exists
+  const resultToShow = showDemo && !checkResult ? demoResult : checkResult
+
   const handleCheck = async () => {
+    // User is running their own check, hide demo result
+    setShowDemo(false)
+    
     if (!ingredients.trim()) {
       setCheckError('请输入产品成分或描述')
       return
@@ -139,7 +175,7 @@ export function HeroSection() {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#7c3aed] via-[#6d28d9] to-[#5b21b6] text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#0A4D8C] via-[#1E6BB8] to-[#00A86B] text-white">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-30" />
         <div className="container-custom relative py-20 md:py-28">
           {/* User auth bar */}
@@ -171,12 +207,12 @@ export function HeroSection() {
               <span className="inline-flex items-center">
                 <span className="mr-2 h-2 w-2 rounded-full bg-green-400 animate-pulse" />
                 <span className="text-white/80">已服务</span>
-                <span className="mx-1 font-bold text-white">2,000+</span>
+                <AnimatedCounter end={2000} suffix="+" className="mx-1 font-bold text-white" />
                 <span className="text-white/80">卖家</span>
               </span>
               <span className="hidden sm:inline text-white/30">|</span>
               <span className="text-white/80">
-                拦截 <span className="font-bold text-white">340,000+</span> 次合规风险
+                拦截 <AnimatedCounter end={340000} suffix="+" className="font-bold text-white" /> 次合规风险
               </span>
               <span className="hidden sm:inline text-white/30">|</span>
               <span className="text-white/80">
@@ -209,20 +245,20 @@ export function HeroSection() {
             <div className="mx-auto max-w-2xl mb-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
               {[
                 {
-                  tag: '❌ 禁用成分',
-                  tagColor: 'text-red-300',
+                  tag: '禁用成分',
+                  tagColor: 'text-red-500',
                   body: '"某美白霜含 Hydroquinone 2%，直接被 ANVISA 标红"',
                   result: '→ 修改后 48h 重新上架',
                 },
                 {
-                  tag: '⚠️ 标签违规',
-                  tagColor: 'text-amber-300',
+                  tag: '标签违规',
+                  tagColor: 'text-amber-500',
                   body: '"防晒产品未标注 SPF 值，墨西哥海关扣留"',
                   result: '→ AI 生成合规标签，0 罚款',
                 },
                 {
-                  tag: '📝 文案误触',
-                  tagColor: 'text-blue-300',
+                  tag: '文案误触',
+                  tagColor: 'text-blue-500',
                   body: '"抗皱文案写错 1 个词，Listing 被下架 7 天"',
                   result: '→ 替换后 CTR 提升 23%',
                 },
@@ -252,7 +288,7 @@ export function HeroSection() {
                   onClick={() => setCountry('BR')}
                   className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
                     country === 'BR'
-                      ? 'bg-white text-[#7c3aed]'
+                      ? 'bg-white text-[#0A4D8C]'
                       : 'bg-white/10 text-white/70 hover:bg-white/20'
                   }`}
                 >
@@ -262,7 +298,7 @@ export function HeroSection() {
                   onClick={() => setCountry('MX')}
                   className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
                     country === 'MX'
-                      ? 'bg-white text-[#7c3aed]'
+                      ? 'bg-white text-[#0A4D8C]'
                       : 'bg-white/10 text-white/70 hover:bg-white/20'
                   }`}
                 >
@@ -317,7 +353,7 @@ export function HeroSection() {
                   disabled={isGenerating || !productName}
                   className="flex-1 bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all animate-pulse-subtle"
                 >
-                  {isGenerating ? '生成中...' : '🚀 免费生成 Listing'}
+                  {isGenerating ? '生成中...' : <><Zap className="w-4 h-4 mr-1" /> 免费生成 Listing</>}
                 </Button>
               </div>
 
@@ -327,42 +363,42 @@ export function HeroSection() {
             </div>
 
             {/* Check Results */}
-            {checkResult && (
+            {resultToShow && (
               <div className="mx-auto max-w-xl mt-6 rounded-2xl bg-white p-6 text-left text-gray-900">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-lg font-bold">检测结果</h3>
                   <span
                     className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                      checkResult.isCompliant
+                      resultToShow.isCompliant
                         ? 'bg-green-100 text-green-700'
                         : 'bg-red-100 text-red-700'
                     }`}
                   >
-                    {checkResult.isCompliant ? '✅ 合规' : '❌ 不合规'}
+                    {resultToShow.isCompliant ? <><CheckCircle className="w-4 h-4 mr-1" /> 合规</> : <><XCircle className="w-4 h-4 mr-1" /> 不合规</>}
                   </span>
                 </div>
 
-                {checkResult.summary.totalIssues > 0 && (
+                {resultToShow.summary.totalIssues > 0 && (
                   <div className="flex gap-4 mb-4 text-sm">
-                    {checkResult.summary.criticalCount > 0 && (
+                    {resultToShow.summary.criticalCount > 0 && (
                       <span className="text-red-600 font-medium">
-                        ❌ {checkResult.summary.criticalCount} 严重</span>
+                        <XCircle className="w-4 h-4 mr-1" /> {resultToShow.summary.criticalCount} 严重</span>
                     )}
-                    {checkResult.summary.warningCount > 0 && (
+                    {resultToShow.summary.warningCount > 0 && (
                       <span className="text-amber-600 font-medium">
-                        ⚠️ {checkResult.summary.warningCount} 警告</span>
+                        <AlertTriangle className="w-4 h-4 mr-1" /> {resultToShow.summary.warningCount} 警告</span>
                     )}
-                    {checkResult.summary.infoCount > 0 && (
+                    {resultToShow.summary.infoCount > 0 && (
                       <span className="text-blue-600 font-medium">
-                        ℹ️ {checkResult.summary.infoCount} 提示</span>
+                        <Info className="w-4 h-4 mr-1" /> {resultToShow.summary.infoCount} 提示</span>
                     )}
                   </div>
                 )}
 
-                {checkResult.violations.length > 0 && (
+                {resultToShow.violations.length > 0 && (
                   <div className="space-y-3 mb-4">
-                    <h4 className="text-sm font-semibold text-red-600">❌ 严重问题（必须修复）</h4>
-                    {checkResult.violations.map((v, i) => (
+                    <h4 className="text-sm font-semibold text-red-600 flex items-center"><XCircle className="w-4 h-4 mr-1" /> 严重问题（必须修复）</h4>
+                    {resultToShow.violations.map((v, i) => (
                       <div key={i} className="bg-red-50 rounded-lg p-3 text-sm">
                         <p className="font-medium text-red-700">{v.message}</p>
                         <p className="text-red-600/80 mt-1">建议：{v.suggestion}</p>
@@ -371,10 +407,10 @@ export function HeroSection() {
                   </div>
                 )}
 
-                {checkResult.warnings.length > 0 && (
+                {resultToShow.warnings.length > 0 && (
                   <div className="space-y-3 mb-4">
-                    <h4 className="text-sm font-semibold text-amber-600">⚠️ 警告（建议修复）</h4>
-                    {checkResult.warnings.map((v, i) => (
+                    <h4 className="text-sm font-semibold text-amber-600 flex items-center"><AlertTriangle className="w-4 h-4 mr-1" /> 警告（建议修复）</h4>
+                    {resultToShow.warnings.map((v, i) => (
                       <div key={i} className="bg-amber-50 rounded-lg p-3 text-sm">
                         <p className="font-medium text-amber-700">{v.message}</p>
                         <p className="text-amber-600/80 mt-1">建议：{v.suggestion}</p>
@@ -383,10 +419,10 @@ export function HeroSection() {
                   </div>
                 )}
 
-                {checkResult.info.length > 0 && (
+                {resultToShow.info.length > 0 && (
                   <div className="space-y-3">
-                    <h4 className="text-sm font-semibold text-blue-600">ℹ️ 提示</h4>
-                    {checkResult.info.map((v, i) => (
+                    <h4 className="text-sm font-semibold text-blue-600 flex items-center"><Info className="w-4 h-4 mr-1" /> 提示</h4>
+                    {resultToShow.info.map((v, i) => (
                       <div key={i} className="bg-blue-50 rounded-lg p-3 text-sm">
                         <p className="font-medium text-blue-700">{v.message}</p>
                         <p className="text-blue-600/80 mt-1">建议：{v.suggestion}</p>
@@ -395,7 +431,7 @@ export function HeroSection() {
                   </div>
                 )}
 
-                {checkResult.summary.totalIssues === 0 && (
+                {resultToShow.summary.totalIssues === 0 && (
                   <p className="text-green-600 text-sm">恭喜！暂未发现合规问题。</p>
                 )}
               </div>
@@ -406,7 +442,7 @@ export function HeroSection() {
               <div className="mx-auto max-w-xl mt-6 rounded-2xl bg-white p-6 text-left text-gray-900">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-lg font-bold">AI生成的合规Listing</h3>
-                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#7c3aed]/10 text-[#7c3aed]">
+                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#0A4D8C]/10 text-[#0A4D8C]">
                     {generatedListing.language === 'pt-BR' ? '🇧🇷 葡语' : '🇲🇽 西语'}
                   </span>
                 </div>
@@ -417,7 +453,7 @@ export function HeroSection() {
                     <Label className="text-xs font-semibold text-gray-500">标题</Label>
                     <button
                       onClick={() => copyToClipboard(generatedListing.title)}
-                      className="text-xs text-[#7c3aed] hover:underline"
+                      className="text-xs text-[#0A4D8C] hover:underline"
                     >
                       复制
                     </button>
@@ -433,7 +469,7 @@ export function HeroSection() {
                     <Label className="text-xs font-semibold text-gray-500">描述</Label>
                     <button
                       onClick={() => copyToClipboard(generatedListing.description)}
-                      className="text-xs text-[#7c3aed] hover:underline"
+                      className="text-xs text-[#0A4D8C] hover:underline"
                     >
                       复制
                     </button>
@@ -449,7 +485,7 @@ export function HeroSection() {
                   <ul className="space-y-2">
                     {generatedListing.bulletPoints.map((point, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm text-gray-700 bg-gray-50 rounded-lg p-3">
-                        <span className="text-[#7c3aed] font-bold mt-0.5">•</span>
+                        <span className="text-[#0A4D8C] font-bold mt-0.5">•</span>
                         {point}
                       </li>
                     ))}
@@ -459,7 +495,7 @@ export function HeroSection() {
                 {/* Compliance Notes */}
                 {generatedListing.complianceNotes.length > 0 && (
                   <div className="mb-4">
-                    <Label className="text-xs font-semibold text-green-600 mb-2 block">✅ 合规说明</Label>
+                    <Label className="text-xs font-semibold text-green-600 mb-2 block flex items-center"><CheckCircle className="w-3 h-3 mr-1" /> 合规说明</Label>
                     {generatedListing.complianceNotes.map((note, i) => (
                       <p key={i} className="text-xs text-green-700 bg-green-50 rounded-lg p-2 mb-1">
                         {note}
@@ -471,7 +507,7 @@ export function HeroSection() {
                 {/* Warnings */}
                 {generatedListing.warnings.length > 0 && (
                   <div>
-                    <Label className="text-xs font-semibold text-amber-600 mb-2 block">⚠️ 注意事项</Label>
+                    <Label className="text-xs font-semibold text-amber-600 mb-2 block flex items-center"><AlertTriangle className="w-3 h-3 mr-1" /> 注意事项</Label>
                     {generatedListing.warnings.map((warning, i) => (
                       <p key={i} className="text-xs text-amber-700 bg-amber-50 rounded-lg p-2 mb-1">
                         {warning}
@@ -482,7 +518,7 @@ export function HeroSection() {
 
                 <div className="mt-4 pt-4 border-t border-gray-100">
                   <p className="text-xs text-gray-400">
-                    ⚠️ 本Listing由AI生成，仅供参考。上架前请根据当地法规进行最终确认。
+                    <AlertTriangle className="w-3 h-3 mr-1" /> 本Listing由AI生成，仅供参考。上架前请根据当地法规进行最终确认。
                   </p>
                 </div>
               </div>

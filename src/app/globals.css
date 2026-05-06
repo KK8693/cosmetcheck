@@ -50,6 +50,22 @@
 
 /* CosmetCheck Custom Theme - Beauty Professional */
 :root {
+  /* ===== Brand Colors (NEW) ===== */
+  /* Primary: ANVISA Blue - trust, professionalism, compliance */
+  --color-primary: #0A4D8C;
+  --color-primary-light: #1E6BB8;
+  --color-primary-dark: #073A63;
+  
+  /* Secondary: Brazil Green - vitality, growth */
+  --color-accent: #00A86B;
+  --color-accent-light: #34C759;
+  
+  /* Functional colors */
+  --color-danger: #E53935;
+  --color-warning: #FF9800;
+  --color-success: #00C853;
+
+  /* ===== Original Theme ===== */
   /* Primary: Deep Purple for trust and professionalism */
   --primary: oklch(0.55 0.2 280);
   --primary-foreground: oklch(1 0 0);

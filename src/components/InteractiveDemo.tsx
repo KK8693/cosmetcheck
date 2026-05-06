@@ -74,7 +74,7 @@ export function InteractiveDemo() {
                   onClick={() => setCountry('BR')}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                     country === 'BR'
-                      ? 'bg-[#7c3aed] text-white'
+                      ? 'bg-[#0A4D8C] text-white'
                       : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                   }`}
                 >
@@ -84,7 +84,7 @@ export function InteractiveDemo() {
                   onClick={() => setCountry('MX')}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                     country === 'MX'
-                      ? 'bg-[#7c3aed] text-white'
+                      ? 'bg-[#0A4D8C] text-white'
                       : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                   }`}
                 >

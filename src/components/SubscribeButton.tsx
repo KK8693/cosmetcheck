@@ -2,11 +2,19 @@
 
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
-import { loadStripe } from '@stripe/stripe-js'
+import type { Stripe } from '@stripe/stripe-js'
 
-const stripePromise = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-  ? loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
-  : null
+let stripePromise: Promise<Stripe | null> | null = null
+
+const getStripe = async () => {
+  if (!stripePromise) {
+    const { loadStripe } = await import('@stripe/stripe-js')
+    stripePromise = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+      ? loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
+      : null
+  }
+  return stripePromise
+}
 
 interface SubscribeButtonProps {
   priceId: string
@@ -24,7 +32,8 @@ export default function SubscribeButton({
   const [loading, setLoading] = useState(false)
 
   const handleSubscribe = async () => {
-    if (!stripePromise) {
+    const stripe = await getStripe()
+    if (!stripe) {
       alert('Stripe is not configured. Please contact support.')
       return
     }
@@ -45,11 +54,6 @@ export default function SubscribeButton({
 
       if (!response.ok) {
         throw new Error(data.error || 'Failed to create checkout session')
-      }
-
-      const stripe = await stripePromise
-      if (!stripe) {
-        throw new Error('Stripe failed to load')
       }
 
       // Redirect to Stripe Checkout

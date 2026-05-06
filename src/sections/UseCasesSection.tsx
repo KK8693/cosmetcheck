@@ -28,7 +28,7 @@ export function UseCasesSection() {
           ].map((item, idx) => (
             <Card key={idx} className="border-0 shadow-sm hover:shadow-md transition-shadow">
               <CardContent className="p-8">
-                <div className="inline-block rounded-full bg-[#7c3aed]/10 px-3 py-1 text-xs font-semibold text-[#7c3aed] mb-4">
+                <div className="inline-block rounded-full bg-[#0A4D8C]/10 px-3 py-1 text-xs font-semibold text-[#0A4D8C] mb-4">
                   {item.highlight}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>

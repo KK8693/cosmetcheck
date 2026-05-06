@@ -8,7 +8,7 @@ export function PricingSection() {
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <div className="inline-block rounded-full bg-[#7c3aed]/10 px-4 py-1 text-sm font-semibold text-[#7c3aed] mb-4">
+          <div className="inline-block rounded-full bg-[#0A4D8C]/10 px-4 py-1 text-sm font-semibold text-[#0A4D8C] mb-4">
             价值优先
           </div>
           <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-4">
@@ -55,7 +55,7 @@ export function PricingSection() {
                 ))}
               </ul>
               <Link href="/pricing">
-                <Button variant="outline" className="w-full font-semibold text-[#7c3aed] border-[#7c3aed]/30 hover:bg-[#7c3aed]/5">
+                <Button variant="outline" className="w-full font-semibold text-[#0A4D8C] border-[#0A4D8C]/30 hover:bg-[#0A4D8C]/5">
                   免费试用 10 次
                 </Button>
               </Link>
@@ -63,11 +63,19 @@ export function PricingSection() {
           </Card>
 
           {/* Pro 卡 */}
-          <Card className="border-2 border-[#7c3aed] relative overflow-hidden bg-gradient-to-b from-[#7c3aed]/5 to-white">
-            <div className="absolute top-0 right-0 bg-[#7c3aed] text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
-              最划算 — 卖家首选
+          <Card className="border-2 border-[#0A4D8C] relative overflow-hidden bg-gradient-to-b from-[#0A4D8C]/5 to-white">
+            {/* 推荐标签 */}
+            <div className="absolute -top-px -right-12">
+              <div className="bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 text-xs font-bold px-8 py-1 rotate-45 shadow-lg">
+                🥇 推荐
+              </div>
             </div>
+            {/* 限时标签脉冲动画 */}
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-400 via-red-500 to-red-400 animate-pulse" />
             <CardContent className="p-8">
+              <div className="inline-block rounded-full bg-red-100 px-3 py-1 text-xs font-bold text-red-600 mb-4 animate-pulse">
+                🔥 限时省 40%
+              </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Pro</h3>
               <div className="flex items-baseline mb-2">
                 <span className="text-lg text-gray-400 line-through mr-2">$49</span>
@@ -115,7 +123,7 @@ export function PricingSection() {
             { num: '92%', label: 'Listing 审核通过率', desc: 'AI 生成 vs 人工撰写' },
           ].map((item, idx) => (
             <div key={idx} className="bg-white rounded-2xl border border-gray-100 p-6 text-center shadow-sm">
-              <p className="text-3xl md:text-4xl font-extrabold text-[#7c3aed] mb-2">{item.num}</p>
+              <p className="text-3xl md:text-4xl font-extrabold text-[#0A4D8C] mb-2">{item.num}</p>
               <p className="font-semibold text-gray-900 mb-1">{item.label}</p>
               <p className="text-sm text-gray-500">{item.desc}</p>
             </div>
