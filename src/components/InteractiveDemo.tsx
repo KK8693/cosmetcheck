@@ -129,8 +129,7 @@ export function InteractiveDemo() {
             <div className="p-6 font-mono text-sm min-h-[280px]">
               {step === 'idle' && (
                 <div className="text-gray-400 text-center py-12">
-                  <p className="text-4xl mb-4">🔍</p>
-                  <p>点击左侧按钮开始演示</p>
+                  <p className="text-lg">点击左侧按钮开始演示</p>
                 </div>
               )}
 
