@@ -1,10 +1,22 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Space_Grotesk, DM_Sans } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { AuthProvider } from '@/contexts/AuthContext'
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', preload: true })
+const spaceGrotesk = Space_Grotesk({ 
+  subsets: ['latin'], 
+  display: 'swap', 
+  preload: true,
+  variable: '--font-display',
+})
+const dmSans = DM_Sans({ 
+  subsets: ['latin'], 
+  display: 'swap', 
+  preload: true,
+  variable: '--font-body',
+})
 
 export const metadata: Metadata = {
   title: 'CosmetCheck - 拉美美妆合规检测专家',
@@ -25,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} ${spaceGrotesk.variable} ${dmSans.variable}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
