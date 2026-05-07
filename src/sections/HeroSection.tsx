@@ -106,6 +106,8 @@ export function HeroSection() {
     
     if (!ingredients.trim()) {
       setCheckError('请输入产品成分或描述')
+      // 清除旧检测结果，显示空状态
+      setCheckResult(null)
       return
     }
     setCheckError('')
@@ -220,7 +222,7 @@ export function HeroSection() {
               </span>
             </div>
             <h1 className="mb-6 text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
-              拉美卖美妆，<br className="hidden md:block" />
+              拉美卖美妆<span className="hidden md:block"> </span>
               不再被下架罚款
             </h1>
 
@@ -279,11 +281,11 @@ export function HeroSection() {
             </p>
 
             {/* Hero Demo */}
-            <div className="mx-auto max-w-xl rounded-2xl bg-white/10 p-6 backdrop-blur-lg md:p-8 text-left">
+            <div className="mx-auto w-full max-w-full md:max-w-xl rounded-2xl bg-white/10 p-4 backdrop-blur-lg md:p-8 text-left">
               <div className="mb-4">
                 <Label className="text-white/80 text-sm">输入产品信息，检测并生成合规Listing</Label>
               </div>
-              <div className="flex gap-2 mb-3">
+              <div className="flex flex-wrap gap-2 mb-3">
                 <button
                   onClick={() => setCountry('BR')}
                   className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
@@ -312,7 +314,7 @@ export function HeroSection() {
                   value={productName}
                   onChange={(e) => setProductName(e.target.value)}
                   placeholder="产品名称（如：Vitamin C Serum）"
-                  className="border-white/20 bg-white/10 text-white placeholder:text-white/50"
+                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50"
                 />
               </div>
 
@@ -322,7 +324,7 @@ export function HeroSection() {
                   value={ingredients}
                   onChange={(e) => setIngredients(e.target.value)}
                   placeholder="成分（如：Aqua, Glycerin, Niacinamide, Vitamin C... 可选）"
-                  className="border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[80px]"
+                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[80px] resize-none"
                 />
               </div>
 
@@ -332,26 +334,26 @@ export function HeroSection() {
                   value={productBenefits}
                   onChange={(e) => setProductBenefits(e.target.value)}
                   placeholder="产品功效（如：美白、保湿、抗衰老... 可选）"
-                  className="border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[60px]"
+                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[60px] resize-none"
                 />
               </div>
 
               {checkError && <p className="text-red-300 text-sm mb-2">{checkError}</p>}
               {generateError && <p className="text-red-300 text-sm mb-2">{generateError}</p>}
 
-              <div className="flex gap-2">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <Button
                   onClick={handleCheck}
                   disabled={isChecking}
                   variant="outline"
-                  className="flex-1 border-white/30 text-white hover:bg-white/10 font-medium"
+                  className="w-full sm:flex-1 border-white/30 text-white hover:bg-white/10 font-medium"
                 >
                   {isChecking ? '检测中...' : '先检测合规'}
                 </Button>
                 <Button
                   onClick={handleGenerate}
                   disabled={isGenerating || !productName}
-                  className="flex-1 bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all animate-pulse-subtle"
+                  className="w-full sm:flex-1 bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all animate-pulse-subtle"
                 >
                   {isGenerating ? '生成中...' : <><Zap className="w-4 h-4 mr-1" /> 免费生成 Listing</>}
                 </Button>

@@ -52,43 +52,43 @@ export default function PricingPage() {
       </section>
 
       {/* Pricing Cards */}
-      <section className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div className="container-custom max-w-5xl">
+      <section className="py-12 md:py-20 bg-[#0D0D12]">
+        <div className="container-custom max-w-5xl px-4">
           {/* Toggle */}
-          <div className="flex justify-center mb-12">
-            <div className="inline-flex items-center bg-gray-100 rounded-full p-1">
+          <div className="flex justify-center mb-8 md:mb-12">
+            <div className="inline-flex items-center bg-[#1E1E28] rounded-full p-1">
               <button
                 onClick={() => setYearly(false)}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                  !yearly ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
+                className={`px-4 md:px-6 py-2 rounded-full text-sm font-medium transition-colors ${
+                  !yearly ? 'bg-white text-[#0D0D12] shadow-sm' : 'text-gray-400 hover:text-gray-200'
                 }`}
               >
                 月付
               </button>
               <button
                 onClick={() => setYearly(true)}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                  yearly ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
+                className={`px-4 md:px-6 py-2 rounded-full text-sm font-medium transition-colors ${
+                  yearly ? 'bg-white text-[#0D0D12] shadow-sm' : 'text-gray-400 hover:text-gray-200'
                 }`}
               >
-                年付 <span className="text-green-600 font-bold ml-1">省 30%</span>
+                年付 <span className="text-[#00A86B] font-bold ml-1">省 30%</span>
               </button>
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             {/* Free */}
-            <Card className="border-2 border-gray-100">
-              <CardContent className="p-8">
-                <div className="inline-block rounded-full bg-gray-100 px-3 py-1 text-xs font-bold text-gray-600 mb-4">
+            <Card className="border-2 border-[#252530] bg-[#1A1A24]">
+              <CardContent className="p-6 md:p-8">
+                <div className="inline-block rounded-full bg-[#252530] px-3 py-1 text-xs font-bold text-gray-300 mb-4">
                   入门试用
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Free</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Free</h3>
                 <div className="flex items-baseline mb-2">
-                  <span className="text-3xl md:text-4xl font-extrabold text-gray-900">$0</span>
-                  <span className="text-gray-500 ml-2">/月</span>
+                  <span className="text-3xl md:text-4xl font-extrabold text-white">$0</span>
+                  <span className="text-gray-400 ml-2">/月</span>
                 </div>
-                <p className="text-sm text-gray-500 mb-6">适合：每月 ≤10 个 SKU 的测试卖家</p>
+                <p className="text-sm text-gray-400 mb-6">适合：每月 ≤10 个 SKU 的测试卖家</p>
                 <ul className="space-y-3 mb-8">
                   {[
                     '每月10次合规检测',
@@ -96,8 +96,8 @@ export default function PricingPage() {
                     '巴西ANVISA规则',
                     '墨西哥COFEPRIS规则',
                   ].map((item, idx) => (
-                    <li key={idx} className="flex items-center text-gray-600">
-                      <Check className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                    <li key={idx} className="flex items-center text-gray-300">
+                      <Check className="w-5 h-5 text-[#00A86B] mr-3 flex-shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -122,32 +122,35 @@ export default function PricingPage() {
             </Card>
 
             {/* Pro */}
-            <Card className="border-2 border-[#0A4D8C] relative overflow-hidden bg-gradient-to-b from-[#0A4D8C]/5 to-white">
-              <div className="absolute top-0 right-0 bg-[#0A4D8C] text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+            <Card className="border-2 border-[#0A4D8C] relative overflow-hidden bg-gradient-to-b from-[#0A4D8C]/20 to-[#00A86B]/10">
+              <div className="absolute top-0 right-0 bg-gradient-to-l from-[#0A4D8C] to-[#00A86B] text-white text-sm font-bold px-4 py-1.5 rounded-bl-lg">
                 最划算 — 卖家首选
               </div>
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Pro</h3>
+              <CardContent className="p-6 md:p-8">
+                <div className="inline-block rounded-full bg-[#0A4D8C]/30 px-3 py-1 text-xs font-bold text-[#00A86B] mb-4">
+                  卖家首选
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">Pro</h3>
                 <div className="flex items-baseline mb-2">
                   {yearly ? (
                     <>
-                      <span className="text-lg text-gray-400 line-through mr-2">$348</span>
-                      <span className="text-4xl md:text-5xl font-extrabold text-gray-900">$245</span>
-                      <span className="text-gray-500 ml-2">/年</span>
+                      <span className="text-lg text-gray-500 line-through mr-2">$348</span>
+                      <span className="text-4xl md:text-5xl font-extrabold text-white">$245</span>
+                      <span className="text-gray-400 ml-2">/年</span>
                     </>
                   ) : (
                     <>
-                      <span className="text-lg text-gray-400 line-through mr-2">$49</span>
-                      <span className="text-4xl md:text-5xl font-extrabold text-gray-900">$29</span>
+                      <span className="text-lg text-gray-500 line-through mr-2">$49</span>
+                      <span className="text-4xl md:text-5xl font-extrabold text-white">$29</span>
                       <span className="text-gray-500 ml-2">/月</span>
                     </>
                   )}
                 </div>
-                <p className="text-sm text-gray-500 mb-4">
+                <p className="text-sm text-gray-400 mb-4">
                   {yearly ? '折合约 ¥168/月 · 年付省 $103' : '折合约 ¥199/月 · 随时取消'}
                 </p>
-                <div className="mb-6 rounded-lg bg-red-50 border border-red-100 p-3">
-                  <p className="text-red-700 text-sm font-medium">
+                <div className="mb-6 rounded-lg bg-red-900/20 border border-red-800/30 p-3">
+                  <p className="text-red-400 text-sm font-medium">
                     ⚠️ ANVISA 单次违规罚款 ≈ R$ 10,000（≈ $1,700），够付 <span className="font-bold">58 个月</span> Pro
                   </p>
                 </div>
@@ -161,15 +164,15 @@ export default function PricingPage() {
                     '🌟 新市场优先体验（阿根廷/哥伦比亚 Q3）',
                     '🌟 专属合规顾问 1v1（年度订阅）',
                   ].map((item, idx) => (
-                    <li key={idx} className="flex items-center text-gray-600">
-                      <Check className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                    <li key={idx} className="flex items-center text-gray-300">
+                      <Check className="w-5 h-5 text-[#00A86B] mr-3 flex-shrink-0" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <SubscribeButton
                   priceId={yearly ? 'price_pro_yearly' : 'price_pro_monthly'}
-                  className="w-full bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25"
+                  className="w-full bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-[#0D0D12] hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25"
                 >
                   {yearly ? '解锁年付 Pro — $245/年' : '解锁无限次 — $29/月'}
                 </SubscribeButton>
@@ -180,39 +183,39 @@ export default function PricingPage() {
       </section>
 
       {/* Detailed Comparison */}
-      <section className="py-12 md:py-20 bg-white">
+      <section className="py-12 md:py-20 bg-[#1A1A24]">
         <div className="container-custom max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">详细功能对比</h2>
-          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-white text-center mb-4">详细功能对比</h2>
+          <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
             一目了然，选择最适合你的方案
           </p>
-          <div className="border border-gray-200 rounded-2xl overflow-hidden overflow-x-auto">
+          <div className="border border-[#252530] rounded-2xl overflow-hidden overflow-x-auto">
             <table className="w-full text-left">
-              <thead className="bg-gray-50">
+              <thead className="bg-[#252530]">
                 <tr>
-                  <th className="px-6 py-4 font-semibold text-gray-900">功能</th>
-                  <th className="px-6 py-4 font-semibold text-gray-900 text-center w-32">Free</th>
+                  <th className="px-6 py-4 font-semibold text-white">功能</th>
+                  <th className="px-6 py-4 font-semibold text-white text-center w-32">Free</th>
                   <th className="px-6 py-4 font-semibold text-[#0A4D8C] text-center w-32">Pro</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-100">
+              <tbody className="divide-y divide-[#252530]">
                 {features.map((f, i) => (
-                  <tr key={i} className="hover:bg-gray-50/50">
-                    <td className="px-6 py-4 text-gray-700 text-sm">{f.name}</td>
+                  <tr key={i} className="hover:bg-[#252530]/30">
+                    <td className="px-6 py-4 text-gray-300 text-sm">{f.name}</td>
                     <td className="px-6 py-4 text-center">
                       {f.free === true ? (
-                        <Check className="w-5 h-5 text-green-500 mx-auto" />
+                        <Check className="w-5 h-5 text-[#00A86B] mx-auto" />
                       ) : f.free === false ? (
-                        <X className="w-5 h-5 text-gray-300 mx-auto" />
+                        <X className="w-5 h-5 text-gray-600 mx-auto" />
                       ) : (
-                        <span className="text-gray-600 text-sm">{f.free}</span>
+                        <span className="text-gray-400 text-sm">{f.free}</span>
                       )}
                     </td>
                     <td className="px-6 py-4 text-center">
                       {f.pro === true ? (
-                        <Check className="w-5 h-5 text-green-500 mx-auto" />
+                        <Check className="w-5 h-5 text-[#00A86B] mx-auto" />
                       ) : (
-                        <span className="text-gray-600 text-sm font-medium">{f.pro}</span>
+                        <span className="text-gray-300 text-sm font-medium">{f.pro}</span>
                       )}
                     </td>
                   </tr>
@@ -224,7 +227,7 @@ export default function PricingPage() {
       </section>
 
       {/* Money-back / Trust */}
-      <section className="py-12 md:py-16 bg-gray-50">
+      <section className="py-12 md:py-16 bg-[#1A1A24]">
         <div className="container-custom max-w-4xl mx-auto">
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -232,10 +235,10 @@ export default function PricingPage() {
               { num: '99.9%', label: '服务可用性', desc: '全年稳定运行，不影响业务' },
               { num: '24h', label: '客服响应', desc: 'Pro 用户工作日 24h 内回复' },
             ].map((item, idx) => (
-              <div key={idx} className="bg-white rounded-2xl border border-gray-100 p-6 text-center shadow-sm">
+              <div key={idx} className="bg-[#1A1A24] rounded-2xl border border-[#252530] p-6 text-center">
                 <p className="text-3xl font-extrabold text-[#0A4D8C] mb-2">{item.num}</p>
-                <p className="font-semibold text-gray-900 mb-1">{item.label}</p>
-                <p className="text-sm text-gray-500">{item.desc}</p>
+                <p className="font-semibold text-white mb-1">{item.label}</p>
+                <p className="text-sm text-gray-400">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -243,14 +246,14 @@ export default function PricingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-12 md:py-20 bg-white">
+      <section className="py-12 md:py-20 bg-[#0D0D12]">
         <div className="container-custom max-w-3xl">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">定价常见问题</h2>
+          <h2 className="text-3xl font-bold text-white text-center mb-12">定价常见问题</h2>
           <div className="space-y-4">
             {faqs.map((item, idx) => (
-              <div key={idx} className="bg-gray-50 rounded-xl border border-gray-100 p-6">
-                <h3 className="font-semibold text-gray-900 mb-2">{item.q}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{item.a}</p>
+              <div key={idx} className="bg-[#1A1A24] rounded-xl border border-[#252530] p-6">
+                <h3 className="font-semibold text-white mb-2">{item.q}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{item.a}</p>
               </div>
             ))}
           </div>
@@ -263,12 +266,12 @@ export default function PricingPage() {
           <div className="mb-4 inline-flex items-center rounded-full bg-red-500 px-4 py-1.5 text-xs font-bold text-white shadow-lg animate-bounce">
             🔥 限时福利 · 本月注册送 5 次 Pro 体验
           </div>
-          <h2 className="text-3xl font-bold md:text-4xl mb-4">还有疑问？</h2>
+          <h2 className="text-3xl font-bold md:text-4xl mb-4 text-white">还有疑问？</h2>
           <p className="text-lg text-white/90 mb-8 max-w-xl mx-auto">
             先免费体验 10 次，觉得有用再升级。零风险，随时取消。
           </p>
           <Link href="/">
-            <Button className="bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold h-12 px-8 shadow-lg shadow-amber-500/25">
+            <Button className="bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-[#0D0D12] hover:from-[#f59e0b] hover:to-[#d97706] font-bold h-12 px-8 shadow-lg shadow-amber-500/25">
               免费开始检测
             </Button>
           </Link>

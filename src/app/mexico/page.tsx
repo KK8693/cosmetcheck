@@ -32,8 +32,8 @@ const cases = [
   {
     tag: '📝 Copy no conforme',
     tagColor: 'text-blue-300',
-    body: '"Listing con “anti-envejecimiento” — denunciado por profeco"',
-    result: '→ Cambiado a “revitalizante”, ventas +18% sin riesgo',
+    body: '"Listing con anti-arrugas — denunciado por profeco"',
+    result: '→ Cambiado a "revitalizante", ventas +18% sin riesgo',
   },
 ]
 
@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: '¿Cuáles ingredientes están prohibidos por COFEPRIS?',
-    a: 'COFEPRIS sigue los listados de la NOM-141 y otras normativas. Ejemplos: ácido retinoico en cosméticos (solo farmacéutico), plomo en labiales por encima de límites, mercurio, y ciertos conservantes como parabenos por encima de concentraciones permitidas. Nuestro motor escanea automáticamente contra estas listas.',
+    a: 'COFEPRIS sigue los listados del Acuerdo 2004 y sus modificaciones, así como la NOM-141. Ejemplos: ácido retinoico en cosméticos (solo farmacéutico), plomo en labiales por encima de límites, mercurio, y ciertos conservantes como parabenos por encima de concentraciones permitidas. Nuestro motor escanea automáticamente contra estas listas.',
   },
   {
     q: '¿Puedo usar CosmetCheck gratis?',
@@ -188,7 +188,7 @@ export default function MexicoPage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Palabras prohibidas en etiquetas</h3>
                 <p className="text-gray-600">
-                  Términos como &quot;tratamiento&quot;, &quot;cura&quot;, &quot;medicinal&quot; y &quot;anti-envejecimiento&quot; están estrictamente prohibidos en etiquetas de cosméticos. Nuestra IA identifica y sugiere alternativas compatibles.
+                  Términos como "tratamiento", "cura", "medicinal", "anti-arrugas" y "anti-edad" están estrictamente prohibidos en etiquetas de cosméticos, ya que implican propiedades medicinales según la Ley General de Salud. Nuestra IA identifica y sugiere alternativas conformes.
                 </p>
               </CardContent>
             </Card>
@@ -216,10 +216,10 @@ export default function MexicoPage() {
             </h2>
             <div className="space-y-4">
               {[
-                { title: 'NOM-141', desc: 'Productos de higiene y belleza. Limites máximos de metales pesados y conservantes permitidos.' },
-                { title: 'NOM-189', desc: 'Productos para la higiene y cuidado personal. Requisitos de etiquetado y advertencias obligatorias.' },
-                { title: 'COFEPRIS Acuerdo 2004', desc: 'Listado de sustancias prohibidas y restringidas en productos de higiene personal y cosméticos.' },
-                { title: 'NOM-072', desc: 'Etiquetado de productos preenvasados. Información comercial, sanitaria y de origen.' },
+                { title: 'NOM-141', desc: 'Productos de higiene y belleza. Límites máximos de metales pesados y conservantes permitidos.' },
+                { title: 'NOM-189', desc: 'Productos para la higiene y cuidado personal. Etiquetado y advertencias obligatorias (aplica a cosméticos).' },
+                { title: 'Acuerdo COFEPRIS 2004', desc: 'Acuerdo que establece los listados de sustancias prohibidas y restringidas en productos de higiene personal, cosméticos y perfumes.' },
+                { title: 'Ley General de Salud', desc: 'Ley Federal de Salud. Artículos 257-267 regulan cosméticos en México.' },
               ].map((item) => (
                 <div key={item.title} className="bg-white rounded-xl p-6 shadow-sm">
                   <div className="flex items-start gap-4">

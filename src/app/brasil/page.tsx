@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: 'Quais ingredientes são proibidos pela ANVISA?',
-    a: 'A ANVISA mantém uma lista atualizada de substâncias proibidas na RDC 15/2013. Exemplos incluem: hidroquinona em concentrações acima do permitido, mercúrio, chumbo em cosméticos, e certos conservantes como formaldeído liberadores acima dos limites. Nosso motor detecta automaticamente qualquer violação.',
+    a: 'A ANVISA mantém listas atualizadas de substâncias proibidas e restritas. A principal é a RDC 529/2021 (lista de proibidos) e RDC 530/2021 (lista de uso condicionado). Exemplos incluem: hidroquinona em concentrações acima do permitido, mercúrio, chumbo em cosméticos, e ciertos conservantes como formaldeído liberadores acima dos limites. Nosso motor detecta automaticamente qualquer violação.',
   },
   {
     q: 'Posso usar o CosmetCheck gratuitamente?',
@@ -216,10 +216,10 @@ export default function BrasilPage() {
             </h2>
             <div className="space-y-4">
               {[
-                { title: 'RDC 15/2013', desc: 'Lista de substâncias proibidas e restritas em produtos de higiene pessoal, cosméticos e perfumes.' },
-                { title: 'RDC 30/2010', desc: 'Regulamento técnico para produtos de higiene pessoal, cosméticos e perfumes.' },
-                { title: 'RDC 7/2015', desc: 'Requisitos para registro e notificação de produtos de higiene pessoal, cosméticos e perfumes.' },
-                { title: 'IN 26/2022', desc: 'Instrução normativa sobre rotulagem de produtos de higiene pessoal, cosméticos e perfumes.' },
+                { title: 'RDC 907/2024', desc: 'Regulamento técnico principal para produtos de higiene pessoal, cosméticos e perfumes (consolidado).' },
+                { title: 'RDC 529/2021', desc: 'Lista de substâncias proibidas em cosméticos (atualizada).' },
+                { title: 'RDC 530/2021', desc: 'Lista de substâncias de uso condicionado em cosméticos.' },
+                { title: 'RDC 30/2010', desc: 'Regulamento técnico base para produtos de higiene pessoal, cosméticos e perfumes.' },
               ].map((item) => (
                 <div key={item.title} className="bg-white rounded-xl p-6 shadow-sm">
                   <div className="flex items-start gap-4">

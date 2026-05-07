@@ -1,11 +1,13 @@
 import OpenAI from 'openai'
 
 function getOpenAI() {
-  if (!process.env.OPENAI_API_KEY) {
-    throw new Error('OPENAI_API_KEY is not configured')
+  const apiKey = process.env.OPENAI_API_KEY || process.env.DEEPSEEK_API_KEY
+  if (!apiKey) {
+    throw new Error('OPENAI_API_KEY or DEEPSEEK_API_KEY is not configured')
   }
   return new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey,
+    baseURL: 'https://api.deepseek.com',
   })
 }
 
