@@ -153,7 +153,7 @@ export function InteractiveDemo() {
                       <span className="text-red-400 ml-2">⚠️ 禁用成分</span>
                     </p>
                     <p className="text-red-400/70 text-xs mt-2">
-                      法规：{country === 'BR' ? 'ANVISA RDC 15/2013 禁止 Hydroquinone 用于美白产品' : 'COFEPRIS NOM-073-SSA1-2015 禁止 Hydroquinone 用于普通化妆品'}
+                      法规：{country === 'BR' ? 'ANVISA RDC 529/2021 禁止 Hydroquinone 用于美白产品' : 'COFEPRIS NOM-141 禁用 Hydroquinone 用于普通化妆品'}
                     </p>
                   </div>
                 </div>

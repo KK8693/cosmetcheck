@@ -44,9 +44,9 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     ruleType: 'prohibited',
     keyword: 'mercury',
     severity: 'critical',
-    message: 'Mercury (Mercúrio) is prohibited in cosmetics by ANVISA RDC 15/2013.',
+    message: 'Mercury (Mercúrio) is prohibited in cosmetics by ANVISA RDC 529/2021.',
     suggestion: 'Remove mercury compounds from the formula.',
-    source: 'ANVISA RDC 15/2013',
+    source: 'ANVISA RDC 529/2021',
   },
   {
     ruleId: 'BR-ING-002',
@@ -56,7 +56,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Lead (Chumbo) compounds are prohibited in cosmetics.',
     suggestion: 'Remove lead and its compounds from the formula.',
-    source: 'ANVISA RDC 15/2013',
+    source: 'ANVISA RDC 529/2021',
   },
   {
     ruleId: 'BR-ING-003',
@@ -66,7 +66,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Hydroquinone is restricted and generally prohibited in cosmetic products.',
     suggestion: 'Remove hydroquinone or reformulate as a pharmaceutical product.',
-    source: 'ANVISA RDC 15/2013',
+    source: 'ANVISA RDC 529/2021',
   },
   {
     ruleId: 'BR-ING-004',
@@ -76,7 +76,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Corticosteroids require medical prescription and cannot be in cosmetics.',
     suggestion: 'Remove corticosteroids - product must be registered as medicine.',
-    source: 'ANVISA RDC 15/2013',
+    source: 'ANVISA RDC 529/2021',
   },
   {
     ruleId: 'BR-ING-005',
@@ -86,7 +86,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Formaldehyde is prohibited in cosmetics except as preservative trace.',
     suggestion: 'Ensure formaldehyde concentration is below 0.2% or remove entirely.',
-    source: 'ANVISA RDC 15/2013',
+    source: 'ANVISA RDC 529/2021',
   },
   {
     ruleId: 'BR-ING-006',
@@ -96,7 +96,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'warning',
     message: 'Parabens are restricted - concentration limits apply.',
     suggestion: 'Verify total paraben concentration does not exceed 0.4% for single / 0.8% for mixtures.',
-    source: 'ANVISA RDC 15/2013',
+    source: 'ANVISA RDC 529/2021',
   },
   {
     ruleId: 'BR-ING-007',
@@ -106,7 +106,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'warning',
     message: 'Retinol (Vitamin A) concentration is restricted in cosmetics.',
     suggestion: 'Ensure retinol concentration does not exceed regulatory limits.',
-    source: 'ANVISA RDC 15/2013',
+    source: 'ANVISA RDC 529/2021',
   },
   // Label/Claim rules
   {
@@ -117,7 +117,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Cosmetics cannot claim medicinal or therapeutic properties.',
     suggestion: 'Remove terms like "treats", "cures", "medicinal" from product claims.',
-    source: 'ANVISA RDC 15/2013',
+    source: 'ANVISA RDC 529/2021',
   },
   {
     ruleId: 'BR-LBL-002',
@@ -127,7 +127,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Cosmetics cannot claim to cure, treat, or prevent diseases.',
     suggestion: 'Use cosmetic claims only (moisturizing, cleansing, beautifying).',
-    source: 'ANVISA RDC 15/2013',
+    source: 'ANVISA RDC 529/2021',
   },
   {
     ruleId: 'BR-LBL-003',
@@ -147,7 +147,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'warning',
     message: 'Brazil requires manufacturer/distributor name and address on the label.',
     suggestion: 'Add manufacturer name, CNPJ, and complete address to the label.',
-    source: 'ANVISA RDC 15/2013',
+    source: 'ANVISA RDC 529/2021',
   },
   {
     ruleId: 'BR-LBL-005',
@@ -157,7 +157,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'warning',
     message: 'Ingredient list in INCI nomenclature is mandatory.',
     suggestion: 'Include full ingredient list in INCI standard format.',
-    source: 'ANVISA RDC 15/2013',
+    source: 'ANVISA RDC 529/2021',
   },
   {
     ruleId: 'BR-LBL-006',
@@ -167,7 +167,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'info',
     message: 'Products sold in Brazil require ANVISA registration number.',
     suggestion: 'Obtain ANVISA registration before commercialization.',
-    source: 'ANVISA RDC 15/2013',
+    source: 'ANVISA RDC 529/2021',
   },
 ]
 
