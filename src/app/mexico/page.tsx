@@ -188,7 +188,7 @@ export default function MexicoPage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Palabras prohibidas en etiquetas</h3>
                 <p className="text-gray-600">
-                  Términos como "tratamiento", "cura", "medicinal", "anti-arrugas" y "anti-edad" están estrictamente prohibidos en etiquetas de cosméticos, ya que implican propiedades medicinales según la Ley General de Salud. Nuestra IA identifica y sugiere alternativas conformes.
+Términos como &quot;tratamiento&quot;, &quot;cura&quot;, &quot;medicinal&quot;, &quot;anti-arrugas&quot; y &quot;anti-edad&quot; están estrictamente prohibidos en etiquetas de cosméticos, ya que implican propiedades medicinales según la Ley General de Salud. Nuestra IA identifica y sugiere alternativas conformes.
                 </p>
               </CardContent>
             </Card>
