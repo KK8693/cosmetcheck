@@ -65,8 +65,8 @@ export function PricingSection() {
           {/* Pro 卡 */}
           <Card className="border-2 border-[#00A86B]/50 relative overflow-hidden bg-[#1A1A24]">
             {/* 推荐标签 */}
-            <div className="absolute -top-px -right-12">
-              <div className="bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 text-xs font-bold px-8 py-1 rotate-45 shadow-lg">
+            <div className="absolute -top-px -right-14">
+              <div className="bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 text-sm font-bold px-10 py-2 rotate-45 shadow-lg">
                 🥇 推荐
               </div>
             </div>
