@@ -203,7 +203,7 @@ export function HeroSection() {
               </button>
             )}
           </div>
-          <div className="mx-auto max-w-4xl text-center">
+          <div className="mx-auto max-w-full md:max-w-4xl text-center">
             {/* SocialProofBar - 增强版数据徽章 */}
             <div className="mb-6 inline-flex flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-medium backdrop-blur">
               <span className="inline-flex items-center">
@@ -244,7 +244,7 @@ export function HeroSection() {
             </div>
 
             {/* 真实案例卡 - 新增 */}
-            <div className="mx-auto max-w-2xl mb-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div className="mx-auto max-w-full md:max-w-2xl mb-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
               {[
                 {
                   tag: '禁用成分',
@@ -276,7 +276,7 @@ export function HeroSection() {
               ))}
             </div>
 
-            <p className="mx-auto mb-10 max-w-2xl text-lg text-white/90 md:text-xl">
+            <p className="mx-auto mb-10 max-w-full md:max-w-2xl text-lg text-white/90 md:text-xl">
               一键检测巴西/墨西哥等5国合规，AI自动生成高转化Listing — 免费开始
             </p>
 
@@ -314,7 +314,7 @@ export function HeroSection() {
                   value={productName}
                   onChange={(e) => setProductName(e.target.value)}
                   placeholder="产品名称（如：Vitamin C Serum）"
-                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50"
+                  className="w-full md:w-auto border-white/20 bg-white/10 text-white placeholder:text-white/50"
                 />
               </div>
 
@@ -366,7 +366,7 @@ export function HeroSection() {
 
             {/* Check Results */}
             {resultToShow && (
-              <div className="mx-auto max-w-xl mt-6 rounded-2xl bg-white p-6 text-left text-gray-900">
+              <div className="mx-auto max-w-full md:max-w-xl mt-6 rounded-2xl bg-white p-4 md:p-6 text-left text-gray-900">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-lg font-bold">检测结果</h3>
                   <span
@@ -441,7 +441,7 @@ export function HeroSection() {
 
             {/* Generated Listing */}
             {generatedListing && (
-              <div className="mx-auto max-w-xl mt-6 rounded-2xl bg-white p-6 text-left text-gray-900">
+              <div className="mx-auto max-w-full md:max-w-xl mt-6 rounded-2xl bg-white p-4 md:p-6 text-left text-gray-900">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-lg font-bold">AI生成的合规Listing</h3>
                   <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#0A4D8C]/10 text-[#0A4D8C]">
