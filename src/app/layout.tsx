@@ -40,7 +40,7 @@ export default function RootLayout({
       <body className={`${inter.className} ${spaceGrotesk.variable} ${dmSans.variable}`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

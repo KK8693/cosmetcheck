@@ -2,11 +2,11 @@ import { Card, CardContent } from '@/components/ui/card'
 
 export function UseCasesSection() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-[#1E1E28]">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-4">谁在用 CosmetCheck</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">覆盖拉美美妆出海的典型场景</p>
+          <h2 className="text-3xl font-bold text-white md:text-4xl mb-4">谁在用 CosmetCheck</h2>
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto">覆盖拉美美妆出海的典型场景</p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {[
@@ -26,13 +26,13 @@ export function UseCasesSection() {
               highlight: '全渠道',
             },
           ].map((item, idx) => (
-            <Card key={idx} className="border-0 shadow-sm hover:shadow-md transition-shadow">
+            <Card key={idx} className="border-0 shadow-sm hover:shadow-md transition-all bg-[#252530] border-l-4 border-l-[#0A4D8C]">
               <CardContent className="p-8">
-                <div className="inline-block rounded-full bg-[#0A4D8C]/10 px-3 py-1 text-xs font-semibold text-[#0A4D8C] mb-4">
+                <div className="inline-block rounded-full bg-[#0A4D8C]/20 px-3 py-1 text-xs font-semibold text-[#00A86B] mb-4">
                   {item.highlight}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+                <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
+                <p className="text-gray-400 leading-relaxed">{item.desc}</p>
               </CardContent>
             </Card>
           ))}

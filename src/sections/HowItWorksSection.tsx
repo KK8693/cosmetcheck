@@ -1,10 +1,10 @@
 export function HowItWorksSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-[#1A1A24]">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-4">三步完成合规检测</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">从成分输入到Listing生成，全程AI辅助，无需法规背景</p>
+          <h2 className="text-3xl font-bold text-white md:text-4xl mb-4">三步完成合规检测</h2>
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto">从成分输入到Listing生成，全程AI辅助，无需法规背景</p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {[
@@ -28,11 +28,11 @@ export function HowItWorksSection() {
             },
           ].map((item) => (
             <div key={item.step} className="relative">
-              <div className="rounded-2xl border border-gray-100 bg-gray-50/50 p-8 hover:shadow-lg transition-shadow">
+              <div className="rounded-2xl border border-gray-700/50 bg-[#252530]/50 p-8 hover:shadow-lg hover:border-[#0A4D8C]/30 transition-all">
                 <div className="text-4xl mb-4">{item.icon}</div>
-                <div className="text-sm font-bold text-[#0A4D8C] mb-2">步骤 {item.step}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+                <div className="text-sm font-bold text-[#00A86B] mb-2">步骤 {item.step}</div>
+                <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
+                <p className="text-gray-400 leading-relaxed">{item.desc}</p>
               </div>
             </div>
           ))}

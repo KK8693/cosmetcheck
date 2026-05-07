@@ -21,7 +21,7 @@ export default function HomePage() {
       <FooterCTASection />
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-12">
+      <footer className="bg-[#08080C] text-gray-400 py-12">
         <div className="container-custom">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>

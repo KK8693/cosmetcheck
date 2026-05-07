@@ -44,27 +44,27 @@ export function InteractiveDemo() {
   }, [])
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-[#1A1A24]">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-4">
+          <h2 className="text-3xl font-bold text-white md:text-4xl mb-4">
             30 秒看懂：你的产品会不会被下架
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
             输入一个真实成分，看 AI 如何 3 步拦截风险 → 生成合规 Listing
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Left: Input Area */}
-          <Card className="border-2 border-gray-100">
+          <Card className="border-2 border-[#00A86B]/30 bg-[#252530] shadow-lg shadow-[#00A86B]/10 hover:border-[#00A86B]/60 transition-all duration-500">
             <CardContent className="p-6">
-              <Label className="text-sm font-semibold text-gray-700 mb-3 block">
+              <Label className="text-sm font-semibold text-white mb-3 block">
                 输入产品成分
               </Label>
               <textarea
                 defaultValue={DEMO_INGREDIENTS}
-                className="w-full h-24 px-4 py-3 rounded-lg border border-gray-200 text-sm font-mono bg-gray-50 mb-4 resize-none"
+                className="w-full h-24 px-4 py-3 rounded-lg border border-gray-700 text-sm font-mono bg-[#1E1E28] text-white mb-4 resize-none placeholder:text-gray-500"
                 placeholder="输入成分，用逗号分隔"
                 readOnly
               />
@@ -75,7 +75,7 @@ export function InteractiveDemo() {
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                     country === 'BR'
                       ? 'bg-[#0A4D8C] text-white'
-                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                      : 'bg-[#1E1E28] text-gray-300 hover:bg-[#252530]'
                   }`}
                 >
                   🇧🇷 巴西 ANVISA
@@ -85,7 +85,7 @@ export function InteractiveDemo() {
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                     country === 'MX'
                       ? 'bg-[#0A4D8C] text-white'
-                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                      : 'bg-[#1E1E28] text-gray-300 hover:bg-[#252530]'
                   }`}
                 >
                   🇲🇽 墨西哥 COFEPRIS
@@ -103,7 +103,7 @@ export function InteractiveDemo() {
                 <Button
                   onClick={resetDemo}
                   variant="outline"
-                  className="w-full font-semibold"
+                  className="w-full font-semibold border-[#0A4D8C] text-white hover:bg-[#0A4D8C]/20"
                 >
                   🔄 重新演示
                 </Button>
@@ -116,9 +116,9 @@ export function InteractiveDemo() {
           </Card>
 
           {/* Right: Result Preview (Mac window style) */}
-          <div className="rounded-2xl border border-gray-200 bg-white shadow-xl overflow-hidden">
+          <div className="rounded-2xl border-2 border-[#00A86B]/30 bg-[#1E1E28] shadow-xl shadow-[#00A86B]/10 hover:border-[#00A86B]/60 transition-all duration-500 overflow-hidden">
             {/* Mac window header */}
-            <div className="bg-gray-100 px-4 py-3 flex items-center gap-2 border-b border-gray-200">
+            <div className="bg-[#252530] px-4 py-3 flex items-center gap-2 border-b border-gray-700">
               <div className="w-3 h-3 rounded-full bg-red-400" />
               <div className="w-3 h-3 rounded-full bg-yellow-400" />
               <div className="w-3 h-3 rounded-full bg-green-400" />
@@ -136,24 +136,24 @@ export function InteractiveDemo() {
 
               {step === 'scanning' && (
                 <div className="space-y-2">
-                  <p className="text-gray-600">$ cosmetcheck scan --country={country}</p>
-                  <p className="text-blue-600 animate-pulse">▋ 扫描成分中...</p>
+                  <p className="text-gray-400">$ cosmetcheck scan --country={country}</p>
+                  <p className="text-[#00A86B] animate-pulse">▋ 扫描成分中...</p>
                   <p className="text-gray-500">分析 5 种成分...</p>
                 </div>
               )}
 
               {step === 'violation' && (
                 <div className="space-y-3">
-                  <p className="text-gray-600">$ cosmetcheck scan --country={country}</p>
-                  <p className="text-green-600">✓ 扫描完成</p>
-                  <hr className="border-gray-200" />
-                  <p className="text-red-600 font-bold">❌ 检测到违规成分</p>
-                  <div className="bg-red-50 rounded-lg p-3 border border-red-200">
-                    <p className="text-red-700">
+                  <p className="text-gray-400">$ cosmetcheck scan --country={country}</p>
+                  <p className="text-[#00A86B]">✓ 扫描完成</p>
+                  <hr className="border-gray-700" />
+                  <p className="text-red-400 font-bold">❌ 检测到违规成分</p>
+                  <div className="bg-red-900/20 rounded-lg p-3 border border-red-800/50">
+                    <p className="text-red-400">
                       <span className="line-through">Hydroquinone</span> 
-                      <span className="text-red-500 ml-2">⚠️ 禁用成分</span>
+                      <span className="text-red-400 ml-2">⚠️ 禁用成分</span>
                     </p>
-                    <p className="text-red-600 text-xs mt-2">
+                    <p className="text-red-400/70 text-xs mt-2">
                       法规：{country === 'BR' ? 'ANVISA RDC 15/2013 禁止 Hydroquinone 用于美白产品' : 'COFEPRIS NOM-073-SSA1-2015 禁止 Hydroquinone 用于普通化妆品'}
                     </p>
                   </div>
@@ -162,22 +162,22 @@ export function InteractiveDemo() {
 
               {step === 'fixed' && (
                 <div className="space-y-3">
-                  <p className="text-gray-600">$ cosmetcheck scan --country={country}</p>
-                  <p className="text-green-600">✓ 扫描完成</p>
-                  <hr className="border-gray-200" />
-                  <p className="text-red-600">❌ 检测到违规成分 → 自动替换</p>
-                  <div className="bg-red-50 rounded-lg p-3 border border-red-200 mb-3">
-                    <p className="text-red-700">
+                  <p className="text-gray-400">$ cosmetcheck scan --country={country}</p>
+                  <p className="text-[#00A86B]">✓ 扫描完成</p>
+                  <hr className="border-gray-700" />
+                  <p className="text-yellow-400">❌ 检测到违规成分 → 自动替换</p>
+                  <div className="bg-yellow-900/20 rounded-lg p-3 border border-yellow-800/50 mb-3">
+                    <p className="text-yellow-400">
                       <span className="line-through">Hydroquinone</span> 
-                      <span className="text-green-600 ml-2">✓ 已替换为 Alpha Arbutin</span>
+                      <span className="text-[#00A86B] ml-2">✓ 已替换为 Alpha Arbutin</span>
                     </p>
                   </div>
-                  <p className="text-green-600 font-bold">✓ AI 生成合规 Listing</p>
-                  <div className="bg-green-50 rounded-lg p-3 border border-green-200">
-                    <p className="text-gray-900 font-semibold">
+                  <p className="text-[#00A86B] font-bold">✓ AI 生成合规 Listing</p>
+                  <div className="bg-[#00A86B]/10 rounded-lg p-3 border border-[#00A86B]/30">
+                    <p className="text-white font-semibold">
                       {country === 'BR' ? 'Sérum Clareador com Alpha Arbutin - 30ml' : 'Suero Clarificante con Alpha Arbutin - 30ml'}
                     </p>
-                    <p className="text-gray-600 text-xs mt-1">
+                    <p className="text-[#00A86B] text-xs mt-1">
                       ⚠️ 此产品符合 {country === 'BR' ? 'ANVISA' : 'COFEPRIS'} 法规要求
                     </p>
                   </div>

@@ -42,19 +42,19 @@ export function FAQSection() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null)
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-[#0D0D12]">
       <div className="container-custom max-w-3xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-4">常见问题</h2>
+          <h2 className="text-3xl font-bold text-white md:text-4xl mb-4">常见问题</h2>
         </div>
         <div className="space-y-4">
           {faqs.map((item, idx) => (
-            <div key={idx} className="border border-gray-100 rounded-xl overflow-hidden">
+            <div key={idx} className="border border-[#252530] rounded-xl overflow-hidden bg-[#1A1A24]">
               <button
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-[#252530] transition-colors"
                 onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
               >
-                <span className="font-semibold text-gray-900 pr-4">{item.q}</span>
+                <span className="font-semibold text-white pr-4">{item.q}</span>
                 <ChevronDown
                   className={`w-5 h-5 flex-shrink-0 text-gray-400 transition-transform duration-300 ease-out ${
                     activeFaq === idx ? 'rotate-180' : ''
@@ -66,7 +66,7 @@ export function FAQSection() {
                   activeFaq === idx ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <div className="px-6 pb-6 text-gray-600 leading-relaxed">
+                <div className="px-6 pb-6 text-gray-300 leading-relaxed">
                   {item.a}
                 </div>
               </div>
