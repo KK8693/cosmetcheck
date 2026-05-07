@@ -82,7 +82,8 @@ export function PricingSection() {
                 <span className="text-4xl md:text-5xl font-extrabold text-white">$29</span>
                 <span className="text-gray-400 ml-2">/月</span>
               </div>
-              <p className="text-sm text-gray-400 mb-4">折合约 ¥199/月 · 随时取消</p>
+              <p className="text-sm text-gray-400 mb-2">折合约 ¥199/月 · 随时取消</p>
+              <p className="text-xs text-gray-500 mb-4">* 价格不含税，自动续费</p>
               <div className="mb-6 rounded-lg bg-red-900/20 border border-red-800/30 p-3">
                 <p className="text-red-400 text-sm font-medium">
                   ⚠️ ANVISA 单次违规罚款 ≈ R$ 10,000（≈ $1,700），够付 <span className="font-bold">58 个月</span> Pro
