@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { CheckCircle, Shield, Globe, Zap } from 'lucide-react'
 import Link from 'next/link'
+import { Logo } from '@/components/Logo'
 
 export const metadata: Metadata = {
   title: 'CosmetCheck Brasil - Verificação de Conformidade ANVISA para Cosméticos',
@@ -327,7 +328,10 @@ export default function BrasilPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="text-white font-bold text-xl mb-4">CosmetCheck</div>
+              <div className="flex items-center gap-2 mb-4">
+                <Logo size={28} />
+                <span className="text-white font-bold text-xl">CosmetCheck</span>
+              </div>
               <p className="text-sm">拉美美妆合规检测专家，让出海更简单。</p>
             </div>
             <div>
@@ -355,8 +359,9 @@ export default function BrasilPage() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8 text-sm text-center">
-            © 2025 CosmetCheck. All rights reserved.
+          <div className="border-t border-gray-800 pt-8 text-sm text-center flex items-center justify-center gap-2">
+            <Logo size={16} />
+            <span>© 2025 CosmetCheck. All rights reserved.</span>
           </div>
         </div>
       </footer>

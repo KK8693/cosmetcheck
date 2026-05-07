@@ -6,6 +6,7 @@ import { InteractiveDemo } from '@/components/InteractiveDemo'
 import { PricingSection } from '@/sections/PricingSection'
 import { FAQSection } from '@/sections/FAQSection'
 import { FooterCTASection } from '@/sections/FooterCTASection'
+import { Logo } from '@/components/Logo'
 
 export default function HomePage() {
   return (
@@ -24,7 +25,10 @@ export default function HomePage() {
         <div className="container-custom">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="text-white font-bold text-xl mb-4">CosmetCheck</div>
+              <div className="flex items-center gap-2 mb-4">
+                <Logo size={28} />
+                <span className="text-white font-bold text-xl">CosmetCheck</span>
+              </div>
               <p className="text-sm">拉美美妆合规检测专家，让出海更简单。</p>
             </div>
             <div>
@@ -52,8 +56,9 @@ export default function HomePage() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8 text-sm text-center">
-            © 2025 CosmetCheck. All rights reserved.
+          <div className="border-t border-gray-800 pt-8 text-sm text-center flex items-center justify-center gap-2">
+            <Logo size={16} />
+            <span>© 2025 CosmetCheck. All rights reserved.</span>
           </div>
         </div>
       </footer>
