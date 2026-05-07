@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk, DM_Sans } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { AuthProvider } from '@/contexts/AuthContext'
+import { CookieConsent } from '@/components/CookieConsent'
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', preload: true })
 const spaceGrotesk = Space_Grotesk({ 
@@ -46,6 +47,7 @@ export default function RootLayout({
         >
           <AuthProvider>
             {children}
+            <CookieConsent />
           </AuthProvider>
         </ThemeProvider>
       </body>

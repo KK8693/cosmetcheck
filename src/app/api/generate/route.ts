@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { generateListing } from '@/lib/ai'
+import { moderateContent, getModerationWarnings } from '@/lib/moderation'
 
 export const runtime = 'edge'
 
@@ -38,6 +39,18 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Moderate user input before generation
+    const userInput = `${productName} ${ingredients || ''} ${benefits || ''}`
+    const inputModeration = await moderateContent(userInput)
+    
+    if (inputModeration.flagged) {
+      const warnings = getModerationWarnings(inputModeration)
+      return NextResponse.json(
+        { error: 'Content violates our usage policy', details: warnings },
+        { status: 400 }
+      )
+    }
+
     const result = await generateListing({
       productName,
       ingredients,
@@ -47,6 +60,22 @@ export async function POST(request: NextRequest) {
       tone,
       checkResult,
     })
+
+    // Moderate AI-generated output
+    const outputText = `${result.title} ${result.description} ${result.bulletPoints.join(' ')}`
+    const outputModeration = await moderateContent(outputText)
+    
+    if (outputModeration.flagged) {
+      const warnings = getModerationWarnings(outputModeration)
+      console.warn('AI output flagged:', warnings)
+      // Log but don't block - let user review with warning
+      return NextResponse.json({
+        success: true,
+        data: result,
+        warning: 'AI-generated content requires manual review',
+        moderationWarnings: warnings,
+      })
+    }
 
     return NextResponse.json({
       success: true,
