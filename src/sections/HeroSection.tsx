@@ -61,7 +61,7 @@ export function HeroSection() {
   const [checkResult, setCheckResult] = useState<CheckResult | null>(null)
   const [checkError, setCheckError] = useState('')
   const [authOpen, setAuthOpen] = useState(false)
-  const { user, signOut, quotaUsed, quotaLimit } = useAuth()
+  const { user, signOut, quotaUsed, quotaLimit, setQuotaUsed } = useAuth()
 
   // AI Generation state
   const [productName, setProductName] = useState('Whitening Serum')

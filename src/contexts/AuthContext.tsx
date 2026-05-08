@@ -12,6 +12,7 @@ interface AuthContextType {
   signOut: () => Promise<void>
   quotaUsed: number
   quotaLimit: number
+  setQuotaUsed: (value: number | ((prev: number) => number)) => void
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
@@ -92,6 +93,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       signOut,
       quotaUsed,
       quotaLimit,
+      setQuotaUsed,
     }}>
       {children}
     </AuthContext.Provider>
