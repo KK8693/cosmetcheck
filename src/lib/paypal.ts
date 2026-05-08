@@ -1,5 +1,3 @@
-import { NextRequest, NextResponse } from 'next/server'
-
 // PayPal API configuration
 const PAYPAL_API_BASE = process.env.PAYPAL_ENVIRONMENT === 'production'
   ? 'https://api-m.paypal.com'
