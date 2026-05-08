@@ -3,6 +3,11 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 
+// PayPal Plan IDs (should match .env.local)
+const PAYPAL_PLANS = {
+  pro_monthly: process.env.NEXT_PUBLIC_PAYPAL_PRO_MONTHLY_PLAN_ID || 'P-1BS751417C578393RNH6VPGA',
+}
+
 interface SubscribeButtonProps {
   planId?: string
   children: React.ReactNode
@@ -11,7 +16,7 @@ interface SubscribeButtonProps {
 }
 
 export default function SubscribeButton({
-  planId,
+  planId = 'pro_monthly',
   children,
   variant = 'default',
   className,
@@ -21,13 +26,15 @@ export default function SubscribeButton({
   const handleSubscribe = async () => {
     setLoading(true)
     try {
+      // Get the actual Plan ID
+      const planIdValue = PAYPAL_PLANS[planId as keyof typeof PAYPAL_PLANS] || planId
+
       const response = await fetch('/api/paypal/subscription', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          planId,
-          successUrl: `${window.location.origin}/success`,
-          cancelUrl: `${window.location.origin}/pricing`,
+          planId: planIdValue,
+          // TODO: Pass customerId from auth context when available
         }),
       })
 
@@ -38,10 +45,14 @@ export default function SubscribeButton({
       }
 
       // Redirect to PayPal for approval
-      window.location.href = data.approvalUrl
+      if (data.approvalUrl) {
+        window.location.href = data.approvalUrl
+      } else {
+        throw new Error('No approval URL received')
+      }
     } catch (err: Error | unknown) {
-      console.error('Subscription error:', err)
-      const message = err instanceof Error ? err.message : '支付失败，请重试'
+      console.error('Subscribe error:', err)
+      const message = err instanceof Error ? err.message : 'Payment failed. Please try again.'
       alert(message)
     } finally {
       setLoading(false)

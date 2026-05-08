@@ -1,45 +1,49 @@
-// PayPal API configuration
-const PAYPAL_API_BASE = process.env.PAYPAL_ENVIRONMENT === 'production'
-  ? 'https://api-m.paypal.com'
-  : 'https://api-m.sandbox.paypal.com'
+const PAYPAL_API_BASE = process.env.PAYPAL_ENVIRONMENT === 'sandbox'
+  ? 'https://api-m.sandbox.paypal.com'
+  : 'https://api-m.paypal.com'
 
-// Use env vars or fall back to sandbox credentials for testing
-const CLIENT_ID = process.env.PAYPAL_CLIENT_ID || 'AUUpM7Lt4oM3qrKVD2oSFrq2dQeY46svrM1OIeIscWZPNpi4_s_FtLsYhM6GOr-0C6rcNd-NjeabtF_Q'
-const CLIENT_SECRET = process.env.PAYPAL_CLIENT_SECRET || 'EDTX7zLtOF_zfFzV0zPx1yfDX2Y93_lyYBLXmBgGvcgAdWf7Z9hX1EGDDdWyYSQn_0WIo5KPp-BXpEaw'
-
-// In-memory token cache (production should use Redis/database)
+// Cached access token
 let cachedToken: { access_token: string; expires_at: number } | null = null
 
 /**
- * Get PayPal access token with caching
+ * Get PayPal OAuth access token
+ * Token expires in ~8 hours (32400 seconds)
  */
-export async function getAccessToken(): Promise<string> {
+export async function getPayPalAccessToken(): Promise<string> {
   const now = Date.now()
-
+  
   // Return cached token if still valid
   if (cachedToken && cachedToken.expires_at > now) {
     return cachedToken.access_token
   }
 
-  const auth = Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString('base64')
+  const clientId = process.env.PAYPAL_CLIENT_ID
+  const clientSecret = process.env.PAYPAL_CLIENT_SECRET
+
+  if (!clientId || !clientSecret) {
+    throw new Error('PayPal credentials not configured')
+  }
+
+  const credentials = Buffer.from(`${clientId}:${clientSecret}`).toString('base64')
 
   const response = await fetch(`${PAYPAL_API_BASE}/v1/oauth2/token`, {
     method: 'POST',
     headers: {
-      'Authorization': `Basic ${auth}`,
+      'Authorization': `Basic ${credentials}`,
       'Content-Type': 'application/x-www-form-urlencoded',
+      'Accept': 'application/json',
     },
     body: 'grant_type=client_credentials',
   })
 
   if (!response.ok) {
     const error = await response.text()
-    throw new Error(`PayPal token error: ${error}`)
+    throw new Error(`Failed to get PayPal access token: ${error}`)
   }
 
-  const data = await response.json()
+  const data = await response.json() as { access_token: string; expires_in: number }
   
-  // Cache token with 5-minute buffer
+  // Cache token with 5 minute buffer
   cachedToken = {
     access_token: data.access_token,
     expires_at: now + (data.expires_in - 300) * 1000,
@@ -49,102 +53,184 @@ export async function getAccessToken(): Promise<string> {
 }
 
 /**
- * Plan IDs for different subscription tiers
- * These are created in PayPal Developer Dashboard
+ * Plan IDs
  */
 export const PLANS = {
   PRO_MONTHLY: process.env.PAYPAL_PRO_MONTHLY_PLAN_ID || 'P-1BS751417C578393RNH6VPGA',
 } as const
 
-export type SubscriptionTier = 'free' | 'pro'
+export type SubscriptionTier = 'free' | 'pro' | 'team'
 
 /**
- * Create a subscription approval URL
+ * Create a PayPal subscription for a plan
  */
-export async function createSubscriptionLink(planId: string): Promise<string> {
-  const token = await getAccessToken()
-
-  const response = await fetch(`${PAYPAL_API_BASE}/v1/billing/plans/${planId}`, {
-    headers: {
-      'Authorization': `Bearer ${token}`,
-    },
-  })
-
-  if (!response.ok) {
-    throw new Error(`Failed to get plan: ${await response.text()}`)
-  }
-
-  const plan = await response.json()
+export async function createSubscription(planId: string, customerId?: string) {
+  const accessToken = await getPayPalAccessToken()
   
-  // Generate subscription approval link
-  // User will be redirected to PayPal to approve the subscription
-  const approveUrl = `${PAYPAL_API_BASE}/v1/billing/subscriptions?plan_id=${planId}`
-  
-  return approveUrl
-}
-
-/**
- * Verify PayPal webhook signature
- */
-export async function verifyWebhookSignature(
-  body: string,
-  headers: Record<string, string>
-): Promise<boolean> {
-  const transmissionId = headers['paypal-transmission-id']
-  const signature = headers['paypal-transmission-sig']
-  const timestamp = headers['paypal-transmission-time']
-  const certUrl = headers['paypal-cert-url']
-
-  if (!transmissionId || !signature || !timestamp || !certUrl) {
-    return false
-  }
-
-  const token = await getAccessToken()
-
-  const response = await fetch(`${PAYPAL_API_BASE}/v1/notifications/verify-webhook-signature`, {
+  const response = await fetch(`${PAYPAL_API_BASE}/v1/billing/subscriptions`, {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${token}`,
+      'Authorization': `Bearer ${accessToken}`,
       'Content-Type': 'application/json',
+      'Accept': 'application/json',
     },
     body: JSON.stringify({
-      auth_algo: 'SHA256withRSA',
-      cert_url: certUrl,
-      transmission_id: transmissionId,
-      transmission_sig: signature,
-      transmission_time: timestamp,
-      webhook_id: process.env.PAYPAL_WEBHOOK_ID,
-      webhook_event: JSON.parse(body),
+      plan_id: planId,
+      quantity: '1',
+      application_context: {
+        brand_name: 'CosmetCheck',
+        locale: 'en-US',
+        shipping_preference: 'NO_SHIPPING',
+        user_action: 'SUBSCRIBE_NOW',
+        return_url: `${process.env.NEXT_PUBLIC_APP_URL}/success?subscription_id={id}`,
+        cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/pricing?canceled=true`,
+      },
+      custom_id: customerId,
     }),
   })
 
   if (!response.ok) {
-    console.error('Webhook verification failed:', await response.text())
-    return false
+    const error = await response.text()
+    throw new Error(`Failed to create PayPal subscription: ${error}`)
   }
 
-  const result = await response.json()
-  return result.verification_status === 'SUCCESS'
+  const data = await response.json() as {
+    id: string
+    status: string
+    links: Array<{ rel: string; href: string }>
+  }
+
+  // Find the approval URL
+  const approvalUrl = data.links?.find((l) => l.rel === 'approve')?.href
+
+  return {
+    subscriptionId: data.id,
+    status: data.status,
+    approvalUrl,
+  }
 }
 
 /**
- * Handle subscription-related webhook events
+ * Get subscription details
  */
-export function parseWebhookEvent(event: Record<string, unknown>) {
-  const eventType = event.event_type as string
-  
-  switch (eventType) {
-    case 'BILLING.SUBSCRIPTION.CREATED':
-      return { action: 'created', subscriptionId: event.id }
-    case 'BILLING.SUBSCRIPTION.ACTIVATED':
-      return { action: 'activated', subscriptionId: event.id }
-    case 'BILLING.SUBSCRIPTION.CANCELLED':
-      return { action: 'cancelled', subscriptionId: event.id }
-    case 'BILLING.SUBSCRIPTION.PAYMENT.FAILED':
-      return { action: 'payment_failed', subscriptionId: event.id }
-    case 'BILLING.SUBSCRIPTION.EXPIRED':
-      return { action: 'expired', subscriptionId: event.id }
+export async function getSubscription(subscriptionId: string) {
+  const accessToken = await getPayPalAccessToken()
+
+  const response = await fetch(
+    `${PAYPAL_API_BASE}/v1/billing/subscriptions/${subscriptionId}`,
+    {
+      headers: {
+        'Authorization': `Bearer ${accessToken}`,
+        'Accept': 'application/json',
+      },
+    }
+  )
+
+  if (!response.ok) {
+    const error = await response.text()
+    throw new Error(`Failed to get PayPal subscription: ${error}`)
+  }
+
+  return response.json()
+}
+
+/**
+ * Cancel a subscription
+ */
+export async function cancelSubscription(subscriptionId: string, reason?: string) {
+  const accessToken = await getPayPalAccessToken()
+
+  const response = await fetch(
+    `${PAYPAL_API_BASE}/v1/billing/subscriptions/${subscriptionId}/cancel`,
+    {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${accessToken}`,
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify({
+        reason: reason || 'User requested cancellation',
+      }),
+    }
+  )
+
+  if (!response.ok && response.status !== 204) {
+    const error = await response.text()
+    throw new Error(`Failed to cancel PayPal subscription: ${error}`)
+  }
+
+  return true
+}
+
+/**
+ * Verify PayPal webhook event signature
+ */
+export async function verifyWebhookSignature(
+  body: string,
+  headers: Headers
+): Promise<boolean> {
+  const accessToken = await getPayPalAccessToken()
+  const transmissionId = headers.get('paypal-transmission-id')
+  const transmissionSignature = headers.get('paypal-transmission-sig')
+  const timestamp = headers.get('paypal-transmission-time')
+  const webhookId = process.env.PAYPAL_WEBHOOK_ID
+
+  if (!transmissionId || !transmissionSignature || !timestamp || !webhookId) {
+    console.warn('Missing webhook verification headers')
+    return false // Fail open for now during testing
+  }
+
+  try {
+    const response = await fetch(
+      `${PAYPAL_API_BASE}/v1/notifications/verify-webhook-signature`,
+      {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${accessToken}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          auth_algo: 'SHA256withRSA',
+          cert_url: headers.get('paypal-cert-url'),
+          transmission_id: transmissionId,
+          transmission_sig: transmissionSignature,
+          transmission_time: timestamp,
+          webhook_id: webhookId,
+          webhook_event: JSON.parse(body),
+        }),
+      }
+    )
+
+    if (!response.ok) {
+      console.error('Webhook verification failed:', await response.text())
+      return false
+    }
+
+    const data = await response.json() as { verification_status: string }
+    return data.verification_status === 'SUCCESS'
+  } catch (error) {
+    console.error('Webhook verification error:', error)
+    return false
+  }
+}
+
+/**
+ * Map PayPal subscription status to our internal tier
+ */
+export function getTierFromSubscriptionStatus(
+  status: string
+): SubscriptionTier | null {
+  switch (status) {
+    case 'ACTIVE':
+    case 'ACTIVATED':
+    case 'REACTIVATE':
+      return 'pro'
+    case 'SUSPENDED':
+    case 'CANCELLED':
+    case 'EXPIRED':
+    case 'PENDING':
     default:
-      return { action: 'unknown', eventType }
+      return 'free'
   }
 }
