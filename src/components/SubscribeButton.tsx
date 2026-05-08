@@ -2,29 +2,16 @@
 
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
-import type { Stripe } from '@stripe/stripe-js'
-
-let stripePromise: Promise<Stripe | null> | null = null
-
-const getStripe = async () => {
-  if (!stripePromise) {
-    const { loadStripe } = await import('@stripe/stripe-js')
-    stripePromise = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-      ? loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
-      : null
-  }
-  return stripePromise
-}
 
 interface SubscribeButtonProps {
-  priceId: string
+  planId?: string
   children: React.ReactNode
   variant?: 'default' | 'outline'
   className?: string
 }
 
 export default function SubscribeButton({
-  priceId,
+  planId,
   children,
   variant = 'default',
   className,
@@ -32,35 +19,29 @@ export default function SubscribeButton({
   const [loading, setLoading] = useState(false)
 
   const handleSubscribe = async () => {
-    const stripe = await getStripe()
-    if (!stripe) {
-      alert('Stripe is not configured. Please contact support.')
-      return
-    }
-
     setLoading(true)
     try {
-      const response = await fetch('/api/stripe/checkout-session', {
+      const response = await fetch('/api/paypal/subscription', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          priceId,
-          successUrl: `${window.location.origin}?success=true`,
-          cancelUrl: `${window.location.origin}?canceled=true`,
+          planId,
+          successUrl: `${window.location.origin}/success`,
+          cancelUrl: `${window.location.origin}/pricing`,
         }),
       })
 
       const data = await response.json()
 
       if (!response.ok) {
-        throw new Error(data.error || 'Failed to create checkout session')
+        throw new Error(data.error || 'Failed to create subscription')
       }
 
-      // Redirect to Stripe Checkout
-      window.location.href = data.url
+      // Redirect to PayPal for approval
+      window.location.href = data.approvalUrl
     } catch (err: Error | unknown) {
-      console.error('Checkout error:', err)
-      const message = err instanceof Error ? err.message : 'Payment failed. Please try again.'
+      console.error('Subscription error:', err)
+      const message = err instanceof Error ? err.message : '支付失败，请重试'
       alert(message)
     } finally {
       setLoading(false)

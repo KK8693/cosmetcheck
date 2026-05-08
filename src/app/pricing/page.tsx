@@ -171,7 +171,6 @@ export default function PricingPage() {
                   ))}
                 </ul>
                 <SubscribeButton
-                  priceId={yearly ? 'price_pro_yearly' : 'price_pro_monthly'}
                   className="w-full bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-[#0D0D12] hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25"
                 >
                   {yearly ? '解锁年付 Pro — $245/年' : '解锁无限次 — $29/月'}

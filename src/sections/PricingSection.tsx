@@ -108,7 +108,6 @@ export function PricingSection() {
                 ))}
               </ul>
               <SubscribeButton
-                priceId="price_pro_monthly"
                 className="w-full bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25"
               >
                 解锁无限次 — $29/月
