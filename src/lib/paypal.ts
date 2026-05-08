@@ -64,6 +64,8 @@ export type SubscriptionTier = 'free' | 'pro' | 'team'
 /**
  * Create a PayPal subscription for a plan
  */
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://cosmetcheck.pages.dev'
+
 export async function createSubscription(planId: string, customerId?: string) {
   const accessToken = await getPayPalAccessToken()
   
@@ -83,8 +85,8 @@ export async function createSubscription(planId: string, customerId?: string) {
         shipping_preference: 'NO_SHIPPING',
         user_action: 'SUBSCRIBE_NOW',
         // PayPal 会自动把 token 作为查询参数附加到此 URL
-        return_url: `${process.env.NEXT_PUBLIC_APP_URL}/success`,
-        cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/pricing?canceled=true`,
+        return_url: `${APP_URL}/success`,
+        cancel_url: `${APP_URL}/pricing?canceled=true`,
       },
       custom_id: customerId,
     }),
