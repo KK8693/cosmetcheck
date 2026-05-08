@@ -82,7 +82,8 @@ export async function createSubscription(planId: string, customerId?: string) {
         locale: 'en-US',
         shipping_preference: 'NO_SHIPPING',
         user_action: 'SUBSCRIBE_NOW',
-        return_url: `${process.env.NEXT_PUBLIC_APP_URL}/success?subscription_id={id}`,
+        // PayPal 会自动把 token 作为查询参数附加到此 URL
+        return_url: `${process.env.NEXT_PUBLIC_APP_URL}/success`,
         cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/pricing?canceled=true`,
       },
       custom_id: customerId,

@@ -12,17 +12,41 @@ function SuccessContent() {
   const token = searchParams.get('token')
 
   useEffect(() => {
-    if (subscriptionId) {
-      fetch(`/api/paypal/subscription?subscription_id=${subscriptionId}`)
-        .then(res => res.json())
-        .then(data => {
+    const fetchSubscription = async () => {
+      // 情况1: 直接有 subscription_id (从 webhook 或其他途径)
+      if (subscriptionId) {
+        try {
+          const res = await fetch(`/api/paypal/subscription?subscription_id=${subscriptionId}`)
+          const data = await res.json()
           if (data.status === 'ACTIVE') {
             setStatus('confirmed')
           }
-        })
-        .catch(console.error)
+        } catch (e) {
+          console.error('Failed to fetch subscription:', e)
+        }
+        return
+      }
+
+      // 情况2: 有 token，需要用 token 换取 subscription_id (PayPal 回调)
+      if (token) {
+        try {
+          const res = await fetch(`/api/paypal/token-details?token=${token}`)
+          const data = await res.json()
+          if (data.subscriptionId) {
+            const subRes = await fetch(`/api/paypal/subscription?subscription_id=${data.subscriptionId}`)
+            const subData = await subRes.json()
+            if (subData.status === 'ACTIVE') {
+              setStatus('confirmed')
+            }
+          }
+        } catch (e) {
+          console.error('Failed to redeem token:', e)
+        }
+      }
     }
-  }, [subscriptionId])
+
+    fetchSubscription()
+  }, [subscriptionId, token])
 
   if (token && !subscriptionId) {
     return (
