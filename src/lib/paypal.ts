@@ -64,7 +64,7 @@ export type SubscriptionTier = 'free' | 'pro' | 'team'
 /**
  * Create a PayPal subscription for a plan
  */
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://cosmetcheck.pages.dev'
+const APP_URL = (process.env.NEXT_PUBLIC_APP_URL || 'https://cosmetcheck.pages.dev').trim()
 
 export async function createSubscription(planId: string, customerId?: string) {
   const accessToken = await getPayPalAccessToken()
