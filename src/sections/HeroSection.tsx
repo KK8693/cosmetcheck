@@ -141,6 +141,12 @@ export function HeroSection() {
       setGenerateError('请输入产品名称')
       return
     }
+    // Check login status
+    if (!user) {
+      setGenerateError('请先登录后再生成 Listing')
+      setAuthOpen(true)
+      return
+    }
     setGenerateError('')
     setIsGenerating(true)
     setGeneratedListing(null)
@@ -486,9 +492,17 @@ export function HeroSection() {
                   <Label className="text-xs font-semibold text-gray-500 mb-2 block">卖点</Label>
                   <ul className="space-y-2">
                     {generatedListing.bulletPoints.map((point, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-gray-700 bg-gray-50 rounded-lg p-3">
-                        <span className="text-[#0A4D8C] font-bold mt-0.5">•</span>
-                        {point}
+                      <li key={i} className="flex items-start justify-between gap-2 text-sm text-gray-700 bg-gray-50 rounded-lg p-3">
+                        <div className="flex items-start gap-2 flex-1">
+                          <span className="text-[#0A4D8C] font-bold mt-0.5">•</span>
+                          <span>{point}</span>
+                        </div>
+                        <button
+                          onClick={() => copyToClipboard(point)}
+                          className="text-xs text-[#0A4D8C] hover:underline shrink-0"
+                        >
+                          复制
+                        </button>
                       </li>
                     ))}
                   </ul>
