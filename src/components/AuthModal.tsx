@@ -14,13 +14,14 @@ interface AuthModalProps {
 
 export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
   const [isSignUp, setIsSignUp] = useState(false)
+  const [isForgotPassword, setIsForgotPassword] = useState(false)
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
 
-  const { signIn, signUp } = useAuth()
+  const { signIn, signUp, resetPassword } = useAuth()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -29,18 +30,37 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
     setLoading(true)
 
     try {
-      if (isSignUp) {
+      if (isForgotPassword) {
+        await resetPassword(email)
+        setSuccess('重置链接已发送到您的邮箱，请查收')
+      } else if (isSignUp) {
         await signUp(email, password)
-        setSuccess('Account created! Please check your email to confirm.')
+        setSuccess('注册成功！请登录')
+        setIsSignUp(false)
       } else {
         await signIn(email, password)
-        setSuccess('Welcome back!')
+        setSuccess('登录成功！')
         setTimeout(() => onOpenChange(false), 1000)
       }
     } catch (err: Error | unknown) {
-      setError(err instanceof Error ? err.message : 'Authentication failed')
+      setError(err instanceof Error ? err.message : '操作失败')
     } finally {
       setLoading(false)
+    }
+  }
+
+  // Reset form when modal closes
+  const handleOpenChange = (isOpen: boolean) => {
+    onOpenChange(isOpen)
+    if (!isOpen) {
+      setTimeout(() => {
+        setIsSignUp(false)
+        setIsForgotPassword(false)
+        setEmail('')
+        setPassword('')
+        setError('')
+        setSuccess('')
+      }, 300)
     }
   }
 

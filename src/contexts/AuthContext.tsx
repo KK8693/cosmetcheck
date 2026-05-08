@@ -10,6 +10,7 @@ interface AuthContextType {
   signIn: (email: string, password: string) => Promise<void>
   signUp: (email: string, password: string) => Promise<void>
   signOut: () => Promise<void>
+  resetPassword: (email: string) => Promise<void>
   quotaUsed: number
   quotaLimit: number
   setQuotaUsed: (value: number | ((prev: number) => number)) => void
@@ -84,6 +85,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     if (error) throw error
   }
 
+  const resetPassword = async (email: string) => {
+    const { error } = await supabase.auth.resetPasswordForEmail(email, {
+      redirectTo: `${window.location.origin}/reset-password`,
+    })
+    if (error) throw error
+  }
+
   return (
     <AuthContext.Provider value={{
       user,
@@ -91,6 +99,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       signIn,
       signUp,
       signOut,
+      resetPassword,
       quotaUsed,
       quotaLimit,
       setQuotaUsed,

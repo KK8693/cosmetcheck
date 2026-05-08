@@ -77,8 +77,9 @@ export async function POST(request: NextRequest) {
       checkResult,
     })
 
-    // Get identifier for quota tracking (IP address)
-    const identifier =
+    // Get identifier for quota tracking (prefer user email, fallback to IP)
+    const userEmail = request.headers.get('x-user-email')
+    const identifier = userEmail || 
       request.headers.get('x-forwarded-for')?.split(',')[0] ||
       request.headers.get('x-real-ip') ||
       'anonymous'

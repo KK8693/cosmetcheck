@@ -159,7 +159,10 @@ export function HeroSection() {
     try {
       const res = await fetch('/api/generate', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          ...(user?.email && { 'x-user-email': user.email }),
+        },
         body: JSON.stringify({
           productName,
           ingredients,
