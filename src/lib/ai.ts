@@ -98,7 +98,7 @@ export async function generateListing(
 ): Promise<GeneratedListing> {
   const openai = getOpenAI()
   const response = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
+    model: 'deepseek-chat',
     messages: [
       {
         role: 'system',

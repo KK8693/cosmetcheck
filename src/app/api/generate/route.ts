@@ -31,8 +31,9 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Check if OpenAI API key is configured
-    if (!process.env.OPENAI_API_KEY) {
+    // Check if AI API key is configured
+    const apiKey = process.env.OPENAI_API_KEY || process.env.DEEPSEEK_API_KEY
+    if (!apiKey) {
       return NextResponse.json(
         { error: 'AI generation service is not configured' },
         { status: 503 }

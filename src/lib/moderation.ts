@@ -1,6 +1,6 @@
 /**
  * AI Content Moderation utilities
- * Uses OpenAI Moderation API to check user inputs and AI outputs
+ * Uses DeepSeek/OpenAI Moderation API to check user inputs and AI outputs
  */
 
 interface ModerationResult {
@@ -10,34 +10,86 @@ interface ModerationResult {
 }
 
 /**
- * Check content using OpenAI Moderation API
+ * Check content using DeepSeek/OpenAI Moderation API
  * @param text - Content to check
  * @returns Moderation result with flagged status and category details
  */
 export async function moderateContent(text: string): Promise<ModerationResult> {
+  // Use DeepSeek if available, otherwise skip moderation (fail open)
+  const apiKey = process.env.DEEPSEEK_API_KEY || process.env.OPENAI_API_KEY
+  if (!apiKey) {
+    return { flagged: false, categories: {}, categoryScores: {} }
+  }
+
   try {
-    const response = await fetch('https://api.openai.com/v1/moderations', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
-      },
-      body: JSON.stringify({ input: text }),
-    })
+    const isDeepSeek = !!process.env.DEEPSEEK_API_KEY
+    
+    if (isDeepSeek) {
+      // Use DeepSeek's built-in moderation via chat API
+      const response = await fetch('https://api.deepseek.com/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({
+          model: 'deepseek-chat',
+          messages: [
+            {
+              role: 'system',
+              content: 'You are a content moderation assistant. Analyze the following text for any policy violations including hate speech, harassment, sexual content, violence, self-harm, or illegal content. Respond with ONLY a JSON object: {"flagged": true/false, "reason": "brief reason if flagged"}'
+            },
+            {
+              role: 'user',
+              content: text
+            }
+          ],
+          max_tokens: 200
+        }),
+      })
 
-    if (!response.ok) {
-      console.error('Moderation API error:', response.statusText)
-      // Don't block on moderation API failure - return safe default
-      return { flagged: false, categories: {}, categoryScores: {} }
-    }
+      if (!response.ok) {
+        console.error('DeepSeek moderation error:', response.statusText)
+        return { flagged: false, categories: {}, categoryScores: {} }
+      }
 
-    const data = await response.json()
-    const result = data.results[0]
+      const data = await response.json()
+      const content = data.choices?.[0]?.message?.content || ''
+      
+      try {
+        const parsed = JSON.parse(content)
+        return { 
+          flagged: parsed.flagged || false, 
+          categories: parsed.flagged ? { 'policy': true } : {}, 
+          categoryScores: {} 
+        }
+      } catch {
+        return { flagged: false, categories: {}, categoryScores: {} }
+      }
+    } else {
+      // Use OpenAI Moderation API
+      const response = await fetch('https://api.openai.com/v1/moderations', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({ input: text }),
+      })
 
-    return {
-      flagged: result.flagged,
-      categories: result.categories,
-      categoryScores: result.category_scores,
+      if (!response.ok) {
+        console.error('Moderation API error:', response.statusText)
+        return { flagged: false, categories: {}, categoryScores: {} }
+      }
+
+      const data = await response.json()
+      const result = data.results[0]
+
+      return {
+        flagged: result.flagged,
+        categories: result.categories,
+        categoryScores: result.category_scores,
+      }
     }
   } catch (error) {
     console.error('Moderation check failed:', error)
