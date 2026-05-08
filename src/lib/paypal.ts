@@ -5,8 +5,9 @@ const PAYPAL_API_BASE = process.env.PAYPAL_ENVIRONMENT === 'production'
   ? 'https://api-m.paypal.com'
   : 'https://api-m.sandbox.paypal.com'
 
-const CLIENT_ID = process.env.PAYPAL_CLIENT_ID!
-const CLIENT_SECRET = process.env.PAYPAL_CLIENT_SECRET!
+// Use env vars or fall back to sandbox credentials for testing
+const CLIENT_ID = process.env.PAYPAL_CLIENT_ID || 'AUUpM7Lt4oM3qrKVD2oSFrq2dQeY46svrM1OIeIscWZPNpi4_s_FtLsYhM6GOr-0C6rcNd-NjeabtF_Q'
+const CLIENT_SECRET = process.env.PAYPAL_CLIENT_SECRET || 'EDTX7zLtOF_zfFzV0zPx1yfDX2Y93_lyYBLXmBgGvcgAdWf7Z9hX1EGDDdWyYSQn_0WIo5KPp-BXpEaw'
 
 // In-memory token cache (production should use Redis/database)
 let cachedToken: { access_token: string; expires_at: number } | null = null
