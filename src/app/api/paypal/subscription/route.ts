@@ -14,8 +14,9 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
     const planId = body.planId || PLANS.PRO_MONTHLY
-    const successUrl = body.successUrl || `${process.env.NEXT_PUBLIC_APP_URL}/success`
-    const cancelUrl = body.cancelUrl || `${process.env.NEXT_PUBLIC_APP_URL}/pricing`
+    const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://preview.cosmetcheck.pages.dev'
+    const successUrl = body.successUrl || `${appUrl}/success`
+    const cancelUrl = body.cancelUrl || `${appUrl}/pricing`
 
     // Validate plan
     const validPlans = Object.values(PLANS)
