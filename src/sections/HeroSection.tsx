@@ -147,6 +147,11 @@ export function HeroSection() {
       setAuthOpen(true)
       return
     }
+    // Check if quota exceeded
+    if (quotaUsed >= quotaLimit) {
+      setGenerateError('免费次数已用完，请升级 Pro 无限次使用')
+      return
+    }
     setGenerateError('')
     setIsGenerating(true)
     setGeneratedListing(null)
@@ -167,6 +172,10 @@ export function HeroSection() {
       const data = await res.json()
       if (data.success) {
         setGeneratedListing(data.data)
+        // Update quota display locally (will be refreshed on next auth state change)
+        setQuotaUsed(prev => prev + 1)
+      } else if (res.status === 429) {
+        setGenerateError('免费次数已用完，请升级 Pro 无限次使用')
       } else {
         setGenerateError(data.error || '生成失败，请稍后再试')
       }
@@ -489,20 +498,20 @@ export function HeroSection() {
 
                 {/* Bullet Points */}
                 <div className="mb-4">
-                  <Label className="text-xs font-semibold text-gray-500 mb-2 block">卖点</Label>
+                  <div className="flex items-center justify-between mb-2">
+                    <Label className="text-xs font-semibold text-gray-500">卖点</Label>
+                    <button
+                      onClick={() => copyToClipboard(generatedListing.bulletPoints.join('\n'))}
+                      className="text-xs text-[#0A4D8C] hover:underline"
+                    >
+                      复制全部
+                    </button>
+                  </div>
                   <ul className="space-y-2">
                     {generatedListing.bulletPoints.map((point, i) => (
-                      <li key={i} className="flex items-start justify-between gap-2 text-sm text-gray-700 bg-gray-50 rounded-lg p-3">
-                        <div className="flex items-start gap-2 flex-1">
-                          <span className="text-[#0A4D8C] font-bold mt-0.5">•</span>
-                          <span>{point}</span>
-                        </div>
-                        <button
-                          onClick={() => copyToClipboard(point)}
-                          className="text-xs text-[#0A4D8C] hover:underline shrink-0"
-                        >
-                          复制
-                        </button>
+                      <li key={i} className="flex items-start gap-2 text-sm text-gray-700 bg-gray-50 rounded-lg p-3">
+                        <span className="text-[#0A4D8C] font-bold mt-0.5">•</span>
+                        <span>{point}</span>
                       </li>
                     ))}
                   </ul>

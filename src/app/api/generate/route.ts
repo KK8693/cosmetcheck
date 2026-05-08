@@ -1,11 +1,26 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { generateListing } from '@/lib/ai'
 import { moderateContent, getModerationWarnings } from '@/lib/moderation'
+import { checkQuotaMiddleware, incrementQuota } from '@/lib/quota'
+import { createClient } from '@supabase/supabase-js'
 
 export const runtime = 'edge'
 
+// Create Supabase client for server-side
+function getSupabaseAdmin() {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
+  const supabaseKey = process.env.SUPABASE_SERVICE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  return createClient(supabaseUrl, supabaseKey)
+}
+
 export async function POST(request: NextRequest) {
   try {
+    // Check quota first
+    const quotaCheck = checkQuotaMiddleware(request)
+    if (!quotaCheck.allowed) {
+      return quotaCheck.response!
+    }
+
     const body = await request.json()
     const { productName, ingredients, benefits, category, targetCountry, tone, checkResult } = body
 
@@ -61,6 +76,15 @@ export async function POST(request: NextRequest) {
       tone,
       checkResult,
     })
+
+    // Get identifier for quota tracking (IP address)
+    const identifier =
+      request.headers.get('x-forwarded-for')?.split(',')[0] ||
+      request.headers.get('x-real-ip') ||
+      'anonymous'
+
+    // Increment quota after successful generation
+    incrementQuota(identifier)
 
     // Moderate AI-generated output
     const outputText = `${result.title} ${result.description} ${result.bulletPoints.join(' ')}`
