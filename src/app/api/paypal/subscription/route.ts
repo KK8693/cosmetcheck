@@ -41,6 +41,7 @@ export async function POST(request: NextRequest) {
 }
 
 // GET endpoint to check subscription status
+// Updated: trigger redeploy to fix 404
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url)
   const subscriptionId = searchParams.get('subscription_id')
