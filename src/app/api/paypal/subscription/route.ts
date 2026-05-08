@@ -51,11 +51,13 @@ export async function POST(request: NextRequest) {
       }),
     })
 
+    const responseText = await response.text()
+    console.log('PayPal response status:', response.status)
+    console.log('PayPal response body:', responseText)
+
     if (!response.ok) {
-      const error = await response.text()
-      console.error('PayPal subscription error:', error)
       return NextResponse.json(
-        { error: 'Failed to create subscription' },
+        { error: 'Failed to create subscription', details: responseText },
         { status: 500 }
       )
     }
