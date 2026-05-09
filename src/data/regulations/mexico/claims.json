@@ -5,6 +5,66 @@
   "description": "墨西哥化妆品功效宣称和广告法规",
   "rules": [
     {
+      "ruleId": "MX-CLAIM-013",
+      "category": "claim",
+      "target": "永久/彻底根治",
+      "aliases": ["permanente", "永久", "definitivo", "彻底", "根治", "eliminar permanentemente", "永久消除", "para siempre", "永远"],
+      "severity": "critical",
+      "condition": "禁止绝对化永久功效宣称",
+      "message": "禁止使用'永久'、'彻底根治'、'永远'等绝对化功效宣称",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-014",
+      "category": "claim",
+      "target": "快速见效/7天",
+      "aliases": ["7 días", "7天", "ultra rápido", "超快速", "resultados inmediatos", "结果立竿见影", "garantizado", "保证结果", "100% efectivo", "100%有效"],
+      "severity": "critical",
+      "condition": "禁止承诺具体时效和绝对效果",
+      "message": "禁止使用具体时间承诺（如'7天'）和绝对效果保证",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-015",
+      "category": "claim",
+      "target": "医疗级/医学配方",
+      "aliases": ["fórmula médica", "医学配方", "医疗级", "grado médico", "medical grade", "fórmula exclusiva", "独家配方", "clínica", "临床级"],
+      "severity": "critical",
+      "condition": "禁止医疗化宣称",
+      "message": "禁止使用'医疗级'、'医学配方'、'临床级'等暗示药品功效的宣传",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-016",
+      "category": "claim",
+      "target": "特殊人群宣称",
+      "aliases": ["bebés", "婴儿", "mujeres embarazadas", "孕妇", "embarazada", "niños", "儿童", "para todo tipo de piel", "适合所有皮肤类型", "bebés y mujeres embarazadas", "婴幼儿可用", "孕妇可用"],
+      "severity": "critical",
+      "condition": "特殊人群需特殊审批",
+      "message": "禁止随意宣称适合婴儿、孕妇等特殊人群，需标注适用年龄",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-017",
+      "category": "claim",
+      "target": "彻底祛斑/美白",
+      "aliases": ["elimina todas las manchas", "消除所有斑点", "mejor que", "优于", "único", "唯一有效", "独家", "piel blanca para siempre", "让皮肤永远变白", "blanqueamiento permanente"],
+      "severity": "critical",
+      "condition": "禁止绝对化美白宣称",
+      "message": "禁止使用'彻底祛斑'、'永久美白'、'永远变白'等绝对化功效宣称",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-018",
+      "category": "claim",
+      "target": "无风险/无刺激",
+      "aliases": ["sin ningún riesgo", "无任何风险", "sin irritación", "无刺激", "sin efectos secundarios", "零刺激", "100% seguro", "100%安全", "completamente seguro"],
+      "severity": "warning",
+      "condition": "禁止绝对化安全宣称",
+      "message": "禁止使用'无任何风险'、'100%安全'、'绝对无刺激'等绝对化安全宣称",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
       "ruleId": "MX-CLAIM-001",
       "category": "claim",
       "target": "治疗痤疮",

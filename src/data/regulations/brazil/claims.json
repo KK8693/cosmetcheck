@@ -8,10 +8,70 @@
       "ruleId": "BR-CLAIM-001",
       "category": "claim",
       "target": "治疗",
-      "aliases": ["Tratar", "治疗", "tratamiento", "curar", "治愈"],
+      "aliases": ["Tratar", "治疗", "tratamiento", "curar", "治愈", "cura", "cura completamente", "cura definitiva"],
       "severity": "critical",
       "condition": "禁止使用治疗疾病相关宣称",
       "message": "化妆品不得宣称具有治疗疾病的效果，如'治疗痤疮'、'治疗湿疹'等",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-013",
+      "category": "claim",
+      "target": "永久/彻底根治",
+      "aliases": ["permanente", "永久", "definitivo", "彻底", "根治", "cura definitiva", "eliminar permanentemente", "永久消除", "永远", "para sempre"],
+      "severity": "critical",
+      "condition": "禁止绝对化永久功效宣称",
+      "message": "禁止使用'永久'、'彻底根治'、'永远'等绝对化功效宣称",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-014",
+      "category": "claim",
+      "target": "快速见效/7天",
+      "aliases": ["7 dias", "7天", "ultra rápido", "超快速", "立即见效", "结果立竿见影", "结果 garantidos", "结果保证", "garantido 100%", "100%保证", "有效率100%"],
+      "severity": "critical",
+      "condition": "禁止承诺具体时效和绝对效果",
+      "message": "禁止使用具体时间承诺（如'7天'）和绝对效果保证（如'100%有效'、'保证结果'）",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-015",
+      "category": "claim",
+      "target": "医疗级/医学配方",
+      "aliases": ["fórmula médica", "医学配方", "医疗级", "grau médico", "medical grade", "fórmula exclusiva", "独家配方", "clínica", "临床级"],
+      "severity": "critical",
+      "condition": "禁止医疗化宣称",
+      "message": "禁止使用'医疗级'、'医学配方'、'临床级'等暗示药品功效的宣传",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-016",
+      "category": "claim",
+      "target": "特殊人群宣称",
+      "aliases": ["bebês", "婴儿", "mulheres grávidas", "孕妇", "grávida", "crianças", "儿童", "para todos os tipos de pele", "适合所有皮肤类型", "bebês e mulheres grávidas", "婴幼儿可用", "孕妇可用"],
+      "severity": "critical",
+      "condition": "特殊人群需特殊审批",
+      "message": "禁止随意宣称适合婴儿、孕妇等特殊人群，需标注适用年龄和特殊情况说明",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-017",
+      "category": "claim",
+      "target": "彻底祛斑/美白",
+      "aliases": ["elimina todas as manchas", "消除所有斑点", "melhor que", "优于", "唯一", "唯一有效", "único", "独家", "永久美白", "pele branca para sempre", "让皮肤永远变白"],
+      "severity": "critical",
+      "condition": "禁止绝对化美白宣称",
+      "message": "禁止使用'彻底祛斑'、'永久美白'、'永远变白'等绝对化功效宣称",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-018",
+      "category": "claim",
+      "target": "无风险/无刺激",
+      "aliases": ["sem nenhum risco", "无任何风险", "sem irritação", "无刺激", "零刺激", "100% seguro", "100%安全", "完全无刺激", "绝对安全"],
+      "severity": "warning",
+      "condition": "禁止绝对化安全宣称",
+      "message": "禁止使用'无任何风险'、'100%安全'、'绝对无刺激'等绝对化安全宣称",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
