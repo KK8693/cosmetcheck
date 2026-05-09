@@ -74,7 +74,7 @@ export function PricingSection() {
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-400 via-red-500 to-red-400 animate-pulse" />
             <CardContent className="p-8">
               <div className="inline-block rounded-full bg-red-900/30 px-3 py-1 text-xs font-bold text-red-400 mb-4 animate-pulse">
-                🔥 限时省 40%
+                🔥 限时省 40% · 仅剩 6 天
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Pro</h3>
               <div className="flex items-baseline mb-2">

@@ -263,7 +263,7 @@ export default function PricingPage() {
       <section className="py-12 md:py-20 bg-gradient-to-br from-[#0A4D8C] via-[#1E6BB8] to-[#00A86B] text-white text-center">
         <div className="container-custom">
           <div className="mb-4 inline-flex items-center rounded-full bg-red-500 px-4 py-1.5 text-xs font-bold text-white shadow-lg animate-bounce">
-            🔥 限时福利 · 本月注册送 5 次 Pro 体验
+            🔥 限时福利 · 仅剩 6 天 · 本月注册送 5 次 Pro 体验
           </div>
           <h2 className="text-3xl font-bold md:text-4xl mb-4 text-white">还有疑问？</h2>
           <p className="text-lg text-white/90 mb-8 max-w-xl mx-auto">
