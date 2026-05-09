@@ -141,6 +141,7 @@ export function HeroSection() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ingredients,
+          description: productBenefits, // 产品功效作为 description 检测
           country,
         }),
       })
