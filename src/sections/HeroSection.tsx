@@ -8,7 +8,7 @@ import { Label } from '@/components/ui/label'
 import { useAuth } from '@/contexts/AuthContext'
 import AuthModal from '@/components/AuthModal'
 import { AnimatedCounter } from '@/components/AnimatedCounter'
-import { AlertTriangle, Info, CheckCircle, XCircle, Zap, Shield } from 'lucide-react'
+import { AlertTriangle, Info, CheckCircle, XCircle, Zap, Shield, X } from 'lucide-react'
 
 interface CheckResult {
   isCompliant: boolean
@@ -64,8 +64,8 @@ export function HeroSection() {
   const { user, signOut, quotaUsed, quotaLimit, setQuotaUsed } = useAuth()
 
   // AI Generation state
-  const [productName, setProductName] = useState('Whitening Serum')
-  const [productBenefits, setProductBenefits] = useState('美白、保湿、淡斑')
+  const [productName, setProductName] = useState('')
+  const [productBenefits, setProductBenefits] = useState('')
   const [isGenerating, setIsGenerating] = useState(false)
   const [generatedListing, setGeneratedListing] = useState<GeneratedListing | null>(null)
   const [generateError, setGenerateError] = useState('')
@@ -325,33 +325,60 @@ export function HeroSection() {
               </div>
 
               {/* Product Name */}
-              <div className="mb-3">
+              <div className="mb-3 relative">
                 <Input
                   value={productName}
                   onChange={(e) => setProductName(e.target.value)}
                   placeholder="产品名称（如：Vitamin C Serum）"
-                  className="w-full md:w-auto border-white/20 bg-white/10 text-white placeholder:text-white/50"
+                  className="w-full md:w-auto border-white/20 bg-white/10 text-white placeholder:text-white/50 pr-10"
                 />
+                {productName && (
+                  <button
+                    type="button"
+                    onClick={() => setProductName('')}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-white/50 hover:text-white/80 transition-colors"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                )}
               </div>
 
               {/* Ingredients */}
-              <div className="mb-3">
+              <div className="mb-3 relative">
                 <Textarea
                   value={ingredients}
                   onChange={(e) => setIngredients(e.target.value)}
                   placeholder="成分（如：Aqua, Glycerin, Niacinamide, Vitamin C... 可选）"
-                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[80px] resize-none"
+                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[80px] resize-none pr-10"
                 />
+                {ingredients && (
+                  <button
+                    type="button"
+                    onClick={() => setIngredients('')}
+                    className="absolute right-3 top-3 text-white/50 hover:text-white/80 transition-colors"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                )}
               </div>
 
               {/* Benefits */}
-              <div className="mb-3">
+              <div className="mb-3 relative">
                 <Textarea
                   value={productBenefits}
                   onChange={(e) => setProductBenefits(e.target.value)}
                   placeholder="产品功效（如：美白、保湿、抗衰老... 可选）"
-                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[60px] resize-none"
+                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[60px] resize-none pr-10"
                 />
+                {productBenefits && (
+                  <button
+                    type="button"
+                    onClick={() => setProductBenefits('')}
+                    className="absolute right-3 top-3 text-white/50 hover:text-white/80 transition-colors"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                )}
               </div>
 
               {checkError && <p className="text-red-300 text-sm mb-2">{checkError}</p>}
