@@ -55,7 +55,7 @@ interface GeneratedListing {
 }
 export function HeroSection() {
   // Default demo data - Hydroquinone banned ingredient example
-  const [ingredients, setIngredients] = useState('Aqua, Glycerin, Niacinamide, Hydroquinone, Vitamin C, Parfum')
+  const [ingredients, setIngredients] = useState('')
   const [country, setCountry] = useState<'BR' | 'MX'>('BR')
   const [isChecking, setIsChecking] = useState(false)
   const [checkResult, setCheckResult] = useState<CheckResult | null>(null)
@@ -326,17 +326,17 @@ export function HeroSection() {
 
               {/* Product Name */}
               <div className="mb-3 relative">
-                <Input
+                <Textarea
                   value={productName}
                   onChange={(e) => setProductName(e.target.value)}
                   placeholder="产品名称（如：Vitamin C Serum）"
-                  className="w-full md:w-auto border-white/20 bg-white/10 text-white placeholder:text-white/50 pr-10"
+                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[60px] resize-none pr-10"
                 />
                 {productName && (
                   <button
                     type="button"
                     onClick={() => setProductName('')}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 text-white/50 hover:text-white/80 transition-colors"
+                    className="absolute right-3 top-3 text-white/50 hover:text-white/80 transition-colors"
                   >
                     <X className="w-4 h-4" />
                   </button>
