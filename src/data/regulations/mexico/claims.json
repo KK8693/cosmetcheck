@@ -1,0 +1,128 @@
+{
+  "source": "COFEPRIS",
+  "documentId": "NOM-259-SSA1-2012 + LFPUB",
+  "version": "2012-12",
+  "description": "墨西哥化妆品功效宣称和广告法规",
+  "rules": [
+    {
+      "ruleId": "MX-CLAIM-001",
+      "category": "claim",
+      "target": "治疗痤疮",
+      "aliases": ["Treat acne", "Tratar acne", "祛痘", "治疗青春痘"],
+      "severity": "critical",
+      "condition": "禁止宣称治疗痤疮",
+      "message": "化妆品不得宣称可以治疗痤疮，这是药品功效",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-002",
+      "category": "claim",
+      "target": "抗衰老",
+      "aliases": ["Anti-aging", "Anti-envejecimiento", "抗衰老", "逆龄"],
+      "severity": "warning",
+      "condition": "可使用但需科学依据",
+      "message": "抗衰老宣称需有科学依据支持",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-003",
+      "category": "claim",
+      "target": "生发",
+      "aliases": ["Hair regrowth", "Crecimiento capilar", "生发", "增发"],
+      "severity": "critical",
+      "condition": "禁止宣称生发效果",
+      "message": "化妆品不得宣称具有生发效果",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-004",
+      "category": "claim",
+      "target": "减肥",
+      "aliases": ["Weight loss", "Perder peso", "减肥", "瘦身"],
+      "severity": "critical",
+      "condition": "禁止宣称减肥效果",
+      "message": "化妆品不得宣称具有减肥效果",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-005",
+      "category": "claim",
+      "target": "立即见效",
+      "aliases": ["Immediate results", "Resultados inmediatos", "立即", "即刻"],
+      "severity": "warning",
+      "condition": "禁止绝对化宣称",
+      "message": "禁止使用'立即'、'即刻'等绝对化用语",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-006",
+      "category": "claim",
+      "target": "FDA批准",
+      "aliases": ["FDA approved", "Aprobado por FDA", "美国FDA认证"],
+      "severity": "warning",
+      "condition": "禁止误导性宣称",
+      "message": "禁止误导消费者使用FDA批准标识，墨西哥产品需符合COFEPRIS规定",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-007",
+      "category": "claim",
+      "target": " dermatologist tested",
+      "aliases": ["Dermatologist tested", "Testeado por dermatólogo", "皮肤科医生测试"],
+      "severity": "info",
+      "condition": "需真实有效",
+      "message": "如宣城 dermatologist tested，需有实际测试报告支持",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-008",
+      "category": "claim",
+      "target": "hypoallergenic",
+      "aliases": ["Hippoalergénico", "低致敏", "无过敏"],
+      "severity": "warning",
+      "condition": "需有测试支持",
+      "message": "低致敏宣称需有临床测试支持，不可滥用",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-009",
+      "category": "claim",
+      "target": "no animal testing",
+      "aliases": ["No tested on animals", "Sin pruebas en animales", "无动物测试"],
+      "severity": "info",
+      "condition": "需有证明文件",
+      "message": "无动物测试宣称需有供应链证明文件",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-010",
+"category": "claim",
+      "target": "治愈",
+      "aliases": ["Cure", "Curar", "治愈", "根治"],
+      "severity": "critical",
+      "condition": "禁止任何治愈宣称",
+      "message": "化妆品不得使用任何'治愈'、'根治'等医疗用语",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-011",
+      "category": "claim",
+      "target": "去除脂肪团",
+      "aliases": ["Cellulite removal", "Eliminación de celulitis", "去橘皮", "燃脂"],
+      "severity": "critical",
+      "condition": "禁止宣称去除脂肪团",
+      "message": "化妆品不得宣称可以去除脂肪团（橘皮组织）",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-012",
+      "category": "claim",
+      "target": "丰胸",
+      "aliases": ["Breast enlargement", "Aumento de senos", "隆胸", "丰乳"],
+      "severity": "critical",
+      "condition": "禁止任何丰乳宣称",
+      "message": "化妆品不得宣称具有丰胸或改变胸部大小的效果",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    }
+  ]
+}

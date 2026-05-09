@@ -1,0 +1,128 @@
+{
+  "source": "ANVISA",
+  "documentId": "RDC 907/2024 + RDC 55/2010",
+  "version": "2024-12",
+  "description": "巴西化妆品功效宣称限制 - 禁止药品功效用语",
+  "rules": [
+    {
+      "ruleId": "BR-CLAIM-001",
+      "category": "claim",
+      "target": "治疗",
+      "aliases": ["Tratar", "治疗", "tratamiento", "curar", "治愈"],
+      "severity": "critical",
+      "condition": "禁止使用治疗疾病相关宣称",
+      "message": "化妆品不得宣称具有治疗疾病的效果，如'治疗痤疮'、'治疗湿疹'等",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-002",
+      "category": "claim",
+      "target": "抗皱/去皱",
+      "aliases": ["Anti-wrinkle", "Antiarrugas", "抗皱", "去皱", "消除皱纹"],
+      "severity": "warning",
+      "condition": "可使用但需符合规定",
+      "message": "抗皱宣称需有科学依据，不可使用'立即祛皱'等绝对化用语",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-003",
+      "category": "claim",
+      "target": "美白/淡斑",
+      "aliases": ["Whitening", "Branqueamento", "美白", "淡斑", "提亮肤色"],
+      "severity": "warning",
+      "condition": "可使用但不可暗示疗效",
+      "message": "美白宣称需注意不可使用'彻底祛斑'等绝对化用语",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-004",
+      "category": "claim",
+      "target": "防晒伤",
+      "aliases": ["Sunburn treatment", "Tratamento de queimadura solar", "晒伤治疗"],
+      "severity": "critical",
+      "condition": "禁止宣称治疗晒伤",
+      "message": "化妆品不得宣称可以治疗或修复晒伤皮肤",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-005",
+      "category": "claim",
+      "target": "生发/增发",
+      "aliases": ["Hair growth", "Crescimento capilar", "生发", "增发", "防止脱发"],
+      "severity": "critical",
+      "condition": "禁止宣称生发效果",
+      "message": "化妆品不得宣称具有生发或防止脱发效果，这是药品功效",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-006",
+      "category": "claim",
+      "target": "减肥/瘦身",
+      "aliases": ["Weight loss", "Emagrecimento", "减肥", "瘦身", "燃脂"],
+      "severity": "critical",
+      "condition": "禁止宣称减肥效果",
+      "message": "化妆品不得宣称具有减肥或瘦身效果",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-007",
+      "category": "claim",
+      "target": "去妊娠纹",
+      "aliases": ["Stretch mark removal", "Remoção de estrias", "祛妊娠纹"],
+      "severity": "warning",
+      "condition": "可使用但需谨慎",
+      "message": "去妊娠纹宣称需有科学依据，不可使用'完全消除'等绝对化用语",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-008",
+      "category": "claim",
+      "target": "立即见效",
+      "aliases": ["Immediate results", "Resultados imediatos", "立即", "即刻"],
+      "severity": "warning",
+      "condition": "禁止使用绝对化用语",
+      "message": "禁止使用'立即'、'即刻'、'瞬间'等绝对化宣称",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-009",
+      "category": "claim",
+      "target": "100%有效",
+      "aliases": ["100% effective", "100% eficaz", "100%", "彻底根治"],
+      "severity": "warning",
+      "condition": "禁止使用绝对化宣称",
+      "message": "禁止使用'100%'、'彻底'、'根治'等绝对化用语",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-010",
+      "category": "claim",
+      "target": "医疗级",
+      "aliases": ["Medical grade", "Grau médico", "医疗级", "医药级"],
+      "severity": "warning",
+      "condition": "禁止误导性宣称",
+      "message": "禁止使用'医疗级'、'医药级'等可能误导消费者的宣称",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-011",
+      "category": "claim",
+      "target": "抗菌/杀菌",
+      "aliases": ["Antibacterial", "Antibacteriano", "抗菌", "杀菌", "消毒"],
+"severity": "warning",
+      "condition": "有限制",
+      "message": "抗菌宣称需要符合特定规定，部分产品需按药品注册",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-012",
+      "category": "claim",
+      "target": "除臭",
+      "aliases": ["Deodorant", "Antitranspirante", "止汗", "除臭"],
+      "severity": "info",
+      "condition": "需明确区分",
+      "message": "止汗剂和除臭剂是不同的产品类别，需按对应规定注册",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    }
+  ]
+}

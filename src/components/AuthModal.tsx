@@ -68,7 +68,13 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>{isSignUp ? 'Create Account' : 'Sign In'}</DialogTitle>
+          <DialogTitle>
+            {isForgotPassword 
+              ? '重置密码' 
+              : isSignUp 
+                ? '创建账户' 
+                : '登录'}
+          </DialogTitle>
         </DialogHeader>
 
         <form onSubmit={handleSubmit} className="space-y-4 pt-4">
@@ -91,52 +97,87 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
             />
           </div>
 
-          <div className="space-y-2">
-            <Label htmlFor="password">Password</Label>
-            <Input
-              id="password"
-              type="password"
-              placeholder="Minimum 6 characters"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-              minLength={6}
-            />
-          </div>
+          {/* Password field - hide when in forgot password mode */}
+          {!isForgotPassword && (
+            <div className="space-y-2">
+              <Label htmlFor="password">密码</Label>
+              <Input
+                id="password"
+                type="password"
+                placeholder="至少6个字符"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required={!isForgotPassword}
+                minLength={6}
+              />
+            </div>
+          )}
 
           <Button
             type="submit"
             className="w-full bg-[#0A4D8C] hover:bg-[#1E6BB8]"
             disabled={loading}
           >
-            {loading ? 'Loading...' : isSignUp ? 'Create Account' : 'Sign In'}
+            {loading 
+              ? '处理中...' 
+              : isForgotPassword 
+                ? '发送重置链接' 
+                : isSignUp 
+                  ? '创建账户' 
+                  : '登录'}
           </Button>
 
           <div className="text-center text-sm text-gray-500">
             {isSignUp ? (
               <>
-                Already have an account?{' '}
+                <span className="text-gray-500">已有账户？</span>{' '}
                 <button
                   type="button"
                   className="text-[#0A4D8C] hover:underline font-medium"
                   onClick={() => { setIsSignUp(false); setError(''); setSuccess('') }}
                 >
-                  Sign In
+                  登录
                 </button>
               </>
             ) : (
               <>
-                No account?{' '}
+                <span className="text-gray-500">没有账户？</span>{' '}
                 <button
                   type="button"
                   className="text-[#0A4D8C] hover:underline font-medium"
                   onClick={() => { setIsSignUp(true); setError(''); setSuccess('') }}
                 >
-                  Create Account
+                  注册
                 </button>
               </>
             )}
           </div>
+
+          {/* Forgot Password Link - only show when not in sign up or forgot mode */}
+          {!isSignUp && !isForgotPassword && (
+            <div className="text-center text-sm">
+              <button
+                type="button"
+                className="text-[#0A4D8C] hover:underline"
+                onClick={() => { setIsForgotPassword(true); setError(''); setSuccess('') }}
+              >
+                忘记密码？
+              </button>
+            </div>
+          )}
+
+          {/* Back to Sign In Link - show when in forgot password mode */}
+          {isForgotPassword && (
+            <div className="text-center text-sm text-gray-500">
+              <button
+                type="button"
+                className="text-[#0A4D8C] hover:underline font-medium"
+                onClick={() => { setIsForgotPassword(false); setError(''); setSuccess('') }}
+              >
+                返回登录
+              </button>
+            </div>
+          )}
         </form>
       </DialogContent>
     </Dialog>

@@ -8,7 +8,7 @@ import { Label } from '@/components/ui/label'
 import { useAuth } from '@/contexts/AuthContext'
 import AuthModal from '@/components/AuthModal'
 import { AnimatedCounter } from '@/components/AnimatedCounter'
-import { AlertTriangle, Info, CheckCircle, XCircle, Zap } from 'lucide-react'
+import { AlertTriangle, Info, CheckCircle, XCircle, Zap, Shield } from 'lucide-react'
 
 interface CheckResult {
   isCompliant: boolean
@@ -70,17 +70,17 @@ export function HeroSection() {
   const [generatedListing, setGeneratedListing] = useState<GeneratedListing | null>(null)
   const [generateError, setGenerateError] = useState('')
 
-  // Default demo result - Hydroquinone violation
-  const demoResult: CheckResult = {
+  // Default demo result - dynamically shows based on selected country
+  const demoResult: CheckResult = (country === 'BR' ? {
     isCompliant: false,
     violations: [
       {
         ruleId: 'ANVISA-RDC-665-2022',
-        category: '禁用成分',
+        category: 'ingredient',
         severity: 'critical',
         message: 'Hydroquinone 是巴西 ANVISA 明确禁用的美白成分',
         suggestion: '建议替换为 α-熊果苷（α-Arbutin）或烟酰胺（Niacinamide）等合规替代成分',
-        source: 'ANVISA RDC 665/2022 - Lista de Substâncias Proibidas'
+        source: 'ANVISA RDC 665/2022'
       }
     ],
     warnings: [],
@@ -92,7 +92,28 @@ export function HeroSection() {
       infoCount: 0
     },
     regulationVersion: 2024.1
-  }
+  } : {
+    isCompliant: false,
+    violations: [
+      {
+        ruleId: 'COFEPRIS-NOM-141',
+        category: 'ingredient',
+        severity: 'critical',
+        message: 'Hydroquinone 是墨西哥 COFEPRIS 明确禁用的美白成分',
+        suggestion: '建议替换为 α-熊果苷（α-Arbutin）或烟酰胺（Niacinamide）等合规替代成分',
+        source: 'COFEPRIS NOM-141-SSA1/SCF1-2012'
+      }
+    ],
+    warnings: [],
+    info: [],
+    summary: {
+      totalIssues: 1,
+      criticalCount: 1,
+      warningCount: 0,
+      infoCount: 0
+    },
+    regulationVersion: 2024.1
+  }) as CheckResult
 
   // Show demo result by default on first load
   const [showDemo, setShowDemo] = useState(true)
@@ -193,34 +214,11 @@ export function HeroSection() {
     navigator.clipboard.writeText(text)
   }
   return (
-    <div className="min-h-screen bg-[#0D0D12]">
+    <div className="min-h-screen bg-[#0D0D12] pt-16 md:pt-20">
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[#0D0D12] via-[#0F1520] to-[#0D0D12] text-white">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-30" />
-        <div className="container-custom relative py-20 md:py-28">
-          {/* User auth bar */}
-          <div className="flex justify-end mb-4">
-            {user ? (
-              <div className="flex items-center gap-3">
-                <span className="text-sm text-white/80">
-                  已用 {quotaUsed}/{quotaLimit} 次
-                </span>
-                <button
-                  onClick={signOut}
-                  className="text-sm text-white/70 hover:text-white transition-colors"
-                >
-                  退出
-                </button>
-              </div>
-            ) : (
-              <button
-                onClick={() => setAuthOpen(true)}
-                className="text-sm bg-white/10 hover:bg-white/20 text-white px-4 py-1.5 rounded-full transition-colors"
-              >
-                登录 / 注册
-              </button>
-            )}
-          </div>
+        <div className="container-custom relative py-12 md:py-16">
           <div className="mx-auto max-w-full md:max-w-4xl text-center">
             {/* SocialProofBar - 增强版数据徽章 */}
             <div className="mb-6 inline-flex flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-medium backdrop-blur">
@@ -305,7 +303,7 @@ export function HeroSection() {
               </div>
               <div className="flex flex-wrap gap-2 mb-3">
                 <button
-                  onClick={() => setCountry('BR')}
+                  onClick={() => { setCountry('BR'); setCheckResult(null); setShowDemo(true) }}
                   className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
                     country === 'BR'
                       ? 'bg-white text-[#0A4D8C]'
@@ -315,7 +313,7 @@ export function HeroSection() {
                   巴西 ANVISA
                 </button>
                 <button
-                  onClick={() => setCountry('MX')}
+                  onClick={() => { setCountry('MX'); setCheckResult(null); setShowDemo(true) }}
                   className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
                     country === 'MX'
                       ? 'bg-white text-[#0A4D8C]'
