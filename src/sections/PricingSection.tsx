@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export function PricingSection() {
   return (
-    <section className="py-20 bg-gradient-to-b from-[#0A4D8C] via-[#0a5d8c] to-[#00A86B]">
+    <section id="pricing" className="py-20 bg-gradient-to-b from-[#0A4D8C] via-[#0a5d8c] to-[#00A86B]">
       <div className="container-custom">
         <div className="text-center mb-12">
           <div className="inline-block rounded-full bg-white/10 px-4 py-1 text-sm font-semibold text-white mb-4">

@@ -42,7 +42,7 @@ export function FAQSection() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null)
 
   return (
-    <section className="py-20 bg-[#0D0D12]">
+    <section id="faq" className="py-20 bg-[#0D0D12]">
       <div className="container-custom max-w-3xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-white md:text-4xl mb-4">常见问题</h2>

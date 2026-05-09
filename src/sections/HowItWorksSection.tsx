@@ -1,6 +1,6 @@
 export function HowItWorksSection() {
   return (
-    <section className="py-20 bg-[#1A1A24]">
+    <section id="how-it-works" className="py-20 bg-[#1A1A24]">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-white md:text-4xl mb-4">三步完成合规检测</h2>

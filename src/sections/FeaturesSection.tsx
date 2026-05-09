@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export function FeaturesSection() {
   return (
-    <section className="py-20 bg-[#252530]">
+    <section id="features" className="py-20 bg-[#252530]">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-white md:text-4xl mb-4">核心功能</h2>
