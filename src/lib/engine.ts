@@ -1,6 +1,8 @@
 // CosmetCheck Compliance Engine
 // Detects ANVISA (Brazil) and COFEPRIS (Mexico) violations
 
+import { loadRegulationRules, type LoadedRules } from './regulation-loader'
+
 export interface CheckInput {
   ingredients?: string
   description?: string
@@ -1096,8 +1098,62 @@ function findMatches(text: string, rules: Omit<Violation, 'matchedText' | 'posit
   return violations
 }
 
+// Cache for loaded JSON rules
+let jsonRulesCache: {
+  BR: LoadedRules[]
+  MX: LoadedRules[]
+} = {
+  BR: [],
+  MX: [],
+}
+
+let rulesInitialized = false
+
+// Initialize JSON rules (call this at app startup)
+export async function initRules(): Promise<void> {
+  if (rulesInitialized) return
+  
+  try {
+    const [brRules, mxRules] = await Promise.all([
+      loadRegulationRules('BR'),
+      loadRegulationRules('MX'),
+    ])
+    jsonRulesCache = { BR: brRules, MX: mxRules }
+    rulesInitialized = true
+    console.log('[Engine] JSON rules loaded:', {
+      BR: brRules.length,
+      MX: mxRules.length,
+    })
+  } catch (e) {
+    console.warn('[Engine] Failed to load JSON rules, using hardcoded rules only')
+  }
+}
+
+// Synchronous version - uses cached rules if available, otherwise falls back to hardcoded
 export function checkCompliance(input: CheckInput): CheckResult {
   const rules = input.country === 'BR' ? ANVISA_RULES : COFEPRIS_RULES
+  
+  // Auto-initialize JSON rules on first call (async, non-blocking)
+  if (!rulesInitialized) {
+    initRules().catch(e => console.warn('[Engine] Background init failed:', e))
+  }
+  
+  // Use cached JSON rules if available
+  const jsonRules = jsonRulesCache[input.country]
+  
+  // Merge JSON rules with hardcoded rules (JSON takes precedence for duplicates)
+  const allRules = [...rules]
+  if (jsonRules && jsonRules.length > 0) {
+    for (const jsonRule of jsonRules) {
+      const existingIndex = allRules.findIndex(r => r.ruleId === jsonRule.ruleId)
+      if (existingIndex >= 0) {
+        allRules[existingIndex] = jsonRule
+      } else {
+        allRules.push(jsonRule)
+      }
+    }
+  }
+  
   const allText = [
     input.ingredients || '',
     input.description || '',
@@ -1108,21 +1164,21 @@ export function checkCompliance(input: CheckInput): CheckResult {
 
   // Check ingredients
   if (input.ingredients) {
-    violations.push(...findMatches(input.ingredients, rules.filter(r => r.category === 'ingredient')))
+    violations.push(...findMatches(input.ingredients, allRules.filter(r => r.category === 'ingredient')))
   }
 
   // Check description/claims
   if (input.description) {
-    violations.push(...findMatches(input.description, rules.filter(r => r.category === 'claim')))
+    violations.push(...findMatches(input.description, allRules.filter(r => r.category === 'claim')))
   }
 
   // Check label
   if (input.label) {
-    violations.push(...findMatches(input.label, rules.filter(r => r.category === 'label')))
+    violations.push(...findMatches(input.label, allRules.filter(r => r.category === 'label')))
   }
 
   // Always add label requirements (info level)
-  const labelRules = rules.filter(r => r.ruleType === 'required')
+  const labelRules = allRules.filter(r => r.ruleType === 'required')
   // Only add if not already matched
   for (const rule of labelRules) {
     const alreadyFound = violations.some(v => v.ruleId === rule.ruleId)
