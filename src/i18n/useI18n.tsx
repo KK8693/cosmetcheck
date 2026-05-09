@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react'
+import { createContext, useContext, useState, useEffect, ReactNode, useCallback, useMemo } from 'react'
 
 type Locale = 'zh' | 'en' | 'pt-BR' | 'es-MX'
 
@@ -13,14 +13,22 @@ interface I18nContextType {
 
 type Messages = Record<string, unknown>
 
-const translations: Record<Locale, Messages> = {}
+const translations: Partial<Record<Locale, Messages>> = {}
 
 const I18nContext = createContext<I18nContextType | null>(null)
+
+// Helper to get initial locale
+function getInitialLocale(): Locale {
+  if (typeof window === 'undefined') return 'zh'
+  const saved = localStorage.getItem('cosmetcheck-locale') as Locale | null
+  return (saved && ['zh', 'en', 'pt-BR', 'es-MX'].includes(saved)) ? saved : 'zh'
+}
 
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>('zh')
   const [messages, setMessages] = useState<Messages>({})
   const [isLoading, setIsLoading] = useState(true)
+  const [isHydrated, setIsHydrated] = useState(false)
 
   const loadTranslations = useCallback(async (loc: Locale): Promise<void> => {
     if (translations[loc]) {
@@ -40,22 +48,20 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     }
   }, [])
 
+  /* eslint-disable react-hooks/set-state-in-effect */
+  // Initialize on mount
   useEffect(() => {
-    // Check localStorage first
-    const savedLocale = localStorage.getItem('cosmetcheck-locale') as Locale | null
-    const targetLocale: Locale = (savedLocale && ['zh', 'en', 'pt-BR', 'es-MX'].includes(savedLocale)) 
-      ? savedLocale 
-      : 'zh'
-    
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars, react-hooks/set-state-in-effect
-    // Set locale state
+    setIsHydrated(true)
+    const targetLocale = getInitialLocale()
     setLocaleState(targetLocale)
     loadTranslations(targetLocale)
   }, [loadTranslations])
 
   const handleSetLocale = useCallback((newLocale: Locale) => {
     setLocaleState(newLocale)
-    localStorage.setItem('cosmetcheck-locale', newLocale)
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('cosmetcheck-locale', newLocale)
+    }
     loadTranslations(newLocale)
   }, [loadTranslations])
 
@@ -72,8 +78,15 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     return typeof value === 'string' ? value : key
   }, [messages])
 
+  const contextValue = useMemo(() => ({
+    locale,
+    setLocale: handleSetLocale,
+    t,
+    isLoading
+  }), [locale, handleSetLocale, t, isLoading])
+
   return (
-    <I18nContext.Provider value={{ locale, setLocale: handleSetLocale, t, isLoading }}>
+    <I18nContext.Provider value={contextValue}>
       {children}
     </I18nContext.Provider>
   )
@@ -82,7 +95,6 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 export function useI18n() {
   const context = useContext(I18nContext)
   if (!context) {
-    // Return defaults if not in provider
     return {
       locale: 'zh' as Locale,
       setLocale: () => {},

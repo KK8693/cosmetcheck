@@ -3,6 +3,8 @@
 import { useI18n } from '@/i18n/useI18n'
 import { Globe } from 'lucide-react'
 
+type Locale = 'zh' | 'en' | 'pt-BR' | 'es-MX'
+
 const languages = [
   { code: 'zh', label: '中文', flag: '🇨🇳' },
   { code: 'en', label: 'EN', flag: '🇺🇸' },
