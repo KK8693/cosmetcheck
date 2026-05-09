@@ -5,8 +5,9 @@ import Link from 'next/link'
 import { useAuth } from '@/contexts/AuthContext'
 import { Button } from '@/components/ui/button'
 import { Logo } from '@/components/Logo'
-import { Menu, X, CheckCircle, Zap } from 'lucide-react'
+import { Menu, X, Zap } from 'lucide-react'
 import AuthModal from '@/components/AuthModal'
+import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -61,6 +62,7 @@ export function Navbar() {
 
             {/* Desktop CTA */}
             <div className="hidden md:flex items-center gap-3">
+              <LanguageSwitcher />
               {user ? (
                 <span className="text-sm text-white/60">
                   已用 {user.email?.split('@')[0]}
@@ -100,6 +102,9 @@ export function Navbar() {
                   {link.label}
                 </a>
               ))}
+              <div className="py-2">
+                <LanguageSwitcher />
+              </div>
               <Button
                 onClick={() => { setAuthOpen(true); setIsMobileMenuOpen(false) }}
                 className="w-full mt-4 bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 font-semibold"

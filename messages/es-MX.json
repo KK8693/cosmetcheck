@@ -1,0 +1,177 @@
+{
+  "common": {
+    "brand": "CosmetCheck",
+    "tagline": "Experto en Cumplimiento de Belleza en América Latina — Simplificando Tu Entrada al Mercado",
+    "features": "Características",
+    "pricing": "Precios",
+    "contact": "Contáctanos",
+    "freeStart": "Empieza Gratis",
+    "learnMore": "Saber Más",
+    "viewDetails": "Ver Detalles",
+    "submit": "Enviar",
+    "submitting": "Enviando...",
+    "success": "Éxito",
+    "error": "Error",
+    "warning": "Advertencia",
+    "loading": "Cargando...",
+    "download": "Descargar",
+    "copy": "Copiar"
+  },
+  "nav": {
+    "features": "Características",
+    "pricing": "Precios",
+    "contact": "Contáctanos"
+  },
+  "hero": {
+    "title": "Vende Belleza en América Latina Sin Retiros o Multas",
+    "subtitle": "Verificación de cumplimiento con un clic para Brasil/México, Listings de alta conversión generados por IA. Empieza gratis, evita penalidades ANVISA/COFEPRIS.",
+    "checkButton": "Iniciar Verificación",
+    "demoButton": "Ver Demo",
+    "ingredients": "Ingresa los Ingredientes",
+    "ingredientsPlaceholder": "ej.: Hidroquinona, crema 2% HQ...",
+    "selectCountry": "Selecciona el Mercado",
+    "brazil": "Brasil",
+    "mexico": "México",
+    "checking": "Verificando...",
+    "checkNow": "Verificar Ahora",
+    "remainingChecks": "Verificaciones Restantes",
+    "aiGenerate": "Generar Listing con IA",
+    "productName": "Nombre del Producto",
+    "productNamePlaceholder": "ej.: Suero Iluminador Instantáneo",
+    "productBenefits": "Beneficios del Producto",
+    "productBenefitsPlaceholder": "ej.: Blanqueamiento, Iluminación",
+    "generate": "Generar",
+    "generating": "Generando...",
+    "compliant": "Conforme",
+    "violation": "Sustancia Prohibida",
+    "warning": "Advertencia",
+    "info": "Información",
+    "viewDetails": "Ver Detalles"
+  },
+  "howItWorks": {
+    "title": "Completa la Verificación de Cumplimiento en 3 Pasos",
+    "step1": {
+      "title": "Ingresa los Ingredientes",
+      "desc": "Pega tu lista de ingredientes, el sistema identifica automáticamente"
+    },
+    "step2": {
+      "title": "Detección Inteligente IA",
+      "desc": "Compara con la base ANVISA/COFEPRIS, resultado en segundos"
+    },
+    "step3": {
+      "title": "Obtén la Solución de Cumplimiento",
+      "desc": "Ve el motivo de la violación + alternativas + Listing generado por IA"
+    }
+  },
+  "useCases": {
+    "title": "Casos de Uso",
+    "items": {
+      "1": "Vendedores de E-commerce: Verificación automática de cumplimiento del listing, evita retiro",
+      "2": "Marcas: Pre-verificación de cumplimiento de nuevos productos, reduce riesgo de lanzamiento",
+      "3": "Logística Cross-border: Verificación en lote de productos, liberación rápida en aduanas"
+    }
+  },
+  "features": {
+    "title": "Características Principales",
+    "anvisa": "Verificación ANVISA",
+    "anvisaDesc": "Cobertura total de regulaciones brasileñas, RDC 665/2022 y otras, actualizaciones en tiempo real",
+    "cofepris": "Verificación COFEPRIS",
+    "cofeprisDesc": "Precisión en regulaciones mexicanas, permisos de importación, clasificación de productos",
+    "aiListing": "Generación de Listing por IA",
+    "aiListingDesc": "Generación automática de títulos y descripciones conforme reglas de las plataformas",
+    "batchCsv": "Verificación por Lote CSV",
+    "batchCsvDesc": "Soporte a carga masiva de ingredientes, verifica cientos de productos a la vez"
+  },
+  "pricing": {
+    "title": "Precios Simples y Transparentes",
+    "free": {
+      "name": "Gratis",
+      "price": "$0",
+      "period": "/mes",
+      "features": [
+        "10 verificaciones/mes",
+        "Identificación básica de ingredientes",
+        "Exportación de reporte PDF"
+      ],
+      "cta": "Empieza Gratis"
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "$299",
+      "period": "/mes",
+      "features": [
+        "Verificaciones ilimitadas",
+        "Generación de Listing por IA",
+        "Verificación por Lote CSV",
+        "Soporte prioritario"
+      ],
+      "cta": "Actualiza Ahora"
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "items": {
+      "1": {
+        "q": "¿Qué países/regiones se soportan?",
+        "a": "Actualmente soporta Brasil (ANVISA) y México (COFEPRIS). Generación de Listing adaptada para Amazon, Mercado Libre, Shopee y otras plataformas."
+      },
+      "2": {
+        "q": "¿Qué tan precisos son los resultados?",
+        "a": "Entrenamos con documentos oficiales de regulaciones y actualizamos regularmente. Para productos complejos, ofrecemos revisión manual."
+      },
+      "3": {
+        "q": "¿Cómo funciona el cobro?",
+        "a": "Plan gratis: 10 verificaciones/mes. Pro: $299/mes ilimitadas. API de detección por uso, ideal para escenarios en lote."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Experto en Cumplimiento de Belleza en América Latina",
+    "product": "Producto",
+    "complianceCheck": "Verificación de Cumplimiento",
+    "aiListing": "Generación de Listing IA",
+    "pricing": "Precios",
+    "resources": "Recursos",
+    "knowledgeBase": "Base de Conocimiento Regulatorio",
+    "helpCenter": "Centro de Ayuda",
+    "apiDocs": "Documentación de API",
+    "legal": "Legal",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "gdpr": "GDPR/LGPD/LFPDPPP",
+    "copyright": "© 2025 CosmetCheck. Todos los derechos reservados."
+  },
+  "auth": {
+    "login": "Iniciar Sesión",
+    "register": "Registrarse",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar Contraseña",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "noAccount": "¿No tienes cuenta?",
+    "hasAccount": "¿Ya tienes cuenta?",
+    "loginSuccess": "¡Inicio de sesión exitoso!",
+    "registerSuccess": "¡Registro exitoso! Por favor inicia sesión",
+    "loginFailed": "Error al iniciar sesión",
+    "registerFailed": "Error al registrar"
+  },
+  "demo": {
+    "title": "3 Pasos Bloquear Riesgo → Generar Listing Conforme",
+    "runDemo": "Ejecutar Demo",
+    "demoHint": "👆 Haz clic en el botón para simular el proceso real (sin registro, sin usar cuota)",
+    "clickToStart": "Haz clic en el botón de la izquierda para iniciar",
+    "violationDetected": "❌ Sustancia Prohibida Detectada",
+    "autoReplace": "❌ Detectado → Reemplazo Automático",
+    "aiGenerated": "✓ Listing Conforme Generado por IA"
+  },
+  "dispute": {
+    "title": "Reportar Falso Positivo / Enviar Disputa",
+    "success": "Enviado exitosamente",
+    "failed": "Error al enviar, por favor intenta más tarde."
+  },
+  "cookie": {
+    "title": "🍪 Uso de Cookies",
+    "description": "Usamos cookies necesarios para mantener tu sesión. Respetamos tu elección sobre cookies analíticas.",
+    "policy": "Ver Política de Cookies"
+  }
+}

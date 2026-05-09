@@ -5,6 +5,10 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { AuthProvider } from '@/contexts/AuthContext'
 import { CookieConsent } from '@/components/CookieConsent'
 import { Navbar } from '@/components/Navbar'
+import { I18nProvider } from '@/i18n/useI18n'
+import { NextIntlClientProvider } from 'next-intl'
+import { getMessages } from 'next-intl/server'
+import { routing } from '@/i18n/routing'
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', preload: true })
 const spaceGrotesk = Space_Grotesk({ 
@@ -77,11 +81,17 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }))
+}
+
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const messages = await getMessages()
+  
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
@@ -127,7 +137,7 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="zh-CN" suppressHydrationWarning>
+    <html lang="zh" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
@@ -135,18 +145,22 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} ${spaceGrotesk.variable} ${dmSans.variable}`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <AuthProvider>
-            <Navbar />
-            {children}
-            <CookieConsent />
-          </AuthProvider>
-        </ThemeProvider>
+        <NextIntlClientProvider messages={messages}>
+          <I18nProvider>
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="dark"
+              enableSystem
+              disableTransitionOnChange
+            >
+              <AuthProvider>
+                <Navbar />
+                {children}
+                <CookieConsent />
+              </AuthProvider>
+            </ThemeProvider>
+          </I18nProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   )

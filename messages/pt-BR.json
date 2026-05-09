@@ -1,0 +1,177 @@
+{
+  "common": {
+    "brand": "CosmetCheck",
+    "tagline": "Especialista em Conformidade de Beleza na América Latina — Simplificando Sua Entrada no Mercado",
+    "features": "Recursos",
+    "pricing": "Preços",
+    "contact": "Fale Conosco",
+    "freeStart": "Comece Grátis",
+    "learnMore": "Saiba Mais",
+    "viewDetails": "Ver Detalhes",
+    "submit": "Enviar",
+    "submitting": "Enviando...",
+    "success": "Sucesso",
+    "error": "Erro",
+    "warning": "Aviso",
+    "loading": "Carregando...",
+    "download": "Baixar",
+    "copy": "Copiar"
+  },
+  "nav": {
+    "features": "Recursos",
+    "pricing": "Preços",
+    "contact": "Fale Conosco"
+  },
+  "hero": {
+    "title": "Venda Beleza na América Latina Sem Remoções ou Multas",
+    "subtitle": "Verificação de conformidade com um clique para Brasil/México, Listings de alta conversão gerados por IA. Comece grátis, evite penalidades ANVISA/COFEPRIS.",
+    "checkButton": "Iniciar Verificação",
+    "demoButton": "Ver Demonstração",
+    "ingredients": "Digite os Ingredientes",
+    "ingredientsPlaceholder": "ex.: Hidroquinona, creme 2% HQ...",
+    "selectCountry": "Selecione o Mercado",
+    "brazil": "Brasil",
+    "mexico": "México",
+    "checking": "Verificando...",
+    "checkNow": "Verificar Agora",
+    "remainingChecks": "Verificações Restantes",
+    "aiGenerate": "Gerar Listing com IA",
+    "productName": "Nome do Produto",
+    "productNamePlaceholder": "ex.: Sérum Iluminador Instantâneo",
+    "productBenefits": "Benefícios do Produto",
+    "productProperties": "ex.: Clareamento, Iluminação",
+    "generate": "Gerar",
+    "generating": "Gerando...",
+    "compliant": "Conforme",
+    "violation": "Substância Proibida",
+    "warning": "Aviso",
+    "info": "Informação",
+    "viewDetails": "Ver Detalhes"
+  },
+  "howItWorks": {
+    "title": "Complete a Verificação de Conformidade em 3 Passos",
+    "step1": {
+      "title": "Insira os Ingredientes",
+      "desc": "Cole a lista de ingredientes, o sistema identifica automaticamente"
+    },
+    "step2": {
+      "title": "Detecção Inteligente IA",
+      "desc": "Confronte com a base ANVISA/COFEPRIS, resultado em segundos"
+    },
+    "step3": {
+      "title": "Obtenha a Solução de Conformidade",
+      "desc": "Veja o motivo da violação + alternativas + Listing gerado por IA"
+    }
+  },
+  "useCases": {
+    "title": "Casos de Uso",
+    "items": {
+      "1": "Vendedores de E-commerce: Verificação automática de conformidade do listing, evite remoção",
+      "2": "Marcas: Pré-verificação de conformidade de novos produtos, reduza risco de lançamento",
+      "3": "Logística Cross-border: Verificação em lote de produtos, liberação rápida na alfândega"
+    }
+  },
+  "features": {
+    "title": "Recursos Principais",
+    "anvisa": "Verificação ANVISA",
+    "anvisaDesc": "Cobertura total das regulamentações brasileiras, RDC 665/2022 e outras, atualizações em tempo real",
+    "cofepris": "Verificação COFEPRIS",
+    "cofeprisDesc": "Precisão nas regulamentações mexicanas, licenças de importação, classificação de produtos",
+    "aiListing": "Geração de Listing por IA",
+    "aiListingDesc": "Geração automática de títulos e descrições conforme regras das plataformas",
+    "batchCsv": "Verificação em Lote CSV",
+    "batchCsvDesc": "Suporte a upload em massa de ingredientes, verifique centenas de produtos de uma vez"
+  },
+  "pricing": {
+    "title": "Preços Simples e Transparentes",
+    "free": {
+      "name": "Grátis",
+      "price": "R$0",
+      "period": "/mês",
+      "features": [
+        "10 verificações/mês",
+        "Identificação básica de ingredientes",
+        "Exportação de relatório PDF"
+      ],
+      "cta": "Comece Grátis"
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "R$199",
+      "period": "/mês",
+      "features": [
+        "Verificações ilimitadas",
+        "Geração de Listing por IA",
+        "Verificação em Lote CSV",
+        "Suporte prioritário"
+      ],
+      "cta": "Atualize Agora"
+    }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "items": {
+      "1": {
+        "q": "Quais países/regiões são suportados?",
+        "a": "Currently supports Brazil (ANVISA) e México (COFEPRIS). Geração de Listing adaptada para Amazon, Mercado Livre, Shopee e outras plataformas."
+      },
+      "2": {
+        "q": "Quão precisos são os resultados?",
+        "a": "Treinamos em documentos oficiais de regulamentação e atualizamos regularmente. Para produtos complexos, oferecemos revisão manual."
+      },
+      "3": {
+        "q": "Como funciona a cobrança?",
+        "a": "Plano grátis: 10 verificações/mês. Pro: R$199/mês ilimitadas. API de detecção por uso, ideal para cenários em lote."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Especialista em Conformidade de Beleza na América Latina",
+    "product": "Produto",
+    "complianceCheck": "Verificação de Conformidade",
+    "aiListing": "Geração de Listing IA",
+    "pricing": "Preços",
+    "resources": "Recursos",
+    "knowledgeBase": "Base de Conhecimento Regulatório",
+    "helpCenter": "Centro de Ajuda",
+    "apiDocs": "Documentação da API",
+    "legal": "Legal",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "gdpr": "GDPR/LGPD/LFPDPPP",
+    "copyright": "© 2025 CosmetCheck. Todos os direitos reservados."
+  },
+  "auth": {
+    "login": "Entrar",
+    "register": "Cadastrar",
+    "email": "E-mail",
+    "password": "Senha",
+    "confirmPassword": "Confirmar Senha",
+    "forgotPassword": "Esqueceu a senha?",
+    "noAccount": "Não tem conta?",
+    "hasAccount": "Já tem conta?",
+    "loginSuccess": "Login realizado com sucesso!",
+    "registerSuccess": "Cadastro realizado com sucesso! Faça login",
+    "loginFailed": "Falha no login",
+    "registerFailed": "Falha no cadastro"
+  },
+  "demo": {
+    "title": "3 Passos Bloquear Risco → Gerar Listing Conforme",
+    "runDemo": "Executar Demonstração",
+    "demoHint": "👆 Clique no botão para simular o processo real (sem registro, sem usar quota)",
+    "clickToStart": "Clique no botão à esquerda para iniciar",
+    "violationDetected": "❌ Substância Proibida Detectada",
+    "autoReplace": "❌ Detectado → Substituição Automática",
+    "aiGenerated": "✓ Listing Conforme Gerado por IA"
+  },
+  "dispute": {
+    "title": "Reportar Falso Positivo / Submeter Dispute",
+    "success": "Enviado com sucesso",
+    "failed": "Falha no envio, tente novamente mais tarde."
+  },
+  "cookie": {
+    "title": "🍪 Uso de Cookies",
+    "description": "Usamos cookies necessários para manter seu login. Respeitamos sua escolha sobre cookies de análise.",
+    "policy": "Ver Política de Cookies"
+  }
+}
