@@ -1027,13 +1027,18 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
 function findMatches(text: string, rules: Omit<Violation, 'matchedText' | 'position'>[]): Violation[] {
   const violations: Violation[] = []
   const lowerText = text.toLowerCase()
+  const seenRuleIds = new Set<string>() // 去重：每个 ruleId 只记录一次
 
   for (const rule of rules) {
+    // Skip if already matched this ruleId (deduplication)
+    if (seenRuleIds.has(rule.ruleId)) continue
+    
     // 匹配主关键词
     const keyword = rule.keyword.toLowerCase()
-    let index = lowerText.indexOf(keyword)
+    const index = lowerText.indexOf(keyword)
 
-    while (index !== -1) {
+    if (index !== -1) {
+      seenRuleIds.add(rule.ruleId)
       violations.push({
         ...rule,
         matchedText: text.substring(index, index + rule.keyword.length),
@@ -1042,55 +1047,45 @@ function findMatches(text: string, rules: Omit<Violation, 'matchedText' | 'posit
           end: index + rule.keyword.length,
         },
       })
-      index = lowerText.indexOf(keyword, index + 1)
+      continue // 主关键词匹配后跳过 aliases 和 CAS
     }
 
     // 匹配别名 (aliases) - 支持 CAS号、中文、葡语、西语别名
     if (rule.aliases) {
       for (const alias of rule.aliases) {
         const aliasLower = alias.toLowerCase()
-        let aliasIndex = lowerText.indexOf(aliasLower)
+        const aliasIndex = lowerText.indexOf(aliasLower)
         
-        while (aliasIndex !== -1) {
-          // 避免重复添加相同规则
-          const alreadyExists = violations.some(
-            v => v.ruleId === rule.ruleId && v.position?.start === aliasIndex
-          )
-          if (!alreadyExists) {
-            violations.push({
-              ...rule,
-              matchedText: text.substring(aliasIndex, aliasIndex + alias.length),
-              position: {
-                start: aliasIndex,
-                end: aliasIndex + alias.length,
-              },
-            })
-          }
-          aliasIndex = lowerText.indexOf(aliasLower, aliasIndex + 1)
+        if (aliasIndex !== -1) {
+          seenRuleIds.add(rule.ruleId)
+          violations.push({
+            ...rule,
+            matchedText: text.substring(aliasIndex, aliasIndex + alias.length),
+            position: {
+              start: aliasIndex,
+              end: aliasIndex + alias.length,
+            },
+          })
+          break // 找到一个别名匹配后就跳过
         }
       }
     }
 
     // 匹配 CAS 号
-    if (rule.casNumber) {
+    if (!seenRuleIds.has(rule.ruleId) && rule.casNumber) {
       const casLower = rule.casNumber
-      let casIndex = lowerText.indexOf(casLower)
+      const casIndex = lowerText.indexOf(casLower)
       
-      while (casIndex !== -1) {
-        const alreadyExists = violations.some(
-          v => v.ruleId === rule.ruleId && v.position?.start === casIndex
-        )
-        if (!alreadyExists) {
-          violations.push({
-            ...rule,
-            matchedText: text.substring(casIndex, casIndex + rule.casNumber.length),
-            position: {
-              start: casIndex,
-              end: casIndex + rule.casNumber.length,
-            },
-          })
-        }
-        casIndex = lowerText.indexOf(casLower, casIndex + 1)
+      if (casIndex !== -1) {
+        seenRuleIds.add(rule.ruleId)
+        violations.push({
+          ...rule,
+          matchedText: text.substring(casIndex, casIndex + rule.casNumber.length),
+          position: {
+            start: casIndex,
+            end: casIndex + rule.casNumber.length,
+          },
+        })
       }
     }
   }
@@ -1154,12 +1149,6 @@ export function checkCompliance(input: CheckInput): CheckResult {
     }
   }
   
-  const allText = [
-    input.ingredients || '',
-    input.description || '',
-    input.label || '',
-  ].join(' ')
-
   const violations: Violation[] = []
 
   // Check ingredients
@@ -1167,9 +1156,15 @@ export function checkCompliance(input: CheckInput): CheckResult {
     violations.push(...findMatches(input.ingredients, allRules.filter(r => r.category === 'ingredient')))
   }
 
-  // Check description/claims
+  // Check description/claims (also check combined text for claims that might be in product name)
   if (input.description) {
     violations.push(...findMatches(input.description, allRules.filter(r => r.category === 'claim')))
+  }
+  
+  // Also check claims in combined text (product name, description, etc.)
+  const combinedText = [input.ingredients || '', input.description || '', input.label || ''].join(' ')
+  if (combinedText) {
+    violations.push(...findMatches(combinedText, allRules.filter(r => r.category === 'claim')))
   }
 
   // Check label
@@ -1177,12 +1172,11 @@ export function checkCompliance(input: CheckInput): CheckResult {
     violations.push(...findMatches(input.label, allRules.filter(r => r.category === 'label')))
   }
 
-  // Always add label requirements (info level)
+  // Always add label requirements (info level) - skip if already matched
   const labelRules = allRules.filter(r => r.ruleType === 'required')
-  // Only add if not already matched
+  const existingRuleIds = new Set(violations.map(v => v.ruleId))
   for (const rule of labelRules) {
-    const alreadyFound = violations.some(v => v.ruleId === rule.ruleId)
-    if (!alreadyFound) {
+    if (!existingRuleIds.has(rule.ruleId)) {
       violations.push({
         ...rule,
         matchedText: rule.keyword,
