@@ -1,0 +1,3 @@
+# Cloudflare Pages SPA fallback
+# All routes go to root for Next.js to handle via middleware
+/* /index.html 200

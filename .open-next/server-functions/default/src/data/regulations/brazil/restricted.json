@@ -1,0 +1,173 @@
+{
+  "source": "ANVISA",
+  "documentId": "RDC 907/2024 + RDC 529/2021 + RDC 530/2021",
+  "version": "2024-12",
+  "description": "巴西化妆品限制使用成分清单",
+  "rules": [
+    {
+      "ruleId": "BR-RES-001",
+      "category": "restricted",
+      "target": "Alpha Arbutin",
+      "aliases": ["α-Arbutin", "α-熊果苷", "4-Hydroxyphenyl alpha-D-glucopyranoside"],
+      "cas": "4193-55-9",
+      "severity": "warning",
+      "condition": "面部产品 ≤2%, 身体产品 ≤5%",
+      "message": "α-熊果苷有限制使用要求，需标注警示语",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-002",
+      "category": "restricted",
+      "target": "Kojic Acid",
+      "aliases": ["Ácido Kojico", "曲酸", "5-Hydroxy-2-hydroxymethyl-4-pyrone"],
+      "cas": "501-30-4",
+      "severity": "warning",
+      "condition": " ≤1% (面部), ≤3% (身体)",
+      "message": "曲酸有限制浓度要求，超标会刺激皮肤",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-003",
+      "category": "restricted",
+      "target": "Salicylic Acid",
+      "aliases": ["Ácido Salicílico", "水杨酸", "BHA"],
+      "cas": "69-72-7",
+      "severity": "warning",
+      "condition": " ≤2% (驻留型), ≤3% (冲洗型)",
+      "message": "水杨酸有限制浓度要求，孕妇禁用",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-004",
+      "category": "restricted",
+      "target": "Glycolic Acid",
+      "aliases": ["Ácido Glicólico", "乙醇酸", "AHA", "羟基乙酸"],
+      "cas": "79-14-1",
+      "severity": "warning",
+      "condition": " ≤10% (pH≥3.5)",
+      "message": "乙醇酸有限制浓度要求，需控制pH值",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-005",
+      "category": "restricted",
+      "target": "Lactic Acid",
+      "aliases": ["Ácido Lático", "乳酸", "AHA"],
+      "cas": "50-21-5",
+      "severity": "warning",
+      "condition": " ≤10% (pH≥3.5)",
+      "message": "乳酸有限制浓度要求",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-006",
+      "category": "restricted",
+      "target": "Retinol",
+      "aliases": ["Retinol", "维生素A醇", "Vitamin A"],
+      "cas": "68-26-8",
+      "severity": "warning",
+      "condition": " ≤0.5% (驻留型), 需标注孕妇警告",
+      "message": "视黄醇有限制浓度要求，孕妇禁用，需标注警示",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-007",
+      "category": "restricted",
+      "target": "Benzoyl Peroxide",
+      "aliases": ["Peróxido de Benzoíla", "过氧化苯甲酰", "BPO"],
+      "cas": "94-36-0",
+      "severity": "warning",
+      "condition": " ≤5% (非处方), 需标注刺激性警告",
+      "message": "过氧化苯甲酰有限制浓度要求，可能刺激皮肤",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-008",
+      "category": "restricted",
+      "target": "Niacinamide",
+      "aliases": ["Niacinamida", "烟酰胺", "Vitamin B3", "Nicotinamide"],
+      "cas": "98-92-0",
+      "severity": "info",
+      "condition": " ≤5% (美白宣称)",
+      "message": "烟酰胺作为美白成分使用有浓度限制",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-009",
+      "category": "restricted",
+      "target": "Vitamin C",
+      "aliases": ["Ácido Ascórbico", "Ascorbic Acid", "维生素C"],
+      "cas": "50-81-7",
+      "severity": "info",
+      "condition": " ≤15% (L-ascorbic acid)",
+      "message": "维生素C有限制浓度要求，L-抗坏血酸稳定性较差",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-010",
+      "category": "restricted",
+      "target": "Benzophenone-3",
+      "aliases": ["Benzofenona-3", "Oxybenzone", "防晒剂"],
+      "cas": "131-57-7",
+      "severity": "warning",
+      "condition": " ≤6%",
+      "message": "二苯酮-3是限制使用的防晒剂",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-011",
+      "category": "restricted",
+      "target": "Homosalate",
+      "aliases": ["Homosalato", "防晒剂"],
+      "cas": "76-21-3",
+      "severity": "warning",
+      "condition": " ≤10%",
+      "message": "胡莫柳酯是限制使用的防晒剂",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-012",
+      "category": "restricted",
+      "target": "Octinoxate",
+      "aliases": ["Octinoxato", "Ethylhexyl Methoxycinnamate", "OMC"],
+      "cas": "5466-77-3",
+      "severity": "warning",
+      "condition": " ≤10%",
+      "message": "甲氧基肉桂酸辛酯是限制使用的防晒剂",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-013",
+      "category": "restricted",
+      "target": "Phenoxyethanol",
+      "aliases": ["Fenooxietanol", "苯氧乙醇", "2-Phenoxyethanol"],
+      "cas": "122-99-6",
+      "severity": "info",
+      "condition": " ≤1% (单用), ≤0.8% (与氯咪巴唑共用)",
+      "message": "苯氧乙醇是限制使用的防腐剂",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-014",
+      "category": "restricted",
+      "target": "Triclosan",
+      "aliases": ["Triclosano", "三氯生", "2,4,4'-Trichloro-2'-hydroxydiphenyl ether"],
+      "cas": "3380-34-5",
+      "severity": "warning",
+      "condition": " ≤0.3% (冲洗型), 禁用于驻留型",
+      "message": "三氯生有限制使用范围，冲洗型产品可用，驻留型禁用",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-015",
+      "category": "restricted",
+      "target": "Chlorhexidine",
+      "aliases": ["Clorexidina", "洗必泰", "葡萄糖酸氯己定"],
+      "cas": "55-56-1",
+      "severity": "warning",
+      "condition": " ≤4% (冲洗型), 禁用于唇部产品",
+      "message": "氯己定有限制使用范围，唇部产品禁用",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    }
+  ]
+}

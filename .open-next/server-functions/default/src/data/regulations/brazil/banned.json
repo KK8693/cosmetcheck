@@ -1,0 +1,228 @@
+{
+  "source": "ANVISA",
+  "documentId": "RDC 907/2024",
+  "version": "2024-12",
+  "description": "巴西化妆品基本法规 - 禁用成分清单",
+  "rules": [
+    {
+      "ruleId": "BR-BAN-001",
+      "category": "banned",
+      "target": "Hydroquinone",
+      "aliases": ["Hidroquinona", "1,4-Benzenediol", "HQ"],
+      "cas": "123-31-9",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "氢醌是巴西ANVISA明确禁用的美白成分，绝对禁用",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-002",
+      "category": "banned",
+      "target": "Mercury",
+      "aliases": ["Mercúrio", "Hydrargyrum", "Hg", "汞"],
+      "cas": "7439-97-6",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "汞及其化合物是巴西绝对禁用的重金属，违规将面临R$10,000+罚款",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-003",
+      "category": "banned",
+      "target": "Mercury compounds",
+      "aliases": ["Compostos de Mercúrio", "Mercuric", "Mercurous"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "所有汞化合物均禁用，包括氯化汞、氧化汞等",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-004",
+      "category": "banned",
+      "target": "Tretinoin",
+      "aliases": ["Tretinoína", "Retinoic Acid", "Ácido Retinoico", "Vitamin A Acid", "维A酸"],
+      "cas": "302-79-4",
+      "severity": "critical",
+      "condition": "药品级成分 - 化妆品禁用",
+      "message": "维A酸是巴西药品级成分，化妆品禁止使用，违者视为药品销售处罚",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-005",
+      "category": "banned",
+      "target": "Retinoic Acid",
+      "aliases": ["Ácido Retinoico", "All-trans-retinoic acid", "ATRA"],
+      "cas": "302-79-4",
+      "severity": "critical",
+      "condition": "药品级成分 - 化妆品禁用",
+      "message": "维A酸是药品级成分，需经ANVISA注册为药品后方可销售",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-006",
+      "category": "banned",
+      "target": "Arsenic",
+      "aliases": ["Arsênio", "As", "砷"],
+      "cas": "7440-38-2",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "砷及其化合物是绝对禁用成分，重金属超标将导致海关扣留",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-007",
+      "category": "banned",
+      "target": "Lead",
+      "aliases": ["Chumbo", "Pb", "铅"],
+      "cas": "7439-92-1",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "铅是绝对禁用成分，重金属检测是海关查验重点",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-008",
+      "category": "banned",
+      "target": "Cadmium",
+      "aliases": ["Cádmio", "Cd", "镉"],
+      "cas": "7440-43-9",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "镉是绝对禁用成分，重金属检测是海关查验重点",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-009",
+      "category": "banned",
+      "target": "Phenacetin",
+      "aliases": ["Fenacetina", "Acetophenetidin"],
+      "cas": "62-44-2",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "非那西汀是禁用成分，具有肾毒性",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-010",
+      "category": "banned",
+      "target": "Mequinol",
+      "aliases": ["4-Methoxyphenol", "4-Metoxifenol", "对苯二酚甲醚"],
+      "cas": "150-76-5",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "对苯二酚甲醚是禁用美白成分",
+"sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-011",
+      "category": "banned",
+      "target": "4-Methoxyphenol",
+      "aliases": ["4-MP", "Mequinol"],
+      "cas": "150-76-5",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "4-甲氧基苯酚是禁用成分",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-012",
+      "category": "banned",
+      "target": "Bithionol",
+      "aliases": ["Bitionol", "2,2'-Thiobis(4,6-dichlorophenol)"],
+      "cas": "97-18-7",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "硫双二氯酚是禁用防腐剂",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-013",
+      "category": "banned",
+      "target": "Hexachlorophene",
+      "aliases": ["Hexaclorofeno", "HCP", "六氯酚"],
+      "cas": "70-30-4",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "六氯酚是禁用抗菌成分，具有神经毒性",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-014",
+      "category": "banned",
+      "target": "Clorofene",
+      "aliases": ["Clorofeno", "2-Benzyl-4-chlorophenol"],
+      "cas": "95-32-9",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "氯苯酚是禁用成分",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-015",
+      "category": "banned",
+      "target": "Cloroxylenol",
+      "aliases": ["Cloroxilenol", "4-Chloro-3,5-xylenol", "PCMX"],
+      "cas": "88-04-0",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "氯二甲苯酚是禁用成分",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-016",
+      "category": "banned",
+      "target": "Chloramphenicol",
+      "aliases": ["Cloranfenicol", "氯霉素"],
+      "cas": "56-75-7",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "氯霉素是禁用抗生素成分",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-017",
+      "category": "banned",
+      "target": "Corticosteroids",
+      "aliases": ["Corticosteroides", "糖皮质激素", "可的松"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "糖皮质激素是禁用成分，长期使用会导致皮肤萎缩",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-018",
+      "category": "banned",
+      "target": "Hydrocortisone",
+      "aliases": ["Hidrocortisona", "氢化可的松"],
+      "cas": "50-23-7",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "氢化可的松是禁用激素成分",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-019",
+      "category": "banned",
+      "target": "Betamethasone",
+      "aliases": ["Betametasona", "倍他米松"],
+      "cas": "378-44-9",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "倍他米松是禁用激素成分",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-020",
+      "category": "banned",
+      "target": "Thallium",
+      "aliases": ["Tálio", "Tl", "铊"],
+      "cas": "7440-28-0",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "铊是绝对禁用重金属",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    }
+  ]
+}

@@ -7,8 +7,11 @@ import { CookieConsent } from '@/components/CookieConsent'
 import { Navbar } from '@/components/Navbar'
 import { I18nProvider } from '@/i18n/useI18n'
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages } from 'next-intl/server'
+import { getMessages, setRequestLocale } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
+
+// Required for Cloudflare Pages
+export const runtime = 'edge'
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', preload: true })
 const spaceGrotesk = Space_Grotesk({ 
@@ -81,15 +84,23 @@ export const metadata: Metadata = {
   },
 }
 
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }))
-}
+// No generateStaticParams needed - handled by [locale] layouts
+// The root layout will fall back to default locale
 
 export default async function RootLayout({
   children,
+  params
 }: {
   children: React.ReactNode
+  params: Promise<{ locale?: string }>
 }) {
+  // Extract locale - may be undefined for root
+  const resolvedParams = await params
+  const locale = resolvedParams.locale || routing.defaultLocale
+  
+  // Enable static rendering for this locale
+  setRequestLocale(locale)
+  
   const messages = await getMessages()
   
   const jsonLd = {
@@ -137,7 +148,7 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang="zh" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"

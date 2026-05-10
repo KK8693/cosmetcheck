@@ -21,8 +21,11 @@ export interface Violation {
   source: string
   matchedText: string
   position?: { start: number; end: number }
+  sourceField?: 'ingredients' | 'description' | 'label'  // 匹配来源字段
+  contextSnippet?: string  // 原文上下文片段，高亮显示匹配位置
   casNumber?: string  // CAS号支持
   aliases?: string[] // 成分别名（支持中文、英文、葡语、西语）
+  rootFamily?: string  // 成分族词根，用于归一匹配（如 "retinoids" 可匹配 "tretinoin"）
 }
 
 export interface CheckResult {
@@ -1024,7 +1027,55 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
   },
 ]
 
-function findMatches(text: string, rules: Omit<Violation, 'matchedText' | 'position'>[]): Violation[] {
+// 生成上下文片段：在匹配词前后各取一定字符，高亮显示匹配位置
+function generateContextSnippet(
+  text: string,
+  matchStart: number,
+  matchEnd: number,
+  contextLength: number = 50
+): string {
+  const lowerText = text.toLowerCase()
+  const matchText = text.substring(matchStart, matchEnd)
+  
+  // 提取匹配词前后各 contextLength 个字符
+  const snippetStart = Math.max(0, matchStart - contextLength)
+  const snippetEnd = Math.min(text.length, matchEnd + contextLength)
+  
+  let snippet = ''
+  
+  // 添加前导省略标记
+  if (snippetStart > 0) {
+    snippet += '...'
+  }
+  
+  // 获取中间部分（包括匹配词）
+  const middlePart = text.substring(snippetStart, snippetEnd)
+  
+  // 在中间部分中找到匹配词的位置（相对位置）
+  const relativeMatchStart = matchStart - snippetStart
+  const relativeMatchEnd = matchEnd - snippetStart
+  
+  // 构建带高亮的片段：前导部分 + 高亮匹配 + 后续部分
+  const beforeMatch = middlePart.substring(0, relativeMatchStart)
+  const matched = middlePart.substring(relativeMatchStart, relativeMatchEnd)
+  const afterMatch = middlePart.substring(relativeMatchEnd)
+  
+  // 使用【匹配词】格式高亮
+  snippet += beforeMatch + '【' + matched + '】' + afterMatch
+  
+  // 添加尾部省略标记
+  if (snippetEnd < text.length) {
+    snippet += '...'
+  }
+  
+  return snippet
+}
+
+function findMatches(
+  text: string, 
+  rules: Omit<Violation, 'matchedText' | 'position' | 'sourceField' | 'contextSnippet'>[],
+  sourceField: 'ingredients' | 'description' | 'label' = 'description'
+): Violation[] {
   const violations: Violation[] = []
   const lowerText = text.toLowerCase()
   const seenRuleIds = new Set<string>() // 去重：每个 ruleId 只记录一次
@@ -1046,6 +1097,8 @@ function findMatches(text: string, rules: Omit<Violation, 'matchedText' | 'posit
           start: index,
           end: index + rule.keyword.length,
         },
+        sourceField,
+        contextSnippet: generateContextSnippet(text, index, index + rule.keyword.length),
       })
       continue // 主关键词匹配后跳过 aliases 和 CAS
     }
@@ -1065,6 +1118,8 @@ function findMatches(text: string, rules: Omit<Violation, 'matchedText' | 'posit
               start: aliasIndex,
               end: aliasIndex + alias.length,
             },
+            sourceField,
+            contextSnippet: generateContextSnippet(text, aliasIndex, aliasIndex + alias.length),
           })
           break // 找到一个别名匹配后就跳过
         }
@@ -1085,6 +1140,8 @@ function findMatches(text: string, rules: Omit<Violation, 'matchedText' | 'posit
             start: casIndex,
             end: casIndex + rule.casNumber.length,
           },
+          sourceField,
+          contextSnippet: generateContextSnippet(text, casIndex, casIndex + rule.casNumber.length),
         })
       }
     }
@@ -1151,37 +1208,55 @@ export function checkCompliance(input: CheckInput): CheckResult {
   
   const violations: Violation[] = []
 
-  // Check ingredients
+  // Check ingredients (with sourceField)
   if (input.ingredients) {
-    violations.push(...findMatches(input.ingredients, allRules.filter(r => r.category === 'ingredient')))
+    violations.push(...findMatches(input.ingredients, allRules.filter(r => r.category === 'ingredient'), 'ingredients'))
   }
 
-  // Check description/claims (also check combined text for claims that might be in product name)
+  // Check description/claims (with sourceField)
   if (input.description) {
-    violations.push(...findMatches(input.description, allRules.filter(r => r.category === 'claim')))
+    violations.push(...findMatches(input.description, allRules.filter(r => r.category === 'claim'), 'description'))
   }
   
   // Also check claims in combined text (product name, description, etc.)
   const combinedText = [input.ingredients || '', input.description || '', input.label || ''].join(' ')
   if (combinedText) {
-    violations.push(...findMatches(combinedText, allRules.filter(r => r.category === 'claim')))
+    violations.push(...findMatches(combinedText, allRules.filter(r => r.category === 'claim'), 'description'))
   }
 
-  // Check label
+  // Check label (with sourceField)
   if (input.label) {
-    violations.push(...findMatches(input.label, allRules.filter(r => r.category === 'label')))
+    violations.push(...findMatches(input.label, allRules.filter(r => r.category === 'label'), 'label'))
   }
 
-  // Always add label requirements (info level) - skip if already matched
-  const labelRules = allRules.filter(r => r.ruleType === 'required')
+  // Always add label requirements - AGGREGATE missing items into one violation
+  const labelRules = allRules.filter(r => r.category === 'label' && r.ruleType === 'required')
   const existingRuleIds = new Set(violations.map(v => v.ruleId))
+  
+  // 收集所有缺失的标签项
+  const missingLabelItems: string[] = []
   for (const rule of labelRules) {
     if (!existingRuleIds.has(rule.ruleId)) {
-      violations.push({
-        ...rule,
-        matchedText: rule.keyword,
-      })
+      missingLabelItems.push(rule.keyword)
     }
+  }
+
+  // 如果有缺失的标签项，聚合为一条
+  if (missingLabelItems.length > 0) {
+    const aggregatedViolation: Violation = {
+      ruleId: 'BR-LABEL-AGGREGATED',
+      category: 'label',
+      ruleType: 'required',
+      keyword: 'Multiple label requirements missing',
+      severity: 'warning',  // 聚合后降为 warning
+      message: `巴西标签合规缺失 - 缺少以下必要信息: ${missingLabelItems.join(', ')}`,
+      suggestion: '请补全所有必需标签信息后再上市销售',
+      source: 'ANVISA RDC 169/2024',
+      matchedText: missingLabelItems.join(', '),
+      sourceField: 'label',
+      contextSnippet: `缺失项目: ${missingLabelItems.join(', ')}`,
+    }
+    violations.push(aggregatedViolation)
   }
 
   const criticalCount = violations.filter(v => v.severity === 'critical').length

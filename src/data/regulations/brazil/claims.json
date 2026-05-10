@@ -223,6 +223,26 @@
       "condition": "禁止抗衰老绝对化宣称",
       "message": "禁止使用'完全消除皱纹'、'全面抗衰老'等绝对化表述，建议使用'改善皱纹外观'等温和表述，符合RDC 907/2024规定",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-023",
+      "category": "claim",
+      "target": "全肤质适用绝对化",
+      "aliases": ["Ideal para todos os tipos de pele", "适合所有肤质", "para todos os tipos de pele", "适合各种皮肤类型", "funciona para qualquer pele", "适用于任何皮肤", "universal para pele", "皮肤通用"],
+      "severity": "warning",
+      "condition": "禁止无科学依据的全肤质宣称",
+      "message": "禁止无科学依据宣称适合所有肤质，需有测试支持，建议使用'兼容多数肤质'或'适合干性/油性/中性皮肤'等具体描述",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-024",
+      "category": "claim",
+      "target": "100%效果保证绝对化",
+      "aliases": ["resultados garantidos 100%", "100%保证结果", "100% de eficácia", "100%有效", "garantido 100%", "100%保证", "funciona 100%", "100%有效", "resultados 100%", "100%结果"],
+      "severity": "warning",
+      "condition": "禁止100%绝对效果保证",
+      "message": "禁止使用100%效果保证、绝对有效等绝对化表述，功效因人而异，建议使用'因人而异'或'配合使用效果更佳'等表述",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     }
   ]
 }

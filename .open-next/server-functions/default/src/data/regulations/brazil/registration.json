@@ -1,0 +1,68 @@
+{
+  "source": "ANVISA",
+  "documentId": "RDC 48/2023",
+  "version": "2023-10",
+  "description": "巴西化妆品备案规则 - 进口产品预先备案要求",
+  "rules": [
+    {
+      "ruleId": "BR-REG-001",
+      "category": "registration",
+      "target": "Import registration",
+      "aliases": ["Registro de importação", "进口备案"],
+      "severity": "critical",
+      "condition": "进口化妆品必须预先备案",
+      "message": "根据RDC 48/2023，进口化妆品必须在ANVISA预先备案",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-REG-002",
+      "category": "registration",
+      "target": "Registration number on package",
+      "aliases": ["Número de registro na embalagem", "注册编号标注"],
+      "severity": "critical",
+      "condition": "包装上必须标注ANVISA注册编号",
+      "message": "产品包装上必须清楚标注ANVISA注册编号",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-REG-003",
+      "category": "registration",
+      "target": "Import license",
+      "aliases": ["Licença de importação", "进口许可证"],
+      "severity": "critical",
+      "condition": "必须持有有效的ANVISA进口许可",
+      "message": "进口商必须持有有效的ANVISA进口许可证",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-REG-004",
+      "category": "registration",
+      "target": "Responsible technician",
+      "aliases": ["Técnico responsável", "技术负责人"],
+      "severity": "critical",
+      "condition": "必须有注册的巴西技术负责人",
+      "message": "必须有在ANVISA注册的技术负责人（RT）",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-REG-005",
+      "category": "registration",
+      "target": "Product notification",
+      "aliases": ["Notificação de produto", "产品通报"],
+      "severity": "warning",
+      "condition": "部分产品只需通报，无需注册",
+      "message": "部分低风险产品只需通报（Notificação），无需完整注册",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-REG-006",
+      "category": "registration",
+      "target": "Expiration monitoring",
+      "aliases": ["Monitoramento de validade", "有效期监控"],
+      "severity": "info",
+      "condition": "需监控产品有效期",
+      "message": "进口商需监控系统中的产品有效期",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    }
+  ]
+}
