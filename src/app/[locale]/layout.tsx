@@ -10,6 +10,9 @@ import { getMessages, setRequestLocale } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
 import { notFound } from 'next/navigation'
 
+// Force dynamic rendering for Cloudflare Pages compatibility
+export const dynamic = 'force-dynamic'
+
 const inter = Inter({ subsets: ['latin'], display: 'swap', preload: true })
 const spaceGrotesk = Space_Grotesk({ 
   subsets: ['latin'], 
@@ -23,11 +26,6 @@ const dmSans = DM_Sans({
   preload: true,
   variable: '--font-body',
 })
-
-// Generate static params for all supported locales
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }))
-}
 
 export default async function LocaleLayout({
   children,

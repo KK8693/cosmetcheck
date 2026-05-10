@@ -10,15 +10,8 @@ import { Logo } from '@/components/Logo'
 import { setRequestLocale } from 'next-intl/server'
 import { Link } from '@/i18n/routing'
 
-// Enable static rendering for this page
-export function generateStaticParams() {
-  return [
-    { locale: 'zh' },
-    { locale: 'en' },
-    { locale: 'pt-BR' },
-    { locale: 'es-MX' },
-  ]
-}
+// Force dynamic rendering for Cloudflare Pages compatibility
+export const dynamic = 'force-dynamic'
 
 export default async function HomePage({
   params
