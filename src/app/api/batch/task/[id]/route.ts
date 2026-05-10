@@ -1,9 +1,33 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient } from '@supabase/supabase-js'
+import { createClient, SupabaseClient } from '@supabase/supabase-js'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-const supabase = createClient(supabaseUrl, supabaseAnonKey)
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+
+// Lazy initialization for Edge Runtime compatibility
+let _supabase: SupabaseClient | null = null
+let _supabaseAdmin: SupabaseClient | null = null
+
+function getSupabase(): SupabaseClient {
+  if (!_supabase) {
+    if (!supabaseUrl || !supabaseAnonKey) {
+      throw new Error('Missing Supabase environment variables')
+    }
+    _supabase = createClient(supabaseUrl, supabaseAnonKey)
+  }
+  return _supabase
+}
+
+function getSupabaseAdmin(): SupabaseClient {
+  if (!_supabaseAdmin) {
+    if (!supabaseUrl || !supabaseServiceKey) {
+      throw new Error('Missing Supabase environment variables')
+    }
+    _supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey)
+  }
+  return _supabaseAdmin
+}
 
 export const runtime = 'edge'
 
@@ -21,8 +45,8 @@ export async function GET(
       )
     }
 
-    // Get task
-    const { data: task, error: taskError } = await supabase
+    // Get task (use admin client to bypass RLS)
+    const { data: task, error: taskError } = await getSupabaseAdmin()
       .from('batch_tasks')
       .select('*')
       .eq('id', id)
@@ -35,14 +59,14 @@ export async function GET(
       )
     }
 
-    // Get results count
-    const { count } = await supabase
+    // Get results count (use admin client to bypass RLS)
+    const { count } = await getSupabaseAdmin()
       .from('batch_results')
       .select('*', { count: 'exact', head: true })
       .eq('task_id', id)
 
     // Get recent results
-    const { data: results } = await supabase
+    const { data: results } = await getSupabaseAdmin()
       .from('batch_results')
       .select('*')
       .eq('task_id', id)

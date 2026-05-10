@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+export const runtime = 'edge'
+
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { CheckCircle, Shield, Globe, Zap } from 'lucide-react'

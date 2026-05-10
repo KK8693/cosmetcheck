@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 export const metadata = {
   title: 'Terms of Service - CosmetCheck',
   description: 'CosmetCheck Terms of Service',

@@ -1,4 +1,6 @@
 import { HeroSection } from '@/sections/HeroSection'
+
+export const runtime = 'edge'
 import { HowItWorksSection } from '@/sections/HowItWorksSection'
 import { UseCasesSection } from '@/sections/UseCasesSection'
 import { FeaturesSection } from '@/sections/FeaturesSection'

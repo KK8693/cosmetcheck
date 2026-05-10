@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 export const metadata = {
   title: 'Refund Policy - CosmetCheck',
   description: 'CosmetCheck Refund Policy',

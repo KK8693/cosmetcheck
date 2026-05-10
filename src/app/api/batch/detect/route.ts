@@ -1,10 +1,35 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { checkCompliance } from '@/lib/engine'
-import { createClient } from '@supabase/supabase-js'
+import { createClient, SupabaseClient } from '@supabase/supabase-js'
+import { checkBatchAccess } from '@/lib/subscription'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-const supabase = createClient(supabaseUrl, supabaseAnonKey)
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+
+// Lazy initialization for Edge Runtime compatibility
+let _supabase: SupabaseClient | null = null
+let _supabaseAdmin: SupabaseClient | null = null
+
+function getSupabase(): SupabaseClient {
+  if (!_supabase) {
+    if (!supabaseUrl || !supabaseAnonKey) {
+      throw new Error('Missing Supabase environment variables')
+    }
+    _supabase = createClient(supabaseUrl, supabaseAnonKey)
+  }
+  return _supabase
+}
+
+function getSupabaseAdmin(): SupabaseClient {
+  if (!_supabaseAdmin) {
+    if (!supabaseUrl || !supabaseServiceKey) {
+      throw new Error('Missing Supabase environment variables')
+    }
+    _supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey)
+  }
+  return _supabaseAdmin
+}
 
 export const runtime = 'edge'
 
@@ -34,8 +59,38 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Create batch task
-    const { data: task, error: taskError } = await supabase
+    // Check Pro subscription - accept email from header or body
+    const userEmail = request.headers.get('x-user-email') || body.userEmail
+    if (userEmail) {
+      const { allowed, tier } = await checkBatchAccess(userEmail)
+      if (!allowed) {
+        return NextResponse.json(
+          {
+            error: 'Pro subscription required',
+            message: '批量检测功能仅限 Pro 用户使用。请先升级到 Pro 套餐。',
+            tier,
+            upgradeUrl: '/pricing',
+          },
+          { status: 403 }
+        )
+      }
+    } else {
+      // No email provided, check IP-based quota fallback for free users
+      // For now, allow up to 5 items for anonymous users
+      if (items.length > 5) {
+        return NextResponse.json(
+          {
+            error: 'Pro subscription required for large batches',
+            message: '批量检测超过 5 条需要 Pro 订阅。请升级到 Pro 套餐获取无限批量检测。',
+            upgradeUrl: '/pricing',
+          },
+          { status: 403 }
+        )
+      }
+    }
+
+    // Create batch task (use admin client to bypass RLS)
+    const { data: task, error: taskError } = await getSupabaseAdmin()
       .from('batch_tasks')
       .insert({
         task_type: 'detect',
@@ -92,8 +147,8 @@ export async function POST(request: NextRequest) {
       }
       completedCount++
 
-      // Store result
-      const { error: resultError } = await supabase
+      // Store result (use admin client to bypass RLS)
+      const { error: resultError } = await getSupabaseAdmin()
         .from('batch_results')
         .insert({
           task_id: task.id,
@@ -118,8 +173,8 @@ export async function POST(request: NextRequest) {
       })
     }
 
-    // Update task with final counts
-    await supabase
+    // Update task with final counts (use admin client to bypass RLS)
+    await getSupabaseAdmin()
       .from('batch_tasks')
       .update({
         completed_count: completedCount,
