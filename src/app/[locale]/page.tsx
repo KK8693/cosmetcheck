@@ -10,6 +10,9 @@ import { Logo } from '@/components/Logo'
 import { setRequestLocale } from 'next-intl/server'
 import { Link } from '@/i18n/routing'
 
+// Required for Cloudflare Pages
+export const runtime = 'edge'
+
 // Force dynamic rendering for Cloudflare Pages compatibility
 export const dynamic = 'force-dynamic'
 

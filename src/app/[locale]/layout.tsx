@@ -12,6 +12,8 @@ import { notFound } from 'next/navigation'
 
 // Force dynamic rendering for Cloudflare Pages compatibility
 export const dynamic = 'force-dynamic'
+// Required for Cloudflare Pages
+export const runtime = 'edge'
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', preload: true })
 const spaceGrotesk = Space_Grotesk({ 
