@@ -1,5 +1,7 @@
 import Link from 'next/link'
- 
+
+export const runtime = 'edge'
+
 export default function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#0A4D8C] via-[#1E6BB8] to-[#00A86B]">
