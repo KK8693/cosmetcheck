@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
+import Link from 'next/link'
 
 export function CookieConsent() {
   const [showConsent, setShowConsent] = useState(false)
@@ -46,7 +47,7 @@ export function CookieConsent() {
             </Button>
           </div>
           <p className="text-xs text-gray-500 mt-3">
-            <a href="/cookie-policy" className="underline hover:text-blue-600">查看 Cookie 政策</a>
+            <Link href="/cookie-policy" className="underline hover:text-blue-600">查看 Cookie 政策</Link>
           </p>
         </CardContent>
       </Card>

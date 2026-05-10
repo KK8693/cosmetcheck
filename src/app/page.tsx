@@ -1,4 +1,5 @@
 import { HeroSection } from '@/sections/HeroSection'
+import { Link } from '@/i18n/routing'
 
 export const runtime = 'edge'
 import { HowItWorksSection } from '@/sections/HowItWorksSection'
@@ -38,7 +39,7 @@ export default function HomePage() {
               <ul className="space-y-2 text-sm">
                 <li>合规检测</li>
                 <li>AI Listing生成</li>
-                <li><a href="/pricing" className="hover:text-white transition-colors">定价</a></li>
+                <li><Link href="/pricing" className="hover:text-white transition-colors">定价</Link></li>
               </ul>
             </div>
             <div>
@@ -52,7 +53,7 @@ export default function HomePage() {
             <div>
               <div className="text-white font-semibold mb-4">法律</div>
               <ul className="space-y-2 text-sm">
-                <li><a href="/privacy" className="hover:text-white transition-colors">隐私政策</a></li>
+                <li><Link href="/privacy" className="hover:text-white transition-colors">隐私政策</Link></li>
                 <li>服务条款</li>
                 <li>GDPR/LGPD/LFPDPPP</li>
               </ul>
