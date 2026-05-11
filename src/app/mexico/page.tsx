@@ -296,7 +296,7 @@ Términos como &quot;tratamiento&quot;, &quot;cura&quot;, &quot;medicinal&quot;,
                 Preferido
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Pro</h3>
-              <div className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">$29<span className="text-lg text-gray-500">/mes</span></div>
+              <div className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">Mex$499<span className="text-lg text-gray-500">/mes</span></div>
               <p className="text-sm text-gray-500 mb-4">Verificaciones ilimitadas + IA Listing</p>
               <Link href="/pricing">
                 <Button className="w-full bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold">

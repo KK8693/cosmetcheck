@@ -171,7 +171,7 @@
       "badge": "🔥 Ahorra 40% · Solo 6 días",
       "recommend": "Recomendado",
       "name": "Pro",
-      "priceOriginal": "$699",
+      "priceOriginal": "Mex$699",
       "price": "Mex$499",
       "period": "/mes",
       "desc": "Cancela cuando quieras",
@@ -207,7 +207,7 @@
           "active": true
         }
       ],
-      "cta": "Desbloquea Ilimitado — $179/mes"
+      "cta": "Desbloquea Ilimitado — Mex$499/mes"
     },
     "stats": {
       "savedFine": {

@@ -272,22 +272,22 @@ export default function BrasilPage() {
       <section className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <div className="inline-block rounded-full bg-[#0A4D8C]/10 px-4 py-1 text-sm font-semibold text-[#0A4D8C] mb-4">
-            价值优先
+            Melhor custo-benefício
           </div>
           <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-4">
-            省下的每一次罚款，都够付一年 Pro
+            Cada multa evitada paga um ano de Pro
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            ANVISA 单次违规罚款可达 R$ 10,000+，一次 Pro 订阅即可覆盖全年
+            Uma infração ANVISA pode custar R$ 10.000+, uma assinatura Pro cobre o ano todo
           </p>
           <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-8">
             <div className="rounded-2xl border-2 border-gray-100 bg-white p-6 text-left">
               <h3 className="text-xl font-bold text-gray-900 mb-2">Free</h3>
-              <div className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">$0<span className="text-lg text-gray-500">/月</span></div>
-              <p className="text-sm text-gray-500 mb-4">每月 10 次检测 · 适合测试</p>
+              <div className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">R$0<span className="text-lg text-gray-500">/mês</span></div>
+              <p className="text-sm text-gray-500 mb-4">10 verificações/mês · Ideal para testar</p>
               <Link href="/?country=BR">
                 <Button variant="outline" className="w-full font-semibold text-[#0A4D8C] border-[#0A4D8C]/30">
-                  免费开始
+                  Começar grátis
                 </Button>
               </Link>
             </div>
@@ -296,18 +296,18 @@ export default function BrasilPage() {
                 卖家首选
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Pro</h3>
-              <div className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">$29<span className="text-lg text-gray-500">/月</span></div>
-              <p className="text-sm text-gray-500 mb-4">无限次检测 + AI Listing 生成</p>
+              <div className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">R$149<span className="text-lg text-gray-500">/mês</span></div>
+              <p className="text-sm text-gray-500 mb-4">Verificações ilimitadas + IA Listing</p>
               <Link href="/pricing">
                 <Button className="w-full bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold">
-                  查看详情
+                  Ver detalhes
                 </Button>
               </Link>
             </div>
           </div>
-          <p className="text-sm text-gray-500">
-            无需信用卡 · 7 天无理由退款 · 随时取消
-          </p>
+            <p className="text-sm text-gray-500">
+              Sem cartão de crédito · Reembolso em 7 dias · Cancele quando quiser
+            </p>
         </div>
       </section>
 
