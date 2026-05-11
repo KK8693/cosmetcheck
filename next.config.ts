@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
   output: 'standalone',
   // IMPORTANT: Don't use Next.js i18n config with next-intl
   // next-intl handles i18n via middleware and [locale] dynamic routes
+  // Include messages files in the build output for next-intl on edge runtime
+  outputFileTracingIncludes: {
+    '/': ['./messages/*.json'],
+  },
   images: {
     remotePatterns: [
       {
