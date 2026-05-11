@@ -68,7 +68,7 @@ export function Navbar() {
               <LanguageSwitcher />
               {user ? (
                 <span className="text-sm text-white/60">
-                  {tCommon('loggedInAs', { email: user.email?.split('@')[0] })}
+                  {tCommon('loggedInAs', { email: user?.email?.split('@')[0] ?? 'user' })}
                 </span>
               ) : (
                 <Button
