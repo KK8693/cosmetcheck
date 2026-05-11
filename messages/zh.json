@@ -26,7 +26,7 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "拉美卖美妆，不再被下架罚款",
+    "title": "标题",
     "titleLine2": "不再被下架罚款",
     "subtitle": "一键检测巴西/墨西哥美妆合规，AI自动生成高转化Listing。免费开始，避免ANVISA/COFEPRIS下架罚款。",
     "subtitleShort": "一键检测巴西/墨西哥等5国合规，AI自动生成高转化Listing — 免费开始",
@@ -68,7 +68,6 @@
     "aiGeneratedListing": "AI生成的合规Listing",
     "portuguese": "葡语",
     "spanish": "西语",
-    "title": "标题",
     "description": "描述",
     "bulletPoints": "卖点",
     "complianceNotes": "合规备注",
@@ -117,18 +116,13 @@
   },
   "howItWorks": {
     "title": "三步完成合规检测",
-    "step1": {
-      "title": "输入成分",
-      "desc": "粘贴产品成分表，系统自动识别"
-    },
-    "step2": {
-      "title": "AI 智能检测",
-      "desc": "对照 ANVISA/COFEPRIS 法规库，秒级返回结果"
-    },
-    "step3": {
-      "title": "获取合规方案",
-      "desc": "查看违规原因 + 替代方案 + AI 生成合规 Listing"
-    }
+    "subtitle": "从成分输入到Listing生成，全程AI辅助，无需法规背景",
+    "step1Title": "粘贴产品信息",
+    "step1Desc": "粘贴产品描述、成分表或上传文档，支持中/英/葡/西语",
+    "step2Title": "AI自动检测合规",
+    "step2Desc": "实时标记违禁词、浓度超标成分，显示ANVISA/COFEPRIS具体法规条款",
+    "step3Title": "生成高转化Listing",
+    "step3Desc": "一键生成符合当地法规的葡语/西班牙语Listing，可直接上架"
   },
   "useCases": {
     "title": "适用场景",
@@ -140,14 +134,15 @@
   },
   "features": {
     "title": "核心功能",
-    "anvisa": "ANVISA 合规检测",
-    "anvisaDesc": "巴西法规全面覆盖，RDC 665/2022 等关键法规实时更新",
-    "cofepris": "COFEPRIS 合规检测",
-    "cofeprisDesc": "墨西哥法规精准匹配，进口许可、产品分类一键搞定",
-    "aiListing": "AI Listing 生成",
-    "aiListingDesc": "基于检测结果自动生成符合平台规则的商品标题和描述",
-    "batchCsv": "批量 CSV 检测",
-    "batchCsvDesc": "支持批量上传成分表，一次检测上百个产品"
+    "subtitle": "专为拉美美妆合规设计的AI检测引擎",
+    "autoBlockTitle": "上架前自动拦截下架风险",
+    "autoBlockDesc": "输入成分秒出风险报告：哪里违规、怎么改、引用哪条法规 — 不让罚款单先到",
+    "listingTitle": "当地人看了就想买的 Listing",
+    "listingDesc": "不是翻译，是按巴西/墨西哥消费者搜索习惯重写标题和卖点，自带合规过滤",
+    "highlightTitle": "违禁词秒标红，附官方条款",
+    "highlightDesc": "ANVISA RDC 编号、COFEPRIS NOM 标准直接引用，平台申诉有依据",
+    "freeTryTitle": "0 元先测 10 次，再决定",
+    "freeTryDesc": "不用绑卡、不用签合同，测完觉得有用再升级 Pro"
   },
   "pricing": {
     "title": "简单透明的定价",
@@ -161,12 +156,30 @@
       "period": "/月",
       "desc": "适合：每月 ≤10 个 SKU 的测试卖家",
       "features": [
-        { "text": "每月10次合规检测", "active": true },
-        { "text": "基础违禁词检测", "active": true },
-        { "text": "巴西ANVISA规则", "active": true },
-        { "text": "墨西哥COFEPRIS规则", "active": true },
-        { "text": "AI Listing 生成", "active": false },
-        { "text": "批量 CSV 检测", "active": false }
+        {
+          "text": "每月10次合规检测",
+          "active": true
+        },
+        {
+          "text": "基础违禁词检测",
+          "active": true
+        },
+        {
+          "text": "巴西ANVISA规则",
+          "active": true
+        },
+        {
+          "text": "墨西哥COFEPRIS规则",
+          "active": true
+        },
+        {
+          "text": "AI Listing 生成",
+          "active": false
+        },
+        {
+          "text": "批量 CSV 检测",
+          "active": false
+        }
       ],
       "cta": "免费试用 10 次"
     },
@@ -181,20 +194,53 @@
       "taxNote": "* 价格不含税，自动续费",
       "warning": "ANVISA 单次违规罚款 ≈ R$ 10,000（≈ $1,700），够付 {months} 个月 Pro",
       "features": [
-        { "text": "无限次合规检测", "active": true },
-        { "text": "AI Listing生成（葡/西语）", "active": true },
-        { "text": "法规更新实时通知", "active": true },
-        { "text": "优先客服支持", "active": true },
-        { "text": "批量检测（CSV导入）", "active": true },
-        { "text": "🌟 新市场优先体验（阿根廷/哥伦比亚 Q3）", "active": true },
-        { "text": "🌟 专属合规顾问 1v1（年度订阅）", "active": true }
+        {
+          "text": "无限次合规检测",
+          "active": true
+        },
+        {
+          "text": "AI Listing生成（葡/西语）",
+          "active": true
+        },
+        {
+          "text": "法规更新实时通知",
+          "active": true
+        },
+        {
+          "text": "优先客服支持",
+          "active": true
+        },
+        {
+          "text": "批量检测（CSV导入）",
+          "active": true
+        },
+        {
+          "text": "🌟 新市场优先体验（阿根廷/哥伦比亚 Q3）",
+          "active": true
+        },
+        {
+          "text": "🌟 专属合规顾问 1v1（年度订阅）",
+          "active": true
+        }
       ],
       "cta": "解锁无限次 — $29/月"
     },
     "stats": {
-      "savedFine": { "num": "R$ 8,500", "label": "平均避免罚款金额", "desc": "基于 200+ 卖家调研" },
-      "savedTime": { "num": "7 天", "label": "平均节省合规时间", "desc": "从 2 周缩短到 3 天" },
-      "approvalRate": { "num": "92%", "label": "Listing 审核通过率", "desc": "AI 生成 vs 人工撰写" }
+      "savedFine": {
+        "num": "R$ 8,500",
+        "label": "平均避免罚款金额",
+        "desc": "基于 200+ 卖家调研"
+      },
+      "savedTime": {
+        "num": "7 天",
+        "label": "平均节省合规时间",
+        "desc": "从 2 周缩短到 3 天"
+      },
+      "approvalRate": {
+        "num": "92%",
+        "label": "Listing 审核通过率",
+        "desc": "AI 生成 vs 人工撰写"
+      }
     }
   },
   "faq": {
@@ -244,7 +290,7 @@
     "loginFailed": "登录失败",
     "registerFailed": "注册失败"
   },
-"demo": {
+  "demo": {
     "title": "3步拦截风险 → 生成合规 Listing",
     "runDemo": "运行检测演示",
     "demoHint": "👆 点击按钮，模拟真实检测流程（无需注册，不消耗次数）",
@@ -268,6 +314,19 @@
     "submitting": "提交中...",
     "submit": "提交",
     "minLength": "请至少输入 10 个字符"
+  },
+  "cta": {
+    "badge": "🔥 限时福利 · 本月注册送 5 次 Pro 体验",
+    "title": "今天就开始合规卖货",
+    "subtitle": "加入 2,000+ 拉美美妆卖家，用AI让合规不再成为出海障碍",
+    "emailPlaceholder": "输入邮箱，免费开始",
+    "button": "立即免费检测",
+    "emailInvalid": "请输入有效的邮箱地址",
+    "subscribeError": "订阅失败，请稍后重试",
+    "subscribeSuccess": "✅ 订阅成功！请查收邮件确认。",
+    "whatsapp": "WhatsApp 快速咨询",
+    "or": "或",
+    "noCreditCard": "无需信用卡 · 随时取消 · 免费版永久可用"
   },
   "cookie": {
     "title": "🍪 Cookie 使用",

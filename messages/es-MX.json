@@ -1,21 +1,6 @@
 {
   "common": {
-    "brand": "CosmetCheck",
-    "tagline": "Experto en Cumplimiento de Belleza en América Latina — Simplificando Tu Entrada al Mercado",
-    "features": "Características",
-    "pricing": "Precios",
-    "contact": "Contáctanos",
-    "freeStart": "Empieza Gratis",
-    "learnMore": "Saber Más",
-    "viewDetails": "Ver Detalles",
-    "submit": "Enviar",
-    "submitting": "Enviando...",
-    "success": "Éxito",
-    "error": "Error",
-    "warning": "Advertencia",
-    "loading": "Cargando...",
-    "download": "Descargar",
-    "copy": "Copiar"
+    "loggedInAs": "Iniciado como {email}"
   },
   "nav": {
     "features": "Características",
@@ -25,7 +10,7 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Vende Belleza en América Latina Sin Retiros o Multas",
+    "title": "Título",
     "titleLine2": "Sin Retiros o Multas",
     "subtitle": "Verificación de cumplimiento con un clic para Brasil/México, Listings de alta conversión generados por IA. Empieza gratis, evita penalidades ANVISA/COFEPRIS.",
     "subtitleShort": "Verificación de cumplimiento Brasil/México en un clic, Listings de alta conversión generados por IA — Empieza gratis",
@@ -67,7 +52,6 @@
     "aiGeneratedListing": "Listing Conforme Generado por IA",
     "portuguese": "Portugués",
     "spanish": "Español",
-    "title": "Título",
     "description": "Descripción",
     "bulletPoints": "Puntos Clave",
     "complianceNotes": "Notas de Cumplimiento",
@@ -114,23 +98,15 @@
       "generateFailed": "Error en la generación, intenta de nuevo más tarde"
     }
   },
-  "common": {
-    "loggedInAs": "Iniciado como {email}"
-  },
   "howItWorks": {
-    "title": "Completa la Verificación de Cumplimiento en 3 Pasos",
-    "step1": {
-      "title": "Ingresa los Ingredientes",
-      "desc": "Pega tu lista de ingredientes, el sistema identifica automáticamente"
-    },
-    "step2": {
-      "title": "Detección Inteligente IA",
-      "desc": "Compara con la base ANVISA/COFEPRIS, resultado en segundos"
-    },
-    "step3": {
-      "title": "Obtén la Solución de Cumplimiento",
-      "desc": "Ve el motivo de la violación + alternativas + Listing generado por IA"
-    }
+    "title": "Cumplimiento en 3 Pasos",
+    "subtitle": "Desde entrada de ingredientes hasta generación de Listado — asistencia completa de IA, sin experiencia regulatoria necesaria",
+    "step1Title": "Pega Info del Producto",
+    "step1Desc": "Pega descripción del producto, lista de ingredientes o sube documento, soporta ES/PT/EN",
+    "step2Title": "Detección Automática por IA",
+    "step2Desc": "Marcado en tiempo real de palabras prohibidas, ingredientes sobre límite, muestra cláusulas regulatorias ANVISA/COFEPRIS",
+    "step3Title": "Generar Listado de Alto Impacto",
+    "step3Desc": "Un clic genera Listado en español/portugués en cumplimiento con regulaciones locales, listo para publicar"
   },
   "useCases": {
     "title": "Casos de Uso",
@@ -142,14 +118,15 @@
   },
   "features": {
     "title": "Características Principales",
-    "anvisa": "Verificación ANVISA",
-    "anvisaDesc": "Cobertura total de regulaciones brasileñas, RDC 665/2022 y otras, actualizaciones en tiempo real",
-    "cofepris": "Verificación COFEPRIS",
-    "cofeprisDesc": "Precisión en regulaciones mexicanas, permisos de importación, clasificación de productos",
-    "aiListing": "Generación de Listing por IA",
-    "aiListingDesc": "Generación automática de títulos y descripciones conforme reglas de las plataformas",
-    "batchCsv": "Verificación por Lote CSV",
-    "batchCsvDesc": "Soporte a carga masiva de ingredientes, verifica cientos de productos a la vez"
+    "subtitle": "Motor de IA para cumplimiento diseñado para el mercado de belleza latinoamericano",
+    "autoBlockTitle": "Bloqueo Automático Antes de Listar",
+    "autoBlockDesc": "Ingresa ingredientes, recibe informes de riesgo instantánea: qué viola, cómo corregir, qué regulación — detén multas antes de que lleguen",
+    "listingTitle": "Listado Que Vende",
+    "listingDesc": "No es traducción — reescribe títulos y puntos de venta según hábitos de búsqueda de consumidores brasileños y mexicanos, con cumplimiento integrado",
+    "highlightTitle": "Resalta Palabras de Riesgo con Citas",
+    "highlightDesc": "Referencias directas de números ANVISA RDC, normas COFEPRIS —ten evidencia para apelaciones en plataformas",
+    "freeTryTitle": "0$ Para Probar 10 Veces",
+    "freeTryDesc": "Sin tarjeta de crédito, sin contrato. Prueba primero, haz upgrade a Pro solo si te parece útil"
   },
   "pricing": {
     "title": "Precios Simples y Transparentes",
@@ -163,12 +140,30 @@
       "period": "/mes",
       "desc": "Para: ≤10 SKUs/mes",
       "features": [
-        { "text": "10 verificaciones/mes", "active": true },
-        { "text": "Verificación básica de prohibidos", "active": true },
-        { "text": "Reglas ANVISA Brasil", "active": true },
-        { "text": "Reglas COFEPRIS México", "active": true },
-        { "text": "Generación de Listing IA", "active": false },
-        { "text": "Verificación por Lote CSV", "active": false }
+        {
+          "text": "10 verificaciones/mes",
+          "active": true
+        },
+        {
+          "text": "Verificación básica de prohibidos",
+          "active": true
+        },
+        {
+          "text": "Reglas ANVISA Brasil",
+          "active": true
+        },
+        {
+          "text": "Reglas COFEPRIS México",
+          "active": true
+        },
+        {
+          "text": "Generación de Listing IA",
+          "active": false
+        },
+        {
+          "text": "Verificación por Lote CSV",
+          "active": false
+        }
       ],
       "cta": "Prueba Gratis 10 Veces"
     },
@@ -183,20 +178,53 @@
       "taxNote": "* Precio sin impuestos, auto-renovación",
       "warning": "Una multa ANVISA ≈ $10,000, equivalente a {months} meses de Pro",
       "features": [
-        { "text": "Verificaciones ilimitadas", "active": true },
-        { "text": "Generación de Listing IA (PT/ES)", "active": true },
-        { "text": "Actualizaciones en tiempo real", "active": true },
-        { "text": "Soporte prioritario", "active": true },
-        { "text": "Detección por lote (CSV)", "active": true },
-        { "text": "🌟 Acceso anticipado nuevos mercados (Argentina/Colombia Q3)", "active": true },
-        { "text": "🌟 Asesor de cumplimiento 1v1 (anual)", "active": true }
+        {
+          "text": "Verificaciones ilimitadas",
+          "active": true
+        },
+        {
+          "text": "Generación de Listing IA (PT/ES)",
+          "active": true
+        },
+        {
+          "text": "Actualizaciones en tiempo real",
+          "active": true
+        },
+        {
+          "text": "Soporte prioritario",
+          "active": true
+        },
+        {
+          "text": "Detección por lote (CSV)",
+          "active": true
+        },
+        {
+          "text": "🌟 Acceso anticipado nuevos mercados (Argentina/Colombia Q3)",
+          "active": true
+        },
+        {
+          "text": "🌟 Asesor de cumplimiento 1v1 (anual)",
+          "active": true
+        }
       ],
       "cta": "Desbloquea Ilimitado — $179/mes"
     },
     "stats": {
-      "savedFine": { "num": "$8,500", "label": "Promedio Ahorrado", "desc": "Basado en 200+ búsquedas" },
-      "savedTime": { "num": "7 días", "label": "Promedio de Tiempo Ahorrado", "desc": "De 2 semanas a 3 días" },
-      "approvalRate": { "num": "92%", "label": "Tasa de Aprobación", "desc": "IA vs Manual" }
+      "savedFine": {
+        "num": "$8,500",
+        "label": "Promedio Ahorrado",
+        "desc": "Basado en 200+ búsquedas"
+      },
+      "savedTime": {
+        "num": "7 días",
+        "label": "Promedio de Tiempo Ahorrado",
+        "desc": "De 2 semanas a 3 días"
+      },
+      "approvalRate": {
+        "num": "92%",
+        "label": "Tasa de Aprobación",
+        "desc": "IA vs Manual"
+      }
     }
   },
   "faq": {
@@ -270,6 +298,19 @@
     "submitting": "Enviando...",
     "submit": "Enviar",
     "minLength": "Por favor ingresa al menos 10 caracteres"
+  },
+  "cta": {
+    "badge": "🔥 Oferta Limitada · Obtén 5 Verificaciones Pro Gratis Este Mes",
+    "title": "Empieza a Vender en Cumplimiento Hoy",
+    "subtitle": "Únete a 2,000+ vendedores de belleza en América Latina. Deja que la IA elimine las barreras de cumplimiento.",
+    "emailPlaceholder": "Ingresa tu correo para empezar gratis",
+    "button": "Empezar Verificación Gratis",
+    "emailInvalid": "Por favor, ingresa un correo válido",
+    "subscribeError": "Error en la suscripción, intenta de nuevo más tarde",
+    "subscribeSuccess": "✅ ¡Suscrito! Por favor revisa tu correo para confirmar.",
+    "whatsapp": "Consulta Rápida por WhatsApp",
+    "or": "o",
+    "noCreditCard": "Sin tarjeta de crédito · Cancela cuando quieras · Plan gratis para siempre"
   },
   "cookie": {
     "title": "🍪 Uso de Cookies",

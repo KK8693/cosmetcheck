@@ -23,6 +23,44 @@ export interface RegulationFile {
   rules: RegulationRule[]
 }
 
+// ── Root Clusters 词根簇 ──
+export interface RootCluster {
+  groupId: string
+  label: string
+  terms: string[]
+}
+
+export interface RootClustersFile {
+  version: string
+  description: string
+  clusters: RootCluster[]
+}
+
+// 缓存 term -> groupId 映射
+let rootClusterMap: Map<string, string> | null = null
+
+export async function loadRootClusters(): Promise<Map<string, string>> {
+  if (rootClusterMap) return rootClusterMap
+
+  rootClusterMap = new Map<string, string>()
+  try {
+    const data = (await import('../data/regulations/root-clusters.json')) as unknown as RootClustersFile
+    for (const cluster of data.clusters) {
+      for (const term of cluster.terms) {
+        rootClusterMap.set(term.toLowerCase(), cluster.groupId)
+      }
+    }
+    console.log(`[RegulationLoader] Loaded ${data.clusters.length} root clusters, ${rootClusterMap.size} terms`)
+  } catch (error) {
+    console.warn('[RegulationLoader] Failed to load root clusters:', error)
+  }
+  return rootClusterMap
+}
+
+export function getTermGroupId(term: string): string | undefined {
+  return rootClusterMap?.get(term.toLowerCase())
+}
+
 // Convert JSON rule format to engine Violation format
 function convertRuleToViolation(
   rule: RegulationRule,

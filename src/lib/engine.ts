@@ -1,7 +1,7 @@
 // CosmetCheck Compliance Engine
 // Detects ANVISA (Brazil) and COFEPRIS (Mexico) violations
 
-import { loadRegulationRules, type LoadedRules } from './regulation-loader'
+import { loadRegulationRules, loadRootClusters, getTermGroupId, type LoadedRules } from './regulation-loader'
 
 export interface CheckInput {
   ingredients?: string
@@ -1097,93 +1097,130 @@ function findMatches(
   for (const rule of rules) {
     // Skip if already matched this ruleId (deduplication)
     if (seenRuleIds.has(rule.ruleId)) continue
-    
-    // 匹配主关键词
-    const keyword = rule.keyword.toLowerCase()
-    const index = lowerText.indexOf(keyword)
 
-    if (index !== -1) {
-      seenRuleIds.add(rule.ruleId)
-      violations.push({
-        ...rule,
-        matchedText: text.substring(index, index + rule.keyword.length),
-        position: {
-          start: index,
-          end: index + rule.keyword.length,
-        },
-        sourceField,
-        contextSnippet: generateContextSnippet(text, index, index + rule.keyword.length),
-      })
-      continue // 主关键词匹配后跳过 aliases 和 CAS
+    // ── 短语优先匹配 ──
+    // 收集所有候选匹配项（keyword + aliases + rootFamily + CAS），按长度降序排列
+    // 这样更长的、更具体的短语会优先匹配，避免短词抢占长词的位置
+    type Candidate = {
+      text: string
+      type: 'keyword' | 'alias' | 'rootFamily' | 'cas'
+      familyTerm?: string
     }
 
-    // 匹配别名 (aliases) - 支持 CAS号、中文、葡语、西语别名
+    const candidates: Candidate[] = []
+
+    // 1) 主关键词
+    candidates.push({ text: rule.keyword.toLowerCase(), type: 'keyword' })
+
+    // 2) 别名
     if (rule.aliases) {
       for (const alias of rule.aliases) {
-        const aliasLower = alias.toLowerCase()
-        const aliasIndex = lowerText.indexOf(aliasLower)
-        
-        if (aliasIndex !== -1) {
-          seenRuleIds.add(rule.ruleId)
-          violations.push({
-            ...rule,
-            matchedText: text.substring(aliasIndex, aliasIndex + alias.length),
-            position: {
-              start: aliasIndex,
-              end: aliasIndex + alias.length,
-            },
-            sourceField,
-            contextSnippet: generateContextSnippet(text, aliasIndex, aliasIndex + alias.length),
-          })
-          break // 找到一个别名匹配后就跳过
-        }
+        candidates.push({ text: alias.toLowerCase(), type: 'alias' })
       }
     }
 
-    // 词根归一匹配：检查输入成分是否属于同一成分族
-    if (!seenRuleIds.has(rule.ruleId) && rule.rootFamily) {
+    // 3) 词根族
+    if (rule.rootFamily) {
       const familyTerms = rule.rootFamily.toLowerCase().split(/[,，|]/)
       for (const term of familyTerms) {
         const termTrimmed = term.trim()
-        if (termTrimmed && lowerText.includes(termTrimmed)) {
-          seenRuleIds.add(rule.ruleId)
-          violations.push({
-            ...rule,
-            matchedText: termTrimmed,
-            position: {
-              start: lowerText.indexOf(termTrimmed),
-              end: lowerText.indexOf(termTrimmed) + termTrimmed.length,
-            },
-            sourceField,
-            contextSnippet: `成分族匹配: 识别到 ${termTrimmed} 属于 ${rule.rootFamily} 成分族`,
-          })
-          break
+        if (termTrimmed) {
+          candidates.push({ text: termTrimmed, type: 'rootFamily', familyTerm: termTrimmed })
         }
       }
     }
 
-    // 匹配 CAS 号
-    if (!seenRuleIds.has(rule.ruleId) && rule.casNumber) {
-      const casLower = rule.casNumber
-      const casIndex = lowerText.indexOf(casLower)
-      
-      if (casIndex !== -1) {
-        seenRuleIds.add(rule.ruleId)
+    // 4) CAS 号
+    if (rule.casNumber) {
+      candidates.push({ text: rule.casNumber.toLowerCase(), type: 'cas' })
+    }
+
+    // 按长度从长到短排序：短语优先
+    candidates.sort((a, b) => b.text.length - a.text.length)
+
+    // 依次尝试候选，取第一个（最长）匹配成功的
+    for (const candidate of candidates) {
+      const index = lowerText.indexOf(candidate.text)
+      if (index === -1) continue
+
+      seenRuleIds.add(rule.ruleId)
+
+      if (candidate.type === 'rootFamily') {
         violations.push({
           ...rule,
-          matchedText: text.substring(casIndex, casIndex + rule.casNumber.length),
+          matchedText: candidate.familyTerm!,
           position: {
-            start: casIndex,
-            end: casIndex + rule.casNumber.length,
+            start: index,
+            end: index + candidate.text.length,
           },
           sourceField,
-          contextSnippet: generateContextSnippet(text, casIndex, casIndex + rule.casNumber.length),
+          contextSnippet: `成分族匹配: 识别到 ${candidate.familyTerm} 属于 ${rule.rootFamily} 成分族`,
+        })
+      } else {
+        violations.push({
+          ...rule,
+          matchedText: text.substring(index, index + candidate.text.length),
+          position: {
+            start: index,
+            end: index + candidate.text.length,
+          },
+          sourceField,
+          contextSnippet: generateContextSnippet(text, index, index + candidate.text.length),
         })
       }
+      break // 只取最长的一个匹配
     }
   }
 
   return violations
+}
+
+// ── 词根簇跨规则去重 ──
+// 同一语义簇（如 cure/treat/heal 都属于"治疗宣称"）的多个 violations 只保留最严重/最长的一个
+function deduplicateByGroupId(violations: Violation[]): Violation[] {
+  const severityOrder = { critical: 3, warning: 2, info: 1 }
+  const groupBest = new Map<string, Violation>()
+  const result: Violation[] = []
+
+  for (const v of violations) {
+    // 尝试从 keyword 或 matchedText 查找 groupId
+    let groupId = getTermGroupId(v.keyword)
+    if (!groupId && v.matchedText) {
+      groupId = getTermGroupId(v.matchedText)
+    }
+
+    if (!groupId) {
+      // 不属于任何词根簇的 violation，直接保留
+      result.push(v)
+      continue
+    }
+
+    const existing = groupBest.get(groupId)
+    if (!existing) {
+      groupBest.set(groupId, v)
+    } else {
+      const vScore = severityOrder[v.severity] || 0
+      const eScore = severityOrder[existing.severity] || 0
+
+      if (vScore > eScore) {
+        groupBest.set(groupId, v)
+      } else if (vScore === eScore) {
+        // 严重程度相同，保留 matchedText 更长的（短语优先）
+        const vLen = v.matchedText?.length || 0
+        const eLen = existing.matchedText?.length || 0
+        if (vLen > eLen) {
+          groupBest.set(groupId, v)
+        }
+      }
+    }
+  }
+
+  // 将各 group 的最佳 violation 加入结果
+  for (const v of groupBest.values()) {
+    result.push(v)
+  }
+
+  return result
 }
 
 // Cache for loaded JSON rules
@@ -1206,6 +1243,8 @@ export async function initRules(): Promise<void> {
       loadRegulationRules('BR'),
       loadRegulationRules('MX'),
     ])
+    // 同步加载词根簇（异步非阻塞）
+    loadRootClusters().catch(e => console.warn('[Engine] Root clusters load failed:', e))
     jsonRulesCache = { BR: brRules, MX: mxRules }
     rulesInitialized = true
     console.log('[Engine] JSON rules loaded:', {
@@ -1264,6 +1303,12 @@ export function checkCompliance(input: CheckInput): CheckResult {
   if (input.label) {
     violations.push(...findMatches(input.label, allRules.filter(r => r.category === 'label'), 'label'))
   }
+
+  // ── 词根簇跨规则去重 ──
+  // 同一语义簇（如 cure/treat/heal）的多个 violations 只保留最严重/最长的一个
+  const deduplicatedViolations = deduplicateByGroupId(violations)
+  violations.length = 0
+  violations.push(...deduplicatedViolations)
 
   // Always add label requirements - AGGREGATE missing items into one violation
   const labelRules = allRules.filter(r => r.category === 'label' && r.ruleType === 'required')

@@ -6,6 +6,8 @@ import { Card, CardContent } from '@/components/ui/card'
 import { CheckCircle, Shield, Globe, Zap } from 'lucide-react'
 import Link from 'next/link'
 import { Logo } from '@/components/Logo'
+import { setRequestLocale } from 'next-intl/server'
+import { FooterSection } from '@/sections/FooterSection'
 
 export const metadata: Metadata = {
   title: 'CosmetCheck Brasil - Verificação de Conformidade ANVISA para Cosméticos',
@@ -63,6 +65,7 @@ const faqs = [
 ]
 
 export default function BrasilPage() {
+  setRequestLocale('pt-BR')
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
@@ -325,48 +328,7 @@ export default function BrasilPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Logo size={28} />
-                <span className="text-white font-bold text-xl">CosmetCheck</span>
-              </div>
-              <p className="text-sm">拉美美妆合规检测专家，让出海更简单。</p>
-            </div>
-            <div>
-              <div className="text-white font-semibold mb-4">产品</div>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/?country=BR" className="hover:text-white transition-colors">合规检测</Link></li>
-                <li>AI Listing生成</li>
-                <li><Link href="/pricing" className="hover:text-white transition-colors">定价</Link></li>
-              </ul>
-            </div>
-            <div>
-              <div className="text-white font-semibold mb-4">资源</div>
-              <ul className="space-y-2 text-sm">
-                <li>法规知识库</li>
-                <li>帮助中心</li>
-                <li>API文档</li>
-              </ul>
-            </div>
-            <div>
-              <div className="text-white font-semibold mb-4">法律</div>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/privacy" className="hover:text-white transition-colors">隐私政策</Link></li>
-                <li>服务条款</li>
-                <li>GDPR/LGPD/LFPDPPP</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 pt-8 text-sm text-center flex items-center justify-center gap-2">
-            <Logo size={16} />
-            <span>© 2025 CosmetCheck. All rights reserved.</span>
-          </div>
-        </div>
-      </footer>
+      <FooterSection />
     </div>
   )
 }

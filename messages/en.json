@@ -117,18 +117,13 @@
   },
   "howItWorks": {
     "title": "Complete Compliance Check in 3 Steps",
-    "step1": {
-      "title": "Enter Ingredients",
-      "desc": "Paste your product ingredients, AI automatically identifies"
-    },
-    "step2": {
-      "title": "AI Smart Detection",
-      "desc": "Cross-reference ANVISA/COFEPRIS regulations, results in seconds"
-    },
-    "step3": {
-      "title": "Get Compliance Solution",
-      "desc": "View violation reasons + alternatives + AI-generated compliant Listing"
-    }
+    "subtitle": "From ingredient input to Listing generation — full AI assistance, no regulatory background needed",
+    "step1Title": "Paste Product Info",
+    "step1Desc": "Paste product description, ingredients list or upload document, supports EN/PT/ES",
+    "step2Title": "AI Auto-Detect Compliance",
+    "step2Desc": "Real-time flagging of prohibited words, over-limit ingredients, show ANVISA/COFEPRIS regulation clauses",
+    "step3Title": "Generate High-Converting Listing",
+    "step3Desc": "One-click generate regulation-compliant Portuguese/Spanish Listing, ready to publish"
   },
   "useCases": {
     "title": "Use Cases",
@@ -140,14 +135,15 @@
   },
   "features": {
     "title": "Core Features",
-    "anvisa": "ANVISA Compliance Check",
-    "anvisaDesc": "Comprehensive Brazil regulations coverage, RDC 665/2022 and more, real-time updates",
-    "cofepris": "COFEPRIS Compliance Check",
-    "cofeprisDesc": "Mexico regulations precise matching, import permits, product classification",
-    "aiListing": "AI Listing Generation",
-    "aiListingDesc": "Auto-generate platform-compliant product titles and descriptions based on check results",
-    "batchCsv": "Batch CSV Detection",
-    "batchCsvDesc": "Support bulk ingredient upload, check hundreds of products at once"
+    "subtitle": "AI-powered compliance engine designed for Latin American beauty market",
+    "autoBlockTitle": "Auto-Block Before Listing",
+    "autoBlockDesc": "Input ingredients, get instant risk reports: what violates, how to fix, which regulation — stop fines before they arrive",
+    "listingTitle": "Listing That Converts",
+    "listingDesc": "Not just translation — rewrite titles and bullet points based on Brazil/Mexico consumer search habits, with compliance built-in",
+    "highlightTitle": "Flag Risky Words with Citations",
+    "highlightDesc": "Direct ANVISA RDC numbers, COFEPRIS NOM standards referenced — have evidence for platform appeals",
+    "freeTryTitle": "0$ to Try 10 Times",
+    "freeTryDesc": "No credit card, no contract. Test first, upgrade to Pro only if you find it useful"
   },
   "pricing": {
     "title": "Simple, Transparent Pricing",
@@ -268,6 +264,19 @@
     "submitting": "Submitting...",
     "submit": "Submit",
     "minLength": "Please enter at least 10 characters"
+  },
+  "cta": {
+    "badge": "🔥 Limited Offer · Get 5 Pro Checks Free This Month",
+    "title": "Start Selling Compliantly Today",
+    "subtitle": "Join 2,000+ LatAm beauty sellers. Let AI remove compliance barriers.",
+    "emailPlaceholder": "Enter email to start free",
+    "button": "Start Free Check",
+    "emailInvalid": "Please enter a valid email address",
+    "subscribeError": "Subscription failed, please try again later",
+    "subscribeSuccess": "✅ Subscribed! Please check your email to confirm.",
+    "whatsapp": "WhatsApp Quick Consult",
+    "or": "or",
+    "noCreditCard": "No credit card · Cancel anytime · Free plan forever"
   },
   "cookie": {
     "title": "🍪 Cookie Usage",
