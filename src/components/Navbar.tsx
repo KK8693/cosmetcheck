@@ -35,16 +35,17 @@ export function Navbar() {
 
   return (
     <>
+      {/* Navbar with solid background to prevent ghosting */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
             ? 'bg-[#0D0D12]/95 backdrop-blur-lg border-b border-white/10 shadow-lg'
-            : 'bg-[#0D0D12]/80'
+            : 'bg-[#0D0D12]'
         }`}
         style={{ 
           transform: 'translateZ(0)', 
-          willChange: 'transform,opacity',
-          backfaceVisibility: 'hidden'
+          backfaceVisibility: 'hidden',
+          isolation: 'isolate'
         }}
       >
         <div className="container-custom">
