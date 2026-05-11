@@ -2,32 +2,30 @@
 
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
-
-// PayPal Plan IDs (should match .env.local)
-const PAYPAL_PLANS = {
-  pro_monthly: process.env.NEXT_PUBLIC_PAYPAL_PRO_MONTHLY_PLAN_ID || 'P-1BS751417C578393RNH6VPGA',
-}
+import { useLocale } from 'next-intl'
+import { getPlanId } from '@/lib/paypal'
 
 interface SubscribeButtonProps {
-  planId?: string
   children: React.ReactNode
   variant?: 'default' | 'outline'
   className?: string
+  billingCycle?: 'monthly' | 'yearly'
 }
 
 export default function SubscribeButton({
-  planId = 'pro_monthly',
   children,
   variant = 'default',
   className,
+  billingCycle = 'monthly',
 }: SubscribeButtonProps) {
+  const locale = useLocale()
   const [loading, setLoading] = useState(false)
 
   const handleSubscribe = async () => {
     setLoading(true)
     try {
-      // Get the actual Plan ID
-      const planIdValue = PAYPAL_PLANS[planId as keyof typeof PAYPAL_PLANS] || planId
+      // Select PayPal plan by locale + billing cycle
+      const planIdValue = getPlanId(locale, billingCycle === 'yearly')
 
       const response = await fetch('/api/paypal/subscription', {
         method: 'POST',
@@ -66,7 +64,7 @@ export default function SubscribeButton({
       onClick={handleSubscribe}
       disabled={loading}
     >
-      {loading ? '处理中...' : children}
+      {loading ? '...' : children}
     </Button>
   )
 }

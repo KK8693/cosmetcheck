@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createSubscription, PLANS } from '@/lib/paypal'
+import { createSubscription, VALID_PLAN_IDS, getPlanId } from '@/lib/paypal'
 
 export const runtime = 'edge'
 
@@ -9,10 +9,9 @@ export async function POST(request: NextRequest) {
     const { planId, customerId } = body
 
     // Validate plan ID
-    const validPlanIds = Object.values(PLANS)
-    if (!planId || !validPlanIds.includes(planId as typeof PLANS[keyof typeof PLANS])) {
+    if (!planId || !VALID_PLAN_IDS.includes(planId)) {
       return NextResponse.json(
-        { error: 'Invalid plan ID. Must be one of: ' + validPlanIds.join(', ') },
+        { error: 'Invalid plan ID. Must be one of: ' + VALID_PLAN_IDS.join(', ') },
         { status: 400 }
       )
     }

@@ -53,11 +53,61 @@ export async function getPayPalAccessToken(): Promise<string> {
 }
 
 /**
- * Plan IDs
+ * Plan IDs — Multi-currency support
+ * Create these in PayPal Dashboard → Subscriptions → Plans
+ * Fallback chain: locale-specific → USD monthly → hardcoded sandbox ID
  */
-export const PLANS = {
-  PRO_MONTHLY: process.env.PAYPAL_PRO_MONTHLY_PLAN_ID || 'P-1BS751417C578393RNH6VPGA',
+export const PAYPAL_PLANS = {
+  // USD (en, zh)
+  PRO_MONTHLY_USD: process.env.PAYPAL_PRO_MONTHLY_USD_PLAN_ID || process.env.PAYPAL_PRO_MONTHLY_PLAN_ID || 'P-1BS751417C578393RNH6VPGA',
+  PRO_YEARLY_USD: process.env.PAYPAL_PRO_YEARLY_USD_PLAN_ID || '',
+
+  // BRL (pt-BR)
+  PRO_MONTHLY_BRL: process.env.PAYPAL_PRO_MONTHLY_BRL_PLAN_ID || '',
+  PRO_YEARLY_BRL: process.env.PAYPAL_PRO_YEARLY_BRL_PLAN_ID || '',
+
+  // MXN (es-MX)
+  PRO_MONTHLY_MXN: process.env.PAYPAL_PRO_MONTHLY_MXN_PLAN_ID || '',
+  PRO_YEARLY_MXN: process.env.PAYPAL_PRO_YEARLY_MXN_PLAN_ID || '',
 } as const
+
+// All valid plan IDs for API validation (non-empty values only)
+export const VALID_PLAN_IDS = Object.values(PAYPAL_PLANS).filter(Boolean)
+
+/**
+ * Get PayPal Plan ID by locale and billing cycle.
+ * Fallback: locale-specific → USD → existing PRO_MONTHLY → sandbox hardcoded
+ */
+export function getPlanId(locale: string, yearly: boolean = false): string {
+  const cycle = yearly ? 'YEARLY' : 'MONTHLY'
+
+  // Map locale to currency/region code
+  const regionMap: Record<string, string> = {
+    'pt-BR': 'BRL',
+    'es-MX': 'MXN',
+    'en': 'USD',
+    'zh': 'USD',
+  }
+
+  const region = regionMap[locale] || 'USD'
+  const key = `PRO_${cycle}_${region}` as keyof typeof PAYPAL_PLANS
+  const planId = PAYPAL_PLANS[key]
+
+  if (planId) return planId
+
+  // Fallback 1: same region monthly (if yearly missing)
+  if (yearly) {
+    const monthlyKey = `PRO_MONTHLY_${region}` as keyof typeof PAYPAL_PLANS
+    const monthlyPlan = PAYPAL_PLANS[monthlyKey]
+    if (monthlyPlan) return monthlyPlan
+  }
+
+  // Fallback 2: USD monthly (universal default)
+  if (PAYPAL_PLANS.PRO_MONTHLY_USD) return PAYPAL_PLANS.PRO_MONTHLY_USD
+
+  // Fallback 3: hardcoded sandbox (dev only)
+  return 'P-1BS751417C578393RNH6VPGA'
+}
 
 export type SubscriptionTier = 'free' | 'pro' | 'team'
 

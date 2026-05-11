@@ -191,6 +191,7 @@ export default function PricingPage() {
                   ))}
                 </ul>
                 <SubscribeButton
+                  billingCycle={yearly ? 'yearly' : 'monthly'}
                   className="w-full bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-[#0D0D12] hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25"
                 >
                   {ctaText}
