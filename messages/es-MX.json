@@ -171,10 +171,10 @@
       "badge": "🔥 Ahorra 40% · Solo 6 días",
       "recommend": "Recomendado",
       "name": "Pro",
-      "priceOriginal": "$299",
-      "price": "$179",
+      "priceOriginal": "$699",
+      "price": "Mex$499",
       "period": "/mes",
-      "desc": "≈$199/mes · Cancela cuando quieras",
+      "desc": "Cancela cuando quieras",
       "taxNote": "* Precio sin impuestos, auto-renovación",
       "warning": "Una multa ANVISA ≈ $10,000, equivalente a {months} meses de Pro",
       "features": [
@@ -353,5 +353,177 @@
     "brProductName": "Sérum Clareador con Alpha Arbutin - 30ml",
     "mxProductName": "Suero Clarificante con Alpha Arbutin - 30ml",
     "complianceConfirmed": "⚠️ Este producto cumple con las regulaciones de {country}"
+  },
+  "pricingPage": {
+    "hero": {
+      "badge": "2,000+ vendedores eligieron Pro",
+      "title": "Precios Simples y Transparentes",
+      "subtitle": "Cada multa evitada paga un año de Pro. Empieza gratis, actualiza cuando quieras."
+    },
+    "toggle": {
+      "monthly": "Mensual",
+      "yearly": "Anual",
+      "saveBadge": "Ahorra 30%"
+    },
+    "free": {
+      "badge": "Prueba Inicial",
+      "name": "Free",
+      "desc": "Para: ≤10 SKUs/mes en prueba",
+      "features": [
+        "10 verificaciones/mes",
+        "Verificación básica de prohibidos",
+        "Reglas ANVISA Brasil",
+        "Reglas COFEPRIS México"
+      ],
+      "missing": [
+        "Generación de Listing IA",
+        "Verificación CSV en lote",
+        "Actualizaciones regulatorias",
+        "Soporte prioritario"
+      ],
+      "cta": "Prueba Gratis 10 Veces"
+    },
+    "pro": {
+      "badge": "Mejor Costo-Beneficio — Elección de Vendedores",
+      "recommend": "Elección de Vendedores",
+      "name": "Pro",
+      "desc_monthly": "Cancela cuando quieras",
+      "desc_yearly": "Ahorra ~30% con facturación anual",
+      "warning": "Una multa ANVISA ≈ $10,000 (≈ US$ 1.700), equivalente a 56 meses de Pro",
+      "features": [
+        "Verificaciones ilimitadas",
+        "Generación de Listing IA (PT/ES)",
+        "Actualizaciones regulatorias en tiempo real",
+        "Soporte prioritario",
+        "Detección en lote (CSV)",
+        "🌟 Acceso anticipado a nuevos mercados (Argentina/Colombia Q3)",
+        "🌟 Asesor de cumplimiento 1v1 (suscripción anual)"
+      ],
+      "cta_monthly": "Desbloquea Ilimitado — Mex$499/mes",
+      "cta_yearly": "Desbloquea Pro Anual — Mex$4.990/año"
+    },
+    "comparison": {
+      "title": "Comparación Detallada de Características",
+      "subtitle": "Visión clara, elige lo que mejor se ajusta",
+      "headers": {
+        "feature": "Característica",
+        "free": "Free",
+        "pro": "Pro"
+      }
+    },
+    "features": [
+      {
+        "name": "Verificaciones de Cumplimiento/mes",
+        "free": "10",
+        "pro": "Ilimitadas"
+      },
+      {
+        "name": "Verificación Básica de Prohibidos",
+        "free": "✓",
+        "pro": "✓"
+      },
+      {
+        "name": "Base de Reglas ANVISA",
+        "free": "✓",
+        "pro": "✓"
+      },
+      {
+        "name": "Base de Reglas COFEPRIS",
+        "free": "✓",
+        "pro": "✓"
+      },
+      {
+        "name": "Generación de Listing IA (PT/ES)",
+        "free": "—",
+        "pro": "✓"
+      },
+      {
+        "name": "Detección por Lote CSV",
+        "free": "—",
+        "pro": "✓"
+      },
+      {
+        "name": "Actualizaciones Regulatorias en Tiempo Real",
+        "free": "—",
+        "pro": "✓"
+      },
+      {
+        "name": "Soporte Prioritario",
+        "free": "—",
+        "pro": "✓"
+      },
+      {
+        "name": "Acceso Anticipado a Nuevos Mercados (AR/CO)",
+        "free": "—",
+        "pro": "✓"
+      },
+      {
+        "name": "Asesor de Cumplimiento 1v1",
+        "free": "—",
+        "pro": "Solo Anual"
+      }
+    ],
+    "trust": {
+      "refund": {
+        "num": "7 días",
+        "label": "Garantía de Reembolso",
+        "desc": "Reembolso completo en 7 días después de suscripción Pro"
+      },
+      "uptime": {
+        "num": "99.9%",
+        "label": "Disponibilidad",
+        "desc": "Estable todo el año, sin impacto en el negocio"
+      },
+      "support": {
+        "num": "24h",
+        "label": "Respuesta de Soporte",
+        "desc": "Usuarios Pro reciben respuesta en 24h en días hábiles"
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes sobre Precios",
+      "items": [
+        {
+          "q": "¿El plan gratis es realmente gratis para siempre?",
+          "a": "Sí, el plan gratis incluye 10 verificaciones por mes para siempre. Sin tarjeta, sin contrato."
+        },
+        {
+          "q": "¿Puedo cancelar Pro en cualquier momento?",
+          "a": "Sí, Pro se cobra mensual o anualmente. Cancela cuando quieras en la configuración de la cuenta, sin penalización."
+        },
+        {
+          "q": "¿Cuál es la diferencia entre mensual y anual?",
+          "a": "Mismas características. El plan anual es Mex$4.990 (ahorra Mex$998), ideal para vendedores comprometidos."
+        },
+        {
+          "q": "¿Qué métodos de pago se aceptan?",
+          "a": "Visa, Mastercard, Amex y PayPal."
+        },
+        {
+          "q": "¿Puedo obtener factura o reembolso de impuestos?",
+          "a": "Las suscripciones Pro incluyen invoices internacionales para reembolso empresarial y deducción fiscal."
+        },
+        {
+          "q": "¿Mis datos están seguros?",
+          "a": "Todos los datos se transfieren mediante cifrado TLS, cumpliendo con GDPR, LGPD y LFPDPPP."
+        }
+      ]
+    },
+    "cta": {
+      "badge": "🔥 Oferta Limitada · Solo 6 días · Obtén 5 verificaciones Pro gratis este mes",
+      "title": "¿Aún tienes dudas?",
+      "subtitle": "Prueba 10 verificaciones gratis primero. Actualiza solo si te resulta útil. Sin riesgo, cancela cuando quieras.",
+      "button": "Empezar Verificación Gratis",
+      "note": "Sin tarjeta de crédito · Cancela cuando quieras · Plan gratis para siempre"
+    },
+    "currency": {
+      "code": "MXN",
+      "symbol": "Mex$",
+      "monthlyPrice": "Mex$499",
+      "yearlyPrice": "Mex$4.990",
+      "yearlyOriginal": "Mex$5.988",
+      "saveAmount": "Mex$998",
+      "monthlyOriginal": "$699"
+    }
   }
 }

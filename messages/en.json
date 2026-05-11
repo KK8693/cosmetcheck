@@ -26,7 +26,7 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Sell Beauty in Latin America Without Delistings or Fines",
+    "title": "Title",
     "titleLine2": "Without Delistings or Fines",
     "subtitle": "One-click compliance check for Brazil/Mexico, AI-generated high-converting Listings. Start free, avoid ANVISA/COFEPRIS penalties.",
     "subtitleShort": "One-click Brazil/Mexico compliance check, AI-generated high-converting Listings — Start free",
@@ -68,7 +68,6 @@
     "aiGeneratedListing": "AI-Generated Compliant Listing",
     "portuguese": "Portuguese",
     "spanish": "Spanish",
-    "title": "Title",
     "description": "Description",
     "bulletPoints": "Bullet Points",
     "complianceNotes": "Compliance Notes",
@@ -157,12 +156,30 @@
       "period": "/month",
       "desc": "For: ≤10 SKUs/month testers",
       "features": [
-        { "text": "10 compliance checks/month", "active": true },
-        { "text": "Basic banned ingredient check", "active": true },
-        { "text": "Brazil ANVISA rules", "active": true },
-        { "text": "Mexico COFEPRIS rules", "active": true },
-        { "text": "AI Listing Generation", "active": false },
-        { "text": "Batch CSV Detection", "active": false }
+        {
+          "text": "10 compliance checks/month",
+          "active": true
+        },
+        {
+          "text": "Basic banned ingredient check",
+          "active": true
+        },
+        {
+          "text": "Brazil ANVISA rules",
+          "active": true
+        },
+        {
+          "text": "Mexico COFEPRIS rules",
+          "active": true
+        },
+        {
+          "text": "AI Listing Generation",
+          "active": false
+        },
+        {
+          "text": "Batch CSV Detection",
+          "active": false
+        }
       ],
       "cta": "Try 10 Free"
     },
@@ -173,24 +190,57 @@
       "priceOriginal": "$49",
       "price": "$29",
       "period": "/month",
-      "desc": "≈¥199/month · Cancel anytime",
+      "desc": "Cancel anytime",
       "taxNote": "* Price excludes tax, auto-renew",
       "warning": "ANVISA single violation fine ≈ R$ 10,000 (≈ $1,700), equals {months} months of Pro",
       "features": [
-        { "text": "Unlimited compliance checks", "active": true },
-        { "text": "AI Listing Generation (PT/ES)", "active": true },
-        { "text": "Real-time regulation updates", "active": true },
-        { "text": "Priority support", "active": true },
-        { "text": "Batch detection (CSV import)", "active": true },
-        { "text": "🌟 New markets early access (Argentina/Colombia Q3)", "active": true },
-        { "text": "🌟 Dedicated compliance advisor 1v1 (annual)", "active": true }
+        {
+          "text": "Unlimited compliance checks",
+          "active": true
+        },
+        {
+          "text": "AI Listing Generation (PT/ES)",
+          "active": true
+        },
+        {
+          "text": "Real-time regulation updates",
+          "active": true
+        },
+        {
+          "text": "Priority support",
+          "active": true
+        },
+        {
+          "text": "Batch detection (CSV import)",
+          "active": true
+        },
+        {
+          "text": "🌟 New markets early access (Argentina/Colombia Q3)",
+          "active": true
+        },
+        {
+          "text": "🌟 Dedicated compliance advisor 1v1 (annual)",
+          "active": true
+        }
       ],
       "cta": "Unlock Unlimited — $29/mo"
     },
     "stats": {
-      "savedFine": { "num": "R$ 8,500", "label": "Avg. Fine Avoided", "desc": "Based on 200+ seller surveys" },
-      "savedTime": { "num": "7 days", "label": "Avg. Time Saved", "desc": "From 2 weeks to 3 days" },
-      "approvalRate": { "num": "92%", "label": "Listing Approval Rate", "desc": "AI vs Manual" }
+      "savedFine": {
+        "num": "R$ 8,500",
+        "label": "Avg. Fine Avoided",
+        "desc": "Based on 200+ seller surveys"
+      },
+      "savedTime": {
+        "num": "7 days",
+        "label": "Avg. Time Saved",
+        "desc": "From 2 weeks to 3 days"
+      },
+      "approvalRate": {
+        "num": "92%",
+        "label": "Listing Approval Rate",
+        "desc": "AI vs Manual"
+      }
     }
   },
   "faq": {
@@ -319,5 +369,177 @@
     "brProductName": "Sérum Clareador com Alpha Arbutin - 30ml",
     "mxProductName": "Suero Clarificante con Alpha Arbutin - 30ml",
     "complianceConfirmed": "⚠️ This product complies with {country} regulations"
+  },
+  "pricingPage": {
+    "hero": {
+      "badge": "2,000+ sellers chose Pro",
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Every fine you avoid pays for a year of Pro. Start free, upgrade anytime."
+    },
+    "toggle": {
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "saveBadge": "Save 30%"
+    },
+    "free": {
+      "badge": "Starter Trial",
+      "name": "Free",
+      "desc": "For: ≤10 SKUs/month testers",
+      "features": [
+        "10 compliance checks/month",
+        "Basic banned ingredient check",
+        "Brazil ANVISA rules",
+        "Mexico COFEPRIS rules"
+      ],
+      "missing": [
+        "AI Listing Generation",
+        "Batch CSV Detection",
+        "Regulation updates",
+        "Priority support"
+      ],
+      "cta": "Try 10 Free"
+    },
+    "pro": {
+      "badge": "Best Value — Seller's Choice",
+      "recommend": "Seller's Choice",
+      "name": "Pro",
+      "desc_monthly": "Cancel anytime",
+      "desc_yearly": "~30% savings with annual billing",
+      "warning": "Single ANVISA violation fine ≈ R$ 10,000 (≈ $1,700), equals 58 months of Pro",
+      "features": [
+        "Unlimited compliance checks",
+        "AI Listing Generation (PT/ES)",
+        "Real-time regulation updates",
+        "Priority support",
+        "Batch detection (CSV import)",
+        "🌟 Early access to new markets (Argentina/Colombia Q3)",
+        "🌟 Dedicated compliance advisor 1v1 (annual)"
+      ],
+      "cta_monthly": "Unlock Unlimited — $29/mo",
+      "cta_yearly": "Unlock Annual Pro — $245/yr"
+    },
+    "comparison": {
+      "title": "Detailed Feature Comparison",
+      "subtitle": "Clear overview, choose what fits you best",
+      "headers": {
+        "feature": "Feature",
+        "free": "Free",
+        "pro": "Pro"
+      }
+    },
+    "features": [
+      {
+        "name": "Compliance Checks per Month",
+        "free": "10",
+        "pro": "Unlimited"
+      },
+      {
+        "name": "Basic Banned Ingredient Check",
+        "free": "✓",
+        "pro": "✓"
+      },
+      {
+        "name": "ANVISA Rules Database",
+        "free": "✓",
+        "pro": "✓"
+      },
+      {
+        "name": "COFEPRIS Rules Database",
+        "free": "✓",
+        "pro": "✓"
+      },
+      {
+        "name": "AI Listing Generation (PT/ES)",
+        "free": "—",
+        "pro": "✓"
+      },
+      {
+        "name": "Batch CSV Detection",
+        "free": "—",
+        "pro": "✓"
+      },
+      {
+        "name": "Real-time Regulation Updates",
+        "free": "—",
+        "pro": "✓"
+      },
+      {
+        "name": "Priority Support",
+        "free": "—",
+        "pro": "✓"
+      },
+      {
+        "name": "Early Access to New Markets (AR/CO)",
+        "free": "—",
+        "pro": "✓"
+      },
+      {
+        "name": "Dedicated Compliance Advisor 1v1",
+        "free": "—",
+        "pro": "Annual Only"
+      }
+    ],
+    "trust": {
+      "refund": {
+        "num": "7 Days",
+        "label": "Money-back Guarantee",
+        "desc": "Full refund within 7 days of Pro subscription"
+      },
+      "uptime": {
+        "num": "99.9%",
+        "label": "Uptime",
+        "desc": "Stable all year round, no business impact"
+      },
+      "support": {
+        "num": "24h",
+        "label": "Support Response",
+        "desc": "Pro users get replies within 24h on business days"
+      }
+    },
+    "faq": {
+      "title": "Pricing FAQ",
+      "items": [
+        {
+          "q": "Is the free plan really free forever?",
+          "a": "Yes, the free plan includes 10 checks per month forever. No credit card, no contract."
+        },
+        {
+          "q": "Can I cancel Pro anytime?",
+          "a": "Yes, Pro is billed monthly or annually. Cancel anytime in account settings, effective next cycle, no penalty."
+        },
+        {
+          "q": "What's the difference between monthly and annual?",
+          "a": "Same features. Annual billing is $245 (save $103), ideal for committed sellers."
+        },
+        {
+          "q": "What payment methods are supported?",
+          "a": "Visa, Mastercard, Amex, and PayPal."
+        },
+        {
+          "q": "Can I get an invoice or tax refund?",
+          "a": "Pro subscriptions include international invoices for business reimbursement and tax deduction."
+        },
+        {
+          "q": "Is my data secure?",
+          "a": "All data is transferred via TLS encryption, compliant with GDPR, LGPD (Brazil), and LFPDPPP (Mexico)."
+        }
+      ]
+    },
+    "cta": {
+      "badge": "🔥 Limited Offer · 6 days left · Get 5 free Pro checks this month",
+      "title": "Still have questions?",
+      "subtitle": "Try 10 checks free first. Upgrade only if you find it useful. Zero risk, cancel anytime.",
+      "button": "Start Free Check",
+      "note": "No credit card · Cancel anytime · Free plan forever"
+    },
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "monthlyPrice": "$29",
+      "yearlyPrice": "$245",
+      "yearlyOriginal": "$348",
+      "saveAmount": "$103",
+      "monthlyOriginal": "$49"
+    }
   }
 }

@@ -171,10 +171,10 @@
       "badge": "🔥 Economize 40% · Só 6 dias",
       "recommend": "Recomendado",
       "name": "Pro",
-      "priceOriginal": "R$299",
-      "price": "R$179",
+      "priceOriginal": "R$249",
+      "price": "R$149",
       "period": "/mês",
-      "desc": "≈R$199/mês · Cancele quando quiser",
+      "desc": "Cancele quando quiser",
       "taxNote": "* Preço sem impostos, auto-renovação",
       "warning": "Uma multa ANVISA ≈ R$ 10.000, equivalent a {months} meses de Pro",
       "features": [
@@ -353,5 +353,177 @@
     "brProductName": "Sérum Clareador com Alpha Arbutin - 30ml",
     "mxProductName": "Suero Clarificante con Alpha Arbutin - 30ml",
     "complianceConfirmed": "⚠️ Este produto está em conformidade com as regulamentações {country}"
+  },
+  "pricingPage": {
+    "hero": {
+      "badge": "2.000+ vendedores escolheram Pro",
+      "title": "Preços Simples e Transparentes",
+      "subtitle": "Cada multa evitada paga um ano de Pro. Comece grátis, atualize quando quiser."
+    },
+    "toggle": {
+      "monthly": "Mensal",
+      "yearly": "Anual",
+      "saveBadge": "Economize 30%"
+    },
+    "free": {
+      "badge": "Teste Inicial",
+      "name": "Free",
+      "desc": "Para: ≤10 SKUs/mês em teste",
+      "features": [
+        "10 verificações/mês",
+        "Verificação básica de proibidos",
+        "Regras ANVISA Brasil",
+        "Regras COFEPRIS México"
+      ],
+      "missing": [
+        "Geração de Listing IA",
+        "Verificação CSV em lote",
+        "Atualizações regulatórias",
+        "Suporte prioritário"
+      ],
+      "cta": "Teste Grátis 10 Vezes"
+    },
+    "pro": {
+      "badge": "Melhor Custo-Benefício — Escolha dos Vendedores",
+      "recommend": "Escolha dos Vendedores",
+      "name": "Pro",
+      "desc_monthly": "Cancele quando quiser",
+      "desc_yearly": "Economize ~30% com faturamento anual",
+      "warning": "Uma multa ANVISA ≈ R$ 10.000 (≈ US$ 1.700), equivalente a 56 meses de Pro",
+      "features": [
+        "Verificações ilimitadas",
+        "Geração de Listing IA (PT/ES)",
+        "Atualizações regulatórias em tempo real",
+        "Suporte prioritário",
+        "Detecção em lote (CSV)",
+        "🌟 Acesso antecipado a novos mercados (Argentina/Colômbia Q3)",
+        "🌟 Assessor de conformidade 1v1 (assinatura anual)"
+      ],
+      "cta_monthly": "Desbloqueie Ilimitado — R$149/mês",
+      "cta_yearly": "Desbloqueie Pro Anual — R$1.290/ano"
+    },
+    "comparison": {
+      "title": "Comparação Detalhada de Recursos",
+      "subtitle": "Visão clara, escolha o que melhor se adequa",
+      "headers": {
+        "feature": "Recurso",
+        "free": "Free",
+        "pro": "Pro"
+      }
+    },
+    "features": [
+      {
+        "name": "Verificações de Conformidade/mês",
+        "free": "10",
+        "pro": "Ilimitadas"
+      },
+      {
+        "name": "Verificação Básica de Proibidos",
+        "free": "✓",
+        "pro": "✓"
+      },
+      {
+        "name": "Base de Regras ANVISA",
+        "free": "✓",
+        "pro": "✓"
+      },
+      {
+        "name": "Base de Regras COFEPRIS",
+        "free": "✓",
+        "pro": "✓"
+      },
+      {
+        "name": "Geração de Listing IA (PT/ES)",
+        "free": "—",
+        "pro": "✓"
+      },
+      {
+        "name": "Detecção em Lote CSV",
+        "free": "—",
+        "pro": "✓"
+      },
+      {
+        "name": "Atualizações Regulatórias em Tempo Real",
+        "free": "—",
+        "pro": "✓"
+      },
+      {
+        "name": "Suporte Prioritário",
+        "free": "—",
+        "pro": "✓"
+      },
+      {
+        "name": "Acesso Antecipado a Novos Mercados (AR/CO)",
+        "free": "—",
+        "pro": "✓"
+      },
+      {
+        "name": "Assessor de Conformidade 1v1",
+        "free": "—",
+        "pro": "Somente Anual"
+      }
+    ],
+    "trust": {
+      "refund": {
+        "num": "7 dias",
+        "label": "Garantia de Reembolso",
+        "desc": "Reembolso integral em 7 dias após assinatura Pro"
+      },
+      "uptime": {
+        "num": "99,9%",
+        "label": "Disponibilidade",
+        "desc": "Estável o ano todo, sem impacto no negócio"
+      },
+      "support": {
+        "num": "24h",
+        "label": "Resposta de Suporte",
+        "desc": "Usuários Pro recebem resposta em 24h em dias úteis"
+      }
+    },
+    "faq": {
+      "title": "Perguntas Frequentes sobre Preços",
+      "items": [
+        {
+          "q": "O plano grátis é realmente grátis para sempre?",
+          "a": "Sim, o plano grátis inclui 10 verificações por mês para sempre. Sem cartão, sem contrato."
+        },
+        {
+          "q": "Posso cancelar o Pro a qualquer momento?",
+          "a": "Sim, o Pro é cobrado mensal ou anualmente. Cancele quando quiser nas configurações da conta, sem multa."
+        },
+        {
+          "q": "Qual a diferença entre mensal e anual?",
+          "a": "Mesmos recursos. O plano anual é R$1.290 (economize R$498), ideal para vendedores comprometidos."
+        },
+        {
+          "q": "Quais métodos de pagamento são aceitos?",
+          "a": "Visa, Mastercard, Amex e PayPal."
+        },
+        {
+          "q": "Posso receber nota fiscal ou reembolso de impostos?",
+          "a": "Assinaturas Pro incluem invoices internacionais para reembolso empresarial e dedução fiscal."
+        },
+        {
+          "q": "Meus dados estão seguros?",
+          "a": "Todos os dados são transferidos via criptografia TLS, em conformidade com GDPR, LGPD e LFPDPPP."
+        }
+      ]
+    },
+    "cta": {
+      "badge": "🔥 Oferta Limitada · Só 6 dias · Ganhe 5 verificações Pro grátis este mês",
+      "title": "Ainda tem dúvidas?",
+      "subtitle": "Experimente 10 verificações grátis primeiro. Atualize só se achar útil. Sem risco, cancele quando quiser.",
+      "button": "Começar Verificação Grátis",
+      "note": "Sem cartão de crédito · Cancele quando quiser · Plano grátis para sempre"
+    },
+    "currency": {
+      "code": "BRL",
+      "symbol": "R$",
+      "monthlyPrice": "R$149",
+      "yearlyPrice": "R$1.290",
+      "yearlyOriginal": "R$1.788",
+      "saveAmount": "R$498",
+      "monthlyOriginal": "R$249"
+    }
   }
 }
