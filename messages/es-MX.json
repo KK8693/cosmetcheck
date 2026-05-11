@@ -153,28 +153,50 @@
   },
   "pricing": {
     "title": "Precios Simples y Transparentes",
+    "valueFirst": "Mejor Costo-Beneficio",
+    "subtitle": "Cada multa ahorrada paga un año de Pro",
+    "subtitleDesc": "Una sola multa ANVISA puede llegar a $10,000+, una suscripción Pro cubre el año completo",
     "free": {
-      "name": "Gratis",
+      "badge": "Prueba Inicial",
+      "name": "Free",
       "price": "$0",
       "period": "/mes",
+      "desc": "Para: ≤10 SKUs/mes",
       "features": [
-        "10 verificaciones/mes",
-        "Identificación básica de ingredientes",
-        "Exportación de reporte PDF"
+        { "text": "10 verificaciones/mes", "active": true },
+        { "text": "Verificación básica de prohibidos", "active": true },
+        { "text": "Reglas ANVISA Brasil", "active": true },
+        { "text": "Reglas COFEPRIS México", "active": true },
+        { "text": "Generación de Listing IA", "active": false },
+        { "text": "Verificación por Lote CSV", "active": false }
       ],
-      "cta": "Empieza Gratis"
+      "cta": "Prueba Gratis 10 Veces"
     },
     "pro": {
+      "badge": "🔥 Ahorra 40% · Solo 6 días",
+      "recommend": "Recomendado",
       "name": "Pro",
-      "price": "$299",
+      "priceOriginal": "$299",
+      "price": "$179",
       "period": "/mes",
+      "desc": "≈$199/mes · Cancela cuando quieras",
+      "taxNote": "* Precio sin impuestos, auto-renovación",
+      "warning": "Una multa ANVISA ≈ $10,000, equivalente a {months} meses de Pro",
       "features": [
-        "Verificaciones ilimitadas",
-        "Generación de Listing por IA",
-        "Verificación por Lote CSV",
-        "Soporte prioritario"
+        { "text": "Verificaciones ilimitadas", "active": true },
+        { "text": "Generación de Listing IA (PT/ES)", "active": true },
+        { "text": "Actualizaciones en tiempo real", "active": true },
+        { "text": "Soporte prioritario", "active": true },
+        { "text": "Detección por lote (CSV)", "active": true },
+        { "text": "🌟 Acceso anticipado nuevos mercados (Argentina/Colombia Q3)", "active": true },
+        { "text": "🌟 Asesor de cumplimiento 1v1 (anual)", "active": true }
       ],
-      "cta": "Actualiza Ahora"
+      "cta": "Desbloquea Ilimitado — $179/mes"
+    },
+    "stats": {
+      "savedFine": { "num": "$8,500", "label": "Promedio Ahorrado", "desc": "Basado en 200+ búsquedas" },
+      "savedTime": { "num": "7 días", "label": "Promedio de Tiempo Ahorrado", "desc": "De 2 semanas a 3 días" },
+      "approvalRate": { "num": "92%", "label": "Tasa de Aprobación", "desc": "IA vs Manual" }
     }
   },
   "faq": {
@@ -239,8 +261,15 @@
   },
   "dispute": {
     "title": "Reportar Falso Positivo / Enviar Disputa",
-    "success": "Enviado exitosamente",
-    "failed": "Error al enviar, por favor intenta más tarde."
+    "success": "¡Gracias! Nuestro equipo revisará en 48 horas.",
+    "failed": "Error al enviar, por favor intenta de nuevo.",
+    "clickToReport": "¿Crees que es un falso positivo? Reportar problema",
+    "placeholderReason": "Por favor explica por qué crees que es un falso positivo...",
+    "placeholderExpected": "¿Cuál crees que es el resultado correcto? (opcional)",
+    "cancel": "Cancelar",
+    "submitting": "Enviando...",
+    "submit": "Enviar",
+    "minLength": "Por favor ingresa al menos 10 caracteres"
   },
   "cookie": {
     "title": "🍪 Uso de Cookies",

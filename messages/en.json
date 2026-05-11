@@ -151,28 +151,50 @@
   },
   "pricing": {
     "title": "Simple, Transparent Pricing",
+    "valueFirst": "Best Value",
+    "subtitle": "Every fine you avoid pays for a year of Pro",
+    "subtitleDesc": "ANVISA single violation can fined R$ 10,000+, one Pro subscription covers the whole year",
     "free": {
+      "badge": "Starter Trial",
       "name": "Free",
       "price": "$0",
       "period": "/month",
+      "desc": "For: ≤10 SKUs/month testers",
       "features": [
-        "10 compliance checks/month",
-        "Basic ingredient识别",
-        "PDF report export"
+        { "text": "10 compliance checks/month", "active": true },
+        { "text": "Basic banned ingredient check", "active": true },
+        { "text": "Brazil ANVISA rules", "active": true },
+        { "text": "Mexico COFEPRIS rules", "active": true },
+        { "text": "AI Listing Generation", "active": false },
+        { "text": "Batch CSV Detection", "active": false }
       ],
-      "cta": "Get Started Free"
+      "cta": "Try 10 Free"
     },
     "pro": {
+      "badge": "🔥 Save 40% · Only 6 days left",
+      "recommend": "Recommended",
       "name": "Pro",
-      "price": "$15",
+      "priceOriginal": "$49",
+      "price": "$29",
       "period": "/month",
+      "desc": "≈¥199/month · Cancel anytime",
+      "taxNote": "* Price excludes tax, auto-renew",
+      "warning": "ANVISA single violation fine ≈ R$ 10,000 (≈ $1,700), equals {months} months of Pro",
       "features": [
-        "Unlimited compliance checks",
-        "AI Listing Generation",
-        "Batch CSV Detection",
-        "Priority support"
+        { "text": "Unlimited compliance checks", "active": true },
+        { "text": "AI Listing Generation (PT/ES)", "active": true },
+        { "text": "Real-time regulation updates", "active": true },
+        { "text": "Priority support", "active": true },
+        { "text": "Batch detection (CSV import)", "active": true },
+        { "text": "🌟 New markets early access (Argentina/Colombia Q3)", "active": true },
+        { "text": "🌟 Dedicated compliance advisor 1v1 (annual)", "active": true }
       ],
-      "cta": "Upgrade Now"
+      "cta": "Unlock Unlimited — $29/mo"
+    },
+    "stats": {
+      "savedFine": { "num": "R$ 8,500", "label": "Avg. Fine Avoided", "desc": "Based on 200+ seller surveys" },
+      "savedTime": { "num": "7 days", "label": "Avg. Time Saved", "desc": "From 2 weeks to 3 days" },
+      "approvalRate": { "num": "92%", "label": "Listing Approval Rate", "desc": "AI vs Manual" }
     }
   },
   "faq": {
@@ -237,8 +259,15 @@
   },
   "dispute": {
     "title": "Report False Positive / Submit Dispute",
-    "success": "Submitted successfully",
-    "failed": "Submission failed, please try again later."
+    "success": "Thank you! Our team will review within 48 hours.",
+    "failed": "Submission failed, please try again.",
+    "clickToReport": "Think this is a false positive? Report issue",
+    "placeholderReason": "Please explain why you think this is a false positive...",
+    "placeholderExpected": "What do you think is the correct result? (optional)",
+    "cancel": "Cancel",
+    "submitting": "Submitting...",
+    "submit": "Submit",
+    "minLength": "Please enter at least 10 characters"
   },
   "cookie": {
     "title": "🍪 Cookie Usage",

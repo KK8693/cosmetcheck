@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { Button } from './ui/button'
 import { Textarea } from './ui/textarea'
 import { AlertTriangle, Send, CheckCircle } from 'lucide-react'
@@ -18,6 +19,7 @@ export function DisputeReportButton({
   originalInput, 
   violationMessage 
 }: DisputeReportButtonProps) {
+  const t = useTranslations('dispute')
   const [isOpen, setIsOpen] = useState(false)
   const [reason, setReason] = useState('')
   const [expectedResult, setExpectedResult] = useState('')
@@ -73,7 +75,7 @@ export function DisputeReportButton({
         className="text-xs text-gray-400 hover:text-amber-600 flex items-center gap-1 mt-2 underline"
       >
         <AlertTriangle className="w-3 h-3" />
-        认为误检？报告问题
+        {t('clickToReport')}
       </button>
     )
   }
@@ -81,20 +83,20 @@ export function DisputeReportButton({
   return (
     <div className="mt-3 p-3 bg-amber-50 border border-amber-200 rounded-lg">
       <p className="text-xs font-medium text-amber-800 mb-2">
-        报告规则误检 / 提交争议
+        {t('title')}
       </p>
       
       {submitResult === 'success' ? (
         <div className="text-center py-2">
           <CheckCircle className="w-6 h-6 text-green-600 mx-auto mb-2" />
-          <p className="text-sm text-green-700">感谢反馈！我们的团队将在48小时内审核。</p>
+          <p className="text-sm text-green-700">{t('success')}</p>
         </div>
       ) : (
         <>
           <Textarea
             value={reason}
             onChange={(e) => setReason(e.target.value)}
-            placeholder="请详细说明为什么认为这是误检..."
+            placeholder={t('placeholderReason')}
             className="text-sm mb-2 min-h-[60px]"
             maxLength={500}
           />
@@ -102,7 +104,7 @@ export function DisputeReportButton({
             type="text"
             value={expectedResult}
             onChange={(e) => setExpectedResult(e.target.value)}
-            placeholder="你认为正确的结果是什么？（可选）"
+            placeholder={t('placeholderExpected')}
             className="w-full text-sm px-3 py-2 border border-amber-300 rounded mb-2"
             maxLength={200}
           />
@@ -113,7 +115,7 @@ export function DisputeReportButton({
               size="sm"
               className="flex-1 text-xs"
             >
-              取消
+              {t('cancel')}
             </Button>
             <Button
               onClick={handleSubmit}
@@ -121,21 +123,19 @@ export function DisputeReportButton({
               size="sm"
               className="flex-1 bg-amber-600 hover:bg-amber-700 text-white text-xs"
             >
-              {isSubmitting ? (
-                '提交中...'
-              ) : (
+              {isSubmitting ? t('submitting') : (
                 <>
                   <Send className="w-3 h-3 mr-1" />
-                  提交
+                  {t('submit')}
                 </>
               )}
             </Button>
           </div>
           {submitResult === 'error' && (
-            <p className="text-xs text-red-600 mt-2">提交失败，请稍后重试。</p>
+            <p className="text-xs text-red-600 mt-2">{t('failed')}</p>
           )}
           {reason.length > 0 && reason.length < 10 && (
-            <p className="text-xs text-gray-500 mt-1">请至少输入 10 个字符</p>
+            <p className="text-xs text-gray-500 mt-1">{t('minLength')}</p>
           )}
         </>
       )}

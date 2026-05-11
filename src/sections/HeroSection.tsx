@@ -57,6 +57,7 @@ interface GeneratedListing {
 export function HeroSection() {
   const t = useTranslations('hero')
   const tCommon = useTranslations('common')
+  const tDemo = useTranslations('demo')
   // Default demo data - Hydroquinone banned ingredient example
   const [ingredients, setIngredients] = useState('')
   const [country, setCountry] = useState<'BR' | 'MX'>('BR')
@@ -81,8 +82,8 @@ export function HeroSection() {
         ruleId: 'ANVISA-RDC-665-2022',
         category: 'ingredient',
         severity: 'critical',
-        message: t('demo.hydroquinoneBR'),
-        suggestion: t('demo.suggestionBR'),
+        message: tDemo('hydroquinoneBR'),
+        suggestion: tDemo('suggestionBR'),
         source: 'ANVISA RDC 665/2022'
       }
     ],
@@ -102,8 +103,8 @@ export function HeroSection() {
         ruleId: 'COFEPRIS-NOM-141',
         category: 'ingredient',
         severity: 'critical',
-        message: t('demo.hydroquinoneMX'),
-        suggestion: t('demo.suggestionMX'),
+        message: tDemo('hydroquinoneMX'),
+        suggestion: tDemo('suggestionMX'),
         source: 'COFEPRIS NOM-141-SSA1/SCF1-2012'
       }
     ],

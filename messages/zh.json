@@ -151,28 +151,50 @@
   },
   "pricing": {
     "title": "简单透明的定价",
+    "valueFirst": "价值优先",
+    "subtitle": "省下的每一次罚款，都够付一年Pro",
+    "subtitleDesc": "ANVISA单次违规罚款可达 R$ 10,000+，一次Pro订阅即可覆盖全年",
     "free": {
-      "name": "免费版",
-      "price": "¥0",
+      "badge": "入门试用",
+      "name": "Free",
+      "price": "$0",
       "period": "/月",
+      "desc": "适合：每月 ≤10 个 SKU 的测试卖家",
       "features": [
-        "每月10次合规检测",
-        "基础成分识别",
-        "PDF报告导出"
+        { "text": "每月10次合规检测", "active": true },
+        { "text": "基础违禁词检测", "active": true },
+        { "text": "巴西ANVISA规则", "active": true },
+        { "text": "墨西哥COFEPRIS规则", "active": true },
+        { "text": "AI Listing 生成", "active": false },
+        { "text": "批量 CSV 检测", "active": false }
       ],
-      "cta": "免费开始"
+      "cta": "免费试用 10 次"
     },
     "pro": {
-      "name": "专业版",
-      "price": "¥99",
+      "badge": "限时省 40% · 仅剩 6 天",
+      "recommend": "推荐",
+      "name": "Pro",
+      "priceOriginal": "$49",
+      "price": "$29",
       "period": "/月",
+      "desc": "折合约 ¥199/月 · 随时取消",
+      "taxNote": "* 价格不含税，自动续费",
+      "warning": "ANVISA 单次违规罚款 ≈ R$ 10,000（≈ $1,700），够付 {months} 个月 Pro",
       "features": [
-        "无限次合规检测",
-        "AI Listing 生成",
-        "批量 CSV 检测",
-        "优先客服支持"
+        { "text": "无限次合规检测", "active": true },
+        { "text": "AI Listing生成（葡/西语）", "active": true },
+        { "text": "法规更新实时通知", "active": true },
+        { "text": "优先客服支持", "active": true },
+        { "text": "批量检测（CSV导入）", "active": true },
+        { "text": "🌟 新市场优先体验（阿根廷/哥伦比亚 Q3）", "active": true },
+        { "text": "🌟 专属合规顾问 1v1（年度订阅）", "active": true }
       ],
-      "cta": "立即升级"
+      "cta": "解锁无限次 — $29/月"
+    },
+    "stats": {
+      "savedFine": { "num": "R$ 8,500", "label": "平均避免罚款金额", "desc": "基于 200+ 卖家调研" },
+      "savedTime": { "num": "7 天", "label": "平均节省合规时间", "desc": "从 2 周缩短到 3 天" },
+      "approvalRate": { "num": "92%", "label": "Listing 审核通过率", "desc": "AI 生成 vs 人工撰写" }
     }
   },
   "faq": {
@@ -237,8 +259,15 @@
   },
   "dispute": {
     "title": "报告规则误检 / 提交争议",
-    "success": "提交成功",
-    "failed": "提交失败，请稍后重试。"
+    "success": "感谢反馈！我们的团队将在48小时内审核。",
+    "failed": "提交失败，请稍后重试。",
+    "clickToReport": "认为误检？报告问题",
+    "placeholderReason": "请详细说明为什么认为这是误检...",
+    "placeholderExpected": "你认为正确的结果是什么？（可选）",
+    "cancel": "取消",
+    "submitting": "提交中...",
+    "submit": "提交",
+    "minLength": "请至少输入 10 个字符"
   },
   "cookie": {
     "title": "🍪 Cookie 使用",
