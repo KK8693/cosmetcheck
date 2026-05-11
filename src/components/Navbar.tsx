@@ -41,6 +41,7 @@ export function Navbar() {
             ? 'bg-[#0D0D12]/95 backdrop-blur-lg border-b border-white/10 shadow-lg'
             : 'bg-transparent'
         }`}
+        style={{ transform: 'translateZ(0)', willChange: 'background' }}
       >
         <div className="container-custom">
           <div className="flex items-center justify-between h-16 md:h-20">

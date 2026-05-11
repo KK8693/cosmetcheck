@@ -345,5 +345,29 @@
     "title": "🍪 Cookie 使用",
     "description": "我们使用必要的 Cookie 来保持您登录。如需启用分析 Cookie，我们会尊重您的选择。",
     "policy": "查看 Cookie 政策"
+  },
+  "interactiveDemo": {
+    "title": "30 秒看懂：你的产品会不会被下架",
+    "subtitle": "输入一个真实成分，看 AI 如何 3 步拦截风险 → 生成合规 Listing",
+    "inputLabel": "输入产品成分",
+    "inputPlaceholder": "输入成分，用逗号分隔",
+    "brazilAnvisa": "巴西 ANVISA",
+    "mexicoCofepris": "墨西哥 COFEPRIS",
+    "runDemo": "运行检测演示",
+    "resetDemo": "重新演示",
+    "demoHint": "👆 点击按钮，模拟真实检测流程（无需注册，不消耗次数）",
+    "idleMessage": "点击左侧按钮开始演示",
+    "scanningMessage": "▋ 扫描成分中...",
+    "analyzingMessage": "分析 5 种成分...",
+    "scanComplete": "✓ 扫描完成",
+    "violationDetected": "❌ 检测到违规成分",
+    "bannedIngredient": "⚠️ 禁用成分",
+    "regulationInfo": "法规：{country} {regulation} 禁止 Hydroquinone 用于美白产品",
+    "autoReplaced": "❌ 检测到违规成分 → 自动替换",
+    "replacedWith": "✓ 已替换为 Alpha Arbutin",
+    "aiGeneratedListing": "✓ AI 生成合规 Listing",
+    "brProductName": "Sérum Clareador com Alpha Arbutin - 30ml",
+    "mxProductName": "Suero Clarificante con Alpha Arbutin - 30ml",
+    "complianceConfirmed": "⚠️ 此产品符合 {country} 法规要求"
   }
 }

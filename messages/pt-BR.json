@@ -329,5 +329,29 @@
     "title": "🍪 Uso de Cookies",
     "description": "Usamos cookies necessários para manter seu login. Respeitamos sua escolha sobre cookies de análise.",
     "policy": "Ver Política de Cookies"
+  },
+  "interactiveDemo": {
+    "title": "Veja em 30 Segundos: Seu Produto Será Retirado?",
+    "subtitle": "Insira um ingrediente real e veja a IA bloquear riscos em 3 passos → Gerar Listing compatível",
+    "inputLabel": "Ingrirdientes do Produto",
+    "inputPlaceholder": "Insira os ingredientes, separados por vírgula",
+    "brazilAnvisa": "Brasil ANVISA",
+    "mexicoCofepris": "México COFEPRIS",
+    "runDemo": "Executar Demonstração",
+    "resetDemo": "Reiniciar Demo",
+    "demoHint": "👆 Clique para simular detecção real (sem registro, sem créditos)",
+    "idleMessage": "Clique no botão à esquerda para começar",
+    "scanningMessage": "▋ Escaneando ingredientes...",
+    "analyzingMessage": "Analisando 5 ingredientes...",
+    "scanComplete": "✓ Escaneamento Completo",
+    "violationDetected": "❌ Violação Detectada",
+    "bannedIngredient": "⚠️ Ingrediente Proibido",
+    "regulationInfo": "Regulamento: {country} {regulation} proíbe Hydroquinone para produtos clareadores",
+    "autoReplaced": "❌ Violação detectada → Substituído automaticamente",
+    "replacedWith": "✓ Substituído por Alpha Arbutin",
+    "aiGeneratedListing": "✓ Listing Compatível Gerado pela IA",
+    "brProductName": "Sérum Clareador com Alpha Arbutin - 30ml",
+    "mxProductName": "Suero Clarificante con Alpha Arbutin - 30ml",
+    "complianceConfirmed": "⚠️ Este produto está em conformidade com as regulamentações {country}"
   }
 }
