@@ -1,0 +1,133 @@
+{
+  "version": "1.0",
+  "description": "ANVISA cosmetic claim root clusters for cross-rule semantic deduplication. Each cluster groups semantically equivalent or near-equivalent terms across EN/PT/ES.",
+  "clusters": [
+    {
+      "groupId": "permanent",
+      "label": "永久/持久化宣称",
+      "terms": [
+        "permanent", "lasting", "forever", "definitive", "definitely",
+        "permanente", "definitivo", "para sempre", "eterno", "eternamente",
+        "permanente", "definitiva", "para siempre", "eterno"
+      ]
+    },
+    {
+      "groupId": "cure",
+      "label": "治疗/治愈宣称",
+      "terms": [
+        "cure", "treat", "repair", "heal", "therapy", "therapeutic", "medicinal",
+        "cura", "curar", "tratar", "tratamiento", "tratamento", "reparar", "reparação", "sanar",
+        "curar", "tratar", "tratamiento", "reparar", "reparación", "sanar", "terapéutico"
+      ]
+    },
+    {
+      "groupId": "instant",
+      "label": "即时/速效宣称",
+      "terms": [
+        "instant", "rapid", "immediate", "instantly", "fast-acting", "quick",
+        "instantâneo", "instantáneo", "rápido", "imediato", "imediato", "imediata", "rápida",
+        "instantáneo", "rápido", "inmediato", "inmediata", "acción rápida"
+      ]
+    },
+    {
+      "groupId": "whiten",
+      "label": "美白/漂白宣称",
+      "terms": [
+        "whiten", "whitening", "bleach", "bleaching", "lighten", "lightening", "fairness", "fair",
+        "branqueamento", "branqueador", "clareamento", "clareador", "branquear", "clarear",
+        "blanqueamiento", "blanqueador", "aclaramiento", "aclarante", "blanquear", "aclarar"
+      ]
+    },
+    {
+      "groupId": "eliminate",
+      "label": "消除/去除宣称",
+      "terms": [
+        "eliminate", "remove", "elimination", "removal", "eradicate", "eradication", "banish",
+        "eliminar", "eliminação", "remover", "remoção", "erradicar", "banir",
+        "eliminar", "eliminación", "remover", "remoción", "erradicar", "prohibir"
+      ]
+    },
+    {
+      "groupId": "guarantee",
+      "label": "保证/承诺宣称",
+      "terms": [
+        "guarantee", "guaranteed", "promise", "promised", "warranty", "assured", "sure",
+        "garantia", "garantido", "promessa", "prometido", "assegurado", "certeza",
+        "garantía", "garantizado", "promesa", "prometido", "asegurado", "seguro"
+      ]
+    },
+    {
+      "groupId": "total",
+      "label": "完全/100%宣称",
+      "terms": [
+        "total", "complete", "fully", "completely", "totally", "absolute", "absolutely",
+        "100%", "100 por cento", "100 por ciento",
+        "total", "completo", "totalmente", "completamente", "absoluto", "absolutamente",
+        "total", "completo", "totalmente", "completamente", "absoluto", "absolutamente"
+      ]
+    },
+    {
+      "groupId": "medical",
+      "label": "医疗/临床宣称",
+      "terms": [
+        "medical", "clinical", "medicinal", "medicine", "doctor", "dermatologist", "pharmaceutical",
+        "médico", "clínico", "medicinal", "medicina", "médica", "dermatologista", "farmacêutico",
+        "médico", "clínico", "medicinal", "medicina", "médica", "dermatólogo", "farmacéutico"
+      ]
+    },
+    {
+      "groupId": "anti-bacteria",
+      "label": "抗菌/杀菌宣称",
+      "terms": [
+        "anti-bacteria", "antibacterial", "antibacteriano", "antiseptic", "antisséptico", "antisséptica",
+        "germ-killing", "bactericidal", "bactericida", "sterilizing", "sterilize", "sanitize", "disinfect",
+        "antibacteriano", "antiséptico", "antiséptica", "bactericida", "esterilizante", "esterilizar", "desinfectar"
+      ]
+    },
+    {
+      "groupId": "anti-age",
+      "label": "抗衰老宣称",
+      "terms": [
+        "anti-age", "anti-aging", "antiage", "anti-ageing", "rejuvenate", "rejuvenating", "rejuvenation",
+        "antienvejecimiento", "anti-idade", "anti-idade", "rejuvenescedor", "rejuvenescer", "rejuvenescimento",
+        "antienvejecimiento", "rejuvenecedor", "rejuvenecer", "rejuvenecimiento"
+      ]
+    },
+    {
+      "groupId": "wrinkle",
+      "label": "抗皱/去皱宣称",
+      "terms": [
+        "wrinkle", "wrinkles", "anti-wrinkle", "antiwrinkle", "anti-wrinkles", "wrinkle-free",
+        "arruga", "arrugas", "antiarrugas", "anti-arrugas", "rugas", "anti-rugas", "antirrugas",
+        "rugas", "anti-rugas", "antirrugas"
+      ]
+    },
+    {
+      "groupId": "safe",
+      "label": "安全/无刺激宣称",
+      "terms": [
+        "safe", "safety", "harmless", "non-toxic", "hypoallergenic", "hypo-allergenic", "non-irritating",
+        "seguro", "segurança", "inofensivo", "inocuo", "hipoalergênico", "não irritante",
+        "seguro", "seguridad", "inofensivo", "inocuo", "hipoalergénico", "no irritante"
+      ]
+    },
+    {
+      "groupId": "irritate",
+      "label": "刺激/敏感相关",
+      "terms": [
+        "irritate", "irritation", "irritating", "irritant", "sensitive", "sensibility",
+        "irritar", "irritação", "irritante", "sensível", "sensibilidade",
+        "irritar", "irritación", "irritante", "sensible", "sensibilidad"
+      ]
+    },
+    {
+      "groupId": "unique",
+      "label": "独特/专利宣称",
+      "terms": [
+        "unique", "exclusive", "patented", "revolutionary", "breakthrough", "only", "one and only",
+        "único", "exclusivo", "patenteado", "revolucionário", "revolucionária", "avanço", "única",
+        "único", "exclusivo", "patentado", "revolucionario", "revolucionaria", "avance", "única"
+      ]
+    }
+  ]
+}

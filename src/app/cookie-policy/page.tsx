@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 export const metadata = {
   title: 'Cookie Policy - CosmetCheck',
   description: 'CosmetCheck Cookie Policy',

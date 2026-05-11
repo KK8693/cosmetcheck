@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 export const metadata = {
   title: 'Privacy Policy - CosmetCheck',
   description: 'CosmetCheck Privacy Policy covering GDPR, LGPD, and LFPDPPP compliance',

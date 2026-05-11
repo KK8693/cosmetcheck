@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+
+[build.environment]
+  NEXT_RUNTIME = "edge"
+
+[[routes]]
+  pattern = "/_not-found"
+  handler = "_not-found"
+  runtime = "edge"
+
+[experimental]
+  serverActions = { bodySizeLimit = "2mb" }

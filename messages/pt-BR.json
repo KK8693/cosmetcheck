@@ -1,0 +1,333 @@
+{
+  "common": {
+    "loggedInAs": "Conectado como {email}"
+  },
+  "nav": {
+    "features": "Recursos",
+    "pricing": "Preços",
+    "contact": "Fale Conosco",
+    "howItWorks": "Como Funciona",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title": "Título",
+    "titleLine2": "Sem Remoções ou Multas",
+    "subtitle": "Verificação de conformidade com um clique para Brasil/México, Listings de alta conversão gerados por IA. Comece grátis, evite penalidades ANVISA/COFEPRIS.",
+    "subtitleShort": "Verificação de conformidade Brasil/México em um clique, Listings de alta conversão gerados por IA — Comece grátis",
+    "checkButton": "Iniciar Verificação",
+    "demoButton": "Ver Demonstração",
+    "ingredients": "Digite os Ingredientes",
+    "ingredientsPlaceholder": "ex.: Hidroquinona, creme 2% HQ...",
+    "selectCountry": "Selecione o Mercado",
+    "brazil": "Brasil",
+    "mexico": "México",
+    "brazilAnvisa": "Brasil ANVISA",
+    "mexicoCofeppris": "México COFEPRIS",
+    "checking": "Verificando...",
+    "checkNow": "Verificar Agora",
+    "checkFirst": "Verificar Primeiro",
+    "remainingChecks": "Verificações Restantes",
+    "aiGenerate": "Gerar Listing com IA",
+    "aiGenerateListing": "Gerar Listing com IA",
+    "productName": "Nome do Produto",
+    "productNamePlaceholder": "Nome do Produto (ex.: Sérum de Vitamina C)",
+    "productBenefits": "Benefícios do Produto",
+    "productBenefitsPlaceholder": "Benefícios do Produto (ex.: clareamento, hidratação... opcional)",
+    "generate": "Gerar",
+    "generating": "Gerando...",
+    "freeGenerateListing": "Gerar Listing Grátis",
+    "compliant": "Conforme",
+    "nonCompliant": "Não Conforme",
+    "violation": "Substância Proibida",
+    "warning": "Aviso",
+    "info": "Informação",
+    "viewDetails": "Ver Detalhes",
+    "testResult": "Resultado do Teste",
+    "complianceCheckComplete": "Verificação Completa",
+    "noIssuesFound": "Parabéns! Nenhum problema de conformidade encontrado.",
+    "critical": "Crítico",
+    "criticalIssues": "Problemas Críticos (Deve Corrigir)",
+    "warningIssues": "Avisos (Recomendado Corrigir)",
+    "suggestion": "Sugestão",
+    "aiGeneratedListing": "Listing Conforme Gerado por IA",
+    "portuguese": "Português",
+    "spanish": "Espanhol",
+    "description": "Descrição",
+    "bulletPoints": "Pontos de Destaque",
+    "complianceNotes": "Notas de Conformidade",
+    "copyToClipboard": "Copiar para Área de Transferência",
+    "copied": "Copiado",
+    "copyBtn": "Copiar",
+    "copyAll": "Copiar Tudo",
+    "ptBr": "Português",
+    "esMx": "Espanhol",
+    "disclaimer": "Este Listing foi gerado por IA apenas para referência. Por favor, confirme a conformidade final com as regulamentações locais antes de publicar.",
+    "complianceWarning": "Notas",
+    "socialProof": {
+      "served": "Atendidos",
+      "sellers": "Vendedores",
+      "blocked": "Bloqueados",
+      "complianceRisks": "Riscos de Conformidade",
+      "coverage": "Cobertura",
+      "brazilMexico": "Brasil/México"
+    },
+    "trustedBy": "Confiado por vendedores nestas plataformas",
+    "caseStudies": {
+      "bannedIngredient": "Ingrediente Proibido",
+      "bannedIngredientBody": "Um creme clareador com 2% de Hidroquinona marcado em vermelho pela ANVISA",
+      "bannedIngredientResult": "→ Relistado em 48h após modificação",
+      "labelViolation": "Violação de Rótulo",
+      "labelViolationBody": "Protetor solar sem valor SPF apreendido pela alfândega mexicana",
+      "labelViolationResult": "→ Rótulo conforme gerado por IA, 0 multas",
+      "copywritingError": "Erro de Texto",
+      "copywritingErrorBody": "Palavra errada no texto anti-idade, Listing removido por 7 dias",
+      "copywritingErrorResult": "→ CTR aumentado 23% após substituição"
+    },
+    "form": {
+      "inputProductInfo": "Insira informações do produto, verifique e gere Listing conforme",
+      "optional": "Opcional",
+      "zeroBarrier": "Sem barreira · Sem registro · Saída bilíngue"
+    },
+    "errors": {
+      "enterIngredients": "Por favor, insira os ingredientes ou descrição do produto",
+      "checkFailed": "Falha na verificação, tente novamente mais tarde",
+      "networkError": "Erro de rede, tente novamente mais tarde",
+      "enterProductName": "Por favor, insira o nome do produto",
+      "loginRequired": "Por favor, faça login primeiro para gerar Listing",
+      "quotaExceeded": "Cota gratuita esgotada, atualize para Pro para uso ilimitado",
+      "generateFailed": "Falha na geração, tente novamente mais tarde"
+    }
+  },
+  "howItWorks": {
+    "title": "Verificação de Conformidade em 3 Etapas",
+    "subtitle": "Da entrada de ingredientes à geração de Listagem — assistência completa de IA, sem necessidade de background regulatório",
+    "step1Title": "Colar Info do Produto",
+    "step1Desc": "Cole descrição do produto, lista de ingredientes ou carregue documento, suporta PT/ES/EN",
+    "step2Title": "Detecção Automática por IA",
+    "step2Desc": "Marcação em tempo real de palavras proibidas, ingredientes acima do limite, mostre cláusulas regulatórias ANVISA/COFEPRIS",
+    "step3Title": "Gerar Listagem de Alto Impacto",
+    "step3Desc": "Um clique gera Listagem em português/espanhol em conformidade com regulamentações locais, pronta para publicar"
+  },
+  "useCases": {
+    "title": "Casos de Uso",
+    "items": {
+      "1": "Vendedores de E-commerce: Verificação automática de conformidade do listing, evite remoção",
+      "2": "Marcas: Pré-verificação de conformidade de novos produtos, reduza risco de lançamento",
+      "3": "Logística Cross-border: Verificação em lote de produtos, liberação rápida na alfândega"
+    }
+  },
+  "features": {
+    "title": "Recursos Principais",
+    "subtitle": "Motor de IA para conformidade desenvolvido para o mercado de beleza latino-americano",
+    "autoBlockTitle": "Bloqueio Automático Antes da Listagem",
+    "autoBlockDesc": "Insira ingredientes, receba relatórios de risco instantâneos: o que viola, como corrigir, qual regulamentação — paremultas antes de chegarem",
+    "listingTitle": "Listagem Que Vende",
+    "listingDesc": "Não é tradução — reescreva títulos e pontos de venda conforme hábitos de busca de consumidores brasileiros e mexicanos, com conformidade integrada",
+    "highlightTitle": "Destaque Palavras de Risco com Citações",
+    "highlightDesc": "Referências diretas de números ANVISA RDC, normas COFEPRIS —tenha evidências para recursos em plataformas",
+    "freeTryTitle": "0$ Para Testar 10 Vezes",
+    "freeTryDesc": "Sem cartão de crédito, sem contrato. Teste primeiro, faça upgrade para Pro apenas se achar útil"
+  },
+  "pricing": {
+    "title": "Preços Simples e Transparentes",
+    "valueFirst": "Melhor Custo-Benefício",
+    "subtitle": "Cada multa economizada paga um ano de Pro",
+    "subtitleDesc": "Uma única multa ANVISA pode chegar a R$ 10.000+, uma assinatura Pro cobre o ano inteiro",
+    "free": {
+      "badge": "Teste Inicial",
+      "name": "Free",
+      "price": "R$0",
+      "period": "/mês",
+      "desc": "Para: ≤10 SKUs/mês",
+      "features": [
+        {
+          "text": "10 verificações/mês",
+          "active": true
+        },
+        {
+          "text": "Verificação básica de proibidos",
+          "active": true
+        },
+        {
+          "text": "Regras ANVISA Brasil",
+          "active": true
+        },
+        {
+          "text": "Regras COFEPRIS México",
+          "active": true
+        },
+        {
+          "text": "Geração de Listing IA",
+          "active": false
+        },
+        {
+          "text": "Verificação em Lote CSV",
+          "active": false
+        }
+      ],
+      "cta": "Teste Grátis 10 Vezes"
+    },
+    "pro": {
+      "badge": "🔥 Economize 40% · Só 6 dias",
+      "recommend": "Recomendado",
+      "name": "Pro",
+      "priceOriginal": "R$299",
+      "price": "R$179",
+      "period": "/mês",
+      "desc": "≈R$199/mês · Cancele quando quiser",
+      "taxNote": "* Preço sem impostos, auto-renovação",
+      "warning": "Uma multa ANVISA ≈ R$ 10.000, equivalent a {months} meses de Pro",
+      "features": [
+        {
+          "text": "Verificações ilimitadas",
+          "active": true
+        },
+        {
+          "text": "Geração de Listing IA (PT/ES)",
+          "active": true
+        },
+        {
+          "text": "Atualizações em tempo real",
+          "active": true
+        },
+        {
+          "text": "Suporte prioritário",
+          "active": true
+        },
+        {
+          "text": "Detecção em lote (CSV)",
+          "active": true
+        },
+        {
+          "text": "🌟 Acesso antecipado novos mercados (Argentina/Colômbia Q3)",
+          "active": true
+        },
+        {
+          "text": "🌟 Assessor de conformidade 1v1 (anual)",
+          "active": true
+        }
+      ],
+      "cta": "Desbloqueie Ilimitado — R$179/mês"
+    },
+    "stats": {
+      "savedFine": {
+        "num": "R$ 8.500",
+        "label": "Média Economizada",
+        "desc": "Baseado em 200+ pesquisas"
+      },
+      "savedTime": {
+        "num": "7 dias",
+        "label": "Média de Tempo Salvo",
+        "desc": "De 2 semanas para 3 dias"
+      },
+      "approvalRate": {
+        "num": "92%",
+        "label": "Taxa de Aprovação",
+        "desc": "IA vs Manual"
+      }
+    }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "items": {
+      "1": {
+        "q": "Quais países/regiões são suportados?",
+        "a": "Currently supports Brazil (ANVISA) e México (COFEPRIS). Geração de Listing adaptada para Amazon, Mercado Livre, Shopee e outras plataformas."
+      },
+      "2": {
+        "q": "Quão precisos são os resultados?",
+        "a": "Treinamos em documentos oficiais de regulamentação e atualizamos regularmente. Para produtos complexos, oferecemos revisão manual."
+      },
+      "3": {
+        "q": "Como funciona a cobrança?",
+        "a": "Plano grátis: 10 verificações/mês. Pro: R$199/mês ilimitadas. API de detecção por uso, ideal para cenários em lote."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Especialista em Conformidade de Beleza na América Latina",
+    "product": "Produto",
+    "complianceCheck": "Verificação de Conformidade",
+    "aiListing": "Geração de Listing IA",
+    "pricing": "Preços",
+    "resources": "Recursos",
+    "knowledgeBase": "Base de Conhecimento Regulatório",
+    "helpCenter": "Centro de Ajuda",
+    "apiDocs": "Documentação da API",
+    "legal": "Legal",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "gdpr": "GDPR/LGPD/LFPDPPP",
+    "copyright": "© 2025 CosmetCheck. Todos os direitos reservados."
+  },
+  "auth": {
+    "login": "Entrar",
+    "register": "Cadastrar",
+    "email": "E-mail",
+    "password": "Senha",
+    "confirmPassword": "Confirmar Senha",
+    "forgotPassword": "Esqueceu a senha?",
+    "noAccount": "Não tem conta?",
+    "hasAccount": "Já tem conta?",
+    "loginSuccess": "Login realizado com sucesso!",
+    "registerSuccess": "Cadastro realizado com sucesso! Faça login",
+    "loginFailed": "Falha no login",
+    "registerFailed": "Falha no cadastro"
+  },
+  "demo": {
+    "title": "3 Passos Bloquear Risco → Gerar Listing Conforme",
+    "runDemo": "Executar Demonstração",
+    "demoHint": "👆 Clique no botão para simular o processo real (sem registro, sem usar quota)",
+    "clickToStart": "Clique no botão à esquerda para iniciar",
+    "violationDetected": "❌ Substância Proibida Detectada",
+    "autoReplace": "❌ Detectado → Substituição Automática",
+    "aiGenerated": "✓ Listing Conforme Gerado por IA",
+    "hydroquinoneBR": "Hidroquinona é um ingrediente clareador banned proibido explicitamente pela ANVISA no Brasil",
+    "suggestionBR": "Substitua por alternativas conformes como α-Arbutina ou Niacinamida",
+    "hydroquinoneMX": "Hidroquinona é um ingrediente clareador banned proibido explicitamente pela COFEPRIS no México",
+    "suggestionMX": "Substitua por alternativas conformes como α-Arbutina ou Niacinamida",
+    "sectionTitle": "Veja em 30 segundos: Seu produto será removido?",
+    "sectionSubtitle": "Digite um ingrediente real e veja a IA bloquear riscos em 3 passos → gerar um Listing conforme",
+    "inputLabel": "Digite os Ingredientes do Produto",
+    "inputPlaceholder": "Digite os ingredientes, separados por vírgulas",
+    "resetDemo": "Reiniciar Demonstração",
+    "scanning": "Verificando ingredientes...",
+    "analyzing": "Analisando 5 ingredientes...",
+    "scanComplete": "Verificação completa",
+    "bannedIngredient": "Ingrediente Proibido",
+    "regulationBR": "Regulamentação: ANVISA RDC 529/2021 proíbe Hidroquinona em produtos de clareamento",
+    "regulationMX": "Regulamentação: COFEPRIS NOM-141 proíbe Hidroquinona em cosméticos comuns",
+    "replacedWith": "Substituído por Alpha Arbutin",
+    "compliantNote": "Este produto atende aos requisitos regulatórios da {regulator}"
+  },
+  "dispute": {
+    "title": "Reportar Falso Positivo / Submeter Dispute",
+    "success": "Obrigado! Nossa equipe analisará em até 48 horas.",
+    "failed": "Falha no envio, tente novamente.",
+    "clickToReport": "Acha que é um falso positivo? Reportar problema",
+    "placeholderReason": "Por favor, explique por que você acha que é um falso positivo...",
+    "placeholderExpected": "Qual você acha que é o resultado correto? (opcional)",
+    "cancel": "Cancelar",
+    "submitting": "Enviando...",
+    "submit": "Enviar",
+    "minLength": "Por favor, insira pelo menos 10 caracteres"
+  },
+  "cta": {
+    "badge": "🔥 Oferta Limitada · Ganhe 5 Verificações Pro Grátis Este Mês",
+    "title": "Comece a Vender em Conformidade Hoje",
+    "subtitle": "Junte-se a 2.000+ vendedores de beleza na América Latina. Deixe a IA remover barreiras de conformidade.",
+    "emailPlaceholder": "Digite seu e-mail para começar grátis",
+    "button": "Começar Verificação Grátis",
+    "emailInvalid": "Por favor, digite um e-mail válido",
+    "subscribeError": "Falha na assinatura, tente novamente mais tarde",
+    "subscribeSuccess": "✅ Inscrito! Por favor, verifique seu e-mail para confirmar.",
+    "whatsapp": "Consulta Rápida pelo WhatsApp",
+    "or": "ou",
+    "noCreditCard": "Sem cartão de crédito · Cancele quando quiser · Plano grátis para sempre"
+  },
+  "cookie": {
+    "title": "🍪 Uso de Cookies",
+    "description": "Usamos cookies necessários para manter seu login. Respeitamos sua escolha sobre cookies de análise.",
+    "policy": "Ver Política de Cookies"
+  }
+}

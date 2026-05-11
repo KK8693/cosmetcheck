@@ -1,0 +1,349 @@
+{
+  "common": {
+    "brand": "CosmetCheck",
+    "tagline": "拉美美妆合规检测专家，让出海更简单。",
+    "features": "功能",
+    "pricing": "定价",
+    "contact": "联系我们",
+    "freeStart": "免费开始",
+    "learnMore": "了解更多",
+    "viewDetails": "查看详情",
+    "submit": "提交",
+    "submitting": "提交中...",
+    "success": "成功",
+    "error": "错误",
+    "warning": "警告",
+    "loading": "加载中...",
+    "download": "下载",
+    "copy": "复制",
+    "loggedInAs": "已用 {email}"
+  },
+  "nav": {
+    "features": "功能",
+    "pricing": "定价",
+    "contact": "联系我们",
+    "howItWorks": "流程",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title": "标题",
+    "titleLine2": "不再被下架罚款",
+    "subtitle": "一键检测巴西/墨西哥美妆合规，AI自动生成高转化Listing。免费开始，避免ANVISA/COFEPRIS下架罚款。",
+    "subtitleShort": "一键检测巴西/墨西哥等5国合规，AI自动生成高转化Listing — 免费开始",
+    "checkButton": "开始检测",
+    "demoButton": "查看演示",
+    "ingredients": "输入成分",
+    "ingredientsPlaceholder": "如：Hydroquinone, 2% HQ cream...",
+    "selectCountry": "选择目标市场",
+    "brazil": "巴西",
+    "mexico": "墨西哥",
+    "brazilAnvisa": "巴西 ANVISA",
+    "mexicoCofeppris": "墨西哥 COFEPRIS",
+    "checking": "检测中...",
+    "checkNow": "立即检测",
+    "checkFirst": "先检测合规",
+    "remainingChecks": "剩余检测次数",
+    "aiGenerate": "AI生成Listing",
+    "aiGenerateListing": "AI生成Listing",
+    "productName": "产品名称",
+    "productNamePlaceholder": "产品名称（如：Vitamin C Serum）",
+    "productBenefits": "产品功效",
+    "productBenefitsPlaceholder": "产品功效（如：美白、保湿、抗衰老... 可选）",
+    "generate": "生成",
+    "generating": "生成中...",
+    "freeGenerateListing": "免费生成 Listing",
+    "compliant": "合规",
+    "nonCompliant": "不合规",
+    "violation": "违规成分",
+    "warning": "警告",
+    "info": "提示",
+    "viewDetails": "查看详情",
+    "testResult": "检测结果",
+    "complianceCheckComplete": "检测完成",
+    "noIssuesFound": "恭喜！暂未发现合规问题。",
+    "critical": "严重",
+    "criticalIssues": "严重问题（必须修复）",
+    "warningIssues": "警告（建议修复）",
+    "suggestion": "建议",
+    "aiGeneratedListing": "AI生成的合规Listing",
+    "portuguese": "葡语",
+    "spanish": "西语",
+    "description": "描述",
+    "bulletPoints": "卖点",
+    "complianceNotes": "合规备注",
+    "copyToClipboard": "复制到剪贴板",
+    "copied": "已复制",
+    "copyBtn": "复制",
+    "copyAll": "复制全部",
+    "ptBr": "葡语",
+    "esMx": "西语",
+    "disclaimer": "本Listing由AI生成，仅供参考。上架前请根据当地法规进行最终确认。",
+    "complianceWarning": "注意事项",
+    "socialProof": {
+      "served": "已服务",
+      "sellers": "卖家",
+      "blocked": "拦截",
+      "complianceRisks": "次合规风险",
+      "coverage": "覆盖",
+      "brazilMexico": "巴西/墨西哥"
+    },
+    "trustedBy": "被这些平台的卖家信赖",
+    "caseStudies": {
+      "bannedIngredient": "禁用成分",
+      "bannedIngredientBody": "某美白霜含 Hydroquinone 2%，直接被 ANVISA 标红",
+      "bannedIngredientResult": "→ 修改后 48h 重新上架",
+      "labelViolation": "标签违规",
+      "labelViolationBody": "防晒产品未标注 SPF 值，墨西哥海关扣留",
+      "labelViolationResult": "→ AI 生成合规标签，0 罚款",
+      "copywritingError": "文案误触",
+      "copywritingErrorBody": "抗皱文案写错 1 个词，Listing 被下架 7 天",
+      "copywritingErrorResult": "→ 替换后 CTR 提升 23%"
+    },
+    "form": {
+      "inputProductInfo": "输入产品信息，检测并生成合规Listing",
+      "optional": "可选",
+      "zeroBarrier": "零门槛体验 · 无需注册 · 双语输出"
+    },
+    "errors": {
+      "enterIngredients": "请输入产品成分或描述",
+      "checkFailed": "检测失败，请稍后再试",
+      "networkError": "网络错误，请稍后再试",
+      "enterProductName": "请输入产品名称",
+      "loginRequired": "请先登录后再生成 Listing",
+      "quotaExceeded": "免费次数已用完，请升级 Pro 无限次使用",
+      "generateFailed": "生成失败，请稍后再试"
+    }
+  },
+  "howItWorks": {
+    "title": "三步完成合规检测",
+    "subtitle": "从成分输入到Listing生成，全程AI辅助，无需法规背景",
+    "step1Title": "粘贴产品信息",
+    "step1Desc": "粘贴产品描述、成分表或上传文档，支持中/英/葡/西语",
+    "step2Title": "AI自动检测合规",
+    "step2Desc": "实时标记违禁词、浓度超标成分，显示ANVISA/COFEPRIS具体法规条款",
+    "step3Title": "生成高转化Listing",
+    "step3Desc": "一键生成符合当地法规的葡语/西班牙语Listing，可直接上架"
+  },
+  "useCases": {
+    "title": "适用场景",
+    "items": {
+      "1": "电商卖家：自动检测listing合规性，避免下架",
+      "2": "品牌方：新品种合规预审，降低上市风险",
+      "3": "跨境物流：批量检测产品，合规快速通关"
+    }
+  },
+  "features": {
+    "title": "核心功能",
+    "subtitle": "专为拉美美妆合规设计的AI检测引擎",
+    "autoBlockTitle": "上架前自动拦截下架风险",
+    "autoBlockDesc": "输入成分秒出风险报告：哪里违规、怎么改、引用哪条法规 — 不让罚款单先到",
+    "listingTitle": "当地人看了就想买的 Listing",
+    "listingDesc": "不是翻译，是按巴西/墨西哥消费者搜索习惯重写标题和卖点，自带合规过滤",
+    "highlightTitle": "违禁词秒标红，附官方条款",
+    "highlightDesc": "ANVISA RDC 编号、COFEPRIS NOM 标准直接引用，平台申诉有依据",
+    "freeTryTitle": "0 元先测 10 次，再决定",
+    "freeTryDesc": "不用绑卡、不用签合同，测完觉得有用再升级 Pro"
+  },
+  "pricing": {
+    "title": "简单透明的定价",
+    "valueFirst": "价值优先",
+    "subtitle": "省下的每一次罚款，都够付一年Pro",
+    "subtitleDesc": "ANVISA单次违规罚款可达 R$ 10,000+，一次Pro订阅即可覆盖全年",
+    "free": {
+      "badge": "入门试用",
+      "name": "Free",
+      "price": "$0",
+      "period": "/月",
+      "desc": "适合：每月 ≤10 个 SKU 的测试卖家",
+      "features": [
+        {
+          "text": "每月10次合规检测",
+          "active": true
+        },
+        {
+          "text": "基础违禁词检测",
+          "active": true
+        },
+        {
+          "text": "巴西ANVISA规则",
+          "active": true
+        },
+        {
+          "text": "墨西哥COFEPRIS规则",
+          "active": true
+        },
+        {
+          "text": "AI Listing 生成",
+          "active": false
+        },
+        {
+          "text": "批量 CSV 检测",
+          "active": false
+        }
+      ],
+      "cta": "免费试用 10 次"
+    },
+    "pro": {
+      "badge": "限时省 40% · 仅剩 6 天",
+      "recommend": "推荐",
+      "name": "Pro",
+      "priceOriginal": "$49",
+      "price": "$29",
+      "period": "/月",
+      "desc": "折合约 ¥199/月 · 随时取消",
+      "taxNote": "* 价格不含税，自动续费",
+      "warning": "ANVISA 单次违规罚款 ≈ R$ 10,000（≈ $1,700），够付 {months} 个月 Pro",
+      "features": [
+        {
+          "text": "无限次合规检测",
+          "active": true
+        },
+        {
+          "text": "AI Listing生成（葡/西语）",
+          "active": true
+        },
+        {
+          "text": "法规更新实时通知",
+          "active": true
+        },
+        {
+          "text": "优先客服支持",
+          "active": true
+        },
+        {
+          "text": "批量检测（CSV导入）",
+          "active": true
+        },
+        {
+          "text": "🌟 新市场优先体验（阿根廷/哥伦比亚 Q3）",
+          "active": true
+        },
+        {
+          "text": "🌟 专属合规顾问 1v1（年度订阅）",
+          "active": true
+        }
+      ],
+      "cta": "解锁无限次 — $29/月"
+    },
+    "stats": {
+      "savedFine": {
+        "num": "R$ 8,500",
+        "label": "平均避免罚款金额",
+        "desc": "基于 200+ 卖家调研"
+      },
+      "savedTime": {
+        "num": "7 天",
+        "label": "平均节省合规时间",
+        "desc": "从 2 周缩短到 3 天"
+      },
+      "approvalRate": {
+        "num": "92%",
+        "label": "Listing 审核通过率",
+        "desc": "AI 生成 vs 人工撰写"
+      }
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "items": {
+      "1": {
+        "q": "支持哪些国家/地区？",
+        "a": "当前支持巴西（ANVISA）和墨西哥（COFEPRIS）的合规检测。Listing生成适配 Amazon、Mercado Livre、Shopee 等平台格式。"
+      },
+      "2": {
+        "q": "检测结果准确吗？",
+        "a": "我们基于官方法规文档训练，定期更新规则库。对于复杂产品，提供人工复核通道。"
+      },
+      "3": {
+        "q": "如何收费？",
+        "a": "免费版每月10次检测，专业版¥99/月无限次。检测API按次计费，适合批量场景。"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "拉美美妆合规检测专家，让出海更简单。",
+    "product": "产品",
+    "complianceCheck": "合规检测",
+    "aiListing": "AI Listing生成",
+    "pricing": "定价",
+    "resources": "资源",
+    "knowledgeBase": "法规知识库",
+    "helpCenter": "帮助中心",
+    "apiDocs": "API文档",
+    "legal": "法律",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "gdpr": "GDPR/LGPD/LFPDPPP",
+    "copyright": "© 2025 CosmetCheck. All rights reserved."
+  },
+  "auth": {
+    "login": "登录",
+    "register": "注册",
+    "email": "邮箱",
+    "password": "密码",
+    "confirmPassword": "确认密码",
+    "forgotPassword": "忘记密码？",
+    "noAccount": "还没有账号？",
+    "hasAccount": "已有账号？",
+    "loginSuccess": "登录成功！",
+    "registerSuccess": "注册成功！请登录",
+    "loginFailed": "登录失败",
+    "registerFailed": "注册失败"
+  },
+  "demo": {
+    "title": "3步拦截风险 → 生成合规 Listing",
+    "runDemo": "运行检测演示",
+    "demoHint": "👆 点击按钮，模拟真实检测流程（无需注册，不消耗次数）",
+    "clickToStart": "点击左侧按钮开始演示",
+    "violationDetected": "❌ 检测到违规成分",
+    "autoReplace": "❌ 检测到违规成分 → 自动替换",
+    "aiGenerated": "✓ AI 生成合规 Listing",
+    "hydroquinoneBR": "Hydroquinone 是巴西 ANVISA 明确禁用的美白成分",
+    "suggestionBR": "建议替换为 α-熊果苷（α-Arbutin）或烟酰胺（Niacinamide）等合规替代成分",
+    "hydroquinoneMX": "Hydroquinone 是墨西哥 COFEPRIS 明确禁用的美白成分",
+    "suggestionMX": "建议替换为 α-熊果苷（α-Arbutin）或烟酰胺（Niacinamide）等合规替代成分",
+    "sectionTitle": "30 秒看懂：你的产品会不会被下架",
+    "sectionSubtitle": "输入一个真实成分，看 AI 如何 3 步拦截风险 → 生成合规 Listing",
+    "inputLabel": "输入产品成分",
+    "inputPlaceholder": "输入成分，用逗号分隔",
+    "resetDemo": "重新演示",
+    "scanning": "扫描成分中...",
+    "analyzing": "分析 5 种成分...",
+    "scanComplete": "扫描完成",
+    "bannedIngredient": "禁用成分",
+    "regulationBR": "法规：ANVISA RDC 529/2021 禁止 Hydroquinone 用于美白产品",
+    "regulationMX": "法规：COFEPRIS NOM-141 禁用 Hydroquinone 用于普通化妆品",
+    "replacedWith": "已替换为 Alpha Arbutin",
+    "compliantNote": "此产品符合 {regulator} 法规要求"
+  },
+  "dispute": {
+    "title": "报告规则误检 / 提交争议",
+    "success": "感谢反馈！我们的团队将在48小时内审核。",
+    "failed": "提交失败，请稍后重试。",
+    "clickToReport": "认为误检？报告问题",
+    "placeholderReason": "请详细说明为什么认为这是误检...",
+    "placeholderExpected": "你认为正确的结果是什么？（可选）",
+    "cancel": "取消",
+    "submitting": "提交中...",
+    "submit": "提交",
+    "minLength": "请至少输入 10 个字符"
+  },
+  "cta": {
+    "badge": "🔥 限时福利 · 本月注册送 5 次 Pro 体验",
+    "title": "今天就开始合规卖货",
+    "subtitle": "加入 2,000+ 拉美美妆卖家，用AI让合规不再成为出海障碍",
+    "emailPlaceholder": "输入邮箱，免费开始",
+    "button": "立即免费检测",
+    "emailInvalid": "请输入有效的邮箱地址",
+    "subscribeError": "订阅失败，请稍后重试",
+    "subscribeSuccess": "✅ 订阅成功！请查收邮件确认。",
+    "whatsapp": "WhatsApp 快速咨询",
+    "or": "或",
+    "noCreditCard": "无需信用卡 · 随时取消 · 免费版永久可用"
+  },
+  "cookie": {
+    "title": "🍪 Cookie 使用",
+    "description": "我们使用必要的 Cookie 来保持您登录。如需启用分析 Cookie，我们会尊重您的选择。",
+    "policy": "查看 Cookie 政策"
+  }
+}

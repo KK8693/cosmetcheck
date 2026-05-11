@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 export const metadata = {
   title: 'Disclaimer - CosmetCheck',
   description: 'CosmetCheck Disclaimer - AI Content & Compliance Advisory',

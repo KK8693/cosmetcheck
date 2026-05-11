@@ -1,6 +1,21 @@
 // CosmetCheck Compliance Engine
 // Detects ANVISA (Brazil) and COFEPRIS (Mexico) violations
 
+import { loadRegulationRules, type LoadedRules } from './regulation-loader'
+import rootClustersData from '../data/regulations/root-clusters.json'
+
+// ── 同步构建词根簇映射（确保 checkCompliance 调用时已可用）──
+const termToGroupMap = new Map<string, string>()
+for (const cluster of (rootClustersData as { clusters: { groupId: string; terms: string[] }[] }).clusters) {
+  for (const term of cluster.terms) {
+    termToGroupMap.set(term.toLowerCase(), cluster.groupId)
+  }
+}
+
+function getTermGroupId(term: string): string | undefined {
+  return termToGroupMap.get(term.toLowerCase())
+}
+
 export interface CheckInput {
   ingredients?: string
   description?: string
@@ -19,8 +34,11 @@ export interface Violation {
   source: string
   matchedText: string
   position?: { start: number; end: number }
+  sourceField?: 'ingredients' | 'description' | 'label'  // 匹配来源字段
+  contextSnippet?: string  // 原文上下文片段，高亮显示匹配位置
   casNumber?: string  // CAS号支持
   aliases?: string[] // 成分别名（支持中文、英文、葡语、西语）
+  rootFamily?: string  // 成分族词根，用于归一匹配（如 "retinoids" 可匹配 "tretinoin"）
 }
 
 export interface CheckResult {
@@ -482,6 +500,18 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     casNumber: '3380-34-5',
     aliases: ['triclosano', '5-chloro-2-(2,4-dichlorophenoxy)phenol'],
   },
+  // Talco (滑石粉) - 婴幼儿产品需特别关注，石棉污染风险
+  {
+    ruleId: 'BR-ING-021',
+    category: 'ingredient',
+    ruleType: 'restricted',
+    keyword: 'talco',
+    severity: 'warning',
+    message: 'Talco (Talcum) in cosmetics requires purity verification - asbestos-free certification mandatory for infant products.',
+    suggestion: 'Ensure talc is asbestos-free. For infant products, ANVISA requires specific certification.',
+    source: 'ANVISA RDC 55/2011',
+    aliases: ['talco', 'talcum', 'magnesium silicate', 'silicato de magnésio'],
+  },
   {
     ruleId: 'BR-ING-020',
     category: 'ingredient',
@@ -801,6 +831,8 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     message: 'Tretinoin (Retinoic Acid) is a drug-level ingredient prohibited in cosmetics in Mexico.',
     suggestion: 'Remove tretinoin. If used, product must be registered as medicine with COFEPRIS.',
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
+    aliases: ['retinol', 'retinyl palmitate', 'retinoic acid', 'adapalene', 'retinol palmitate'],
+    rootFamily: 'retinoids,retinol,tretinoin,retinoic',
   },
   {
     ruleId: 'MX-ING-008',
@@ -1022,116 +1054,330 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
   },
 ]
 
-function findMatches(text: string, rules: Omit<Violation, 'matchedText' | 'position'>[]): Violation[] {
+// 生成上下文片段：在匹配词前后各取一定字符，高亮显示匹配位置
+function generateContextSnippet(
+  text: string,
+  matchStart: number,
+  matchEnd: number,
+  contextLength: number = 50
+): string {
+  const lowerText = text.toLowerCase()
+  const matchText = text.substring(matchStart, matchEnd)
+  
+  // 提取匹配词前后各 contextLength 个字符
+  const snippetStart = Math.max(0, matchStart - contextLength)
+  const snippetEnd = Math.min(text.length, matchEnd + contextLength)
+  
+  let snippet = ''
+  
+  // 添加前导省略标记
+  if (snippetStart > 0) {
+    snippet += '...'
+  }
+  
+  // 获取中间部分（包括匹配词）
+  const middlePart = text.substring(snippetStart, snippetEnd)
+  
+  // 在中间部分中找到匹配词的位置（相对位置）
+  const relativeMatchStart = matchStart - snippetStart
+  const relativeMatchEnd = matchEnd - snippetStart
+  
+  // 构建带高亮的片段：前导部分 + 高亮匹配 + 后续部分
+  const beforeMatch = middlePart.substring(0, relativeMatchStart)
+  const matched = middlePart.substring(relativeMatchStart, relativeMatchEnd)
+  const afterMatch = middlePart.substring(relativeMatchEnd)
+  
+  // 使用【匹配词】格式高亮
+  snippet += beforeMatch + '【' + matched + '】' + afterMatch
+  
+  // 添加尾部省略标记
+  if (snippetEnd < text.length) {
+    snippet += '...'
+  }
+  
+  return snippet
+}
+
+function findMatches(
+  text: string, 
+  rules: Omit<Violation, 'matchedText' | 'position' | 'sourceField' | 'contextSnippet'>[],
+  sourceField: 'ingredients' | 'description' | 'label' = 'description'
+): Violation[] {
   const violations: Violation[] = []
   const lowerText = text.toLowerCase()
+  const seenRuleIds = new Set<string>() // 去重：每个 ruleId 只记录一次
 
   for (const rule of rules) {
-    // 匹配主关键词
-    const keyword = rule.keyword.toLowerCase()
-    let index = lowerText.indexOf(keyword)
+    // Skip if already matched this ruleId (deduplication)
+    if (seenRuleIds.has(rule.ruleId)) continue
 
-    while (index !== -1) {
-      violations.push({
-        ...rule,
-        matchedText: text.substring(index, index + rule.keyword.length),
-        position: {
-          start: index,
-          end: index + rule.keyword.length,
-        },
-      })
-      index = lowerText.indexOf(keyword, index + 1)
+    // ── 短语优先匹配 ──
+    // 收集所有候选匹配项（keyword + aliases + rootFamily + CAS），按长度降序排列
+    // 这样更长的、更具体的短语会优先匹配，避免短词抢占长词的位置
+    type Candidate = {
+      text: string
+      type: 'keyword' | 'alias' | 'rootFamily' | 'cas'
+      familyTerm?: string
     }
 
-    // 匹配别名 (aliases) - 支持 CAS号、中文、葡语、西语别名
+    const candidates: Candidate[] = []
+
+    // 1) 主关键词
+    candidates.push({ text: rule.keyword.toLowerCase(), type: 'keyword' })
+
+    // 2) 别名
     if (rule.aliases) {
       for (const alias of rule.aliases) {
-        const aliasLower = alias.toLowerCase()
-        let aliasIndex = lowerText.indexOf(aliasLower)
-        
-        while (aliasIndex !== -1) {
-          // 避免重复添加相同规则
-          const alreadyExists = violations.some(
-            v => v.ruleId === rule.ruleId && v.position?.start === aliasIndex
-          )
-          if (!alreadyExists) {
-            violations.push({
-              ...rule,
-              matchedText: text.substring(aliasIndex, aliasIndex + alias.length),
-              position: {
-                start: aliasIndex,
-                end: aliasIndex + alias.length,
-              },
-            })
-          }
-          aliasIndex = lowerText.indexOf(aliasLower, aliasIndex + 1)
+        candidates.push({ text: alias.toLowerCase(), type: 'alias' })
+      }
+    }
+
+    // 3) 词根族
+    if (rule.rootFamily) {
+      const familyTerms = rule.rootFamily.toLowerCase().split(/[,，|]/)
+      for (const term of familyTerms) {
+        const termTrimmed = term.trim()
+        if (termTrimmed) {
+          candidates.push({ text: termTrimmed, type: 'rootFamily', familyTerm: termTrimmed })
         }
       }
     }
 
-    // 匹配 CAS 号
+    // 4) CAS 号
     if (rule.casNumber) {
-      const casLower = rule.casNumber
-      let casIndex = lowerText.indexOf(casLower)
-      
-      while (casIndex !== -1) {
-        const alreadyExists = violations.some(
-          v => v.ruleId === rule.ruleId && v.position?.start === casIndex
-        )
-        if (!alreadyExists) {
-          violations.push({
-            ...rule,
-            matchedText: text.substring(casIndex, casIndex + rule.casNumber.length),
-            position: {
-              start: casIndex,
-              end: casIndex + rule.casNumber.length,
-            },
-          })
-        }
-        casIndex = lowerText.indexOf(casLower, casIndex + 1)
+      candidates.push({ text: rule.casNumber.toLowerCase(), type: 'cas' })
+    }
+
+    // 按长度从长到短排序：短语优先
+    candidates.sort((a, b) => b.text.length - a.text.length)
+
+    // 依次尝试候选，取第一个（最长）匹配成功的
+    for (const candidate of candidates) {
+      const index = lowerText.indexOf(candidate.text)
+      if (index === -1) continue
+
+      seenRuleIds.add(rule.ruleId)
+
+      if (candidate.type === 'rootFamily') {
+        violations.push({
+          ...rule,
+          matchedText: candidate.familyTerm!,
+          position: {
+            start: index,
+            end: index + candidate.text.length,
+          },
+          sourceField,
+          contextSnippet: `成分族匹配: 识别到 ${candidate.familyTerm} 属于 ${rule.rootFamily} 成分族`,
+        })
+      } else {
+        violations.push({
+          ...rule,
+          matchedText: text.substring(index, index + candidate.text.length),
+          position: {
+            start: index,
+            end: index + candidate.text.length,
+          },
+          sourceField,
+          contextSnippet: generateContextSnippet(text, index, index + candidate.text.length),
+        })
       }
+      break // 只取最长的一个匹配
     }
   }
 
   return violations
 }
 
+// ── 词根簇跨规则去重 ──
+// 同一语义簇（如 cure/treat/heal 都属于"治疗宣称"）的多个 violations 只保留最严重/最长的一个
+function deduplicateByGroupId(violations: Violation[]): Violation[] {
+  const severityOrder = { critical: 3, warning: 2, info: 1 }
+  const groupBest = new Map<string, Violation>()
+  const result: Violation[] = []
+
+  for (const v of violations) {
+    // 尝试从 keyword 或 matchedText 查找 groupId
+    let groupId = getTermGroupId(v.keyword)
+    if (!groupId && v.matchedText) {
+      groupId = getTermGroupId(v.matchedText)
+    }
+
+    if (!groupId) {
+      // 不属于任何词根簇的 violation，直接保留
+      result.push(v)
+      continue
+    }
+
+    const existing = groupBest.get(groupId)
+    if (!existing) {
+      groupBest.set(groupId, v)
+    } else {
+      const vScore = severityOrder[v.severity] || 0
+      const eScore = severityOrder[existing.severity] || 0
+
+      if (vScore > eScore) {
+        groupBest.set(groupId, v)
+      } else if (vScore === eScore) {
+        // 严重程度相同，保留 matchedText 更长的（短语优先）
+        const vLen = v.matchedText?.length || 0
+        const eLen = existing.matchedText?.length || 0
+        if (vLen > eLen) {
+          groupBest.set(groupId, v)
+        }
+      }
+    }
+  }
+
+  // 将各 group 的最佳 violation 加入结果
+  for (const v of groupBest.values()) {
+    result.push(v)
+  }
+
+  return result
+}
+
+// Cache for loaded JSON rules
+let jsonRulesCache: {
+  BR: LoadedRules[]
+  MX: LoadedRules[]
+} = {
+  BR: [],
+  MX: [],
+}
+
+let rulesInitialized = false
+
+// Initialize JSON rules (call this at app startup)
+export async function initRules(): Promise<void> {
+  if (rulesInitialized) return
+  
+  try {
+    const [brRules, mxRules] = await Promise.all([
+      loadRegulationRules('BR'),
+      loadRegulationRules('MX'),
+    ])
+    jsonRulesCache = { BR: brRules, MX: mxRules }
+    rulesInitialized = true
+    console.log('[Engine] JSON rules loaded:', {
+      BR: brRules.length,
+      MX: mxRules.length,
+    })
+  } catch (e) {
+    console.warn('[Engine] Failed to load JSON rules, using hardcoded rules only')
+  }
+}
+
+// Synchronous version - uses cached rules if available, otherwise falls back to hardcoded
 export function checkCompliance(input: CheckInput): CheckResult {
   const rules = input.country === 'BR' ? ANVISA_RULES : COFEPRIS_RULES
-  const allText = [
-    input.ingredients || '',
-    input.description || '',
-    input.label || '',
-  ].join(' ')
-
+  
+  // Auto-initialize JSON rules on first call (async, non-blocking)
+  if (!rulesInitialized) {
+    initRules().catch(e => console.warn('[Engine] Background init failed:', e))
+  }
+  
+  // Use cached JSON rules if available
+  const jsonRules = jsonRulesCache[input.country]
+  
+  // Merge JSON rules with hardcoded rules (JSON takes precedence for duplicates)
+  const allRules = [...rules]
+  if (jsonRules && jsonRules.length > 0) {
+    for (const jsonRule of jsonRules) {
+      const existingIndex = allRules.findIndex(r => r.ruleId === jsonRule.ruleId)
+      if (existingIndex >= 0) {
+        allRules[existingIndex] = jsonRule
+      } else {
+        allRules.push(jsonRule)
+      }
+    }
+  }
+  
   const violations: Violation[] = []
 
-  // Check ingredients
+  // Check ingredients (with sourceField)
   if (input.ingredients) {
-    violations.push(...findMatches(input.ingredients, rules.filter(r => r.category === 'ingredient')))
+    violations.push(...findMatches(input.ingredients, allRules.filter(r => r.category === 'ingredient'), 'ingredients'))
   }
 
-  // Check description/claims
+  // Check description/claims (with sourceField)
   if (input.description) {
-    violations.push(...findMatches(input.description, rules.filter(r => r.category === 'claim')))
+    violations.push(...findMatches(input.description, allRules.filter(r => r.category === 'claim'), 'description'))
+  }
+  
+  // Also check claims in combined text (product name, description, etc.)
+  const combinedText = [input.ingredients || '', input.description || '', input.label || ''].join(' ')
+  if (combinedText) {
+    violations.push(...findMatches(combinedText, allRules.filter(r => r.category === 'claim'), 'description'))
   }
 
-  // Check label
+  // Check label (with sourceField)
   if (input.label) {
-    violations.push(...findMatches(input.label, rules.filter(r => r.category === 'label')))
+    violations.push(...findMatches(input.label, allRules.filter(r => r.category === 'label'), 'label'))
   }
 
-  // Always add label requirements (info level)
-  const labelRules = rules.filter(r => r.ruleType === 'required')
-  // Only add if not already matched
-  for (const rule of labelRules) {
-    const alreadyFound = violations.some(v => v.ruleId === rule.ruleId)
-    if (!alreadyFound) {
-      violations.push({
-        ...rule,
-        matchedText: rule.keyword,
-      })
+  // ── 全局 ruleId 去重 ──
+  // 同一规则在 description + combinedText 等多字段中可能被重复匹配，只保留一条
+  const uniqueByRuleId = new Map<string, Violation>()
+  for (const v of violations) {
+    const existing = uniqueByRuleId.get(v.ruleId)
+    if (!existing) {
+      uniqueByRuleId.set(v.ruleId, v)
+    } else if ((v.matchedText?.length || 0) > (existing.matchedText?.length || 0)) {
+      // 保留 matchedText 更长的（短语优先）
+      uniqueByRuleId.set(v.ruleId, v)
     }
+  }
+  violations.length = 0
+  violations.push(...uniqueByRuleId.values())
+
+  // ── 词根簇跨规则去重 ──
+  // 同一语义簇（如 cure/treat/heal）的多个 violations 只保留最严重/最长的一个
+  const deduplicatedViolations = deduplicateByGroupId(violations)
+  violations.length = 0
+  violations.push(...deduplicatedViolations)
+
+  // ── 时效规则文案动态化 ──
+  // 将固定的"7天"等替换为实际匹配到的时间表述
+  for (const v of violations) {
+    if (v.ruleId.includes('CLAIM-014') || v.ruleId.includes('MX-CLAIM-001')) {
+      const timeMatch = v.matchedText?.match(/(\d+)\s*(dias?|days?|天|semanas?|weeks?|周)/i)
+      if (timeMatch) {
+        const timeStr = timeMatch[0]
+        v.message = v.message
+          .replace(/X天\/\u5468/, timeStr)
+          .replace(/\uff08如'\\d+天'\uff09/, `(如'${timeStr}')`)
+      }
+    }
+  }
+
+  // Always add label requirements - AGGREGATE missing items into one violation
+  const labelRules = allRules.filter(r => r.category === 'label' && r.ruleType === 'required')
+  const existingRuleIds = new Set(violations.map(v => v.ruleId))
+  
+  // 收集所有缺失的标签项
+  const missingLabelItems: string[] = []
+  for (const rule of labelRules) {
+    if (!existingRuleIds.has(rule.ruleId)) {
+      missingLabelItems.push(rule.keyword)
+    }
+  }
+
+  // 如果有缺失的标签项，聚合为一条
+  if (missingLabelItems.length > 0) {
+    const aggregatedViolation: Violation = {
+      ruleId: 'BR-LABEL-AGGREGATED',
+      category: 'label',
+      ruleType: 'required',
+      keyword: 'Multiple label requirements missing',
+      severity: 'warning',  // 聚合后降为 warning
+      message: `巴西标签合规缺失 - 缺少以下必要信息: ${missingLabelItems.join(', ')}`,
+      suggestion: '请补全所有必需标签信息后再上市销售',
+      source: 'ANVISA RDC 169/2024',
+      matchedText: missingLabelItems.join(', '),
+      sourceField: 'label',
+      contextSnippet: `缺失项目: ${missingLabelItems.join(', ')}`,
+    }
+    violations.push(aggregatedViolation)
   }
 
   const criticalCount = violations.filter(v => v.severity === 'critical').length
