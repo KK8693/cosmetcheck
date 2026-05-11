@@ -1,6 +1,7 @@
 'use client'
 
-import { usePathname, useRouter, routing } from '@/i18n/routing'
+import { usePathname, routing } from '@/i18n/routing'
+import { useRouter } from 'next/navigation'
 import { Globe } from 'lucide-react'
 import { useLocale } from 'next-intl'
 
