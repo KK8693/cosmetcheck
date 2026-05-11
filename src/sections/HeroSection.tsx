@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef } from 'react'
+import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -54,6 +55,8 @@ interface GeneratedListing {
   language: 'pt-BR' | 'es-MX'
 }
 export function HeroSection() {
+  const t = useTranslations('hero')
+  const tCommon = useTranslations('common')
   // Default demo data - Hydroquinone banned ingredient example
   const [ingredients, setIngredients] = useState('')
   const [country, setCountry] = useState<'BR' | 'MX'>('BR')
@@ -78,8 +81,8 @@ export function HeroSection() {
         ruleId: 'ANVISA-RDC-665-2022',
         category: 'ingredient',
         severity: 'critical',
-        message: 'Hydroquinone 是巴西 ANVISA 明确禁用的美白成分',
-        suggestion: '建议替换为 α-熊果苷（α-Arbutin）或烟酰胺（Niacinamide）等合规替代成分',
+        message: t('demo.hydroquinoneBR'),
+        suggestion: t('demo.suggestionBR'),
         source: 'ANVISA RDC 665/2022'
       }
     ],
@@ -99,8 +102,8 @@ export function HeroSection() {
         ruleId: 'COFEPRIS-NOM-141',
         category: 'ingredient',
         severity: 'critical',
-        message: 'Hydroquinone 是墨西哥 COFEPRIS 明确禁用的美白成分',
-        suggestion: '建议替换为 α-熊果苷（α-Arbutin）或烟酰胺（Niacinamide）等合规替代成分',
+        message: t('demo.hydroquinoneMX'),
+        suggestion: t('demo.suggestionMX'),
         source: 'COFEPRIS NOM-141-SSA1/SCF1-2012'
       }
     ],
@@ -126,7 +129,7 @@ export function HeroSection() {
     setShowDemo(false)
     
     if (!ingredients.trim()) {
-      setCheckError('请输入产品成分或描述')
+      setCheckError(t('errors.enterIngredients'))
       // 清除旧检测结果，显示空状态
       setCheckResult(null)
       return
@@ -149,10 +152,10 @@ export function HeroSection() {
       if (data.success) {
         setCheckResult(data.data)
       } else {
-        setCheckError(data.error || '检测失败，请稍后再试')
+        setCheckError(data.error || t('errors.checkFailed'))
       }
     } catch {
-      setCheckError('网络错误，请稍后再试')
+      setCheckError(t('errors.networkError'))
     } finally {
       setIsChecking(false)
     }
@@ -160,18 +163,18 @@ export function HeroSection() {
 
   const handleGenerate = async () => {
     if (!productName.trim()) {
-      setGenerateError('请输入产品名称')
+      setGenerateError(t('errors.enterProductName'))
       return
     }
     // Check login status
     if (!user) {
-      setGenerateError('请先登录后再生成 Listing')
+      setGenerateError(t('errors.loginRequired'))
       setAuthOpen(true)
       return
     }
     // Check if quota exceeded
     if (quotaUsed >= quotaLimit) {
-      setGenerateError('免费次数已用完，请升级 Pro 无限次使用')
+      setGenerateError(t('errors.quotaExceeded'))
       return
     }
     setGenerateError('')
@@ -200,12 +203,12 @@ export function HeroSection() {
         // Update quota display locally (will be refreshed on next auth state change)
         setQuotaUsed(prev => prev + 1)
       } else if (res.status === 429) {
-        setGenerateError('免费次数已用完，请升级 Pro 无限次使用')
+        setGenerateError(t('errors.quotaExceeded'))
       } else {
-        setGenerateError(data.error || '生成失败，请稍后再试')
+        setGenerateError(data.error || t('errors.generateFailed'))
       }
     } catch {
-      setGenerateError('网络错误，请稍后再试')
+      setGenerateError(t('errors.networkError'))
     } finally {
       setIsGenerating(false)
     }
@@ -225,28 +228,27 @@ export function HeroSection() {
             <div className="mb-6 inline-flex flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-medium backdrop-blur">
               <span className="inline-flex items-center">
                 <span className="mr-2 h-2 w-2 rounded-full bg-green-400 animate-pulse" />
-                <span className="text-white/80">已服务</span>
+                <span className="text-white/80">{t('socialProof.served')}</span>
                 <AnimatedCounter end={2000} suffix="+" className="mx-1 font-bold text-white" />
-                <span className="text-white/80">卖家</span>
+                <span className="text-white/80">{t('socialProof.sellers')}</span>
               </span>
               <span className="hidden sm:inline text-white/30">|</span>
               <span className="text-white/80">
-                拦截 <AnimatedCounter end={340000} suffix="+" className="font-bold text-white" /> 次合规风险
+                {t('socialProof.blocked')} <AnimatedCounter end={340000} suffix="+" className="font-bold text-white" /> {t('socialProof.complianceRisks')}
               </span>
               <span className="hidden sm:inline text-white/30">|</span>
               <span className="text-white/80">
-                覆盖 <span className="font-bold text-white">巴西/墨西哥</span>
+                {t('socialProof.coverage')} <span className="font-bold text-white">{t('socialProof.brazilMexico')}</span>
               </span>
             </div>
             <h1 className="mb-6 text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
-              拉美卖美妆<span className="hidden md:block"> </span>
-              不再被下架罚款
+              {t('title')} <span className="hidden md:block"> </span> {t('titleLine2')}
             </h1>
 
             {/* Logo 墙 - 新增 */}
             <div className="mb-8">
               <p className="text-xs text-white/50 uppercase tracking-wider mb-3">
-                被这些平台的卖家信赖
+                {t('trustedBy')}
               </p>
               <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4">
                 {['Amazon Brazil', 'Mercado Livre', 'Shopee', 'TikTok Shop', 'SHEIN'].map((name) => (
@@ -264,22 +266,22 @@ export function HeroSection() {
             <div className="mx-auto max-w-full md:max-w-2xl mb-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
               {[
                 {
-                  tag: '禁用成分',
+                  tag: t('caseStudies.bannedIngredient'),
                   tagColor: 'text-red-500',
-                  body: '"某美白霜含 Hydroquinone 2%，直接被 ANVISA 标红"',
-                  result: '→ 修改后 48h 重新上架',
+                  body: t('caseStudies.bannedIngredientBody'),
+                  result: t('caseStudies.bannedIngredientResult'),
                 },
                 {
-                  tag: '标签违规',
+                  tag: t('caseStudies.labelViolation'),
                   tagColor: 'text-amber-500',
-                  body: '"防晒产品未标注 SPF 值，墨西哥海关扣留"',
-                  result: '→ AI 生成合规标签，0 罚款',
+                  body: t('caseStudies.labelViolationBody'),
+                  result: t('caseStudies.labelViolationResult'),
                 },
                 {
-                  tag: '文案误触',
+                  tag: t('caseStudies.copywritingError'),
                   tagColor: 'text-blue-500',
-                  body: '"抗皱文案写错 1 个词，Listing 被下架 7 天"',
-                  result: '→ 替换后 CTR 提升 23%',
+                  body: t('caseStudies.copywritingErrorBody'),
+                  result: t('caseStudies.copywritingErrorResult'),
                 },
               ].map((item, idx) => (
                 <div
@@ -294,13 +296,13 @@ export function HeroSection() {
             </div>
 
             <p className="mx-auto mb-10 max-w-full md:max-w-2xl text-lg text-white/90 md:text-xl">
-              一键检测巴西/墨西哥等5国合规，AI自动生成高转化Listing — 免费开始
+              {t('subtitleShort')}
             </p>
 
             {/* Hero Demo */}
             <div className="mx-auto w-full max-w-full md:max-w-xl rounded-2xl bg-white/10 p-4 backdrop-blur-lg md:p-8 text-left">
               <div className="mb-4">
-                <Label className="text-white/80 text-sm">输入产品信息，检测并生成合规Listing</Label>
+                <Label className="text-white/80 text-sm">{t('form.inputProductInfo')}</Label>
               </div>
               <div className="flex flex-wrap gap-2 mb-3">
                 <button
@@ -311,7 +313,7 @@ export function HeroSection() {
                       : 'bg-white/10 text-white/70 hover:bg-white/20'
                   }`}
                 >
-                  巴西 ANVISA
+                  {t('brazilAnvisa')}
                 </button>
                 <button
                   onClick={() => { setCountry('MX'); setCheckResult(null); setShowDemo(true) }}
@@ -321,7 +323,7 @@ export function HeroSection() {
                       : 'bg-white/10 text-white/70 hover:bg-white/20'
                   }`}
                 >
-                  墨西哥 COFEPRIS
+                  {t('mexicoCofeppris')}
                 </button>
               </div>
 
@@ -330,7 +332,7 @@ export function HeroSection() {
                 <Textarea
                   value={productName}
                   onChange={(e) => setProductName(e.target.value)}
-                  placeholder="产品名称（如：Vitamin C Serum）"
+                  placeholder={t('productNamePlaceholder')}
                   className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[60px] resize-none pr-10"
                 />
                 {productName && (
@@ -349,7 +351,7 @@ export function HeroSection() {
                 <Textarea
                   value={ingredients}
                   onChange={(e) => setIngredients(e.target.value)}
-                  placeholder="成分（如：Aqua, Glycerin, Niacinamide, Vitamin C... 可选）"
+                  placeholder={t('ingredientsPlaceholder') + ` (${t('form.optional')})`}
                   className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[80px] resize-none pr-10"
                 />
                 {ingredients && (
@@ -368,7 +370,7 @@ export function HeroSection() {
                 <Textarea
                   value={productBenefits}
                   onChange={(e) => setProductBenefits(e.target.value)}
-                  placeholder="产品功效（如：美白、保湿、抗衰老... 可选）"
+                  placeholder={t('productBenefitsPlaceholder')}
                   className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[60px] resize-none pr-10"
                 />
                 {productBenefits && (
@@ -392,19 +394,19 @@ export function HeroSection() {
                   variant="outline"
                   className="w-full sm:flex-1 border-white/30 text-white hover:bg-white/10 font-medium"
                 >
-                  {isChecking ? '检测中...' : '先检测合规'}
+                  {isChecking ? t('checking') : t('checkFirst')}
                 </Button>
                 <Button
                   onClick={handleGenerate}
                   disabled={isGenerating || !productName}
                   className="w-full sm:flex-1 bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all animate-pulse-subtle"
                 >
-                  {isGenerating ? '生成中...' : <><Zap className="w-4 h-4 mr-1" /> 免费生成 Listing</>}
+                  {isGenerating ? t('generating') : <><Zap className="w-4 h-4 mr-1" /> {t('freeGenerateListing')}</>}
                 </Button>
               </div>
 
               <p className="mt-3 text-xs text-white/60 text-center">
-                零门槛体验 · 无需注册 · 双语输出
+                {t('form.zeroBarrier')}
               </p>
             </div>
 
@@ -412,7 +414,7 @@ export function HeroSection() {
             {resultToShow && (
               <div className="mx-auto max-w-full md:max-w-xl mt-6 rounded-2xl bg-white p-4 md:p-6 text-left text-gray-900">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-lg font-bold">检测结果</h3>
+                  <h3 className="text-lg font-bold">{t('testResult')}</h3>
                   <span
                     className={`px-3 py-1 rounded-full text-sm font-semibold ${
                       resultToShow.isCompliant
@@ -420,7 +422,7 @@ export function HeroSection() {
                         : 'bg-red-100 text-red-700'
                     }`}
                   >
-                    {resultToShow.isCompliant ? <><CheckCircle className="w-4 h-4 mr-1" /> 合规</> : <><XCircle className="w-4 h-4 mr-1" /> 不合规</>}
+                    {resultToShow.isCompliant ? <><CheckCircle className="w-4 h-4 mr-1" /> {t('compliant')}</> : <><XCircle className="w-4 h-4 mr-1" /> {t('nonCompliant')}</>}
                   </span>
                 </div>
 
@@ -428,26 +430,29 @@ export function HeroSection() {
                   <div className="flex gap-4 mb-4 text-sm">
                     {resultToShow.summary.criticalCount > 0 && (
                       <span className="text-red-600 font-medium">
-                        <XCircle className="w-4 h-4 mr-1" /> {resultToShow.summary.criticalCount} 严重</span>
+                        <XCircle className="w-4 h-4 mr-1" /> {resultToShow.summary.criticalCount} {t('critical')}
+                      </span>
                     )}
                     {resultToShow.summary.warningCount > 0 && (
                       <span className="text-amber-600 font-medium">
-                        <AlertTriangle className="w-4 h-4 mr-1" /> {resultToShow.summary.warningCount} 警告</span>
+                        <AlertTriangle className="w-4 h-4 mr-1" /> {resultToShow.summary.warningCount} {t('warning')}
+                      </span>
                     )}
                     {resultToShow.summary.infoCount > 0 && (
                       <span className="text-blue-600 font-medium">
-                        <Info className="w-4 h-4 mr-1" /> {resultToShow.summary.infoCount} 提示</span>
+                        <Info className="w-4 h-4 mr-1" /> {resultToShow.summary.infoCount} {t('info')}
+                      </span>
                     )}
                   </div>
                 )}
 
                 {resultToShow.violations.length > 0 && (
                   <div className="space-y-3 mb-4">
-                    <h4 className="text-sm font-semibold text-red-600 flex items-center"><XCircle className="w-4 h-4 mr-1" /> 严重问题（必须修复）</h4>
+                    <h4 className="text-sm font-semibold text-red-600 flex items-center"><XCircle className="w-4 h-4 mr-1" /> {t('criticalIssues')}</h4>
                     {resultToShow.violations.map((v, i) => (
                       <div key={i} className="bg-red-50 rounded-lg p-3 text-sm">
                         <p className="font-medium text-red-700">{v.message}</p>
-                        <p className="text-red-600/80 mt-1">建议：{v.suggestion}</p>
+                        <p className="text-red-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
                       </div>
                     ))}
                   </div>
@@ -455,11 +460,11 @@ export function HeroSection() {
 
                 {resultToShow.warnings.length > 0 && (
                   <div className="space-y-3 mb-4">
-                    <h4 className="text-sm font-semibold text-amber-600 flex items-center"><AlertTriangle className="w-4 h-4 mr-1" /> 警告（建议修复）</h4>
+                    <h4 className="text-sm font-semibold text-amber-600 flex items-center"><AlertTriangle className="w-4 h-4 mr-1" /> {t('warningIssues')}</h4>
                     {resultToShow.warnings.map((v, i) => (
                       <div key={i} className="bg-amber-50 rounded-lg p-3 text-sm">
                         <p className="font-medium text-amber-700">{v.message}</p>
-                        <p className="text-amber-600/80 mt-1">建议：{v.suggestion}</p>
+                        <p className="text-amber-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
                       </div>
                     ))}
                   </div>
@@ -467,18 +472,18 @@ export function HeroSection() {
 
                 {resultToShow.info.length > 0 && (
                   <div className="space-y-3">
-                    <h4 className="text-sm font-semibold text-blue-600 flex items-center"><Info className="w-4 h-4 mr-1" /> 提示</h4>
+                    <h4 className="text-sm font-semibold text-blue-600 flex items-center"><Info className="w-4 h-4 mr-1" /> {t('info')}</h4>
                     {resultToShow.info.map((v, i) => (
                       <div key={i} className="bg-blue-50 rounded-lg p-3 text-sm">
                         <p className="font-medium text-blue-700">{v.message}</p>
-                        <p className="text-blue-600/80 mt-1">建议：{v.suggestion}</p>
+                        <p className="text-blue-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
                       </div>
                     ))}
                   </div>
                 )}
 
                 {resultToShow.summary.totalIssues === 0 && (
-                  <p className="text-green-600 text-sm">恭喜！暂未发现合规问题。</p>
+                  <p className="text-green-600 text-sm">{t('noIssuesFound')}</p>
                 )}
               </div>
             )}
@@ -487,21 +492,21 @@ export function HeroSection() {
             {generatedListing && (
               <div className="mx-auto max-w-full md:max-w-xl mt-6 rounded-2xl bg-white p-4 md:p-6 text-left text-gray-900">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-lg font-bold">AI生成的合规Listing</h3>
+                  <h3 className="text-lg font-bold">{t('aiGeneratedListing')}</h3>
                   <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#0A4D8C]/10 text-[#0A4D8C]">
-                    {generatedListing.language === 'pt-BR' ? '🇧🇷 葡语' : '🇲🇽 西语'}
+                    {generatedListing.language === 'pt-BR' ? `🇧🇷 ${t('ptBr')}` : `🇲🇽 ${t('esMx')}`}
                   </span>
                 </div>
 
                 {/* Title */}
                 <div className="mb-4">
                   <div className="flex items-center justify-between mb-1">
-                    <Label className="text-xs font-semibold text-gray-500">标题</Label>
+                    <Label className="text-xs font-semibold text-gray-500">{t('title')}</Label>
                     <button
                       onClick={() => copyToClipboard(generatedListing.title)}
                       className="text-xs text-[#0A4D8C] hover:underline"
                     >
-                      复制
+                      {t('copyBtn')}
                     </button>
                   </div>
                   <p className="text-lg font-bold text-gray-900 bg-gray-50 rounded-lg p-3">
@@ -512,12 +517,12 @@ export function HeroSection() {
                 {/* Description */}
                 <div className="mb-4">
                   <div className="flex items-center justify-between mb-1">
-                    <Label className="text-xs font-semibold text-gray-500">描述</Label>
+                    <Label className="text-xs font-semibold text-gray-500">{t('description')}</Label>
                     <button
                       onClick={() => copyToClipboard(generatedListing.description)}
                       className="text-xs text-[#0A4D8C] hover:underline"
                     >
-                      复制
+                      {t('copyBtn')}
                     </button>
                   </div>
                   <p className="text-sm text-gray-700 bg-gray-50 rounded-lg p-3 leading-relaxed">
@@ -528,12 +533,12 @@ export function HeroSection() {
                 {/* Bullet Points */}
                 <div className="mb-4">
                   <div className="flex items-center justify-between mb-2">
-                    <Label className="text-xs font-semibold text-gray-500">卖点</Label>
+                    <Label className="text-xs font-semibold text-gray-500">{t('bulletPoints')}</Label>
                     <button
                       onClick={() => copyToClipboard(generatedListing.bulletPoints.join('\n'))}
                       className="text-xs text-[#0A4D8C] hover:underline"
                     >
-                      复制全部
+                      {t('copyAll')}
                     </button>
                   </div>
                   <ul className="space-y-2">
@@ -549,7 +554,7 @@ export function HeroSection() {
                 {/* Compliance Notes */}
                 {generatedListing.complianceNotes.length > 0 && (
                   <div className="mb-4">
-                    <Label className="text-xs font-semibold text-green-600 mb-2 block flex items-center"><CheckCircle className="w-3 h-3 mr-1" /> 合规说明</Label>
+                    <Label className="text-xs font-semibold text-green-600 mb-2 block flex items-center"><CheckCircle className="w-3 h-3 mr-1" /> {t('complianceNotes')}</Label>
                     {generatedListing.complianceNotes.map((note, i) => (
                       <p key={i} className="text-xs text-green-700 bg-green-50 rounded-lg p-2 mb-1">
                         {note}
@@ -561,7 +566,7 @@ export function HeroSection() {
                 {/* Warnings */}
                 {generatedListing.warnings.length > 0 && (
                   <div>
-                    <Label className="text-xs font-semibold text-amber-600 mb-2 block flex items-center"><AlertTriangle className="w-3 h-3 mr-1" /> 注意事项</Label>
+                    <Label className="text-xs font-semibold text-amber-600 mb-2 block flex items-center"><AlertTriangle className="w-3 h-3 mr-1" /> {t('complianceWarning')}</Label>
                     {generatedListing.warnings.map((warning, i) => (
                       <p key={i} className="text-xs text-amber-700 bg-amber-50 rounded-lg p-2 mb-1">
                         {warning}
@@ -572,7 +577,7 @@ export function HeroSection() {
 
                 <div className="mt-4 pt-4 border-t border-gray-100">
                   <p className="text-xs text-gray-400">
-                    <AlertTriangle className="w-3 h-3 mr-1" /> 本Listing由AI生成，仅供参考。上架前请根据当地法规进行最终确认。
+                    <AlertTriangle className="w-3 h-3 mr-1" /> {t('disclaimer')}
                   </p>
                 </div>
               </div>

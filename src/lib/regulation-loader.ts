@@ -12,6 +12,7 @@ export interface RegulationRule {
   condition: string
   message: string
   sourceUrl?: string
+  rootFamily?: string  // 成分族词根，用于归一匹配
 }
 
 export interface RegulationFile {
@@ -65,6 +66,7 @@ function convertRuleToViolation(
     source: `${source} ${rule.sourceUrl ? `- ${rule.sourceUrl}` : ''}`,
     casNumber: rule.cas,
     aliases: rule.aliases,
+    rootFamily: (rule as unknown as { rootFamily?: string }).rootFamily,
   }
 }
 

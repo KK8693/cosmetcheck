@@ -179,6 +179,18 @@
       "condition": "0% - 任何浓度均禁止",
       "message": "氯霉素是墨西哥禁用抗生素成分",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-BAN-017",
+      "category": "banned",
+      "target": "Retinoids",
+      "aliases": ["Retinol", "Retinyl Palmitate", "Tretinoin", "Retinoic Acid", "Adapalene", "视黄醇", "维A醇"],
+      "cas": "68-26-8",
+      "severity": "critical",
+      "condition": "0% - 维A酸类成分需医生处方",
+      "message": "维A酸类成分（Retinoids）在墨西哥被视为药物级别成分，化妆品禁用",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012",
+      "rootFamily": "retinoids,retinol,tretinoin,retinoic,adapalene,retinyl"
     }
   ]
 }

@@ -487,6 +487,18 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     casNumber: '3380-34-5',
     aliases: ['triclosano', '5-chloro-2-(2,4-dichlorophenoxy)phenol'],
   },
+  // Talco (滑石粉) - 婴幼儿产品需特别关注，石棉污染风险
+  {
+    ruleId: 'BR-ING-021',
+    category: 'ingredient',
+    ruleType: 'restricted',
+    keyword: 'talco',
+    severity: 'warning',
+    message: 'Talco (Talcum) in cosmetics requires purity verification - asbestos-free certification mandatory for infant products.',
+    suggestion: 'Ensure talc is asbestos-free. For infant products, ANVISA requires specific certification.',
+    source: 'ANVISA RDC 55/2011',
+    aliases: ['talco', 'talcum', 'magnesium silicate', 'silicato de magnésio'],
+  },
   {
     ruleId: 'BR-ING-020',
     category: 'ingredient',
@@ -806,6 +818,8 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     message: 'Tretinoin (Retinoic Acid) is a drug-level ingredient prohibited in cosmetics in Mexico.',
     suggestion: 'Remove tretinoin. If used, product must be registered as medicine with COFEPRIS.',
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
+    aliases: ['retinol', 'retinyl palmitate', 'retinoic acid', 'adapalene', 'retinol palmitate'],
+    rootFamily: 'retinoids,retinol,tretinoin,retinoic',
   },
   {
     ruleId: 'MX-ING-008',
@@ -1122,6 +1136,28 @@ function findMatches(
             contextSnippet: generateContextSnippet(text, aliasIndex, aliasIndex + alias.length),
           })
           break // 找到一个别名匹配后就跳过
+        }
+      }
+    }
+
+    // 词根归一匹配：检查输入成分是否属于同一成分族
+    if (!seenRuleIds.has(rule.ruleId) && rule.rootFamily) {
+      const familyTerms = rule.rootFamily.toLowerCase().split(/[,，|]/)
+      for (const term of familyTerms) {
+        const termTrimmed = term.trim()
+        if (termTrimmed && lowerText.includes(termTrimmed)) {
+          seenRuleIds.add(rule.ruleId)
+          violations.push({
+            ...rule,
+            matchedText: termTrimmed,
+            position: {
+              start: lowerText.indexOf(termTrimmed),
+              end: lowerText.indexOf(termTrimmed) + termTrimmed.length,
+            },
+            sourceField,
+            contextSnippet: `成分族匹配: 识别到 ${termTrimmed} 属于 ${rule.rootFamily} 成分族`,
+          })
+          break
         }
       }
     }

@@ -15,16 +15,21 @@
     "warning": "警告",
     "loading": "加载中...",
     "download": "下载",
-    "copy": "复制"
+    "copy": "复制",
+    "loggedInAs": "已用 {email}"
   },
   "nav": {
     "features": "功能",
     "pricing": "定价",
-    "contact": "联系我们"
+    "contact": "联系我们",
+    "howItWorks": "流程",
+    "faq": "FAQ"
   },
   "hero": {
     "title": "拉美卖美妆，不再被下架罚款",
+    "titleLine2": "不再被下架罚款",
     "subtitle": "一键检测巴西/墨西哥美妆合规，AI自动生成高转化Listing。免费开始，避免ANVISA/COFEPRIS下架罚款。",
+    "subtitleShort": "一键检测巴西/墨西哥等5国合规，AI自动生成高转化Listing — 免费开始",
     "checkButton": "开始检测",
     "demoButton": "查看演示",
     "ingredients": "输入成分",
@@ -32,21 +37,83 @@
     "selectCountry": "选择目标市场",
     "brazil": "巴西",
     "mexico": "墨西哥",
+    "brazilAnvisa": "巴西 ANVISA",
+    "mexicoCofeppris": "墨西哥 COFEPRIS",
     "checking": "检测中...",
     "checkNow": "立即检测",
+    "checkFirst": "先检测合规",
     "remainingChecks": "剩余检测次数",
     "aiGenerate": "AI生成Listing",
+    "aiGenerateListing": "AI生成Listing",
     "productName": "产品名称",
-    "productNamePlaceholder": "如：瞬白淡斑精华",
+    "productNamePlaceholder": "产品名称（如：Vitamin C Serum）",
     "productBenefits": "产品功效",
-    "productBenefitsPlaceholder": "如：美白淡斑、提亮肤色",
+    "productBenefitsPlaceholder": "产品功效（如：美白、保湿、抗衰老... 可选）",
     "generate": "生成",
     "generating": "生成中...",
+    "freeGenerateListing": "免费生成 Listing",
     "compliant": "合规",
+    "nonCompliant": "不合规",
     "violation": "违规成分",
     "warning": "警告",
     "info": "提示",
-    "viewDetails": "查看详情"
+    "viewDetails": "查看详情",
+    "testResult": "检测结果",
+    "complianceCheckComplete": "检测完成",
+    "noIssuesFound": "恭喜！暂未发现合规问题。",
+    "critical": "严重",
+    "criticalIssues": "严重问题（必须修复）",
+    "warningIssues": "警告（建议修复）",
+    "suggestion": "建议",
+    "aiGeneratedListing": "AI生成的合规Listing",
+    "portuguese": "葡语",
+    "spanish": "西语",
+    "title": "标题",
+    "description": "描述",
+    "bulletPoints": "卖点",
+    "complianceNotes": "合规备注",
+    "copyToClipboard": "复制到剪贴板",
+    "copied": "已复制",
+    "copyBtn": "复制",
+    "copyAll": "复制全部",
+    "ptBr": "葡语",
+    "esMx": "西语",
+    "disclaimer": "本Listing由AI生成，仅供参考。上架前请根据当地法规进行最终确认。",
+    "complianceWarning": "注意事项",
+    "socialProof": {
+      "served": "已服务",
+      "sellers": "卖家",
+      "blocked": "拦截",
+      "complianceRisks": "次合规风险",
+      "coverage": "覆盖",
+      "brazilMexico": "巴西/墨西哥"
+    },
+    "trustedBy": "被这些平台的卖家信赖",
+    "caseStudies": {
+      "bannedIngredient": "禁用成分",
+      "bannedIngredientBody": "某美白霜含 Hydroquinone 2%，直接被 ANVISA 标红",
+      "bannedIngredientResult": "→ 修改后 48h 重新上架",
+      "labelViolation": "标签违规",
+      "labelViolationBody": "防晒产品未标注 SPF 值，墨西哥海关扣留",
+      "labelViolationResult": "→ AI 生成合规标签，0 罚款",
+      "copywritingError": "文案误触",
+      "copywritingErrorBody": "抗皱文案写错 1 个词，Listing 被下架 7 天",
+      "copywritingErrorResult": "→ 替换后 CTR 提升 23%"
+    },
+    "form": {
+      "inputProductInfo": "输入产品信息，检测并生成合规Listing",
+      "optional": "可选",
+      "zeroBarrier": "零门槛体验 · 无需注册 · 双语输出"
+    },
+    "errors": {
+      "enterIngredients": "请输入产品成分或描述",
+      "checkFailed": "检测失败，请稍后再试",
+      "networkError": "网络错误，请稍后再试",
+      "enterProductName": "请输入产品名称",
+      "loginRequired": "请先登录后再生成 Listing",
+      "quotaExceeded": "免费次数已用完，请升级 Pro 无限次使用",
+      "generateFailed": "生成失败，请稍后再试"
+    }
   },
   "howItWorks": {
     "title": "三步完成合规检测",
@@ -155,14 +222,18 @@
     "loginFailed": "登录失败",
     "registerFailed": "注册失败"
   },
-  "demo": {
+"demo": {
     "title": "3步拦截风险 → 生成合规 Listing",
     "runDemo": "运行检测演示",
     "demoHint": "👆 点击按钮，模拟真实检测流程（无需注册，不消耗次数）",
     "clickToStart": "点击左侧按钮开始演示",
     "violationDetected": "❌ 检测到违规成分",
     "autoReplace": "❌ 检测到违规成分 → 自动替换",
-    "aiGenerated": "✓ AI 生成合规 Listing"
+    "aiGenerated": "✓ AI 生成合规 Listing",
+    "hydroquinoneBR": "Hydroquinone 是巴西 ANVISA 明确禁用的美白成分",
+    "suggestionBR": "建议替换为 α-熊果苷（α-Arbutin）或烟酰胺（Niacinamide）等合规替代成分",
+    "hydroquinoneMX": "Hydroquinone 是墨西哥 COFEPRIS 明确禁用的美白成分",
+    "suggestionMX": "建议替换为 α-熊果苷（α-Arbutin）或烟酰胺（Niacinamide）等合规替代成分"
   },
   "dispute": {
     "title": "报告规则误检 / 提交争议",
