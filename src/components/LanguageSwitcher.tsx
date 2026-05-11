@@ -1,11 +1,12 @@
 'use client'
 
-import { useI18n } from '@/i18n/useI18n'
+import { usePathname, useRouter } from '@/i18n/routing'
 import { Globe } from 'lucide-react'
+import { useLocale } from 'next-intl'
 
 type Locale = 'zh' | 'en' | 'pt-BR' | 'es-MX'
 
-const languages = [
+const languages: { code: Locale; label: string; flag: string }[] = [
   { code: 'zh', label: '中文', flag: '🇨🇳' },
   { code: 'en', label: 'EN', flag: '🇺🇸' },
   { code: 'pt-BR', label: 'PT', flag: '🇧🇷' },
@@ -13,14 +14,20 @@ const languages = [
 ]
 
 export function LanguageSwitcher() {
-  const { locale, setLocale } = useI18n()
+  const locale = useLocale()
+  const router = useRouter()
+  const pathname = usePathname()
+
+  const handleChange = (newLocale: Locale) => {
+    router.replace(pathname, { locale: newLocale })
+  }
 
   return (
     <div className="relative inline-flex items-center gap-2">
       <Globe className="w-4 h-4 text-white/70" />
       <select
         value={locale}
-        onChange={(e) => setLocale(e.target.value as Locale)}
+        onChange={(e) => handleChange(e.target.value as Locale)}
         className="bg-transparent text-white/70 text-sm font-medium border-none cursor-pointer focus:outline-none focus:ring-0 hover:text-white transition-colors appearance-none pr-6"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23ffffffaa'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`,

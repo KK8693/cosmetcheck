@@ -4,7 +4,6 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { AuthProvider } from '@/contexts/AuthContext'
 import { CookieConsent } from '@/components/CookieConsent'
 import { Navbar } from '@/components/Navbar'
-import { I18nProvider } from '@/i18n/useI18n'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
@@ -95,8 +94,7 @@ export default async function LocaleLayout({
       </head>
       <body className={`${inter.className} ${spaceGrotesk.variable} ${dmSans.variable}`}>
         <NextIntlClientProvider messages={messages}>
-          <I18nProvider>
-            <ThemeProvider
+          <ThemeProvider
               attribute="class"
               defaultTheme="dark"
               enableSystem
@@ -108,7 +106,6 @@ export default async function LocaleLayout({
                 <CookieConsent />
               </AuthProvider>
             </ThemeProvider>
-          </I18nProvider>
         </NextIntlClientProvider>
       </body>
     </html>
