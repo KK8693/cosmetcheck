@@ -1,6 +1,6 @@
 'use client'
 
-import { usePathname, useRouter } from '@/i18n/routing'
+import { usePathname, useRouter, routing } from '@/i18n/routing'
 import { Globe } from 'lucide-react'
 import { useLocale } from 'next-intl'
 
@@ -19,7 +19,27 @@ export function LanguageSwitcher() {
   const pathname = usePathname()
 
   const handleChange = (newLocale: Locale) => {
-    router.replace(pathname, { locale: newLocale })
+    // Remove current locale prefix from pathname to avoid path accumulation
+    const segments = pathname.split('/').filter(Boolean)
+    const currentLocale = segments[0]
+    
+    // Check if first segment is a locale code
+    const locales = ['zh', 'en', 'pt-BR', 'es-MX']
+    let pathWithoutLocale: string
+    if (locales.includes(currentLocale)) {
+      // Remove the locale prefix
+      pathWithoutLocale = '/' + segments.slice(1).join('/')
+    } else {
+      // No locale in pathname (root), keep as is
+      pathWithoutLocale = pathname
+    }
+    
+    // Build new path with new locale prefix
+    const newPath = newLocale === routing.defaultLocale 
+      ? pathWithoutLocale 
+      : `/${newLocale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`
+    
+    router.replace(newPath)
   }
 
   return (
