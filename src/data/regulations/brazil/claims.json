@@ -141,7 +141,7 @@
       "aliases": ["7 dias", "7天", "3 dias", "3天", "em apenas 3 dias", "仅需3天", "ultra rápido", "超快速", "resultados em 3 dias", "3天见效", "garantido 100%", "100%保证", "eficácia comprovada em 1 semana", "1周见效", "em poucos dias", "几天内", "resultado imediato", "即时效果", "ação rápida", "快速起效"],
       "severity": "critical",
       "condition": "禁止承诺具体时效和绝对效果",
-      "message": "禁止使用具体时间承诺（如'7天'）和绝对效果保证（如'100%有效'、'保证结果'），功效宣称需有科学依据",
+      "message": "禁止承诺固定天数见效（如'3天'/'7天'/X天/周等）和绝对效果保证（如'100%有效'、'保证结果'），功效宣称需有科学依据",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {

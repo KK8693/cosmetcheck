@@ -285,7 +285,20 @@
     "hydroquinoneBR": "Hidroquinona é um ingrediente clareador banned proibido explicitamente pela ANVISA no Brasil",
     "suggestionBR": "Substitua por alternativas conformes como α-Arbutina ou Niacinamida",
     "hydroquinoneMX": "Hidroquinona é um ingrediente clareador banned proibido explicitamente pela COFEPRIS no México",
-    "suggestionMX": "Substitua por alternativas conformes como α-Arbutina ou Niacinamida"
+    "suggestionMX": "Substitua por alternativas conformes como α-Arbutina ou Niacinamida",
+    "sectionTitle": "Veja em 30 segundos: Seu produto será removido?",
+    "sectionSubtitle": "Digite um ingrediente real e veja a IA bloquear riscos em 3 passos → gerar um Listing conforme",
+    "inputLabel": "Digite os Ingredientes do Produto",
+    "inputPlaceholder": "Digite os ingredientes, separados por vírgulas",
+    "resetDemo": "Reiniciar Demonstração",
+    "scanning": "Verificando ingredientes...",
+    "analyzing": "Analisando 5 ingredientes...",
+    "scanComplete": "Verificação completa",
+    "bannedIngredient": "Ingrediente Proibido",
+    "regulationBR": "Regulamentação: ANVISA RDC 529/2021 proíbe Hidroquinona em produtos de clareamento",
+    "regulationMX": "Regulamentação: COFEPRIS NOM-141 proíbe Hidroquinona em cosméticos comuns",
+    "replacedWith": "Substituído por Alpha Arbutin",
+    "compliantNote": "Este produto atende aos requisitos regulatórios da {regulator}"
   },
   "dispute": {
     "title": "Reportar Falso Positivo / Submeter Dispute",

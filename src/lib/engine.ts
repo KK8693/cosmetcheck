@@ -1,7 +1,20 @@
 // CosmetCheck Compliance Engine
 // Detects ANVISA (Brazil) and COFEPRIS (Mexico) violations
 
-import { loadRegulationRules, loadRootClusters, getTermGroupId, type LoadedRules } from './regulation-loader'
+import { loadRegulationRules, type LoadedRules } from './regulation-loader'
+import rootClustersData from '../data/regulations/root-clusters.json'
+
+// ── 同步构建词根簇映射（确保 checkCompliance 调用时已可用）──
+const termToGroupMap = new Map<string, string>()
+for (const cluster of (rootClustersData as { clusters: { groupId: string; terms: string[] }[] }).clusters) {
+  for (const term of cluster.terms) {
+    termToGroupMap.set(term.toLowerCase(), cluster.groupId)
+  }
+}
+
+function getTermGroupId(term: string): string | undefined {
+  return termToGroupMap.get(term.toLowerCase())
+}
 
 export interface CheckInput {
   ingredients?: string
@@ -1243,8 +1256,6 @@ export async function initRules(): Promise<void> {
       loadRegulationRules('BR'),
       loadRegulationRules('MX'),
     ])
-    // 同步加载词根簇（异步非阻塞）
-    loadRootClusters().catch(e => console.warn('[Engine] Root clusters load failed:', e))
     jsonRulesCache = { BR: brRules, MX: mxRules }
     rulesInitialized = true
     console.log('[Engine] JSON rules loaded:', {
@@ -1304,11 +1315,40 @@ export function checkCompliance(input: CheckInput): CheckResult {
     violations.push(...findMatches(input.label, allRules.filter(r => r.category === 'label'), 'label'))
   }
 
+  // ── 全局 ruleId 去重 ──
+  // 同一规则在 description + combinedText 等多字段中可能被重复匹配，只保留一条
+  const uniqueByRuleId = new Map<string, Violation>()
+  for (const v of violations) {
+    const existing = uniqueByRuleId.get(v.ruleId)
+    if (!existing) {
+      uniqueByRuleId.set(v.ruleId, v)
+    } else if ((v.matchedText?.length || 0) > (existing.matchedText?.length || 0)) {
+      // 保留 matchedText 更长的（短语优先）
+      uniqueByRuleId.set(v.ruleId, v)
+    }
+  }
+  violations.length = 0
+  violations.push(...uniqueByRuleId.values())
+
   // ── 词根簇跨规则去重 ──
   // 同一语义簇（如 cure/treat/heal）的多个 violations 只保留最严重/最长的一个
   const deduplicatedViolations = deduplicateByGroupId(violations)
   violations.length = 0
   violations.push(...deduplicatedViolations)
+
+  // ── 时效规则文案动态化 ──
+  // 将固定的"7天"等替换为实际匹配到的时间表述
+  for (const v of violations) {
+    if (v.ruleId.includes('CLAIM-014') || v.ruleId.includes('MX-CLAIM-001')) {
+      const timeMatch = v.matchedText?.match(/(\d+)\s*(dias?|days?|天|semanas?|weeks?|周)/i)
+      if (timeMatch) {
+        const timeStr = timeMatch[0]
+        v.message = v.message
+          .replace(/X天\/\u5468/, timeStr)
+          .replace(/\uff08如'\\d+天'\uff09/, `(如'${timeStr}')`)
+      }
+    }
+  }
 
   // Always add label requirements - AGGREGATE missing items into one violation
   const labelRules = allRules.filter(r => r.category === 'label' && r.ruleType === 'required')

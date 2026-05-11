@@ -301,7 +301,20 @@
     "hydroquinoneBR": "Hydroquinone 是巴西 ANVISA 明确禁用的美白成分",
     "suggestionBR": "建议替换为 α-熊果苷（α-Arbutin）或烟酰胺（Niacinamide）等合规替代成分",
     "hydroquinoneMX": "Hydroquinone 是墨西哥 COFEPRIS 明确禁用的美白成分",
-    "suggestionMX": "建议替换为 α-熊果苷（α-Arbutin）或烟酰胺（Niacinamide）等合规替代成分"
+    "suggestionMX": "建议替换为 α-熊果苷（α-Arbutin）或烟酰胺（Niacinamide）等合规替代成分",
+    "sectionTitle": "30 秒看懂：你的产品会不会被下架",
+    "sectionSubtitle": "输入一个真实成分，看 AI 如何 3 步拦截风险 → 生成合规 Listing",
+    "inputLabel": "输入产品成分",
+    "inputPlaceholder": "输入成分，用逗号分隔",
+    "resetDemo": "重新演示",
+    "scanning": "扫描成分中...",
+    "analyzing": "分析 5 种成分...",
+    "scanComplete": "扫描完成",
+    "bannedIngredient": "禁用成分",
+    "regulationBR": "法规：ANVISA RDC 529/2021 禁止 Hydroquinone 用于美白产品",
+    "regulationMX": "法规：COFEPRIS NOM-141 禁用 Hydroquinone 用于普通化妆品",
+    "replacedWith": "已替换为 Alpha Arbutin",
+    "compliantNote": "此产品符合 {regulator} 法规要求"
   },
   "dispute": {
     "title": "报告规则误检 / 提交争议",

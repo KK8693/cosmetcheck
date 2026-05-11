@@ -251,7 +251,20 @@
     "hydroquinoneBR": "Hydroquinone is a banned whitening ingredient explicitly prohibited by ANVISA in Brazil",
     "suggestionBR": "Replace with compliant alternatives such as α-Arbutin or Niacinamide",
     "hydroquinoneMX": "Hydroquinone is a banned whitening ingredient explicitly prohibited by COFEPRIS in Mexico",
-    "suggestionMX": "Replace with compliant alternatives such as α-Arbutin or Niacinamide"
+    "suggestionMX": "Replace with compliant alternatives such as α-Arbutin or Niacinamide",
+    "sectionTitle": "See in 30 Seconds: Will Your Product Be Delisted?",
+    "sectionSubtitle": "Enter a real ingredient and watch AI block risks in 3 steps → generate a compliant Listing",
+    "inputLabel": "Enter Product Ingredients",
+    "inputPlaceholder": "Enter ingredients, separated by commas",
+    "resetDemo": "Restart Demo",
+    "scanning": "Scanning ingredients...",
+    "analyzing": "Analyzing 5 ingredients...",
+    "scanComplete": "Scan complete",
+    "bannedIngredient": "Banned Ingredient",
+    "regulationBR": "Regulation: ANVISA RDC 529/2021 prohibits Hydroquinone in whitening products",
+    "regulationMX": "Regulation: COFEPRIS NOM-141 prohibits Hydroquinone in regular cosmetics",
+    "replacedWith": "Replaced with Alpha Arbutin",
+    "compliantNote": "This product meets {regulator} regulatory requirements"
   },
   "dispute": {
     "title": "Report False Positive / Submit Dispute",

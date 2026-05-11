@@ -141,7 +141,7 @@
       "aliases": ["7 días", "7天", "ultra rápido", "超快速", "resultados inmediatos", "结果立竿见影", "garantizado", "保证结果", "100% efectivo", "100%有效", "instantáneamente", "即刻见效"],
       "severity": "critical",
       "condition": "禁止承诺具体时效和绝对效果",
-      "message": "禁止使用具体时间承诺（如'7天'）和绝对效果保证，功效宣称需基于科学验证",
+      "message": "禁止承诺固定天数见效（如'3天'/'7天'/X天/周等）和绝对效果保证，功效宣称需基于科学验证",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
