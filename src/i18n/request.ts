@@ -18,11 +18,11 @@ export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale
 
   if (!locale || !supportedLocales.includes(locale)) {
-    locale = 'zh'
+    locale = 'en'
   }
 
   return {
     locale,
-    messages: messagesMap[locale] || messagesMap['zh'],
+    messages: messagesMap[locale] || messagesMap['en'],
   }
 })

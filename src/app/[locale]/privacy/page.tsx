@@ -83,7 +83,67 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Data Storage and Security</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Lawful Basis for Processing</h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              We process your personal data based on the following lawful bases, depending on your jurisdiction:
+            </p>
+            <div className="overflow-x-auto mb-4">
+              <table className="min-w-full border border-gray-200 text-sm">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="px-4 py-2 text-left font-semibold text-gray-900 border-b">Processing Activity</th>
+                    <th className="px-4 py-2 text-left font-semibold text-gray-900 border-b">GDPR (EU)</th>
+                    <th className="px-4 py-2 text-left font-semibold text-gray-900 border-b">LGPD (Brazil)</th>
+                    <th className="px-4 py-2 text-left font-semibold text-gray-900 border-b">LFPDPPP (Mexico)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="px-4 py-2 border-b">Account registration</td>
+                    <td className="px-4 py-2 border-b">Consent (Art. 6(1)(a))</td>
+                    <td className="px-4 py-2 border-b">Consent (Art. 11)</td>
+                    <td className="px-4 py-2 border-b">Consent (Art. 8)</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 border-b">Compliance checking</td>
+                    <td className="px-4 py-2 border-b">Legitimate Interest (Art. 6(1)(f))</td>
+                    <td className="px-4 py-2 border-b">Legitimate Interest (Art. 10)</td>
+                    <td className="px-4 py-2 border-b">Legitimate Interest (Art. 17)</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 border-b">AI Listing generation</td>
+                    <td className="px-4 py-2 border-b">Consent (Art. 6(1)(a))</td>
+                    <td className="px-4 py-2 border-b">Consent (Art. 11)</td>
+                    <td className="px-4 py-2 border-b">Consent (Art. 8)</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 border-b">Payment processing</td>
+                    <td className="px-4 py-2 border-b">Contract Performance (Art. 6(1)(b))</td>
+                    <td className="px-4 py-2 border-b">Contract Performance (Art. 7)</td>
+                    <td className="px-4 py-2 border-b">Contract Performance (Art. 17)</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 border-b">Analytics & security</td>
+                    <td className="px-4 py-2 border-b">Legitimate Interest (Art. 6(1)(f))</td>
+                    <td className="px-4 py-2 border-b">Legitimate Interest (Art. 10)</td>
+                    <td className="px-4 py-2 border-b">Legitimate Interest (Art. 17)</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2">Marketing communications</td>
+                    <td className="px-4 py-2">Consent (Art. 6(1)(a))</td>
+                    <td className="px-4 py-2">Consent (Art. 11)</td>
+                    <td className="px-4 py-2">Consent (Art. 8)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-gray-600 leading-relaxed">
+              You have the right to withdraw consent at any time. Withdrawal does not affect the lawfulness of processing based on consent before its withdrawal.
+            </p>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Data Storage and Security</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
               All data is transmitted using TLS encryption and stored in secure, SOC 2-compliant data centers. We use Supabase for database hosting with Row Level Security (RLS) enabled.
             </p>

@@ -89,11 +89,27 @@ export default function RefundPage() {
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Chargeback Policy</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              We recommend contacting our support team first to resolve any payment issues.
+              We strongly recommend contacting our support team at <strong>support@cosmetcheck.com</strong> 
+              before initiating any chargeback dispute. Most payment issues can be resolved directly 
+              within 5-10 business days.
             </p>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              <strong>Chargeback Process:</strong> If you proceed with a chargeback, we will respond 
+              by providing transaction records, service usage logs, and proof of delivery to your 
+              payment provider. We actively dispute all unwarranted chargebacks.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              <strong>Consequences of Unfounded Chargebacks:</strong>
+            </p>
+            <ul className="list-disc list-inside text-gray-600 space-y-2 mb-4">
+              <li>Permanent account suspension without prior notice</li>
+              <li>Loss of access to all CosmetCheck services</li>
+              <li>Restriction from creating new accounts</li>
+              <li>Reporting to relevant fraud databases (where permitted by law)</li>
+            </ul>
             <p className="text-gray-600 leading-relaxed">
-              Frivolous or abusive chargebacks may result in permanent account suspension. 
-              We reserve the right to dispute chargebacks and provide evidence of service delivery.
+              Repeated or abusive chargeback patterns may result in legal action to recover 
+              unpaid services plus associated administrative fees.
             </p>
           </section>
 

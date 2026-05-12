@@ -275,7 +275,9 @@
     "legal": "法律",
     "privacy": "隐私政策",
     "terms": "服务条款",
-    "gdpr": "GDPR/LGPD/LFPDPPP",
+    "cookiePolicy": "Cookie 政策",
+    "refund": "退款政策",
+    "disclaimer": "免责声明",
     "copyright": "© 2025 CosmetCheck. All rights reserved."
   },
   "auth": {
@@ -346,7 +348,9 @@
   "cookie": {
     "title": "🍪 Cookie 使用",
     "description": "我们使用必要的 Cookie 来提升您的体验。",
-    "policy": "查看 Cookie 政策"
+    "policy": "查看 Cookie 政策",
+    "accept": "接受",
+    "decline": "仅必要"
   },
   "interactiveDemo": {
     "title": "30 秒看懂：你的产品会不会被下架",

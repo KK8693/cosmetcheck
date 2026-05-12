@@ -223,6 +223,17 @@
       "condition": "0% - 任何浓度均禁止",
       "message": "铊是绝对禁用重金属",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-021",
+      "category": "banned",
+      "target": "Clindamycin",
+      "aliases": ["Clindamicina", "Clindamicina fosfato", "克林霉素", "氯林可霉素", "Lincomycin", "林可霉素"],
+      "cas": "18323-44-9",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "克林霉素是全球化妆品绝对禁用的抗生素成分，会导致细菌耐药性和皮肤菌群失调，是海关重点查扣成分",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     }
   ]
 }

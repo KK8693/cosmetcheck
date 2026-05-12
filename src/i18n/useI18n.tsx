@@ -19,13 +19,13 @@ const I18nContext = createContext<I18nContextType | null>(null)
 
 // Helper to get initial locale
 function getInitialLocale(): Locale {
-  if (typeof window === 'undefined') return 'zh'
+  if (typeof window === 'undefined') return 'en'
   const saved = localStorage.getItem('cosmetcheck-locale') as Locale | null
-  return (saved && ['zh', 'en', 'pt-BR', 'es-MX'].includes(saved)) ? saved : 'zh'
+  return (saved && ['zh', 'en', 'pt-BR', 'es-MX'].includes(saved)) ? saved : 'en'
 }
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>('zh')
+  const [locale, setLocaleState] = useState<Locale>('en')
   const [messages, setMessages] = useState<Messages>({})
   const [isLoading, setIsLoading] = useState(true)
   const [isHydrated, setIsHydrated] = useState(false)
@@ -96,7 +96,7 @@ export function useI18n() {
   const context = useContext(I18nContext)
   if (!context) {
     return {
-      locale: 'zh' as Locale,
+      locale: 'en' as Locale,
       setLocale: () => {},
       t: (key: string) => key,
       isLoading: false

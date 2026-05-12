@@ -72,7 +72,7 @@ export default async function LocaleLayout({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <NextIntlClientProvider messages={messages}>
+      <NextIntlClientProvider messages={messages} locale={locale}>
         <ThemeProvider
             attribute="class"
             defaultTheme="dark"

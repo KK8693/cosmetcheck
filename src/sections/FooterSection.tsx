@@ -49,7 +49,21 @@ export async function FooterSection() {
                   {t('terms')}
                 </Link>
               </li>
-              <li>{t('gdpr')}</li>
+              <li>
+                <Link href="/cookie-policy" className="hover:text-white transition-colors">
+                  {t('cookiePolicy')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/refund" className="hover:text-white transition-colors">
+                  {t('refund')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/disclaimer" className="hover:text-white transition-colors">
+                  {t('disclaimer')}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

@@ -275,7 +275,9 @@
     "legal": "Legal",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "gdpr": "GDPR/LGPD/LFPDPPP",
+    "cookiePolicy": "Cookie Policy",
+    "refund": "Refund Policy",
+    "disclaimer": "Disclaimer",
     "copyright": "© 2025 CosmetCheck. All rights reserved."
   },
   "auth": {
@@ -346,7 +348,9 @@
   "cookie": {
     "title": "🍪 Cookie Usage",
     "description": "We use essential cookies to enhance your experience.",
-    "policy": "View Cookie Policy"
+    "policy": "View Cookie Policy",
+    "accept": "Accept",
+    "decline": "Decline"
   },
   "interactiveDemo": {
     "title": "See It in 30 Seconds: Will Your Product Be Pulled?",

@@ -153,12 +153,22 @@ export default function TermsPage() {
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Governing Law & Disputes</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              These terms are governed by the laws of [Jurisdiction to be confirmed].
+              These terms are governed by the laws of <strong>Brazil</strong>, with specific consideration for:
             </p>
+            <ul className="list-disc list-inside text-gray-600 space-y-2 mb-4">
+              <li>Users in Brazil: Lei Geral de Proteção de Dados (LGPD - Law 13,709/2018)</li>
+              <li>Users in Mexico: Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</li>
+              <li>Users in the EU: General Data Protection Regulation (GDPR)</li>
+            </ul>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Any disputes arising from these terms should first be resolved through 
-              good-faith negotiation. If unresolved, disputes will be submitted to 
-              [Arbitration/Court to be confirmed].
+              Any disputes arising from these terms shall first be resolved through good-faith negotiation. 
+              If unresolved within 30 days, disputes will be submitted to binding arbitration under the 
+              rules of the <strong>Centro de Arbitragem e Mediação de Lisboa (CAML)</strong> or, 
+              for Brazilian users, the <strong>Câmara de Arbitragem do Mercado (CAM)</strong> - B3.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Notwithstanding the above, we reserve the right to seek injunctive relief 
+              in any competent jurisdiction to protect our intellectual property rights.
             </p>
           </section>
 

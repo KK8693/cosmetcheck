@@ -259,7 +259,9 @@
     "legal": "Legal",
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio",
-    "gdpr": "GDPR/LGPD/LFPDPPP",
+    "cookiePolicy": "Política de Cookies",
+    "refund": "Política de Reembolso",
+    "disclaimer": "Aviso de Disclaimer",
     "copyright": "© 2025 CosmetCheck. Todos los derechos reservados."
   },
   "auth": {
@@ -330,7 +332,9 @@
   "cookie": {
     "title": "🍪 Uso de Cookies",
     "description": "Usamos cookies esenciales para mejorar tu experiencia.",
-    "policy": "Ver Política de Cookies"
+    "policy": "Ver Política de Cookies",
+    "accept": "Aceptar",
+    "decline": "Rechazar"
   },
   "interactiveDemo": {
     "title": "Míralo en 30 Segundos: ¿Tu Producto Será Retirado?",
