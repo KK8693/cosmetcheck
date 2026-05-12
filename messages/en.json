@@ -102,7 +102,8 @@
     "form": {
       "inputProductInfo": "Enter product info, check and generate compliant Listing",
       "optional": "Optional",
-      "zeroBarrier": "Zero barrier · No registration · Bilingual output"
+      "zeroBarrier": "Zero barrier · No registration · Bilingual output",
+      "generateHint": "Enter product keywords to generate a high-converting Listing"
     },
     "errors": {
       "enterIngredients": "Please enter product ingredients or description",

@@ -86,7 +86,8 @@
     "form": {
       "inputProductInfo": "Ingresa información del producto, verifica y genera Listing conforme",
       "optional": "Opcional",
-      "zeroBarrier": "Sin barrera · Sin registro · Salida bilingüe"
+      "zeroBarrier": "Sin barrera · Sin registro · Salida bilingüe",
+      "generateHint": "Ingresa palabras clave del producto para generar un Listing de alta conversión"
     },
     "errors": {
       "enterIngredients": "Por favor, ingresa los ingredientes o descripción del producto",

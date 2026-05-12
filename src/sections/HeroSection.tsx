@@ -346,6 +346,9 @@ export function HeroSection() {
                   </button>
                 )}
               </div>
+              <p className="text-xs text-white/50 mb-3">
+                {t('form.generateHint')}
+              </p>
 
               {/* Ingredients */}
               <div className="mb-3 relative">
@@ -399,7 +402,7 @@ export function HeroSection() {
                 </Button>
                 <Button
                   onClick={handleGenerate}
-                  disabled={isGenerating || !productName}
+                  disabled={isGenerating}
                   className="w-full sm:flex-1 bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all animate-pulse-subtle"
                 >
                   {isGenerating ? t('generating') : <><Zap className="w-4 h-4 mr-1" /> {t('freeGenerateListing')}</>}
