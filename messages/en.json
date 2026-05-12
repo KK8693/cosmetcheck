@@ -26,10 +26,11 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Title",
-    "titleLine2": "Without Delistings or Fines",
+    "title": "Beauty Sellers to LatAm",
+    "titleLine2": "Listings Live, No Fines",
     "subtitle": "One-click compliance check for Brazil/Mexico, AI-generated high-converting Listings. Start free, avoid ANVISA/COFEPRIS penalties.",
     "subtitleShort": "One-click Brazil/Mexico compliance check, AI-generated high-converting Listings — Start free",
+    "ctaLine": "AI-Powered Check, 48h to Live",
     "checkButton": "Start Check",
     "demoButton": "View Demo",
     "ingredients": "Enter Ingredients",
@@ -41,7 +42,7 @@
     "mexicoCofeppris": "Mexico COFEPRIS",
     "checking": "Checking...",
     "checkNow": "Check Now",
-    "checkFirst": "Check First",
+    "checkFirst": "Start Free Check",
     "remainingChecks": "Remaining Checks",
     "aiGenerate": "AI Generate Listing",
     "aiGenerateListing": "AI Generate Listing",

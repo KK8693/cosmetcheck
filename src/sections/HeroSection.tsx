@@ -299,6 +299,9 @@ export function HeroSection() {
             <p className="mx-auto mb-10 max-w-full md:max-w-2xl text-lg text-white/90 md:text-xl">
               {t('subtitleShort')}
             </p>
+            <p className="mx-auto mb-6 max-w-full md:max-w-xl text-sm text-amber-400 font-semibold tracking-wide">
+              {t('ctaLine')}
+            </p>
 
             {/* Hero Demo */}
             <div className="mx-auto w-full max-w-full md:max-w-xl rounded-2xl bg-white/10 p-4 backdrop-blur-lg md:p-8 text-left">

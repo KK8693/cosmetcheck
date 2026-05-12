@@ -10,10 +10,11 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Título",
-    "titleLine2": "Sin Retiros o Multas",
+    "title": "Vende Belleza en México",
+    "titleLine2": "Sin Baja, Sin Multa",
     "subtitle": "Verificación de cumplimiento con un clic para Brasil/México, Listings de alta conversión generados por IA. Empieza gratis, evita penalidades ANVISA/COFEPRIS.",
     "subtitleShort": "Verificación de cumplimiento Brasil/México en un clic, Listings de alta conversión generados por IA — Empieza gratis",
+    "ctaLine": "Verificación con IA, 48h para Vender",
     "checkButton": "Iniciar Verificación",
     "demoButton": "Ver Demo",
     "ingredients": "Ingresa los Ingredientes",
@@ -25,7 +26,7 @@
     "mexicoCofeppris": "México COFEPRIS",
     "checking": "Verificando...",
     "checkNow": "Verificar Ahora",
-    "checkFirst": "Verificar Primero",
+    "checkFirst": "Comenzar Verificación Gratuita",
     "remainingChecks": "Verificaciones Restantes",
     "aiGenerate": "Generar Listing con IA",
     "aiGenerateListing": "Generar Listing con IA",
