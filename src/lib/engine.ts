@@ -66,6 +66,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Mercury (Mercúrio) is prohibited in cosmetics by ANVISA RDC 529/2021.',
     suggestion: 'Remove mercury compounds from the formula.',
+    aliases: ['汞', 'mercurio', 'mercúrio', 'Hg', 'mercurial', 'thimerosal', 'merthiolate', '氯化汞', 'mercury chloride'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -76,6 +77,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Lead (Chumbo) compounds are prohibited in cosmetics.',
     suggestion: 'Remove lead and its compounds from the formula.',
+    aliases: ['铅', 'chumbo', 'plomo', 'Pb', 'lead acetate', 'lead oxide', '氧化铅', '醋酸铅', 'plomo'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -86,6 +88,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Hydroquinone is restricted and generally prohibited in cosmetic products.',
     suggestion: 'Remove hydroquinone or reformulate as a pharmaceutical product.',
+    aliases: ['对苯二酚', 'hidroquinona', 'hidroquinona', 'HQ', 'quinol', 'benzenediol', '1,4-benzenediol', '美白剂', 'bleaching agent'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -96,6 +99,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Corticosteroids require medical prescription and cannot be in cosmetics.',
     suggestion: 'Remove corticosteroids - product must be registered as medicine.',
+    aliases: ['皮质类固醇', 'corticosteróide', 'corticosteroide', 'steroid', 'cortisone', 'prednisone', '氢化可的松', '类固醇激素', 'corticoides'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -106,6 +110,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Formaldehyde is prohibited in cosmetics except as preservative trace.',
     suggestion: 'Ensure formaldehyde concentration is below 0.2% or remove entirely.',
+    aliases: ['甲醛', 'formaldeído', 'formaldehído', 'formalin', 'methanal', 'formol', '福尔马林', '蚁醛', 'methylene oxide'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -116,6 +121,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'warning',
     message: 'Parabens are restricted - concentration limits apply.',
     suggestion: 'Verify total paraben concentration does not exceed 0.4% for single / 0.8% for mixtures.',
+    aliases: ['对羟基苯甲酸酯', 'parabeno', 'parabeno', 'methylparaben', 'propylparaben', 'butylparaben', 'ethylparaben', 'nipagin', 'nipasol', '羟苯甲酯'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -126,6 +132,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'warning',
     message: 'Retinol (Vitamin A) concentration is restricted in cosmetics.',
     suggestion: 'Ensure retinol concentration does not exceed regulatory limits.',
+    aliases: ['视黄醇', 'retinol', 'retinol', 'vitamin A', 'retinyl palmitate', 'retinyl acetate', '维生素A', '维A醇', 'retinaldehyde', 'retinal'],
     source: 'ANVISA RDC 529/2021',
   },
   // Label/Claim rules
@@ -137,6 +144,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Cosmetics cannot claim medicinal or therapeutic properties.',
     suggestion: 'Remove terms like "treats", "cures", "medicinal" from product claims.',
+    aliases: ['药用', 'medicinal', 'medicinal', 'drug', 'pharmaceutical', '药品', '药物', 'medicamento', 'farmaceutico'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -147,6 +155,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Cosmetics cannot claim to cure, treat, or prevent diseases.',
     suggestion: 'Use cosmetic claims only (moisturizing, cleansing, beautifying).',
+    aliases: ['治愈', 'cura', 'cura', 'heal', 'healing', '治疗', '痊愈', 'curativo', 'terapêutico'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -157,6 +166,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'warning',
     message: '"100% natural" claims require proof and specific registration.',
     suggestion: 'Remove absolute claims unless certified. Use "contains natural ingredients" instead.',
+    aliases: ['100%天然', '100% natural', '100% natural', 'all natural', 'pure natural', '纯天然', '全天然', 'totalmente natural', 'natural puro'],
     source: 'ANVISA IN 26/2022',
   },
   // === 功效宣称检测 (Effect Claims Detection - Brazil) ===
@@ -278,6 +288,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'warning',
     message: 'Brazil requires manufacturer/distributor name and address on the label.',
     suggestion: 'Add manufacturer name, CNPJ, and complete address to the label.',
+    aliases: ['制造商', 'fabricante', 'fabricante', 'manufactured by', 'made by', '生产者', '生产厂家', 'produtor'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -288,6 +299,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'warning',
     message: 'Ingredient list in INCI nomenclature is mandatory.',
     suggestion: 'Include full ingredient list in INCI standard format.',
+    aliases: ['成分表', 'lista de ingredientes', 'lista de ingredientes', 'ingredients', 'composition', '配方', '成分', 'composição'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -298,6 +310,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'info',
     message: 'Products sold in Brazil require ANVISA registration number.',
     suggestion: 'Obtain ANVISA registration before commercialization.',
+    aliases: ['ANVISA注册', 'registro ANVISA', 'registro ANVISA', 'ANVISA registration number', 'processo ANVISA', '注册号', 'anvisa', 'registro sanitário'],
     source: 'ANVISA RDC 529/2021',
   },
   // === 标签规则增强 (Enhanced Label Rules - Brazil) ===
@@ -358,13 +371,14 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
   },
   // Additional MVP prohibited ingredients
   {
-    ruleId: 'BR-ING-007',
+    ruleId: 'BR-ING-026',
     category: 'ingredient',
     ruleType: 'prohibited',
     keyword: 'tretinoin',
     severity: 'critical',
     message: 'Tretinoin (Retinoic Acid) is a drug-level ingredient prohibited in cosmetics in Brazil.',
     suggestion: 'Remove tretinoin. If used, product must be registered as medicine with ANVISA.',
+    aliases: ['维甲酸', 'tretinoína', 'tretinoína', 'retinoic acid', 'vitamin A acid', 'all-trans retinoic acid', '视黄酸', '维A酸', 'retin-A'],
     source: 'ANVISA RDC 665/2022',
   },
   {
@@ -375,6 +389,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Retinoic Acid is a drug-level ingredient prohibited in cosmetics in Brazil.',
     suggestion: 'Remove retinoic acid. If used, product must be registered as medicine with ANVISA.',
+    aliases: ['视黄酸', 'ácido retinoico', 'ácido retinoico', 'vitamin A acid', 'tretinoin', 'all-trans retinoic acid', '维A酸', 'retinoic', 'retinol acid'],
     source: 'ANVISA RDC 665/2022',
   },
   {
@@ -385,6 +400,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Arsenic and its compounds are prohibited in cosmetics by ANVISA.',
     suggestion: 'Remove arsenic compounds from the formula.',
+    aliases: ['砷', 'arsênio', 'arsénico', 'As', 'arsenic trioxide', '三氧化二砷', '砒霜', 'arsenite', 'arsenate'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -395,6 +411,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Cadmium and its compounds are prohibited in cosmetics by ANVISA.',
     suggestion: 'Remove cadmium compounds from the formula.',
+    aliases: ['镉', 'cádmio', 'cadmio', 'Cd', 'cadmium sulfide', '硫化镉', 'cadmium oxide', '氧化镉', 'cadmium chloride'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -405,6 +422,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Betamethasone is a corticosteroid prohibited in cosmetics.',
     suggestion: 'Remove corticosteroids - product must be registered as medicine.',
+    aliases: ['倍他米松', 'betametasona', 'betametasona', 'steroid', 'corticosteroid', '糖皮质激素', 'beta-methasone', 'Celestone', 'betamethasone valerate'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -415,6 +433,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Hydrocortisone is a corticosteroid prohibited in cosmetics.',
     suggestion: 'Remove corticosteroids - product must be registered as medicine.',
+    aliases: ['氢化可的松', 'hidrocortisona', 'hidrocortisona', 'cortisol', 'steroid', 'corticosteroid', '皮质醇', 'hydrocortisone acetate', 'cortef'],
     source: 'ANVISA RDC 529/2021',
   },
   // === RDC 907/2024 核心禁用成分 (Brazil Prohibited Ingredients) ===
@@ -525,18 +544,6 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     aliases: ['formaldeído', 'formalin', 'methanal'],
   },
   {
-    ruleId: 'BR-ING-021',
-    category: 'ingredient',
-    ruleType: 'prohibited',
-    keyword: 'lead',
-    severity: 'critical',
-    message: 'Lead and lead compounds are prohibited in cosmetics.',
-    suggestion: 'Ensure no lead contamination. Use high-purity ingredients.',
-    source: 'ANVISA RDC 907/2024',
-    casNumber: '7439-92-1',
-    aliases: ['chumbo', 'lead acetate', 'lead oxide'],
-  },
-  {
     ruleId: 'BR-ING-022',
     category: 'ingredient',
     ruleType: 'prohibited',
@@ -597,6 +604,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Mercury (Mercurio) is prohibited in cosmetics by COFEPRIS.',
     suggestion: 'Remove mercury compounds from the formula.',
+    aliases: ['汞', 'mercurio', 'mercúrio', 'Hg', 'mercurial', 'thimerosal', 'merthiolate', '氯化汞', 'mercury chloride'],
     source: 'COFEPRIS NOM-259-SSA1-2014',
   },
   {
@@ -607,6 +615,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Lead (Plomo) is prohibited in cosmetics.',
     suggestion: 'Remove lead and its compounds.',
+    aliases: ['铅', 'chumbo', 'plomo', 'Pb', 'lead acetate', 'lead oxide', '氧化铅', '醋酸铅', 'plomo'],
     source: 'COFEPRIS NOM-259-SSA1-2014',
   },
   {
@@ -617,6 +626,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Hydroquinone is prohibited in cosmetics by COFEPRIS.',
     suggestion: 'Remove hydroquinone or register as pharmaceutical product.',
+    aliases: ['对苯二酚', 'hidroquinona', 'hidroquinona', 'HQ', 'quinol', 'benzenediol', '1,4-benzenediol', '美白剂', 'bleaching agent'],
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
   },
   {
@@ -627,6 +637,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Corticosteroids are prohibited in cosmetic products.',
     suggestion: 'Remove corticosteroids - product must be registered as medicine.',
+    aliases: ['皮质类固醇', 'corticosteróide', 'corticosteroide', 'steroid', 'cortisone', 'prednisone', '氢化可的松', '类固醇激素', 'corticoides'],
     source: 'COFEPRIS NOM-259-SSA1-2014',
   },
   {
@@ -637,6 +648,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Formaldehyde is prohibited in nail products and restricted in others.',
     suggestion: 'Ensure formaldehyde is not used as an ingredient.',
+    aliases: ['甲醛', 'formaldeído', 'formaldehído', 'formalin', 'methanal', 'formol', '福尔马林', '蚁醛', 'methylene oxide'],
     source: 'COFEPRIS NOM-259-SSA1-2014',
   },
   {
@@ -647,6 +659,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'warning',
     message: 'Parabens are restricted - concentration limits apply.',
     suggestion: 'Verify paraben concentrations comply with NOM limits.',
+    aliases: ['对羟基苯甲酸酯', 'parabeno', 'parabeno', 'methylparaben', 'propylparaben', 'butylparaben', 'ethylparaben', 'nipagin', 'nipasol', '羟苯甲酯'],
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
   },
   {
@@ -657,6 +670,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'warning',
     message: 'Retinol concentration is restricted in cosmetics.',
     suggestion: 'Ensure retinol concentration is within allowed limits.',
+    aliases: ['视黄醇', 'retinol', 'retinol', 'vitamin A', 'retinyl palmitate', 'retinyl acetate', '维生素A', '维A醇', 'retinaldehyde', 'retinal'],
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
   },
   // Label/Claim rules
@@ -668,6 +682,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Cosmetics cannot claim medicinal or therapeutic properties.',
     suggestion: 'Remove therapeutic claims. Use cosmetic claims only.',
+    aliases: ['药用', 'medicinal', 'medicinal', 'drug', 'pharmaceutical', '药品', '药物', 'medicamento', 'farmaceutico'],
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
   },
   {
@@ -678,6 +693,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Cosmetics cannot claim to cure, treat, or prevent diseases.',
     suggestion: 'Remove disease-related claims.',
+    aliases: ['治愈', 'cura', 'cura', 'heal', 'healing', '治疗', '痊愈', 'curativo', 'terapêutico'],
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
   },
   // === 功效宣称检测 (Effect Claims Detection - Mexico) ===
@@ -799,6 +815,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'warning',
     message: 'Mexico requires manufacturer/importer name and address on label.',
     suggestion: 'Add manufacturer name and address in Spanish.',
+    aliases: ['制造商', 'fabricante', 'fabricante', 'manufactured by', 'made by', '生产者', '生产厂家', 'produtor'],
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
   },
   {
@@ -809,6 +826,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'warning',
     message: 'Ingredient list in INCI nomenclature is mandatory.',
     suggestion: 'Include full ingredient list in INCI standard format.',
+    aliases: ['成分表', 'lista de ingredientes', 'lista de ingredientes', 'ingredients', 'composition', '配方', '成分', 'composición'],
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
   },
   {
@@ -819,11 +837,12 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'info',
     message: 'Products sold in Mexico require COFEPRIS registration.',
     suggestion: 'Obtain COFEPRIS registration before commercialization.',
+    aliases: ['COFEPRIS注册', 'registro COFEPRIS', 'registro COFEPRIS', 'COFEPRIS registration', 'registro sanitario', '注册号', 'cofepris', 'registro'],
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
   },
   // Additional MVP prohibited ingredients for Mexico
   {
-    ruleId: 'MX-ING-007',
+    ruleId: 'MX-ING-018',
     category: 'ingredient',
     ruleType: 'prohibited',
     keyword: 'tretinoin',
@@ -842,6 +861,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Retinoic Acid is a drug-level ingredient prohibited in cosmetics in Mexico.',
     suggestion: 'Remove retinoic acid. If used, product must be registered as medicine.',
+    aliases: ['视黄酸', 'ácido retinoico', 'ácido retinoico', 'vitamin A acid', 'tretinoin', 'all-trans retinoic acid', '维A酸', 'retinoic', 'retinol acid'],
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
   },
   {
@@ -852,6 +872,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Arsenic and its compounds are prohibited in cosmetics by COFEPRIS.',
     suggestion: 'Remove arsenic compounds from the formula.',
+    aliases: ['砷', 'arsênio', 'arsénico', 'As', 'arsenic trioxide', '三氧化二砷', '砒霜', 'arsenite', 'arsenate'],
     source: 'COFEPRIS NOM-259-SSA1-2014',
   },
   {
@@ -862,6 +883,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Cadmium and its compounds are prohibited in cosmetics by COFEPRIS.',
     suggestion: 'Remove cadmium compounds from the formula.',
+    aliases: ['镉', 'cádmio', 'cadmio', 'Cd', 'cadmium sulfide', '硫化镉', 'cadmium oxide', '氧化镉', 'cadmium chloride'],
     source: 'COFEPRIS NOM-259-SSA1-2014',
   },
   {
@@ -872,6 +894,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Betamethasone is a corticosteroid prohibited in cosmetics.',
     suggestion: 'Remove corticosteroids - product must be registered as medicine.',
+    aliases: ['倍他米松', 'betametasona', 'betametasona', 'steroid', 'corticosteroid', '糖皮质激素', 'beta-methasone', 'Celestone', 'betamethasone valerate'],
     source: 'COFEPRIS NOM-259-SSA1-2014',
   },
   {
@@ -882,6 +905,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Hydrocortisone is a corticosteroid prohibited in cosmetics.',
     suggestion: 'Remove corticosteroids - product must be registered as medicine.',
+    aliases: ['氢化可的松', 'hidrocortisona', 'hidrocortisona', 'cortisol', 'steroid', 'corticosteroid', '皮质醇', 'hydrocortisone acetate', 'cortef'],
     source: 'COFEPRIS NOM-259-SSA1-2014',
   },
   // === NOM-141 防晒标签 SPF 要求 (Mexico Sunscreen Label Requirements) ===
@@ -893,6 +917,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Sunscreen products must display SPF value on the label (NOM-141 requirement).',
     suggestion: 'Add SPF value on the label. Without SPF, customs may detain the product.',
+    aliases: ['防晒霜', 'protetor solar', 'protector solar', 'sunscreen', 'sun block', '防晒', 'bloqueador solar', 'bloqueador'],
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
   },
   {
@@ -903,6 +928,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Sunscreen products must display SPF value on the label (NOM-141 requirement).',
     suggestion: 'Add SPF value on the label. Without SPF, customs may detain the product.',
+    aliases: ['防晒保护', 'proteção solar', 'protección solar', 'sun protection', 'uv protection', '防紫外线', '防晒指数', 'proteção uv'],
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
   },
   {
@@ -913,6 +939,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'info',
     message: 'Verify SPF value is clearly displayed on the label.',
     suggestion: 'SPF must be visible on the front panel of the packaging.',
+    aliases: ['防晒指数', 'fator de proteção solar', 'factor de protección solar', 'sun protection factor', 'spf rating', '防晒系数', '防晒值', 'protección solar'],
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
   },
   {
@@ -923,6 +950,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'info',
     message: 'Verify SPF (FPS) value is clearly displayed on the label.',
     suggestion: 'SPF/FPS must be visible on the front panel of the packaging.',
+    aliases: ['FPS', 'fator de proteção solar', 'factor de protección solar', 'sun protection factor', 'spf', '防晒系数', '防晒值', 'proteção solar'],
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
   },
   {
@@ -933,6 +961,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Los productos de protección solar deben mostrar el valor SPF en la etiqueta.',
     suggestion: 'Añadir SPF en la etiqueta. Sin SPF, aduanas pueden retener el producto.',
+    aliases: ['防晒霜', 'protetor solar', 'protector solar', 'sunscreen', 'sun block', '防晒', 'bloqueador solar', 'bloqueador'],
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
   },
   // === 额外禁用成分 (Additional Mexico Prohibited) ===
@@ -1098,6 +1127,34 @@ function generateContextSnippet(
   return snippet
 }
 
+// 检查匹配位置是否为词边界（避免子字符串误匹配，如 "lead" 匹配 "sunflower"）
+function isWordBoundary(text: string, matchStart: number, matchEnd: number): boolean {
+  const isWordChar = (c: string) => /[a-zA-Z0-9_]/.test(c)
+  
+  const before = matchStart > 0 ? text[matchStart - 1] : ''
+  const after = matchEnd < text.length ? text[matchEnd] : ''
+  
+  const beforeOk = matchStart === 0 || !isWordChar(before)
+  const afterOk = matchEnd >= text.length || !isWordChar(after)
+  
+  return beforeOk && afterOk
+}
+
+// 查找第一个满足词边界的匹配位置
+function findWordBoundaryMatch(text: string, candidate: string): { index: number; length: number } | null {
+  let searchFrom = 0
+  while (true) {
+    const index = text.indexOf(candidate, searchFrom)
+    if (index === -1) return null
+    
+    if (isWordBoundary(text, index, index + candidate.length)) {
+      return { index, length: candidate.length }
+    }
+    
+    searchFrom = index + 1
+  }
+}
+
 function findMatches(
   text: string, 
   rules: Omit<Violation, 'matchedText' | 'position' | 'sourceField' | 'contextSnippet'>[],
@@ -1151,10 +1208,10 @@ function findMatches(
     // 按长度从长到短排序：短语优先
     candidates.sort((a, b) => b.text.length - a.text.length)
 
-    // 依次尝试候选，取第一个（最长）匹配成功的
+    // 依次尝试候选，取第一个（最长）满足词边界的匹配
     for (const candidate of candidates) {
-      const index = lowerText.indexOf(candidate.text)
-      if (index === -1) continue
+      const match = findWordBoundaryMatch(lowerText, candidate.text)
+      if (!match) continue
 
       seenRuleIds.add(rule.ruleId)
 
@@ -1163,8 +1220,8 @@ function findMatches(
           ...rule,
           matchedText: candidate.familyTerm!,
           position: {
-            start: index,
-            end: index + candidate.text.length,
+            start: match.index,
+            end: match.index + match.length,
           },
           sourceField,
           contextSnippet: `成分族匹配: 识别到 ${candidate.familyTerm} 属于 ${rule.rootFamily} 成分族`,
@@ -1172,13 +1229,13 @@ function findMatches(
       } else {
         violations.push({
           ...rule,
-          matchedText: text.substring(index, index + candidate.text.length),
+          matchedText: text.substring(match.index, match.index + match.length),
           position: {
-            start: index,
-            end: index + candidate.text.length,
+            start: match.index,
+            end: match.index + match.length,
           },
           sourceField,
-          contextSnippet: generateContextSnippet(text, index, index + candidate.text.length),
+          contextSnippet: generateContextSnippet(text, match.index, match.index + match.length),
         })
       }
       break // 只取最长的一个匹配
@@ -1350,34 +1407,38 @@ export function checkCompliance(input: CheckInput): CheckResult {
     }
   }
 
-  // Always add label requirements - AGGREGATE missing items into one violation
-  const labelRules = allRules.filter(r => r.category === 'label' && r.ruleType === 'required')
-  const existingRuleIds = new Set(violations.map(v => v.ruleId))
-  
-  // 收集所有缺失的标签项
-  const missingLabelItems: string[] = []
-  for (const rule of labelRules) {
-    if (!existingRuleIds.has(rule.ruleId)) {
-      missingLabelItems.push(rule.keyword)
+  // 只在用户提供了 label 内容时，才检查标签规则缺失
+  // 避免用户只检测 ingredients 时收到大量标签缺失警告
+  if (input.label) {
+    const labelRules = allRules.filter(r => r.category === 'label' && r.ruleType === 'required')
+    const existingRuleIds = new Set(violations.map(v => v.ruleId))
+    
+    // 收集所有缺失的标签项
+    const missingLabelItems: string[] = []
+    for (const rule of labelRules) {
+      if (!existingRuleIds.has(rule.ruleId)) {
+        missingLabelItems.push(rule.keyword)
+      }
     }
-  }
 
-  // 如果有缺失的标签项，聚合为一条
-  if (missingLabelItems.length > 0) {
-    const aggregatedViolation: Violation = {
-      ruleId: 'BR-LABEL-AGGREGATED',
-      category: 'label',
-      ruleType: 'required',
-      keyword: 'Multiple label requirements missing',
-      severity: 'warning',  // 聚合后降为 warning
-      message: `巴西标签合规缺失 - 缺少以下必要信息: ${missingLabelItems.join(', ')}`,
-      suggestion: '请补全所有必需标签信息后再上市销售',
-      source: 'ANVISA RDC 169/2024',
-      matchedText: missingLabelItems.join(', '),
-      sourceField: 'label',
-      contextSnippet: `缺失项目: ${missingLabelItems.join(', ')}`,
+    // 如果有缺失的标签项，聚合为一条
+    if (missingLabelItems.length > 0) {
+      const countryLabel = input.country === 'BR' ? '巴西' : '墨西哥'
+      const aggregatedViolation: Violation = {
+        ruleId: `${input.country}-LABEL-AGGREGATED`,
+        category: 'label',
+        ruleType: 'required',
+        keyword: 'Multiple label requirements missing',
+        severity: 'warning',
+        message: `${countryLabel}标签合规缺失 - 缺少以下必要信息: ${missingLabelItems.join(', ')}`,
+        suggestion: '请补全所有必需标签信息后再上市销售',
+        source: input.country === 'BR' ? 'ANVISA RDC 169/2024' : 'COFEPRIS NOM-141-SSA1/SCF1-2012',
+        matchedText: missingLabelItems.join(', '),
+        sourceField: 'label',
+        contextSnippet: `缺失项目: ${missingLabelItems.join(', ')}`,
+      }
+      violations.push(aggregatedViolation)
     }
-    violations.push(aggregatedViolation)
   }
 
   const criticalCount = violations.filter(v => v.severity === 'critical').length
