@@ -10,7 +10,7 @@ export default function DisclaimerPage() {
     <div className="min-h-screen bg-white">
       <div className="container-custom max-w-3xl py-20">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">Disclaimer</h1>
-        <p className="text-gray-500 mb-12">Last updated: May 2025</p>
+        <p className="text-gray-500 mb-12">Last updated: May 12, 2025</p>
 
         <div className="prose prose-gray max-w-none">
           <section className="mb-10">

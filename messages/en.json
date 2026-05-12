@@ -346,11 +346,21 @@
     "noCreditCard": "No credit card · Cancel anytime · Free plan forever"
   },
   "cookie": {
-    "title": "🍪 Cookie Usage",
-    "description": "We use essential cookies to enhance your experience.",
+    "title": "🍪 Cookie Preferences",
+    "description": "We use cookies to enhance your experience. You can choose which cookies to accept.",
     "policy": "View Cookie Policy",
-    "accept": "Accept",
-    "decline": "Decline"
+    "accept": "Accept All",
+    "acceptSelected": "Accept Selected",
+    "decline": "Decline All",
+    "essential": "Essential",
+    "essentialDesc": "Required for the website to function properly",
+    "analytics": "Analytics",
+    "analyticsDesc": "Help us understand how visitors interact with our website",
+    "marketing": "Marketing",
+    "marketingDesc": "Used to deliver personalized advertisements",
+    "customize": "Customize",
+    "saved": "Your preferences have been saved",
+    "manageSettings": "Manage Cookie Settings"
   },
   "interactiveDemo": {
     "title": "See It in 30 Seconds: Will Your Product Be Pulled?",

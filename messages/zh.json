@@ -346,11 +346,21 @@
     "noCreditCard": "无需信用卡 · 随时取消 · 免费版永久可用"
   },
   "cookie": {
-    "title": "🍪 Cookie 使用",
-    "description": "我们使用必要的 Cookie 来提升您的体验。",
+    "title": "🍪 Cookie 偏好设置",
+    "description": "我们使用 Cookie 来提升您的体验。您可以选择接受哪些 Cookie。",
     "policy": "查看 Cookie 政策",
-    "accept": "接受",
-    "decline": "仅必要"
+    "accept": "接受全部",
+    "acceptSelected": "接受所选",
+    "decline": "全部拒绝",
+    "essential": "必要 Cookie",
+    "essentialDesc": "网站正常运行所必需",
+    "analytics": "分析 Cookie",
+    "analyticsDesc": "帮助我们了解访客如何与网站互动",
+    "marketing": "营销 Cookie",
+    "marketingDesc": "用于投放个性化广告",
+    "customize": "自定义",
+    "saved": "您的偏好已保存",
+    "manageSettings": "管理 Cookie 设置"
   },
   "interactiveDemo": {
     "title": "30 秒看懂：你的产品会不会被下架",

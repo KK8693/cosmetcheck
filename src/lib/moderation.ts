@@ -1,12 +1,17 @@
 /**
  * AI Content Moderation utilities
  * Uses DeepSeek/OpenAI Moderation API to check user inputs and AI outputs
+ * 
+ * SECURITY: This module uses fail-close behavior. If the moderation API
+ * is unavailable or returns an error, content is BLOCKED by default to
+ * protect against potentially harmful content.
  */
 
 interface ModerationResult {
   flagged: boolean
   categories: Record<string, boolean>
   categoryScores: Record<string, number>
+  error?: string  // Track if there was an error
 }
 
 /**
@@ -15,10 +20,11 @@ interface ModerationResult {
  * @returns Moderation result with flagged status and category details
  */
 export async function moderateContent(text: string): Promise<ModerationResult> {
-  // Use DeepSeek if available, otherwise skip moderation (fail open)
+  // Use DeepSeek if available, otherwise fail-close (block content)
   const apiKey = process.env.DEEPSEEK_API_KEY || process.env.OPENAI_API_KEY
   if (!apiKey) {
-    return { flagged: false, categories: {}, categoryScores: {} }
+    // Fail-close: block content when no API key available
+    return { flagged: true, categories: { 'api_unavailable': true }, categoryScores: {}, error: 'No moderation API key configured' }
   }
 
   try {
@@ -50,7 +56,8 @@ export async function moderateContent(text: string): Promise<ModerationResult> {
 
       if (!response.ok) {
         console.error('DeepSeek moderation error:', response.statusText)
-        return { flagged: false, categories: {}, categoryScores: {} }
+        // Fail-close: block content on API errors
+        return { flagged: true, categories: { 'api_error': true }, categoryScores: {}, error: `DeepSeek API error: ${response.statusText}` }
       }
 
       const data = await response.json()

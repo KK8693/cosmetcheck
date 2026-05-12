@@ -330,11 +330,21 @@
     "noCreditCard": "Sem cartão de crédito · Cancele quando quiser · Plano grátis para sempre"
   },
   "cookie": {
-    "title": "🍪 Uso de Cookies",
-    "description": "Usamos cookies essenciais para melhorar sua experiência.",
+    "title": "🍪 Preferências de Cookies",
+    "description": "Usamos cookies para melhorar sua experiência. Você pode escolher quais cookies aceitar.",
     "policy": "Ver Política de Cookies",
-    "accept": "Aceitar",
-    "decline": "Recusar"
+    "accept": "Aceitar Todos",
+    "acceptSelected": "Aceitar Selecionados",
+    "decline": "Recusar Todos",
+    "essential": "Essenciais",
+    "essentialDesc": "Necessários para o funcionamento do site",
+    "analytics": "Análise",
+    "analyticsDesc": "Nos ajudam a entender como os visitantes interagem com nosso site",
+    "marketing": "Marketing",
+    "marketingDesc": "Usados para exibir anúncios personalizados",
+    "customize": "Personalizar",
+    "saved": "Suas preferências foram salvas",
+    "manageSettings": "Gerenciar Configurações de Cookies"
   },
   "interactiveDemo": {
     "title": "Veja em 30 Segundos: Seu Produto Será Retirado?",
