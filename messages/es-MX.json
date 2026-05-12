@@ -242,7 +242,7 @@
       },
       "3": {
         "q": "¿Cómo funciona el cobro?",
-        "a": "Plan gratis: 10 verificaciones/mes. Pro: $299/mes ilimitadas. API de detección por uso, ideal para escenarios en lote."
+        "a": "Plan gratis: 10 verificaciones/mes. Pro: Mex$499/mes ilimitadas. API de detección por uso, ideal para escenarios en lote."
       }
     }
   },
@@ -512,7 +512,7 @@
       ]
     },
     "cta": {
-      "badge": "🔥 Oferta Limitada · Solo 6 días · Obtén 5 verificaciones Pro gratis este mes",
+      "badge": "Obtén 5 verificaciones Pro gratis este mes",
       "title": "¿Aún tienes dudas?",
       "subtitle": "Prueba 10 verificaciones gratis primero. Actualiza solo si te resulta útil. Sin riesgo, cancela cuando quieras.",
       "button": "Empezar Verificación Gratis",

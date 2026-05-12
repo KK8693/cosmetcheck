@@ -61,7 +61,7 @@ export default function TermsPage() {
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Payment & Subscription</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Pro subscriptions are billed at $29/month or $290/year. 
+              Pro subscriptions are billed at $29/month or $245/year. 
               Subscriptions renew automatically unless cancelled before the next billing date.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">

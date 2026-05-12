@@ -242,7 +242,7 @@
       },
       "3": {
         "q": "Como funciona a cobrança?",
-        "a": "Plano grátis: 10 verificações/mês. Pro: R$199/mês ilimitadas. API de detecção por uso, ideal para cenários em lote."
+        "a": "Plano grátis: 10 verificações/mês. Pro: R$149/mês ilimitadas. API de detecção por uso, ideal para cenários em lote."
       }
     }
   },
@@ -512,7 +512,7 @@
       ]
     },
     "cta": {
-      "badge": "🔥 Oferta Limitada · Só 6 dias · Ganhe 5 verificações Pro grátis este mês",
+      "badge": "Ganhe 5 verificações Pro grátis este mês",
       "title": "Ainda tem dúvidas?",
       "subtitle": "Experimente 10 verificações grátis primeiro. Atualize só se achar útil. Sem risco, cancele quando quiser.",
       "button": "Começar Verificação Grátis",

@@ -258,7 +258,7 @@
       },
       "3": {
         "q": "How do you charge?",
-        "a": "Free plan: 10 checks/month. Pro: $15/month unlimited. Detection API pay-per-use for batch scenarios."
+        "a": "Free plan: 10 checks/month. Pro: $29/month unlimited. Detection API pay-per-use for batch scenarios."
       }
     }
   },
@@ -528,7 +528,7 @@
       ]
     },
     "cta": {
-      "badge": "🔥 Limited Offer · 6 days left · Get 5 free Pro checks this month",
+      "badge": "Get 5 free Pro checks this month",
       "title": "Still have questions?",
       "subtitle": "Try 10 checks free first. Upgrade only if you find it useful. Zero risk, cancel anytime.",
       "button": "Start Free Check",
