@@ -3,7 +3,7 @@ export const runtime = 'edge'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { CheckCircle, Shield, Globe, Zap, XCircle, AlertTriangle, FileText } from 'lucide-react'
+import { CheckCircle, Shield, Globe, Zap, XCircle, AlertTriangle, FileText, Users, ShieldCheck } from 'lucide-react'
 import { Link } from '@/i18n/routing'
 import { Logo } from '@/components/Logo'
 import { setRequestLocale } from 'next-intl/server'
@@ -83,19 +83,22 @@ export default function BrasilPage() {
 
             {/* SocialProofBar */}
             <div className="mb-6 inline-flex flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-medium backdrop-blur">
-              <span className="inline-flex items-center">
-                <span className="mr-2 h-2 w-2 rounded-full bg-green-400 animate-pulse" />
-                <span className="text-white/80">已服务</span>
-                <span className="mx-1 font-bold text-white">2,000+</span>
-                <span className="text-white/80">卖家</span>
+              <span className="inline-flex items-center gap-1.5">
+                <Users className="w-4 h-4 text-green-400" />
+                <span className="text-white/80">2.000+</span>
+                <span className="font-bold text-white">vendedores atendidos</span>
               </span>
               <span className="hidden sm:inline text-white/30">|</span>
-              <span className="text-white/80">
-                拦截 <span className="font-bold text-white">340,000+</span> 次合规风险
+              <span className="inline-flex items-center gap-1.5">
+                <ShieldCheck className="w-4 h-4 text-green-400" />
+                <span className="text-white/80">340.000+ riscos de conformidade</span>
+                <span className="font-bold text-white">bloqueados</span>
               </span>
               <span className="hidden sm:inline text-white/30">|</span>
-              <span className="text-white/80">
-                覆盖 <span className="font-bold text-white">巴西/墨西哥</span>
+              <span className="inline-flex items-center gap-1.5">
+                <Globe className="w-4 h-4 text-green-400" />
+                <span className="text-white/80">Cobertura</span>
+                <span className="font-bold text-white">Brasil/México</span>
               </span>
             </div>
 

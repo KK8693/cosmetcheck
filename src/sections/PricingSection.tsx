@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 import SubscribeButton from '@/components/SubscribeButton'
 import { Link } from '@/i18n/routing'
 import { useTranslations, useLocale } from 'next-intl'
-import { AlertTriangle } from 'lucide-react'
+import { AlertTriangle, PiggyBank, Clock, TrendingUp } from 'lucide-react'
 
 export function PricingSection() {
   const t = useTranslations('pricing')
@@ -28,16 +28,25 @@ export function PricingSection() {
       num: t('stats.savedFine.num'),
       label: t('stats.savedFine.label'),
       desc: t('stats.savedFine.desc'),
+      icon: PiggyBank,
+      iconBg: 'bg-emerald-500/20',
+      iconColor: 'text-emerald-400',
     },
     {
       num: t('stats.savedTime.num'),
       label: t('stats.savedTime.label'),
       desc: t('stats.savedTime.desc'),
+      icon: Clock,
+      iconBg: 'bg-blue-500/20',
+      iconColor: 'text-blue-400',
     },
     {
       num: t('stats.approvalRate.num'),
       label: t('stats.approvalRate.label'),
       desc: t('stats.approvalRate.desc'),
+      icon: TrendingUp,
+      iconBg: 'bg-amber-500/20',
+      iconColor: 'text-amber-400',
     },
   ]
 
@@ -143,9 +152,15 @@ export function PricingSection() {
         {/* Stats row */}
         <div className="mt-12 md:mt-16 grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {stats.map((item, idx) => (
-            <div key={idx} className="bg-[#1A1A24] rounded-2xl border border-[#252530] p-6 text-center">
-              <p className="text-3xl md:text-4xl font-extrabold text-[#00A86B] mb-2">{item.num}</p>
-              <p className="font-semibold text-white mb-1">{item.label}</p>
+            <div
+              key={idx}
+              className="bg-[#1A1A24]/80 backdrop-blur-sm rounded-2xl border border-[#252530] p-6 text-center hover:border-[#00A86B]/30 transition-colors"
+            >
+              <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl ${item.iconBg} mb-4`}>
+                <item.icon className={`w-6 h-6 ${item.iconColor}`} />
+              </div>
+              <p className="text-3xl md:text-4xl font-extrabold text-white mb-1">{item.num}</p>
+              <p className="font-semibold text-white/90 mb-1">{item.label}</p>
               <p className="text-sm text-gray-400">{item.desc}</p>
             </div>
           ))}
