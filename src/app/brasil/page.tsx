@@ -3,7 +3,7 @@ export const runtime = 'edge'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { CheckCircle, Shield, Globe, Zap } from 'lucide-react'
+import { CheckCircle, Shield, Globe, Zap, XCircle, AlertTriangle, FileText } from 'lucide-react'
 import { Link } from '@/i18n/routing'
 import { Logo } from '@/components/Logo'
 import { setRequestLocale } from 'next-intl/server'
@@ -22,20 +22,23 @@ export const metadata: Metadata = {
 
 const cases = [
   {
-    tag: '❌ 禁用成分',
+    tag: '禁用成分',
     tagColor: 'text-red-300',
+    icon: XCircle,
     body: '“某美白霜含 Hydroquinone 2%，被 ANVISA 直接标红”',
     result: '→ 修改配方后 48h 重新上架',
   },
   {
-    tag: '⚠️ 标签违规',
+    tag: '标签违规',
     tagColor: 'text-amber-300',
+    icon: AlertTriangle,
     body: '“防晒产品未标注 SPF 值，海关扣留”',
     result: '→ AI 生成合规标签，0 罚款通关',
   },
   {
-    tag: '📝 文案误触',
+    tag: '文案误触',
     tagColor: 'text-blue-300',
+    icon: FileText,
     body: '“抗皱文案写“trata”，Listing 被下架 7 天”',
     result: '→ 替换后 CTR 提升 23%',
   },
@@ -154,7 +157,10 @@ export default function BrasilPage() {
                 key={idx}
                 className="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:shadow-md transition-shadow"
               >
-                <p className={`text-xs font-bold ${item.tagColor} mb-2`}>{item.tag}</p>
+                <p className={`text-xs font-bold ${item.tagColor} mb-2 flex items-center gap-1`}>
+                  <item.icon className="w-3.5 h-3.5" />
+                  {item.tag}
+                </p>
                 <p className="text-sm text-gray-700 leading-relaxed mb-2">{item.body}</p>
                 <p className="text-xs text-green-600 font-semibold">{item.result}</p>
               </div>

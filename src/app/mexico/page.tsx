@@ -3,7 +3,7 @@ export const runtime = 'edge'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { CheckCircle, Shield, Globe, Zap } from 'lucide-react'
+import { CheckCircle, Shield, Globe, Zap, XCircle, AlertTriangle, FileText } from 'lucide-react'
 import { Link } from '@/i18n/routing'
 import { Logo } from '@/components/Logo'
 import { setRequestLocale } from 'next-intl/server'
@@ -22,22 +22,25 @@ export const metadata: Metadata = {
 
 const cases = [
   {
-    tag: '❌ Ingrediente prohibido',
+    tag: 'Ingrediente prohibido',
     tagColor: 'text-red-300',
-    body: '"Crema antiarrugas con ácido retinoico al 0.5% — retirada del mercado por COFEPRIS"',
-    result: '→ Reformulado con retinol autorizado, aprobado en 5 días',
+    icon: XCircle,
+    body: '\"Crema antiarrugas con \u00e1cido retinoico al 0.5% \u2014 retirada del mercado por COFEPRIS\"',
+    result: '\u2192 Reformulado con retinol autorizado, aprobado en 5 d\u00edas',
   },
   {
-    tag: '⚠️ Error de etiqueta',
+    tag: 'Error de etiqueta',
     tagColor: 'text-amber-300',
-    body: '"Protector solar sin NOM-189 indicaciones — bloqueado en aduana"',
-    result: '→ Se generó etiqueta NOM compatible, liberación inmediata',
+    icon: AlertTriangle,
+    body: '\"Protector solar sin NOM-189 indicaciones \u2014 bloqueado en aduana\"',
+    result: '\u2192 Se gener\u00f3 etiqueta NOM compatible, liberaci\u00f3n inmediata',
   },
   {
-    tag: '📝 Copy no conforme',
+    tag: 'Copy no conforme',
     tagColor: 'text-blue-300',
-    body: '"Listing con anti-arrugas — denunciado por profeco"',
-    result: '→ Cambiado a "revitalizante", ventas +18% sin riesgo',
+    icon: FileText,
+    body: '\"Listing con anti-arrugas \u2014 denunciado por profeco\"',
+    result: '\u2192 Cambiado a \"revitalizante\", ventas +18% sin riesgo',
   },
 ]
 
@@ -154,7 +157,10 @@ export default function MexicoPage() {
                 key={idx}
                 className="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:shadow-md transition-shadow"
               >
-                <p className={`text-xs font-bold ${item.tagColor} mb-2`}>{item.tag}</p>
+                <p className={`text-xs font-bold ${item.tagColor} mb-2 flex items-center gap-1`}>
+                  <item.icon className="w-3.5 h-3.5" />
+                  {item.tag}
+                </p>
                 <p className="text-sm text-gray-700 leading-relaxed mb-2">{item.body}</p>
                 <p className="text-xs text-green-600 font-semibold">{item.result}</p>
               </div>

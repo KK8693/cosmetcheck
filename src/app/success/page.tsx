@@ -72,7 +72,7 @@ function SuccessContent() {
         </div>
         
         <h1 className="text-3xl font-bold text-white mb-4">
-          {status === 'confirmed' ? '🎉 订阅成功！' : '✅ 支付已完成'}
+          {status === 'confirmed' ? '订阅成功！' : '支付已完成'}
         </h1>
         
         <p className="text-lg text-white/80 mb-8">

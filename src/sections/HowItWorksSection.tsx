@@ -1,6 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+import { ClipboardList, Search, Sparkles } from 'lucide-react'
 
 export function HowItWorksSection() {
   const t = useTranslations('howItWorks')
@@ -10,19 +11,19 @@ export function HowItWorksSection() {
       step: '01',
       title: t('step1Title'),
       desc: t('step1Desc'),
-      icon: '📋',
+      Icon: ClipboardList,
     },
     {
       step: '02',
       title: t('step2Title'),
       desc: t('step2Desc'),
-      icon: '🔍',
+      Icon: Search,
     },
     {
       step: '03',
       title: t('step3Title'),
       desc: t('step3Desc'),
-      icon: '✨',
+      Icon: Sparkles,
     },
   ]
 
@@ -44,7 +45,9 @@ export function HowItWorksSection() {
                 {item.step}
               </div>
               <div className="relative pt-8">
-                <div className="text-4xl mb-4">{item.icon}</div>
+                <div className="mb-4">
+                  <item.Icon className="w-10 h-10 text-[#0A4D8C]" />
+                </div>
                 <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
                 <p className="text-gray-400">{item.desc}</p>
               </div>

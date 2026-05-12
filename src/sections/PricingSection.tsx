@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import SubscribeButton from '@/components/SubscribeButton'
 import { Link } from '@/i18n/routing'
 import { useTranslations, useLocale } from 'next-intl'
+import { AlertTriangle } from 'lucide-react'
 
 export function PricingSection() {
   const t = useTranslations('pricing')
@@ -115,8 +116,9 @@ export function PricingSection() {
               <p className="text-sm text-gray-400 mb-2">{t('pro.desc')}</p>
               <p className="text-xs text-gray-500 mb-4">{t('pro.taxNote')}</p>
               <div className="mb-6 rounded-lg bg-red-900/20 border border-red-800/30 p-3">
-                <p className="text-red-400 text-sm font-medium">
-                  ⚠️ {t('pro.warning', { months })}
+                <p className="text-red-400 text-sm font-medium flex items-center gap-2">
+                  <AlertTriangle className="w-4 h-4 flex-shrink-0" />
+                  {t('pro.warning', { months })}
                 </p>
               </div>
               <ul className="space-y-3 mb-8">

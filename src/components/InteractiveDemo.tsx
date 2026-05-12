@@ -6,6 +6,8 @@ import { Button } from './ui/button'
 import { Label } from './ui/label'
 import { Card, CardContent } from './ui/card'
 
+import { Play, RotateCcw } from 'lucide-react'
+
 const DEMO_INGREDIENTS = 'Aqua, Glycerin, Niacinamide, Hydroquinone, Parfum'
 
 type Step = 'idle' | 'scanning' | 'violation' | 'fixed'
@@ -98,17 +100,17 @@ export function InteractiveDemo() {
               {step === 'idle' ? (
                 <Button
                   onClick={runDemo}
-                  className="w-full bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold py-3"
+                  className="w-full bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold py-3 flex items-center justify-center gap-2"
                 >
-                  ▶️ {t('runDemo')}
+                  <Play className="w-4 h-4" /> {t('runDemo')}
                 </Button>
               ) : (
                 <Button
                   onClick={resetDemo}
                   variant="outline"
-                  className="w-full font-semibold border-[#0A4D8C] text-white hover:bg-[#0A4D8C]/20"
+                  className="w-full font-semibold border-[#0A4D8C] text-white hover:bg-[#0A4D8C]/20 flex items-center justify-center gap-2"
                 >
-                  🔄 {t('resetDemo')}
+                  <RotateCcw className="w-4 h-4" /> {t('resetDemo')}
                 </Button>
               )}
 

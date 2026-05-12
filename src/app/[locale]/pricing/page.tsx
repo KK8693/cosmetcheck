@@ -5,7 +5,7 @@ export const runtime = 'edge'
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { Check, X } from 'lucide-react'
+import { Check, X, AlertTriangle } from 'lucide-react'
 import SubscribeButton from '@/components/SubscribeButton'
 import { Link } from '@/i18n/routing'
 import { useTranslations, useLocale } from 'next-intl'
@@ -178,8 +178,9 @@ export default function PricingPage() {
                 </div>
                 <p className="text-sm text-gray-400 mb-4">{desc}</p>
                 <div className="mb-6 rounded-lg bg-red-900/20 border border-red-800/30 p-3">
-                  <p className="text-red-400 text-sm font-medium">
-                    ⚠️ {proCard.warning}
+                  <p className="text-red-400 text-sm font-medium flex items-center gap-2">
+                    <AlertTriangle className="w-4 h-4 flex-shrink-0" />
+                    {proCard.warning}
                   </p>
                 </div>
                 <ul className="space-y-3 mb-8">

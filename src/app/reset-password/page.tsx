@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { CheckCircle } from 'lucide-react'
 
 export default function ResetPasswordPage() {
   const router = useRouter()
@@ -95,7 +96,7 @@ export default function ResetPasswordPage() {
         <CardContent>
           {success ? (
             <div className="text-center py-4">
-              <div className="text-4xl mb-4">✅</div>
+              <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
               <p className="text-green-600 font-medium">密码更新成功！</p>
               <p className="text-gray-500 text-sm mt-2">正在跳转到登录页面...</p>
             </div>

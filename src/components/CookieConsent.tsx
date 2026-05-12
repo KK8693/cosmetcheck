@@ -34,7 +34,7 @@ export function CookieConsent() {
     <div className="fixed bottom-4 right-4 z-50 max-w-sm">
       <Card className="shadow-xl border-2 border-blue-100">
         <CardContent className="p-4">
-          <h3 className="font-semibold text-gray-900 mb-2">🍪 Cookie 使用</h3>
+          <h3 className="font-semibold text-gray-900 mb-2">Cookie 使用</h3>
           <p className="text-sm text-gray-600 mb-4">
             我们使用必要的 Cookie 来保持您登录。如需启用分析 Cookie，我们会尊重您的选择。
           </p>
