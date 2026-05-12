@@ -1,7 +1,6 @@
 'use client'
 
-import { usePathname, useRouter } from 'next/navigation'
-import { routing } from '@/i18n/routing'
+import { usePathname, useRouter } from '@/i18n/routing'
 import { Globe } from 'lucide-react'
 import { useLocale } from 'next-intl'
 
@@ -20,14 +19,7 @@ export function LanguageSwitcher() {
   const pathname = usePathname()
 
   const handleChange = (newLocale: Locale) => {
-    // pathname is the FULL path including locale prefix, e.g. /zh/pricing
-    // Strip current locale prefix to get the path without locale
-    const pathWithoutLocale = pathname.replace(/^\/(zh|en|pt-BR|es-MX)(\/|$)/, '/') || '/'
-
-    // Always prepend new locale prefix for explicit and reliable navigation
-    const newPath = `/${newLocale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`
-
-    router.replace(newPath)
+    router.replace(pathname, { locale: newLocale })
   }
 
   return (

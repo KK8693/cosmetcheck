@@ -1,5 +1,3 @@
-import { Inter, Space_Grotesk, DM_Sans } from 'next/font/google'
-import '../globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { AuthProvider } from '@/contexts/AuthContext'
 import { CookieConsent } from '@/components/CookieConsent'
@@ -9,24 +7,8 @@ import { getMessages, setRequestLocale } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
 import { notFound } from 'next/navigation'
 
-// Force dynamic rendering for Cloudflare Pages compatibility
-export const dynamic = 'force-dynamic'
 // Required for Cloudflare Pages
 export const runtime = 'edge'
-
-const inter = Inter({ subsets: ['latin'], display: 'swap', preload: true })
-const spaceGrotesk = Space_Grotesk({ 
-  subsets: ['latin'], 
-  display: 'swap', 
-  preload: true,
-  variable: '--font-display',
-})
-const dmSans = DM_Sans({ 
-  subsets: ['latin'], 
-  display: 'swap', 
-  preload: true,
-  variable: '--font-body',
-})
 
 export default async function LocaleLayout({
   children,
@@ -85,29 +67,25 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
-      <body className={`${inter.className} ${spaceGrotesk.variable} ${dmSans.variable}`}>
-        <NextIntlClientProvider messages={messages}>
-          <ThemeProvider
-              attribute="class"
-              defaultTheme="dark"
-              enableSystem
-              disableTransitionOnChange
-            >
-              <AuthProvider>
-                <Navbar />
-                {children}
-                <CookieConsent />
-              </AuthProvider>
-            </ThemeProvider>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <NextIntlClientProvider messages={messages}>
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <AuthProvider>
+              <Navbar />
+              {children}
+              <CookieConsent />
+            </AuthProvider>
+          </ThemeProvider>
+      </NextIntlClientProvider>
+    </>
   )
 }
