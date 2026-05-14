@@ -1,0 +1,101 @@
+num,name_pt,name_zh,cas,ec
+538,"Gás residual (petróleo), do separador da nafta do reforming catalítico, se contiver > 0,1 % (m/m) de butadieno",催化重整石脑油分离器残余气（含丁二烯>0.1% m/m）,68478-27-3,270-807-2
+539,"Gás residual (petróleo), do estabilizador de nafta do reforming catalítico, se contiver > 0,1 % (m/m) de butadieno",催化重整石脑油稳定塔残余气（含丁二烯>0.1% m/m）,68478-28-4,270-808-8
+540,"Gás residual (petróleo), do separador da unidade de tratamento com hidrogênio de destilados de cracking, se contiver > 0,1 % (m/m) de butadieno",裂化馏分加氢处理装置分离器残余气（含丁二烯>0.1% m/m）,68478-29-5,270-809-3
+541,"Gás residual (petróleo), do separador da nafta de destilação directa hidrogenodessulfurizada, se contiver > 0,1 % (m/m) de butadieno",直馏加氢脱硫石脑油分离器残余气（含丁二烯>0.1% m/m）,68478-30-8,270-810-9
+542,"Gás residual (petróleo), saturado de várias origens, rico em C4, se contiver > 0,1 % (m/m) de butadieno",多来源饱和石油残余气（富C4，含丁二烯>0.1% m/m）,68478-32-0,270-813-5
+543,"Gás residual (petróleo), saturado da unidade recuperação de gases, rico em C1-2, se contiver > 0,1 % (m/m) de butadieno",气体回收装置饱和残余气（富C1-2，含丁二烯>0.1% m/m）,68478-33-1,270-814-0
+544,"Gás residual (petróleo), do cracker térmico dos resíduos de vácuo, se contiver > 0,1 % (m/m) de butadieno",真空残渣热裂化装置残余气（含丁二烯>0.1% m/m）,68478-34-2,270-815-6
+545,"Hidrocarbonetos, ricos em C3-4, destilado do petróleo, se contiverem > 0,1 % (m/m) de butadieno",石油馏分（富C3-4，含丁二烯>0.1% m/m）,68512-91-4,270-990-9
+546,"Gases (petróleo), de cabeça do estabilizador do reforming catalítico da nafta de destilação directa, se contiverem > 0,1 % (m/m) de butadieno",直馏石脑油催化重整稳定塔塔顶气（含丁二烯>0.1% m/m）,68513-14-4,270-999-8
+547,"Gases (petróleo), do desexanizador da nafta de destilação directa, se contiverem > 0,1 % (m/m) de butadieno",直馏石脑油脱己烷塔气（含丁二烯>0.1% m/m）,68513-15-5,271-000-8
+548,"Gases (petróleo), do despropanizador de um processo de hidrocracking, ricos em hidrocarbonetos, se contiverem > 0,1 % (m/m) de butadieno",加氢裂化脱丙烷塔气（富烃，含丁二烯>0.1% m/m）,68513-16-6,271-001-3
+549,"Gases (petróleo), do estabilizador da nafta leve de destilação directa, se contiverem > 0,1 % (m/m) de butadieno",直馏轻石脑油稳定塔气（含丁二烯>0.1% m/m）,68513-17-7,271-002-9
+550,"Gases (petróleo), do tanque de flash a alta pressão do efluente do reformer, se contiverem > 0,1 % (m/m) de butadieno",重整流出物高压闪蒸罐气（含丁二烯>0.1% m/m）,68513-18-8,271-003-4
+551,"Gases (petróleo), do tanque de flash a baixa pressão do efluente do reformer, se contiverem > 0,1 % (m/m) de butadieno",重整流出物低压闪蒸罐气（含丁二烯>0.1% m/m）,68513-19-9,271-005-5
+552,"Resíduos (petróleo), do splitter da alquilação, ricos em C4, se contiverem > 0,1 % (m/m) de butadieno",烷基化分馏塔残渣（富C4，含丁二烯>0.1% m/m）,68513-66-6,271-010-2
+553,"Hidrocarbonetos, C1-4, se contiverem > 0,1 % (m/m) de butadieno",烃类（C1-4，含丁二烯>0.1% m/m）,68514-31-8,271-032-2
+554,"Hidrocarbonetos, C1-4, tratados (sweetened), se contiverem > 0,1 % (m/m) de butadieno",精制烃类（C1-4，含丁二烯>0.1% m/m）,68514-36-3,271-038-5
+555,"Gases (petróleo), da destilação de gás de refinaria, se contiverem > 0,1 % (m/m) de butadieno",炼厂气蒸馏气（含丁二烯>0.1% m/m）,68527-15-1,271-258-1
+556,"Hidrocarbonetos, C1-3, se contiverem > 0,1 % (m/m) de butadieno",烃类（C1-3，含丁二烯>0.1% m/m）,68527-16-2,271-259-7
+557,"Hidrocarbonetos, C1-4, fração do desbutanizador, se contiverem > 0,1 % (m/m) de butadieno",烃类（C1-4，脱丁烷塔馏分，含丁二烯>0.1% m/m）,68527-19-5,271-261-8
+558,"Gases (petróleo), de cabeça do despentanizador da unidade de tratamento com hidrogênio da unidade de benzeno, se contiverem > 0,1 % (m/m) de butadieno",苯装置加氢处理单元脱戊烷塔塔顶气（含丁二烯>0.1% m/m）,68602-82-4,271-623-5
+559,"Gases (petróleo), C1-5, húmidos, se contiverem > 0,1 % (m/m) de butadieno",湿石油气（C1-5，含丁二烯>0.1% m/m）,68602-83-5,271-624-0
+560,"Gases (petróleo), da coluna de absorção secundária, do fracionador dos produtos de cabeça do cracker catalítico de leito fluidizado, se contiverem > 0,1 % (m/m) de butadieno",流化床催化裂化塔顶产品分馏塔二次吸收塔气（含丁二烯>0.1% m/m）,68602-84-6,271-625-6
+561,"Hidrocarbonetos, C2-4, se contiverem > 0,1 % (m/m) de butadieno",烃类（C2-4，含丁二烯>0.1% m/m）,68606-25-7,271-734-9
+562,"Hidrocarbonetos, C3, se contiverem > 0,1 % (m/m) de butadieno",烃类（C3，含丁二烯>0.1% m/m）,68606-26-8,271-735-4
+563,"Gases (petróleo), de alimentação da alquilação, se contiverem > 0,1 % (m/m) de butadieno",烷基化进料气（含丁二烯>0.1% m/m）,68606-27-9,271-737-5
+564,"Gases (petróleo), do fracionamento dos produtos de cauda do despropanizador, se contiverem > 0,1 % (m/m) de Butadieno",脱丙烷塔塔底产品分馏气（含丁二烯>0.1% m/m）,68606-34-8,271-742-2
+565,"Produtos petrolíferos, gases de refinaria, se contiverem > 0,1 % (m/m) de butadieno",石油产品、炼厂气（含丁二烯>0.1% m/m）,68607-11-4,271-750-6
+566,"Gases (petróleo), do separador de baixa pressão do hidrocracking, se contiverem > 0,1 % (m/m) de butadieno",加氢裂化低压分离器气（含丁二烯>0.1% m/m）,68783-06-2,272-182-1
+567,"Gases (petróleo), de mistura gases da refinaria, se contiverem > 0,1 % (m/m) de butadieno",炼厂混合气（含丁二烯>0.1% m/m）,68783-07-3,272-183-7
+568,"Gases (petróleo), do cracking catalítico, se contiverem > 0,1 % (m/m) de butadieno",催化裂化气（含丁二烯>0.1% m/m）,68783-64-2,272-203-4
+569,"Gases (petróleo), C2-4, tratados (sweetened), se contiverem > 0,1 % (m/m) de butadieno",精制石油气（C2-4，含丁二烯>0.1% m/m）,68783-65-3,272-205-5
+570,"Gases (petróleo), de refinaria, se contiverem > 0,1 % (m/m) de butadieno",炼厂气（含丁二烯>0.1% m/m）,68814-67-5,272-338-9
+571,"Gases (petróleo), do separador dos produtos do platformer, se contiverem > 0,1 % (m/m) de butadieno",铂重整产品分离器气（含丁二烯>0.1% m/m）,68814-90-4,272-343-6
+572,"Gases (petróleo), estabilizador para o despentanizador de querosene com enxofre tratado com hidrogênio, se contiverem > 0,1 % (m/m) de butadieno",加氢脱硫煤油脱戊烷塔稳定塔气（含丁二烯>0.1% m/m）,68911-58-0,272-775-5
+573,"Gases (petróleo), tanque de expansão súbita para querosene com enxofre tratado com hidrogênio, se contiverem > 0,1 % (m/m) de butadieno",加氢脱硫煤油急骤膨胀罐气（含丁二烯>0.1% m/m）,68911-59-1,-
+574,"Gases (petróleo), do fracionamento de petróleo bruto, se contiverem > 0,1 % (m/m) de butadieno",原油分馏气（含丁二烯>0.1% m/m）,68918-99-0,272-871-7
+575,"Gases (petróleo), do desexanizador, se contiverem > 0,1 % (m/m) de butadieno",脱己烷塔气（含丁二烯>0.1% m/m）,68919-00-6,272-872-2
+576,"Gases (petróleo), do stripper do destilado da dessulfurização unifiner, se contiverem > 0,1 % (m/m) de butadieno",Unifiner脱硫馏分汽提塔气（含丁二烯>0.1% m/m）,68919-01-7,272-873-8
+577,"Gases (petróleo), do fracionamento dos produtos do cracker catalítico de leito fluidizado, se contiverem > 0,1 % (m/m) de butadieno",流化床催化裂化产品分馏气（含丁二烯>0.1% m/m）,68919-02-8,272-874-3
+578,"Gases (petróleo), da torre de absorção secundária da separação de gases de um cracker catalítico de leito fluidizado, se contiverem > 0,1 % (m/m) de butadieno",流化床催化裂化气体分离二次吸收塔气（含丁二烯>0.1% m/m）,68919-03-9,272-875-9
+579,"Gases (petróleo), do stripper da unidade de hidrogenodessulfurização de um destilado pesado, se contiverem > 0,1 % (m/m) de butadieno",重馏分加氢脱硫装置汽提塔气（含丁二烯>0.1% m/m）,68919-04-0,272-876-4
+580,"Gases (petróleo), do estabilizador do fracionamento de gasolina leve de destilação directa, se contiverem > 0,1 % (m/m) de butadieno",直馏轻汽油稳定塔气（含丁二烯>0.1% m/m）,68919-05-1,272-878-5
+581,"Gases (petróleo), do stripper da unidade de dessulfurização unifiner de nafta, se contiverem > 0,1 % (m/m) de butadieno",石脑油Unifiner脱硫装置汽提塔气（含丁二烯>0.1% m/m）,68919-06-2,272-879-0
+582,"Gases (petróleo), do estabilizador do platformer, produtos de cauda leves do fracionamento, se contiverem > 0,1 % (m/m) de butadieno",铂重整稳定塔气（分馏轻塔底产物，含丁二烯>0.1% m/m）,68919-07-3,272-880-6
+583,"Gases (petróleo), da coluna de pré-flash, da destilação de petróleo bruto, se contiverem > 0,1 % (m/m) de butadieno",原油蒸馏预闪蒸塔气（含丁二烯>0.1% m/m）,68919-08-4,272-881-1
+584,"Gases (petróleo), do reforming catalítico da nafta de destilação directa, se contiverem > 0,1 % (m/m) de butadieno",直馏石脑油催化重整气（含丁二烯>0.1% m/m）,68919-09-5,272-882-7
+585,"Gases (petróleo), do estabilizador da destilação directa, se contiverem > 0,1 % (m/m) de butadieno",直馏稳定塔气（含丁二烯>0.1% m/m）,68919-10-8,272-883-2
+586,"Gases (petróleo), do fracionador do resíduo atmosférico, se contiverem > 0,1 % (m/m) de butadieno",常压残渣分馏塔气（含丁二烯>0.1% m/m）,68919-11-9,272-884-8
+587,"Gases (petróleo), do stripper da unidade unifiner, se contiverem > 0,1 % (m/m) de butadieno",Unifiner装置汽提塔气（含丁二烯>0.1% m/m）,68919-12-0,272-885-3
+588,"Gases (petróleo), de cabeça do separador do cracker catalítico de leito fluidizado, se contiverem > 0,1 % (m/m) de butadieno",流化床催化裂化分离器塔顶气（含丁二烯>0.1% m/m）,68919-20-0,272-893-7
+589,"Gases (petróleo), do desbutanizador de nafta do cracking catalítico, se contiverem > 0,1 % (m/m) de butadieno",催化裂化石脑油脱丁烷塔气（含丁二烯>0.1% m/m）,68952-76-1,273-169-3
+590,"Gás residual (petróleo), do estabilizador do destilado e da nafta do cracking catalítico, se contiver > 0,1 % (m/m) de butadieno",催化裂化馏分及石脑油稳定塔残余气（含丁二烯>0.1% m/m）,68952-77-2,273-170-9
+592,"Gás residual (petróleo), do hidrogenodessulfurizador da nafta de destilação directa, se contiver > 0,1 % (m/m) de butadieno",直馏石脑油加氢脱硫装置残余气（含丁二烯>0.1% m/m）,68952-80-7,273-174-0
+593,"Gás residual (petróleo), de destilado do cracking térmico e da coluna de absorção de gasóleo e nafta, se contiver > 0,1 % (m/m) de butadieno",热裂化馏分及柴油/石脑油吸收塔残余气（含丁二烯>0.1% m/m）,68952-81-8,273-175-6
+594,"Gás residual (petróleo), do estabilizador do fracionamento de hidrocarbonetos do cracking térmico; coking de petróleo, se contiver > 0,1 % (m/m) de butadieno",热裂化烃分馏稳定塔残余气；石油焦化残余气（含丁二烯>0.1% m/m）,68952-82-9,273-176-1
+595,"Gases (petróleo), leves do steam-cracking, concentrado de butadieno, se contiverem > 0,1 % (m/m) de butadieno",蒸汽裂解轻气、丁二烯浓缩物（含丁二烯>0.1% m/m）,68955-28-2,273-265-5
+596,"Gases (petróleo), da coluna de absorção (leanoil), do fracionamento de produtos do cracker catalítico de leito fluidizado e do produto de cabeça do dessulfurizador de gasóleo, se contiverem > 0,1 % (m/m) de butadieno",流化床催化裂化产品分馏吸收塔（贫油）及柴油脱硫塔顶产品气（含丁二烯>0.1% m/m）,68955-33-9,273-269-7
+597,"Gases (petróleo), de cabeça do estabilizador do reformer catalítico da nafta de destilação directa, se contiverem > 0,1 % (m/m) de butadieno",直馏石脑油催化重整稳定塔塔顶气（含丁二烯>0.1% m/m）,68955-34-0,273-270-2
+598,"Gases (petróleo), da destilação e cracking catalítico de petróleo bruto, se contiverem > 0,1 % (m/m) de butadieno",原油蒸馏及催化裂化气（含丁二烯>0.1% m/m）,68989-88-8,273-563-5
+599,"Hidrocarbonetos, C4 , se contiverem > 0,1 % (m/m) de butadieno",烃类（C4，含丁二烯>0.1% m/m）,87741-01-3,289-339-5
+600,"Alcanos, C1-4, ricos em C3, se contiverem > 0,1 % (m/m) de butadieno",烷烃（C1-4，富C3，含丁二烯>0.1% m/m）,90622-55-2,292-456-4
+601,"Gases (petróleo), da lavagem de gasóleos com dietanolamina, se contiverem > 0,1 % (m/m) de butadieno",二乙醇胺洗涤柴油气（含丁二烯>0.1% m/m）,92045-15-3,295-397-2
+602,"Gases (petróleo), efluentes da hidrogenodessulfurização de gasóleo, se contiverem > 0,1 % (m/m) de butadieno",柴油加氢脱硫流出气（含丁二烯>0.1% m/m）,92045-16-4,295-398-8
+603,"Gases (petróleo), da purga de hidrogenodessulfurização, se contiverem > 0,1 % (m/m) de butadieno",加氢脱硫吹扫气（含丁二烯>0.1% m/m）,92045-17-5,295-399-3
+604,"Gases (petróleo), do tanque de flash do hidrogenador, se contiverem > 0,1 % (m/m) de butadieno",加氢反应器闪蒸罐气（含丁二烯>0.1% m/m）,92045-18-6,295-400-7
+605,"Gases (petróleo), residuais e de alta pressão do steam-cracking da nafta, se contiverem > 0,1 % (m/m) de butadieno",石脑油蒸汽裂解残余高压气（含丁二烯>0.1% m/m）,92045-19-7,295-401-2
+606,"Gases (petróleo), da viscorredução de resíduos, se contiverem > 0,1 % (m/m) de butadieno",残渣减粘裂化气（含丁二烯>0.1% m/m）,92045-20-0,295-402-8
+607,"Gases (petróleo), ricos em C3 do steam-cracker, se contiverem > 0,1 % (m/m) de butadieno",蒸汽裂解富C3气（含丁二烯>0.1% m/m）,92045-22-2,295-404-9
+608,"Hidrocarbonetos, C4, destilado do steam-cracker, se contiverem > 0,1 % (m/m) de butadieno",蒸汽裂解C4馏分（含丁二烯>0.1% m/m）,92045-23-3,295-405-4
+609,"Gases de petróleo, liquefeitos, tratados (sweetened), fração C4, se contiverem > 0,1 % (m/m) de butadieno",精制液化石油气（C4馏分，含丁二烯>0.1% m/m）,92045-80-2,295-463-0
+610,"Hidrocarbonetos, C4, sem 1,3-butadieno e isobuteno, se contiverem > 0,1 % (m/m) de butadieno",烃类（C4，无1,95465-89-7,306-004-1
+611,"Refinados (petróleo), fração C4 do steam-cracking extraída com acetato de amônio cuproso, C3-5 e C3-5 insaturados, sem butadieno, se contiverem > 0,1 % (m/m) de butadieno",蒸汽裂解C4馏分（亚铜铵萃取，C3-5不饱和，无丁二烯，含丁二烯>0.1% m/m）,97722-19-5,307-769-4
+612,"Benzo[d,e,f]criseno (=benzo[a]pireno)",苯并[d,50-32-8,200-028-5
+613,"Breu, alcatrão de carvão-petróleo, se contiver > 0,005 % (m/m) de benzo[a]pireno",煤焦油沥青（含苯并[a]芘>0.005% m/m）,68187-57-5,269-109-0
+614,"Destilados (carvão-petróleo), aromáticos polinucleares, se contiverem > 0,005 % (m/m) de benzo[a]pireno",煤焦油馏分（多环芳烃，含苯并[a]芘>0.005% m/m）,68188-48-7,269-159-3
+617,"Óleo de creosote, fração de acenafteno, sem acenafteno, se contiver > 0,005 % (m/m) de benzo[a]pireno",杂酚油（苊馏分，无苊，含苯并[a]芘>0.005% m/m）,90640-85-0,292-606-9
+618,"Breu, alcatrão de carvão, de temperatura baixa, se contiver > 0,005 % (m/m) de benzo[a]pireno",低温煤焦油沥青（含苯并[a]芘>0.005% m/m）,90669-57-1,292-651-4
+619,"Breu, alcatrão de carvão, de temperatura baixa, tratado termicamente, se contiver > 0,005 % (m/m) de benzo[a] pireno",热处理低温煤焦油沥青（含苯并[a]芘>0.005% m/m）,90669-58-2,292-653-5
+620,"Breu, alcatrão de carvão, de temperatura baixa, oxidado, se contiver > 0,005 % (m/m) de benzo[a]pireno",氧化低温煤焦油沥青（含苯并[a]芘>0.005% m/m）,90669-59-3,292-654-0
+621,"Resíduos de extração, lenhite, se contiverem > 0,005 % (m/m) de benzo[a]pireno",褐煤萃取残渣（含苯并[a]芘>0.005% m/m）,91697-23-3,294-285-0
+622,"Ceras parafínicas (carvão), alcatrão de lenhite de temperatura elevada, se contiverem > 0,005 % (m/m) de benzo [a]pireno",高温褐煤焦油石蜡（含苯并[a]芘>0.005% m/m）,92045-71-1,295-454-1
+623,"Ceras parafínicas (carvão), alcatrão de lenhite de temperatura elevada, tratadas com hidrogênio, se contiverem > 0,005 % (m/m) de benzo[a]pireno",加氢高温褐煤焦油石蜡（含苯并[a]芘>0.005% m/m）,92045-72-2,295-455-7
+624,"Desperdícios sólidos, do coking de breu de alcatrão de carvão, se contiverem > 0,005 % (m/m) de benzo[a]pireno",煤焦油沥青焦化固体废物（含苯并[a]芘>0.005% m/m）,92062-34-5,295-549-8
+625,"Breu, alcatrão de carvão, de temperatura elevada, secundário, se contiver > 0,005 % (m/m) de benzo[a]pireno",二次高温煤焦油沥青（含苯并[a]芘>0.005% m/m）,94114-13-3,302-650-3
+626,"Resíduos (carvão), da extração com solvente líquido, se contiverem > 0,005 % (m/m) de benzo[a]pireno",煤溶剂萃取残渣（含苯并[a]芘>0.005% m/m）,94114-46-2,302-681-2
+627,"Líquidos do carvão, solução de extração com solvente líquido, se contiverem > 0,005 % (m/m) de benzo[a]pireno",煤萃取液（含苯并[a]芘>0.005% m/m）,94114-47-3,302-682-8
+628,"Líquidos do carvão, da extração com solvente líquido, se contiverem > 0,005 % (m/m) de benzo[a]pireno",煤溶剂萃取液（含苯并[a]芘>0.005% m/m）,94114-48-4,302-683-3
+629,"Ceras parafínicas (carvão), de alcatrão de lenhite de temperatura elevada, tratadas com carvão ativado, se contiverem >0,005 % (m/m) de benzo[a]pireno",活性炭处理高温褐煤焦油石蜡（含苯并[a]芘>0.005% m/m）,97926-76-6,308-296-6
+630,"Ceras parafínicas (carvão), alcatrão de lenhite de temperatura elevada, tratadas com argila, se contiverem > 0,005 % (m/m) de benzo[a]pireno",粘土处理高温褐煤焦油石蜡（含苯并[a]芘>0.005% m/m）,97926-77-7,308-297-1
+631,"Ceras parafínicas (carvão), alcatrão de lenhite de temperatura elevada,tratadas com ácido silícico, se contiverem > 0,005 % (m/m) de benzo[a]pireno",硅酸处理高温褐煤焦油石蜡（含苯并[a]芘>0.005% m/m）,97926-78-8,-
+632,"Óleos de absorção, fração de hidrocarbonetos aromáticos bicíclicos e heterocíclicos, se contiverem > 0,005 % (m/m) de benzo[a]pireno",吸收油（双环及杂环芳烃馏分，含苯并[a]芘>0.005% m/m）,101316-45-4,309-851-5
+633,"Hidrocarbonetos aromáticos, C20-28, policíclicos, de pirólise de misturas breu de alcatrão de carvão-polietileno-polipropileno, se contiverem > 0,005 % (m/m) de benzo[a]pireno",煤焦油沥青-聚乙烯-聚丙烯混合裂解C20-28多环芳烃（含苯并[a]芘>0.005% m/m）,101794-74-5,309-956-6
+634,"Hidrocarbonetos aromáticos C20-28, policíclicos, de pirólise de misturas breu de alcatrão de carvão-polietileno, se contiverem > 0,005 % (m/m) de benzo[a]pireno",煤焦油沥青-聚乙烯混合裂解C20-28多环芳烃（含苯并[a]芘>0.005% m/m）,101794-75-6,309-957-1
+635,"Hidrocarbonetos aromáticos C20-28, policíclicos, da pirólise de misturas breu de alcatrão de carvão-poliestireno, se contiverem > 0,005 % (m/m) de benzo[a]pireno",煤焦油沥青-聚苯乙烯混合裂解C20-28多环芳烃（含苯并[a]芘>0.005% m/m）,101794-76-7,309-958-7
+636,"Breu, alcatrão de carvão, temperatura elevada, tratado pelo calor, se contiver > 0,005 % (m/m) de benzo[a]pireno",热处理高温煤焦油沥青（含苯并[a]芘>0.005% m/m）,121575-60-8,310-162-7
+637,"Dibenze[a,h]antraceno",二苯并[a,53-70-3,200-181-8
+638,Benzo[a]antraceno,苯并[a]蒽,56-55-3,200-280-6
+639,Benzo[e]pireno,苯并[e]芘,192-97-2,205-892-7
+640,Benzo[j]fluoranteno,苯并[j]荧蒽,205-82-3,205-910-3

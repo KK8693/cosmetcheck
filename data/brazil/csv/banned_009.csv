@@ -1,0 +1,101 @@
+num,name_pt,name_zh,cas,ec
+842,"Destilados (petróleo), pesados hidrogenados refinados com solvente, se contiverem > 3 % (m/m) de extrato DMSO",pesados hidrogenados refinados com solvente,97488-74-9,307-011-2
+843,"Óleos lubrificantes (petróleo), C18-27, do hidrocracking desparafinados com solvente, se contiverem > 3 % (m/m) de extrato DMSO",C18-27,97488-95-4,307-034-8
+844,"Hidrocarbonetos, C17-30, resíduo atmosférico desasfaltado com solvente tratado com hidrogênio, fracções leves da destilação, se contiverem > 3 % (m/m) de extrato DMSO",C17-30,97675-87-1,307-661-7
+845,"Hidrocarbonetos, C17-40, resíduo de destilação desasfaltado com solvente e tratado com hidrogênio, fracções leves da destilação de vácuo, se contiverem > 3 % (m/m) de extrato DMSO",C17-40,97722-06-0,307-755-8
+846,"Hidrocarbonetos, C13-27, naftênicos leves extraídos com solvente, se contiverem > 3 % (m/m) de extrato DMSO",C13-27,97722-09-3,307-758-4
+847,"Hidrocarbonetos, C14-29, naftênicos leves extraídos com solvente, se contiverem > 3 % (m/m) de extrato DMSO",C14-29,97722-10-6,307-760-5
+848,"Óleo residual das parafinas (petróleo), tratado com carvão ativado, se contiver > 3 % (m/m) de extrato DMSO",tratado com carvão ativado,97862-76-5,308-126-0
+849,"Óleo residual das parafinas (petróleo), tratado com ácido silícico, se contiver > 3 % (m/m) de extrato DMSO",tratado com ácido silícico,97862-77-6,308-127-6
+850,"Hidrocarbonetos, C27-42, desaromatizados, se contiverem > 3 % (m/m) de extrato DMSO",C27-42,97862-81-2,308-131-8
+851,"Hidrocarbonetos, C17-30, destilados tratados com hidrogênio, fracções leves da destilação, se contiverem > 3 % (m/m) de extrato DMSO",C17-30,97862-82-3,308-132-3
+852,"Hidrocarbonetos, C27-45, nafténico da destilação de vácuo, se contiverem > 3 % (m/m) de extrato DMSO",C27-45,97862-83-4,308-133-9
+853,"Hidrocarbonetos, C27-45, desaromatizados, se contiverem > 3 % (m/m) de extrato DMSO",C27-45,97926-68-6,308-287-7
+854,"Hidrocarbonetos, C20-58, tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",C20-58,97926-70-0,308-289-8
+855,"Hidrocarbonetos, C27-42, naftênicos, se contiverem > 3 % (m/m) de extrato DMSO",C27-42,97926-71-1,308-290-3
+856,"Extratos (petróleo), de solvente de destilados parafínicos leves, tratados com carvão ativado, se contiverem > 3 % (m/m) de extrato DMSO",de solvente de destilados parafínicos leves,100684-02-4,309-672-2
+857,"Extratos (petróleo), de solvente de destilados parafínicos leves, tratados com argila, se contiverem > 3 % (m/m) de extrato DMSO",de solvente de destilados parafínicos leves,100684-03-5,309-673-8
+858,"Extratos (petróleo), de solvente de gasóleo leve de vácuo, tratados com carvão ativado, se contiverem > 3 % (m/m) de extrato DMSO",de solvente de gasóleo leve de vácuo,100684-04-6,309-674-3
+859,"Extratos (petróleo), de solvente de gasóleo leve de vácuo, tratado com argila, se contiverem > 3 % (m/m) de extrato DMSO",de solvente de gasóleo leve de vácuo,100684-05-7,309-675-9
+860,"Óleos residuais (petróleo), desparafinados com solvente tratados com carvão ativado, se contiverem > 3 % (m/m) de extrato DMSO",desparafinados com solvente tratados com carvão ativado,100684-37-5,309-710-8
+861,"Óleos residuais (petróleo), desparafinados com solvente tratados com argila, se contiverem > 3 % (m/m) de extrato DMSO",desparafinados com solvente tratados com argila,100684-38-6,309-711-3
+862,"Óleos lubrificantes (petróleo), C>25, extraídos com solvente, desasfaltados, desparafinados, hidrogenados, se contiverem > 3 % (m/m) de extrato DMSO",C>25,101316-69-2,309-874-0
+863,"com solvente, desparafinados, hidrogenados, se contiverem > 3 % (m/m) de extrato DMSO",desparafinados,101316-70-5,-
+864,"Óleos lubrificantes (petróleo), C20-35, extraídos com solvente, desparafinados, hidrogenados, se contiverem > 3 % (m/m) de extrato DMSO",C20-35,101316-71-6,309-876-1
+865,"Óleos lubrificantes (petróleo), C24-50, extraídos com solvente, desparafinados, hidrogenados, se contiverem > 3 % (m/m) de extrato DMSO",C24-50,101316-72-7,309-877-7
+866,"Destilados (petróleo), médios tratados (sweetened), exceto se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",médios tratados (sweetened),64741-86-2,265-088-7
+867,"Gasóleos (petróleo), refinados com solvente, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",refinados com solvente,64741-90-8,265-092-9
+868,"Destilados (petróleo), médios refinados com solvente, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",médios refinados com solvente,64741-91-9,265-093-4
+869,"Gasóleos (petróleo), tratados com ácido, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",tratados com ácido,64742-12-7,265-112-6
+870,"Destilados (petróleo), médios tratados com ácido, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",médios tratados com ácido,64742-13-8,265-113-1
+871,"Destilados (petróleo), leves tratados com ácido, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",leves tratados com ácido,64742-14-9,265-114-7
+872,"Gasóleos (petróleo), neutralizados quimicamente, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",neutralizados quimicamente,64742-29-6,265-129-9
+873,"Destilados (petróleo), médios neutralizados quimicamente, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",médios neutralizados quimicamente,64742-30-9,265-130-4
+874,"Destilados (petróleo), médios tratados com argila, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",médios tratados com argila,64742-38-7,265-139-3
+875,"Destilados (petróleo), médios tratados com hidrogênio, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",médios tratados com hidrogênio,64742-46-7,265-148-2
+876,"Gasóleos (petróleo), hidrogenodessulfurizados, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",hidrogenodessulfurizados,64742-79-6,265-182-8
+877,"Destilados (petróleo), médios hidrogenodessulfurizados, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",médios hidrogenodessulfurizados,64742-80-9,265-183-3
+878,"Destilados (petróleo), do resíduo do fracionador do reformer catalítico, com intervalo de destilação elevado, exceto se se conhecerem todos os antecedentes de refinação",do resíduo do fracionador do reformer catalítico,68477-29-2,270-719-4
+879,"Destilados (petróleo), do resíduo do fracionador do reformer catalítico, com intervalo de destilação médio, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",do resíduo do fracionador do reformer catalítico,68477-30-5,270-721-5
+880,"Destilados (petróleo), do resíduo do fracionador do reformer catalítico, com intervalo de destilação baixo, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",do resíduo do fracionador do reformer catalítico,68477-31-6,270-722-0
+881,"Alcanos, C12-26 lineares e ramificados, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",C12-26 lineares e ramificados,90622-53-0,292-454-3
+882,"Destilados (petróleo), médios altamente refinados, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",médios altamente refinados,90640-93-0,292-615-8
+883,"Destilados (petróleo), do reformer catalítico, concentrado aromático pesado, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",do reformer catalítico,91995-34-5,295-294-2
+884,"Gasóleos, parafínicos, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",parafínicos,93924-33-5,300-227-8
+885,"Nafta (petróleo), pesada hidrogenodessulfurizada refinada com solvente, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",pesada hidrogenodessulfurizada refinada com solvente,97488-96-5,307-035-3
+886,"Hidrocarbonetos, destilado médio C16-20 tratado com hidrogênio, fracções leves da destilação, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena 97675– 85-9",destilado médio C16-20 tratado com hidrogênio,307-659-6,-
+887,"Hidrocarbonetos C12-20, parafínicos tratados com hidrogênio, fracções leves da destilação, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",parafínicos tratados com hidrogênio,97675-86-0,307-660-1
+888,"Hidrocarbonetos, C11-17, naftênicos leves extraídos com solvente, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",C11-17,97722-08-2,307-757-9
+889,"Gasóleos, tratados com hidrogênio, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",tratados com hidrogênio,97862-78-7,308-128-1
+890,"Destilados (petróleo), parafínicos leves tratados com carvão ativado, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",parafínicos leves tratados com carvão ativado,100683-97-4,309-667-5
+891,"Destilados (petróleo), parafínicos médios, tratados com carvão ativado, exceto se se conhecerem todos os antecedentes de  refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",parafínicos médios,100683-98-5,309-668-0
+892,"Destilados (petróleo), parafínicos, médios, tratados com argila, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi",parafínicos,100683-99-6,309-669-6
+893,"Massas lubrificantes, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena,74869-21-9,278-011-7
+894,"Parafinas brutas (petróleo), exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena,64742-61-6,265-165-5
+895,"Parafinas brutas (petróleo), tratadas com ácido, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",tratadas com ácido,90669-77-5,292-659-8
+896,"Parafinas brutas (petróleo), tratadas com argila, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",tratadas com argila,90669-78-6,292-660-3
+897,"Parafinas brutas (petróleo), tratadas com hidrogênio, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",tratadas com hidrogênio,92062-09-4,295-523-6
+898,"Parafinas brutas (petróleo), de ponto de fusão baixo, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",de ponto de fusão baixo,92062-10-7,295-524-1
+899,"Parafinas brutas (petróleo), de ponto de fusão baixo, tratadas com hidrogênio, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",de ponto de fusão baixo,92062-11-8,295-525-7
+900,"Parafinas brutas (petróleo), de ponto de fusão baixo, tratadas com carvão ativado, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",de ponto de fusão baixo,97863-04-2,308-155-9
+901,"Parafinas brutas (petróleo), de ponto de fusão baixo, tratadas com argila, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",de ponto de fusão baixo,97863-05-3,308-156-4
+902,"Parafinas brutas (petróleo), de ponto de fusão baixo, tratadas com ácido silícico, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",de ponto de fusão baixo,97863-06-4,308-158-5
+903,"Parafinas brutas (petróleo), tratadas com carvão ativado, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",tratadas com carvão ativado,100684-49-9,309-723-9
+904,"Petrolato, exceto se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena  até aqui",exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena,8009-03-8,232-373-2
+905,"Petrolato (petróleo), oxidado, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",oxidado,64743-01-7,265-206-7
+906,"Petrolato (petróleo), tratado com alumina, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",tratado com alumina,85029-74-9,285-098-5
+907,"Petrolato (petróleo), tratado com hidrogênio, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",tratado com hidrogênio,92045-77-7,295-459-9
+908,"Petrolato (petróleo), tratado com carvão ativado, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",tratado com carvão ativado,97862-97-0,308-149-6
+909,"Petrolato (petróleo), tratado com ácido silícico, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",tratado com ácido silícico,97862-98-1,308-150-1
+910,"Petrolato (petróleo), tratado com argila, exceto se se conhecerem todos os antecedentes de refinação e se se puder provar que a substância a partir da qual foi produzida não é cancerígena",tratado com argila,100684-33-1,309-706-6
+911,"Destilados (petróleo), leves do cracking catalítico",leves do cracking catalítico,64741-59-9,265-060-4
+912,"Destilados (petróleo), médios do cracking catalítico",médios do cracking catalítico,64741-60-2,265-062-5
+913,"Destilados (petróleo), leves do cracking térmico",leves do cracking térmico,64741-82-8,265-084-5
+914,"Destilados (petróleo), leves do cracking catalítico hidrogenodessulfurizados",leves do cracking catalítico hidrogenodessulfurizados,68333-25-5,269-781-5
+915,"Destilados (petróleo), nafta leve do steam- cracking",nafta leve do steam- cracking,68475-80-9,270-662-5
+916,"Destilados (petróleo), de destilados do cracking do steam-cracking de petróleo",de destilados do cracking do steam-cracking de petróleo,68477-38-3,270-727-8
+917,"Gasóleos (petróleo), do steam-cracking",do steam-cracking,68527-18-4,271-260-2
+918,"Destilados (petróleo), médios do cracking térmico hidrogenodessulfurizados",médios do cracking térmico hidrogenodessulfurizados,85116-53-6,285-505-6
+919,"Gasóleos (petróleo), do cracking térmico, hidrogenodessulfurizados",do cracking térmico,92045-29-9,295-411-7
+920,"Resíduos (petróleo), da nafta do steam-cracking hidrogenada",da nafta do steam-cracking hidrogenada,92062-00-5,295-514-7
+921,"Resíduos (petróleo), de destilação da nafta do steam-cracking",de destilação da nafta do steam-cracking,92062-04-9,295-517-3
+922,"Destilados (petróleo), leves do cracking catalítico, degradados termicamente",leves do cracking catalítico,92201-60-0,295-991-1
+923,"Resíduos (petróleo), de nafta aquecida do steam- cracking",de nafta aquecida do steam- cracking,93763-85-0,297-905-8
+924,"Gasóleos (petróleo), leves de vácuo, do cracking térmico hidrogenodessulfurizados",leves de vácuo,97926-59-5,308-278-8
+925,"Destilados (petróleo), do coker médios hidrogenodessulfurizados",do coker médios hidrogenodessulfurizados,101316-59-0,309-865-1
+926,"Destilados (petróleo), de resíduos pesados do steam-cracking",de resíduos pesados do steam-cracking,101631-14-5,309-939-3
+927,"Resíduos (petróleo), da coluna atmosférica",da coluna atmosférica,64741-45-3,265-045-2
+928,Gasóleos (petróleo) pesados de vácuo,减压重柴油,64741-57-7,265-058-3
+929,"Destilados (petróleo), pesados do cracking catalítico",pesados do cracking catalítico,64741-61-3,265-063-0
+930,"Óleos clarificados (petróleo), do cracking catalítico",do cracking catalítico,64741-62-4,265-064-6
+931,"Resíduos (petróleo), do fracionador do reformer catalítico",do fracionador do reformer catalítico,64741-67-9,265-069-3
+932,"Resíduos (petróleo), do hidrocracking",do hidrocracking,64741-75-9,265-076-1
+933,"Resíduos (petróleo), do cracking térmico",do cracking térmico,64741-80-6,265-081-9
+934,"Destilados (petróleo), pesados do cracking térmico",pesados do cracking térmico,64741-81-7,265-082-4
+935,hidrogênio,氢气,64742-59-2,265-162-9
+936,"Resíduos (petróleo), atmosféricos hidrogenodessulfurizados",atmosféricos hidrogenodessulfurizados,64742-78-5,265-181-2
+937,"Gasóleos (petróleo), de vácuo pesados hidrogenodessulfurizados",de vácuo pesados hidrogenodessulfurizados,64742-86-5,265-189-6
+938,"Resíduos (petróleo), do steam-cracking",do steam-cracking,64742-90-1,265-193-8
+939,"Resíduos (petróleo), atmosféricos",atmosféricos,68333-22-2,269-777-3
+940,"Óleos clarificados (petróleo), do cracking catalítico hidrogenodessulfurizados",do cracking catalítico hidrogenodessulfurizados,68333-26-6,269-782-0
+941,"Destilados (petróleo), médios do cracking catalítico hidrogenodessulfurizados",médios do cracking catalítico hidrogenodessulfurizados,68333-27-7,269-783-6

@@ -1,0 +1,101 @@
+num,name_pt,name_zh,cas,ec
+742,Tioacetamida,硫代乙酰胺,62-55-5,200-541-4
+743,"N,N-dimetilformamida",N-dimetilformamida,68-12-2,200-679-5
+744,Formamida,甲酰胺,75-12-7,200-842-0
+745,N-metilacetamida,N-甲基乙酰胺,79-16-3,201-182-6
+746,N-metilformamida,N-甲基甲酰胺,123-39-7,204-624-6
+747,"N,N-dimetilacetamida",N-dimetilacetamida,127-19-5,204-826-4
+748,Hexametiltriamida fosfórica,六甲基磷酰三胺,680-31-9,211-653-8
+749,Sulfato de dietila,硫酸二乙酯,64-67-5,200-589-6
+750,Sulfato de dimetila,硫酸二甲酯,77-78-1,201-058-1
+751,"1,3-Propanossultona",3-Propanossultona,1120-71-4,214-317-9
+752,Cloreto de dimetilssulfamoíla,二甲基硫酰胺氯,13360-57-1,236-412-4
+753,Sulfalato,砜拌磷,95-06-7,202-388-9
+754,"Mistura de 4-[[bis-(4- fluorofenil)metilsilil]metil]-4H-1,2,4-triazole e 1- [[bis-(4-fluorofenil)metilsilil]metil]-1H-1,2,4-triazol",2,-,403-250-2
+755,(+/-) (R)-2-[4-(6-cloroquinoxalina-2- iloxi)feniloxi]propionato de tetrahidrofurfurila,(+/-) (R)-2-[4-(6-氯喹喔啉-2-基氧基)苯氧基]丙酸四氢糠酯,119738-06-6,607-373-00-4
+756,"6-Hidroxi-1-(3-isopropoxipropil)-4-metil-2-oxo-5- [4-(fenilazo)fenilazo]-1,2-dihidro-3- piridinacarbonitrila",2-dihidro-3- piridinacarbonitrila,85136-74-9,400-340-3
+757,"Formiato de (6-(4-hidroxi-3-(2-metoxifenilazo)-2- sulfonato-7-naftilamino)-1,3,5-triazina-2,4- diil)bis[(amino-1-metiletil)amônio]",3,108225-03-2,402-060-7
+758,"(6-benzoilamino-3-sulfonato-2-naftilazo)-bifenil- 1,3',3'',1'''-tetraolato-o,o',o'',o''']cobre(II) de trissódio",3',-,413-590-3
+759,"Mistura de N-[3-hidroxi-2-(2- metilacriloilaminometoxi)propoximetil]-2- metilacrilamida e N-[2,3-bis-(2- metilacriloilaminometoxi)propoximetil]-2- metilacrilamida e metacrilamida e 2-metil-N-(2- metilacriloilaminometoximetil) -acrilamida e N- (2,3-dihidroxipropoximetil)-2-metilacrilamida",3-bis-(2- metilacriloilaminometoxi)propoximetil]-2- metilacrilamida e metacrilamida e 2-metil-N-(2- metilacriloilaminometoximetil) -acrilamida e N- (2,-,412-790-8
+760,"1,3,5-tris-[(2S e 2R)-2,3-epoxipropil]-1,3,5- triazina-2,4,6-(1H,3H,5H)-triona",3,59653-74-6,423-400-0
+761,Erionita,毛沸石,12510-42-8,650-012-00-0
+762,Amianto,石棉,12001-28-4,650-013-00-6
+763,Petróleo,石油,8002-05-9,232-298-5
+764,"Destilados (petróleo), pesados do hidrocraking, se contiverem > 3% (m/m) de extrato DMSO",pesados do hidrocraking,64741-76-0,265-077-7
+765,"Destilados (petróleo), parafinicos pesados refinados com solvente, se contiverem > 3% (m/m) de extrato DMSO",parafinicos pesados refinados com solvente,64741-88-4,265-090-8
+766,"Destilados (petróleo), parafinicos leves refinados com solvente, se contiverem > 3% (m/m) de extrato DMSO",parafinicos leves refinados com solvente,64741-89-5,265-091-3
+767,"Óleos  residuais (petróleo), desasfaltados com solvente, se contiverem > 3% (m/m) de extrato DMSO",desasfaltados com solvente,64741-95-3,265-096-0
+768,"Destilados (petróleo), naftenicos pesados refinados com solvente, se contiverem > 3% (m/m) de extrato DMSO",naftenicos pesados refinados com solvente,64741-96-4,265-097-6
+769,"Destilados (petróleo), naftênicos leves refinados com solvente, se contiverem > 3% (m/m) de extrato DMSO",naftênicos leves refinados com solvente,64741-97-5,265-098-1
+770,"Óleos residuais (petróleo), refinados com solvente, se contiverem > 3% (m/m) de extrato DMSO",refinados com solvente,64742-01-4,265-101-6
+771,"Destilados (petróleo), parafinicos pesados tratados com argila, se contiverem > 3% (m/m) de extrato DMSO",parafinicos pesados tratados com argila,64742-36-5,265-137-2
+772,"Destilados (petróleo), parafinicos leves tratados com argila, se contiverem > 3% (m/m) de extrato DMSO",parafinicos leves tratados com argila,64742-37-6,265-138-8
+773,"Óleos residuais (petróleo), tratados com argila, se contiverem > 3 % (m/m) de extrato DMSO",tratados com argila,64742-41-2,265-143-5
+774,"Destilados (petróleo), naftênicos pesados tratados com argila, se contiverem > 3 % (m/m) de extrato DMSO",naftênicos pesados tratados com argila,64742-44-5,265-146-1
+775,"Destilados (petróleo), naftênicos leves tratados com argila, se contiverem > 3 % (m/m) de extrato DMSO",naftênicos leves tratados com argila,64742-45-6,265-147-7
+776,"Destilados (petróleo), naftênicos pesados tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",naftênicos pesados tratados com hidrogênio,64742-52-5,265-155-0
+777,"Destilados (petróleo), naftênicos leves tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",naftênicos leves tratados com hidrogênio,64742-53-6,265-156-6
+778,"Destilados (petróleo), parafínicos pesados tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",parafínicos pesados tratados com hidrogênio,64742-54-7,265-157-1
+779,"Destilados (petróleo), parafínicos leves tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",parafínicos leves tratados com hidrogênio,64742-55-8,265-158-7
+780,"Destilados (petróleo), parafínicos leves desparafinados com solvente, se contiverem > 3",parafínicos leves desparafinados com solvente,64742-56-9,265-159-2
+781,"Óleos residuais (petróleo), tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",tratados com hidrogênio,64742-57-0,265-160-8
+782,"Óleos residuais (petróleo), desparafinados com solvente, se contiverem > 3 % (m/m) de extrato DMSO",desparafinados com solvente,64742-62-7,265-166-0
+783,"Destilados (petróleo), naftênicos pesados desparafinados com solvente, se contiverem > 3 % (m/m) de extrato DMSO",naftênicos pesados desparafinados com solvente,64742-63-8,265-167-6
+784,"Destilados (petróleo), naftênicos leves desparafinados com solvente, se contiverem > 3 % (m/m) de extrato DMSO",naftênicos leves desparafinados com solvente,64742-64-9,265-168-1
+785,"Destilados (petróleo), parafínicos pesados desparafinados com solvente, se contiverem > 3 % (m/m) de extrato DMSO",parafínicos pesados desparafinados com solvente,64742-65-0,265-169-7
+786,"Óleos residuais das parafinas (petróleo), se contiver > 3 % (m/m) de extrato DMSO",se contiver > 3 % (m/m) de extrato DMSO,64742-67-2,265-171-8
+787,"Óleos naftênicos (petróleo), pesados desparafinados cataliticamente, se contiverem > 3 % (m/m) de extrato DMSO",pesados desparafinados cataliticamente,64742-68-3,265-172-3
+788,"Óleos naftênicos (petróleo), leves desparafinados cataliticamente, se contiverem > 3 % (m/m) de extrato DMSO",leves desparafinados cataliticamente,64742-69-4,265-173-9
+789,"Óleos parafínicos (petróleo), pesados desparafinados cataliticamente, se contiverem > 3 % (m/m) de extrato DMSO",pesados desparafinados cataliticamente,64742-70-7,265-174-4
+790,"Óleos parafínicos (petróleo), leves desparafinados cataliticamente, se contiverem > 3 % (m/m) de extrato DMSO",leves desparafinados cataliticamente,64742-71-8,265-176-5
+791,"Óleos naftênicos (petróleo), fração pesada complexa desparafinada, se contiverem > 3 % (m/m) de extrato DMSO",fração pesada complexa desparafinada,64742-75-2,265-179-1
+792,"Óleos naftênicos (petróleo), fração leve complexa desparafinada, se contiverem > 3 % (m/m) de extrato DMSO",fração leve complexa desparafinada,64742-76-3,265-180-7
+793,"Extratos (petróleo), de solvente de destilados naftênicos pesados, concentrados em aromáticos, se contiverem > 3 % (m/m) de extrato DMSO",de solvente de destilados naftênicos pesados,68783-00-6,272-175-3
+794,"Extratos (petróleo), de solvente de um destilado parafínico pesado refinado com solvente, se contiverem > 3 % (m/m) de extrato DMSO",de solvente de um destilado parafínico pesado refinado com solvente,68783-04-0,272-180-0
+795,"Extratos (petróleo), de destilados parafínicos pesados, desasfaltados com solvente, se contiverem > 3 % (m/m) de extrato DMSO",de destilados parafínicos pesados,68814-89-1,272-342-0
+796,"Óleos lubrificantes (petróleo), C20-50, óleo base neutra tratado com hidrogênio, de viscosidade elevada, se contiverem > 3 % (m/m) de extrato DMSO",C20-50,72623-85-9,276-736-3
+797,"Óleos lubrificantes (petróleo), C15-30, óleo base neutro tratado com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",C15-30,72623-86-0,276-737-9
+798,"Óleos lubrificantes (petróleo), C20-50, óleo base neutro tratado com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",C20-50,72623-87-1,276-738-4
+799,"Óleos lubrificantes, se contiverem > 3 % (m/m) de extrato DMSO",se contiverem > 3 % (m/m) de extrato DMSO,74869-22-0,278-012-2
+800,"Destilados (petróleo), parafínicos pesados desparafinados complexos, se contiverem > 3 % (m/m) de extrato DMSO",parafínicos pesados desparafinados complexos,90640-91-8,292-613-7
+801,"Destilados (petróleo), parafínicos leves desparafinados complexos, se contiverem > 3 % (m/m) de extrato DMSO",parafínicos leves desparafinados complexos,90640-92-9,292-614-2
+802,"argila, se contiverem > 3 % (m/m) de extrato DMSO",se contiverem > 3 % (m/m) de extrato DMSO,90640-94-1,292-616-3
+803,"Hidrocarbonetos, C20-50, parafínicos pesados desparafinados com solvente, tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",C20-50,90640-95-2,292-617-9
+804,"Destilados (petróleo), parafínicos leves desparafinados com solvente, tratados com argila, se contiverem > 3 % (m/m) de extrato DMSO",parafínicos leves desparafinados com solvente,90640-96-3,292-618-4
+805,"Destilados (petróleo), parafínicos leves desparafinados com solvente, tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",parafínicos leves desparafinados com solvente,90640-97-4,292-620-5
+806,"Extratos (petróleo), de solvente de destilados naftênicos pesados, tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",de solvente de destilados naftênicos pesados,90641-07-9,292-631-5
+807,"Extratos (petróleo), de solvente de destilados parafínicos pesados, tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",de solvente de destilados parafínicos pesados,90641-08-0,292-632-0
+808,"Extratos (petróleo), de solvente de destilados parafínicos leves, tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",de solvente de destilados parafínicos leves,90641-09-1,292-633-6
+809,"Óleos residuais (petróleo), desparafinados com solvente tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",desparafinados com solvente tratados com hidrogênio,90669-74-2,292-656-1
+810,"Óleos-residuais (petróleo), desparafinados cataliticamente, se contiverem > 3 % (m/m) de extrato DMSO",desparafinados cataliticamente,91770-57-9,294-843-3
+811,"Destilados (petróleo), parafínicos pesados desparafinados, tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",parafínicos pesados desparafinados,91995-39-0,295-300-3
+812,"Destilados (petróleo), parafínicos leves desparafinados, tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",parafínicos leves desparafinados,91995-40-3,295-301-9
+813,"Destilados (petróleo), refinados com solvente do hidrocracking, desparafinados, se contiverem > 3 % (m/m) de extrato DMSO",refinados com solvente do hidrocracking,91995-45-8,295-306-6
+814,"Destilados (petróleo), naftênicos leves refinados com solvente, tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",naftênicos leves refinados com solvente,91995-54-9,295-316-0
+815,"Extratos (petróleo), de solvente de destilados parafínicos leves tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",de solvente de destilados parafínicos leves tratados com hidrogênio,91995-73-2,295-335-4
+816,"Extratos (petróleo), de solvente de destilados naftênicos leves, hidrogenodessulfurizados, se contiverem > 3 % (m/m) de extrato DMSO",de solvente de destilados naftênicos leves,91995-75-4,295-338-0
+817,"Extratos (petróleo), de solvente de destilados parafínicos leves, tratados com ácido, se contiverem > 3 % (m/m) de extrato DMSO",de solvente de destilados parafínicos leves,91995-76-5,295-339-6
+818,"Extratos (petróleo), de solvente de destilados parafínicos leves, hidrogenodessulfurizados, se contiverem >3 % (m/m) de extrato DMSO",de solvente de destilados parafínicos leves,91995-77-6,295-340-1
+819,"Extratos (petróleo), de solvente de gasóleo leve de vácuo, tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",de solvente de gasóleo leve de vácuo,91995-79-8,295-342-2
+820,"Óleos residuais (petróleo), tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",tratados com hidrogênio,92045-12-0,295-394-6
+821,"Óleos lubrificantes (petróleo), C17-35, extraídos com solvente, desparafinados, tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",C17-35,92045-42-6,295-423-2
+822,"não aromáticos desparafinados com solvente, se contiverem > 3 % (m/m) de extrato DMSO",se contiverem > 3 % (m/m) de extrato DMSO,92045-43-7,295-424-8
+823,"Óleos residuais (petróleo), desparafinados com solvente tratado com ácido e hidrocraqueado, se contiverem > 3 % (m/m) de extrato DMSO",desparafinados com solvente tratado com ácido e hidrocraqueado,92061-86-4,295-499-7
+824,"Óleos parafínicos (petróleo), pesados desparafinados refinados com solvente, se contiverem > 3 % (m/m) de extrato DMSO",pesados desparafinados refinados com solvente,92129-09-4,295-810-6
+825,"Extratos (petróleo), de solvente de destilados parafínicos pesados, tratados com argila, se contiverem > 3 % (m/m) de extrato DMSO",de solvente de destilados parafínicos pesados,92704-08-0,296-437-1
+826,"Óleos lubrificantes (petróleo), óleos base, parafínicos, se contiverem > 3 % (m/m) de extrato DMSO",óleos base,93572-43-1,297-474-6
+827,"Extratos (petróleo), de solvente de destilados naftênicos pesados, hidrogenodessulfurizados, se contiverem > 3 % (m//m) de extrato DMSO",de solvente de destilados naftênicos pesados,93763-10-1,297-827-4
+828,"Extratos (petróleo), de solvente de destilados parafínicos pesados desparafinados com solvente, hidrogenodessulfurizados, se contiverem > 3 % (m/m) de extrato DMSO",de solvente de destilados parafínicos pesados desparafinados com solvente,93763-11-2,297-829-5
+829,"Hidrocarbonetos, resíduos da destilação de parafínicos do cracking com desparafinados com solvente, se contiverem >3 % (m/m) de extrato DMSO",resíduos da destilação de parafínicos do cracking com desparafinados com solvente,93763-38-3,297-857-8
+830,"Óleo residual das parafinas (petróleo), tratado com ácido, se contiver > 3 % (m/m) de extrato DMSO",tratado com ácido,93924-31-3,300-225-7
+831,"Óleo residual das parafinas (petróleo), tratado com argila, se contiver > 3 % (m/m) de extrato DMSO",tratado com argila,93924-32-4,300-226-2
+832,"Hidrocarbonetos, C20-50, destilado de vácuo da hidrogenação do óleo residual, se contiverem > 3 % (m/m) de extrato DMSO",C20-50,93924-61-9,300-257-1
+833,"Destilados (petróleo), pesados tratados com hidrogênio refinados com solvente, hidrogenados, se contiverem > 3 % (m/m) de extrato DMSO",pesados tratados com hidrogênio refinados com solvente,94733-08-1,305-588-5
+834,"Destilados (petróleo), leves do hidrocracking refinados com solvente, se contiverem > 3 % (m/m) de extrato DMSO",leves do hidrocracking refinados com solvente,94733-09-2,305-589-0
+835,"Óleos lubrificantes (petróleo), C18-40, à base de destilado do hidrocracking desparafinado com solvente, se contiverem > 3 % (m/m) de extrato DMSO",C18-40,94733-15-0,305-594-8
+836,"Óleos lubrificantes (petróleo), C18-40, à base de refinado hidrogenado desparafinado com solvente, se contiverem > 3 % (m/m) de extrato DMSO",C18-40,94733-16-1,305-595-3
+837,"Hidrocarbonetos, C13-30, ricos em aromáticos, destilado nafténico extraído com solvente, se contiverem > 3 % (m/m) de extrato DMSO",C13-30,95371-04-3,305-971-7
+838,"Hidrocarbonetos, C16-32, ricos em aromáticos, destilado nafténico extraído com solvente, se contiverem > 3 % (m/m) de extrato DMSO",C16-32,95371-05-4,305-972-2
+839,"Hidrocarbonetos, C37-68, resíduos da destilação de vácuo tratados com hidrogênio desasfaltados desparafinados, se contiverem > 3 % (m/m) de extrato DMSO",C37-68,95371-07-6,305-974-3
+840,"Hidrocarbonetos, C37-65, resíduos da destilação de vácuo desasfaltados tratados com hidrogênio, se contiverem > 3 % (m/m) de extrato DMSO",C37-65,95371-08-7,305-975-9
+841,"Destilados (petróleo), leves do hidrocracking refinados com solvente, se contiverem > 3 % (m/m) de extrato DMSO",leves do hidrocracking refinados com solvente,97488-73-8,307-010-7

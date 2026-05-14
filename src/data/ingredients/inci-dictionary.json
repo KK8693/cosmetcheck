@@ -1,0 +1,381 @@
+{
+  "version": "1.0.0",
+  "description": "INCI 标准成分词库 - 用于成分解析和标准化",
+  "source": "INCI naming standards + CosmetCheck custom extensions",
+  "totalCount": 0,
+  "entries": {
+    "water": {
+      "inci": "Aqua",
+      "aliases": ["Water", "Eau", "水", "纯净水", "去离子水"],
+      "category": "base"
+    },
+    "glycerin": {
+      "inci": "Glycerin",
+      "aliases": ["Glycerol", "Glycerine", "甘油", "丙三醇", "Vegetable Glycerin"],
+      "category": "humectant"
+    },
+    "niacinamide": {
+      "inci": "Niacinamide",
+      "aliases": ["Nicotinamide", "Vitamin B3", "烟酰胺", "维生素B3", "尼克酰胺"],
+      "category": "actives"
+    },
+    "retinol": {
+      "inci": "Retinol",
+      "aliases": ["Vitamin A", "视黄醇", "维A醇", "维生素A", "Retinyl Palmitate", "Retinyl Acetate"],
+      "category": "actives",
+      "hasConcentration": true
+    },
+    "phenoxyethanol": {
+      "inci": "Phenoxyethanol",
+      "aliases": ["2-Phenoxyethanol", "苯氧乙醇", "乙二醇苯醚"],
+      "category": "preservative"
+    },
+    "ethylhexylglycerin": {
+      "inci": "Ethylhexylglycerin",
+      "aliases": ["Ethylhexyl Glycerin", "辛甘醇", "乙基己基甘油"],
+      "category": "preservative"
+    },
+    "paraben": {
+      "inci": "Methylparaben",
+      "aliases": ["Methyl Paraben", "对羟基苯甲酸甲酯", "羟苯甲酯", "Nipagin", "Propylparaben", "Butylparaben", "Ethylparaben", "Paraben"],
+      "category": "preservative",
+      "hasConcentration": true
+    },
+    "salicylic_acid": {
+      "inci": "Salicylic Acid",
+      "aliases": ["BHA", "Beta Hydroxy Acid", "水杨酸", "β-羟基酸", "2-Hydroxybenzoic Acid"],
+      "category": "actives",
+      "hasConcentration": true
+    },
+    "glycolic_acid": {
+      "inci": "Glycolic Acid",
+      "aliases": ["AHA", "Alpha Hydroxy Acid", "甘醇酸", "羟基乙酸", "α-羟基酸"],
+      "category": "actives",
+      "hasConcentration": true
+    },
+    "lactic_acid": {
+      "inci": "Lactic Acid",
+      "aliases": ["AHA", "Alpha Hydroxy Acid", "乳酸", "α-羟基丙酸"],
+      "category": "actives",
+      "hasConcentration": true
+    },
+    "formaldehyde": {
+      "inci": "Formaldehyde",
+      "aliases": ["Formalin", "Methanal", "甲醛", "福尔马林", "蚁醛"],
+      "category": "preservative",
+      "restricted": true
+    },
+    "hydroquinone": {
+      "inci": "Hydroquinone",
+      "aliases": ["HQ", "Quinol", "1,4-Benzenediol", "对苯二酚", "氢醌"],
+      "category": "actives",
+      "prohibited": true
+    },
+    "mercury": {
+      "inci": "Mercury",
+      "aliases": ["Hg", "Mercurochrome", "汞", "水银", "氯化汞"],
+      "category": "heavy_metal",
+      "prohibited": true
+    },
+    "lead": {
+      "inci": "Lead",
+      "aliases": ["Pb", "Lead Acetate", "铅", "醋酸铅", "氧化铅"],
+      "category": "heavy_metal",
+      "prohibited": true
+    },
+    "arsenic": {
+      "inci": "Arsenic",
+      "aliases": ["As", "Arsenic Trioxide", "砷", "三氧化二砷", "砒霜"],
+      "category": "heavy_metal",
+      "prohibited": true
+    },
+    "cadmium": {
+      "inci": "Cadmium",
+      "aliases": ["Cd", "Cadmium Sulfide", "镉", "硫化镉", "氧化镉"],
+      "category": "heavy_metal",
+      "prohibited": true
+    },
+    "corticosteroid": {
+      "inci": "Hydrocortisone",
+      "aliases": ["Cortisol", "Corticosteroid", "氢化可的松", "皮质醇", "倍他米松", "Betamethasone", "Prednisone"],
+      "category": "drug",
+      "prohibited": true
+    },
+    "tretinoin": {
+      "inci": "Tretinoin",
+      "aliases": ["Retinoic Acid", "All-Trans Retinoic Acid", "维甲酸", "视黄酸", "维A酸", "Retin-A"],
+      "category": "actives",
+      "prohibited": true
+    },
+    "hyaluronic_acid": {
+      "inci": "Sodium Hyaluronate",
+      "aliases": ["Hyaluronic Acid", "HA", "透明质酸", "玻尿酸", "Sodium Hyaluronate"],
+      "category": "humectant"
+    },
+    "ceramide": {
+      "inci": "Ceramide NP",
+      "aliases": ["Ceramide", "神经酰胺", "酰胺", "Ceramide 3", "Ceramide 6"],
+      "category": "actives"
+    },
+    "peptides": {
+      "inci": "Palmitoyl Pentapeptide-4",
+      "aliases": ["Peptides", "多肽", "胜肽", "Palmitoyl Pentapeptide", "Matrixyl"],
+      "category": "actives"
+    },
+    "vitamin_c": {
+      "inci": "Ascorbic Acid",
+      "aliases": ["Vitamin C", "L-Ascorbic Acid", "L-抗坏血酸", "维生素C", "左旋维C", "Ascorbyl Glucoside", "维C糖苷", "AA2G", "Ascorbyl Palmitate", "抗坏血酸棕榈酸酯"],
+      "category": "actives",
+      "hasConcentration": true
+    },
+    "vitamin_e": {
+      "inci": "Tocopherol",
+      "aliases": ["Vitamin E", "Tocopherol", "生育酚", "维生素E", "α-Tocopherol", "Alpha Tocopherol", "生育酚乙酸酯", "Tocopheryl Acetate"],
+      "category": "actives",
+      "hasConcentration": true
+    },
+    "vitamin_b3": {
+      "inci": "Niacinamide",
+      "aliases": ["Vitamin B3", "Niacinamide", "Nicotinamide", "烟酰胺", "维生素B3", "尼克酰胺"],
+      "category": "actives"
+    },
+    "vitamin_b5": {
+      "inci": "Panthenol",
+      "aliases": ["Vitamin B5", "Panthenol", "D-Panthenol", "Provitamin B5", "泛醇", "维生素B5", "D-泛醇", "Dexpanthenol"],
+      "category": "actives"
+    },
+    "vitamin_b6": {
+      "inci": "Pyridoxine",
+      "aliases": ["Vitamin B6", "Pyridoxine", "吡哆醇", "维生素B6", "Pyridoxine HCl"],
+      "category": "actives"
+    },
+    "vitamin_b7": {
+      "inci": "Biotin",
+      "aliases": ["Vitamin B7", "Biotin", "Vitamin H", "生物素", "维生素B7", "维生素H", "辅酶R"],
+      "category": "actives"
+    },
+    "vitamin_k": {
+      "inci": "Phytonadione",
+      "aliases": ["Vitamin K", "Phytonadione", "Menadione", "维生素K", "植物甲萘醌", "甲萘醌", "Vitamin K1", "Phylloquinone"],
+      "category": "actives"
+    },
+    "vitamin_d": {
+      "inci": "Cholecalciferol",
+      "aliases": ["Vitamin D", "Cholecalciferol", "Vitamin D3", "胆钙化醇", "维生素D3"],
+      "category": "actives"
+    },
+    "vitamin_f": {
+      "inci": "Linoleic Acid",
+      "aliases": ["Vitamin F", "Essential Fatty Acids", "EFAs", "亚油酸", "亚麻酸", "维生素F", "必需脂肪酸"],
+      "category": "actives"
+    },
+    "snail_mucin": {
+      "inci": "Snail Secretion Filtrate",
+      "aliases": ["Snail Mucin", "Snail Slime", "Snail Secretion", "蜗牛粘液", "蜗牛分泌物", "Snail Gel", "螺旋蜗牛分泌物"],
+      "category": "actives"
+    },
+    "centella": {
+      "inci": "Centella Asiatica Extract",
+      "aliases": ["Cica", "Centella", "积雪草", "Gotu Kola", "老虎草", "积雪草提取物", "Asiaticoside", "Madecassoside"],
+      "category": "actives"
+    },
+    "cica": {
+      "inci": "Centella Asiatica Extract",
+      "aliases": ["Cica", "积雪草", "小绿瓶", "Centella Asiatica", "老虎草", "Asiaticoside"],
+      "category": "actives"
+    },
+    "adenosine": {
+      "inci": "Adenosine",
+      "aliases": ["腺苷", "Adenosinum", "辅酶A前体"],
+      "category": "actives"
+    },
+    "collagen": {
+      "inci": "Hydrolyzed Collagen",
+      "aliases": ["胶原蛋白", "Collagen", "水解胶原蛋白", "Collagen Peptide", "Collagen Amino Acid"],
+      "category": "actives"
+    },
+    "elastic": {
+      "inci": "Elastin",
+      "aliases": ["弹性蛋白", "Elastin", "水解弹性蛋白", "Elastic Fiber"],
+      "category": "actives"
+    },
+    "squalane": {
+      "inci": "Squalane",
+      "aliases": ["角鲨烷", "Squalane", "植物角鲨烷", "Olive Squalane", "鲨烯", "角鲨烯"],
+      "category": "emollient"
+    },
+    "shea_butter": {
+      "inci": "Shea Butter",
+      "aliases": ["Shea Butter", "乳木果油", "牛油果树果脂", "Karite Butter", "雪亚脂"],
+      "category": "emollient"
+    },
+    "aloe_vera": {
+      "inci": "Aloe Barbadensis Leaf Juice",
+      "aliases": ["Aloe Vera", "芦荟", "芦荟胶", "芦荟汁", "Aloe Barbadensis", "库拉索芦荟"],
+      "category": "soothing"
+    },
+    "green_tea": {
+      "inci": "Camellia Sinensis Leaf Extract",
+      "aliases": ["Green Tea", "绿茶", "绿茶提取物", "茶多酚", "Camellia Sinensis", "EGCG"],
+      "category": "actives"
+    },
+    "tea_tree": {
+      "inci": "Melaleuca Alternifolia Leaf Oil",
+      "aliases": ["Tea Tree", "茶树", "茶树油", "Melaleuca", "澳洲茶树", "互生叶白千层"],
+      "category": "actives"
+    },
+    "propolis": {
+      "inci": "Propolis Extract",
+      "aliases": ["Propolis", "蜂胶", "蜂胶提取物", "Bee Propolis"],
+      "category": "actives"
+    },
+    "royal_jelly": {
+      "inci": "Royal Jelly Extract",
+      "aliases": ["Royal Jelly", "蜂王浆", "蜂王浆提取物", "蜂乳"],
+      "category": "actives"
+    },
+    "honey": {
+      "inci": "Honey Extract",
+      "aliases": ["Honey", "蜂蜜", "蜂蜜提取物", "蜂密", "Mel"],
+      "category": "humectant"
+    },
+    "bee_venom": {
+      "inci": "Bee Venom",
+      "aliases": ["蜂毒", "Bee Venom", "蜂毒肽", "Apitoxin", "Queen Bee Venom"],
+      "category": "actives"
+    },
+    "pearl": {
+      "inci": "Pearl Powder",
+      "aliases": ["Pearl", "珍珠", "珍珠粉", "Pearl Powder", "珍珠提取物", "珍珠母"],
+      "category": "actives"
+    },
+    "bird_nest": {
+      "inci": "Swiftlet Nest Extract",
+      "aliases": ["Bird's Nest", "燕窝", "金丝燕窝", "Swiftlet Nest", "燕窝提取物"],
+      "category": "actives"
+    },
+    "propylene_glycol": {
+      "inci": "Propylene Glycol",
+      "aliases": ["PG", "丙二醇", "1,2-丙二醇", "Propylene Glycol"],
+      "category": "humectant"
+    },
+    "butylene_glycol": {
+      "inci": "Butylene Glycol",
+      "aliases": ["BG", "丁二醇", "1,3-丁二醇", "Butylene Glycol"],
+      "category": "humectant"
+    },
+    "pentylene_glycol": {
+      "inci": "Pentylene Glycol",
+      "aliases": ["戊二醇", "1,5-戊二醇", "Pentylene Glycol", "Nipaguard DPG"],
+      "category": "humectant"
+    },
+    "caprylyl_glycol": {
+      "inci": "Caprylyl Glycol",
+      "aliases": ["辛甘醇", "辛基乙二醇", "Caprylyl Glycol", "1,2-Octanediol"],
+      "category": "humectant"
+    },
+    "arbutin": {
+      "inci": "Arbutin",
+      "aliases": ["Arbutin", "α-Arbutin", "熊果苷", "α-熊果苷", "Beta-Arbutin", "熊果素", "4-Hydroxyphenyl alpha-D-glucopyranoside"],
+      "category": "actives",
+      "hasConcentration": true
+    },
+    "kojic_acid": {
+      "inci": "Kojic Acid",
+      "aliases": ["Kojic Acid", "曲酸", "5-Hydroxy-2-hydroxymethyl-4-pyrone", "麴酸"],
+      "category": "actives",
+      "hasConcentration": true
+    },
+    "tranexamic_acid": {
+      "inci": "Tranexamic Acid",
+      "aliases": ["Tranexamic Acid", "传明酸", "氨甲环酸", "止血环酸", "TXA"],
+      "category": "actives"
+    },
+    "alpha_lipoic_acid": {
+      "inci": "Alpha Lipoic Acid",
+      "aliases": ["Alpha Lipoic Acid", "ALA", "硫辛酸", "α-硫辛酸", "Thioctic Acid"],
+      "category": "actives"
+    },
+    "resveratrol": {
+      "inci": "Resveratrol",
+      "aliases": ["Resveratrol", "白藜芦醇", "反转录酶", "Resvetratrol"],
+      "category": "actives"
+    },
+    "ferulic_acid": {
+      "inci": "Ferulic Acid",
+      "aliases": ["Ferulic Acid", "阿魏酸", "4-Hydroxy-3-methoxycinnamic Acid"],
+      "category": "actives"
+    },
+    "azelaic_acid": {
+      "inci": "Azelaic Acid",
+      "aliases": ["Azelaic Acid", "壬二酸", "杜鹃花酸", "Nonanedioic Acid"],
+      "category": "actives"
+    },
+    "benzoyl_peroxide": {
+      "inci": "Benzoyl Peroxide",
+      "aliases": ["Benzoyl Peroxide", "BPO", "过氧化苯甲酰", "过氧化二苯甲酰"],
+      "category": "actives",
+      "hasConcentration": true
+    },
+    "tretinoin": {
+      "inci": "Tretinoin",
+      "aliases": ["Tretinoin", "Retinoic Acid", "All-Trans Retinoic Acid", "维甲酸", "视黄酸", "维A酸", "Retin-A", "他扎罗汀", "阿达帕林"],
+      "category": "actives",
+      "prohibited": true
+    },
+    "hydrocortisone": {
+      "inci": "Hydrocortisone",
+      "aliases": ["Hydrocortisone", "皮质醇", "氢化可的松", "糖皮质激素", "Corticosteroid"],
+      "category": "drug",
+      "prohibited": true
+    },
+    "betamethasone": {
+      "inci": "Betamethasone",
+      "aliases": ["Betamethasone", "倍他米松", "地塞米松", "Corticosteroid", "糖皮质激素"],
+      "category": "drug",
+      "prohibited": true
+    },
+    "chlorpheniramine": {
+      "inci": "Chlorpheniramine",
+      "aliases": ["Chlorpheniramine", "氯苯那敏", "扑尔敏", "抗组胺药", "Antihistamine"],
+      "category": "drug",
+      "prohibited": true
+    },
+    "triclosan": {
+      "inci": "Triclosan",
+      "aliases": ["Triclosan", "三氯生", "2,4,4'-Trichloro-2'-hydroxydiphenyl Ether", "玉洁新"],
+      "category": "preservative",
+      "restricted": true
+    },
+    "chlorhexidine": {
+      "inci": "Chlorhexidine",
+      "aliases": ["Chlorhexidine", "氯己定", "洗必泰", "葡萄糖酸氯己定", "CHG"],
+      "category": "preservative",
+      "restricted": true
+    },
+    "benzophenone": {
+      "inci": "Benzophenone-3",
+      "aliases": ["Benzophenone-3", "Oxybenzone", "二苯酮-3", "防晒剂", "BP3"],
+      "category": "sunscreen",
+      "restricted": true
+    },
+    "homosalate": {
+      "inci": "Homosalate",
+      "aliases": ["Homosalate", "胡莫柳酯", "3,3,5-Trimethylcyclohexyl Salicylate", "防晒剂"],
+      "category": "sunscreen",
+      "restricted": true
+    },
+    "octinoxate": {
+      "inci": "Octinoxate",
+      "aliases": ["Octinoxate", "OMC", "甲氧基肉桂酸辛酯", "Ethylhexyl Methoxycinnamate", "防晒剂"],
+      "category": "sunscreen",
+      "restricted": true
+    },
+    "avobenzone": {
+      "inci": "Avobenzone",
+      "aliases": ["Avobenzone", "阿伏苯宗", "Butyl Methoxydibenzoylmethane", "防晒剂", "Parsol 1789"],
+      "category": "sunscreen",
+      "restricted": true
+    }
+  }
+}

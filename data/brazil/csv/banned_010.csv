@@ -1,0 +1,101 @@
+num,name_pt,name_zh,cas,ec
+942,"Destilados (petróleo), pesados do cracking catalítico hidrogenodessulfurizados",pesados do cracking catalítico hidrogenodessulfurizados,68333-28-8,269-784-1
+943,"Fuelóleo, resíduos dos gasóleos de destilação direta, ricos em enxofre",resíduos dos gasóleos de destilação direta,68476-32-4,270-674-0
+944,"Fueóleo, residual",residual,68476-33-5,270-675-6
+945,"Resíduos (petróleo), da destilação do resíduo da coluna de fracionamento do reformer catalítico",da destilação do resíduo da coluna de fracionamento do reformer catalítico,68478-13-7,270-792-2
+946,"Resíduos (petróleo), do gasóleo pesado do coker e do gasóleo de vácuo",do gasóleo pesado do coker e do gasóleo de vácuo,68478-17-1,270-796-4
+947,"Resíduos (petróleo), pesados do coker e leves de vácuo",pesados do coker e leves de vácuo,68512-61-8,270-983-0
+948,"Resíduos (petróleo), leves de vácuo",leves de vácuo,68512-62-9,270-984-6
+949,"Resíduos (petróleo), leves do steam-cracking",leves do steam-cracking,68513-69-9,271-013-9
+950,"Fueóleo, nº 6",nº 6,68553-00-4,271-384-7
+951,"Resíduos (petróleo), da unidade de topping, com baixo teor em enxofre",da unidade de topping,68607-30-7,271-763-7
+952,"Gasóleos (petróleo), atmosféricos pesados",atmosféricos pesados,68783-08-4,272-184-2
+953,"Resíduos (petróleo), da coluna de remoção de gases do coker, contendo hidrocarbonetos aromáticos polinucleares",da coluna de remoção de gases do coker,68783-13-1,272-187-9
+954,"Destilados (petróleo), de vácuo de resíduos do petróleo",de vácuo de resíduos do petróleo,68955-27-1,273-263-4
+955,"Resíduos (petróleo), do steam-cracking, resinosos",do steam-cracking,68955-36-2,273-272-3
+956,"Destilados (petróleo), médios de vácuo",médios de vácuo,70592-76-6,274-683-0
+957,"Destilados (petróleo), leves de vácuo",leves de vácuo,70592-77-7,274-684-6
+958,"Destilados (petróleo), de vácuo",de vácuo,70592-78-8,274-685-1
+959,"Gasóleo (petróleo), pesados de vácuo do coker hidrogenodessulfurizados",pesados de vácuo do coker hidrogenodessulfurizados,85117-03-9,285-555-9
+960,"Resíduos (petróleo), do steam-cracking, destilados",do steam-cracking,90669-75-3,292-657-7
+961,"Resíduos (petróleo), de vácuo, leves",de vácuo,90669-76-4,292-658-2
+962,"Fueóleo, pesado, de alto teor em enxofre",pesado,92045-14-2,295-396-7
+963,"Resíduos (petróleo), do cracking catalítico",do cracking catalítico,92061-97-7,295-511-0
+964,"Destilados (petróleo), intermédios do cracking catalítico, degradados termicamente",intermédios do cracking catalítico,92201-59-7,295-990-6
+965,Óleos residuais (petróleo),石油残油,93821-66-0,298-754-0
+966,"Resíduos, do steam-cracking, tratados termicamente",do steam-cracking,98219-64-8,308-733-0
+967,"Destilados (petróleo), médios hidrogenodessulfurizados",médios hidrogenodessulfurizados,101316-57-8,309-863-0
+968,"Destilados (petróleo), parafínicos leves",parafínicos leves,64741-50-0,265-051-5
+969,"Destilados (petróleo), parafínicos pesados",parafínicos pesados,64741-51-1,265-052-0
+970,"Destilados (petróleo), naftênicos leves",naftênicos leves,64741-52-2,265-053-6
+971,"Destilados (petróleo), naftênicos pesados",naftênicos pesados,64741-53-3,265-054-1
+972,"Destilados (petróleo), naftênicos pesados tratados com ácido",naftênicos pesados tratados com ácido,64742-18-3,265-117-3
+973,"Destilados (petróleo), naftênicos leves tratados com ácido",naftênicos leves tratados com ácido,64742-19-4,265-118-9
+974,"Destilados (petróleo), parafínicos pesados tratados com ácido",parafínicos pesados tratados com ácido,64742-20-7,265-119-4
+975,"Destilados (petróleo), parafínicos leves tratados com ácido",parafínicos leves tratados com ácido,64742-21-8,265-121-5
+976,"Destilados (petróleo), parafínicos pesados neutralizados quimicamente",parafínicos pesados neutralizados quimicamente,64742-27-4,265-127-8
+977,"Destilados (petróleo), parafínicos leves neutralizados quimicamente",parafínicos leves neutralizados quimicamente,64742-28-5,265-128-3
+978,"Destilados (petróleo), naftênicos pesados neutralizados quimicamente",naftênicos pesados neutralizados quimicamente,64742-34-3,265-135-1
+979,"Destilados (petróleo), naftênicos leves neutralizados quimicamente",naftênicos leves neutralizados quimicamente,64742-35-4,265-136-7
+980,"Extratos (petróleo), de solvente de destilado naftênico leve",de solvente de destilado naftênico leve,64742-03-6,265-102-1
+981,"Extratos (petróleo), de solvente de destilado parafínico pesado",de solvente de destilado parafínico pesado,64742-04-7,265-103-7
+982,"Extratos (petróleo), de solvente de destilado parafínico leve",de solvente de destilado parafínico leve,64742-05-8,265-104-2
+983,"Extratos (petróleo), de solvente de destilado nafténico pesado",de solvente de destilado nafténico pesado,64742-11-6,265-111-0
+984,"Extratos (petróleo), de solvente de gasóleo leve de vácuo",de solvente de gasóleo leve de vácuo,91995-78-7,295-341-7
+985,"Hidrocarbonetos, C26-55, ricos em aromáticos",C26-55,97722-04-8,307-753-7
+986,"3,3'-[[1,1'-bifenil]-4,4'diilbis(azo)]bis(4- aminonaftaleno-1-sulfonato) de dissódio",3'-[[1,573-58-0,209-358-4
+987,"4-amino-3-[[4'-[(2,4-diaminofenil)azol][1,1'- bifenil]-4-il]azo]-5-hidroxi-6- -(fenilazo) naftaleno-2,7-dissulfonato de dissódio",4-diaminofenil)azol][1,1937-37-7,217-710-3
+988,"3,3'-[[1,1'-bifenil]-4,4'-diilbis(azo)]bis[5-amino-4- hidroxinaftaleno-2,7-dis-sulfonato] de tetrassódio",3'-[[1,2602-46-2,220-012-1
+989,4-o-tolilazo-o-toluidina,4-邻甲苯基偶氮邻甲苯胺,97-56-3,202-591-2
+990,4-aminoazobenzeno,4-氨基偶氮苯,60-09-3,200-453-6
+991,"[5-[[4'-[[2,6-dihidroxi-3-[(2-hidroxi-5 sulfofenil)azo]fenil]azo][1,1'-bifenil]-4- il]azo]salicilato(4-)]cuprato(2-)de dissódio",6-dihidroxi-3-[(2-hidroxi-5- sulfofenil)azo]fenil]azo][1,16071-86-6,240-221-1
+992,Éter diglicídico de resorcinol,间苯二酚二缩水甘油醚,101-90-6,202-987-5
+993,"1,3-difenilguanidina",3-difenilguanidina,102-06-7,203-002-1
+994,Epóxido de heptacloro,七氯环氧物,1024-57-3,213-831-0
+995,4-nitrosofenol,4-亚硝基苯酚,104-91-6,203-251-6
+996,Carbendazima,多菌灵,10605-21-7,234-232-0
+997,Éter alilglicidílico,烯丙基缩水甘油醚,106-92-3,203-442-4
+998,Cloroacetaldeído,氯乙醛,107-20-0,203-472-8
+999,Hexano,正己烷,110-54-3,203-777-6
+1000,2-(2-metoxietoxi)etanol,2-(2-甲氧基乙氧基)乙醇,111-77-3,203-906-6
+1001,"(+/-)2-(2,4-diclorofenil)-3-(1H-1,2,4-triazol-1- ila)propil-1,1,2,2-tetrafluoroetiléter",4-diclorofenol)-3-(1H-1,112281-77-3,407-760-6
+1002,"4-[4-(1,3-dihidroxiprop-2-il)fenilamino]-1,8- dihidroxi-5-nitroantraquinona",3-dihidroxiprop-2-il)fenilamino]-1,114565-66-1,406-057-1
+1003,"5,6,12,13-tetracloroantra(2,1,9-def:6,5,10- d'e'f')diisoquinolina-1,3,8,10 (2H,9H)-tetrona",6,115662-06-1,405-100-1
+1004,Fosfato de tris(2-cloroetila),三(2-氯乙基)磷酸酯,115-96-8,204-118-5
+1005,4'-etoxi-2-benzimidazole-anilida,4'-乙氧基-2-苯并咪唑苯胺,120187-29-3,407-600-5
+1006,Dihidróxido de níquel,氢氧化镍,12054-48-7,235-008-5
+1007,"N,N-dimetilanilina",N-dimetilanilina,121-69-7,204-493-5
+1008,Simazina,西玛津,122-34-9,204-535-2
+1009,"Bis(ciclopentadienil)-bis(2,6-difluoro-3-[pirrol-1-il]- fenil)titânio",6-difluoro-3-[pirrol-1-il]- fenil)titânio,125051-32-3,412-000-1
+1010,"N,N,N',N'-tetraglicidila-4,4'-diamino-3,3'- dietildifenilmetano",N,130728-76-6,410-060-3
+1011,Pentaóxido de divanádio,五氧化二钒,1314-62-1,215-239-8
+1013,Fosfamidião,乙基谷硫磷,13171-21-6,236-116-5
+1014,N-(triclorometiltio)ftalimida,N-(三氯甲硫基)邻苯二甲酰亚胺,133-07-3,205-088-6
+1015,N-2-naftilanilina,N-2-萘基苯胺,135-88-6,205-223-9
+1016,Zirame,福美锌,137-30-4,205-288-3
+1017,"1-bromo-3,4,5-trifluorobenzeno",4,138526-69-9,418-480-9
+1018,Propazina,扑灭津,139-40-2,205-359-9
+1019,"Tricloroacetato de 3-(4-clorofenil)-1,1- dimetilurónio",1- dimetilurónio,140-41-0,006-043-00-1
+1020,Isoxaflutol,异恶唑草酮,141112-29-0,606-054-00-7
+1021,Cresoxime-metila,甲霜灵,143390-89-0,607-310-00-0
+1022,Clordecona,开蓬,143-50-0,205-601-3
+1023,9-vinilcarbazol,9-乙烯基咔唑,1484-13-5,216-055-0
+1024,Ácido 2-etilhexanóico,2-乙基己酸,149-57-5,205-743-6
+1025,Monurão,灭草隆,150-68-5,205-766-1
+1026,Cloreto de morfolina-4-carbonila,吗啉-4-碳酰氯,15159-40-7,239-213-0
+1027,Daminozida,丁酰肼,1596-84-5,216-485-9
+1028,Alacloro,甲草胺,15972-60-8,240-110-8
+1029,"Produto da condensação UVCB de: cloreto de tetraquis-hidroximetilfosfónio, uréia e C16-18 sebo-alquilamina hidrogenada destilada",uréia e C16-18 sebo-alquilamina hidrogenada destilada,166242-53-1,422-720-8
+1030,Ioxinil,碘苯腈,1689-83-4,216-881-1
+1031,"3,5-dibromo-4-hidroxibenzonitrila",5-dibromo-4-hidroxibenzonitrila,1689-84-5,216-882-7
+1032,"Octanoato de 2,6-dibromo-4-cianofenila",6-dibromo-4-cianofenila,1689-99-2,216-885-3
+1033,"[4-[[4-(dimetilamino)fenil][4-[etil(3- sulfonatobenzil)amino]fenil]metileno]ciclohexa- 2,5-dieno-1-ilideno](etil)(3- sulfonatobenzil)amônio, sal de sódio",5-dieno-1-ilideno](etil)(3- sulfonatobenzil)amônio,1694-09-3,216-901-9
+1034,"5-Cloro-1,3-dihidro-2H-indole-2-ona",3-dihidro-2H-indole-2-ona,17630-75-0,412-200-9
+1035,Benomila,苯菌灵,17804-35-2,241-775-7
+1036,Clorotalonila,百菌清,1897-45-6,217-588-1
+1037,"Monocloridrato de N'-(4-cloro-o-tolil)-N,N- dimetilformamidina",N- dimetilformamidina,19750-95-9,243-269-1
+1038,"4,4'-metilenobis(2-etilanilina)",4'-metilenobis(2-etilanilina),19900-65-3,243-420-1
+1039,Valinamida,缬氨酰胺,20108-78-5,402-840-7
+1040,[(p-toliloxi)metil]oxirano,[(对甲苯氧基)甲基]环氧乙烷,2186-24-5,218-574-8
+1041,[(m-toliloxi)metil]oxirano,[(间甲苯氧基)甲基]环氧乙烷,2186-25-6,218-575-3
+1042,"2,3-epoxipropila o-tolílico éter",3-epoxipropila o-tolílico éter,2210-79-9,218-645-3

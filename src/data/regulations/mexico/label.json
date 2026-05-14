@@ -1,8 +1,8 @@
 {
   "source": "COFEPRIS",
-"documentId": "NOM-141-SSA1-2012",
+  "documentId": "NOM-141-SSA1-2012",
   "version": "2012-12",
-  "description": "墨西哥化妆品标签法规 - SPF标识要求",
+  "description": "墨西哥化妆品标签法规 - SPF标识要求（含NOM-141防晒霜附录）",
   "rules": [
     {
       "ruleId": "MX-LABEL-001",
@@ -102,6 +102,123 @@
       "condition": "必须标注有效期（开盖后使用期限）",
       "message": "必须标注有效期或开盖后使用期限（PAO）",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-010",
+      "category": "label",
+      "target": "SPF sunscreen - required indicators",
+      "aliases": ["protector solar", "protectorsolar", "filtro solar", "FPS", "SPF", "sun protection"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "NOM-141附录A要求：防晒霜必须标注SPF值、UVA/UVB防护，禁止100%防护声明",
+      "message": "防晒霜必须标注：(1)SPF值 (2)UVA和UVB防护 (3)禁止声称100%防护或'bloqueador solar'",
+      "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012",
+      "detection": {
+        "type": "sunscreen_label",
+        "spfRequired": true,
+        "uvaRequired": true,
+        "uvbRequired": true,
+        "forbiddenClaims": ["100%", "bloqueador", "bloqueante", "protección total", "todo el día"]
+      }
+    },
+    {
+      "ruleId": "MX-LABEL-011",
+      "category": "label",
+      "target": "SPF minimum 6",
+      "aliases": ["SPF", "FPS", "Factor de Protección Solar"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "NOM-141 A.2.2.1 防晒霜SPF最低值为6",
+      "message": "防晒系数SPF不得低于6",
+      "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012",
+      "detection": {
+        "type": "spf_minimum",
+        "minValue": 6
+      }
+    },
+    {
+      "ruleId": "MX-LABEL-012",
+      "category": "label",
+      "target": "UVA protection 1/3 SPF",
+      "aliases": ["UVA", "protección UVA", "PA"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "NOM-141 A.2.2.2 UVA防护系数至少为SPF的1/3",
+      "message": "UVA防护系数至少为SPF的1/3",
+      "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-013",
+      "category": "label",
+      "target": "No 100% protection claim",
+      "aliases": ["100% protection", "bloqueador solar", "bloqueante solar", "protección total"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "NOM-141 A.1.1.2.1 禁止声称100%防护",
+      "message": "禁止声称100%或完全防晒，禁止使用'bloqueador solar'、'bloqueante solar'、'protección total'",
+      "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012",
+      "detection": {
+        "type": "forbidden_claim",
+        "patterns": ["100%.*UV", "100%.*solar", "bloqueador", "bloqueante", "protección total", "todo el día"]
+      }
+    },
+    {
+      "ruleId": "MX-LABEL-014",
+      "category": "label",
+      "target": "Sunscreen warning - reapply",
+      "aliases": ["reaplicar", "reaplicación", "reapply"],
+      "cas": "NA",
+      "severity": "warning",
+      "condition": "NOM-141 5.3.7.10要求：需标注需重复使用",
+      "message": "防晒霜需标注'需经常重复使用，特别是出汗、游泳或擦干后'",
+      "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-015",
+      "category": "label",
+      "target": "Sunscreen warning - babies",
+      "aliases": ["bebés", "niños pequeños", "babies", "infants"],
+      "cas": "NA",
+      "severity": "warning",
+      "condition": "NOM-141 5.3.7.10.4要求：需标注婴幼儿避免阳光直射",
+      "message": "需标注'避免婴幼儿和儿童直接暴露在阳光下'",
+      "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-016",
+      "category": "label",
+      "target": "Sunscreen classification table",
+      "aliases": ["protección baja", "protección media", "protección alta", "protección muy alta"],
+      "cas": "NA",
+      "severity": "info",
+      "condition": "NOM-141 A.3.3 防晒等级分类：baja(6-10), media(15-25), alta(30-50), muy alta(50+)",
+      "message": "防晒等级分类：低(baja)=6-10, 中(media)=15-25, 高(alta)=30-50, 非常高(muy alta)=50+",
+      "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012",
+      "detection": {
+        "type": "classification",
+        "table": {
+          "baja": {"label": [6, 10], "measured": "6-9.9"},
+          "media": {"label": [15, 20, 25], "measured": "15-29.9"},
+          "alta": {"label": [30, 50], "measured": "30-59.9"},
+          "muy_alta": {"label": ["50+"], "measured": "≥60"}
+        }
+      }
+    },
+    {
+      "ruleId": "MX-LABEL-017",
+      "category": "label",
+      "target": "Tanning product FPS 2-4",
+      "aliases": ["bronceador", "broncear", "tanning", "autobronceador"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "NOM-141 5.3.7.11 美黑产品FPS必须为2-4（实测2-5.9）",
+      "message": "美黑产品(bronceador)的SPF必须为2-4（实测值2-5.9）",
+      "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012",
+      "detection": {
+        "type": "tanning_fps",
+        "minValue": 2,
+        "maxValue": 4
+      }
     }
   ]
 }
