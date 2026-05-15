@@ -6,17 +6,17 @@
   "entries": {
     "water": {
       "inci": "Aqua",
-      "aliases": ["Water", "Eau", "水", "纯净水", "去离子水"],
+      "aliases": ["Water", "Eau", "水", "纯净水", "去离子水", "Água", "Agua", "Eau", "Water"],
       "category": "base"
     },
     "glycerin": {
       "inci": "Glycerin",
-      "aliases": ["Glycerol", "Glycerine", "甘油", "丙三醇", "Vegetable Glycerin"],
+      "aliases": ["Glycerol", "Glycerine", "甘油", "丙三醇", "Vegetable Glycerin", "Glicerina", "Glicerina Vegetal", "Glicerol"],
       "category": "humectant"
     },
     "niacinamide": {
       "inci": "Niacinamide",
-      "aliases": ["Nicotinamide", "Vitamin B3", "烟酰胺", "维生素B3", "尼克酰胺"],
+      "aliases": ["Nicotinamide", "Vitamin B3", "烟酰胺", "维生素B3", "尼克酰胺", "Niacinamida", "Nicotinamida", "Vitamina B3"],
       "category": "actives"
     },
     "retinol": {
@@ -43,31 +43,31 @@
     },
     "salicylic_acid": {
       "inci": "Salicylic Acid",
-      "aliases": ["BHA", "Beta Hydroxy Acid", "水杨酸", "β-羟基酸", "2-Hydroxybenzoic Acid"],
+      "aliases": ["BHA", "Beta Hydroxy Acid", "水杨酸", "β-羟基酸", "2-Hydroxybenzoic Acid", "Ácido Salicílico", "Ácido Salicílico", "Salicylic Acid", "BHA", "Ácido Beta Hidroxi"],
       "category": "actives",
       "hasConcentration": true
     },
     "glycolic_acid": {
       "inci": "Glycolic Acid",
-      "aliases": ["AHA", "Alpha Hydroxy Acid", "甘醇酸", "羟基乙酸", "α-羟基酸"],
+      "aliases": ["AHA", "Alpha Hydroxy Acid", "甘醇酸", "羟基乙酸", "α-羟基酸", "Ácido Glicólico", "Ácido Glicólico", "Glycolic Acid", "AHA", "Ácido Alfa Hidroxi"],
       "category": "actives",
       "hasConcentration": true
     },
     "lactic_acid": {
       "inci": "Lactic Acid",
-      "aliases": ["AHA", "Alpha Hydroxy Acid", "乳酸", "α-羟基丙酸"],
+      "aliases": ["AHA", "Alpha Hydroxy Acid", "乳酸", "α-羟基丙酸", "Ácido Lático", "Ácido Lático", "Lactic Acid", "AHA"],
       "category": "actives",
       "hasConcentration": true
     },
     "formaldehyde": {
       "inci": "Formaldehyde",
-      "aliases": ["Formalin", "Methanal", "甲醛", "福尔马林", "蚁醛"],
+      "aliases": ["Formalin", "Methanal", "甲醛", "福尔马林", "蚁醛", "Formaldeído", "Formaldehído", "Formaldehyde", "Formol", "Metanal"],
       "category": "preservative",
       "restricted": true
     },
     "hydroquinone": {
       "inci": "Hydroquinone",
-      "aliases": ["HQ", "Quinol", "1,4-Benzenediol", "对苯二酚", "氢醌"],
+      "aliases": ["HQ", "Quinol", "1,4-Benzenediol", "对苯二酚", "氢醌", "Hidroquinona", "Hidroquinona", "Hydroquinone", "HQ", "1,4-Benzenodiol"],
       "category": "actives",
       "prohibited": true
     },

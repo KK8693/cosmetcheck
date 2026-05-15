@@ -2,6 +2,7 @@
 // Detects ANVISA (Brazil) and COFEPRIS (Mexico) violations
 
 import { loadRegulationRules, type LoadedRules } from './regulation-loader'
+import { parseIngredients, type ParseResult } from './ingredient-parser'
 import rootClustersData from '../data/regulations/root-clusters.json'
 
 // ── 同步构建词根簇映射（确保 checkCompliance 调用时已可用）──
@@ -53,6 +54,11 @@ export interface CheckResult {
     infoCount: number
   }
   regulationVersion: number
+  // 成分解析结果
+  ingredientAnalysis?: {
+    parsed: ParseResult
+    normalizedIngredients: string[]  // 标准化后的成分名列表
+  }
 }
 
 // ANVISA Rules (Brazil) - Core rules for MVP
@@ -1351,9 +1357,22 @@ export function checkCompliance(input: CheckInput): CheckResult {
   
   const violations: Violation[] = []
 
-  // Check ingredients (with sourceField)
+  // ── 成分解析 ──
+  // 先解析成分，标准化后再进行规则匹配
+  let parsedIngredients: ParseResult | undefined
+  let normalizedIngredients: string[] = []
+  
   if (input.ingredients) {
-    violations.push(...findMatches(input.ingredients, allRules.filter(r => r.category === 'ingredient'), 'ingredients'))
+    parsedIngredients = parseIngredients(input.ingredients)
+    normalizedIngredients = parsedIngredients.parsed.map(p => p.inci)
+    
+    // 用原始成分 + 标准化成分一起检查（扩大匹配范围）
+    const ingredientTextToCheck = [
+      input.ingredients,
+      ...normalizedIngredients
+    ].join(' ')
+    
+    violations.push(...findMatches(ingredientTextToCheck, allRules.filter(r => r.category === 'ingredient'), 'ingredients'))
   }
 
   // Check description/claims (with sourceField)
@@ -1457,5 +1476,10 @@ export function checkCompliance(input: CheckInput): CheckResult {
       infoCount,
     },
     regulationVersion: 1,
+    // 包含成分解析结果
+    ingredientAnalysis: parsedIngredients ? {
+      parsed: parsedIngredients,
+      normalizedIngredients
+    } : undefined
   }
 }
