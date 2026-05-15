@@ -103,7 +103,7 @@ export function PricingSection() {
           </Card>
 
           {/* Pro Plan */}
-          <Card className="border-2 border-[#00A86B]/50 relative overflow-hidden bg-[#1A1A24]">
+          <Card className="border-2 border-[#00A86B]/50 relative overflow-hidden bg-[#1A1A24] order-first md:order-none">
             {/* Recommended badge */}
             <div className="absolute -top-px -right-14">
               <div className="bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 text-sm font-bold px-10 py-2 rotate-45 shadow-lg">

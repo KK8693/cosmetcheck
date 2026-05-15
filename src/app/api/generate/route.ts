@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { generateListing } from '@/lib/ai'
 import { moderateContent, getModerationWarnings } from '@/lib/moderation'
 import { checkQuotaMiddleware, incrementQuota } from '@/lib/quota'
+import { checkRateLimit } from '@/lib/rate-limit'
 import { createClient } from '@supabase/supabase-js'
 
 export const runtime = 'edge'
@@ -19,6 +20,32 @@ export async function POST(request: NextRequest) {
     const quotaCheck = checkQuotaMiddleware(request)
     if (!quotaCheck.allowed) {
       return quotaCheck.response!
+    }
+
+    // Rate limit check (token bucket, 10 req/min)
+    const identifier = request.headers.get('x-user-email') ||
+      request.headers.get('x-forwarded-for')?.split(',')[0] ||
+      request.headers.get('x-real-ip') ||
+      'anonymous'
+    
+    const rateLimitResult = checkRateLimit(identifier)
+    
+    if (!rateLimitResult.allowed) {
+      return NextResponse.json(
+        { 
+          error: 'Rate limit exceeded', 
+          retryAfterSeconds: Math.ceil((rateLimitResult.retryAfterMs || 60000) / 1000),
+          remaining: 0,
+        },
+        { 
+          status: 429,
+          headers: {
+            'Retry-After': String(Math.ceil((rateLimitResult.retryAfterMs || 60000) / 1000)),
+            'X-RateLimit-Remaining': '0',
+            'X-RateLimit-Reset': String(rateLimitResult.resetInMs),
+          }
+        }
+      )
     }
 
     const body = await request.json()

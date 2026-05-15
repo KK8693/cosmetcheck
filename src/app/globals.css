@@ -279,3 +279,22 @@
 .animate-fade-in {
   animation: fade-in 0.3s ease-out forwards;
 }
+
+/* 移动端触控优化 */
+@layer base {
+  input,
+  textarea,
+  select,
+  button {
+    @apply text-base;
+  }
+}
+
+/* 防止 iOS 缩放 */
+@media screen and (max-width: 768px) {
+  input[type="email"],
+  input[type="text"],
+  textarea {
+    font-size: 16px;
+  }
+}

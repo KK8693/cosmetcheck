@@ -89,7 +89,10 @@
       "brazilMexico": "巴西/墨西哥"
     },
     "trustedBy": "被这些平台的卖家信赖",
+    "sellerPreferred": "卖家首选",
     "caseStudies": {
+      "title": "真实案例：{country}卖家如何避免罚款",
+      "subtitle": "这些都是 CosmetCheck 帮助过的真实场景",
       "bannedIngredient": "禁用成分",
       "bannedIngredientBody": "某美白霜含 Hydroquinone 2%，直接被 ANVISA 标红",
       "bannedIngredientResult": "→ 修改后 48h 重新上架",
@@ -305,7 +308,7 @@
     "knowledgeBase": "法规知识库",
     "helpCenter": "帮助中心",
     "apiDocs": "API文档",
-    "company": "公司",
+    "company": "联系方式",
     "aboutUs": "关于我们",
     "contact": "联系我们",
     "blog": "博客",

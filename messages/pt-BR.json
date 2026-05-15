@@ -1,6 +1,22 @@
 {
   "common": {
-    "loggedInAs": "Conectado como {email}"
+    "loggedInAs": "Conectado como {email}",
+    "brand": "CosmetCheck",
+    "tagline": "Especialistas em conformidade cosmética para LATAM.",
+    "features": "Recursos",
+    "pricing": "Preços",
+    "contact": "Fale conosco",
+    "freeStart": "Começar grátis",
+    "learnMore": "Saiba mais",
+    "viewDetails": "Ver detalhes",
+    "submit": "Enviar",
+    "submitting": "Enviando...",
+    "success": "Sucesso",
+    "error": "Erro",
+    "warning": "Aviso",
+    "loading": "Carregando...",
+    "download": "Baixar",
+    "copy": "Copiar"
   },
   "nav": {
     "features": "Recursos",
@@ -73,7 +89,10 @@
       "brazilMexico": "Brasil/México"
     },
     "trustedBy": "Confiado por vendedores nestas plataformas",
+    "sellerPreferred": "Escolha dos Vendedores",
     "caseStudies": {
+      "title": "Casos Reais: Como Vendedores Brasileiros Evitam Multas",
+      "subtitle": "Esses são cenários reais que o CosmetCheck resolveu",
       "bannedIngredient": "Ingrediente Proibido",
       "bannedIngredientBody": "Um creme clareador com 2% de Hidroquinona marcado em vermelho pela ANVISA",
       "bannedIngredientResult": "→ Relistado em 48h após modificação",
@@ -289,7 +308,7 @@
     "knowledgeBase": "Base de Conhecimento Regulatório",
     "helpCenter": "Centro de Ajuda",
     "apiDocs": "Documentação da API",
-    "company": "Empresa",
+    "company": "Contato",
     "aboutUs": "Sobre Nós",
     "contact": "Fale Conosco",
     "blog": "Blog",

@@ -7,6 +7,7 @@ import { CheckCircle, Shield, Globe, Zap, XCircle, AlertTriangle, FileText, User
 import { Link } from '@/i18n/routing'
 import { Logo } from '@/components/Logo'
 import { setRequestLocale } from 'next-intl/server'
+import { useTranslations } from 'next-intl'
 import { FooterSection } from '@/sections/FooterSection'
 import WhatsAppFAB from '@/components/WhatsAppFAB'
 
@@ -20,30 +21,6 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
   },
 }
-
-const cases = [
-  {
-    tag: '禁用成分',
-    tagColor: 'text-red-300',
-    icon: XCircle,
-    body: '“某美白霜含 Hydroquinone 2%，被 ANVISA 直接标红”',
-    result: '→ 修改配方后 48h 重新上架',
-  },
-  {
-    tag: '标签违规',
-    tagColor: 'text-amber-300',
-    icon: AlertTriangle,
-    body: '“防晒产品未标注 SPF 值，海关扣留”',
-    result: '→ AI 生成合规标签，0 罚款通关',
-  },
-  {
-    tag: '文案误触',
-    tagColor: 'text-blue-300',
-    icon: FileText,
-    body: '“抗皱文案写“trata”，Listing 被下架 7 天”',
-    result: '→ 替换后 CTR 提升 23%',
-  },
-]
 
 const faqs = [
   {
@@ -70,6 +47,33 @@ const faqs = [
 
 export default function BrasilPage() {
   setRequestLocale('pt-BR')
+  const t = useTranslations('home')
+  const country = 'Brasil'
+  
+  const cases = [
+    {
+      tag: t('caseStudies.bannedIngredient'),
+      tagColor: 'text-red-300',
+      icon: XCircle,
+      body: t('caseStudies.bannedIngredientBody'),
+      result: t('caseStudies.bannedIngredientResult'),
+    },
+    {
+      tag: t('caseStudies.labelViolation'),
+      tagColor: 'text-amber-300',
+      icon: AlertTriangle,
+      body: t('caseStudies.labelViolationBody'),
+      result: t('caseStudies.labelViolationResult'),
+    },
+    {
+      tag: t('caseStudies.copywritingError'),
+      tagColor: 'text-blue-300',
+      icon: FileText,
+      body: t('caseStudies.copywritingErrorBody'),
+      result: t('caseStudies.copywritingErrorResult'),
+    },
+  ]
+  
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
@@ -111,7 +115,7 @@ export default function BrasilPage() {
             {/* Logo 墙 */}
             <div className="mb-8">
               <p className="text-xs text-white/50 uppercase tracking-wider mb-3">
-                被这些平台的卖家信赖
+                {t('trustedBy')}
               </p>
               <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4">
                 {['Amazon Brazil', 'Mercado Livre', 'Shopee', 'TikTok Shop', 'SHEIN'].map((name) => (
@@ -149,10 +153,10 @@ export default function BrasilPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto mb-12 text-center">
             <h2 className="text-2xl font-bold text-gray-900 md:text-3xl mb-4">
-              真实案例：巴西卖家如何避免罚款
+              {t('caseStudies.title', { country })}
             </h2>
             <p className="text-gray-600">
-              这些都是 CosmetCheck 帮助过的真实场景
+              {t('caseStudies.subtitle')}
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
@@ -303,7 +307,7 @@ export default function BrasilPage() {
             </div>
             <div className="rounded-2xl border-2 border-[#0A4D8C] bg-gradient-to-b from-[#0A4D8C]/5 to-white p-6 text-left relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-[#0A4D8C] text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
-                卖家首选
+                {t('sellerPreferred')}
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Pro</h3>
               <div className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">R$149<span className="text-lg text-gray-500">/mês</span></div>

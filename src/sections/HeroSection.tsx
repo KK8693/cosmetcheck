@@ -242,7 +242,7 @@ export function HeroSection() {
                 {t('socialProof.coverage')} <span className="font-bold text-white">{t('socialProof.brazilMexico')}</span>
               </span>
             </div>
-            <h1 className="mb-6 text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
+            <h1 className="mb-6 text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
               {t('title')} <span className="hidden md:block"> </span> {t('titleLine2')}
             </h1>
 
@@ -311,7 +311,7 @@ export function HeroSection() {
               <div className="flex flex-wrap gap-2 mb-3">
                 <button
                   onClick={() => { setCountry('BR'); setCheckResult(null); setShowDemo(true) }}
-                  className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                  className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors min-h-[44px] ${
                     country === 'BR'
                       ? 'bg-white text-[#0A4D8C]'
                       : 'bg-white/10 text-white/70 hover:bg-white/20'
@@ -321,7 +321,7 @@ export function HeroSection() {
                 </button>
                 <button
                   onClick={() => { setCountry('MX'); setCheckResult(null); setShowDemo(true) }}
-                  className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                  className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors min-h-[44px] ${
                     country === 'MX'
                       ? 'bg-white text-[#0A4D8C]'
                       : 'bg-white/10 text-white/70 hover:bg-white/20'
@@ -337,7 +337,7 @@ export function HeroSection() {
                   value={productName}
                   onChange={(e) => setProductName(e.target.value)}
                   placeholder={t('productNamePlaceholder')}
-                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[60px] resize-none pr-10"
+                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[60px] resize-none pr-10 text-base"
                 />
                 {productName && (
                   <button
@@ -359,7 +359,7 @@ export function HeroSection() {
                   value={ingredients}
                   onChange={(e) => setIngredients(e.target.value)}
                   placeholder={t('ingredientsPlaceholder') + ` (${t('form.optional')})`}
-                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[80px] resize-none pr-10"
+                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[80px] resize-none pr-10 text-base"
                 />
                 {ingredients && (
                   <button
@@ -378,7 +378,7 @@ export function HeroSection() {
                   value={productBenefits}
                   onChange={(e) => setProductBenefits(e.target.value)}
                   placeholder={t('productBenefitsPlaceholder')}
-                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[60px] resize-none pr-10"
+                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[60px] resize-none pr-10 text-base"
                 />
                 {productBenefits && (
                   <button
@@ -399,14 +399,14 @@ export function HeroSection() {
                   onClick={handleCheck}
                   disabled={isChecking}
                   variant="outline"
-                  className="w-full sm:flex-1 border-white/30 text-white hover:bg-white/10 font-medium"
+                  className="w-full sm:flex-1 border-white/30 text-white hover:bg-white/10 font-medium min-h-[44px]"
                 >
                   {isChecking ? t('checking') : t('checkFirst')}
                 </Button>
                 <Button
                   onClick={handleGenerate}
                   disabled={isGenerating}
-                  className="w-full sm:flex-1 bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all animate-pulse-subtle"
+                  className="w-full sm:flex-1 bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all animate-pulse-subtle min-h-[44px]"
                 >
                   {isGenerating ? t('generating') : <><Zap className="w-4 h-4 mr-1" /> {t('freeGenerateListing')}</>}
                 </Button>

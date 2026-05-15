@@ -7,6 +7,7 @@ import { CheckCircle, Shield, Globe, Zap, XCircle, AlertTriangle, FileText, User
 import { Link } from '@/i18n/routing'
 import { Logo } from '@/components/Logo'
 import { setRequestLocale } from 'next-intl/server'
+import { useTranslations } from 'next-intl'
 import { FooterSection } from '@/sections/FooterSection'
 import WhatsAppFAB from '@/components/WhatsAppFAB'
 
@@ -70,6 +71,8 @@ const faqs = [
 
 export default function MexicoPage() {
   setRequestLocale('es-MX')
+  const t = useTranslations('home')
+  const country = 'México'
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
@@ -111,7 +114,7 @@ export default function MexicoPage() {
             {/* Logo 墙 */}
             <div className="mb-8">
               <p className="text-xs text-white/50 uppercase tracking-wider mb-3">
-                被这些平台的卖家信赖
+                {t('trustedBy')}
               </p>
               <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4">
                 {['Amazon México', 'Mercado Libre', 'Liverpool', 'Coppel', 'TikTok Shop'].map((name) => (

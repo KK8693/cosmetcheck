@@ -7,6 +7,8 @@
  * protect against potentially harmful content.
  */
 
+import { withRetry, isRateLimitError } from './ai'
+
 interface ModerationResult {
   flagged: boolean
   categories: Record<string, boolean>
@@ -32,33 +34,35 @@ export async function moderateContent(text: string): Promise<ModerationResult> {
     
     if (isDeepSeek) {
       // Use DeepSeek's built-in moderation via chat API
-      const response = await fetch('https://api.deepseek.com/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiKey}`,
-        },
-        body: JSON.stringify({
-          model: 'deepseek-chat',
-          messages: [
-            {
-              role: 'system',
-              content: 'You are a content moderation assistant. Analyze the following text for any policy violations including hate speech, harassment, sexual content, violence, self-harm, or illegal content. Respond with ONLY a JSON object: {"flagged": true/false, "reason": "brief reason if flagged"}'
-            },
-            {
-              role: 'user',
-              content: text
-            }
-          ],
-          max_tokens: 200
-        }),
+      const response = await withRetry(async () => {
+        const res = await fetch('https://api.deepseek.com/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${apiKey}`,
+          },
+          body: JSON.stringify({
+            model: 'deepseek-chat',
+            messages: [
+              {
+                role: 'system',
+                content: 'You are a content moderation assistant. Analyze the following text for any policy violations including hate speech, harassment, sexual content, violence, self-harm, or illegal content. Respond with ONLY a JSON object: {"flagged": true/false, "reason": "brief reason if flagged"}'
+              },
+              {
+                role: 'user',
+                content: text
+              }
+            ],
+            max_tokens: 200
+          }),
+        })
+        
+        if (!res.ok) {
+          throw { status: res.status, statusText: res.statusText }
+        }
+        
+        return res
       })
-
-      if (!response.ok) {
-        console.error('DeepSeek moderation error:', response.statusText)
-        // Fail-close: block content on API errors
-        return { flagged: true, categories: { 'api_error': true }, categoryScores: {}, error: `DeepSeek API error: ${response.statusText}` }
-      }
 
       const data = await response.json()
       const content = data.choices?.[0]?.message?.content || ''

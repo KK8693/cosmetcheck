@@ -89,7 +89,10 @@
       "brazilMexico": "Brazil/Mexico"
     },
     "trustedBy": "Trusted by sellers on these platforms",
+    "sellerPreferred": "Seller's Choice",
     "caseStudies": {
+      "title": "Real Cases: How {country} Sellers Avoid Fines",
+      "subtitle": "These are real scenarios CosmetCheck has helped resolve",
       "bannedIngredient": "Banned Ingredient",
       "bannedIngredientBody": "A whitening cream with 2% Hydroquinone flagged red by ANVISA",
       "bannedIngredientResult": "→ Re-listed in 48h after modification",
@@ -305,7 +308,7 @@
     "knowledgeBase": "Regulation Knowledge Base",
     "helpCenter": "Help Center",
     "apiDocs": "API Documentation",
-    "company": "Company",
+    "company": "Contact",
     "aboutUs": "About Us",
     "contact": "Contact Us",
     "blog": "Blog",
