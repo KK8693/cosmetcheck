@@ -2,6 +2,8 @@ name = "cosmetcheck"
 compatibility_flags = ["nodejs_compat"]
 compatibility_date = "2025-01-01"
 
+main = "_worker.js"
+
 # Force Edge Runtime for all routes
 [env.production]
   compatibility_flags = ["nodejs_compat"]
