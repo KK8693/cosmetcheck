@@ -1,0 +1,812 @@
+NORMA Oficial Mexicana NOM-141-SSA1/SCFI-2012, Etiquetado para productos cosméticos preenvasados.
+Etiquetado sanitario y comercial.
+Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Salud.
+MIKEL ANDONI ARRIOLA PEÑALOSA, Comisionado Federal para la Protección contra Riesgos Sanitarios y
+Presidente del Comité Consultivo Nacional de Normalización de Regulación y Fomento Sanitario y CHRISTIAN
+TUREGANO ROLDAN, Director General de Normas y Presidente del Comité Consultivo Nacional de
+Normalización de Seguridad al Usuario, Información Comercial y Prácticas de Comercio, con fundamento en lo
+dispuesto por los artículos 39 y 34 de la Ley Orgánica de la Administración Pública Federal; 4 de la Ley Federal
+de Procedimiento Administrativo; 3 fracción XXII, 17 Bis fracciones II y III, 194 fracción I, 210, 257 fracción X, 269,
+270, 272 y 286 de la Ley General de Salud; 40 fracciones I y XII, 41 y 47 fracción IV de la Ley Federal sobre
+Metrología y Normalización; 1 fracciones XX y XXII, 4, 25, 187, 188, 195, 211 y 214 del Reglamento de Control
+Sanitario de Productos y Servicios; 28 y 31 del Reglamento de la Ley Federal sobre Metrología y Normalización; 2
+literal C fracción X, 36 y 37 del Reglamento Interior de la Secretaría de Salud; 19 fracciones I, XIV y XV del
+Reglamento Interior de la Secretaría de Economía, y
+CONSIDERANDO
+Que en cumplimiento a lo previsto en el artículo 46 fracción I de la Ley Federal sobre Metrología y
+Normalización, el 4 de octubre y 25 de noviembre ambos del 2010, los Comités Consultivos Nacionales de
+Normalización de Regulación y Fomento Sanitario y de Seguridad al Usuario, Información Comercial y Prácticas
+de Comercio, aprobaron el anteproyecto de la presente Norma Oficial Mexicana;
+Que con fecha del 17 de enero de 2012, en cumplimiento del acuerdo de los Comités y de lo previsto en el
+artículo 47 fracción I de la Ley Federal sobre Metrología y Normalización, se publicó en el Diario Oficial de la
+Federación el proyecto de la presente Norma Oficial Mexicana, a efecto de que dentro de los siguientes sesenta
+días naturales posteriores a dicha publicación, los interesados presentaran sus comentarios a los Comités
+Consultivos Nacionales de Normalización de Regulación y Fomento Sanitario y de Seguridad al Usuario,
+Información Comercial y Prácticas de Comercio;
+Que con fecha previa, fueron publicadas en el Diario Oficial de la Federación, las respuestas a los
+comentarios recibidos por el mencionado Comité, en los términos del artículo 47 fracción III de la Ley Federal
+sobre Metrología y Normalización;
+Que en atención a las anteriores consideraciones, contando con la aprobación de los Comités Consultivos
+Nacionales de Normalización de Regulación y Fomento Sanitario y de Seguridad al Usuario, Información
+Comercial y Prácticas de Comercio, hemos tenido a bien expedir y ordenar la publicación en el Diario Oficial de la
+Federación de la siguiente:
+NORMA OFICIAL MEXICANA NOM-141-SSA1/SCFI-2012, ETIQUETADO PARA PRODUCTOS
+COSMETICOS PREENVASADOS. ETIQUETADO SANITARIO Y COMERCIAL
+PREFACIO
+En la elaboración de la presente norma participaron los siguientes organismos e instituciones:
+SECRETARIA DE SALUD
+Comisión Federal para la Protección contra Riesgos Sanitarios (COFEPRIS)
+PROCURADURIA FEDERAL DEL CONSUMIDOR
+Laboratorio Nacional de Protección al Consumidor
+CAMARA NACIONAL DE LA INDUSTRIA DE TRANSFORMACION, A.C. (CANACINTRA)
+Sector Químico
+CAMARA NACIONAL DE LA INDUSTRIA DE ACEITES, GRASAS, JABONES Y DETERGENTES, A.C.
+(CANAJAD)
+CAMARA NACIONAL DE LA INDUSTRIA DE PERFUMERIA, COSMETICA Y ARTICULOS DE TOCADOR E
+HIGIENE (CANIPEC)
+ASOCIACION NACIONAL DE TIENDAS DE AUTOSERVICIO Y DEPARTAMENTALES, A.C. (ANTAD)
+ASOCIACION NACIONAL DE LA INDUSTRIA DE PRODUCTOS NATURALES, A.C. (ANIPRON)
+ASOCIACION NACIONAL DE FABRICANTES DE PRODUCTOS AROMATICOS, A.C.
+SOCIEDAD DE QUIMICOS COSMETOLOGOS DE MEXICO (SQCM)
+ANTERA, S.A. DE C.V.
+AVON COSMETICS, S.A. DE R.L. DE C.V.
+BDF MEXICO, S.A. DE C.V.
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+1/18
+
+
+COLGATE PALMOLIVE, S.A. DE C.V.
+FRABEL, S.A. DE C.V.
+HECA AUTOMOTRIZ, S.A. DE C.V.
+HERBALIFE INTERNACIONAL DE MEXICO, S.A. DE C.V.
+NATURA DISTRIBUIDORA DE MEXICO, S.A. DE C.V.
+OMNILIFE, S.A. DE C.V.
+TRANSBEL, S.A. DE C.V.
+UNILEVER DE MEXICO, S.A. DE R.L. DE C.V.
+YVES ROCHER DE MEXICO, S.A. DE C.V.
+INDICE
+1. Objetivo y campo de aplicación
+2. Referencias
+3. Definiciones
+4. Símbolos y abreviaturas
+5. Requisitos de etiquetado
+6. Concordancia con normas internacionales y mexicanas
+7. Bibliografía
+8. Observancia de la norma
+9. Evaluación de la conformidad
+10. Vigencia de la norma
+11. Transitorios
+Apéndice normativo "A" Protectores solares
+Apéndice informativo "A" Denominaciones
+1. Objetivo y campo de aplicación
+1.1 Esta Norma establece los requisitos de información sanitaria y comercial que debe ostentar la etiqueta en
+productos cosméticos de cualquier capacidad preenvasados y destinados al consumidor final.
+1.2 Esta Norma es de observancia obligatoria en el Territorio Nacional para las personas físicas o morales que
+se dedican a su proceso o importación.
+2. Referencias
+Esta Norma se complementa con las siguientes Normas Oficiales Mexicanas vigentes o las que las sustituyan.
+2.1 Norma Oficial Mexicana NOM-002-SCFI-1993, productos preenvasados-contenido neto tolerancias y
+métodos de verificación.
+2.2 Norma Oficial Mexicana NOM-008-SCFI-2002, Sistema General de Unidades de Medida.
+2.3 Norma Oficial Mexicana NOM-030-SCFI-2006, Información comercial-Declaración de cantidad en la
+etiqueta. Especificaciones.
+3. Definiciones
+Para fines de esta norma se entiende por:
+3.1 Consumidor final, a la persona física o moral que adquiere y disfruta los productos como destinatario
+final.
+3.2 Denominación específica, al nombre particular que recibe un producto y que se encuentra asociado a
+la(s) característica(s) que lo distingue(n) dentro de una clasificación general y lo restringen en aplicación, efecto,
+estructura y función particular.
+3.3 Denominación genérica, al nombre que recibe un grupo de productos que tienen características
+comunes y que representa cada uno de los distintos tipos o clases de productos en que se pueden ordenar.
+3.4 Envase múltiple o colectivo, a cualquier recipiente o envoltura en el que se encuentran contenidas dos o
+más unidades de productos preenvasados, iguales o diferentes, destinados para su venta al consumidor
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+2/18
+
+
+en dicha presentación.
+3.5 Envase presurizado, al envase sometido a presión provisto de una válvula de mando que con un gas
+propulsor permite dosificar en el aire al producto en diferentes formas.
+3.6 Envase primario, al recipiente destinado a contener un producto y que entra en contacto con el mismo,
+conservando su integridad física, química y sanitaria.
+3.7 Envase secundario, al envase que contiene al primario.
+3.8 Etiqueta, al marbete, rótulo, inscripción, marca, imagen gráfica u otra forma descriptiva o que se haya
+escrito, impreso, estarcido, marcado, en relieve o en hueco, grabado, adherido, precintado o anexado al envase
+primario o secundario del producto.
+3.9 Factor de protección solar, el cociente entre la dosis eritematógena mínima en una piel protegida por un
+producto de protección solar y la dosis eritematógena mínima en la misma piel sin proteger.
+3.10 Fecha de duración mínima o de caducidad o de consumo preferente o de vencimiento o de validez
+o de expiración, es la fecha límite en la cual un producto conservado en condiciones adecuadas mantiene su
+calidad sanitaria por lo que no representa un riesgo a la salud humana y después de la cual no podrá ser
+comercializado.
+3.11 Filtro ultravioleta, las sustancias cuya finalidad exclusiva o principal es de filtrar ciertas radiaciones UV,
+con el fin de proteger a la piel o cabello contra la radiación ultravioleta absorbiendo, reflejando o dispersando esta
+radiación.
+3.12 Forma cosmética, a la mezcla de dos o más ingredientes que da como resultado un producto con
+ciertas características físicas para su adecuado uso, aplicación y conservación tal como spray, mousse, roll-on,
+emulsión, etc.
+3.13 Ingrediente, cualquier sustancia que forma parte del producto terminado.
+3.14 Leyenda precautoria, a cualquier texto o representación que prevenga al consumidor sobre la presencia
+de un ingrediente específico o de daños a la salud que pueda ocasionar el mal uso del producto.
+3.15 Lote, a la cantidad de un producto elaborado en un mismo ciclo, integrado por unidades homogéneas.
+3.16 Nomenclatura Internacional de Ingredientes Cosméticos (NIIC-INCI por sus siglas en inglés),
+Nomenclatura que puede usarse en la declaración de cada ingrediente utilizado en la elaboración de un producto
+cosmético.
+3.17 Piel sana, aquella que no presenta alteraciones en su color y su textura, en relación con su tipo racial,
+sexo, edad y manifiesta equilibrio en sus funciones, sin evidencia de enfermedad aparente incluyendo sus anexos
+y faneras.
+3.18 Proceso, al conjunto de actividades relativas a la obtención, elaboración, fabricación, preparación,
+conservación, mezclado, acondicionamiento, envasado, manipulación, transporte, distribución, almacenamiento y
+expendio o suministro al público de los productos.
+3.19 Productos de aromacología o aromalogía, productos que como parte de sus ingredientes contienen
+aceites esenciales; tales productos son para la aplicación directamente al cabello, la piel y uñas con la finalidad
+de embellecer, mejorar la apariencia y conservar la limpieza o pulcritud de las personas y adicionalmente brindar
+al consumidor placer sensorial y realzar su sensación de bienestar sin que ello implique que el producto tiene
+alguna acción terapéutica, curativa o medicinal. Dichos productos pueden ostentar cualquiera de las
+denominaciones genéricas indicadas en el apéndice informativo "A" de esta norma.
+3.20 Producto inflamable, al producto que bajo condiciones normales de uso posee un punto de inflamación
+inferior a 37,8 ÂºC y mantiene la combustión.
+3.21 Productos cosméticos, las sustancias o formulaciones destinadas a ser puestas en contacto con las
+partes superficiales del cuerpo humano: epidermis, sistema piloso y capilar, uñas, labios y órganos genitales
+externos, o con los dientes y mucosas bucales con el fin exclusivo o principal de limpiarlos, perfumarlos, ayudar a
+modificar su aspecto, protegerlos, mantenerlos en buen estado o corregir los olores corporales o atenuar o
+prevenir deficiencias o alteraciones en el funcionamiento de la piel sana.
+3.22 Productos preenvasados, a los productos cosméticos, que cuando son colocados en un envase de
+cualquier naturaleza, no se encuentra presente el consumidor y la cantidad de producto contenida en él no puede
+ser alterada, a menos que el envase sea abierto o modificado perceptiblemente.
+3.23 Producto de protección solar o protector solar, cualquier preparado como crema, aceite, gel o aerosol
+entre otros, de aplicación sobre la piel humana con la finalidad exclusiva o principal de protegerla de la radiación
+UV absorbiéndola, dispersándola o reflejándola.
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+3/18
+
+
+3.24 Responsable del producto, a la persona física o moral que importe o elabore totalmente un producto o
+que haya ordenado su elaboración total o parcial a un tercero.
+3.25 Superficie de información, al área del envase primario o secundario, distinta de la superficie principal
+de exhibición.
+3.26 Superficie principal de exhibición, es aquella área del envase primario o secundario donde debe
+encontrarse la marca comercial del producto.
+4. Símbolos y abreviaturas
+4.1 FPS        Factor de protección solar
+4.2 nm         Nanómetro
+4.3 UVA       Radiación ultravioleta A
+4.4 UVB       Radiación ultravioleta B
+4.5 Acuerdos, el Acuerdo por el que se determinan las sustancias prohibidas y restringidas en la elaboración
+de productos de perfumería y belleza y el Acuerdo por el que se determinan los aditivos y coadyuvantes en
+alimentos, bebidas y suplementos alimenticios, su uso y disposiciones sanitarias.
+5. Requisitos de etiquetado
+5.1 Requisitos generales.
+5.1.1 Presentación de la información.
+Los productos destinados a ser comercializados en el mercado nacional, deben ostentar una etiqueta con la
+información establecida en esta norma en idioma español, independientemente de que también pueda estar en
+otros idiomas, cuidando que los caracteres sean mayores o al menos iguales a aquellos en los que se presenta la
+información en otros idiomas; los cuales deben ser claros, visibles, indelebles y en colores contrastantes, fáciles
+de leer por el consumidor en circunstancias normales de compra y uso. No será necesario utilizar las comillas en
+el etiquetado.
+5.1.2. La información que se presente al consumidor, debe ser veraz y comprobable.
+5.1.3. Las etiquetas que ostenten los productos objeto de esta norma, deben fijarse de manera tal que
+permanezcan disponibles hasta el momento de su compra y uso en condiciones normales.
+5.1.4 Cuando por las características del producto, no sea posible que la(s) etiqueta(s) se encuentre(n)
+directamente sobre el envase primario o secundario se podrán anexar al mismo.
+5.1.5 Denominación genérica y específica del producto.
+5.1.5.1 Todos los productos deben ostentar la denominación genérica, conforme a lo que se establece en el
+apéndice informativo "A" de esta norma, pudiendo incluir la específica. En caso de productos cuya denominación
+no se encuentre dentro del ordenamiento antes citado, su denominación será aquella que mejor los describa o la
+más común o usual, podrá usarse una ilustración o viñeta que represente el uso del producto cosmético.
+5.1.5.2 La información del numeral anterior, debe presentarse en español a excepción de las formas
+cosméticas que podrán declararse en su idioma original. Esta información podrá presentarse en la superficie
+principal del envase primario o secundario.
+5.1.6Identificación del responsable del producto.
+5.1.6.1 Debe figurar en la superficie de información del envase primario o secundario, el nombre,
+denominación o razón social y domicilio (calle, número, código postal, ciudad y estado) del responsable del
+producto. Tratándose de productos importados, estos datos podrán incorporarse al producto, en el Territorio
+Nacional después del despacho aduanero y antes de su comercialización.
+5.1.6.2 Leyenda que identifique al país de origen del producto o gentilicio, por ejemplo "Producto de ...",
+"Hecho en...", "Manufacturado en ..." u otras análogas, sujeto a lo dispuesto en los tratados internacionales de los
+cuales México sea parte.
+5.1.7 Declaración de lote.
+5.1.7.1 En cualquier parte del envase primario o secundario, debe figurar en todos los productos objeto de
+esta norma, la identificación del lote con una indicación en clave o en lenguaje claro, ya sea grabado, marcado
+con tinta indeleble o de cualquier otro modo similar, siempre y cuando éste sea claro y asegure su permanencia
+en condiciones normales de uso.
+5.1.8 Instrucciones o modo de uso.
+5.1.8.1 Deben figurar las instrucciones de uso u otros análogos en la superficie de información del envase
+primario o secundario o instructivo anexo de los siguientes productos: tintes, colorantes, coloración, decolorantes;
+permanentes; alaciadores permanentes; en productos para la piel cuya función primaria sea la
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+4/18
+
+
+protección solar, bronceadores, autobronceadores, depilatorios, epilatorios o en cualquier otro producto que lo
+requiera.
+5.1.8.2 En caso de que las instrucciones o modo de uso estén en un instructivo anexo deberá señalarse esta
+situación mediante la oración "léase instructivo anexo" o equivalente.
+5.1.8.3 En productos para la piel cuya función primaria sea la protección solar, indicar mediante las frases
+siguientes o equivalentes:
+5.1.8.3.1 Que se aplique antes de la exposición al sol.
+5.1.8.3.2 Que para mantener la protección, se repita con frecuencia la aplicación del producto, especialmente
+después de transpirar, bañarse o secarse.
+5.1.8.3.3. Que se aplique a la piel la cantidad suficiente.
+5.1.9 Declaraciones prohibidas de propiedades.
+Se prohíbe el uso de las siguientes declaraciones:
+5.1.9.1 Declaración de propiedades que no pueden comprobarse.
+5.1.9.2 No podrán atribuirse a los productos cosméticos, acciones propias de los medicamentos.
+5.1.9.3 En la comercialización de los productos cosméticos, el etiquetado no utilizará textos, denominaciones,
+marcas, imágenes o cualquier otro símbolo figurativo o no, con el fin de atribuir a estos productos características o
+propiedades de las que carecen.
+5.1.10 En los envases múltiples o colectivos será necesario declarar únicamente, la información de etiquetado
+que no contengan los productos, de forma individual.
+5.1.10.1 La información anterior debe aparecer en la superficie principal de exhibición o en la de información,
+sin restricción en el tamaño de la letra utilizada, siempre que sea fácil de leer por el consumidor.
+5.1.10.2 Para los productos que se comercialicen en envases múltiples o colectivos:
+5.1.10.2.1 La declaración de la cantidad puede expresarse indistintamente por cuenta numérica por los
+envases que contiene o por contenido neto, excepto cuando el contenido o contenido neto sea obvio, no siendo
+restrictivo la ubicación y tamaño de la letra utilizada.
+5.1.10.2.2 Los envases individuales deben contener la información completa que establece este
+ordenamiento, la declaración de cantidad del dato cuantitativo de acuerdo con lo establecido en este
+ordenamiento. En el caso de que los envases individuales no contengan la declaración de cantidad, ésta debe
+declararse en el envase múltiple o colectivo, no siendo restrictivo la ubicación y tamaño de la letra utilizada.
+5.2. Información Comercial
+5.2.1 Se debe cumplir con lo que establece la Norma Oficial Mexicana NOM-008-SCFI-2002 Sistema General
+de Unidades de Medida, sin perjuicio de que además se puedan utilizar unidades de medida de otro sistema.
+5.2.2 Para la declaración de cantidad se considera suficiente que los envases ostenten el dato cuantitativo,
+seguido de la unidad correspondiente a la magnitud aplicable, sin que sea necesario ostentar las leyendas
+"CONTENIDO", "CONTENIDO NETO", O SUS ABREVIATURAS, "CONT", "CONT.NET".
+5.2.3 La declaración anterior debe aparecer en la superficie principal de exhibición o en la de información del
+envase primario o secundario.
+5.2.4 El tamaño de la declaración de contenido o contenido neto debe ser de acuerdo a lo establecido en la
+Norma Oficial Mexicana NOM-030-SCFI-2006 Información comercial - Declaración de cantidad en la etiqueta -
+Especificaciones.
+5.2.5 En las muestras o ayudas de venta y amenidades debe figurar, en cualquier parte del envase la
+siguiente información: denominación del producto, nombre del responsable del producto, número de lote y cuando
+aplique, considerando lo establecido en esta norma, incluir las instrucciones de uso y/o leyendas precautorias.
+5.2.6 En las muestras o ayudas de venta de lociones y fragancias cuyo contenido neto sea menor o igual a 2
+ml debe figurar en el envase secundario al menos la marca comercial, la denominación del producto, para los
+productos importados ésta podrá ser la del país de origen, la razón social del fabricante del mismo, y cuando
+aplique leyendas precautorias.
+5.3 Información Sanitaria
+5.3.1. En los productos objeto de esta norma, debe figurar en caracteres visibles, en cualesquiera de las
+etiquetas que se encuentran en la superficie de información del envase primario o secundario, la lista de los
+nombres de los ingredientes de la fórmula debe ir precedida por el término "ingredientes" y enlistarse:
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+5/18
+
+
+5.3.1.1 por orden cuantitativo decreciente; o,
+5.3.1.2 por orden cuantitativo decreciente aquellos ingredientes cuya concentración sea superior al 1%
+seguido por aquellos ingredientes en concentración inferior o igual al 1% que podrán mencionarse en cualquier
+orden.
+5.3.2 Quedan exceptuadas de la declaración de los nombres de los ingredientes, los perfumes y fragancias.
+5.3.3 Para la nomenclatura de los ingredientes, puede emplearse a elección del fabricante cualquiera de las
+establecidas en los Acuerdos, o el nombre químico más usual o el nombre tal cual como aparece en la
+Nomenclatura Internacional de Ingredientes Cosméticos (INCI).
+Las fragancias y sabores pueden designarse con el nombre genérico.
+Los materiales de origen botánico deben designarse con el nombre científico de la planta, siendo opcional el
+nombre común de la misma.
+5.3.4 Para la declaración de los nombres de los ingredientes en los productos con una o más presentaciones,
+en los que la fórmula base es la misma y sólo varía el uso de los colorantes, se incluirá la lista con los nombres de
+los ingredientes comunes de la fórmula, seguida de otra con todos los colorantes usados para las diversas
+presentaciones, anteponiendo a esta última el texto "puede contener" o "contiene uno o más" o "+/-".o
+equivalentes.
+5.3.5 Para la declaración de los nombres de los ingredientes en aquellos productos que por su tamaño
+carecen de espacio, (como son lápices de cejas, delineadores, entre otros) ésta podrá figurar en el envase
+secundario si lo hubiere o bien en un volante impreso anexo al producto o en una etiqueta de bandera.
+5.3.6 En productos con una duración menor o igual a 24 meses debe figurar, en cualquier parte del envase
+primario o secundario, la fecha hasta la cual un producto, en condiciones adecuadas de almacenamiento, es
+seguro para la salud del consumidor, indicando al menos el mes y el año, o bien por el día, el mes y el año Este
+dato podrá o no ir precedido por la leyenda, a elección del fabricante: Caducidad, Consumo preferente,
+Vencimiento, Duración mínima, Validez, Expiración, o equivalentes o sus abreviaturas.
+Quedan exceptuados de la declaración de esta fecha, los productos que por sus características no permiten el
+crecimiento microbiano o que tienen una alta rotación de venta y uso, tales como: Aceites, Jabones sólidos, sales
+de baño, perfumes y derivados, desodorantes que no sean emulsiones, antitranspirantes, depilatorios, tintes y
+decolorantes, shampoo, acondicionadores, permanentes, relajantes permanentes de rizos y alaciadores
+permanentes, fijadores, oxidantes, productos para uñas, brillantinas, unidosis y productos en envases
+presurizados.
+5.3.7 Leyendas precautorias
+Las leyendas precautorias asociadas a ingredientes que conforme a las disposiciones que emita la Secretaría
+representen riesgos a la salud, deberán estar escritas en idioma español, incluyendo el nombre de dichos
+ingredientes. Cuando los ingredientes se hayan declarado conforme a la Nomenclatura INCI, las leyendas
+precautorias a que hace referencia el párrafo anterior deberán incluir también dicha denominación.
+Conforme al tipo de producto y las sustancias que contiene, se deben incluir las siguientes leyendas
+precautorias o sus equivalentes:
+5.3.7.1 En desodorantes o antitranspirantes:
+5.3.7.1.1 Que no se aplique sobre piel irritada o lastimada
+5.3.7.1.2 Que descontinúe su uso en caso de presentarse irritación, enrojecimiento o alguna molestia
+5.3.7.1.3 Que no se deje al alcance de los niños
+5.3.7.1.4 En caso de contener Fenolsulfonato de zinc mencionar que se evite el contacto con los ojos
+5.3.7.2 En tintes, colorantes, coloración y otros relacionados:
+5.3.7.2.1 Los colorantes del cabello pueden causar reacciones alérgicas graves
+5.3.7.2.2 Lea y siga las instrucciones
+5.3.7.2.3 Este producto no está destinado a utilizarse en personas menores de dieciséis años.
+5.3.7.2.4 Los tatuajes temporales de Â«henna negraÂ» pueden aumentar el riesgo de alergia
+5.3.7.2.5 No utilice el tinte capilar
+5.3.7.2.5.1 Si tiene una erupción cutánea en el rostro o tiene el cuero cabelludo sensible, irritado o dañado
+5.3.7.2.5.2 Si alguna vez ha experimentado cualquier tipo de reacción después de la coloración del cabello
+5.3.7.2.5.3 Si alguna vez ha experimentado una reacción a los tatuajes temporales de Â«henna negraÂ»
+5.3.7.2.6 Que se realice una prueba preliminar de acuerdo a las instrucciones
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+6/18
+
+
+5.3.7.2.7 Que puede causar alergia en algunas personas
+5.3.7.2.8 Que suspenda su empleo en caso de irritación
+5.3.7.2.9 Que no se aplique en cejas o pestañas
+5.3.7.2.10 Que se evite el contacto con los ojos
+5.3.7.2.11 Que no se deje al alcance de los niños
+5.3.7.2.12 Indicaciones de primeros auxilios para el caso
+5.3.7.2.13 Que se usen guantes apropiados
+5.3.7.2.14 En caso de que el producto entre en contacto con los ojos, que se enjuaguen inmediatamente con
+agua
+5.3.7.2.15 En productos profesionales además se debe indicar: Reservado a profesionales
+5.3.7.3 En tintes, colorantes, coloración y otros que contengan alguna de las siguientes sustancias, además
+de las leyendas anteriores, se deberán indicar que la contienen:
+5.3.7.3.1 Diaminobenceno y sus derivados
+5.3.7.3.2 Diaminotolueno y sus derivados
+5.3.7.3.3 Diaminofenol
+5.3.7.3.4 Hidroquinona
+5.3.7.3.5 Resorcinol
+5.3.7.4 En permanentes y alaciadores permanentes:
+5.3.7.4.1 Que se destaque(n) la(s) sustancia(s) que puedan causar daño al cabello y piel cabelluda
+5.3.7.4.2 Que no se aplique a cejas o pestañas
+5.3.7.4.3 Que se evite el contacto con los ojos. Que puede causar ceguera
+5.3.7.4.4 Que se use exclusivamente conforme al instructivo
+5.3.7.4.5 Que no se deje al alcance de los niños
+5.3.7.4.6 Además deben incluirse las indicaciones de primeros auxilios para el caso y recomendar la consulta
+a un médico
+5.3.7.4.7 En productos profesionales además se debe indicar: Reservado a profesionales
+5.3.7.4.8 En los productos que contengan alguna de las siguientes sustancias, además de lo anterior, se
+deberá indicar que las contienen:
+5.3.7.4.8.1 Hidróxido de sodio
+5.3.7.4.8.2 Hidróxido de potasio
+5.3.7.4.8.3 Hidróxido de litio
+5.3.7.4.8.4 Hidróxido de calcio
+Se podrá indicar de manera genérica "Contiene un agente alcalino"
+5.3.7.5 En decolorantes:
+5.3.7.5.1 Que se destaque(n) la(s) sustancia(s) que puede causar daño
+5.3.7.5.2 Que se evite el contacto con los ojos
+5.3.7.5.3 En caso de que el producto entre en contacto con los ojos, que se enjuaguen inmediatamente con
+agua
+5.3.7.5.4 Que se usen guantes apropiados
+5.3.7.5.5 Que no se aplique si la piel cabelluda está irritada
+5.3.7.5.6 Que se suspenda su empleo en caso de irritación
+5.3.7.5.7 Que no se aplique en cejas o pestañas
+5.3.7.5.8 Que no se deje al alcance de los niños
+5.3.7.5.9 Que se den indicaciones de primeros auxilios para el caso
+5.3.7.6 En depilatorios:
+5.3.7.6.1 Que no se aplique sobre piel irritada o lastimada
+5.3.7.6.2 Que no se deje al alcance de los niños
+5.3.7.6.3 Que se evite el contacto con los ojos
+5.3.7.6.4 Los productos que contengan alguna de las siguientes sustancias además de las anteriores, se
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+7/18
+
+
+debe indicar que la contiene:
+5.3.7.6.4.1 Hidróxido de sodio
+5.3.7.6.4.2 Hidróxido de potasio
+5.3.7.6.4.3 Hidróxido de litio
+5.3.7.6.4.4 Hidróxido de calcio
+Se podrá indicar de manera genérica "Contiene un agente alcalino"
+5.3.7.7 En los endurecedores de uñas que contengan formaldehido:
+5.3.7.7.1 Que se proteja la cutícula con sustancias grasosas
+5.3.7.7.2 Indicar que lo contiene mediante la leyenda correspondiente (sólo si la concentración es superior a
+0.05%)
+5.3.7.8 En removedores de cutícula que contengan hidróxido de sodio o potasio:
+5.3.7.8.1 Que contiene potasa o sosa, según corresponda o que contiene un agente alcalino
+5.3.7.8.2 Que se evite el contacto con los ojos
+5.3.7.8.3 Que puede causar ceguera
+5.3.8.8.4 Que no se deje al alcance de los niños
+5.3.7.9 En sistemas de uñas profesionales que contengan peróxido de benzoílo y/o hidroquinona:
+5.3.7.9.1 Que está reservado a los profesionales
+5.3.7.9.2 Que se evite el contacto con la piel
+5.3.7.9.3 Que se lean las instrucciones de uso
+5.3.7.10 En los productos para la piel cuya función primaria sea la de ofrecer protección solar:
+5.3.7.10.1 Que se indique el valor del Factor de Protección Solar (FPS), en caso de que se utilicen las siglas
+FPS o SPF, señalar su significado
+5.3.7.10.2 Que protege contra UVB y UVA
+5.3.7.10.3 Que no permanezca mucho tiempo expuesto al sol, aunque emplee un producto de protección solar
+5.3.7.10.4 Que se mantenga a los bebés y niños pequeños fuera de la luz solar directa
+5.3.7.10.5 Que la exposición excesiva al sol es un riesgo importante para la salud
+5.3.7.10.6 Que suspenda su empleo si se presentan signos de irritación o salpullido
+5.3.7.10.7 Evite el contacto con los ojos, puede causar irritación
+5.3.7.10.8 Se podrá incluir el logotipo del Factor UVA, el cual deberá indicarse mediante las siglas "UVA"
+impresas dentro de un círculo simple y cuyo diámetro no deberá exceder la altura con que se indique el número
+FPS.
+Los productos que ofrezcan protección solar como función secundaria, no se consideran protectores solares
+por lo que no les aplican estas leyendas.
+5.3.7.11 En productos cuya función primaria sea la de broncear éstos deben tener un FPS de 2 a 4 (valor
+medido 2 a 5.9) y declararlo:
+5.3.7.11.1 Que se indique el valor del Factor de Protección Solar (FPS), en caso de que se utilicen las siglas
+FPS o SPF, señalar su significado
+5.3.7.11.2 Que suspenda su empleo si se presentan signos de irritación
+5.3.7.11.3 Que no permanezca mucho tiempo expuesto al sol
+5.3.7.11.4 Que se mantenga a los bebés y niños pequeños fuera de la luz solar directa
+5.3.7.11.5 Que la exposición excesiva al sol es un riesgo importante para la salud
+5.3.7.11.6 Que no se recomienda para niños y personas con piel sensible al sol
+5.3.7.12 En desodorantes femeninos en aerosol previstos para el uso en el área genital:
+5.3.7.12.1 Este producto es exclusivo para uso externo solamente y no debe ser aplicado a piel con heridas,
+irritada o con escozor
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+8/18
+
+
+5.3.7.13 En productos cuya presentación sea en ampolletas, iguales a la presentación farmacéutica, debe
+figurar en el envase múltiple o en cada ampolleta el texto: "no ingerible" "no inyectable"
+5.3.7.14 En los productos cuya presentación es en envases presurizados (aerosol), además de las leyendas
+precautorias que se requieran conforme al producto de que se trate, las siguientes:
+5.3.7.14.1 Que no se aplique cerca de los ojos o flama
+5.3.7.14.2 Que no se exponga al calor
+5.3.7.14.3 Que no se queme, ni perfore el envase
+5.3.7.14.4 Que no se deje al alcance de los niños
+5.3.7.15 En los productos inflamables, además de las leyendas precautorias que se requieran conforme al
+producto de que se trate:
+5.3.7.15.1 Que es inflamable
+5.3.7.15.2 Que no se aplique cerca de los ojos o piel irritada
+5.3.7.15.3 Que no se deje al alcance de los niños
+5.3.7.16 En productos que contengan ácido bórico y boratos (exceptuando productos para el baño y para la
+ondulación del cabello):
+5.3.7.16.1 Que no se aplique a niños menores de tres años
+5.3.7.16.2 Que no se aplique en piel irritada o lastimada (sólo si la concentración de borato soluble libre
+excede 1.5% expresado en ácido bórico masa / masa)
+5.3.7.17 En productos que contengan tetraboratos:
+5.3.7.17.1 En productos para el baño:
+5.3.7.17.1.1 Que no se use en niños menores de tres años
+5.3.7.17.2 En productos para el cabello:
+5.3.7.17.2.1 Enjuagar abundantemente
+5.3.7.17.3 En talcos:
+5.3.7.17.3.1 Que no se use en niños menores de tres años
+5.3.7.17.3.2 No utilizar en pieles escoriadas o irritadas
+5.3.7.18 En productos para niños que contengan ácido salicílico y sus sales:
+5.3.7.18.1 Que no se use en niños menores de tres años
+5.3.7.19 En los productos que contengan diclorofeno, clorobutanol, cloroacetamida, timerosal compuestos
+fenilmercúricos (ya sea ácido o sales) u oxibenzona:
+5.3.7.19.1 Indicar que lo contiene mediante la leyenda correspondiente
+5.3.7.20 Si el producto contiene más de 0,05% de glutaraldehído en el producto final:
+5.3.7.20.1 Indicar que lo contiene mediante la leyenda correspondiente
+5.3.7.21 En productos que permanezcan en la piel, si la concentración de yodopropinil butil carbamato es
+superior a 0.02%:
+5.3.7.21.1 Indicar que contiene yodo
+5.3.7.22 En productos que contengan más de 2% de amoniaco se indicará que lo contiene.
+5.3.7.23 En productos que contengan ácido tioglicólico, sus sales o esteres:
+5.3.7.23.1 Para todos los productos:
+5.3.7.23.1.1 Indicar que lo contiene mediante la leyenda correspondiente
+5.3.7.23.1.2 Que se mantenga fuera del alcance de los niños
+5.3.7.23.1.3 Que se siga el modo de empleo
+5.3.7.23.1.4 Que se evite el contacto con los ojos
+5.3.7.23.1.5 En caso de contacto con los ojos enjuague con abundante agua. Consulte al médico
+5.3.7.23.2 Para el caso de productos para el cabello además de lo anterior:
+5.3.7.23.2.1 Utilizar guantes adecuados
+5.3.7.23.3 Para el caso de los Esteres del ácido tioglicólico además de lo anterior:
+5.3.7.23.3.1 Puede causar sensibilización en caso de contacto con la piel
+5.3.7.23.4 Para los productos para el cabello de uso profesional además de lo anterior, indicar:
+5.3.7.23.4.1 Que es para uso profesional
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+9/18
+
+
+5.3.7.24 En productos que contengan clorhidrato de aluminio/zirconio y sus complejos de glicina:
+5.3.7.24.1 Que no se aplique sobre la piel irritada, o lastimada
+5.3.7.25 En productos que contengan disulfuro de selenio:
+5.3.7.25.1 Indicar que lo contiene mediante la leyenda correspondiente
+5.3.7.25.2 Que se evite el contacto con los ojos y la piel lastimada
+5.3.7.26 En productos que contengan peróxidos excepto cuando su uso sea como conservador:
+5.3.7.26.1 Se deben usar guantes protectores (sólo cuando se trate de tratamientos capilares)
+5.3.7.26.2 Que se evite el contacto con los ojos
+5.3.7.26.3 Que en caso de contacto con los ojos se laven inmediatamente con agua
+5.3.7.26.4 Indicar que lo contiene mediante la leyenda correspondiente
+5.3.7.26.5 En productos profesionales además se debe indicar: Reservado a profesionales
+5.3.7.27 En productos que contengan benzalconio como cloruro, bromuro o sacarinato:
+5.3.7.27.1 Que se evite el contacto con los ojos
+5.3.7.28 En productos que contengan ácido oxálico sus ésteres y sus sales:
+5.3.7.28.1 Reservado a los profesionales
+5.3.7.29 En productos que contengan Sulfuros alcalinos y alcalinotérreos:
+5.3.7.29.1 Que se mantenga fuera del alcance de los niños
+5.3.7.29.2 Que se evite el contacto con los ojos
+5.3.7.30 En productos que contengan Hidróxido de estroncio:
+5.3.7.30.1 Que se mantenga alejado del alcance de los niños
+5.3.7.30.2 Que se evite el contacto con los ojos
+5.3.7.31 En productos que contengan Nitrato de plata:
+5.3.7.31.1 Indicar que lo contiene
+5.3.7.31.2 Que en caso de contacto con los ojos, lavarse inmediatamente con agua
+6. Concordancia con normas internacionales y mexicanas
+Esta norma concuerda parcialmente con la siguiente norma internacional:
+6.1 International Standard, ISO/FDIS 22175:2005 (E), Cosmetics-Packaging and labeling.
+7. Bibliografía
+7.1 Ley General de Salud.
+7.2 Ley Federal sobre Metrología y Normalización.
+7.3 Reglamento de Control Sanitario de Productos y Servicios.
+7.4 Acuerdo por el que se determinan las sustancias prohibidas y restringidas en la elaboración de productos
+de perfumería y belleza.
+7.5 Acuerdo por el que se determinan los aditivos y coadyuvantes en alimentos, bebidas y suplementos
+alimenticios, su uso y disposiciones sanitarias.
+7.6 Health Canada. Cosmetic Programme. Product safety programme. Information January 2003. www.hc-
+sc.gc.ca
+7.7 Health Canada. Food and Drug Act. www.hc-sc.gc.ca.
+7.8 Food and Drug Administration. 2008. 21 C.F.R. ch.(4-1-08 Editión) U.S.A.
+7.9 Secretaría de Comercio y Fomento Industrial. 1981. NORMA-Z-013/02. Guía para la Redacción,
+Estructuración y Presentación de las Normas Oficiales Mexicanas. México, D.F.
+7.10 The Cosmetic, Toiletry and Fragance Association. 1990. CTFA Labeling Manual. Fifth Edition. Washington
+D.C. USA.
+7.11 The Cosmetic, Toiletry and Fragance Association. 2008. International Cosmetic Ingredient Dictionary.
+Twelfth Edition. Editors John A. Wenninger. G. N. McEwen, Jr., Ph. D., J. D. Washington D.C. USA.
+7.12 US Government Printing Office. Code of Federal Regulations 21 CFR 701. Cosmetic Labelling. April 1,
+2008.
+7.13 Unión Europea. 1993. Cosmetics Directive 76/768/EEC.
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+10/18
+
+
+7.14 Recomendación de la Comisión de 22 de septiembre de 2006 relativa a la eficacia de los productos de
+protección solar y a las declaraciones sobre los mismos, Diario Oficial de la Unión Europea, 26.9.2006.
+7.15 Reglamento (Ce) No. 1223/2009 del Parlamento Europeo y del Consejo de 30 de noviembre de 2009
+sobre los productos cosméticos.
+8. Observancia de la norma
+La vigilancia de la presente norma estará a cargo de la Comisión Federal para la Protección contra Riesgos
+Sanitarios y la Procuraduría Federal del Consumidor de acuerdo a su respectivo ámbito de competencia.
+9. Evaluación de la conformidad
+Esta Norma Oficial Mexicana no es certificable y las Unidades de verificación de información comercial
+acreditadas y aprobadas por la Secretaría de Economía podrán evaluar la conformidad de la misma, en términos
+de la Ley Federal sobre Metrología y Normalización.
+10. Vigencia de la norma
+La presente norma oficial mexicana entrará en vigor con su carácter de obligatoria a los noventa días
+posteriores a la fecha de su publicación en el Diario Oficial de la Federación.
+11. Transitorios
+PRIMERO. Se establece un plazo único de doce meses contados a partir de la entrada en vigor de la presente
+norma para agotar existencias de productos que no cumplan con las modificaciones establecidas en esta norma.
+SEGUNDO. Se establece un plazo de dieciocho meses para ajustar el etiquetado de los protectores solares,
+considerando lo indicado en la norma y apéndice normativo "A".
+Sufragio Efectivo. No Reelección.
+México, D.F., a 16 de julio de 2012.- El Comisionado Federal para la Protección contra Riesgos Sanitarios y
+Presidente del Comité Consultivo Nacional de Normalización de Regulación y Fomento Sanitario, Mikel Andoni
+Arriola Peñalosa.- Rúbrica.- El Director General de Normas y Presidente del Comité Consultivo Nacional de
+Normalización de Seguridad al Usuario, Información Comercial y Prácticas de Comercio, Christian Turégano
+Roldán.- Rúbrica.
+APENDICE NORMATIVO "A" PROTECTORES SOLARES
+Los productos que ofrezcan protección solar como función secundaria, no se consideran protectores solares,
+por lo que no les aplica este apéndice normativo.
+A.1 FILTROS o PROTECCION UVA/UVB
+A.1.1 En los productos para la piel cuya función primaria sea la protección solar:
+A.1.1.1 Deben proteger contra ambas radiaciones, UVB y UVA.
+A.1.1.2 No deben hacerse declaraciones que conlleven las siguientes características:
+A.1.1.2.1 protección al 100% frente a la radiación UV (como Â«bloqueador o bloqueante solarÂ» o
+Â«protección totalÂ»).
+A.1.1.2.2 no es necesario repetir la aplicación del producto en ningún caso (como Â«prevención durante todo
+el díaÂ»).
+A.1.2 Los productos de protección solar deben llevar advertencias en las que se indique que no constituyen
+una protección al 100%, y consejos sobre las precauciones que conviene tomar, además de su uso.
+A.2 EFICACIA MINIMA
+A.2.1 Deben ofrecer un grado mínimo de protección frente a ambas radiaciones, UVB y UVA.
+A.2.2 El grado mínimo de protección de los productos de protección solar debe ser el siguiente:
+A.2.2.1 un factor 6 de protección solar frente a la radiación UVB.
+A.2.2.2 un factor de protección frente a la radiación UVA de al menos 1/3 del factor de protección solar UVB.
+A.3 DECLARACIONES SOBRE NIVEL PROTECCION DE LOS PRODUCTOS
+A.3.1 Las declaraciones sobre el nivel de protección del producto han de ser sencillas y no ambiguas.
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+11/18
+
+
+A.3.2 Sólo deben hacerse declaraciones de protección frente a la radiación UVB y UVA cuando la protección
+sea igual o superior a los niveles establecidos en la tabla 1.
+A.3.3 El nivel de protección del producto debe figurar mediante la clasificación como Â«bajaÂ», Â«mediaÂ»,
+Â«altaÂ» y Â«muy altaÂ». Cada clasificación debe equivaler a un grado de protección frente a ambas
+radiaciones, UVB y UVA de acuerdo a lo que establece la tabla 1.
+A.4 METODOS DE PRUEBA PARA LA DETERMINACION DE LA EFICACIA DEL FACTOR DE
+PROTECCION SOLAR
+A.4.1 Para la determinación de la eficacia del factor de protección solar deben utilizar como referencia los
+siguientes métodos de prueba.
+A.4.1.1 ISO24442:2011 In vivo determination of sunscreen UVA protection.
+A.4.1.2 ISO24443:2012 Determination of sunscreen UVA photoprotection in vitro.
+A.4.1.3 Colipa 2011 Method for in vitro determination of UVA protection.
+A.4.1.4 FDA 2011 SPF test methods and for the UVA protection.
+Tabla 1
+Los factores de protección solar deberán ajustarse a la siguiente tabla:
+Clasificación
+Factor de protección
+solar que se indica en
+la etiqueta
+Factor de protección
+solar medido
+Factor mínimo de
+protección UVA
+recomendado
+Longitud de onda
+crítica mínima
+recomendada
+Protección baja
+6
+6-9,9
+1/3 del factor de
+protección solar que
+se indica en la
+etiqueta
+370 nm
+10
+10-14,9
+Protección media
+15
+15-19,9
+20
+20-24,9
+25
+25-29,9
+Protección alta
+30
+30-49,9
+50
+50-59,9
+Protección muy alta
+50 +
+Igual o mayor a 60
+12. APENDICE INFORMATIVO "A" DENOMINACIONES
+Tabla 2. Lista indicativa de denominaciones para los productos objeto de esta norma.
+A continuación se enlistan de manera enunciativa, mas no limitativa las denominaciones genéricas para estos
+productos.
+CLASIFICACION POR USO
+DENOMINACION GENERICA
+PRODUCTOS PARA EL CABELLO
+Acondicionador
+Alaciador
+Brillo/Gloss/Glitter
+Decolorante
+Desvanecedor de canas
+Enjuague
+Estilizador
+Fijador
+Máscara o Mascarilla
+Modelador
+Matizador/Tonalizante
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+12/18
+
+
+Ondulador
+Permanente
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+13/18
+
+
+Shampoo/Champú
+Tinte/Colorante/coloración
+Protector/ Tratamiento
+Protector o Filtro solar
+Retocador de raíces
+PRODUCTOS PARA LOS OJOS Y CEJAS
+Adhesivos para pestañas postizas
+Brillo/Gloss/Glitter
+Corrector
+Delineador
+Desmaquillante
+Máscara
+Sombras
+Tratamiento
+PRODUCTOS PARA LOS LABIOS
+Brillo/Gloss/Glitter
+Delineador
+Desmaquillante
+Labial
+Protector o Filtro Solar
+PRODUCTOS DE USO FACIAL Y/O CORPORAL
+Aclarador o despigmentante de la piel
+Agua de colonia
+Agua de tocador
+Antitranspirante
+Autobronceador (Bronceado sin sol )
+Baños de burbujas o baños perfumados
+Brillo/Glitter
+Bronceado
+Colonia
+Corrector
+Decolorante del vello superfluo
+Depilatorio
+Desmaquillante
+Desodorante
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+14/18
+
+
+Dermolimpiador
+Epilatorio
+Exfoliante
+Limpiadora o Limpiador
+Maquillaje
+Mascarilla
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+15/18
+
+
+Perfume
+Protector o filtro solar
+Repelentes de insectos
+Rubor
+Sales para baño
+Splash
+Talco
+Tratamiento
+PRODUCTOS PARA MANOS Y UÑAS
+Adhesivo para uñas postizas
+Barniz o esmalte
+Disolvente de esmalte o barniz
+Endurecedor
+Exfoliante o exfoliador Removedor de cutícula
+Removedor o quita esmalte o barniz
+Secador de esmalte o barniz
+Tratamiento
+PRODUCTOS DE AROMACOLOGIA O AROMALOGIA
+SEGUN SU FORMA COSMETICA
+CLASIFICACION POR FORMA COSMETICA
+Aceite
+Bálsamo
+Cápsulas
+Crema
+Emulsión
+Espuma
+Fluido
+Gel/jalea
+Jabón
+Jabón líquido
+Lápiz
+Leche
+Loción/Tónico/Solución
+Mousse
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+16/18
+
+
+Parches
+Polvo
+Pomada
+Roll on
+Spray
+Shampoo/Champú
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+17/18
+
+
+Serum
+Stick / barra
+Suero
+Tratamiento
+Toallita
+___________________________
+2026/5/13 16:33
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle_popup.php?codigo=5269348
+18/18
+
+

@@ -1,0 +1,170 @@
+{
+  "source": "COFEPRIS",
+  "documentId": "NOM-141-SSA1/SCFI-2012",
+  "title": "预包装化妆品标签规范 (Etiquetado para productos cosméticos preenvasados)",
+  "effectiveDate": "2012-01-17",
+  "publishedDOF": "2012-01-17",
+  "category": "labeling",
+  "sections": [
+    {
+      "section": "5.1",
+      "title": "通用要求 (Requisitos generales)",
+      "rules": [
+        {
+          "ruleId": "MX-141-5.1.1",
+          "type": "language",
+          "condition": "信息必须使用西班牙语",
+          "message": "产品标签信息必须使用西班牙语标注"
+        },
+        {
+          "ruleId": "MX-141-5.1.2",
+          "type": "truthfulness",
+          "condition": "信息必须真实可验证",
+          "message": "标签信息必须真实且可验证"
+        },
+        {
+          "ruleId": "MX-141-5.1.5",
+          "type": "product_name",
+          "condition": "必须标注通用名称和特定名称",
+          "message": "产品必须标注通用名称和特定名称"
+        },
+        {
+          "ruleId": "MX-141-5.1.6",
+          "type": "manufacturer",
+          "condition": "必须标注制造商/进口商信息",
+          "message": "必须标注责任人名称和地址"
+        },
+        {
+          "ruleId": "MX-141-5.1.7",
+          "type": "ingredients",
+          "condition": "成分表必须按浓度递减排列",
+          "message": "成分表必须按浓度递减顺序排列，超过1%的成分按浓度排列，≤1%的成分可任意顺序"
+        },
+        {
+          "ruleId": "MX-141-5.1.8",
+          "type": "usage_instructions",
+          "condition": "必须标注使用方法",
+          "message": "必须包含使用说明或使用方法"
+        }
+      ]
+    },
+    {
+      "section": "5.1.9",
+      "title": "禁止声明 (Declaraciones prohibidas)",
+      "rules": [
+        {
+          "ruleId": "MX-141-5.1.9.1",
+          "type": "prohibited_claim",
+          "condition": "禁止无法证明的功效声明",
+          "message": "禁止使用无法证明的功效声明"
+        },
+        {
+          "ruleId": "MX-141-5.1.9.2",
+          "type": "prohibited_claim",
+          "condition": "禁止宣传药品功效",
+          "message": "禁止宣传产品具有药品功效"
+        },
+        {
+          "ruleId": "MX-141-5.1.9.3",
+          "type": "prohibited_claim",
+          "condition": "禁止虚假或误导性标识",
+          "message": "禁止使用虚假或误导性的文字、名称、图片或符号"
+        }
+      ]
+    },
+    {
+      "section": "5.3.7",
+      "title": "警示语要求 (Leyendas precauctorias)",
+      "rules": [
+        {
+          "ruleId": "MX-141-5.3.7.1",
+          "type": "warning",
+          "target": "general",
+          "condition": "通用警示语要求",
+          "message": "产品标签应包含通用警示语：可能致敏、避免接触眼睛、儿童不可触及等"
+        },
+        {
+          "ruleId": "MX-141-5.3.7.2.1",
+          "type": "warning",
+          "target": "hair_dye",
+          "condition": "染发剂必须标注",
+          "message": "染发剂必须标注：使用前做皮肤测试、避免接触眼睛、可能导致过敏等"
+        },
+        {
+          "ruleId": "MX-141-5.3.7.3",
+          "type": "warning",
+          "target": "hair_dye_specific",
+          "condition": "含特定成分的染发剂",
+          "message": "含二氨基苯、二氨基甲苯、二氨基苯酚、对苯二酚、间苯二酚的染发剂必须特别标注"
+        },
+        {
+          "ruleId": "MX-141-5.3.7.4",
+          "type": "warning",
+          "target": "permanent_wave",
+          "condition": "烫发剂/直发剂",
+          "message": "烫发剂和直发剂必须标注：含可能损害头发和头皮的物质、避免接触眼睛、可能导致失明等专业警示"
+        },
+        {
+          "ruleId": "MX-141-5.3.7.5",
+          "type": "warning",
+          "target": "bleach",
+          "condition": "脱色剂",
+          "message": "脱色剂必须标注：可能造成损害、避免接触眼睛、使用手套、如果头皮有刺激则停止使用等"
+        },
+        {
+          "ruleId": "MX-141-5.3.7.6",
+          "type": "warning",
+          "target": "depilatory",
+          "condition": "除毛剂",
+          "message": "除毛剂必须标注：不可用于破损或受刺激的皮肤、避免接触眼睛、儿童不可触及"
+        },
+        {
+          "ruleId": "MX-141-5.3.7.10",
+          "type": "warning",
+          "target": "sunscreen",
+          "condition": "防晒霜(主功能)",
+          "message": "防晒霜必须标注：SPF值、防UVA和UVB、过度日晒有害健康、婴儿避免阳光直射等"
+        },
+        {
+          "ruleId": "MX-141-5.3.7.14",
+          "type": "warning",
+          "target": "aerosol",
+          "condition": "气雾剂产品",
+          "message": "气雾剂产品必须标注：不可靠近眼睛或火焰、避免暴露于高温、不可刺穿或焚烧容器、儿童不可触及"
+        },
+        {
+          "ruleId": "MX-141-5.3.7.15",
+          "type": "warning",
+          "target": "flammable",
+          "condition": "易燃产品",
+          "message": "易燃产品必须标注：产品易燃、避免接触眼睛或受刺激的皮肤、儿童不可触及"
+        },
+        {
+          "ruleId": "MX-141-5.3.7.23",
+          "type": "warning",
+          "target": "thioglycolic_acid",
+          "condition": "含硫代乙醇酸的产品",
+          "message": "含硫代乙醇酸及其盐或酯的产品必须标注：含该成分、远离儿童、严格按说明使用、避免接触眼睛、误入眼睛立即用水冲洗并就医"
+        }
+      ]
+    },
+    {
+      "section": "5.3.6",
+      "title": "保质期标注",
+      "rules": [
+        {
+          "ruleId": "MX-141-5.3.6.1",
+          "type": "expiry_date",
+          "condition": "有效期≤24个月的产品",
+          "message": "有效期不超过24个月的产品必须标注到期日期，至少标明月份和年份"
+        },
+        {
+          "ruleId": "MX-141-5.3.6.2",
+          "type": "expiry_date",
+          "condition": "可标注为：Caducidad/Consumo preferente/Vencimiento/Duración mínima/Validez/Expiración",
+          "message": "保质期可标注为：失效期/最佳消费期/到期日/最低保质期/有效期/到期日或等效词汇"
+        }
+      ]
+    }
+  ]
+}

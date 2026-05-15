@@ -1,0 +1,95 @@
+{
+  "sunscreen_rules": {
+    "description": "NOM-141 防晒霜标签检测规则",
+    "documentId": "NOM-141-SSA1/SCFI-2012",
+    "detectionTypes": {
+      "spf_value": {
+        "description": "检测SPF值是否存在",
+        "pattern": "(?:SPF|FPS|factor de protección solar)\\s*:?\\s*(\\d+)",
+        "required": true,
+        "minValue": 6,
+        "action": "extract_number"
+      },
+      "uva_protection": {
+        "description": "检测UVA防护标识",
+        "pattern": "(?:UVA|PA\\+\\+|broad\\s*spectrum|protección\\s*UVA)",
+        "required": true,
+        "alternatives": [
+          "PA+",
+          "PA++",
+          "PA+++",
+          "Broad Spectrum",
+          "Protección UVA"
+        ]
+      },
+      "uvb_protection": {
+        "description": "检测UVB防护标识",
+        "pattern": "(?:UVB|UV|protección\\s*UV)",
+        "required": true
+      },
+      "forbidden_claims": {
+        "description": "检测禁止的宣传语",
+        "patterns": [
+          "100%\\s*(?:UV|solar|protección)",
+          "bloqueador\\s*solar",
+          "bloqueante\\s*solar",
+          "protección\\s*total",
+          "todo\\s*el\\s*día",
+          "sunblock\\s*100%"
+        ],
+        "severity": "critical"
+      },
+      "reapply_warning": {
+        "description": "检测重复使用警告",
+        "pattern": "(?:reaplic|volver\\s*a\\s*aplic|reapply)",
+        "required": true,
+        "severity": "warning"
+      },
+      "baby_warning": {
+        "description": "检测婴幼儿警告",
+        "pattern": "(?:bebés?|niños?\\s*pequeños?|infants?|babies)",
+        "required": true,
+        "severity": "warning"
+      }
+    }
+  },
+  "classification": {
+    "baja": {
+      "label": [
+        6,
+        10
+      ],
+      "measured": "6-9.9",
+      "chinese": "低"
+    },
+    "media": {
+      "label": [
+        15,
+        20,
+        25
+      ],
+      "measured": "15-29.9",
+      "chinese": "中"
+    },
+    "alta": {
+      "label": [
+        30,
+        50
+      ],
+      "measured": "30-59.9",
+      "chinese": "高"
+    },
+    "muy_alta": {
+      "label": [
+        50
+      ],
+      "measured": "≥60",
+      "chinese": "非常高"
+    }
+  },
+  "tanning_product": {
+    "minFPS": 2,
+    "maxFPS": 4,
+    "measuredMax": 5.9
+  }
+}

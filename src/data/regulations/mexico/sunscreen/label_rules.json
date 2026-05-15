@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "source": "COFEPRIS",
+    "documentId": "NOM-141-SSA1/SCFI-2012",
+    "documentIdAmendment": "NOM-141-SSA1/SCFI-2014",
+    "effectiveDate": "2012-09-19",
+    "effectiveDateAmendment": "2014-02-14",
+    "category": "label",
+    "productType": "sunscreen",
+    "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
+  },
+  "rules": [
+    {
+      "ruleId": "MX-SUN-001",
+      "category": "label",
+      "type": "spf_required",
+      "severity": "critical",
+      "description": "防晒霜必须标注SPF值",
+      "detection": {
+        "pattern": ["FPS\\s*\\d+|SPF\\s*\\d+|Factor de Protección Solar\\s*\\d+"],
+        "required": true,
+        "errorMessage": "产品声称具有防晒功能但未标注SPF/FPS值"
+      }
+    },
+    {
+      "ruleId": "MX-SUN-002", 
+      "category": "label",
+      "type": "spf_minimum",
+      "severity": "critical",
+      "description": "SPF最低值为6",
+      "detection": {
+        "pattern": ["(?:FPS|SPF)\\s*=?\\s*(\\d+)"],
+        "minValue": 6,
+        "errorMessage": "防晒系数SPF/FPS不得低于6"
+      }
+    },
+    {
+      "ruleId": "MX-SUN-003",
+      "category": "label", 
+      "type": "uva_protection_required",
+      "severity": "critical",
+      "description": "必须标注UVA防护",
+      "detection": {
+        "pattern": ["UVA|uvA|protege.*UVA|protección UVA"],
+        "required": true,
+        "errorMessage": "防晒产品必须标注UVA防护（需同时防护UVB和UVA）"
+      }
+    },
+    {
+      "ruleId": "MX-SUN-004",
+      "category": "label",
+      "type": "uvb_protection_required", 
+      "severity": "critical",
+      "description": "必须标注UVB防护",
+      "detection": {
+        "pattern": ["UVB|uvB|protege.*UVB|protección UVB"],
+        "required": true,
+        "errorMessage": "防晒产品必须标注UVB防护（需同时防护UVB和UVA）"
+      }
+    },
+    {
+      "ruleId": "MX-SUN-005",
+      "category": "label",
+      "type": "forbidden_100_protection",
+      "severity": "critical",
+      "description": "禁止声称100%或完全防护",
+      "detection": {
+        "pattern": ["100%.*(?:UV|protección|solar)|bloqueador solar|bloqueante solar|protección total|prevención todo el día"],
+        "forbidden": true,
+        "errorMessage": "禁止声称100%或完全防晒，禁止使用'bloqueador solar'、'bloqueante solar'、'protección total'等表述"
+      }
+    },
+    {
+      "ruleId": "MX-SUN-006",
+      "category": "label",
+      "type": "forbidden_all_day_protection",
+      "severity": "critical", 
+      "description": "禁止声称全天防护无需补涂",
+      "detection": {
+        "pattern": ["todo el día|all day|24 horas|24h|sin necesidad de reaplicar"],
+        "forbidden": true,
+        "errorMessage": "禁止声称无需重复使用或'全天防护'"
+      }
+    },
+    {
+      "ruleId": "MX-SUN-007",
+      "category": "label",
+      "type": "warning_sun_exposure",
+      "severity": "warning",
+      "description": "需标注避免长时间日晒警告",
+      "detection": {
+        "pattern": ["no permanezca.*mucho tiempo.*sol|no se exponga.*sol|evite la exposición prolongada"],
+        "required": true,
+        "errorMessage": "必须标注'不建议长时间暴露在阳光下'的警告"
+      }
+    },
+    {
+      "ruleId": "MX-SUN-008",
+      "category": "label",
+      "type": "warning_eye_contact",
+      "severity": "warning",
+      "description": "需标注避免接触眼睛警告",
+      "detection": {
+        "pattern": ["evite.*ojos|contacto con los ojos|ocular"],
+        "required": true,
+        "errorMessage": "必须标注避免接触眼睛的警告"
+      }
+    },
+    {
+      "ruleId": "MX-SUN-009",
+      "category": "label",
+      "type": "classification_label",
+      "severity": "info",
+      "description": "建议标注防护等级分类",
+      "detection": {
+        "pattern": ["protección\\s+(baja|media|alta|muy alta)"],
+        "required": false,
+        "note": "可选：低/中/高/非常高防护等级标注"
+      }
+    },
+    {
+      "ruleId": "MX-SUN-010",
+      "category": "label",
+      "type": "tanning_product_fps",
+      "severity": "critical",
+      "description": "防晒 bronzing/tanning产品FPS范围为2-4",
+      "condition": "产品功能为broncear(美黑)",
+      "detection": {
+        "pattern": ["(?:FPS|SPF)\\s*=?\\s*(\\d+)"],
+        "minValue": 2,
+        "maxValue": 4,
+        "errorMessage": "美黑产品(tanning/bronceador)的SPF必须为2-4（实测值2-5.9）"
+      }
+    }
+  ],
+  "spfClassificationTable": {
+    "baja": {"label": [6, 10], "measured": "6-9.9"},
+    "media": {"label": [15, 20, 25], "measured": "15-29.9"},
+    "alta": {"label": [30, 50], "measured": "30-59.9"},
+    "muy_alta": {"label": ["50+"], "measured": "≥60"}
+  },
+  "testingMethods": [
+    "ISO 24442:2011 - In vivo determination of sunscreen UVA protection",
+    "ISO 24443:2012 - Determination of sunscreen UVA photoprotection in vitro",
+    "ISO 24444:2010 - Cosmetics - Sun protection test methods - In vivo SPF",
+    "Colipa 2011 - Method for in vitro determination of UVA protection",
+    "FDA 2011 - SPF test methods and for the UVA protection"
+  ],
+  "notes": {
+    "scope": "仅适用于防晒作为主要功能(función primaria)的产品。作为辅助功能的产品不适用本附录",
+    "uva_requirement": "UVA防护系数至少为SPF的1/3",
+    "critical_wavelength": "推荐最小临界波长370nm"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "importInstructions": {
+    "version": "2025-05",
+    "format": "JSON批量导入模板",
+    "structure": {
+      "source": "ANVISA 或 COFEPRIS",
+      "documentId": "法规文档编号，如 RDC 529/2021",
+      "version": "版本日期",
+      "rules": [
+        {
+          "ruleId": "自动生成或手动指定",
+          "category": "banned | restricted | label | claim",
+          "target": "成分/词汇目标（英文名称）",
+          "aliases": ["别名1", "别名2"],
+          "cas": "CAS号（如有）",
+          "severity": "critical | warning | info",
+          "condition": "使用条件或浓度限制",
+          "message": "中文说明",
+          "sourceUrl": "官方来源链接"
+        }
+      ]
+    },
+    "example": {
+      "source": "ANVISA",
+      "documentId": "RDC 529/2021",
+      "version": "2021-08",
+      "rules": [
+        {
+          "ruleId": "BR-BAN-022",
+          "category": "banned",
+          "target": "Toluene",
+          "aliases": ["甲苯", "Toluol", "Methylbenzene"],
+          "cas": "108-88-3",
+          "severity": "critical",
+          "condition": "0% - 任何浓度均禁止",
+          "message": "甲苯是巴西禁用成分，常见于指甲油",
+          "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,887 @@
+ 
+DOF: 05/07/2022
+NORMA Oficial Mexicana NOM-259-SSA1-2022, Productos y servicios. Buenas prácticas de fabricación en productos cosméticos.
+Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- SALUD.- Secretaría de Salud.
+ALEJANDRO ERNESTO SVARCH PÉREZ, Comisionado Federal para la Protección contra Riesgos Sanitarios y Presidente
+del Comité Consultivo Nacional de Normalización de Regulación y Fomento Sanitario, con fundamento en los artículos 39 de la
+Ley Orgánica de la Administración Pública Federal; 4 de la Ley Federal de Procedimiento Administrativo; 3, fracciones XXII y
+XXIV, 13, apartado A, fracción I, 17 bis, fracciones II y III, 269 y 270 de la Ley General de Salud; 38, fracción II, 39, 40, fracciones
+I, II, III y XI, 43 y 47 fracción IV de la Ley Federal sobre Metrología y Normalización; 28 y 33 del Reglamento de la Ley Federal
+sobre Metrología y Normalización; 1, fracciones, XX y XXII; 27, 29, 30, 31, 32, 33, 34, 35, 37, 38, 39, 187, 188, 189, 190, 191,
+192, 193, 194, 195, 196 y 196 bis del Reglamento de Control Sanitario de Productos y Servicios y 3, fracciones I, literal e y X y 10,
+fracciones IV y VIII, del Reglamento de la Comisión Federal para la Protección contra Riesgos Sanitarios, y
+CONSIDERANDO
+Tomando en consideración que toda empresa o establecimiento dedicado a la elaboración de productos cosméticos debe
+tener como responsabilidad garantizar que los productos que elabora no representen riesgos a la salud del consumidor, para ello
+debe contar con un sistema de prevención, control y verificación de la calidad sanitaria con la finalidad de que los productos
+cosméticos sean seguros.
+Las Buenas Prácticas de Fabricación (BPF), es un conjunto de lineamientos que deben aplicarse en el proceso de productos
+cosméticos, por lo que tomando en cuenta las necesidades específicas de este sector, se elabora la Norma Oficial Mexicana de
+Buenas prácticas de fabricación de productos cosméticos.
+Que esta Norma, pretende dar a conocer una descripción de los requisitos básicos que deben seguir durante el proceso, como
+son las condiciones que deben cumplir el personal que labora, la producción, el control, el almacenamiento, el empaque, entre
+otras actividades. Otro de los objetivos de esta norma es garantizar que los productos que se fabrican sean de calidad sanitaria,
+que puedan ser consumidos con seguridad y que además sean efectivos para las aplicaciones específicas de cada cosmético.
+Que uno de los problemas principales es que actualmente no existe una regulación que establezca los puntos básicos de las
+buenas prácticas de fabricación que deben seguir dichas empresas.
+Que esta norma tiene la finalidad de que las empresas tengan como responsabilidad garantizar al consumidor que el producto
+elaborado no represente riesgo a la salud.
+Las Buenas Prácticas de Fabricación (BPF) constituyen el fundamento sanitario bajo el cual toda empresa relacionada con el
+proceso y el manejo de cosméticos debe operar, asegurando que hasta la más sencilla de las operaciones a lo largo del proceso
+de manufactura de un cosmético se realice en condiciones que aseguren que el producto sea de calidad sanitaria.
+Que, para dar respuesta a las necesidades de regulación del sector de fabricación de productos cosméticos en mejorar la
+calidad de estos productos, con la publicación de la norma lo que se pretende es eliminar o reducir los riesgos de contaminación
+de un producto, las pérdidas del producto y reducir significativamente el riesgo para la salud del consumidor.
+Que debido a que el campo de la industria de cosméticos se encuentra en evolución continua, se hace necesario adoptar
+acciones que protejan la salud de la población y que al mismo tiempo eviten el rezago de nuestro país en este rubro. así como el
+de apoyar a los fabricantes mayoristas minoristas y proveedores.
+Que, en atención a las anteriores consideraciones, contando con la aprobación del Comité Consultivo Nacional de
+Normalización de Regulación y Fomento Sanitario, he tenido a bien ordenar la publicación en el Diario Oficial de la Federación, de
+la
+ 
+NORMA OFICIAL MEXICANA NOM-259-SSA1-2022, PRODUCTOS Y SERVICIOS. BUENAS PRÁCTICAS
+DE FABRICACIÓN EN PRODUCTOS COSMÉTICOS
+PREFACIO
+En la elaboración de la presente Norma participaron las siguientes dependencias, instituciones y organismos:
+SECRETARÍA DE SALUD
+Comisión Federal para la Protección contra Riesgos Sanitarios (COFEPRIS)
+SECRETARÍA DE ECONOMÍA (SE)
+CÁMARA Y ASOCIACIÓN DE LA INDUSTRIA DEL CUIDADO PERSONAL Y DEL HOGAR (CANIPEC)
+CÁMARA NACIONAL DE LA INDUSTRIA DE ACEITES, GRASAS, JABONES Y DETERGENTES (CANAJAD)
+GENOMMA LABORATORIES, MÉXICO, S.A. DE C.V.
+SOCIEDAD DE QUÍMICOS COSMETÓLOGOS DE MÉXICO A.C. (SQCM)
+ÍNDICE
+1.     OBJETIVO Y CAMPO DE APLICACIÓN
+2.     REFERENCIAS NORMATIVAS
+3.     TÉRMINOS Y DEFINICIONES
+4.     SÍMBOLOS Y TÉRMINOS ABREVIADOS
+2026/5/13 16:37
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle.php?codigo=5657034&fecha=05/07/2022&print=true
+1/13
+
+
+5.     PERSONAL
+6.     INSTALACIONES FÍSICAS
+7.     SERVICIOS
+8.     EQUIPO, ACCESORIOS Y UTENSILIOS
+9.     MATERIAS PRIMAS Y MATERIALES DE EMPAQUE
+10.   PRODUCCIÓN
+11.   TRANSPORTE
+12.   CONTROL DE CALIDAD
+13.   PRODUCTOS TERMINADOS, REPROCESADOS Y PRODUCTOS A GRANEL
+14.   QUEJAS, DEVOLUCIONES Y RETIROS
+15.   DESVIACIONES
+16.   DOCUMENTACIÓN
+17.   CONCORDANCIA CON NORMAS INTERNACIONALES Y MEXICANAS
+18.   BIBLIOGRAFÍA
+19.   OBSERVANCIA DE LA NORMA
+20.   VIGENCIA
+1. OBJETIVO Y CAMPO DE APLICACIÓN.
+1.1 OBJETIVO.
+Esta Norma Oficial Mexicana establece los requisitos mínimos necesarios de buenas prácticas para el proceso e importación
+de los productos cosméticos, destinados al consumidor final en el territorio nacional.
+1.2 CAMPO DE APLICACIÓN.
+Esta Norma es de observancia obligatoria para todos los establecimientos dedicados al proceso y/o importación de productos
+cosméticos comercializados en el país.
+2. REFERENCIAS NORMATIVAS.
+Para la correcta aplicación de esta Norma, es necesario consultar las siguientes Normas Oficiales Mexicanas o las que la
+sustituyan:
+2.1 Modificación a la Norma Oficial Mexicana NOM-127-SSA1-1994, Salud ambiental. Agua para uso y consumo humano.
+Límites permisibles de calidad y tratamientos a que debe someterse el agua para su potabilización.
+2.2 Norma Oficial Mexicana NOM-141-SSA1/SCFI-2012. Etiquetado para productos cosméticos preenvasados. Etiquetado
+sanitario y comercial.
+3. TÉRMINOS Y DEFINICIONES.
+3.1 Acciones correctivas, a las actividades que son planeadas y ejecutadas, con el fin de corregir una desviación o no
+conformidad.
+3.2 Acondicionamiento, a las operaciones necesarias por las que un producto a granel debe pasar para llegar a su
+presentación como producto terminado.
+3.3 Almacenamiento, a la acción de reunir, guardar y conservar insumos, materia prima, producto a granel, en proceso o
+terminado en áreas específicas y con condiciones establecidas para su conservación, custodia, futuro procesamiento, suministro
+o venta.
+3.4 Aseguramiento de calidad, al conjunto de actividades planeadas y sistemáticas que lleva a cabo un establecimiento, con
+el objeto de brindar la confianza, de que un producto o servicio cumple con los requisitos de calidad especificados.
+3.5 Buenas Prácticas de Fabricación, al conjunto de lineamientos y actividades relacionadas entre sí, destinadas a
+garantizar que los productos cosméticos elaborados tengan y mantengan las características de calidad requeridas para su uso.
+3.6 Calibración, al conjunto de operaciones que establecen, bajo condiciones especificadas, la relación entre los valores
+indicados por un instrumento o sistema de medida, o entre los valores suministrados por una medida material y los
+correspondientes valores conocidos de un patrón de referencia.
+3.7 Calidad, al conjunto de características de un producto que influyen en su aceptabilidad por parte de los consumidores.
+3.8 Capacitación, a la educación continua con el objeto de que los empleados mantengan y/o adquieran las habilidades
+requeridas para cumplir su rol en el establecimiento.
+3.9 Contaminación, a la presencia de entidades físicas, químicas o biológicas indeseables.
+3.10 Contaminación cruzada, a la que se produce por la presencia de materia extraña, sustancias tóxicas o microorganismos
+procedentes de una etapa, un proceso o un producto diferente.
+3.11 Control de proceso, a los controles utilizados durante la producción para monitorear y, si aplica, ajustar el proceso y con
+ello asegurar que el producto satisfaga los criterios de calidad definidos.
+3.12 Criterios de aceptación, a las especificaciones, estándares o intervalos predefinidos que deben cumplirse bajo
+condiciones de prueba preestablecidas.
+2026/5/13 16:37
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle.php?codigo=5657034&fecha=05/07/2022&print=true
+2/13
+
+
+3.13 Cuarentena, al periodo durante la cual los insumos (materias primas, los materiales de envase y empaque, los productos
+semielaborados, los productos elaborados a granel o los productos terminados), según el caso, se mantienen separados
+temporalmente con prohibición de uso para asegurar su certidumbre, hasta el informe de aprobación o rechazo.
+3.14 Desinfección, a la reducción del número de microorganismos presentes, por medio de agentes químicos y/o métodos
+físicos, a un nivel que no comprometa la inocuidad o la aptitud del producto.
+3.15 Desviación o no conformidad, al no cumplimiento de un requisito previamente establecido.
+3.16 Devolución, a la decisión tomada por el cliente o consumidor para regresar o devolver un producto que ha sido puesto
+en el mercado y no cumple los requisitos preestablecidos.
+3.17 Empresa, a la unidad económico-social integrada por elementos humanos, materiales y técnicos que tienen el objeto de
+obtener utilidades a través de su participación en el mercado de bienes y servicios.
+3.18 Especificación, a los requerimientos de un material, sustancia o producto, que incluye los
+parámetros de calidad, así como los límites de aceptación que deben satisfacer y la referencia de los métodos a utilizar para su
+determinación.
+3.19 Establecimiento, a los locales y sus instalaciones, dependencias y anexos, en los que se fabriquen, preparen, manejen
+o expendan los productos a los que se refiere esta Norma.
+3.20 Fabricación, a las operaciones involucradas en la producción de un producto cosmético desde la recepción de materias
+primas y materiales hasta su liberación como producto terminado.
+3.21 Instalaciones, a localización física, edificios y estructuras de apoyo usadas para conducir, recibir, acondicionar,
+almacenar, fabricar, empacar, controlar y embarcar el producto, materias primas y materiales de empaque.
+3.22 Insumos, a todas aquellas materias primas, material de envase primario, material de acondicionamiento y producto que
+se reciben en una planta.
+3.23 Limpieza, a la separación y eliminación de la suciedad visible de una superficie por medio de los factores combinados y
+en proporciones variables, tales como acción química, acción mecánica, temperatura, duración de aplicación.
+3.24 Mantenimiento, a cualquier soporte periódico o no planeado y la verificación de operaciones concebidas para prevenir,
+corregir o reducir fallas en las instalaciones, instrumentos y/o el equipo.
+3.25 Materia prima, a toda sustancia o producto de cualquier origen que se use en la elaboración de un producto cosmético.
+3.26 Muestra, a una o más unidades de productos representativos, seleccionados de un lote para obtener información acerca
+de éste.
+3.27 Muestreo, al conjunto de operaciones de toma de muestras representativas de una materia prima, material de envase o
+producto terminado.
+3.28 Número de lote, a la combinación numérica o alfanumérica que identifica específicamente un lote.
+3.29 Procedimiento, al documento que contiene las instrucciones necesarias para llevar a cabo de manera reproducible una
+operación o actividad.
+3.30 Proceso, al conjunto de actividades relativas a la obtención, elaboración, fabricación, preparación, conservación,
+mezclado, acondicionamiento, envasado, manipulación, transporte, distribución, almacenamiento y expendio o suministro al
+público de los productos.
+3.31 Producción, a todas las operaciones técnicas involucradas en la fabricación de un producto.
+3.32 Producto a granel, a cualquier producto que ha completado todas las etapas de fabricación, a excepción del
+acondicionamiento.
+3.33 Productos cosméticos, a las sustancias o formulaciones destinadas a ser puestas en contacto con las partes
+superficiales del cuerpo humano: epidermis, sistema piloso y capilar, uñas, labios y órganos genitales externos, o con los dientes
+y mucosas bucales con el fin exclusivo o principal de limpiarlos, perfumarlos, ayudar a modificar su aspecto, protegerlos,
+mantenerlos en buen estado o corregir los olores corporales o atenuar o prevenir deficiencias o alteraciones en el funcionamiento
+de la piel sana.
+3.34 Producto intermedio, al que se encuentra en alguna de las fases intermedias de su proceso de fabricación, que
+antecede a la forma cosmética definitiva.
+3.35 Producto terminado, al que está en su envase definitivo, rotulado y listo para ser distribuido y comercializado.
+3.36 Queja, a toda observación proveniente de un cliente, relacionada con la calidad del producto.
+3.37 Rastreabilidad, a la capacidad de reconstruir la historia, localización de un elemento o de una actividad, por medio de
+registros de identificación.
+3.38 Re-análisis, al sistema que permita volver a analizar cualquier material, según le aplique, para determinar su idoneidad o
+contrastar o confirmar el resultado de una investigación para el uso después de un período de almacenamiento.
+3.39 Reproceso, al re-tratamiento desde una etapa definida de producción de todo o parte de un lote de producto a granel o
+de producto terminado de una calidad inaceptable, de forma que su calidad pueda convertirse en aceptable mediante una o más
+operaciones suplementarias.
+3.40 Retiro, a la decisión tomada por la empresa para retirar (recoger) un lote(s) de producto que ha sido puesto en el
+mercado.
+ 
+3.41 Resultado fuera de especificaciones, a la inspección, medida o resultados de prueba que no cumple con los criterios
+de aceptación definidos.
+2026/5/13 16:37
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle.php?codigo=5657034&fecha=05/07/2022&print=true
+3/13
+
+
+3.42 Residuos, a cualquier resto de una operación de producción, transformación o uso, cualquier sustancia, material,
+producto que su poseedor destina a ser eliminada.
+3.43 Sistema de primeras entradas-primeras salidas (PEPS), a la serie de operaciones que consiste en garantizar la
+rotación de los productos de acuerdo a su fecha de recepción y su vida útil o vida de anaquel.
+4. SÍMBOLOS Y TÉRMINOS ABREVIADOS.
+4.1 Reglamento, Reglamento de Control Sanitario de Productos y Servicios.
+5. PERSONAL.
+Toda persona que entre en contacto con materias primas, ingredientes, insumos, producto en proceso, equipos y utensilios,
+debe cumplir, según corresponda a las actividades propias de su función y en razón al riesgo sanitario que represente las
+indicaciones siguientes:
+5.1 Salud e higiene del personal.
+5.1.1 Toda persona que entre en las áreas de producción, control de calidad, o almacenamiento, deberá llevar la vestimenta
+limpia, apropiada y elementos de protección para las actividades que realiza y así evitar la contaminación del producto cosmético.
+5.1.2 Lavarse las manos antes de ingresar a las áreas de producción y de iniciar sus labores, especialmente después de
+utilizar los servicios sanitarios y después de comer.
+5.1.3 Adicionalmente el personal del área de producción, control de calidad y almacenamiento, debe observar las siguientes
+disposiciones:
+5.1.3.1 Lavarse las manos al inicio de las labores, al regresar de cada ausencia y en cualquier momento cuando las manos
+puedan estar sucias o contaminadas;
+5.1.3.2 No utilizar joyería, ni adornos en manos, cara, incluyendo boca y lengua, orejas, cuello o cabeza, ni maquillaje;
+5.1.3.3 Mantener las uñas cortas, limpias y libres de esmalte;
+5.1.3.4 Evitar el contacto directo de las manos con materias primas y productos intermedios o a granel, durante las
+operaciones de producción o envasado, salvo cuando el proceso así lo requiera;
+5.1.3.5 Prescindir de objetos desprendibles como: plumas, lapiceros, termómetros, sujetadores u otros en los bolsillos
+superiores de la vestimenta en las áreas de producción, control y almacenamiento, exceptuando áreas de producto terminado;
+5.1.3.6 Evitar estornudar y toser sobre materias primas o producto expuesto;
+5.1.3.7 Se debe evitar, en la medida de lo posible y cuando se comprometa la calidad del producto, que cualquier persona que
+presente signos de enfermedad como: tos frecuente, secreción nasal, diarrea, vómito, fiebre, ictericia o con alguna lesión
+expuesta, entre en contacto directo con el producto en proceso;
+5.1.3.8 El personal no debe fumar, mascar, comer, beber, escupir o almacenar comida, bebidas, cigarros o medicamentos, y
+5.1.3.9 La ropa y objetos personales deberán guardarse fuera de las áreas de producción.
+5.2 Capacitación en Buenas Prácticas de Fabricación.
+5.2.1 El personal involucrado en el proceso de los productos debe recibir capacitación en Buenas Prácticas de Fabricación
+para desarrollar las habilidades apropiadas a sus responsabilidades y actividades.
+5.2.2 Los cursos relativos a Buenas Prácticas de Fabricación, pueden ser impartidos por la misma empresa o por empresas
+externas especializadas, de acuerdo a sus recursos, si fuera necesario.
+5.2.3 La capacitación debe ser considerada como un proceso constante y sujeto a actualizaciones periódicas.
+5.2.4 El personal debe ser capacitado sobre el correcto lavado de las manos y en el uso correcto de la indumentaria de
+trabajo.
+5.3 Visitantes.
+5.3.1 Todos los visitantes, internos y externos deben seguir las indicaciones del establecimiento y usar ropa limpia y apropiada
+antes de entrar a las áreas de proceso que así lo requieran.
+ 
+5.3.2 En las áreas de producción no debe haber personas ajenas a las mismas. Salvo en el caso de que se tengan visitas
+debidamente programadas.
+6. INSTALACIONES FÍSICAS.
+6.1 La construcción, adecuación, el mantenimiento, la iluminación, la temperatura, la humedad y la ventilación deben ser
+acordes a las necesidades propias de la actividad que se realice.
+6.2 Áreas.
+6.2.1 El establecimiento debe disponer de áreas definidas o separadas entre ellas, de acuerdo a las actividades que se
+realizan, particularmente en las siguientes:
+6.2.1.1 Producción;
+6.2.1.2 Acondicionamiento;
+6.2.1.3 Control de calidad, y
+6.2.1.4 Almacenamiento.
+6.2.2 Debe disponerse de espacio suficiente para facilitar las operaciones de recepción, almacenamiento y producción.
+6.2.3 Debe definirse el flujo de materiales, productos y personal, con el objeto de prevenir contaminación cruzada.
+2026/5/13 16:37
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle.php?codigo=5657034&fecha=05/07/2022&print=true
+4/13
+
+
+6.2.4 Las instalaciones expuestas al exterior, deben ser resistentes al medio ambiente y deben encontrarse en buenas
+condiciones de mantenimiento.
+6.3 Pisos, paredes, techos, ventanas y puertas en área de producción.
+6.3.1 Deben ser diseñados y construidos para facilitar su limpieza y desinfección.
+6.3.2 Deben mantenerse limpios y en buen estado.
+6.3.3 Los pisos deben ser impermeables, homogéneos y de características que eviten encharcamientos.
+6.3.4 En los techos y paredes se debe evitar la acumulación de suciedad.
+6.3.5 Las ventanas, ventilas y puertas deben estar provistas de protecciones en buen estado de conservación para evitar la
+entrada de polvo, lluvia y fauna nociva.
+6.4 Instalaciones sanitarias.
+6.4.1 El personal debe contar con sanitarios, y cuando sea necesario con instalaciones para la ducha y el cambio de ropa;
+limpios y accesibles a las áreas de producción.
+6.4.2 Los sanitarios no deben tener comunicación directa ni ventilación hacia el área de producción y deben contar como
+mínimo con lo siguiente:
+6.4.2.1 Instalaciones para el lavado de manos, disponer de los medios necesarios para su lavado y secado como jabón,
+toallas de papel o secadores de aire y depósitos para basura con tapadera oscilante o accionada por pedal.
+6.4.2.2 Deben colocarse rótulos en los que se indique al personal que debe lavarse las manos antes y después de usar los
+sanitarios.
+7. SERVICIOS.
+7.1 Agua.
+7.1.1 Debe disponerse de agua potable para el aseo del personal y la limpieza del equipo e instalaciones, así como con las
+características que requiera el proceso; en todo caso, se deberá contar con instalaciones apropiadas para su almacenamiento y
+distribución.
+7.1.2 La calidad del agua debe ser verificada periódicamente y cumplir como mínimo con los límites permisibles de cloro
+residual libre y de organismos coliformes totales y fecales establecidos en la Modificación a la Norma Oficial Mexicana vigente
+citada en el punto 2.1 del apartado de referencias.
+7.1.3 Las cisternas o tinacos para almacenamiento de agua deben estar protegidos contra la contaminación, corrosión y
+permanecer tapados. Sólo se podrán abrir para su mantenimiento, limpieza o desinfección y verificación.
+ 
+7.1.4 Los sistemas de tratamiento de los distintos tipos de agua que se empleen en el establecimiento, deben mantenerse en
+condiciones apropiadas para que garanticen la calidad requerida, según el destino de cada una de ellas (potable, desionizada,
+ablandada, purificada u otra).
+7.1.5 El sistema de tratamiento del agua de proceso debe permitir su limpieza y en caso necesario su desinfección.
+7.1.6 Los equipos de tratamiento de agua deben estar diseñados para evitar el estancamiento y los riesgos de contaminación.
+7.1.7 El vapor utilizado en superficies que estén en contacto directo con los productos, no debe comprometer la calidad del
+producto.
+7.2 Iluminación.
+7.2.1 En todas las áreas se debe contar con la iluminación adecuada y suficiente para las operaciones que se realicen.
+7.2.2 Los focos y lámparas suspendidas sobre producto expuesto en cualquiera de las fases de producción deben tener un
+diseño tal que permitan su mantenimiento y limpieza, para evitar la contaminación de los productos en caso de ruptura. Deben
+estar protegidas y mantenerse limpias.
+7.3 Aire y ventilación.
+7.3.1 Debe proveerse una ventilación adecuada a las actividades realizadas, en caso necesario deben tomar medidas para
+evitar la contaminación del producto.
+7.4 Tuberías, drenaje y ductos.
+7.4.1 Los drenajes no deben presentar fugas. Además, deben estar protegidos con rejillas, especialmente aquellos ubicados
+en las áreas de producción. Cuando las tapas de los drenajes no permitan el uso de trampas, se establecerá un registro de
+limpieza continuo que cumpla con la misma finalidad.
+7.4.2 Los establecimientos deben disponer de un sistema de evacuación de efluentes y aguas residuales, el cual debe
+mantenerse en todo momento en buen estado.
+7.4.3 Los drenajes deben mantenerse limpios y no permitir reflujo.
+7.4.4 Se recomienda que en el diseño de las construcciones se consideren los puntos siguientes:
+7.4.4.1 Se debe evitar que el envigado de techos, tuberías y ductos estén expuestos;
+7.4.4.2 En caso de que las tuberías estén expuestas, éstas pueden estar suspendidas de tal manera que eviten el contacto
+con los muros para permitir su limpieza, y
+7.4.4.3 En caso de ser necesario, tomar medidas alternativas para proteger el producto.
+7.4.5 Las tuberías, drenajes y ductos deben ser instalados de tal manera que los goteos o condensaciones no contaminen los
+materiales, productos, superficies y equipos.
+2026/5/13 16:37
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle.php?codigo=5657034&fecha=05/07/2022&print=true
+5/13
+
+
+7.5 Limpieza y mantenimiento.
+7.5.1 Limpieza de áreas.
+7.5.1.1 Las instalaciones (incluidos techo, puertas, paredes y piso), baños, cisternas, tinacos y mobiliario deben mantenerse
+limpios.
+7.5.1.2 Las uniones en las superficies de pisos o paredes recubiertas con materiales no continuos en las áreas de producción
+o elaboración de los productos deben permitir su limpieza.
+7.5.1.3 Los productos de limpieza y desinfección deben estar claramente identificados y almacenados en áreas especialmente
+destinadas a tal efecto.
+7.5.2 Limpieza de equipos.
+7.5.2.1 El equipo debe limpiarse, mantenerse en buen estado y si es necesario, desinfectarse de acuerdo al procedimiento y
+programa establecido por la empresa.
+7.5.2.2 Cuando los equipos están destinados a una producción continua o lotes de producción sucesivos del mismo producto,
+éstos deben ser limpiados y desinfectados con la frecuencia necesaria conforme al inciso vii) fracción vii.2) de la Tabla 1, para
+prevenir que haya contaminación en el mismo producto. Cuando se utilicen los mismos equipos para la fabricación de distintos
+productos, deberá demostrarse que el método de limpieza es efectivo para evitar la contaminación cruzada.
+ 
+7.5.2.3 Los agentes de limpieza y desinfección para los equipos y utensilios deben utilizarse de acuerdo a las instrucciones del
+fabricante o de los procedimientos internos que garanticen su efectividad.
+7.5.2.4 La limpieza y desinfección deben satisfacer las necesidades del proceso y del producto de que se trate.
+7.5.3 Mantenimiento.
+7.5.3.1 Las instalaciones involucradas en las actividades descritas en esta Norma deben ser mantenidas en buen estado.
+7.5.3.2 Los equipos deben mantenerse en buenas condiciones de operación.
+7.5.3.3 Debe darse mantenimiento periódico a los equipos de fabricación que así lo requieran conforme al programa
+establecido por la empresa.
+7.5.3.4 Las operaciones de mantenimiento de instalaciones y/o equipo no deben afectar la calidad del producto.
+7.5.3.5 Después del mantenimiento o reparación del equipo, se debe inspeccionar con el fin de eliminar residuos de los
+materiales empleados para dicho objetivo.
+7.5.3.6 El equipo descompuesto o que no se utilice debe estar identificado, fuera de servicio y de ser posible, aislado.
+7.6 Control de plagas.
+7.6.1 El control de plagas es aplicable a todas las áreas del establecimiento.
+7.6.2 Debe impedirse la entrada de animales domésticos y fauna nociva al establecimiento.
+7.6.3 Los establecimientos que realicen el control de plagas deben contar con licencia sanitaria y los plaguicidas empleados
+con registro sanitario.
+7.6.4 Los plaguicidas deben mantenerse en un área, contenedor o mueble aislado y con acceso restringido, en recipientes
+claramente identificados y libres de cualquier fuga.
+7.6.5 En caso de contratar los servicios de una empresa de control de plagas, se debe contar con constancia del servicio
+proporcionado por la misma.
+7.7 Residuos y desechos.
+7.7.1 Se deben adoptar medidas para la remoción periódica de los residuos y desechos. No deberá permitirse la acumulación
+de los mismos salvo que sea inevitable.
+7.7.2 Los residuos y desechos deberán ser recolectados periódicamente conforme a las necesidades del establecimiento.
+7.7.3 Los establecimientos deben contar con áreas delimitadas para el depósito temporal de residuos y desechos.
+7.7.4 Los recipientes para residuos y desechos deben mantenerse tapados e identificados.
+7.7.5 El flujo de residuos y desechos no debe impactar en las operaciones de producción y laboratorio.
+7.7.6 La recolección, transporte, almacenamiento y disposición de residuos y desechos deben realizarse de forma tal que no
+genere un riesgo de contaminación de los productos y conforme a la legislación aplicable vigente.
+8. EQUIPOS, ACCESORIOS Y UTENSILIOS.
+8.1 Los equipos de producción deben ser diseñados, identificados y mantenidos de acuerdo a sus propósitos, sin poner en
+riesgo la calidad del producto y seguridad del personal.
+8.2 Al instalar un equipo deben tomarse en cuenta los aspectos de operación, limpieza y mantenimiento.
+8.3 Los materiales que se consideren para el diseño y construcción de los equipos y sus accesorios que estén en contacto
+directo con disolventes, componentes de la fórmula, productos en proceso o producto terminado no deberán ser del tipo reactivo,
+aditivo, absorbente o adsorbente, de tal manera que no se ponga en riesgo la calidad sanitaria del producto.
+8.4 Las mangueras de transferencia y accesorios que no estén en uso deben ser limpiados, y si es necesario desinfectados, y
+guardarse secos y protegidos del polvo, salpicaduras u otras contaminaciones y
+deberán revisarse antes de su uso.
+2026/5/13 16:37
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle.php?codigo=5657034&fecha=05/07/2022&print=true
+6/13
+
+
+8.5 La maquinaria y equipos fijos o empotrados se instalarán con espacio suficiente, que permitan el flujo del personal y
+materiales, así como su limpieza y si es necesario desinfección.
+8.6 Los contenedores de productos a granel deben estar protegidos del polvo y de la humedad.
+8.7 Calibración.
+8.7.1 Los instrumentos de medición utilizados para determinar y/o verificar la calidad del producto deben ser calibrados de
+acuerdo a los procedimientos establecidos para tal fin, debiendo contener al menos lo señalado en la Tabla 1 incisos v.1) y vi.1).
+8.7.2 Si los resultados de la calibración están fuera de los criterios de aceptación, los instrumentos de medición deben ser
+identificados y puestos fuera de servicio hasta su ajuste y/o reparación. Asimismo, se debe efectuar una investigación para
+determinar cualquier impacto en la calidad del producto y tomar las acciones correctivas, según el resultado de dicha
+investigación.
+9. MATERIAS PRIMAS Y MATERIAL DE EMPAQUE.
+9.1 Las materias primas y materiales de empaque antes de ser llevadas a la línea de producción deben inspeccionarse y
+comprobar que satisfacen los criterios de aceptación y/o especificaciones establecidas en el inciso i) de la Tabla 1 y en caso
+necesario, deben efectuarse pruebas de laboratorios para éstos.
+9.2 Recepción.
+9.2.1 La recepción de materias primas e insumos debe realizarse conforme a los procedimientos establecidos en el inciso i) de
+la Tabla 1.
+9.2.2 Las materias primas y materiales de empaque entregados, deben corresponder a la orden de compra, factura o
+equivalente fijado por la empresa.
+9.2.3 Al recibir cualquier envío de materia prima o materiales de empaque se debe revisar que su embalaje no presente
+deterioros o daños de cualquier tipo que puedan afectar las características de calidad del material que contienen.
+9.2.4 Los contenedores de materias primas y materiales de empaque deben tener etiquetas que contengan la identificación y
+el número de lote cuando aplique.
+9.2.5 Las materias primas y los materiales de empaque que presenten defectos que pudiesen afectar a la calidad del producto,
+deben ser retenidos hasta tomarse una decisión.
+9.2.6 Las materias primas y materiales de empaque deben estar identificados de acuerdo a su estado como aceptado,
+rechazado o en cuarentena.
+9.2.7 Los materiales de empaque y envases de materias primas, no deben utilizarse para fines diferentes a los que fueron
+destinados originalmente, a menos que el material así lo permita y se eliminen las etiquetas, las leyendas y se habiliten para el
+nuevo uso en forma correcta.
+9.3 Liberación de materias primas y material de empaque.
+9.3.1 Debe existir un sistema que asegure que sólo se utilizarán aquellas materias primas y materiales de envase aprobados
+conforme al inciso i) de la Tabla 1.
+9.3.2 La liberación de los materiales deben ser llevadas a cabo por el personal autorizado responsable de la calidad.
+9.3.3 Las materias primas y materiales de envase y empaque pueden ser aprobados con base en los resultados de análisis o
+certificado de calidad del proveedor, sólo si éste se encuentra calificado por la empresa. El análisis presentado debe incluir los
+parámetros técnicos necesarios (Ver Tabla 1).
+9.4 Almacenamiento.
+9.4.1 Las condiciones de almacenamiento deben ser apropiadas para cada materia prima o materiales de empaque.
+9.4.2 Las materias primas o materiales de empaque deben almacenarse y manejarse de acuerdo a sus características.
+9.4.3 Las condiciones específicas de almacenaje deben ser monitoreadas periódicamente.
+ 
+9.4.4 Los contenedores y materiales deben estar cerrados y no deben estar directamente sobre el piso.
+9.4.5 Cuando las materias primas sean reenvasadas deben etiquetarse conservando los datos de origen.
+9.4.6 Se deben tomar las medidas necesarias para asegurar la rotación del inventario, cumpliendo con las PEPS.
+9.4.7 Se deben realizar y revisar periódicamente los inventarios para asegurar la confiabilidad de éstos. Las diferencias
+significativas deben investigarse y corregirse.
+9.4.8 Si las materias primas o material de envase se rechazan o se envían a cuarentena, deben almacenarse en un área
+específica o se deberá usar algún sistema que brinde el mismo nivel de control.
+9.4.9 Se debe contar con un área destinada para el almacenamiento de sustancias inflamables, la cual debe estar separada,
+ventilada y con equipo de seguridad contra incendios y explosiones, cuando aplique.
+9.5 Evaluación Re-análisis.
+9.5.1 Se debe establecer un sistema para re-evaluar las materias primas y materiales de envase, indicando periodos definidos
+de evaluación de acuerdo a sus propiedades y características, para saber si continúan siendo adecuados.
+10. PRODUCCIÓN.
+10.1 Operaciones de producción.
+10.1.1 En cada etapa de la producción deben llevarse a cabo medidas para el control de las operaciones, a fin de garantizar la
+calidad del producto. Se debe evitar la contaminación cruzada.
+2026/5/13 16:37
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle.php?codigo=5657034&fecha=05/07/2022&print=true
+7/13
+
+
+10.1.2 En caso de llevarse a cabo operaciones simultáneas en una misma área de fabricación, se deben tomar medidas para
+prevenir la contaminación cruzada.
+10.1.3 Todas las operaciones de la producción deben llevarse a cabo de acuerdo a los procedimientos fijados por la empresa.
+10.2 Inicio de la producción.
+10.2.1 Antes de dar comienzo a las operaciones de producción debe asegurarse que:
+10.2.1.1 Esté disponible toda la documentación pertinente a cada una de las etapas;
+10.2.1.2 Todas las materias primas estén liberadas y disponibles;
+10.2.1.3 El equipo adecuado esté disponible para su uso, en condiciones de trabajo, limpio y si es necesario, desinfectado, y
+10.2.1.4 El área se encuentre despejada de materiales de fabricaciones previas, para evitar cualquier mezcla.
+10.3 Asignación del número de lote (Identificación de partida o carga).
+10.3.1 Debe ser asignado un código interno o número a cada lote de granel fabricado. Este número no necesita ser idéntico al
+número de lote que aparece en la etiqueta del producto terminado, aunque deben ser relacionados fácilmente, a fin de garantizar
+su rastreabilidad.
+10.4 Identificación de las operaciones.
+10.4.1 Todas las materias primas involucradas en la producción deben ser pesadas o medidas en recipientes o contenedores
+limpios y adecuados, etiquetados apropiadamente o surtidos directamente en el equipo de fabricación.
+10.4.2 La identificación de los contenedores con producto a granel debe indicar al menos:
+10.4.2.1 Nombre o código de identificación;
+10.4.2.2 Número de lote y fecha de fabricación;
+10.4.2.3 Cantidad y secuencia numérica en caso de ser más de un contenedor, y
+10.4.2.4 Especificaciones de almacenamiento, en caso de ser necesarias, para asegurar la calidad del producto.
+ 
+10.5 Control en producción.
+10.5.1 Los controles en producción y sus criterios de aceptación deben ser definidos de acuerdo al tipo de producto.
+10.5.2 Cualquier resultado fuera de especificación debe ser reportado e investigado conforme a los criterios establecidos en el
+inciso i) de la Tabla 1.
+10.5.3 La fabricación debe ser realizada de acuerdo al procedimiento de producción correspondiente, disponiendo como
+mínimo de la siguiente información:
+10.5.3.1 Identificación del proceso de fabricación;
+10.5.3.2 Maquinaria necesaria para fabricar;
+10.5.3.3 Orden de manufactura y un programa definido de producción, así como un listado de las materias primas que
+intervienen, con número de lote y cantidad, y
+10.5.3.4 Modo operativo detallado, que considerará entre otros: secuencias de agregado, temperatura, velocidades de
+agitación, tiempos de transferencia y cualquier otra etapa que establezca el procedimiento conforme al inciso ii) fracción ii.1) de la
+Tabla 1.
+10.6 Almacenamiento de granel.
+10.6.1 Para el caso de almacenamiento a granel debe almacenarse en recipientes adecuados, en áreas definidas y bajo
+condiciones apropiadas.
+10.6.2 Debe definirse el tiempo de almacenamiento máximo para producto a granel.
+10.6.3 Cuando este tiempo se alcance, el producto a granel debe ser reevaluado antes de su uso.
+10.7 Devolución al almacén de materias primas.
+10.7.1 Los contenedores de las materias primas ya pesadas que permanecen sin ser usadas y están en condiciones de ser
+devueltas al almacén, deben cerrarse e identificarse apropiadamente.
+10.7.2 Las materias primas que no cumplan con las especificaciones deben de estar separadas y ser eliminadas de acuerdo al
+procedimiento establecido en el inciso iii) fracción iii.1) de la Tabla 1, para tal fin.
+10.8 Acondicionamiento.
+10.8.1 Operaciones de llenado y acondicionamiento.
+10.8.1.1 Antes de empezar cualquier operación de llenado y envasado, debe asegurarse que:
+10.8.1.1.1 El área esté limpia de materiales ajenos para evitar el mezclado con materiales de operaciones previas;
+10.8.1.1.2 Toda la documentación relevante de las operaciones de llenado y envasado, esté disponible;
+10.8.1.1.3 Todos los materiales de llenado y envasado estén disponibles e identificados;
+10.8.1.1.4 El equipo apropiado esté disponible para usarse, limpio y si es necesario, desinfectado, y
+10.8.1.1.5 Los códigos que permitan la identificación del producto estén definidos.
+10.8.1.2 Las operaciones de envasado debe llevarse a cabo de acuerdo con la documentación correspondiente incluyendo:
+10.8.1.2.1 El equipo adecuado;
+2026/5/13 16:37
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle.php?codigo=5657034&fecha=05/07/2022&print=true
+8/13
+
+
+10.8.1.2.2 La lista de los materiales de envasado, definida para el producto terminado en cuestión, y
+10.8.1.2.3 Las operaciones detalladas de envasado como: llenado, cerrado, etiquetado y codificado.
+10.8.1.3 En todo momento debe ser posible identificar la línea de acondicionamiento con su nombre o código de identificación,
+el nombre o código de identificación del producto acabado y su número de lote.
+10.8.1.4 Siempre que sea necesario, los envases deben verificarse antes de ser usados con el propósito de tener la seguridad
+de que se encuentran en buen estado, limpios y en caso necesario desinfectados.
+10.8.1.5 El llenado debe hacerse en condiciones que eviten la contaminación del producto.
+ 
+10.8.1.6 El llenado y etiquetado es usualmente un proceso continuo; cuando no sea el caso, se deben separar e identificar los
+recipientes a fin de evitar que se produzcan mezclas o etiquetados erróneos. Las etiquetas sobrantes de un lote deben ser
+separadas, destruidas y su destrucción documentada.
+10.9 Asignación de número de lote.
+10.9.1 Cada unidad del producto terminado debe contar con un número de lote.
+10.10 Producto terminado.
+10.10.1 El producto terminado debe encontrarse dentro del criterio de aceptación y debidamente identificado como se
+establece en el inciso ii) fracción ii.3) de la Tabla 1.
+10.10.2 La identificación de los contenedores del producto terminado debe indicar:
+10.10.2.1 Nombre o código de identificación;
+10.10.2.2 Número de lote;
+10.10.2.3 Condiciones de almacenamiento, cuando tal información sea crítica para asegurar la calidad del producto, y
+10.10.2.4 Cantidad y número de piezas acondicionadas.
+10.11. Liberación de la producción.
+10.11.1 La liberación del producto deberá ser llevada a cabo por personal autorizado por la empresa.
+10.11.2 El surtido de lotes de producto terminado debe realizarse conforme al criterio del sistema PEPS, cuando se requiera
+un criterio distinto deberá especificarse en los registros de salida.
+10.12 Almacenamiento.
+10.12.1 El producto terminado debe estar almacenado en un área definida bajo condiciones apropiadas. Si es necesario, el
+producto terminado debe ser monitoreado mientras está almacenado.
+10.12.2 Las áreas de almacenamiento deben permitir la correcta organización del producto y garantizar la conservación del
+producto terminado en buen estado.
+10.12.3 Cuando el producto terminado esté liberado, puesto en cuarentena o rechazado, debe almacenarse en lugares físicos
+con identificación o emplear cualquier otro sistema que proporcione el mismo nivel de seguridad.
+10.12.4 El almacenamiento y embarque deben ser manejados de manera tal que mantengan la calidad del producto
+terminado.
+10.12.5 Se deben llevar a cabo inventarios periódicos para que:
+10.12.5.1 Se conozca el inventario exacto;
+10.12.5.2 El criterio de aceptación de los productos se cumpla, y
+10.12.5.3 Cualquier discrepancia significativa sea investigada.
+10.12.6 Los lotes que no cumplan las especificaciones deben ser separados e identificados.
+11. TRANSPORTE.
+11.1 Los productos cosméticos deben ser transportados en condiciones que eviten su contaminación o alteración. En caso de
+ser necesarias condiciones especiales, éstas deben determinarse y documentarse para cada producto.
+11.2 Los vehículos que se utilicen para transportar y distribuir materias primas o producto terminado, deben estar construidos
+con materiales resistentes a la corrosión, lisos, impermeables, no tóxicos y mantenerse limpios y en buen estado.
+12. CONTROL DE CALIDAD.
+12.1 Los controles deberán ser llevados a cabo con base a los métodos de prueba definidos por la empresa.
+12.2 Los resultados fuera de especificaciones deberán ser revisados por el personal autorizado por el establecimiento e
+investigados. Deberá justificarse la necesidad de un re-análisis.
+13. PRODUCTOS TERMINADOS REPROCESADOS Y PRODUCTOS A GRANEL.
+ 
+13.1 Si todo o parte del lote de producto terminado o producto a granel no cumple con uno de los criterios de aceptación, la
+evaluación y la decisión de reproceso deberá realizarse por el personal responsable, conforme al inciso iii) Rechazos de la Tabla
+1.
+13.2 El método de reprocesamiento debe estar definido y aprobado por control de calidad.
+13.3 Una vez terminado el reproceso se deberá verificar que el producto cumpla con las especificaciones establecidas
+conforme al inciso ii) fracción ii.3) de la Tabla 1 en el criterio de aceptación.
+2026/5/13 16:37
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle.php?codigo=5657034&fecha=05/07/2022&print=true
+9/13
+
+
+14. QUEJAS, DEVOLUCIONES Y RETIROS.
+14.1 Quejas del producto.
+14.1.1 Se debe contar con un procedimiento para el manejo de quejas, de tal forma que todas las quejas comunicadas al
+establecimiento que correspondan al alcance de esta Norma, deberán ser revisadas, investigadas y tener el seguimiento
+adecuado, especialmente las relacionadas con propiedades tóxicas o alergénicas del producto.
+14.1.2 En los casos de operaciones contratadas, el contratante y el contratista deberán acordar el proceso para manejar las
+quejas.
+14.1.3 Las quejas de productos defectuosos, deberán conservar los detalles originales y la información relativa al seguimiento
+de la misma.
+14.1.4 Deberá darse un seguimiento apropiado a los lotes involucrados y a otros lotes que pudieran también estar afectados,
+hasta que el caso se cierre.
+14.1.5 Los pasos para prevenir la recurrencia del defecto y las quejas, deberán ser revisadas periódicamente para verificar
+tendencias o recurrencias de un defecto.
+14.2 Devoluciones.
+14.2.1 Las devoluciones de producto terminado deben estar identificadas de manera apropiada y almacenadas en áreas
+identificadas.
+14.2.2 Las devoluciones deben ser evaluadas contra los criterios fijados por la empresa para determinar su situación.
+14.3 Retiro de productos.
+14.3.1 Cuando se decida retirar un producto es conveniente que se tomen las medidas apropiadas para realizar el retiro dentro
+del campo de aplicación de esta Norma, así como la implementación de acciones correctivas.
+14.3.2 Los productos retirados deberán identificarse y almacenarse separadamente en un área segura mientras se espera una
+decisión.
+14.3.3 El personal autorizado por el establecimiento, debe coordinar todos los procesos de retiro.
+14.3.4 Las operaciones de retiro del producto deben iniciarse de manera pronta y oportuna.
+14.3.5 Debe informarse a las autoridades competentes del retiro de los productos del mercado que pudiesen tener impacto en
+la salud del consumidor.
+14.3.6 El procedimiento de retiro del producto del mercado debe adecuarse y revisarse periódicamente conforme a las
+necesidades de la empresa.
+15. DESVIACIONES.
+15.1 Las desviaciones de los requerimientos especificados deberán ser autorizadas con base en información suficiente para
+justificar dicha decisión.
+15.2 Las acciones correctivas deberán hacerse para evitar la recurrencia de la desviación.
+16. DOCUMENTACIÓN.
+16.1 Para evidenciar el cumplimiento de las buenas prácticas de fabricación, se debe contar con los documentos que se
+indican en la Tabla 1, los cuales deben contener al menos la información señalada en la
+misma y cumplir con lo siguiente:
+16.1.1 Estar escritos en idioma español en forma clara, legible y ordenada;
+16.1.2 Empleando vocabulario sencillo;
+16.1.3 Indicando el tipo, naturaleza, propósito o uso del documento, y
+16.1.4 De fácil comprensión.
+16.2 El formato y diseño queda bajo la responsabilidad de la empresa y deberán cumplir con lo siguiente:
+16.2.1 Deben ser firmados y fechados por la persona responsable según el sistema interno de cada empresa;
+16.2.2 Conservarse de manera íntegra al menos un año después de la fecha de duración mínima o de la fecha de caducidad,
+consumo preferente, validez o de expiración del producto;
+16.2.3 Cuando se elaboren por medios electrónicos, deben contar con respaldos que aseguren la información y un control de
+acceso y correcciones no autorizadas;
+16.2.4 Revisarse y actualizarse periódicamente, y
+16.2.5 Estar a disposición de la autoridad sanitaria cuando así lo requiera.
+16.3 Los registros escritos a mano deberán:
+16.3.1 Indicar qué es lo que está registrando;
+16.3.2 Estar escritos con tinta permanente, y
+16.3.3 Estar corregidos, si es necesario, dejando el registro original si aún está legible; cuando sea apropiado, deberá ser
+registrada la razón de la corrección.
+16.4 Los documentos deberán ser actualizados, cuando sea necesario y se indicará el número de revisión.
+16.5 Los registros no deben ser alterados y deberán estar accesibles durante todo el proceso y cuando la autoridad sanitaria
+los requiera.
+2026/5/13 16:37
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle.php?codigo=5657034&fecha=05/07/2022&print=true
+10/13
+
+
+16.6 El establecimiento debe contar con los documentos que se indican en la Tabla 1, los cuales deben contener al menos la
+información señalada en la misma.
+TABLA 1 Documentos y registros
+ 
+Actividad/etapa
+Tipo de documento
+Información que debe contener
+i) Recepción de materias
+primas y material de
+envase
+i.1) 
+Especificaciones 
+o
+criterios de aceptación o
+rechazo
+·   Especificaciones o cualidad del atributo a ser evaluado (límites
+para la aceptación).
+·   Métodos de muestreo.1
+i.2) 
+Registros 
+de
+Resultados de análisis o
+certificados de calidad del
+proveedor
+El análisis de calidad deberá contener como mínimo:
+·   Nombre del producto o clave;
+·   Fecha;
+·   Proveedor u origen;
+·   Cantidad;
+·   Lote y marca (si es el caso);
+·   Resultado de la evaluación;
+·      Nombre y firma de la persona que realizó la evaluación o
+análisis;
+·   Nombre del responsable del dictamen o decisión;
+·   Resultados del control y comentarios si los hay;
+·   Decisión claramente señalada: aceptado, rechazado, pendientes,
+y
+·   Medidas a tomar en caso de no conformidad.
+Cuando se identifique con clave, ésta debe permitir la rastreabilidad
+del producto.
+ii) 
+Proceso 
+de
+fabricación
+ii.1) Procedimientos de la
+producción
+·   Instrucciones para cada etapa del proceso de producción;
+·   Operaciones a ejecutar, y
+·   Precauciones a ser tomadas.
+·      Condiciones de almacenamiento de productos a granel y
+producto terminado.
+ii.2) Registros
+·   Mediciones y controles realizados durante la producción;
+·   Resultados entregados por equipos de proceso automatizados y
+de control, y
+·      Notas y observaciones realizadas por el personal del
+establecimiento de envase y empaque durante la producción.
+ii.3) Registros de control
+del 
+producto
+terminado/granel
+·   Nombre del producto;
+·   Lote y tamaño del lote;
+·   Resultados de los análisis de aceptación o rechazo, y
+·      Información que identifique a la persona que realizó la
+evaluación.
+ii.4) 
+Sistema 
+de
+lotificación
+·      Código o número de lote que permita la rastreabilidad del
+producto.
+ 
+ 
+iii) Rechazos
+iii.1) Procedimientos
+·      Medidas a tomar en caso de que se presente una no
+conformidad de materias primas, componentes, productos a
+granel o producto terminado.
+iii.2) Registros
+·   Materia prima o producto;
+·   Lote (código o número que lo identifique);
+·   Cantidad;
+2026/5/13 16:37
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle.php?codigo=5657034&fecha=05/07/2022&print=true
+11/13
+
+
+·   Causa del rechazo;
+·   Destino, y
+·   Nombre de la persona que lo rechazó.
+iv) 
+Almacenamiento 
+y
+distribución
+iv.1) 
+Registros 
+de
+entradas y salidas
+·   Producto: denominación y presentación;
+·   Lote (s);
+·   Cantidad;
+·   Fecha de entrada, salida y recepción, y
+·   Destino.
+v) 
+Equipo 
+e
+instrumentos
+v.1) 
+Programa 
+de
+mantenimiento 
+y
+calibración
+Calendarización donde se indique:
+·   Equipo o instrumento, y
+·   Frecuencia.
+vi) 
+Calibración 
+de
+instrumentos 
+de
+medición
+vi.1) Procedimientos
+Debe contener como mínimo:
+·      Nombre del instrumento o equipo, tipo de mantenimiento o
+instrucciones de calibración;
+·   Rango de la tolerancia, y
+·   Acciones a tomar si excede la tolerancia de calibración.
+vi.2) 
+Registro 
+o
+documentos
+·   Identificación del equipo o instrumento;
+·   Serie;
+·   Fecha;
+·   Operaciones llevadas a cabo, e
+·      Identificación de la persona o establecimiento que realizó la
+calibración.
+vii) 
+Limpieza 
+y
+desinfección de áreas y
+de equipos
+vii.1) 
+Procedimientos
+específicos 
+para
+instalaciones, equipos y
+transporte
+·      Productos de limpieza usados, concentraciones, enjuagues y
+orden de aplicación.
+vii.2) Programas
+·   Calendarización y frecuencia por área, equipo o transporte, y
+·   Persona responsable de llevarlo a cabo.
+vii.3) Registros
+·   Área, equipo, tanques o cisternas y transporte;
+·   Fecha;
+·   Hora o turno, y
+·   Nombre de la persona que la realizó.
+ 
+ 
+viii) 
+Capacitación 
+del
+personal
+viii.1) Programa
+·   Calendarizado, y
+·   Modalidad de la capacitación (curso, taller, etc.).
+viii.2) 
+Registro 
+o
+constancia
+·   Fecha;
+·   Nombre del o los participantes;
+·   Nombre del capacitador, y
+·   Tema.
+ix) Control de plagas
+ix.1) Programa
+·   Calendarización y frecuencia.
+ix.2) 
+Registros 
+o
+constancias de servicios
+·   Área donde se aplicó;
+·   Fecha y hora;
+·      Información que permita identificar a la persona o
+establecimiento que realizó la actividad, número de licencia
+sanitaria;
+·   Productos utilizados, y
+2026/5/13 16:37
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle.php?codigo=5657034&fecha=05/07/2022&print=true
+12/13
+
+
+·   Técnicas de aplicación y cuando aplique croquis de la ubicación
+de estaciones de control y monitoreo.
+x) Quejas, devoluciones
+y retiros
+x.1) Procedimiento
+·   Que describa las actividades específicas a realizar en caso de
+que se presente una queja, devolución o retiro de un lote o
+lotes de productos.
+x.2) Registros
+·   Nombre del producto;
+·   Presentación;
+·   Número de lote;
+·   Cantidad involucrada;
+·   Motivo de la queja, devolución o retiro;
+·   Información de la persona que genera la queja;
+·   Evaluación;
+·   Resultados de la investigación (reporte);
+·   Destino final;
+·   Acciones preventivas, y
+·   Nombre del responsable.
+1 La evaluación se puede realizar en los laboratorios del establecimiento. Cuando se realice por un tercero, éste debe emitir
+un certificado de calidad que respalde la evaluación.
+17. CONCORDANCIA CON NORMAS INTERNACIONALES Y MEXICANAS.
+17.1 Esta Norma concuerda parcialmente con la Norma Productos cosméticos. Buenas Prácticas de Fabricación (BPF) Guía
+de Buenas Prácticas de Fabricación (ISO 22716:2007).
+18. BIBLIOGRAFÍA.
+18.1 Ley Federal sobre Metrología y Normalización.
+18.2 Reglamento de la Ley Federal sobre Metrología y Normalización.
+18.3 Ley General de Salud.
+18.4 Reglamento de Control Sanitario de Productos y Servicios.
+ 
+18.5 Productos cosméticos. Buenas prácticas de fabricación (BPF) Guía de Buenas prácticas de fabricación (ISO
+22716:2007).
+18.6 Cosmetic Good Manufacturing Practices. COLIPA. The European Cosmetic, Toiletry and Perfumery Association, Brussels,
+Belgium, July 1994.
+18.7 DRAF-CTFA Guidelines for Cosmetic Good Manufacturing Practices. March, 1999.
+18.8 ASEAN Guidelines for Cosmetic Good Manufacturing Practice. The Association of Southeast Asian Nations (ASEAN).
+18.9 Australian Code of Good Manufacturing Practice for Therapeutic Goods- Sunscreen Products, therapeutic Goods
+Administration (TGA), Australia, April 1997.
+18.10 Manual de Buenas Prácticas de Manufactura para Productos Cosméticos, MERCOSUR/GM/RES/No. 66/96.
+18.11 Decisión No. 516, Armonización de Legislaciones en Materia de Productos Cosméticos, Comunidad Andina.
+18.12 Guía Técnica de Buenas Prácticas de Manufactura (GMP) para la industria de productos cosméticos. Instituto de Salud
+Pública de Chile.
+19. OBSERVANCIA DE LA NORMA.
+La vigilancia del cumplimiento de la presente Norma corresponde a la Secretaría de Salud y a los gobiernos de las Entidades
+Federativas, en el ámbito de sus respectivas competencias.
+TRANSITORIOS
+PRIMERO. La presente Norma entrará en vigor a los 60 días naturales contados a partir de la publicación en el Diario Oficial
+de la Federación.
+SEGUNDO. Se establece un plazo de 180 días naturales contados a partir de la fecha de publicación en el Diario Oficial de la
+Federación de la presente Norma, para el cumplimiento del sistema de documentación establecido en esta Norma.
+TERCERO. Se establece un plazo de 240 días naturales, para adecuar las instalaciones y servicios indicados en la Norma.
+Ciudad de México, a 1 de abril de 2022.- El Comisionado Federal para la Protección contra Riesgos Sanitarios y Presidente
+del Comité Consultivo Nacional de Normalización de Regulación y Fomento Sanitario, Alejandro Ernesto Svarch Pérez.-
+Rúbrica.
+ 
+2026/5/13 16:37
+DOF - Diario Oficial de la Federación
+https://dof.gob.mx/nota_detalle.php?codigo=5657034&fecha=05/07/2022&print=true
+13/13
+
+
