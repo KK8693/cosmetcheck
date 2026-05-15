@@ -8,6 +8,7 @@ import { Link } from '@/i18n/routing'
 import { Logo } from '@/components/Logo'
 import { setRequestLocale } from 'next-intl/server'
 import { FooterSection } from '@/sections/FooterSection'
+import WhatsAppFAB from '@/components/WhatsAppFAB'
 
 export const metadata: Metadata = {
   title: 'CosmetCheck Brasil - Verificação de Conformidade ANVISA para Cosméticos',
@@ -338,6 +339,7 @@ export default function BrasilPage() {
       </section>
 
       <FooterSection />
+      <WhatsAppFAB />
     </div>
   )
 }

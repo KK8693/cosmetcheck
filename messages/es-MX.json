@@ -26,7 +26,7 @@
     "mexicoCofeppris": "México COFEPRIS",
     "checking": "Verificando...",
     "checkNow": "Verificar Ahora",
-    "checkFirst": "Comenzar Verificación Gratuita",
+    "checkFirst": "Verificar Cumplimiento Primero",
     "remainingChecks": "Verificaciones Restantes",
     "aiGenerate": "Generar Listing con IA",
     "aiGenerateListing": "Generar Listing con IA",
@@ -231,20 +231,53 @@
   },
   "faq": {
     "title": "Preguntas Frecuentes",
-    "items": {
-      "1": {
-        "q": "¿Qué países/regiones se soportan?",
-        "a": "Actualmente soporta Brasil (ANVISA) y México (COFEPRIS). Generación de Listing adaptada para Amazon, Mercado Libre, Shopee y otras plataformas."
+    "categories": {
+      "general": {
+        "label": "General",
+        "items": {
+          "1": {
+            "q": "¿Qué países/regiones se soportan?",
+            "a": "Actualmente soporta Brasil (ANVISA) y México (COFEPRIS). Generación de Listing adaptada para Amazon, Mercado Libre, Shopee y otras plataformas."
+          },
+          "2": {
+            "q": "¿Qué tan precisos son los resultados?",
+            "a": "Entrenamos con documentos oficiales de regulaciones y actualizamos regularmente. Para productos complejos, ofrecemos revisión manual."
+          }
+        }
       },
-      "2": {
-        "q": "¿Qué tan precisos son los resultados?",
-        "a": "Entrenamos con documentos oficiales de regulaciones y actualizamos regularmente. Para productos complejos, ofrecemos revisión manual."
+      "pricing": {
+        "label": "Planes y Precios",
+        "items": {
+          "3": {
+            "q": "¿Cómo funciona el cobro?",
+            "a": "Plan gratis: 10 verificaciones/mes. Pro: $29/mes ilimitadas. API de detección por uso para escenarios en lote."
+          },
+          "4": {
+            "q": "¿Hay prueba gratuita?",
+            "a": "¡Sí! Comienza con 10 verificaciones gratuitas cada mes. No se requiere tarjeta de crédito."
+          },
+          "5": {
+            "q": "¿Puedo obtener reembolso?",
+            "a": "Ofrecemos garantía de devolución de dinero de 7 días para planes Pro. Contacta a nuestro equipo de soporte."
+          }
+        }
       },
-      "3": {
-        "q": "¿Cómo funciona el cobro?",
-        "a": "Plan gratis: 10 verificaciones/mes. Pro: Mex$499/mes ilimitadas. API de detección por uso, ideal para escenarios en lote."
+      "technical": {
+        "label": "Técnico",
+        "items": {
+          "6": {
+            "q": "¿Qué ingredientes se pueden verificar?",
+            "a": "Soportamos todos los ingredientes cosméticos incluyendo agentes clareadores, protectores solares, conservantes y fragancias. Nuestra base de datos cubre más de 10,000 ingredientes."
+          },
+          "7": {
+            "q": "¿Cuánto tiempo toma una verificación?",
+            "a": "La mayoría de las verificaciones se completan en menos de 5 segundos. El procesamiento por lotes para archivos CSV toma aproximadamente 1 minuto por 100 productos."
+          }
+        }
       }
-    }
+    },
+    "whatsapp": "¿Tienes más preguntas? Chatea con nosotros en WhatsApp",
+    "whatsappLink": "https://wa.me/?text=Hola, tengo una pregunta sobre CosmetCheck"
   },
   "footer": {
     "tagline": "Experto en Cumplimiento de Belleza en América Latina",
@@ -256,6 +289,11 @@
     "knowledgeBase": "Base de Conocimiento Regulatorio",
     "helpCenter": "Centro de Ayuda",
     "apiDocs": "Documentación de API",
+    "company": "Empresa",
+    "aboutUs": "Nosotros",
+    "contact": "Contáctanos",
+    "blog": "Blog",
+    "careers": "Carreras",
     "legal": "Legal",
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio",

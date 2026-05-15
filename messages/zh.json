@@ -42,7 +42,7 @@
     "mexicoCofeppris": "墨西哥 COFEPRIS",
     "checking": "检测中...",
     "checkNow": "立即检测",
-    "checkFirst": "立即免费检测",
+    "checkFirst": "先检测合规",
     "remainingChecks": "剩余检测次数",
     "aiGenerate": "AI生成Listing",
     "aiGenerateListing": "AI生成Listing",
@@ -247,20 +247,53 @@
   },
   "faq": {
     "title": "常见问题",
-    "items": {
-      "1": {
-        "q": "支持哪些国家/地区？",
-        "a": "当前支持巴西（ANVISA）和墨西哥（COFEPRIS）的合规检测。Listing生成适配 Amazon、Mercado Livre、Shopee 等平台格式。"
+    "categories": {
+      "general": {
+        "label": "通用",
+        "items": {
+          "1": {
+            "q": "支持哪些国家/地区？",
+            "a": "当前支持巴西（ANVISA）和墨西哥（COFEPRIS）的合规检测。Listing生成适配 Amazon、Mercado Livre、Shopee 等平台格式。"
+          },
+          "2": {
+            "q": "检测结果准确吗？",
+            "a": "我们基于官方法规文档训练，定期更新规则库。对于复杂产品，提供人工复核通道。"
+          }
+        }
       },
-      "2": {
-        "q": "检测结果准确吗？",
-        "a": "我们基于官方法规文档训练，定期更新规则库。对于复杂产品，提供人工复核通道。"
+      "pricing": {
+        "label": "价格与套餐",
+        "items": {
+          "3": {
+            "q": "如何收费？",
+            "a": "免费版每月10次检测，专业版 $29/月无限次。检测API按次计费，适合批量场景。"
+          },
+          "4": {
+            "q": "有免费试用吗？",
+            "a": "有的！每月可免费使用10次合规模检测。无需信用卡。"
+          },
+          "5": {
+            "q": "可以退款吗？",
+            "a": "专业版提供7天无理由退款。联系客服即可申请。"
+          }
+        }
       },
-      "3": {
-        "q": "如何收费？",
-        "a": "免费版每月10次检测，专业版 $29/月（折合约 ¥199/月）无限次。检测API按次计费，适合批量场景。"
+      "technical": {
+        "label": "技术问题",
+        "items": {
+          "6": {
+            "q": "可以检测哪些成分？",
+            "a": "我们支持所有化妆品成分检测，包括美白成分、防腐剂、香精等。我们的数据库覆盖超过10,000种成分。"
+          },
+          "7": {
+            "q": "检测需要多长时间？",
+            "a": "大多数检测在5秒内完成。批量CSV文件处理约1分钟处理100个产品。"
+          }
+        }
       }
-    }
+    },
+    "whatsapp": "还有问题？WhatsApp联系我们",
+    "whatsappLink": "https://wa.me/?text=你好，我想了解CosmetCheck的合规检测服务"
   },
   "footer": {
     "tagline": "拉美美妆合规检测专家，让出海更简单。",
@@ -272,6 +305,11 @@
     "knowledgeBase": "法规知识库",
     "helpCenter": "帮助中心",
     "apiDocs": "API文档",
+    "company": "公司",
+    "aboutUs": "关于我们",
+    "contact": "联系我们",
+    "blog": "博客",
+    "careers": "加入我们",
     "legal": "法律",
     "privacy": "隐私政策",
     "terms": "服务条款",

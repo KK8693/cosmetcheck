@@ -42,7 +42,7 @@
     "mexicoCofeppris": "Mexico COFEPRIS",
     "checking": "Checking...",
     "checkNow": "Check Now",
-    "checkFirst": "Start Free Check",
+    "checkFirst": "Check Compliance First",
     "remainingChecks": "Remaining Checks",
     "aiGenerate": "AI Generate Listing",
     "aiGenerateListing": "AI Generate Listing",
@@ -247,20 +247,53 @@
   },
   "faq": {
     "title": "FAQ",
-    "items": {
-      "1": {
-        "q": "Which countries/regions are supported?",
-        "a": "Currently supports Brazil (ANVISA) and Mexico (COFEPRIS) compliance checks. Listing generation adapted for Amazon, Mercado Livre, Shopee and other platforms."
+    "categories": {
+      "general": {
+        "label": "General",
+        "items": {
+          "1": {
+            "q": "Which countries/regions are supported?",
+            "a": "Currently supports Brazil (ANVISA) and Mexico (COFEPRIS) compliance checks. Listing generation adapted for Amazon, Mercado Livre, Shopee and other platforms."
+          },
+          "2": {
+            "q": "How accurate are the check results?",
+            "a": "We train on official regulation documents and update the rule library regularly. For complex products, we offer manual review."
+          }
+        }
       },
-      "2": {
-        "q": "How accurate are the check results?",
-        "a": "We train on official regulation documents and update the rule library regularly. For complex products, we offer manual review."
+      "pricing": {
+        "label": "Pricing & Plans",
+        "items": {
+          "3": {
+            "q": "How do you charge?",
+            "a": "Free plan: 10 checks/month. Pro: $29/month unlimited. Detection API pay-per-use for batch scenarios."
+          },
+          "4": {
+            "q": "Is there a free trial?",
+            "a": "Yes! Start with 10 free compliance checks every month. No credit card required."
+          },
+          "5": {
+            "q": "Can I get a refund?",
+            "a": "We offer a 7-day money-back guarantee for Pro plans. Contact our support team."
+          }
+        }
       },
-      "3": {
-        "q": "How do you charge?",
-        "a": "Free plan: 10 checks/month. Pro: $29/month unlimited. Detection API pay-per-use for batch scenarios."
+      "technical": {
+        "label": "Technical",
+        "items": {
+          "6": {
+            "q": "What ingredients can be checked?",
+            "a": "We support all cosmetic ingredients including whitening agents, sunscreens, preservatives, and fragrances. Our database covers 10,000+ ingredients."
+          },
+          "7": {
+            "q": "How long does a check take?",
+            "a": "Most checks complete in under 5 seconds. Batch processing for CSV files takes ~1 minute per 100 products."
+          }
+        }
       }
-    }
+    },
+    "whatsapp": "Have more questions? Chat with us on WhatsApp",
+    "whatsappLink": "https://wa.me/?text=Hello, I have a question about CosmetCheck"
   },
   "footer": {
     "tagline": "Latin America Beauty Compliance Expert — Simplifying Your Market Entry",
@@ -272,6 +305,11 @@
     "knowledgeBase": "Regulation Knowledge Base",
     "helpCenter": "Help Center",
     "apiDocs": "API Documentation",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "contact": "Contact Us",
+    "blog": "Blog",
+    "careers": "Careers",
     "legal": "Legal",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
