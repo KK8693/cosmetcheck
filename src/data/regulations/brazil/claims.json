@@ -26,7 +26,7 @@
       ],
       "severity": "critical",
       "condition": "禁止使用治疗疾病相关宣称",
-      "message": "化妆品不得宣称具有治疗疾病的效果，如'治疗痤疮'、'治疗湿疹'等，需标注'este produto não é um medicamento'（本产品非药品）",
+      "message": "Cosmetics cannot claim to cure, treat, or prevent diseases. Must include 'este produto não é um medicamento' (this product is not a medicine).",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -47,7 +47,7 @@
       ],
       "severity": "critical",
       "condition": "禁止绝对化美白宣称，氢醌禁止用于化妆品美白",
-      "message": "禁止使用'永久美白'、'完全消除黑色素'等绝对化美白宣称，美白产品不得含氢醌，建议使用'有助于提亮肤色'等温和表述",
+      "message": "Absolute whitening claims are prohibited - no 'permanent whitening', 'complete melanin elimination'. Hydroquinone is banned in cosmetics. Use 'helps brighten skin tone' instead.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -66,7 +66,7 @@
       ],
       "severity": "critical",
       "condition": "禁止防晒绝对化和无需补涂宣称",
-      "message": "防晒产品必须标注SPF值和UVA/UVB防护，禁止使用'全面防护'、'无需补涂'等绝对化表述，需符合RDC 907/2024微生物标准",
+      "message": "Sunscreen products must display SPF and UVA/UVB protection. Absolute claims like 'total protection' or 'no reapplication needed' are prohibited per RDC 907/2024.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -85,7 +85,7 @@
       ],
       "severity": "critical",
       "condition": "禁止防脱发/生发宣称",
-      "message": "化妆品不得宣称防脱发或促进头发生长功效，此类宣称属于药品范畴，需ANVISA药品注册",
+      "message": "Cosmetics cannot claim hair loss prevention or hair growth promotion. These claims require ANVISA medicine registration.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -104,7 +104,7 @@
       ],
       "severity": "critical",
       "condition": "禁止任何丰胸宣称",
-      "message": "化妆品不得宣称具有丰胸或改变胸部大小的效果，此类宣称需药品注册",
+      "message": "Cosmetics cannot claim breast enhancement or body shaping effects. These claims require medicine registration.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -124,7 +124,7 @@
       ],
       "severity": "critical",
       "condition": "禁止宣称减肥效果",
-      "message": "化妆品不得宣称具有减肥、瘦身或燃脂效果，此类宣称属于药品或医疗器械范畴",
+      "message": "Cosmetics cannot claim weight loss, slimming, or fat burning effects. These claims fall under medicine or medical device category.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -141,7 +141,7 @@
       ],
       "severity": "warning",
       "condition": "可使用但需谨慎，禁止绝对化宣称",
-      "message": "去妊娠纹宣称需有科学依据，不可使用'完全消除'等绝对化用语，建议使用'有助于改善妊娠纹外观'等表述",
+      "message": "Stretch mark claims require scientific evidence. Avoid absolute terms like 'completely eliminates'. Use 'helps improve the appearance of stretch marks' instead.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -168,7 +168,7 @@
       ],
       "severity": "warning",
       "condition": "禁止使用绝对化用语",
-      "message": "禁止使用'立即'、'即刻'、'瞬间'等绝对化宣称，功效宣称需基于科学验证",
+      "message": "Absolute terms like 'immediate', 'instant', 'momentary' are prohibited. Efficacy claims must be based on scientific validation.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -189,7 +189,7 @@
       ],
       "severity": "warning",
       "condition": "禁止使用绝对化宣称",
-      "message": "禁止使用'100%'、'彻底'、'根治'等绝对化用语，建议使用'有助于改善'等客观表述",
+      "message": "Absolute terms like '100%', 'completely', 'radical cure' are prohibited. Use objective terms like 'helps improve' instead.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -208,7 +208,7 @@
       ],
       "severity": "warning",
       "condition": "禁止误导性医疗宣称",
-      "message": "禁止使用'医疗级'、'医药级'等可能误导消费者的宣称，化妆品不得暗示药品功效",
+      "message": "Claims like 'medical grade' or 'pharmaceutical grade' that may mislead consumers are prohibited. Cosmetics cannot imply medicinal efficacy.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -227,7 +227,7 @@
       ],
       "severity": "warning",
       "condition": "有限制，需符合特定规定",
-      "message": "抗菌宣称需要符合特定规定，部分产品需按药品注册，消毒产品不属于化妆品范畴",
+      "message": "Antibacterial claims require specific compliance. Some products require medicine registration. Disinfectant products are not cosmetics.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -244,7 +244,7 @@
       ],
       "severity": "info",
       "condition": "需明确区分产品类别，禁止绝对化宣称",
-      "message": "止汗剂和除臭剂是不同的产品类别，需按对应规定注册，禁止使用'永久止汗'等绝对化表述",
+      "message": "Antiperspirants and deodorants are different product categories. Register per respective regulations. Absolute claims like 'permanent antiperspirant' are prohibited.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -282,7 +282,7 @@
       ],
       "severity": "critical",
       "condition": "禁止绝对化永久功效宣称",
-      "message": "禁止使用'永久'、'彻底根治'、'永远'等绝对化功效宣称，建议使用'有助于维持'等表述",
+      "message": "Absolute terms like 'permanent', 'completely cure', 'forever' are prohibited. Use 'helps maintain' instead.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -328,7 +328,7 @@
       ],
       "severity": "critical",
       "condition": "禁止承诺具体时效和绝对效果",
-      "message": "禁止承诺固定天数见效（如'3天'/'7天'/X天/周等）和绝对效果保证（如'100%有效'、'保证结果'），功效宣称需有科学依据",
+      "message": "Fixed-day efficacy claims (e.g., 'in 3 days', 'in 7 days') and absolute effectiveness guarantees (e.g., '100% effective', 'guaranteed results') are prohibited. Efficacy must be scientifically substantiated.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -349,7 +349,7 @@
       ],
       "severity": "critical",
       "condition": "禁止医疗化宣称",
-      "message": "禁止使用'医疗级'、'医学配方'、'临床级'等暗示药品功效的宣传，化妆品不得模仿药品宣传",
+      "message": "Claims like 'medical grade', 'clinical formula', 'clinical grade' that imply medicinal efficacy are prohibited. Cosmetics cannot mimic drug marketing.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -390,7 +390,7 @@
       ],
       "severity": "critical",
       "condition": "特殊人群需特殊审批，禁止随意宣称",
-      "message": "禁止随意宣称适合婴儿、孕妇等特殊人群，需标注适用年龄和特殊情况说明，婴儿产品需单独注册",
+      "message": "Claims suitability for infants, pregnant women require specific labeling of applicable age and special condition warnings. Infant products require separate registration.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -413,7 +413,7 @@
       ],
       "severity": "warning",
       "condition": "禁止绝对化无添加/纯天然宣称",
-      "message": "避免使用'100%天然'、'无化学成分'等绝对化表述，天然成分宣称需有科学依据，化妆品必然含有化学成分",
+      "message": "Avoid absolute terms like '100% natural', 'no chemicals'. Natural ingredient claims require scientific evidence. Cosmetics inherently contain chemical ingredients.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -432,7 +432,7 @@
       ],
       "severity": "critical",
       "condition": "禁止细胞再生等医疗级修复宣称",
-      "message": "化妆品不得宣称细胞再生、组织修复等医疗功效，建议使用'改善皮肤外观'等表述",
+      "message": "Cosmetics cannot claim cell regeneration, tissue repair or other medicinal effects. Use 'improves skin appearance' instead.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -451,7 +451,7 @@
       ],
       "severity": "warning",
       "condition": "禁止无依据的排毒宣称",
-      "message": "避免使用'排毒'、'净化'等暗示医疗功效的表述，建议使用'清洁'、'去除杂质'等温和表述",
+      "message": "Avoid terms like 'detoxify', 'purify' that imply medicinal effects. Use milder terms like 'cleans', 'removes impurities' instead.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -470,7 +470,7 @@
       ],
       "severity": "warning",
       "condition": "禁止对比贬低竞品",
-      "message": "禁止使用贬低竞争对手或与其他产品对比的宣传用语，宣传需专注自身产品特性，符合ANVISA公平竞争原则",
+      "message": "Disparaging competitors or comparative advertising is prohibited. Marketing must focus on product's own characteristics per ANVISA fair competition principles.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -501,7 +501,7 @@
       ],
       "severity": "warning",
       "condition": "禁止无依据的安全绝对化宣称",
-      "message": "安全宣称需有测试支持，不得使用'无任何风险'、'绝不致敏'等绝对化表述，低致敏需临床验证",
+      "message": "Safety claims require test support. Absolute terms like 'no risk at all', 'never causes sensitization' are prohibited. Low sensitization requires clinical validation.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -530,7 +530,7 @@
       ],
       "severity": "critical",
       "condition": "禁止抗衰老绝对化宣称",
-      "message": "禁止使用'完全消除皱纹'、'全面抗衰老'等绝对化表述，建议使用'改善皱纹外观'等温和表述，符合RDC 907/2024规定",
+      "message": "Absolute terms like 'completely eliminates wrinkles', 'comprehensive anti-aging' are prohibited. Use milder terms like 'improves the appearance of wrinkles' per RDC 907/2024.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -553,7 +553,7 @@
       ],
       "severity": "warning",
       "condition": "禁止无科学依据的全肤质宣称",
-      "message": "禁止无科学依据宣称适合所有肤质，需有测试支持，建议使用'兼容多数肤质'或'适合干性/油性/中性皮肤'等具体描述",
+      "message": "Claims of suitability for all skin types without scientific evidence are prohibited. Test support required. Use 'compatible with most skin types' or 'suitable for dry/oily/normal skin' instead.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
@@ -574,7 +574,7 @@
       ],
       "severity": "warning",
       "condition": "禁止100%绝对效果保证",
-      "message": "禁止使用100%效果保证、绝对有效等绝对化表述，功效因人而异，建议使用'因人而异'或'配合使用效果更佳'等表述",
+      "message": "Absolute effectiveness guarantees like '100% effective' are prohibited. Efficacy varies by individual. Use 'results may vary' or 'works best with regular use' instead.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     }
   ]

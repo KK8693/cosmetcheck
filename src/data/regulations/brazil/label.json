@@ -8,100 +8,133 @@
       "ruleId": "BR-LABEL-001",
       "category": "label",
       "target": "Product name in Portuguese",
-      "aliases": ["Nome em português", "葡萄牙语产品名", "名称葡语化"],
+      "aliases": [
+        "Nome em português",
+        "葡萄牙语产品名",
+        "名称葡语化"
+      ],
       "severity": "critical",
       "condition": "产品名称必须翻译为葡萄牙语",
-      "message": "根据RDC 169/2024，在巴西销售的产品名称必须使用葡萄牙语",
+      "message": "Product name must be in Portuguese per RDC 169/2024.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
       "ruleId": "BR-LABEL-002",
       "category": "label",
       "target": "INCI name",
-      "aliases": ["Nome INCI", "INCI命名", "国际成分命名"],
+      "aliases": [
+        "Nome INCI",
+        "INCI命名",
+        "国际成分命名"
+      ],
       "severity": "critical",
       "condition": "成分表必须使用INCI国际命名",
-      "message": "成分表必须使用INCI（国际化妆品成分命名）标准",
+      "message": "Ingredients must be listed using INCI (International Nomenclature of Cosmetic Ingredients) standard.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
       "ruleId": "BR-LABEL-003",
       "category": "label",
       "target": "Manufacturer info",
-      "aliases": ["Dados do fabricante", "制造商信息"],
+      "aliases": [
+        "Dados do fabricante",
+        "制造商信息"
+      ],
       "severity": "critical",
       "condition": "必须标注制造商或进口商信息",
-      "message": "必须标注制造商或进口商的名称、地址和CNPJ",
+      "message": "Manufacturer or importer name, address, and CNPJ must be displayed.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
       "ruleId": "BR-LABEL-004",
       "category": "label",
       "target": "Country of origin",
-      "aliases": ["País de origem", "原产国"],
+      "aliases": [
+        "País de origem",
+        "原产国"
+      ],
       "severity": "critical",
       "condition": "必须标注原产国",
-      "message": "进口产品必须标注原产国",
+      "message": "Country of origin must be displayed for imported products.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
       "ruleId": "BR-LABEL-005",
       "category": "label",
       "target": "Net content",
-      "aliases": ["Conteúdo líquido", "净含量"],
+      "aliases": [
+        "Conteúdo líquido",
+        "净含量"
+      ],
       "severity": "critical",
       "condition": "必须标注净含量",
-      "message": "必须标注产品净含量，使用公制单位（g, mL）",
+      "message": "Net content must be displayed using metric units (g, mL).",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
       "ruleId": "BR-LABEL-006",
       "category": "label",
       "target": "Batch number",
-      "aliases": ["Número do lote", "批号"],
+      "aliases": [
+        "Número do lote",
+        "批号"
+      ],
       "severity": "warning",
       "condition": "必须标注生产批号",
-      "message": "必须标注生产批号以便产品追溯",
+      "message": "Batch number must be displayed for product traceability.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
       "ruleId": "BR-LABEL-007",
       "category": "label",
       "target": "Expiration date",
-      "aliases": ["Data de validade", "有效期"],
+      "aliases": [
+        "Data de validade",
+        "有效期"
+      ],
       "severity": "critical",
       "condition": "必须标注有效期",
-      "message": "必须标注有效期（日期或开盖后使用期限PAO）",
+      "message": "Expiration date (or Period After Opening - PAO) must be displayed.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
       "ruleId": "BR-LABEL-008",
       "category": "label",
       "target": "Storage conditions",
-      "aliases": ["Condições de armazenamento", "储存条件"],
+      "aliases": [
+        "Condições de armazenamento",
+        "储存条件"
+      ],
       "severity": "info",
       "condition": "建议标注",
-      "message": "建议标注储存条件（如'避光保存'、'室温保存'）",
+      "message": "Storage conditions should be displayed (e.g., 'store away from light', 'store at room temperature').",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
-{
+    {
       "ruleId": "BR-LABEL-009",
       "category": "label",
       "target": "Registration number",
-      "aliases": ["Número de registro", "注册编号"],
+      "aliases": [
+        "Número de registro",
+        "注册编号"
+      ],
       "severity": "critical",
       "condition": "必须标注ANVISA注册编号",
-      "message": "必须标注ANVISA注册编号（除非是豁免注册的产品）",
+      "message": "ANVISA registration number must be displayed (unless exempt).",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     },
     {
       "ruleId": "BR-LABEL-010",
       "category": "label",
       "target": "Consumer service",
-      "aliases": ["SAC", "Serviço de Atendimento ao Consumidor", "客服电话"],
+      "aliases": [
+        "SAC",
+        "Serviço de Atendimento ao Consumidor",
+        "客服电话"
+      ],
       "severity": "critical",
       "condition": "必须标注客服联系方式",
-      "message": "必须标注消费者服务电话或邮箱",
+      "message": "Consumer service phone or email must be displayed.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     }
   ]

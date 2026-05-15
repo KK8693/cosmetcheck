@@ -8,128 +8,182 @@
       "ruleId": "MX-LABEL-001",
       "category": "label",
       "target": "SPF value",
-      "aliases": ["Factor de Protección Solar", "FPS", "防晒系数"],
+      "aliases": [
+        "Factor de Protección Solar",
+        "FPS",
+        "防晒系数"
+      ],
       "cas": "NA",
       "severity": "critical",
       "condition": "防晒产品必须标注SPF值",
-      "message": "根据NOM-141-SSA1，防晒产品必须在标签上明确标注SPF值，否则墨西哥海关将扣留产品",
+      "message": "Per NOM-141-SSA1, sunscreen products must display SPF value on label, or customs will seize the product.",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
     },
     {
       "ruleId": "MX-LABEL-002",
       "category": "label",
       "target": "SPF label",
-      "aliases": ["Protector Solar", "Bloqueador Solar", "防晒"],
+      "aliases": [
+        "Protector Solar",
+        "Bloqueador Solar",
+        "防晒"
+      ],
       "cas": "NA",
       "severity": "critical",
       "condition": "标注'SPF'后必须附带数值",
-      "message": "防晒产品不能只写'防晒'，必须标注具体SPF数值",
+      "message": "Sunscreen products cannot just say 'sunscreen', must display specific SPF value.",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
     },
     {
       "ruleId": "MX-LABEL-003",
       "category": "label",
       "target": "PA rating",
-      "aliases": ["Protección UVA", "PA+", "PA++", "PA+++"],
+      "aliases": [
+        "Protección UVA",
+        "PA+",
+        "PA++",
+        "PA+++"
+      ],
       "cas": "NA",
       "severity": "warning",
       "condition": "建议标注UVA防护等级",
-      "message": "建议标注PA值或Broad Spectrum表示UVA防护",
+      "message": "PA value or Broad Spectrum should be displayed to indicate UVA protection.",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
     },
     {
       "ruleId": "MX-LABEL-004",
       "category": "label",
       "target": "Manufacturer info",
-      "aliases": ["Datos del fabricante", "Fabricante", "制造商信息"],
+      "aliases": [
+        "Datos del fabricante",
+        "Fabricante",
+        "制造商信息"
+      ],
       "cas": "NA",
       "severity": "critical",
       "condition": "必须标注制造商或进口商名称和地址",
-      "message": "根据NOM-141，必须在标签上标注制造商或进口商的名称和地址",
+      "message": "Ingredients must be listed in descending order of concentration.",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
     },
     {
       "ruleId": "MX-LABEL-005",
       "category": "label",
       "target": "Country of origin",
-      "aliases": ["País de origen", "Origen", "原产国"],
+      "aliases": [
+        "País de origen",
+        "Origen",
+        "原产国"
+      ],
       "cas": "NA",
       "severity": "critical",
       "condition": "必须标注原产国",
-      "message": "进口化妆品必须标注原产国",
+      "message": "Net content must be displayed in metric units.",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
     },
     {
       "ruleId": "MX-LABEL-006",
       "category": "label",
       "target": "Spanish language",
-      "aliases": ["Español", "Spanish label", "西班牙语标签"],
+      "aliases": [
+        "Español",
+        "Spanish label",
+        "西班牙语标签"
+      ],
       "cas": "NA",
       "severity": "critical",
       "condition": "标签必须使用西班牙语",
-      "message": "在墨西哥销售的化妆品标签必须使用西班牙语",
+      "message": "Manufacturer or importer information must be displayed.",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
     },
     {
       "ruleId": "MX-LABEL-007",
       "category": "label",
       "target": "Net content",
-      "aliases": ["Contenido neto", "Net wt", "净含量"],
+      "aliases": [
+        "Contenido neto",
+        "Net wt",
+        "净含量"
+      ],
       "cas": "NA",
       "severity": "critical",
       "condition": "必须标注净含量（重量或体积）",
-      "message": "必须标注产品净含量，使用公制单位（g, mL）",
+      "message": "Country of origin must be displayed for imported products.",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
     },
     {
       "ruleId": "MX-LABEL-008",
       "category": "label",
       "target": "Batch number",
-      "aliases": ["Número de lote", "Lote", "批号"],
+      "aliases": [
+        "Número de lote",
+        "Lote",
+        "批号"
+      ],
       "cas": "NA",
       "severity": "warning",
       "condition": "必须标注生产批号",
-      "message": "必须标注生产批号以便追溯",
+      "message": "Expiration date must be displayed.",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
     },
     {
       "ruleId": "MX-LABEL-009",
       "category": "label",
       "target": "Expiration date",
-      "aliases": ["Fecha de caducidad", "Exp date", "有效期"],
+      "aliases": [
+        "Fecha de caducidad",
+        "Exp date",
+        "有效期"
+      ],
       "cas": "NA",
       "severity": "critical",
       "condition": "必须标注有效期（开盖后使用期限）",
-      "message": "必须标注有效期或开盖后使用期限（PAO）",
+      "message": "Batch number should be displayed for traceability.",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
     },
     {
       "ruleId": "MX-LABEL-010",
       "category": "label",
       "target": "SPF sunscreen - required indicators",
-      "aliases": ["protector solar", "protectorsolar", "filtro solar", "FPS", "SPF", "sun protection"],
+      "aliases": [
+        "protector solar",
+        "protectorsolar",
+        "filtro solar",
+        "FPS",
+        "SPF",
+        "sun protection"
+      ],
       "cas": "NA",
       "severity": "critical",
       "condition": "NOM-141附录A要求：防晒霜必须标注SPF值、UVA/UVB防护，禁止100%防护声明",
-      "message": "防晒霜必须标注：(1)SPF值 (2)UVA和UVB防护 (3)禁止声称100%防护或'bloqueador solar'",
+      "message": "Storage conditions should be displayed.",
       "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012",
       "detection": {
         "type": "sunscreen_label",
         "spfRequired": true,
         "uvaRequired": true,
         "uvbRequired": true,
-        "forbiddenClaims": ["100%", "bloqueador", "bloqueante", "protección total", "todo el día"]
+        "forbiddenClaims": [
+          "100%",
+          "bloqueador",
+          "bloqueante",
+          "protección total",
+          "todo el día"
+        ]
       }
     },
     {
       "ruleId": "MX-LABEL-011",
       "category": "label",
       "target": "SPF minimum 6",
-      "aliases": ["SPF", "FPS", "Factor de Protección Solar"],
+      "aliases": [
+        "SPF",
+        "FPS",
+        "Factor de Protección Solar"
+      ],
       "cas": "NA",
       "severity": "critical",
       "condition": "NOM-141 A.2.2.1 防晒霜SPF最低值为6",
-      "message": "防晒系数SPF不得低于6",
+      "message": "Consumer information must be displayed.",
       "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012",
       "detection": {
         "type": "spf_minimum",
@@ -140,67 +194,121 @@
       "ruleId": "MX-LABEL-012",
       "category": "label",
       "target": "UVA protection 1/3 SPF",
-      "aliases": ["UVA", "protección UVA", "PA"],
+      "aliases": [
+        "UVA",
+        "protección UVA",
+        "PA"
+      ],
       "cas": "NA",
       "severity": "critical",
       "condition": "NOM-141 A.2.2.2 UVA防护系数至少为SPF的1/3",
-      "message": "UVA防护系数至少为SPF的1/3",
+      "message": "Warnings for restricted ingredients must be displayed.",
       "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
     },
     {
       "ruleId": "MX-LABEL-013",
       "category": "label",
       "target": "No 100% protection claim",
-      "aliases": ["100% protection", "bloqueador solar", "bloqueante solar", "protección total"],
+      "aliases": [
+        "100% protection",
+        "bloqueador solar",
+        "bloqueante solar",
+        "protección total"
+      ],
       "cas": "NA",
       "severity": "critical",
       "condition": "NOM-141 A.1.1.2.1 禁止声称100%防护",
-      "message": "禁止声称100%或完全防晒，禁止使用'bloqueador solar'、'bloqueante solar'、'protección total'",
+      "message": "Usage instructions must be displayed.",
       "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012",
       "detection": {
         "type": "forbidden_claim",
-        "patterns": ["100%.*UV", "100%.*solar", "bloqueador", "bloqueante", "protección total", "todo el día"]
+        "patterns": [
+          "100%.*UV",
+          "100%.*solar",
+          "bloqueador",
+          "bloqueante",
+          "protección total",
+          "todo el día"
+        ]
       }
     },
     {
       "ruleId": "MX-LABEL-014",
       "category": "label",
       "target": "Sunscreen warning - reapply",
-      "aliases": ["reaplicar", "reaplicación", "reapply"],
+      "aliases": [
+        "reaplicar",
+        "reaplicación",
+        "reapply"
+      ],
       "cas": "NA",
       "severity": "warning",
       "condition": "NOM-141 5.3.7.10要求：需标注需重复使用",
-      "message": "防晒霜需标注'需经常重复使用，特别是出汗、游泳或擦干后'",
+      "message": "Language requirements: labeling in Spanish is recommended.",
       "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
     },
     {
       "ruleId": "MX-LABEL-015",
       "category": "label",
       "target": "Sunscreen warning - babies",
-      "aliases": ["bebés", "niños pequeños", "babies", "infants"],
+      "aliases": [
+        "bebés",
+        "niños pequeños",
+        "babies",
+        "infants"
+      ],
       "cas": "NA",
       "severity": "warning",
       "condition": "NOM-141 5.3.7.10.4要求：需标注婴幼儿避免阳光直射",
-      "message": "需标注'避免婴幼儿和儿童直接暴露在阳光下'",
+      "message": "Product name must be displayed clearly.",
       "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
     },
     {
       "ruleId": "MX-LABEL-016",
       "category": "label",
       "target": "Sunscreen classification table",
-      "aliases": ["protección baja", "protección media", "protección alta", "protección muy alta"],
+      "aliases": [
+        "protección baja",
+        "protección media",
+        "protección alta",
+        "protección muy alta"
+      ],
       "cas": "NA",
       "severity": "info",
       "condition": "NOM-141 A.3.3 防晒等级分类：baja(6-10), media(15-25), alta(30-50), muy alta(50+)",
-      "message": "防晒等级分类：低(baja)=6-10, 中(media)=15-25, 高(alta)=30-50, 非常高(muy alta)=50+",
+      "message": "Registration number must be displayed if applicable.",
       "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012",
       "detection": {
         "type": "classification",
         "table": {
-          "baja": {"label": [6, 10], "measured": "6-9.9"},
-          "media": {"label": [15, 20, 25], "measured": "15-29.9"},
-          "alta": {"label": [30, 50], "measured": "30-59.9"},
-          "muy_alta": {"label": ["50+"], "measured": "≥60"}
+          "baja": {
+            "label": [
+              6,
+              10
+            ],
+            "measured": "6-9.9"
+          },
+          "media": {
+            "label": [
+              15,
+              20,
+              25
+            ],
+            "measured": "15-29.9"
+          },
+          "alta": {
+            "label": [
+              30,
+              50
+            ],
+            "measured": "30-59.9"
+          },
+          "muy_alta": {
+            "label": [
+              "50+"
+            ],
+            "measured": "≥60"
+          }
         }
       }
     },
@@ -208,11 +316,16 @@
       "ruleId": "MX-LABEL-017",
       "category": "label",
       "target": "Tanning product FPS 2-4",
-      "aliases": ["bronceador", "broncear", "tanning", "autobronceador"],
+      "aliases": [
+        "bronceador",
+        "broncear",
+        "tanning",
+        "autobronceador"
+      ],
       "cas": "NA",
       "severity": "critical",
       "condition": "NOM-141 5.3.7.11 美黑产品FPS必须为2-4（实测2-5.9）",
-      "message": "美黑产品(bronceador)的SPF必须为2-4（实测值2-5.9）",
+      "message": "Recycling information should be displayed.",
       "sourceUrl": "https://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012",
       "detection": {
         "type": "tanning_fps",
