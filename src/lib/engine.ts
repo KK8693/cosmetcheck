@@ -150,7 +150,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Cosmetics cannot claim medicinal or therapeutic properties.',
     suggestion: 'Remove terms like "treats", "cures", "medicinal" from product claims.',
-    aliases: ['药用', 'medicinal', 'medicinal', 'drug', 'pharmaceutical', '药品', '药物', 'medicamento', 'farmaceutico'],
+    aliases: ['药用', 'medicinal', 'medicinal', 'drug', 'pharmaceutical', '药品', '药物', 'medicamento', 'farmaceutico', 'medicinally'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -161,7 +161,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Cosmetics cannot claim to cure, treat, or prevent diseases.',
     suggestion: 'Use cosmetic claims only (moisturizing, cleansing, beautifying).',
-    aliases: ['治愈', 'cura', 'cura', 'heal', 'healing', '治疗', '痊愈', 'curativo', 'terapêutico'],
+    aliases: ['治愈', 'cura', 'cura', 'heal', 'healing', '治疗', '痊愈', 'curativo', 'terapêutico', 'cures', 'heals', 'treats', 'permanently', 'permanente'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -218,7 +218,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     message: '"Treats" implies therapeutic intent - prohibited for cosmetics.',
     suggestion: 'Use cosmetic claims only: "helps maintain", "contributes to".',
     source: 'ANVISA RDC 529/2021',
-    aliases: ['trata', 'tratar', 'trata de', 'treatment for', 'tratar de'],
+    aliases: ['trata', 'tratar', 'trata de', 'treatment for', 'tratar de', 'treats', 'treating', 'treated'],
   },
   {
     ruleId: 'BR-CLM-005',
