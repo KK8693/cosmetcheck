@@ -252,17 +252,26 @@
     "cica": {
       "inci": "Centella Asiatica Extract",
       "aliases": ["Cica", "积雪草", "小绿瓶", "Centella Asiatica", "老虎草", "Asiaticoside"],
-      "category": "actives"
+      "category": "actives",
+      "功效": "舒缓、修护、抗炎、促进愈合",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "adenosine": {
       "inci": "Adenosine",
       "aliases": ["腺苷", "Adenosinum", "辅酶A前体"],
-      "category": "actives"
+      "category": "actives",
+      "功效": "抗皱、紧致、促进胶原",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "collagen": {
       "inci": "Hydrolyzed Collagen",
       "aliases": ["胶原蛋白", "Collagen", "水解胶原蛋白", "Collagen Peptide", "Collagen Amino Acid"],
-      "category": "actives"
+      "category": "actives",
+      "功效": "保湿、紧致、提升弹性",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "elastic": {
       "inci": "Elastin",
@@ -272,12 +281,18 @@
     "squalane": {
       "inci": "Squalane",
       "aliases": ["角鲨烷", "Squalane", "植物角鲨烷", "Olive Squalane", "鲨烯", "角鲨烯"],
-      "category": "emollient"
+      "category": "emollient",
+      "功效": "保湿、柔软、屏障修复",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "shea_butter": {
       "inci": "Shea Butter",
       "aliases": ["Shea Butter", "乳木果油", "牛油果树果脂", "Karite Butter", "雪亚脂"],
-      "category": "emollient"
+      "category": "emollient",
+      "功效": "滋润、软化、屏障保护",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "aloe_vera": {
       "inci": "Aloe Barbadensis Leaf Juice",
@@ -358,18 +373,25 @@
       "inci": "Arbutin",
       "aliases": ["Arbutin", "α-Arbutin", "熊果苷", "α-熊果苷", "Beta-Arbutin", "熊果素", "4-Hydroxyphenyl alpha-D-glucopyranoside"],
       "category": "actives",
-      "hasConcentration": true
+      "功效": "美白、淡斑（较氢醌安全）",
+      "适用肤质": "all",
+      "安全性评级": "B"
     },
     "kojic_acid": {
       "inci": "Kojic Acid",
       "aliases": ["Kojic Acid", "曲酸", "5-Hydroxy-2-hydroxymethyl-4-pyrone", "麴酸"],
       "category": "actives",
-      "hasConcentration": true
+      "功效": "美白、抗氧化、抑制酪氨酸酶",
+      "适用肤质": "all",
+      "安全性评级": "B"
     },
     "tranexamic_acid": {
       "inci": "Tranexamic Acid",
       "aliases": ["Tranexamic Acid", "传明酸", "氨甲环酸", "止血环酸", "TXA"],
-      "category": "actives"
+      "category": "actives",
+      "功效": "美白、淡斑、抑制黑色素",
+      "适用肤质": "all",
+      "安全性评级": "B"
     },
     "alpha_lipoic_acid": {
       "inci": "Alpha Lipoic Acid",
