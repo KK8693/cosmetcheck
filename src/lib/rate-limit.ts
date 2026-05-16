@@ -98,9 +98,14 @@ export function checkRateLimit(
   identifier: string, 
   customRpm?: number
 ): RateLimitResult {
-  const config = customRpm 
-    ? { rpm: customRpm, burst: Math.ceil(customRpm / 6) }
-    : RATE_LIMIT_CONFIGS.generate
+  let config: { rpm: number; burst: number; windowMs: number }
+  
+  if (customRpm) {
+    config = { rpm: customRpm, burst: Math.ceil(customRpm / 6), windowMs: 60000 }
+  } else {
+    // Cast to get access to windowMs property
+    config = RATE_LIMIT_CONFIGS.generate as { rpm: number; burst: number; windowMs: number }
+  }
     
   return checkTokenBucket(identifier, config.rpm, config.burst, config.windowMs)
 }

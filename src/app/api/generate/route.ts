@@ -23,7 +23,8 @@ export async function POST(request: NextRequest) {
     }
 
     // Rate limit check (token bucket, 10 req/min)
-    const identifier = request.headers.get('x-user-email') ||
+    const userEmail = request.headers.get('x-user-email')
+    const identifier = userEmail ||
       request.headers.get('x-forwarded-for')?.split(',')[0] ||
       request.headers.get('x-real-ip') ||
       'anonymous'
@@ -103,13 +104,6 @@ export async function POST(request: NextRequest) {
       tone,
       checkResult,
     })
-
-    // Get identifier for quota tracking (prefer user email, fallback to IP)
-    const userEmail = request.headers.get('x-user-email')
-    const identifier = userEmail || 
-      request.headers.get('x-forwarded-for')?.split(',')[0] ||
-      request.headers.get('x-real-ip') ||
-      'anonymous'
 
     // Increment quota after successful generation
     incrementQuota(identifier)
