@@ -1,29 +1,57 @@
 {
-  "version": "1.0.0",
-  "description": "INCI 标准成分词库 - 用于成分解析和标准化",
+  "version": "1.1.0",
+  "description": "INCI 标准成分词库 - 用于成分解析和标准化（增强版）",
   "source": "INCI naming standards + CosmetCheck custom extensions",
   "totalCount": 0,
+  "lastUpdated": "2025-05-16",
+  "safetyRatingGuide": {
+    "A": "安全 - 正常浓度下绝大多数人可用",
+    "B": "较安全 - 需注意浓度或肤质",
+    "C": "注意 - 特定人群需谨慎",
+    "D": "警告 - 需专业指导",
+    "X": "禁用 - 法规禁止或风险极高"
+  },
+  "skinTypes": {
+    "all": "所有肤质",
+    "dry": "干性肤质",
+    "oily": "油性肤质",
+    "combination": "混合肤质",
+    "sensitive": "敏感肤质",
+    "normal": "正常肤质"
+  },
   "entries": {
     "water": {
       "inci": "Aqua",
       "aliases": ["Water", "Eau", "水", "纯净水", "去离子水", "Água", "Agua", "Eau", "Water"],
-      "category": "base"
+      "category": "base",
+      "功效": "溶剂、基底",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "glycerin": {
       "inci": "Glycerin",
       "aliases": ["Glycerol", "Glycerine", "甘油", "丙三醇", "Vegetable Glycerin", "Glicerina", "Glicerina Vegetal", "Glicerol"],
-      "category": "humectant"
+      "category": "humectant",
+      "功效": "保湿、吸湿、软化角质",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "niacinamide": {
       "inci": "Niacinamide",
       "aliases": ["Nicotinamide", "Vitamin B3", "烟酰胺", "维生素B3", "尼克酰胺", "Niacinamida", "Nicotinamida", "Vitamina B3"],
-      "category": "actives"
+      "category": "actives",
+      "功效": "美白、控油、收缩毛孔、抗炎",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "retinol": {
       "inci": "Retinol",
       "aliases": ["Vitamin A", "视黄醇", "维A醇", "维生素A", "Retinyl Palmitate", "Retinyl Acetate"],
       "category": "actives",
-      "hasConcentration": true
+      "功效": "抗衰老、促胶原、淡斑",
+      "适用肤质": "normal",
+      "安全性评级": "C",
+      "注意事项": "孕妇禁用，需建立耐受"
     },
     "phenoxyethanol": {
       "inci": "Phenoxyethanol",
@@ -45,13 +73,19 @@
       "inci": "Salicylic Acid",
       "aliases": ["BHA", "Beta Hydroxy Acid", "水杨酸", "β-羟基酸", "2-Hydroxybenzoic Acid", "Ácido Salicílico", "Ácido Salicílico", "Salicylic Acid", "BHA", "Ácido Beta Hidroxi"],
       "category": "actives",
-      "hasConcentration": true
+      "功效": "去角质、疏通毛孔、控油祛痘",
+      "适用肤质": "oily",
+      "安全性评级": "B",
+      "注意事项": "敏感肤质慎用，孕妇禁用"
     },
     "glycolic_acid": {
       "inci": "Glycolic Acid",
       "aliases": ["AHA", "Alpha Hydroxy Acid", "甘醇酸", "羟基乙酸", "α-羟基酸", "Ácido Glicólico", "Ácido Glicólico", "Glycolic Acid", "AHA", "Ácido Alfa Hidroxi"],
       "category": "actives",
-      "hasConcentration": true
+      "功效": "去角质、美白、刺激胶原",
+      "适用肤质": "normal",
+      "安全性评级": "B",
+      "注意事项": "需防晒，建议低浓度起步"
     },
     "lactic_acid": {
       "inci": "Lactic Acid",
@@ -63,25 +97,41 @@
       "inci": "Formaldehyde",
       "aliases": ["Formalin", "Methanal", "甲醛", "福尔马林", "蚁醛", "Formaldeído", "Formaldehído", "Formaldehyde", "Formol", "Metanal"],
       "category": "preservative",
-      "restricted": true
+      "功效": "防腐（释放甲醛型）",
+      "适用肤质": "none",
+      "安全性评级": "D",
+      "restricted": true,
+      "注意事项": "释放甲醛型防腐剂，部分国家禁用"
     },
     "hydroquinone": {
       "inci": "Hydroquinone",
       "aliases": ["HQ", "Quinol", "1,4-Benzenediol", "对苯二酚", "氢醌", "Hidroquinona", "Hidroquinona", "Hydroquinone", "HQ", "1,4-Benzenodiol"],
       "category": "actives",
-      "prohibited": true
+      "功效": "美白（但风险高）",
+      "适用肤质": "none",
+      "安全性评级": "X",
+      "prohibited": true,
+      "注意事项": "巴西/墨西哥禁用，我国禁用"
     },
     "mercury": {
       "inci": "Mercury",
       "aliases": ["Hg", "Mercurochrome", "汞", "水银", "氯化汞"],
       "category": "heavy_metal",
-      "prohibited": true
+      "功效": "美白（禁用成分）",
+      "适用肤质": "none",
+      "安全性评级": "X",
+      "prohibited": true,
+      "注意事项": "重金属，巴西/墨西哥禁用，我国禁用"
     },
     "lead": {
       "inci": "Lead",
       "aliases": ["Pb", "Lead Acetate", "铅", "醋酸铅", "氧化铅"],
       "category": "heavy_metal",
-      "prohibited": true
+      "功效": "禁用成分",
+      "适用肤质": "none",
+      "安全性评级": "X",
+      "prohibited": true,
+      "注意事项": "重金属，巴西/墨西哥禁用"
     },
     "arsenic": {
       "inci": "Arsenic",
@@ -110,29 +160,43 @@
     "hyaluronic_acid": {
       "inci": "Sodium Hyaluronate",
       "aliases": ["Hyaluronic Acid", "HA", "透明质酸", "玻尿酸", "Sodium Hyaluronate"],
-      "category": "humectant"
+      "category": "humectant",
+      "功效": "深层保湿、锁水、填充细纹",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "ceramide": {
       "inci": "Ceramide NP",
       "aliases": ["Ceramide", "神经酰胺", "酰胺", "Ceramide 3", "Ceramide 6"],
-      "category": "actives"
+      "category": "actives",
+      "功效": "修复屏障、保湿、锁水",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "peptides": {
       "inci": "Palmitoyl Pentapeptide-4",
       "aliases": ["Peptides", "多肽", "胜肽", "Palmitoyl Pentapeptide", "Matrixyl"],
-      "category": "actives"
+      "category": "actives",
+      "功效": "抗衰老、刺激胶原、紧致",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "vitamin_c": {
       "inci": "Ascorbic Acid",
       "aliases": ["Vitamin C", "L-Ascorbic Acid", "L-抗坏血酸", "维生素C", "左旋维C", "Ascorbyl Glucoside", "维C糖苷", "AA2G", "Ascorbyl Palmitate", "抗坏血酸棕榈酸酯"],
       "category": "actives",
-      "hasConcentration": true
+      "功效": "抗氧化、美白、促进胶原",
+      "适用肤质": "all",
+      "安全性评级": "A",
+      "注意事项": "原型VC需注意稳定性，敏感肤质低浓度起步"
     },
     "vitamin_e": {
       "inci": "Tocopherol",
       "aliases": ["Vitamin E", "Tocopherol", "生育酚", "维生素E", "α-Tocopherol", "Alpha Tocopherol", "生育酚乙酸酯", "Tocopheryl Acetate"],
       "category": "actives",
-      "hasConcentration": true
+      "功效": "抗氧化、保湿、修复",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "vitamin_b3": {
       "inci": "Niacinamide",
@@ -172,12 +236,18 @@
     "snail_mucin": {
       "inci": "Snail Secretion Filtrate",
       "aliases": ["Snail Mucin", "Snail Slime", "Snail Secretion", "蜗牛粘液", "蜗牛分泌物", "Snail Gel", "螺旋蜗牛分泌物"],
-      "category": "actives"
+      "category": "actives",
+      "功效": "保湿、修复、抗衰老",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "centella": {
       "inci": "Centella Asiatica Extract",
       "aliases": ["Cica", "Centella", "积雪草", "Gotu Kola", "老虎草", "积雪草提取物", "Asiaticoside", "Madecassoside"],
-      "category": "actives"
+      "category": "actives",
+      "功效": "舒缓、修护、抗炎、促进愈合",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "cica": {
       "inci": "Centella Asiatica Extract",
@@ -212,17 +282,27 @@
     "aloe_vera": {
       "inci": "Aloe Barbadensis Leaf Juice",
       "aliases": ["Aloe Vera", "芦荟", "芦荟胶", "芦荟汁", "Aloe Barbadensis", "库拉索芦荟"],
-      "category": "soothing"
+      "category": "soothing",
+      "功效": "舒缓、镇静、保湿、修复",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "green_tea": {
       "inci": "Camellia Sinensis Leaf Extract",
       "aliases": ["Green Tea", "绿茶", "绿茶提取物", "茶多酚", "Camellia Sinensis", "EGCG"],
-      "category": "actives"
+      "category": "actives",
+      "功效": "抗氧化、抗炎、舒缓",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "tea_tree": {
       "inci": "Melaleuca Alternifolia Leaf Oil",
       "aliases": ["Tea Tree", "茶树", "茶树油", "Melaleuca", "澳洲茶树", "互生叶白千层"],
-      "category": "actives"
+      "category": "actives",
+      "功效": "抗菌、祛痘、控油",
+      "适用肤质": "oily",
+      "安全性评级": "B",
+      "注意事项": "敏感肤质需稀释使用"
     },
     "propolis": {
       "inci": "Propolis Extract",

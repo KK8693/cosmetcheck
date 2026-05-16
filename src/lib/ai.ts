@@ -11,11 +11,10 @@ function getOpenAI() {
   })
 }
 
-// Retry configuration - optimized for DeepSeek/Kimi rate limits
-// A+B方案: 增加基础延迟 + 更多重试次数 + 预调用随机等待
-export const MAX_RETRIES = 10  // Increased from 8 for more resilience
-export const INITIAL_DELAY_MS = 15000  // Start with 15s (was 10s) - 降低请求密度
-export const MAX_DELAY_MS = 120000  // Cap at 120s (was 60s) - 给足恢复时间
+// Retry configuration - optimized for DeepSeek rate limits
+const MAX_RETRIES = 10  // Increased from 5 for higher resilience under rate limits
+const INITIAL_DELAY_MS = 3000  // Start with 3s (was 2s)
+const MAX_DELAY_MS = 60000  // Cap at 60s (was 30s)
 export const CONSECUTIVE_FAILURES_THRESHOLD = 3  // 连续失败后触发"死慢退避"
 
 // 预调用随机等待 - 消除请求突发
@@ -70,15 +69,64 @@ export function isRateLimitError(error: unknown): boolean {
 
 export function getRetryAfter(error: unknown): number | null {
   // Try to extract Retry-After from error response
+  // 支持多种格式: plain object, Headers object, case-insensitive
   if (error && typeof error === 'object') {
     const err = error as Record<string, unknown>
     if (typeof err.response === 'object' && err.response !== null) {
       const resp = err.response as Record<string, unknown>
       if (typeof resp.headers === 'object' && resp.headers !== null) {
-        const headers = resp.headers as Record<string, string>
-        if (headers['retry-after']) {
-          const seconds = parseInt(headers['retry-after'], 10)
-          if (!isNaN(seconds)) return seconds * 1000
+        const headers = resp.headers as Record<string, unknown>
+        
+        // 尝试多种可能的 header key
+        const possibleKeys = [
+          'retry-after',
+          'Retry-After', 
+          'X-RateLimit-Reset',
+          'x-ratelimit-reset',
+          'x-ratelimit-reset-seconds'
+        ]
+        
+        for (const key of possibleKeys) {
+          const value = headers[key]
+          if (typeof value === 'string') {
+            const seconds = parseInt(value, 10)
+            if (!isNaN(seconds) && seconds > 0) {
+              console.log(`[RateLimit] Found retry-after header: ${key} = ${seconds}s`)
+              return seconds * 1000
+            }
+          }
+        }
+        
+        // 兼容 Headers 对象 (有 .get() 方法)
+        const headersObj = headers as { get?: (key: string) => string | null }
+        if (typeof headersObj.get === 'function') {
+          for (const key of possibleKeys) {
+            const value = headersObj.get(key)
+            if (value) {
+              const seconds = parseInt(value, 10)
+              if (!isNaN(seconds) && seconds > 0) {
+                console.log(`[RateLimit] Found retry-after via .get(): ${key} = ${seconds}s`)
+                return seconds * 1000
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    // 备选方案: 直接从 error 对象提取
+    const errObj = err as Record<string, unknown>
+    if (typeof errObj.headers === 'object' && errObj.headers !== null) {
+      const headers = errObj.headers as Record<string, unknown>
+      const possibleKeys = ['retry-after', 'Retry-After', 'x-ratelimit-reset']
+      for (const key of possibleKeys) {
+        const value = headers[key]
+        if (typeof value === 'string') {
+          const seconds = parseInt(value, 10)
+          if (!isNaN(seconds) && seconds > 0) {
+            console.log(`[RateLimit] Found retry-after from error.headers: ${key} = ${seconds}s`)
+            return seconds * 1000
+          }
         }
       }
     }
