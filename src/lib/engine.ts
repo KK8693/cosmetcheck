@@ -105,7 +105,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Corticosteroids require medical prescription and cannot be in cosmetics.',
     suggestion: 'Remove corticosteroids - product must be registered as medicine.',
-    aliases: ['皮质类固醇', 'corticosteróide', 'corticosteroide', 'steroid', 'cortisone', 'prednisone', '氢化可的松', '类固醇激素', 'corticoides'],
+    aliases: ['皮质类固醇', 'corticosteróide', 'corticosteroide', 'steroid', 'cortisone', 'prednisone', '氢化可的松', '类固醇激素', 'corticoides', '激素提取物', '激素', 'hormone extract', 'animal hormone', '植物激素', '雌激素', '孕激素'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -1354,6 +1354,36 @@ export function checkCompliance(input: CheckInput): CheckResult {
       }
     }
   }
+
+// ── 品类语义过滤：提取产品品类 ──
+  // 检测 description 中的品类关键词
+  const contextText = [input.description || '', input.label || ''].join(' ').toLowerCase()
+  
+  // 防晒品类关键词
+  const sunscreenKeywords = ['防晒', 'sunscreen', 'sun block', 'protector solar', 'bloqueador solar', 'spf', 'fps', '防紫外线', 'uv protection', '隔离紫外线']
+  // 抗衰老功效关键词（防晒品不应触发）
+  const antiAgingKeywords = ['anti-aging', 'antiage', 'anti age', 'antienvejecimiento', 'anti-wrinkle', 'antiarrug', '抗衰老', '抗老', '去皱', '除皱', '抗皱']
+  
+  // 检测是否为防晒品类
+  const isSunscreenCategory = sunscreenKeywords.some(kw => contextText.includes(kw.toLowerCase()))
+  
+  // 检测是否包含抗衰老关键词
+  const containsAntiAgingClaim = antiAgingKeywords.some(kw => contextText.includes(kw.toLowerCase()))
+  
+  // 防晒品类 + 抗衰老关键词 → 需要特殊处理（不应触发抗衰老，但某些情况除外）
+  // 但"彻底祛斑""永久美白"属于美白功效，不是抗衰老
+  
+  // ── 过滤规则：防晒品不触发抗衰老规则 ──
+  // 抗衰老规则ID列表
+  const antiAgingRuleIds = ['BR-CLM-001', 'MX-CLM-001']
+  
+  // 合并 JSON 规则和硬编码规则
+  let filteredRules = [...allRules]
+  if (isSunscreenCategory && containsAntiAgingClaim) {
+    // 防晒品 + 抗衰老宣称 → 过滤掉抗衰老规则（因为防晒品的抗衰老是正常的）
+    // 但如果同时有"彻底祛斑"等美白宣称，仍然保留
+    filteredRules = allRules.filter(r => !antiAgingRuleIds.includes(r.ruleId))
+  }
   
   const violations: Violation[] = []
 
@@ -1372,23 +1402,23 @@ export function checkCompliance(input: CheckInput): CheckResult {
       ...normalizedIngredients
     ].join(' ')
     
-    violations.push(...findMatches(ingredientTextToCheck, allRules.filter(r => r.category === 'ingredient'), 'ingredients'))
+    violations.push(...findMatches(ingredientTextToCheck, filteredRules.filter(r => r.category === 'ingredient'), 'ingredients'))
   }
 
   // Check description/claims (with sourceField)
   if (input.description) {
-    violations.push(...findMatches(input.description, allRules.filter(r => r.category === 'claim'), 'description'))
+    violations.push(...findMatches(input.description, filteredRules.filter(r => r.category === 'claim'), 'description'))
   }
   
   // Also check claims in combined text (product name, description, etc.)
   const combinedText = [input.ingredients || '', input.description || '', input.label || ''].join(' ')
   if (combinedText) {
-    violations.push(...findMatches(combinedText, allRules.filter(r => r.category === 'claim'), 'description'))
+    violations.push(...findMatches(combinedText, filteredRules.filter(r => r.category === 'claim'), 'description'))
   }
 
   // Check label (with sourceField)
   if (input.label) {
-    violations.push(...findMatches(input.label, allRules.filter(r => r.category === 'label'), 'label'))
+    violations.push(...findMatches(input.label, filteredRules.filter(r => r.category === 'label'), 'label'))
   }
 
   // ── 全局 ruleId 去重 ──
@@ -1429,7 +1459,7 @@ export function checkCompliance(input: CheckInput): CheckResult {
   // 只在用户提供了 label 内容时，才检查标签规则缺失
   // 避免用户只检测 ingredients 时收到大量标签缺失警告
   if (input.label) {
-    const labelRules = allRules.filter(r => r.category === 'label' && r.ruleType === 'required')
+    const labelRules = filteredRules.filter(r => r.category === 'label' && r.ruleType === 'required')
     const existingRuleIds = new Set(violations.map(v => v.ruleId))
     
     // 收集所有缺失的标签项
