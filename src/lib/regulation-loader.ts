@@ -126,6 +126,17 @@ function convertRuleToViolation(
     finalSuggestion = `Check ${rule.category} as per ${source} regulations.`
   }
 
+  // 处理 aliases：可能是字符串、数组或 undefined
+  const rawAliases = (rule as unknown as { aliases?: unknown }).aliases
+  let normalizedAliases: string[] | undefined
+  
+  if (Array.isArray(rawAliases)) {
+    normalizedAliases = rawAliases.filter((a): a is string => typeof a === 'string')
+  } else if (typeof rawAliases === 'string' && rawAliases) {
+    // 如果是字符串，切割成数组（逗号分隔）
+    normalizedAliases = rawAliases.split(/[,，;；|]/).map((s: string) => s.trim()).filter(Boolean)
+  }
+
   return {
     ruleId: rule.ruleId,
     category,
@@ -136,7 +147,7 @@ function convertRuleToViolation(
     suggestion: finalSuggestion,
     source: `${source} ${rule.sourceUrl ? `- ${rule.sourceUrl}` : ''}`,
     casNumber: rule.cas,
-    aliases: rule.aliases,
+    aliases: normalizedAliases,
     rootFamily: (rule as unknown as { rootFamily?: string }).rootFamily,
   }
 }
