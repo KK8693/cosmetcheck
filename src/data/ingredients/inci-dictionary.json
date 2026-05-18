@@ -276,7 +276,10 @@
     "elastic": {
       "inci": "Elastin",
       "aliases": ["弹性蛋白", "Elastin", "水解弹性蛋白", "Elastic Fiber"],
-      "category": "actives"
+      "category": "actives",
+      "功效": "提升弹性、紧致肌肤",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "squalane": {
       "inci": "Squalane",
@@ -337,37 +340,59 @@
     "bee_venom": {
       "inci": "Bee Venom",
       "aliases": ["蜂毒", "Bee Venom", "蜂毒肽", "Apitoxin", "Queen Bee Venom"],
-      "category": "actives"
+      "category": "actives",
+      "功效": "抗皱、刺激胶原、紧致",
+      "适用肤质": "normal",
+      "安全性评级": "C",
+      "注意事项": "蜜蜂衍生物，敏感肤质禁用"
     },
     "pearl": {
       "inci": "Pearl Powder",
       "aliases": ["Pearl", "珍珠", "珍珠粉", "Pearl Powder", "珍珠提取物", "珍珠母"],
-      "category": "actives"
+      "category": "actives",
+      "功效": "美白、提亮、收敛",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "bird_nest": {
       "inci": "Swiftlet Nest Extract",
       "aliases": ["Bird's Nest", "燕窝", "金丝燕窝", "Swiftlet Nest", "燕窝提取物"],
-      "category": "actives"
+      "category": "actives",
+      "功效": "滋补、保湿、修复",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "propylene_glycol": {
       "inci": "Propylene Glycol",
       "aliases": ["PG", "丙二醇", "1,2-丙二醇", "Propylene Glycol"],
-      "category": "humectant"
+      "category": "humectant",
+      "功效": "保湿、溶剂、促渗透",
+      "适用肤质": "all",
+      "安全性评级": "B"
     },
     "butylene_glycol": {
       "inci": "Butylene Glycol",
       "aliases": ["BG", "丁二醇", "1,3-丁二醇", "Butylene Glycol"],
-      "category": "humectant"
+      "category": "humectant",
+      "功效": "保湿、溶剂、增稠",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "pentylene_glycol": {
       "inci": "Pentylene Glycol",
       "aliases": ["戊二醇", "1,5-戊二醇", "Pentylene Glycol", "Nipaguard DPG"],
-      "category": "humectant"
+      "category": "humectant",
+      "功效": "保湿、溶剂、抗菌",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "caprylyl_glycol": {
       "inci": "Caprylyl Glycol",
       "aliases": ["辛甘醇", "辛基乙二醇", "Caprylyl Glycol", "1,2-Octanediol"],
-      "category": "humectant"
+      "category": "humectant",
+      "功效": "保湿、柔润、抗菌",
+      "适用肤质": "all",
+      "安全性评级": "A"
     },
     "arbutin": {
       "inci": "Arbutin",

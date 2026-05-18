@@ -1,5 +1,68 @@
 import OpenAI from 'openai'
 
+// ============================================
+// AI Provider Configuration
+// ============================================
+
+export type AIProvider = 'deepseek' | 'openai'
+
+export interface AIProviderConfig {
+  provider: AIProvider
+  apiKey: string
+  baseURL: string
+  model: string
+}
+
+// Available providers in priority order
+const PROVIDERS: AIProviderConfig[] = [
+  {
+    provider: 'deepseek',
+    apiKey: process.env.DEEPSEEK_API_KEY || '',
+    baseURL: 'https://api.deepseek.com',
+    model: 'deepseek-chat',
+  },
+  {
+    provider: 'openai',
+    apiKey: process.env.OPENAI_API_KEY || '',
+    baseURL: 'https://api.openai.com/v1',
+    model: 'gpt-4o-mini',  // Cost-effective, fast
+  },
+]
+
+function getOpenAIClient(providerConfig: AIProviderConfig): OpenAI {
+  if (!providerConfig.apiKey) {
+    throw new Error(`${providerConfig.provider.toUpperCase()}_API_KEY is not configured`)
+  }
+  return new OpenAI({
+    apiKey: providerConfig.apiKey,
+    baseURL: providerConfig.baseURL,
+  })
+}
+
+// Get the primary provider (first available with valid API key)
+function getPrimaryProvider(): AIProviderConfig {
+  for (const provider of PROVIDERS) {
+    if (provider.apiKey) {
+      console.log(`[AI] Primary provider: ${provider.provider} (${provider.model})`)
+      return provider
+    }
+  }
+  throw new Error('No AI provider configured. Set DEEPSEEK_API_KEY or OPENAI_API_KEY')
+}
+
+// Get fallback provider (second available with valid API key)
+function getFallbackProvider(): AIProviderConfig | null {
+  const available = PROVIDERS.filter(p => p.apiKey)
+  if (available.length < 2) {
+    console.warn(`[AI] No fallback provider configured (only ${available.length} provider(s) available)`)
+    return null
+  }
+  const fallback = available[1]
+  console.log(`[AI] Fallback provider: ${fallback.provider} (${fallback.model})`)
+  return fallback
+}
+
+// Legacy function for backward compatibility
 function getOpenAI() {
   const apiKey = process.env.OPENAI_API_KEY || process.env.DEEPSEEK_API_KEY
   if (!apiKey) {
@@ -292,12 +355,73 @@ Output ONLY valid JSON. No markdown, no explanations outside JSON.`
 export async function generateListing(
   input: GenerateListingInput
 ): Promise<GeneratedListing> {
-  const openai = getOpenAI()
+  // Use primary provider (DeepSeek) with fallback to OpenAI
+  const primary = getPrimaryProvider()
+  const fallback = getFallbackProvider()
+  
+  let openai: OpenAI
+  let currentProvider: string
+  let model: string
+  
+  // Try primary first
+  openai = getOpenAIClient(primary)
+  currentProvider = primary.provider
+  model = primary.model
+  console.log(`[AI] Using provider: ${currentProvider} (${model})`)
 
-  const response = await withRetry(
-    () =>
-      openai.chat.completions.create({
-        model: 'deepseek-chat',
+  // Attempt with primary, fallback to OpenAI on rate limit
+  let lastError: unknown
+  let usedFallback = false
+  
+  try {
+    const response = await withRetry(
+      () =>
+        openai.chat.completions.create({
+          model: model,
+          messages: [
+            {
+              role: 'system',
+              content: getSystemPrompt(input),
+            },
+            {
+              role: 'user',
+              content: `Generate a ${input.targetCountry === 'BR' ? 'Brazilian Portuguese' : 'Mexican Spanish'} listing for: ${input.productName}`,
+            },
+          ],
+          temperature: 0.7,
+          max_tokens: 1500,
+          response_format: { type: 'json_object' },
+        }),
+      `${currentProvider} generateListing`
+    )
+    
+    const content = response.choices[0]?.message?.content
+    if (!content) {
+      throw new Error('Empty response from AI provider')
+    }
+
+    const parsed = JSON.parse(content)
+    return {
+      title: parsed.title || '',
+      description: parsed.description || '',
+      bulletPoints: Array.isArray(parsed.bulletPoints) ? parsed.bulletPoints : [],
+      complianceNotes: Array.isArray(parsed.complianceNotes) ? parsed.complianceNotes : [],
+      warnings: Array.isArray(parsed.warnings) ? parsed.warnings : [],
+      language: input.targetCountry === 'BR' ? 'pt-BR' : 'es-MX',
+    }
+  } catch (error) {
+    // If rate limit and fallback available, try OpenAI
+    if (isRateLimitError(error) && fallback && !usedFallback) {
+      console.warn(`[AI] ${currentProvider} rate limited, falling back to ${fallback.provider}`)
+      usedFallback = true
+      
+      openai = getOpenAIClient(fallback)
+      currentProvider = fallback.provider
+      model = fallback.model
+      
+      // Retry with fallback provider (no need to wrap in withRetry again as it's already inside)
+      const response = await openai.chat.completions.create({
+        model: model,
         messages: [
           {
             role: 'system',
@@ -311,26 +435,17 @@ export async function generateListing(
         temperature: 0.7,
         max_tokens: 1500,
         response_format: { type: 'json_object' },
-      }),
-    'DeepSeek generateListing'
-  )
-
-  const content = response.choices[0]?.message?.content
-  if (!content) {
-    throw new Error('Empty response from OpenAI')
-  }
-
-  try {
-    const parsed = JSON.parse(content)
-    return {
-      title: parsed.title || '',
-      description: parsed.description || '',
-      bulletPoints: Array.isArray(parsed.bulletPoints) ? parsed.bulletPoints : [],
-      complianceNotes: Array.isArray(parsed.complianceNotes) ? parsed.complianceNotes : [],
-      warnings: Array.isArray(parsed.warnings) ? parsed.warnings : [],
-      language: input.targetCountry === 'BR' ? 'pt-BR' : 'es-MX',
+      })
+      
+      const content = response.choices[0]?.message?.content
+      if (!content) {
+        throw new Error('Empty response from fallback provider')
+      }
+      
+      return JSON.parse(content)
     }
-  } catch (e) {
-    throw new Error('Failed to parse AI response')
+    
+    // No fallback or not a rate limit error, throw
+    throw error
   }
 }

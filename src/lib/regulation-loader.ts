@@ -93,14 +93,47 @@ function convertRuleToViolation(
 
   const source = country === 'BR' ? 'ANVISA' : 'COFEPRIS'
 
+  // 生成合理的 message（处理 undefined 的情况）
+  const ruleMessage = rule.message || ''
+  const ruleCondition = rule.condition || ''
+  let finalMessage: string
+  
+  if (ruleMessage && ruleCondition) {
+    finalMessage = `${ruleMessage} (${ruleCondition})`
+  } else if (ruleMessage) {
+    finalMessage = ruleMessage
+  } else if (ruleCondition) {
+    finalMessage = ruleCondition
+  } else {
+    // 没有 message/condition 时，生成基于 target 的默认消息
+    const categoryText = rule.category === 'banned' ? 'prohibited' : 
+                         rule.category === 'restricted' ? 'restricted' : 
+                         rule.category
+    finalMessage = `${rule.target} is ${categoryText} in cosmetics by ${source}.`
+  }
+
+  // 生成合理的 suggestion
+  let finalSuggestion: string
+  if (rule.category === 'banned') {
+    finalSuggestion = `Remove ${rule.target} from the formula.`
+  } else if (rule.category === 'restricted') {
+    finalSuggestion = `Verify ${rule.target} concentration complies with ${source} limits.`
+  } else if (rule.category === 'label') {
+    finalSuggestion = `Ensure label complies with ${source} labeling requirements.`
+  } else if (rule.category === 'claim') {
+    finalSuggestion = `Review claims to ensure compliance with ${source} regulations.`
+  } else {
+    finalSuggestion = `Check ${rule.category} as per ${source} regulations.`
+  }
+
   return {
     ruleId: rule.ruleId,
     category,
     ruleType,
     keyword: rule.target,
     severity: rule.severity,
-    message: `${rule.message} (${rule.condition})`,
-    suggestion: `Check ${rule.category} ingredient/claim as per ${source} regulations.`,
+    message: finalMessage,
+    suggestion: finalSuggestion,
     source: `${source} ${rule.sourceUrl ? `- ${rule.sourceUrl}` : ''}`,
     casNumber: rule.cas,
     aliases: rule.aliases,
