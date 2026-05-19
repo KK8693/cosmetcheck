@@ -74,15 +74,15 @@ function getOpenAI() {
   })
 }
 
-// Retry configuration - optimized for DeepSeek rate limits
-const MAX_RETRIES = 10  // Increased from 5 for higher resilience under rate limits
-const INITIAL_DELAY_MS = 3000  // Start with 3s (was 2s)
-const MAX_DELAY_MS = 60000  // Cap at 60s (was 30s)
-export const CONSECUTIVE_FAILURES_THRESHOLD = 3  // 连续失败后触发"死慢退避"
+// Retry configuration - optimized for Edge Runtime (Cloudflare Pages 30s limit)
+const MAX_RETRIES = 2  // Limited by Edge Runtime timeout
+const INITIAL_DELAY_MS = 2000  // 2s start
+const MAX_DELAY_MS = 10000  // Cap at 10s
+export const CONSECUTIVE_FAILURES_THRESHOLD = 3
 
-// 预调用随机等待 - 消除请求突发
-export const PRE_CALL_SLEEP_MIN = 8000  // 8秒 (was 5s)
-export const PRE_CALL_SLEEP_MAX = 20000 // 20秒 (was 15s)
+// Pre-call sleep - minimal for Edge Runtime (cold start already provides spacing)
+export const PRE_CALL_SLEEP_MIN = 0
+export const PRE_CALL_SLEEP_MAX = 2000 // Max 2s
 
 // 全局请求队列 - 防止请求突发
 let lastRequestTime = 0

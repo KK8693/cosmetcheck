@@ -130,8 +130,12 @@ export async function POST(request: NextRequest) {
     })
   } catch (error) {
     console.error('Generate API error:', error)
+    // Log detailed error for debugging
+    const errorMessage = error instanceof Error ? error.message : String(error)
+    const errorStack = error instanceof Error ? error.stack : undefined
+    console.error('[Generate] Detailed error:', { message: errorMessage, stack: errorStack })
     return NextResponse.json(
-      { error: 'Failed to generate listing' },
+      { error: 'Failed to generate listing', details: errorMessage },
       { status: 500 }
     )
   }
