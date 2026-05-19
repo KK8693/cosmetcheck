@@ -123,7 +123,11 @@ export function HeroSection() {
   const [showDemo, setShowDemo] = useState(true)
 
   // Use demo result if showDemo is true and no real result exists
-  const resultToShow = showDemo && !checkResult ? demoResult : checkResult
+  // Don't show demo if we're currently checking (isChecking)
+  const resultToShow = !isChecking && showDemo && !checkResult ? demoResult : checkResult
+  
+  // Show loading state while checking
+  const isShowingResult = isChecking || resultToShow
 
   const handleCheck = async () => {
     // User is running their own check, hide demo result
@@ -417,8 +421,17 @@ export function HeroSection() {
               </p>
             </div>
 
-            {/* Check Results */}
-            {resultToShow && (
+            {/* Check Results - Show loading state when checking, otherwise show result */}
+            {isChecking && (
+              <div className="mx-auto max-w-full md:max-w-xl mt-6 rounded-2xl bg-white p-4 md:p-6 text-left text-gray-900">
+                <div className="flex items-center justify-center py-8">
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+                  <span className="ml-3 text-gray-500">{t('checking')}...</span>
+                </div>
+              </div>
+            )}
+            
+            {resultToShow && !isChecking && (
               <div className="mx-auto max-w-full md:max-w-xl mt-6 rounded-2xl bg-white p-4 md:p-6 text-left text-gray-900">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-lg font-bold">{t('testResult')}</h3>
