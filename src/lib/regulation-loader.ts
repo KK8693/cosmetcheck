@@ -98,9 +98,9 @@ function convertRuleToViolation(
   const ruleCondition = rule.condition || ''
   let finalMessage: string
   
-  if (ruleMessage && ruleCondition) {
-    finalMessage = `${ruleMessage} (${ruleCondition})`
-  } else if (ruleMessage) {
+  // 优先使用 message，message 已是完整的多语言违规说明
+  // condition 仅作为内部规则分类标签，不拼接到输出消息中
+  if (ruleMessage) {
     finalMessage = ruleMessage
   } else if (ruleCondition) {
     finalMessage = ruleCondition

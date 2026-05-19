@@ -1533,19 +1533,19 @@ export function checkCompliance(input: CheckInput): CheckResult {
 
     // 如果有缺失的标签项，聚合为一条
     if (missingLabelItems.length > 0) {
-      const countryLabel = input.country === 'BR' ? '巴西' : '墨西哥'
+      const countryLabel = input.country === 'BR' ? 'Brazil' : 'Mexico'
       const aggregatedViolation: Violation = {
         ruleId: `${input.country}-LABEL-AGGREGATED`,
         category: 'label',
         ruleType: 'required',
         keyword: 'Multiple label requirements missing',
         severity: 'warning',
-        message: `${countryLabel}标签合规缺失 - 缺少以下必要信息: ${missingLabelItems.join(', ')}`,
-        suggestion: '请补全所有必需标签信息后再上市销售',
+        message: `Missing required ${countryLabel} label information: ${missingLabelItems.join(', ')}`,
+        suggestion: `Ensure all required ${countryLabel} label information is included before market release.`,
         source: input.country === 'BR' ? 'ANVISA RDC 169/2024' : 'COFEPRIS NOM-141-SSA1/SCF1-2012',
         matchedText: missingLabelItems.join(', '),
         sourceField: 'label',
-        contextSnippet: `缺失项目: ${missingLabelItems.join(', ')}`,
+        contextSnippet: `Missing items: ${missingLabelItems.join(', ')}`,
       }
       violations.push(aggregatedViolation)
     }
