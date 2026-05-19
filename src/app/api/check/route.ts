@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import { checkCompliance } from '@/lib/engine'
 import { checkQuotaMiddleware, incrementQuota } from '@/lib/quota'
 
+import { translateCheckResult } from '@/lib/regulation-messages'
+
 export const runtime = 'edge'
 
 export async function POST(request: NextRequest) {
@@ -13,7 +15,7 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json()
-    const { ingredients, description, label, country } = body
+    const { ingredients, description, label, country, locale = 'en' } = body
 
     if (!country || !['BR', 'MX'].includes(country)) {
       return NextResponse.json(
@@ -44,9 +46,17 @@ export async function POST(request: NextRequest) {
       country,
     })
 
+    // Translate results to requested locale
+    const translatedResult = {
+      ...result,
+      violations: translateCheckResult(result.violations, locale),
+      warnings: translateCheckResult(result.warnings, locale),
+      info: translateCheckResult(result.info, locale),
+    }
+
     return NextResponse.json({
       success: true,
-      data: result,
+      data: translatedResult,
     })
   } catch (error) {
     console.error('Check API error:', error)

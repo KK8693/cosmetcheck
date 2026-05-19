@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef } from 'react'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -58,6 +58,7 @@ export function HeroSection() {
   const t = useTranslations('hero')
   const tCommon = useTranslations('common')
   const tDemo = useTranslations('demo')
+  const locale = useLocale()
   // Default demo data - Hydroquinone banned ingredient example
   const [ingredients, setIngredients] = useState('')
   const [country, setCountry] = useState<'BR' | 'MX'>('BR')
@@ -149,8 +150,9 @@ export function HeroSection() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ingredients,
-          description: productBenefits, // 产品功效作为 description 检测
+          description: productBenefits,
           country,
+          locale,
         }),
       })
       const data = await res.json()
