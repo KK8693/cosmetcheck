@@ -1410,7 +1410,7 @@ export function checkCompliance(input: CheckInput): CheckResult {
   // === 基于 applicableCategories 的规则过滤 ===
   // 规则如果不指定 applicableCategories，则适用于所有品类
   // 规则如果指定 applicableCategories，则只有产品品类匹配时才触发
-  let filteredRules = allRules.filter(rule => {
+  const filteredRules = allRules.filter(rule => {
     // 如果规则没有指定适用品类，则适用于所有产品
     if (!rule.applicableCategories || rule.applicableCategories.length === 0) {
       return true

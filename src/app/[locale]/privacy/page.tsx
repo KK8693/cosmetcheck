@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl'
 
 export const runtime = 'edge'
 
-export default function PrivacyPolicyPage() {
+export default function PrivacyPage() {
   const t = useTranslations('legal.privacy')
 
   return (
