@@ -40,6 +40,11 @@ export interface Violation {
   casNumber?: string  // CAS号支持
   aliases?: string[] // 成分别名（支持中文、英文、葡语、西语）
   rootFamily?: string  // 成分族词根，用于归一匹配（如 "retinoids" 可匹配 "tretinoin"）
+  // === 品类上下文过滤（新增）===
+  // 规则适用的产品品类，不设置则默认所有品类适用
+  // 格式：['anti_aging_cream', 'eye_cream', 'neck_cream'] 等
+  // 如果产品品类不在此列表中，该规则不会被触发
+  applicableCategories?: string[]
 }
 
 export interface CheckResult {
@@ -185,7 +190,9 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     message: '"Anti-aging" claims are considered drug-like and require medicine registration.',
     suggestion: 'Use "helps reduce the appearance of fine lines" instead of "anti-aging".',
     source: 'ANVISA RDC 529/2021',
-    aliases: ['antienvejecimiento', 'antiarrug', 'anti-wrinkle', 'anti age', 'antiage'],
+    aliases: ['antienvejecimiento', 'antiarrug', 'anti-wrinkle', 'anti age', 'antiage', '抗衰老', '抗老', '抗龄'],
+    // 品类隔离：仅适用于抗老品类
+    applicableCategories: ['anti_aging_cream', 'eye_cream', 'neck_cream', 'anti_aging_serum', 'anti_aging_lotion'],
   },
   {
     ruleId: 'BR-CLM-002',
@@ -196,7 +203,9 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     message: 'Wrinkle reduction claims are considered therapeutic and require proof.',
     suggestion: 'Use "helps improve skin appearance" instead of explicit wrinkle claims.',
     source: 'ANVISA RDC 529/2021',
-    aliases: ['arrug', 'wrinkles', 'anti-wrinkle', 'reduces wrinkles'],
+    aliases: ['arrug', 'wrinkles', 'anti-wrinkle', 'reduces wrinkles', '去皱', '除皱', '抗皱', '淡皱'],
+    // 品类隔离：仅适用于抗老品类
+    applicableCategories: ['anti_aging_cream', 'eye_cream', 'neck_cream', 'anti_aging_serum', 'anti_aging_lotion'],
   },
   {
     ruleId: 'BR-CLM-003',
@@ -712,7 +721,9 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     message: '"Anti-aging" claims are considered drug-like in Mexico.',
     suggestion: 'Use "ayuda a reducir la apariencia de líneas de expresión" instead.',
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
-    aliases: ['antienvejecimiento', 'anti-edad', 'anti-wrinkle', 'anti age', 'antiage'],
+    aliases: ['antienvejecimiento', 'anti-edad', 'anti-wrinkle', 'anti age', 'antiage', '抗衰老', '抗老'],
+    // 品类隔离：仅适用于抗老品类
+    applicableCategories: ['anti_aging_cream', 'eye_cream', 'neck_cream', 'anti_aging_serum', 'anti_aging_lotion'],
   },
   {
     ruleId: 'MX-CLM-002',
@@ -723,7 +734,9 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     message: 'Wrinkle reduction claims require scientific proof.',
     suggestion: 'Use "ayuda a mejorar la apariencia de la piel" instead.',
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
-    aliases: ['arrug', 'arrugas', 'anti-arrugas', 'reduce arrugas'],
+    aliases: ['arrug', 'arrugas', 'anti-arrugas', 'reduce arrugas', '去皱', '除皱', '抗皱'],
+    // 品类隔离：仅适用于抗老品类
+    applicableCategories: ['anti_aging_cream', 'eye_cream', 'neck_cream', 'anti_aging_serum', 'anti_aging_lotion'],
   },
   {
     ruleId: 'MX-CLM-003',
@@ -1359,31 +1372,52 @@ export function checkCompliance(input: CheckInput): CheckResult {
   // 检测 description 中的品类关键词
   const contextText = [input.description || '', input.label || ''].join(' ').toLowerCase()
   
-  // 防晒品类关键词
-  const sunscreenKeywords = ['防晒', 'sunscreen', 'sun block', 'protector solar', 'bloqueador solar', 'spf', 'fps', '防紫外线', 'uv protection', '隔离紫外线']
-  // 抗衰老功效关键词（防晒品不应触发）
-  const antiAgingKeywords = ['anti-aging', 'antiage', 'anti age', 'antienvejecimiento', 'anti-wrinkle', 'antiarrug', '抗衰老', '抗老', '去皱', '除皱', '抗皱']
+  // === 品类检测关键词 ===
+  // 抗老品类
+  const antiAgingCategoryKeywords = ['抗老', '抗衰老', '抗皱', '去皱', '除皱', 'anti-aging', 'antiage', 'anti age', 'anti-wrinkle', 'antienvejecimiento', 'antiarrug', '抗龄', '抗衰']
+  // 防晒品类
+  const sunscreenCategoryKeywords = ['防晒', 'sunscreen', 'sun block', 'protector solar', 'bloqueador solar', 'spf', 'fps', '防紫外线', 'uv protection', '隔离紫外线', '防晒精华', '防晒乳', '防晒霜']
+  // 美白品类
+  const whiteningCategoryKeywords = ['美白', '淡斑', '提亮', '亮肤', 'whitening', 'brightening', 'blanqueamiento', 'branqueamento', 'aclarante']
+  // 抗菌品类
+  const antibacterialCategoryKeywords = ['洗手', '消毒', '抗菌', '抑菌', 'disinfectant', 'hand sanitizer', 'hand wash', '洗手液', '消毒洗手', '免洗洗手', '沐浴', 'body wash', 'shower gel', '卸妆', 'makeup remover', 'cleanser']
   
-  // 检测是否为防晒品类
-  const isSunscreenCategory = sunscreenKeywords.some(kw => contextText.includes(kw.toLowerCase()))
+  // 检测产品品类
+  const isAntiAgingCategory = antiAgingCategoryKeywords.some(kw => contextText.includes(kw.toLowerCase()))
+  const isSunscreenCategory = sunscreenCategoryKeywords.some(kw => contextText.includes(kw.toLowerCase()))
+  const isWhiteningCategory = whiteningCategoryKeywords.some(kw => contextText.includes(kw.toLowerCase()))
+  const isAntibacterialCategory = antibacterialCategoryKeywords.some(kw => contextText.includes(kw.toLowerCase()))
   
-  // 检测是否包含抗衰老关键词
-  const containsAntiAgingClaim = antiAgingKeywords.some(kw => contextText.includes(kw.toLowerCase()))
-  
-  // 防晒品类 + 抗衰老关键词 → 需要特殊处理（不应触发抗衰老，但某些情况除外）
-  // 但"彻底祛斑""永久美白"属于美白功效，不是抗衰老
-  
-  // ── 过滤规则：防晒品不触发抗衰老规则 ──
-  // 抗衰老规则ID列表
-  const antiAgingRuleIds = ['BR-CLM-001', 'MX-CLM-001']
-  
-  // 合并 JSON 规则和硬编码规则
-  let filteredRules = [...allRules]
-  if (isSunscreenCategory && containsAntiAgingClaim) {
-    // 防晒品 + 抗衰老宣称 → 过滤掉抗衰老规则（因为防晒品的抗衰老是正常的）
-    // 但如果同时有"彻底祛斑"等美白宣称，仍然保留
-    filteredRules = allRules.filter(r => !antiAgingRuleIds.includes(r.ruleId))
+  // 构建产品品类标识符列表（用于规则匹配）
+  const productCategories: string[] = []
+  if (isAntiAgingCategory) {
+    productCategories.push('anti_aging_cream', 'eye_cream', 'neck_cream', 'anti_aging_serum', 'anti_aging_lotion')
   }
+  if (isSunscreenCategory) {
+    productCategories.push('sunscreen', 'sunscreen_serum')
+  }
+  if (isWhiteningCategory) {
+    productCategories.push('whitening_serum', 'whitening_lotion', 'whitening_mask', 'sunscreen_serum')
+  }
+  if (isAntibacterialCategory) {
+    productCategories.push('hand_sanitizer', 'body_wash', 'makeup_remover')
+  }
+  // 面部精华是默认品类
+  if (productCategories.length === 0) {
+    productCategories.push('facial_serum', 'moisturizer')
+  }
+
+  // === 基于 applicableCategories 的规则过滤 ===
+  // 规则如果不指定 applicableCategories，则适用于所有品类
+  // 规则如果指定 applicableCategories，则只有产品品类匹配时才触发
+  let filteredRules = allRules.filter(rule => {
+    // 如果规则没有指定适用品类，则适用于所有产品
+    if (!rule.applicableCategories || rule.applicableCategories.length === 0) {
+      return true
+    }
+    // 检查产品品类是否在规则适用范围内
+    return rule.applicableCategories.some(cat => productCategories.includes(cat))
+  })
   
   const violations: Violation[] = []
 

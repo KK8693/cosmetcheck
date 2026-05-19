@@ -226,9 +226,10 @@
         "防腐"
       ],
       "severity": "warning",
-      "condition": "有限制，需符合特定规定",
+      "condition": "有限制，需符合特定规定（仅适用于洗手液、沐浴露、卸妆产品）",
       "message": "Antibacterial claims require specific compliance. Some products require medicine registration. Disinfectant products are not cosmetics.",
-      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1",
+      "applicableCategories": ["hand_sanitizer", "body_wash", "makeup_remover"]
     },
     {
       "ruleId": "BR-CLAIM-012",

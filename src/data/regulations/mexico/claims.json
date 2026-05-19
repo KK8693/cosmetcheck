@@ -25,9 +25,10 @@
         "愈合伤口"
       ],
       "severity": "critical",
-      "condition": "禁止化妆品宣称医疗治疗功效",
+      "condition": "禁止化妆品宣称医疗治疗功效（仅适用于洗手液、沐浴露、卸妆产品）",
       "message": "Cosmetics cannot use medical terms like 'cure', 'anti-inflammatory', 'antibacterial'. Cannot claim to treat acne, wound healing or other drug efficacy.",
-      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012",
+      "applicableCategories": ["hand_sanitizer", "body_wash", "makeup_remover"]
     },
     {
       "ruleId": "MX-CLAIM-002",

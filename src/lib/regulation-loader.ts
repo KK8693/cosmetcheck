@@ -137,6 +137,16 @@ function convertRuleToViolation(
     normalizedAliases = rawAliases.split(/[,，;；|]/).map((s: string) => s.trim()).filter(Boolean)
   }
 
+  // 处理 applicableCategories：品类隔离字段
+  const rawApplicableCategories = (rule as unknown as { applicableCategories?: unknown }).applicableCategories
+  let normalizedApplicableCategories: string[] | undefined
+  
+  if (Array.isArray(rawApplicableCategories)) {
+    normalizedApplicableCategories = rawApplicableCategories.filter((a): a is string => typeof a === 'string')
+  } else if (typeof rawApplicableCategories === 'string' && rawApplicableCategories) {
+    normalizedApplicableCategories = rawApplicableCategories.split(/[,，;；|]/).map((s: string) => s.trim()).filter(Boolean)
+  }
+
   return {
     ruleId: rule.ruleId,
     category,
@@ -149,6 +159,7 @@ function convertRuleToViolation(
     casNumber: rule.cas,
     aliases: normalizedAliases,
     rootFamily: (rule as unknown as { rootFamily?: string }).rootFamily,
+    applicableCategories: normalizedApplicableCategories,
   }
 }
 
