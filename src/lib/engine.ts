@@ -1322,11 +1322,11 @@ let jsonRulesCache: {
 }
 
 let rulesInitialized = false
+let rulesInitPromise: Promise<void> | null = null
 
-// Initialize JSON rules (call this at app startup)
-export async function initRules(): Promise<void> {
-  if (rulesInitialized) return
-  
+// === 预热规则：在模块加载时立即启动 ===
+// 使用 top-level await 确保在 Edge Runtime 中规则加载完成后再服务请求
+const warmupPromise = (async () => {
   try {
     const [brRules, mxRules] = await Promise.all([
       loadRegulationRules('BR'),
@@ -1334,25 +1334,52 @@ export async function initRules(): Promise<void> {
     ])
     jsonRulesCache = { BR: brRules, MX: mxRules }
     rulesInitialized = true
-    console.log('[Engine] JSON rules loaded:', {
+    console.log('[Engine] JSON rules pre-loaded:', {
       BR: brRules.length,
       MX: mxRules.length,
     })
   } catch (e) {
-    console.warn('[Engine] Failed to load JSON rules, using hardcoded rules only')
+    console.warn('[Engine] Pre-load failed, using hardcoded rules only:', e)
   }
+})()
+
+// Initialize JSON rules (call this at app startup)
+export async function initRules(): Promise<void> {
+  // Wait for warmup to complete first
+  await warmupPromise
+  if (rulesInitialized) return
+  
+  // Prevent multiple concurrent init attempts
+  if (rulesInitPromise) {
+    return rulesInitPromise
+  }
+  
+  rulesInitPromise = (async () => {
+    try {
+      const [brRules, mxRules] = await Promise.all([
+        loadRegulationRules('BR'),
+        loadRegulationRules('MX'),
+      ])
+      jsonRulesCache = { BR: brRules, MX: mxRules }
+      rulesInitialized = true
+      console.log('[Engine] JSON rules loaded:', {
+        BR: brRules.length,
+        MX: mxRules.length,
+      })
+    } catch (e) {
+      console.warn('[Engine] Failed to load JSON rules, using hardcoded rules only')
+    }
+  })()
+  
+  return rulesInitPromise
 }
 
-// Synchronous version - uses cached rules if available, otherwise falls back to hardcoded
+// Synchronous version - rules are pre-loaded at module initialization
+// This ensures consistent results on first vs subsequent calls
 export function checkCompliance(input: CheckInput): CheckResult {
   const rules = input.country === 'BR' ? ANVISA_RULES : COFEPRIS_RULES
   
-  // Auto-initialize JSON rules on first call (async, non-blocking)
-  if (!rulesInitialized) {
-    initRules().catch(e => console.warn('[Engine] Background init failed:', e))
-  }
-  
-  // Use cached JSON rules if available
+  // Use cached JSON rules if available (pre-loaded at module warmup)
   const jsonRules = jsonRulesCache[input.country]
   
   // Merge JSON rules with hardcoded rules (JSON takes precedence for duplicates)

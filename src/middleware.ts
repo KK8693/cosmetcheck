@@ -35,7 +35,7 @@ export const config = {
   // - files with extensions
   // - root path (handled by [locale] catch-all)
   matcher: [
-    '/(zh|pt-BR|es-MX|en)/:path*',
+    '/(zh|pt|pt-BR|es|es-MX|en)/:path*',
     '/((?!api|_next|favicon.ico|.*\\..*).*)'
   ]
 }
