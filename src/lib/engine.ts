@@ -52,6 +52,9 @@ export interface Violation {
   // medium: 需要额外确认（如浓度限制、间接推断）
   // low: 推测性命中，强烈建议人工复核
   confidence?: 'high' | 'medium' | 'low'
+  // === 间接推断别名（#10）===
+  // 命中后 confidence 强制为 low，可触发 severity 降级
+  indirectAliases?: string[]
 }
 
 export interface CheckResult {
@@ -129,6 +132,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     message: 'Formaldehyde is prohibited in cosmetics except as preservative trace.',
     suggestion: 'Ensure formaldehyde concentration is below 0.2% or remove entirely.',
     aliases: ['甲醛', 'formaldeído', 'formaldehído', 'formalin', 'methanal', 'formol', '福尔马林', '蚁醛', 'methylene oxide'],
+    indirectAliases: ['Conservante potente', 'conservante potente', 'preservative agent', '强力防腐剂', '高效防腐剂'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -1263,9 +1267,13 @@ function findWordBoundaryMatch(text: string, candidate: string): { index: number
 
 // ── 置信度计算（#8）──
 function calculateConfidence(
-  rule: Omit<Violation, 'matchedText' | 'position' | 'sourceField' | 'contextSnippet'>,
-  matchedText: string
+  rule: Omit<Violation, 'matchedText' | 'position' | 'sourceField' | 'contextSnippet' | 'confidence'>,
+  matchedText: string,
+  matchSource: 'keyword' | 'alias' | 'rootFamily' | 'cas' | 'indirectAlias'
 ): 'high' | 'medium' | 'low' {
+  // #10: 间接推断别名命中 → 强制 low
+  if (matchSource === 'indirectAlias') return 'low'
+  
   // 禁用成分：文本直接命中，high confidence
   if (rule.category === 'ingredient' && rule.ruleType === 'prohibited') return 'high'
   
@@ -1294,7 +1302,7 @@ function calculateConfidence(
 
 function findMatches(
   text: string, 
-  rules: Omit<Violation, 'matchedText' | 'position' | 'sourceField' | 'contextSnippet'>[],
+  rules: Omit<Violation, 'matchedText' | 'position' | 'sourceField' | 'contextSnippet' | 'confidence'>[],
   sourceField: 'ingredients' | 'description' | 'label' = 'description'
 ): Violation[] {
   const violations: Violation[] = []
@@ -1310,7 +1318,7 @@ function findMatches(
     // 这样更长的、更具体的短语会优先匹配，避免短词抢占长词的位置
     type Candidate = {
       text: string
-      type: 'keyword' | 'alias' | 'rootFamily' | 'cas'
+      type: 'keyword' | 'alias' | 'rootFamily' | 'cas' | 'indirectAlias'
       familyTerm?: string
     }
 
@@ -1340,6 +1348,13 @@ function findMatches(
     // 4) CAS 号
     if (rule.casNumber) {
       candidates.push({ text: rule.casNumber.toLowerCase(), type: 'cas' })
+    }
+
+    // 4b) 间接推断别名（#10）
+    if (rule.indirectAliases) {
+      for (const alias of rule.indirectAliases) {
+        candidates.push({ text: alias.toLowerCase(), type: 'indirectAlias' })
+      }
     }
 
     // 5) 词形变化（单复数变体）
@@ -1418,7 +1433,7 @@ function findMatches(
           },
           sourceField,
           contextSnippet: `成分族匹配: 识别到 ${candidate.familyTerm} 属于 ${rule.rootFamily} 成分族`,
-          confidence: calculateConfidence(rule, candidate.familyTerm!),
+          confidence: calculateConfidence(rule, candidate.familyTerm!, candidate.type),
         })
       } else {
         const matchedText = text.substring(match.index, match.index + match.length)
@@ -1431,7 +1446,7 @@ function findMatches(
           },
           sourceField,
           contextSnippet: generateContextSnippet(text, match.index, match.index + match.length),
-          confidence: calculateConfidence(rule, matchedText),
+          confidence: calculateConfidence(rule, matchedText, candidate.type),
         })
       }
       break // 只取最长的一个匹配
@@ -1757,6 +1772,20 @@ export function checkCompliance(input: CheckInput): CheckResult {
   const deduplicatedViolations = deduplicateByGroupId(violations)
   violations.length = 0
   violations.push(...deduplicatedViolations)
+
+  // ── #10: 低置信度 severity 降级 ──
+  // 间接推断命中（confidence: low）不直接触发 critical，降级为 warning
+  for (const v of violations) {
+    if (v.confidence === 'low') {
+      if (v.severity === 'critical') {
+        v.severity = 'warning'
+      }
+      // 修改 suggestion，添加推测性提示
+      if (!v.suggestion.includes('推测性') && !v.suggestion.includes('人工复核')) {
+        v.suggestion = `[推测性命中] ${v.suggestion} — 建议人工复核确认是否存在此成分。`
+      }
+    }
+  }
 
   // ── 时效规则文案动态化 ──
   // 将固定的"7天"等替换为实际匹配到的时间表述

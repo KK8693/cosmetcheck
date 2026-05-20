@@ -7,6 +7,7 @@ export interface RegulationRule {
   category: 'banned' | 'restricted' | 'claim' | 'label' | 'ingredient' | 'packaging'
   target: string
   aliases?: string[]
+  indirectAliases?: string[]  // #10: 间接推断别名，命中后 confidence 降为 low
   cas?: string
   severity: 'critical' | 'warning' | 'info'
   condition: string
@@ -150,6 +151,16 @@ function convertRuleToViolation(
     normalizedApplicableCategories = rawApplicableCategories.split(/[,，;；|]/).map((s: string) => s.trim()).filter(Boolean)
   }
 
+  // 处理 indirectAliases：#10 间接推断别名
+  const rawIndirectAliases = (rule as unknown as { indirectAliases?: unknown }).indirectAliases
+  let normalizedIndirectAliases: string[] | undefined
+  
+  if (Array.isArray(rawIndirectAliases)) {
+    normalizedIndirectAliases = rawIndirectAliases.filter((a): a is string => typeof a === 'string')
+  } else if (typeof rawIndirectAliases === 'string' && rawIndirectAliases) {
+    normalizedIndirectAliases = rawIndirectAliases.split(/[,，;；|]/).map((s: string) => s.trim()).filter(Boolean)
+  }
+
   return {
     ruleId: rule.ruleId,
     category,
@@ -161,6 +172,7 @@ function convertRuleToViolation(
     source: `${source} ${rule.sourceUrl ? `- ${rule.sourceUrl}` : ''}`,
     casNumber: rule.cas,
     aliases: normalizedAliases,
+    indirectAliases: normalizedIndirectAliases,
     rootFamily: (rule as unknown as { rootFamily?: string }).rootFamily,
     applicableCategories: normalizedApplicableCategories,
   }
