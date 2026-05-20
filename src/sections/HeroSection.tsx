@@ -11,32 +11,22 @@ import AuthModal from '@/components/AuthModal'
 import { AnimatedCounter } from '@/components/AnimatedCounter'
 import { AlertTriangle, Info, CheckCircle, XCircle, Zap, Shield, X } from 'lucide-react'
 
+interface ViolationItem {
+  ruleId: string
+  category: string
+  severity: string
+  message: string
+  suggestion: string
+  source: string
+  sourceField?: string
+  allSourceFields?: string[]
+}
+
 interface CheckResult {
   isCompliant: boolean
-  violations: Array<{
-    ruleId: string
-    category: string
-    severity: string
-    message: string
-    suggestion: string
-    source: string
-  }>
-  warnings: Array<{
-    ruleId: string
-    category: string
-    severity: string
-    message: string
-    suggestion: string
-    source: string
-  }>
-  info: Array<{
-    ruleId: string
-    category: string
-    severity: string
-    message: string
-    suggestion: string
-    source: string
-  }>
+  violations: ViolationItem[]
+  warnings: ViolationItem[]
+  info: ViolationItem[]
   summary: {
     totalIssues: number
     criticalCount: number
@@ -44,6 +34,44 @@ interface CheckResult {
     infoCount: number
   }
   regulationVersion: number
+}
+
+
+// P4.3: Group violations by category for organized display
+const categoryOrder = ['ingredient', 'claim', 'label', 'packaging']
+const categoryLabels: Record<string, string> = {
+  ingredient: '成分违规',
+  claim: '宣称违规', 
+  label: '标签违规',
+  packaging: '包装违规',
+}
+
+function groupByCategory(items: ViolationItem[]): [string, ViolationItem[]][] {
+  const groups = new Map<string, ViolationItem[]>()
+  for (const item of items) {
+    const cat = item.category || 'other'
+    if (!groups.has(cat)) groups.set(cat, [])
+    groups.get(cat)!.push(item)
+  }
+  // Sort by categoryOrder, then alphabetically
+  return Array.from(groups.entries()).sort((a, b) => {
+    const idxA = categoryOrder.indexOf(a[0])
+    const idxB = categoryOrder.indexOf(b[0])
+    if (idxA !== -1 && idxB !== -1) return idxA - idxB
+    if (idxA !== -1) return -1
+    if (idxB !== -1) return 1
+    return a[0].localeCompare(b[0])
+  })
+}
+
+function formatSourceFields(fields?: string[]): string {
+  if (!fields || fields.length === 0) return ''
+  const labelMap: Record<string, string> = {
+    ingredients: '成分表',
+    description: '产品描述',
+    label: '产品标签',
+  }
+  return ' · ' + fields.map(f => labelMap[f] || f).join('、')
 }
 
 interface GeneratedListing {
@@ -471,10 +499,20 @@ export function HeroSection() {
                 {resultToShow.violations.length > 0 && (
                   <div className="space-y-3 mb-4">
                     <h4 className="text-sm font-semibold text-red-600 flex items-center"><XCircle className="w-4 h-4 mr-1" /> {t('criticalIssues')}</h4>
-                    {resultToShow.violations.map((v, i) => (
-                      <div key={i} className="bg-red-50 rounded-lg p-3 text-sm">
-                        <p className="font-medium text-red-700">{v.message}</p>
-                        <p className="text-red-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
+                    {groupByCategory(resultToShow.violations).map(([category, items]) => (
+                      <div key={category} className="space-y-2">
+                        <h5 className="text-xs font-medium text-red-500/70 uppercase tracking-wide">{categoryLabels[category] || category}</h5>
+                        {items.map((v, i) => (
+                          <div key={i} className="bg-red-50 rounded-lg p-3 text-sm">
+                            <p className="font-medium text-red-700">{v.message}</p>
+                            <p className="text-red-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
+                            {(v.sourceField || (v.allSourceFields && v.allSourceFields.length > 0)) && (
+                              <p className="text-red-500/60 text-xs mt-1">
+                                来源字段{formatSourceFields(v.allSourceFields || [v.sourceField!])}
+                              </p>
+                            )}
+                          </div>
+                        ))}
                       </div>
                     ))}
                   </div>
@@ -483,10 +521,20 @@ export function HeroSection() {
                 {resultToShow.warnings.length > 0 && (
                   <div className="space-y-3 mb-4">
                     <h4 className="text-sm font-semibold text-amber-600 flex items-center"><AlertTriangle className="w-4 h-4 mr-1" /> {t('warningIssues')}</h4>
-                    {resultToShow.warnings.map((v, i) => (
-                      <div key={i} className="bg-amber-50 rounded-lg p-3 text-sm">
-                        <p className="font-medium text-amber-700">{v.message}</p>
-                        <p className="text-amber-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
+                    {groupByCategory(resultToShow.warnings).map(([category, items]) => (
+                      <div key={category} className="space-y-2">
+                        <h5 className="text-xs font-medium text-amber-500/70 uppercase tracking-wide">{categoryLabels[category] || category}</h5>
+                        {items.map((v, i) => (
+                          <div key={i} className="bg-amber-50 rounded-lg p-3 text-sm">
+                            <p className="font-medium text-amber-700">{v.message}</p>
+                            <p className="text-amber-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
+                            {(v.sourceField || (v.allSourceFields && v.allSourceFields.length > 0)) && (
+                              <p className="text-amber-500/60 text-xs mt-1">
+                                来源字段{formatSourceFields(v.allSourceFields || [v.sourceField!])}
+                              </p>
+                            )}
+                          </div>
+                        ))}
                       </div>
                     ))}
                   </div>
@@ -495,10 +543,20 @@ export function HeroSection() {
                 {resultToShow.info.length > 0 && (
                   <div className="space-y-3">
                     <h4 className="text-sm font-semibold text-blue-600 flex items-center"><Info className="w-4 h-4 mr-1" /> {t('info')}</h4>
-                    {resultToShow.info.map((v, i) => (
-                      <div key={i} className="bg-blue-50 rounded-lg p-3 text-sm">
-                        <p className="font-medium text-blue-700">{v.message}</p>
-                        <p className="text-blue-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
+                    {groupByCategory(resultToShow.info).map(([category, items]) => (
+                      <div key={category} className="space-y-2">
+                        <h5 className="text-xs font-medium text-blue-500/70 uppercase tracking-wide">{categoryLabels[category] || category}</h5>
+                        {items.map((v, i) => (
+                          <div key={i} className="bg-blue-50 rounded-lg p-3 text-sm">
+                            <p className="font-medium text-blue-700">{v.message}</p>
+                            <p className="text-blue-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
+                            {(v.sourceField || (v.allSourceFields && v.allSourceFields.length > 0)) && (
+                              <p className="text-blue-500/60 text-xs mt-1">
+                                来源字段{formatSourceFields(v.allSourceFields || [v.sourceField!])}
+                              </p>
+                            )}
+                          </div>
+                        ))}
                       </div>
                     ))}
                   </div>
