@@ -18,6 +18,7 @@ function getTermGroupId(term: string): string | undefined {
 }
 
 export interface CheckInput {
+  productName?: string
   ingredients?: string
   description?: string
   label?: string
@@ -1543,7 +1544,7 @@ export function checkCompliance(input: CheckInput): CheckResult {
 
 // ── 品类语义过滤：提取产品品类 ──
   // 检测 description 中的品类关键词
-  const contextText = [input.description || '', input.label || ''].join(' ').toLowerCase()
+  const contextText = [input.productName || '', input.description || '', input.label || ''].join(' ').toLowerCase()
   
   // === 品类检测关键词 ===
   // 抗老品类（严格匹配，避免"抗老"等泛词误触发）
@@ -1622,7 +1623,7 @@ export function checkCompliance(input: CheckInput): CheckResult {
   }
   
   // Also check claims in combined text (product name, description, etc.)
-  const combinedText = [input.ingredients || '', input.description || '', input.label || ''].join(' ')
+  const combinedText = [input.productName || '', input.ingredients || '', input.description || '', input.label || ''].join(' ')
   if (combinedText) {
     const claimRulesCombined = filteredRules.filter(r => r.category === 'claim')
     violations.push(...findMatches(combinedText, claimRulesCombined, 'description'))

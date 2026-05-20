@@ -661,6 +661,82 @@ const ptRegulations: RegulationDictionary = {
     message: 'Alegações de aumento/firmeza de seios são proibidas para cosméticos. Esses requerem registro farmacêutico.',
     suggestion: 'Remova alegações de aumento de seios. Use apenas alegações cosméticas de cuidado corporal.',
   },
+  'BR-CLAIM-006': {
+    message: 'Cosméticos não podem alegar emagrecimento, redução de medidas ou queima de gordura.',
+    suggestion: 'Remova alegações de emagrecimento. Use apenas alegações cosméticas de cuidado corporal.',
+  },
+  'BR-CLAIM-007': {
+    message: 'Alegações de estrias precisam de evidência científica. Evite termos absolutos como "eliminação completa de estrias".',
+    suggestion: 'Use alegações compatíveis como "ajuda a melhorar a aparência da pele".',
+  },
+  'BR-CLAIM-008': {
+    message: 'É proibido usar termos absolutos de tempo como "imediato", "instantâneo", "resultado imediato".',
+    suggestion: 'Substitua por: "gradualmente", "uso contínuo", "cuidado regular".',
+  },
+  'BR-CLAIM-009': {
+    message: 'É proibido usar termos absolutos de eficácia como "100%", "completamente", "cura definitiva".',
+    suggestion: 'Substitua por: "ajuda a", "contribui para", "auxilia".',
+  },
+  'BR-CLAIM-010': {
+    message: 'É proibido usar alegações como "grau médico" ou "grau farmacêutico" que possam enganar o consumidor. Cosméticos não devem sugerir efeitos medicinais.',
+    suggestion: 'Remova termos médicos/clínicos. Use "cuidadosamente desenvolvido", "fórmula de qualidade".',
+  },
+  'BR-CLAIM-011': {
+    message: 'Alegações antibacterianas exigem requisitos específicos de conformidade. Alguns produtos podem exigir registro como desinfetante.',
+    suggestion: 'Garanta comprovação antibacteriana válida ou remova a alegação antibacteriana.',
+  },
+  'BR-CLAIM-012': {
+    message: 'Antitranspirantes e desodorantes pertencem a categorias diferentes. Antitranspirantes exigem registro de medicamento.',
+    suggestion: 'Classifique o produto corretamente. Desodorantes apenas alegam fragrância/frescor; antitranspirantes exigem registro farmacêutico.',
+  },
+  'BR-CLAIM-013': {
+    message: 'É proibido usar termos absolutos como "permanente", "cura completa", "para sempre". Substitua por "ajuda a manter".',
+    suggestion: 'Substitua por: "ajuda a manter", "apoia", "auxilia".',
+  },
+  'BR-CLAIM-014': {
+    message: 'É proibido prometer prazos específicos (como "resultado em 3 dias", "resultado em 7 dias") e garantias absolutas de eficácia (como "100% eficaz", "garantido"). A eficácia deve ter base científica.',
+    suggestion: 'Remova alegações de prazo fixo. Use: "uso contínuo", "melhora gradual".',
+  },
+  'BR-CLAIM-015': {
+    message: 'É proibido usar alegações como "grau médico", "fórmula clínica", "nível clínico" que sugerem efeitos medicinais. Cosméticos não devem imitar marketing de medicamentos.',
+    suggestion: 'Remova termos médicos/clínicos. Use: "cuidadosamente desenvolvido", "fórmula de qualidade".',
+  },
+  'BR-CLAIM-016': {
+    message: 'Alegações para bebês e gestantes exigem indicação clara de idade aplicável e avisos de condições especiais. Produtos infantis exigem registro separado.',
+    suggestion: 'Obtenha registro de produto infantil ou remova alegações para bebês/gestantes.',
+  },
+  'BR-CLAIM-017': {
+    message: 'Evite termos absolutos como "100% natural", "sem químicos". Alegações naturais exigem certificação válida.',
+    suggestion: 'Remova termos absolutos ou forneça certificação válida.',
+  },
+  'BR-CLAIM-018': {
+    message: 'Cosméticos não podem alegar regeneração celular, reparo tecidual ou outros efeitos de nível médico.',
+    suggestion: 'Remova alegações de regeneração celular/reparo. Use "hidrata a pele".',
+  },
+  'BR-CLAIM-019': {
+    message: 'Evite termos como "detox", "purificação" que sugerem efeitos medicinais.',
+    suggestion: 'Remova alegações de detox/purificação. Use "limpa a pele".',
+  },
+  'BR-CLAIM-020': {
+    message: 'Denegrir concorrentes ou publicidade comparativa é proibida.',
+    suggestion: 'Remova alegações comparativas/denegrientes. Use descrição de características do produto.',
+  },
+  'BR-CLAIM-021': {
+    message: 'Alegações de segurança exigem suporte de testes. É proibido usar termos absolutos como "zero risco", "nunca causa alergia". Hipoalergenicidade exige comprovação clínica.',
+    suggestion: 'Use: "testado para compatibilidade cutânea", "adequado para pele sensível" (com comprovação).',
+  },
+  'BR-CLAIM-022': {
+    message: 'É proibido usar termos absolutos como "eliminação completa de rugas", "anti-envelhecimento total". Substitua por "ajuda a melhorar a aparência de rugas" (RDC 907/2024).',
+    suggestion: 'Substitua por: "ajuda a melhorar a aparência de rugas", "ajuda a manter o estado da pele".',
+  },
+  'BR-CLAIM-023': {
+    message: 'É proibido alegar adequação para todos os tipos de pele sem base científica. É necessário suporte de testes. Substitua por "compatível com a maioria dos tipos de pele" ou "adequado para pele seca/oleosa/normal".',
+    suggestion: 'Especifique os tipos de pele testados ou realize teste de compatibilidade.',
+  },
+  'BR-CLAIM-024': {
+    message: 'É proibido garantir eficácia absoluta como "100% eficaz". A eficácia varia de pessoa para pessoa. Substitua por "resultados podem variar" ou "melhores resultados com uso contínuo".',
+    suggestion: 'Remova garantias absolutas. Adicione: "resultados podem variar de pessoa para pessoa".',
+  },
   'BR-ABS-001': {
     message: "Termos absolutos como 'permanente', 'cura completamente', 'para sempre' são proibidos. Use 'ajuda a manter'.",
     suggestion: "Substitua por: 'ajuda a manter', 'auxilia', 'contribui para'.",
@@ -869,6 +945,7 @@ const ptRegulations: RegulationDictionary = {
 }
 
 // Mexican Spanish translations
+
 const esRegulations: RegulationDictionary = {
   'BR-ING-001': {
     message: 'El mercurio está prohibido en cosméticos por ANVISA RDC 529/2021.',
@@ -917,6 +994,82 @@ const esRegulations: RegulationDictionary = {
   'BR-CLAIM-005': {
     message: 'Las afirmaciones de aumento/firmeza de senos están prohibidas para cosméticos. Estos requieren registro farmacéutico.',
     suggestion: 'Elimine las afirmaciones de aumento de senos. Use solo afirmaciones cosméticas de cuidado corporal.',
+  },
+  'BR-CLAIM-006': {
+    message: 'Los cosméticos no pueden alegar adelgazamiento, reducción de medidas o quema de grasa.',
+    suggestion: 'Elimine alegaciones de adelgazamiento. Use solo alegaciones cosméticas de cuidado corporal.',
+  },
+  'BR-CLAIM-007': {
+    message: 'Las alegaciones de estrías necesitan evidencia científica. Evite términos absolutos como "eliminación completa de estrías".',
+    suggestion: 'Use alegaciones compatibles como "ayuda a mejorar la apariencia de la piel".',
+  },
+  'BR-CLAIM-008': {
+    message: 'Está prohibido usar términos absolutos de tiempo como "inmediato", "instantáneo", "resultado inmediato".',
+    suggestion: 'Sustituya por: "gradualmente", "uso continuo", "cuidado regular".',
+  },
+  'BR-CLAIM-009': {
+    message: 'Está prohibido usar términos absolutos de eficacia como "100%", "completamente", "cura definitiva".',
+    suggestion: 'Sustituya por: "ayuda a", "contribuye a", "auxilia".',
+  },
+  'BR-CLAIM-010': {
+    message: 'Está prohibido usar alegaciones como "grado médico" o "grado farmacéutico" que puedan engañar al consumidor. Los cosméticos no deben sugerir efectos medicinales.',
+    suggestion: 'Elimine términos médicos/clínicos. Use "cuidadosamente desarrollado", "fórmula de calidad".',
+  },
+  'BR-CLAIM-011': {
+    message: 'Las alegaciones antibacterianas exigen requisitos específicos de conformidad. Algunos productos pueden requerir registro como desinfectante.',
+    suggestion: 'Garantice comprobación antibacteriana válida o elimine la alegación antibacteriana.',
+  },
+  'BR-CLAIM-012': {
+    message: 'Los antitranspirantes y desodorantes pertenecen a categorías diferentes. Los antitranspirantes requieren registro de medicamento.',
+    suggestion: 'Clasifique el producto correctamente. Los desodorantes solo alegan fragancia/frescura; los antitranspirantes requieren registro farmacéutico.',
+  },
+  'BR-CLAIM-013': {
+    message: 'Está prohibido usar términos absolutos como "permanente", "cura completa", "para siempre". Sustituya por "ayuda a mantener".',
+    suggestion: 'Sustituya por: "ayuda a mantener", "apoya", "auxilia".',
+  },
+  'BR-CLAIM-014': {
+    message: 'Está prohibido prometer plazos específicos (como "resultado en 3 días", "resultado en 7 días") y garantías absolutas de eficacia (como "100% eficaz", "garantizado"). La eficacia debe tener base científica.',
+    suggestion: 'Elimine alegaciones de plazo fijo. Use: "uso continuo", "mejora gradual".',
+  },
+  'BR-CLAIM-015': {
+    message: 'Está prohibido usar alegaciones como "grado médico", "fórmula clínica", "nivel clínico" que sugieran efectos medicinales. Los cosméticos no deben imitar marketing de medicamentos.',
+    suggestion: 'Elimine términos médicos/clínicos. Use: "cuidadosamente desarrollado", "fórmula de calidad".',
+  },
+  'BR-CLAIM-016': {
+    message: 'Las alegaciones para bebés y embarazadas exigen indicación clara de edad aplicable y advertencias de condiciones especiales. Los productos infantiles requieren registro separado.',
+    suggestion: 'Obtenga registro de producto infantil o elimine alegaciones para bebés/embarazadas.',
+  },
+  'BR-CLAIM-017': {
+    message: 'Evite términos absolutos como "100% natural", "sin químicos". Las alegaciones naturales exigen certificación válida.',
+    suggestion: 'Elimine términos absolutos o proporcione certificación válida.',
+  },
+  'BR-CLAIM-018': {
+    message: 'Los cosméticos no pueden alegar regeneración celular, reparo tisular u otros efectos de nivel médico.',
+    suggestion: 'Elimine alegaciones de regeneración celular/reparo. Use "hidrata la piel".',
+  },
+  'BR-CLAIM-019': {
+    message: 'Evite términos como "detox", "purificación" que sugieran efectos medicinales.',
+    suggestion: 'Elimine alegaciones de detox/purificación. Use "limpia la piel".',
+  },
+  'BR-CLAIM-020': {
+    message: 'Denigrar competidores o publicidad comparativa está prohibida.',
+    suggestion: 'Elimine alegaciones comparativas/denigrantes. Use descripción de características del producto.',
+  },
+  'BR-CLAIM-021': {
+    message: 'Las alegaciones de seguridad exigen soporte de pruebas. Está prohibido usar términos absolutos como "cero riesgo", "nunca causa alergia". La hipoalergenicidad exige comprobación clínica.',
+    suggestion: 'Use: "probado para compatibilidad cutánea", "adecuado para piel sensible" (con comprobación).',
+  },
+  'BR-CLAIM-022': {
+    message: 'Está prohibido usar términos absolutos como "eliminación completa de arrugas", "anti-envejecimiento total". Sustituya por "ayuda a mejorar la apariencia de arrugas" (RDC 907/2024).',
+    suggestion: 'Sustituya por: "ayuda a mejorar la apariencia de arrugas", "ayuda a mantener el estado de la piel".',
+  },
+  'BR-CLAIM-023': {
+    message: 'Está prohibido alegar adecuación para todos los tipos de piel sin base científica. Se necesita soporte de pruebas. Sustituya por "compatible con la mayoría de los tipos de piel" o "adecuado para piel seca/grasa/normal".',
+    suggestion: 'Especifique los tipos de piel probados o realice prueba de compatibilidad.',
+  },
+  'BR-CLAIM-024': {
+    message: 'Está prohibido garantizar eficacia absoluta como "100% eficaz". La eficacia varía de persona a persona. Sustituya por "los resultados pueden variar" o "mejores resultados con uso continuo".',
+    suggestion: 'Elimine garantías absolutas. Agregue: "los resultados pueden variar de persona a persona".',
   },
   'BR-ABS-001': {
     message: "Los términos absolutos como 'permanente', 'cura completamente', 'para siempre' están prohibidos. Use 'ayuda a mantener'.",
@@ -1136,6 +1289,7 @@ const REGULATION_MESSAGES: Record<string, RegulationDictionary> = {
 }
 
 // Supported locales for regulation messages
+
 export const SUPPORTED_LOCALES = ['en', 'zh', 'pt-BR', 'pt', 'es-MX', 'es']
 
 // Default/fallback locale
