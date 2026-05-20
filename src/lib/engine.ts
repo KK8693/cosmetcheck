@@ -1304,6 +1304,40 @@ function findMatches(
       candidates.push({ text: rule.casNumber.toLowerCase(), type: 'cas' })
     }
 
+    // 5) 词形变化（单复数变体）
+    // 为西班牙语/葡萄牙语单词生成常见复数形式，覆盖高频变体
+    const latinChars = /[\u00e1\u00e9\u00ed\u00f3\u00fa\u00e0\u00e8\u00ec\u00f2\u00f9\u00e2\u00ea\u00ee\u00f4\u00fb\u00e3\u00f5\u00e7\u00c1\u00c9\u00cd\u00d3\u00da\u00c0\u00c8\u00cc\u00d2\u00d9\u00c2\u00ca\u00ce\u00d4\u00db\u00c3\u00d5\u00c7]/
+    const inflectionSet = new Set<string>()
+    for (const c of candidates) {
+      // 只处理单个单词（不含空格/连字符）且包含拉丁字符的候选
+      if (c.text.includes(' ') || c.text.includes('-') || c.text.length < 3) continue
+      if (!latinChars.test(c.text)) continue
+      // 已以 s 结尾的（除了 -is/-os/-as/-es 等特殊形式）可能已是复数，跳过
+      if (c.text.endsWith('s') && !c.text.endsWith('is') && !c.text.endsWith('os') && !c.text.endsWith('as') && !c.text.endsWith('es')) continue
+
+      let plural = ''
+      const t = c.text
+      if (t.endsWith('z')) {
+        plural = t.slice(0, -1) + 'ces'
+      } else if (t.endsWith('\u00e7\u00e3o')) {
+        plural = t.slice(0, -2) + '\u00e7\u00f5es'
+      } else if (t.endsWith('m')) {
+        plural = t.slice(0, -1) + 'ns'
+      } else if (t.endsWith('l')) {
+        plural = t.slice(0, -1) + 'is'
+      } else if (t.endsWith('r') && /[^aeiou]$/.test(t.slice(-2, -1))) {
+        // 谨慎处理以 r 结尾的名词
+        plural = t + 'es'
+      } else if (['a', 'e', 'i', 'o', 'u', '\u00e1', '\u00e9', '\u00ed', '\u00f3', '\u00fa'].some(v => t.endsWith(v))) {
+        plural = t + 's'
+      }
+
+      if (plural && plural !== t && !inflectionSet.has(plural)) {
+        inflectionSet.add(plural)
+        candidates.push({ text: plural, type: c.type, familyTerm: c.familyTerm })
+      }
+    }
+
     // 按长度从长到短排序：短语优先
     candidates.sort((a, b) => b.text.length - a.text.length)
 
@@ -1311,6 +1345,27 @@ function findMatches(
     for (const candidate of candidates) {
       const match = findWordBoundaryMatch(lowerText, candidate.text)
       if (!match) continue
+
+      // ── 负向过滤：排除植物激素误报 ──
+      // 当规则 category 为 'ingredient' 且 keyword 包含 "corticosteroid" 时
+      // 如果匹配文本前面有 "植物"/"vegetal"/"phyto" 等前缀，则跳过该匹配
+      if (rule.category === 'ingredient' && 
+          (rule.keyword.includes('corticosteroid') || rule.keyword.includes('激素'))) {
+        // 获取匹配位置前的上下文（前10个字符）
+        const contextBefore = lowerText.substring(Math.max(0, match.index - 10), match.index)
+        // 检查是否包含植物激素相关的负向关键词
+        const negativePrefixes = ['植物', 'vegetal', 'phyto', 'hormônio vegetal', 'hormona vegetal', 'extracto de hormona vegetal', 'extrato de hormônio vegetal']
+        let shouldSkip = false
+        for (const prefix of negativePrefixes) {
+          if (contextBefore.includes(prefix)) {
+            shouldSkip = true
+            break
+          }
+        }
+        if (shouldSkip) {
+          continue // 跳过本次匹配，继续尝试下一个候选
+        }
+      }
 
       seenRuleIds.add(rule.ruleId)
 
