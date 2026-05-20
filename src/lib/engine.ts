@@ -1469,22 +1469,14 @@ export function checkCompliance(input: CheckInput): CheckResult {
   // Check description/claims (with sourceField)
   if (input.description) {
     const claimRulesDesc = filteredRules.filter(r => r.category === 'claim')
-    console.log(`[DEBUG Claims] Description check - ${claimRulesDesc.length} claim rules loaded`)
-    if (claimRulesDesc.length > 0) {
-      console.log(`[DEBUG Claims] First 3 claim rules:`, claimRulesDesc.slice(0, 3).map(r => ({ ruleId: r.ruleId, keyword: r.keyword, aliases: r.aliases?.slice(0, 3) })))
-    }
-    const descViolations = findMatches(input.description, claimRulesDesc, 'description')
-    console.log(`[DEBUG Claims] Description check - found ${descViolations.length} violations`)
-    violations.push(...descViolations)
+    violations.push(...findMatches(input.description, claimRulesDesc, 'description'))
   }
   
   // Also check claims in combined text (product name, description, etc.)
   const combinedText = [input.ingredients || '', input.description || '', input.label || ''].join(' ')
   if (combinedText) {
     const claimRulesCombined = filteredRules.filter(r => r.category === 'claim')
-    const combinedViolations = findMatches(combinedText, claimRulesCombined, 'description')
-    console.log(`[DEBUG Claims] Combined text check - found ${combinedViolations.length} violations`)
-    violations.push(...combinedViolations)
+    violations.push(...findMatches(combinedText, claimRulesCombined, 'description'))
   }
 
   // Check label (with sourceField)
@@ -1506,6 +1498,27 @@ export function checkCompliance(input: CheckInput): CheckResult {
   }
   violations.length = 0
   violations.push(...uniqueByRuleId.values())
+
+  // ── 同文本跨规则去重 ──
+  // 同一成分/概念被多条规则（硬编码+JSON）命中时，只保留最严重的一条
+  const severityRank = { critical: 3, warning: 2, info: 1 }
+  const uniqueByMatch = new Map<string, Violation>()
+  for (const v of violations) {
+    const key = `${v.category}:${(v.matchedText || v.keyword).toLowerCase()}`
+    const existing = uniqueByMatch.get(key)
+    if (!existing) {
+      uniqueByMatch.set(key, v)
+    } else if ((severityRank[v.severity] || 0) > (severityRank[existing.severity] || 0)) {
+      uniqueByMatch.set(key, v)
+    } else if ((severityRank[v.severity] || 0) === (severityRank[existing.severity] || 0)) {
+      // 严重程度相同，保留 matchedText 更长的（短语优先）
+      if ((v.matchedText?.length || 0) > (existing.matchedText?.length || 0)) {
+        uniqueByMatch.set(key, v)
+      }
+    }
+  }
+  violations.length = 0
+  violations.push(...uniqueByMatch.values())
 
   // ── 词根簇跨规则去重 ──
   // 同一语义簇（如 cure/treat/heal）的多个 violations 只保留最严重/最长的一个
