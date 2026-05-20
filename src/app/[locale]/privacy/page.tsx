@@ -5,13 +5,8 @@ import { getTranslator } from '@/lib/getLegalTranslator'
 
 export const runtime = 'edge'
 
-export default async function PrivacyPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
-  const { locale } = await params
-  const t = getTranslator(locale)
+export default async function PrivacyPage() {
+  const t = await getTranslator()
 
   return (
     <div className="min-h-screen bg-white">

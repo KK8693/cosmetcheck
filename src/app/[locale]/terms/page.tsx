@@ -5,13 +5,8 @@ import { getTranslator } from '@/lib/getLegalTranslator'
 
 export const runtime = 'edge'
 
-export default async function TermsPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
-  const { locale } = await params
-  const t = getTranslator(locale)
+export default async function TermsPage() {
+  const t = await getTranslator()
 
   return (
     <div className="min-h-screen bg-white">
@@ -30,7 +25,6 @@ export default async function TermsPage({
           <div dangerouslySetInnerHTML={{ __html: t('legal.terms.s8') }} />
           <div dangerouslySetInnerHTML={{ __html: t('legal.terms.s9') }} />
           <div dangerouslySetInnerHTML={{ __html: t('legal.terms.s10') }} />
-          <div dangerouslySetInnerHTML={{ __html: t('legal.terms.s11') }} />
         </div>
       </div>
     </div>

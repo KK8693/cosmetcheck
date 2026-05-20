@@ -1,12 +1,14 @@
 /**
  * Simple translator that reads directly from messagesMap.
- * Bypasses next-intl Context to work around next-on-pages edge function
- * boundary issues where React Context is not shared between layout.func
- * and page.func.
+ * Uses request headers to get locale, bypassing next-intl Context
+ * and next-on-pages edge function param passing issues.
  */
+import { headers } from 'next/headers'
 import { messagesMap } from '@/i18n/request'
 
-export function getTranslator(locale: string) {
+export async function getTranslator() {
+  const h = await headers()
+  const locale = h.get('X-NEXT-INTL-LOCALE') || 'en'
   const messages = messagesMap[locale] || messagesMap['en']
 
   return function t(key: string): string {

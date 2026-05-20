@@ -5,13 +5,8 @@ import { getTranslator } from '@/lib/getLegalTranslator'
 
 export const runtime = 'edge'
 
-export default async function RefundPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
-  const { locale } = await params
-  const t = getTranslator(locale)
+export default async function RefundPage() {
+  const t = await getTranslator()
 
   return (
     <div className="min-h-screen bg-white">
@@ -25,7 +20,6 @@ export default async function RefundPage({
           <div dangerouslySetInnerHTML={{ __html: t('legal.refund.s3') }} />
           <div dangerouslySetInnerHTML={{ __html: t('legal.refund.s4') }} />
           <div dangerouslySetInnerHTML={{ __html: t('legal.refund.s5') }} />
-          <div dangerouslySetInnerHTML={{ __html: t('legal.refund.s6') }} />
         </div>
       </div>
     </div>

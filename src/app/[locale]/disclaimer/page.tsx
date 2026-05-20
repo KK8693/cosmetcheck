@@ -5,13 +5,8 @@ import { getTranslator } from '@/lib/getLegalTranslator'
 
 export const runtime = 'edge'
 
-export default async function DisclaimerPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
-  const { locale } = await params
-  const t = getTranslator(locale)
+export default async function DisclaimerPage() {
+  const t = await getTranslator()
 
   return (
     <div className="min-h-screen bg-white">
@@ -25,9 +20,6 @@ export default async function DisclaimerPage({
           <div dangerouslySetInnerHTML={{ __html: t('legal.disclaimer.s3') }} />
           <div dangerouslySetInnerHTML={{ __html: t('legal.disclaimer.s4') }} />
           <div dangerouslySetInnerHTML={{ __html: t('legal.disclaimer.s5') }} />
-          <div dangerouslySetInnerHTML={{ __html: t('legal.disclaimer.s6') }} />
-          <div dangerouslySetInnerHTML={{ __html: t('legal.disclaimer.s7') }} />
-          <div dangerouslySetInnerHTML={{ __html: t('legal.disclaimer.s8') }} />
         </div>
       </div>
     </div>
