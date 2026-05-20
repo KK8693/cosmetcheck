@@ -37,6 +37,7 @@ export interface Violation {
   matchedText: string
   position?: { start: number; end: number }
   sourceField?: 'ingredients' | 'description' | 'label'  // 匹配来源字段
+  allSourceFields?: string[]  // P4.2: 跨字段重复匹配时合并所有来源字段
   contextSnippet?: string  // 原文上下文片段，高亮显示匹配位置
   casNumber?: string  // CAS号支持
   aliases?: string[] // 成分别名（支持中文、英文、葡语、西语）
@@ -1634,16 +1635,27 @@ export function checkCompliance(input: CheckInput): CheckResult {
     violations.push(...findMatches(input.label, filteredRules.filter(r => r.category === 'label'), 'label'))
   }
 
-  // ── 全局 ruleId 去重 ──
+  // —— 全局 ruleId 去重 ——
   // 同一规则在 description + combinedText 等多字段中可能被重复匹配，只保留一条
+  // P4.2: 同时合并跨字段的 sourceField 信息，让用户知道违规出现在哪些字段
   const uniqueByRuleId = new Map<string, Violation>()
   for (const v of violations) {
     const existing = uniqueByRuleId.get(v.ruleId)
     if (!existing) {
-      uniqueByRuleId.set(v.ruleId, v)
-    } else if ((v.matchedText?.length || 0) > (existing.matchedText?.length || 0)) {
-      // 保留 matchedText 更长的（短语优先）
-      uniqueByRuleId.set(v.ruleId, v)
+      // 初始化：收集第一个匹配的 sourceField
+      const vWithFields = { ...v, allSourceFields: v.sourceField ? [v.sourceField] : [] }
+      uniqueByRuleId.set(v.ruleId, vWithFields)
+    } else {
+      // 合并 sourceField
+      const newFields = new Set([...(existing.allSourceFields || []), v.sourceField].filter(Boolean) as string[])
+      existing.allSourceFields = Array.from(newFields)
+      
+      // 保留 matchedText 更长的（短语优先），但保留已合并的 allSourceFields
+      if ((v.matchedText?.length || 0) > (existing.matchedText?.length || 0)) {
+        const mergedFields = existing.allSourceFields
+        const newBest = { ...v, allSourceFields: mergedFields }
+        uniqueByRuleId.set(v.ruleId, newBest)
+      }
     }
   }
   violations.length = 0

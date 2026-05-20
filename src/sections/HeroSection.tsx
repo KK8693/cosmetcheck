@@ -18,6 +18,9 @@ interface ViolationItem {
   message: string
   suggestion: string
   source: string
+  matchedText?: string
+  position?: { start: number; end: number }
+  contextSnippet?: string
   sourceField?: string
   allSourceFields?: string[]
 }
