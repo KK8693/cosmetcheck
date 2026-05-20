@@ -1228,17 +1228,60 @@ function isWordBoundary(text: string, matchStart: number, matchEnd: number): boo
 }
 
 // 查找第一个满足词边界的匹配位置
+// 支持空格/连字符容错："medical grade" 能匹配 "medical-grade"，"7天" 能匹配 "7 天"
 function findWordBoundaryMatch(text: string, candidate: string): { index: number; length: number } | null {
+  // 1) 精确匹配（优先）
   let searchFrom = 0
   while (true) {
     const index = text.indexOf(candidate, searchFrom)
-    if (index === -1) return null
+    if (index === -1) break
     
     if (isWordBoundary(text, index, index + candidate.length)) {
       return { index, length: candidate.length }
     }
     
     searchFrom = index + 1
+  }
+
+  // 2) 空格/连字符容错匹配
+  // 规范化：去除所有空格，连字符视为无间隔
+  const normalize = (s: string) => s.replace(/[\s\-]+/g, '')
+  const normText = normalize(text)
+  const normCandidate = normalize(candidate)
+  
+  if (normCandidate.length === 0 || normText.length === 0) return null
+  
+  let normSearchFrom = 0
+  while (true) {
+    const normIndex = normText.indexOf(normCandidate, normSearchFrom)
+    if (normIndex === -1) return null
+    
+    // 将 normIndex 映射回原文本位置
+    // 遍历原文本，跳过空格/连字符，找到对应的起始位置
+    let charCount = 0
+    let startIndex = -1
+    let endIndex = -1
+    
+    for (let i = 0; i < text.length; i++) {
+      if (/[\s\-]/.test(text[i])) continue
+      if (charCount === normIndex) {
+        startIndex = i
+      }
+      if (charCount === normIndex + normCandidate.length - 1) {
+        endIndex = i + 1
+        break
+      }
+      charCount++
+    }
+    
+    if (startIndex !== -1 && endIndex !== -1) {
+      // 检查映射后的位置是否满足词边界
+      if (isWordBoundary(text, startIndex, endIndex)) {
+        return { index: startIndex, length: endIndex - startIndex }
+      }
+    }
+    
+    normSearchFrom = normIndex + 1
   }
 }
 
@@ -1451,12 +1494,22 @@ export function checkCompliance(input: CheckInput): CheckResult {
   const jsonRules = jsonRulesCache[input.country]
   
   // Merge JSON rules with hardcoded rules (JSON takes precedence for duplicates)
+  // BUT: merge aliases from both sources to avoid losing cross-language coverage
   const allRules = [...rules]
   if (jsonRules && jsonRules.length > 0) {
     for (const jsonRule of jsonRules) {
       const existingIndex = allRules.findIndex(r => r.ruleId === jsonRule.ruleId)
       if (existingIndex >= 0) {
-        allRules[existingIndex] = jsonRule
+        const existingRule = allRules[existingIndex]
+        // Merge aliases: JSON + hardcoded = union (deduplicated)
+        const mergedAliases = Array.from(new Set([
+          ...(existingRule.aliases || []),
+          ...(jsonRule.aliases || [])
+        ]))
+        allRules[existingIndex] = {
+          ...jsonRule,
+          aliases: mergedAliases
+        }
       } else {
         allRules.push(jsonRule)
       }

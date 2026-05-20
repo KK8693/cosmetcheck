@@ -7,7 +7,7 @@ import { PricingSection } from '@/sections/PricingSection'
 import { FAQSection } from '@/sections/FAQSection'
 import { FooterCTASection } from '@/sections/FooterCTASection'
 import { FooterSection } from '@/sections/FooterSection'
-import WhatsAppFAB from '@/components/WhatsAppFAB'
+import EmailFAB from '@/components/EmailFAB'
 import { setRequestLocale } from 'next-intl/server'
 
 // Required for Cloudflare Pages
@@ -35,7 +35,7 @@ export default async function HomePage({
       <FAQSection />
       <FooterCTASection />
       <FooterSection />
-      <WhatsAppFAB />
+      <EmailFAB />
     </div>
   )
 }

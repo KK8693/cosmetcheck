@@ -3,20 +3,12 @@
 import { Logo } from '@/components/Logo'
 import { Link } from '@/i18n/routing'
 import { useTranslations, useLocale } from 'next-intl'
-import { MessageCircle } from 'lucide-react'
+import { Mail } from 'lucide-react'
 
 export function FooterSection() {
   const t = useTranslations('footer')
-  const locale = useLocale()
 
-  const whatsappTextByLocale: Record<string, string> = {
-    en: 'Hello, I have a question about CosmetCheck',
-    zh: '你好，我想了解CosmetCheck的合规检测服务',
-    'pt-BR': 'Olá, tenho uma pergunta sobre o CosmetCheck',
-    'es-MX': 'Hola, tengo una pregunta sobre CosmetCheck',
-  }
-  const whatsappText = whatsappTextByLocale[locale] || whatsappTextByLocale.en
-  const whatsappHref = `https://wa.me/?text=${encodeURIComponent(whatsappText)}`
+  const emailHref = 'mailto:support@cosmetcheck.com?subject=Support%20Request'
 
   return (
     <footer className="bg-[#08080C] text-gray-400 py-12">
@@ -31,13 +23,11 @@ export function FooterSection() {
             </div>
             <p className="text-sm">{t('tagline')}</p>
             <a
-              href={whatsappHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-[#25D366] text-white text-sm font-medium hover:bg-[#128C7E] transition-colors"
+              href={emailHref}
+              className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-medium hover:bg-blue-600 transition-colors"
             >
-              <MessageCircle className="w-4 h-4" />
-              WhatsApp
+              <Mail className="w-4 h-4" />
+              Email
             </a>
           </div>
 

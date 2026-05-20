@@ -9,7 +9,7 @@ import { Logo } from '@/components/Logo'
 import { setRequestLocale } from 'next-intl/server'
 import { useTranslations } from 'next-intl'
 import { FooterSection } from '@/sections/FooterSection'
-import WhatsAppFAB from '@/components/WhatsAppFAB'
+import EmailFAB from '@/components/EmailFAB'
 
 export const metadata: Metadata = {
   title: 'CosmetCheck México - Verificación de Conformidad COFEPRIS para Cosméticos',
@@ -342,7 +342,7 @@ Términos como &quot;tratamiento&quot;, &quot;cura&quot;, &quot;medicinal&quot;,
       </section>
 
       <FooterSection />
-      <WhatsAppFAB />
+      <EmailFAB />
     </div>
   )
 }
