@@ -1,7 +1,6 @@
 /**
  * Terms of Service page - i18n version
  */
-'use client'
 
 import { useTranslations } from 'next-intl'
 

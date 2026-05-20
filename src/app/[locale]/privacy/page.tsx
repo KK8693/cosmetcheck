@@ -1,7 +1,6 @@
 /**
  * Privacy Policy page - i18n version
  */
-'use client'
 
 import { useTranslations } from 'next-intl'
 
