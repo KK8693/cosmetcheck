@@ -39,12 +39,15 @@ export interface RootClustersFile {
 // 缓存 term -> groupId 映射
 let rootClusterMap: Map<string, string> | null = null
 
+// Static import for Edge Runtime compatibility
+import rootClustersJson from '../data/regulations/root-clusters.json'
+
 export async function loadRootClusters(): Promise<Map<string, string>> {
   if (rootClusterMap) return rootClusterMap
 
   rootClusterMap = new Map<string, string>()
   try {
-    const data = (await import('../data/regulations/root-clusters.json')) as unknown as RootClustersFile
+    const data = rootClustersJson as unknown as RootClustersFile
     for (const cluster of data.clusters) {
       for (const term of cluster.terms) {
         rootClusterMap.set(term.toLowerCase(), cluster.groupId)
@@ -163,22 +166,33 @@ function convertRuleToViolation(
   }
 }
 
-// Dynamic imports for JSON files - will be loaded at runtime
+// ── Static imports for Edge Runtime compatibility ──
+// Cloudflare Workers CANNOT dynamically import JSON at runtime.
+// Static imports ensure webpack bundles all JSON into the Worker.
+import brBannedJson from '../data/regulations/brazil/banned.json'
+import brRestrictedJson from '../data/regulations/brazil/restricted.json'
+import brClaimsJson from '../data/regulations/brazil/claims.json'
+import brLabelJson from '../data/regulations/brazil/label.json'
+import brRegistrationJson from '../data/regulations/brazil/registration.json'
+import mxBannedJson from '../data/regulations/mexico/banned.json'
+import mxClaimsJson from '../data/regulations/mexico/claims.json'
+import mxLabelJson from '../data/regulations/mexico/label.json'
+
 const regulationFiles: {
   BR: Record<string, () => Promise<unknown>>
   MX: Record<string, () => Promise<unknown>>
 } = {
   BR: {
-    banned: () => import('../data/regulations/brazil/banned.json'),
-    restricted: () => import('../data/regulations/brazil/restricted.json'),
-    claims: () => import('../data/regulations/brazil/claims.json'),
-    label: () => import('../data/regulations/brazil/label.json'),
-    registration: () => import('../data/regulations/brazil/registration.json'),
+    banned: () => Promise.resolve(brBannedJson),
+    restricted: () => Promise.resolve(brRestrictedJson),
+    claims: () => Promise.resolve(brClaimsJson),
+    label: () => Promise.resolve(brLabelJson),
+    registration: () => Promise.resolve(brRegistrationJson),
   },
   MX: {
-    banned: () => import('../data/regulations/mexico/banned.json'),
-    claims: () => import('../data/regulations/mexico/claims.json'),
-    label: () => import('../data/regulations/mexico/label.json'),
+    banned: () => Promise.resolve(mxBannedJson),
+    claims: () => Promise.resolve(mxClaimsJson),
+    label: () => Promise.resolve(mxLabelJson),
   },
 }
 
@@ -191,7 +205,7 @@ let rulesCache: {
   loadedAt?: number
 } | null = null
 
-const CACHE_TTL = 5 * 60 * 1000 // 5 minutes
+const CACHE_TTL = 1000 // 1 second (dev-friendly)
 
 export async function loadRegulationRules(country: 'BR' | 'MX'): Promise<LoadedRules[]> {
   // Check cache
@@ -207,7 +221,7 @@ export async function loadRegulationRules(country: 'BR' | 'MX'): Promise<LoadedR
     if (files.banned) {
       const banned = await files.banned() as unknown as RegulationFile
       for (const rule of banned.rules) {
-        rules.push(convertRuleToViolation(rule, country))
+        rules.push(convertRuleToViolation({ ...rule, category: 'ingredient' as const }, country))
       }
     }
 
@@ -215,7 +229,7 @@ export async function loadRegulationRules(country: 'BR' | 'MX'): Promise<LoadedR
     if (files.restricted) {
       const restricted = await files.restricted() as unknown as RegulationFile
       for (const rule of restricted.rules) {
-        rules.push(convertRuleToViolation(rule, country))
+        rules.push(convertRuleToViolation({ ...rule, category: 'ingredient' as const }, country))
       }
     }
 
@@ -223,7 +237,7 @@ export async function loadRegulationRules(country: 'BR' | 'MX'): Promise<LoadedR
     if (files.claims) {
       const claims = await files.claims() as unknown as RegulationFile
       for (const rule of claims.rules) {
-        rules.push(convertRuleToViolation(rule, country))
+        rules.push(convertRuleToViolation({ ...rule, category: 'claim' as const }, country))
       }
     }
 
@@ -231,7 +245,7 @@ export async function loadRegulationRules(country: 'BR' | 'MX'): Promise<LoadedR
     if (files.label) {
       const label = await files.label() as unknown as RegulationFile
       for (const rule of label.rules) {
-        rules.push(convertRuleToViolation(rule, country))
+        rules.push(convertRuleToViolation({ ...rule, category: 'label' as const }, country))
       }
     }
 
@@ -239,7 +253,7 @@ export async function loadRegulationRules(country: 'BR' | 'MX'): Promise<LoadedR
     if (country === 'BR' && files.registration) {
       const registration = await files.registration() as unknown as RegulationFile
       for (const rule of registration.rules) {
-        rules.push(convertRuleToViolation(rule, country))
+        rules.push(convertRuleToViolation({ ...rule, category: 'packaging' as const }, country))
       }
     }
 

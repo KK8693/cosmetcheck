@@ -652,7 +652,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Corticosteroids are prohibited in cosmetic products.',
     suggestion: 'Remove corticosteroids - product must be registered as medicine.',
-    aliases: ['皮质类固醇', 'corticosteróide', 'corticosteroide', 'steroid', 'cortisone', 'prednisone', '氢化可的松', '类固醇激素', 'corticoides'],
+    aliases: ['皮质类固醇', 'corticosteróide', 'corticosteroide', 'steroid', 'cortisone', 'prednisone', '氢化可的松', '类固醇激素', 'corticoides', '激素提取物', '激素', 'hormone extract', 'animal hormone', '植物激素', '雌激素', '孕激素'],
     source: 'COFEPRIS NOM-259-SSA1-2014',
   },
   {
@@ -1468,13 +1468,23 @@ export function checkCompliance(input: CheckInput): CheckResult {
 
   // Check description/claims (with sourceField)
   if (input.description) {
-    violations.push(...findMatches(input.description, filteredRules.filter(r => r.category === 'claim'), 'description'))
+    const claimRulesDesc = filteredRules.filter(r => r.category === 'claim')
+    console.log(`[DEBUG Claims] Description check - ${claimRulesDesc.length} claim rules loaded`)
+    if (claimRulesDesc.length > 0) {
+      console.log(`[DEBUG Claims] First 3 claim rules:`, claimRulesDesc.slice(0, 3).map(r => ({ ruleId: r.ruleId, keyword: r.keyword, aliases: r.aliases?.slice(0, 3) })))
+    }
+    const descViolations = findMatches(input.description, claimRulesDesc, 'description')
+    console.log(`[DEBUG Claims] Description check - found ${descViolations.length} violations`)
+    violations.push(...descViolations)
   }
   
   // Also check claims in combined text (product name, description, etc.)
   const combinedText = [input.ingredients || '', input.description || '', input.label || ''].join(' ')
   if (combinedText) {
-    violations.push(...findMatches(combinedText, filteredRules.filter(r => r.category === 'claim'), 'description'))
+    const claimRulesCombined = filteredRules.filter(r => r.category === 'claim')
+    const combinedViolations = findMatches(combinedText, claimRulesCombined, 'description')
+    console.log(`[DEBUG Claims] Combined text check - found ${combinedViolations.length} violations`)
+    violations.push(...combinedViolations)
   }
 
   // Check label (with sourceField)

@@ -26,9 +26,13 @@
       ],
       "severity": "critical",
       "condition": "禁止化妆品宣称医疗治疗功效（仅适用于洗手液、沐浴露、卸妆产品）",
-      "message": "Cosmetics cannot use medical terms like 'cure', 'anti-inflammatory', 'antibacterial'. Cannot claim to treat acne, wound healing or other drug efficacy.",
+      "message": "化妆品不得使用医疗治疗类术语（如\"治愈\"、\"消炎\"、\"抗菌\"），不得声称治疗痘痘、伤口愈合等药品功效。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012",
-      "applicableCategories": ["hand_sanitizer", "body_wash", "makeup_remover"]
+      "applicableCategories": [
+        "hand_sanitizer",
+        "body_wash",
+        "makeup_remover"
+      ]
     },
     {
       "ruleId": "MX-CLAIM-002",
@@ -50,7 +54,7 @@
       ],
       "severity": "warning",
       "condition": "禁止绝对化无添加/纯天然宣称",
-      "message": "Avoid absolute terms like '100% natural', 'no chemicals'. Natural ingredient claims require scientific evidence.",
+      "message": "禁止使用\"100%天然\"、\"无化学成分\"、\"有机\"等绝对化无添加/纯天然声称，需要科学证据支撑。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -69,7 +73,7 @@
       ],
       "severity": "critical",
       "condition": "禁止防晒绝对化和无需补涂宣称",
-      "message": "Sunscreen products must display SPF value and UVA/UVB protection. Absolute claims like 'total protection' or 'no reapplication needed' are prohibited.",
+      "message": "防晒产品必须标示SPF值和UVA/UVB防护，禁止\"完全防护\"、\"无需补涂\"等绝对化声称。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -88,7 +92,7 @@
       ],
       "severity": "warning",
       "condition": "禁止无依据的安全绝对化宣称",
-      "message": "Cosmetics cannot claim drug-like effects without medicine registration.",
+      "message": "禁止无依据的安全绝对化声称，如\"零风险\"、\"绝不致敏\"、\"人人安全\"等。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -107,7 +111,7 @@
       ],
       "severity": "critical",
       "condition": "禁止抗衰老绝对化宣称",
-      "message": "Anti-aging claims require scientific substantiation.",
+      "message": "抗衰老声称需要科学证据支撑，禁止\"完全消除皱纹\"、\"停止衰老\"、\"年轻10岁\"等绝对化声称。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -124,7 +128,7 @@
       ],
       "severity": "warning",
       "condition": "禁止误导性FDA相关宣称",
-      "message": "Whitening/lightening claims with absolute terms are prohibited.",
+      "message": "禁止误导性FDA相关声称，如\"FDA批准\"、\"FDA认证\"、\"药品级\"等。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -140,7 +144,7 @@
       ],
       "severity": "info",
       "condition": "需真实有效测试报告",
-      "message": "Hair growth claims are prohibited in cosmetics.",
+      "message": "皮肤科医生测试声称需要真实有效的测试报告支撑。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -156,7 +160,7 @@
       ],
       "severity": "warning",
       "condition": "需有临床测试支持",
-      "message": "Weight loss claims are prohibited in cosmetics.",
+      "message": "低致敏声称需要临床测试支持，禁止无证据使用\"低致敏\"、\"无过敏\"等。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -172,7 +176,7 @@
       ],
       "severity": "info",
       "condition": "需有证明文件",
-      "message": "Breast enhancement claims are prohibited in cosmetics.",
+      "message": "无残忍测试声称需要有效的证明文件支撑。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -180,18 +184,20 @@
       "category": "claim",
       "target": "治愈/根治",
       "aliases": [
-        "Cure",
-        "Curar",
-        "治愈",
+        "完全 根除",
+        "彻底解决",
+        "彻底 解决",
         "根治",
         "elimina por completo",
-        "完全根除",
         "resuelve definitivamente",
-        "彻底解决"
+        "Curar",
+        "治愈",
+        "完全根除",
+        "Cure"
       ],
       "severity": "critical",
       "condition": "禁止任何治愈宣称",
-      "message": "Absolute efficacy claims like 'permanent', 'instant', 'guaranteed' are prohibited.",
+      "message": "化妆品不得声称治愈、治疗或预防疾病，禁止使用\"治愈\"、\"根治\"、\"彻底解决\"等术语。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -210,7 +216,7 @@
       ],
       "severity": "critical",
       "condition": "禁止宣称去除脂肪团",
-      "message": "Medical device claims are prohibited for cosmetics.",
+      "message": "禁止声称去除脂肪团，如\"燃脂\"、\"脂肪燃烧\"、\"完全消除橘皮\"等。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -229,7 +235,7 @@
       ],
       "severity": "critical",
       "condition": "禁止任何丰乳宣称",
-      "message": "Comparative claims must be factual and verifiable.",
+      "message": "丰胸声称对化妆品是禁止的，需要药品注册。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -237,21 +243,23 @@
       "category": "claim",
       "target": "永久/彻底根治",
       "aliases": [
-        "permanente",
-        "永久",
-        "definitivo",
-        "彻底",
-        "根治",
         "eliminar permanentemente",
-        "永久消除",
-        "para siempre",
-        "永远",
         "resultados duraderos garantizados",
-        "保证持久效果"
+        "永久 消除",
+        "彻底",
+        "para siempre",
+        "根治",
+        "永久",
+        "保证持久效果",
+        "permanente",
+        "永久消除",
+        "definitivo",
+        "保证 持久 效果",
+        "永远"
       ],
       "severity": "critical",
       "condition": "禁止绝对化永久功效宣称",
-      "message": "Tested on animals claims are prohibited.",
+      "message": "禁止绝对化永久功效声称，如\"永久\"、\"彻底\"、\"根治\"、\"永远\"、\"保证持久效果\"等。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -259,22 +267,27 @@
       "category": "claim",
       "target": "快速见效/7天",
       "aliases": [
+        "100% efectivo",
+        "instantáneamente",
         "7 días",
-        "7天",
-        "ultra rápido",
+        "7 天",
         "超快速",
-        "resultados inmediatos",
+        "100% 有效",
+        "保证 结果",
         "结果立竿见影",
         "garantizado",
+        "7 dias",
+        "resultados inmediatos",
+        "ultra rápido",
+        "即刻见效",
+        "7天",
         "保证结果",
-        "100% efectivo",
         "100%有效",
-        "instantáneamente",
-        "即刻见效"
+        "7 days"
       ],
       "severity": "critical",
       "condition": "禁止承诺具体时效和绝对效果",
-      "message": "Clinical trial claims require proper documentation.",
+      "message": "禁止承诺具体时效和绝对效果，如\"7天见效\"、\"100%有效\"、\"立即见效\"、\"保证结果\"等。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -282,21 +295,22 @@
       "category": "claim",
       "target": "医疗级/医学配方",
       "aliases": [
-        "fórmula médica",
         "医学配方",
+        "医疗 级",
+        "fórmula médica",
         "医疗级",
-        "grado médico",
-        "medical grade",
-        "fórmula exclusiva",
-        "独家配方",
         "clínica",
         "临床级",
-        "tratamiento profesional",
-        "专业治疗"
+        "专业治疗",
+        "独家配方",
+        "medical grade",
+        "fórmula exclusiva",
+        "grado médico",
+        "tratamiento profesional"
       ],
       "severity": "critical",
       "condition": "禁止医疗化宣称",
-      "message": "Absolute safety claims like 'no side effects' are prohibited.",
+      "message": "禁止医疗化声称，如\"医疗级\"、\"医学配方\"、\"临床级\"、\"专业治疗\"等。化妆品不得模仿药品营销。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -321,7 +335,7 @@
       ],
       "severity": "critical",
       "condition": "特殊人群需特殊审批",
-      "message": "Sunscreen water resistance claims must follow COFEPRIS guidelines.",
+      "message": "特殊人群（婴儿、孕妇、儿童、新生儿）声称需要特殊审批和标签警示。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -329,23 +343,25 @@
       "category": "claim",
       "target": "彻底祛斑/美白",
       "aliases": [
-        "elimina todas las manchas",
-        "消除所有斑点",
+        "完全消除黑色素",
+        "永久美白",
+        "完全 消除 黑色素",
         "mejor que",
-        "优于",
-        "único",
-        "唯一有效",
+        "blanqueamiento permanente",
         "独家",
+        "唯一有效",
+        "elimina melanina completamente",
+        "elimina todas las manchas",
+        "único",
         "piel blanca para siempre",
         "让皮肤永远变白",
-        "blanqueamiento permanente",
-        "永久美白",
-        "elimina melanina completamente",
-        "完全消除黑色素"
+        "优于",
+        "让皮肤 永远 变白",
+        "消除所有斑点"
       ],
       "severity": "critical",
       "condition": "禁止绝对化美白宣称",
-      "message": "Organic certification claims require valid certification.",
+      "message": "禁止绝对化美白声称，如\"消除所有斑点\"、\"唯一有效\"、\"永久美白\"、\"完全消除黑色素\"等。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -364,7 +380,7 @@
       ],
       "severity": "critical",
       "condition": "禁止防脱发/生发宣称",
-      "message": "Hypoallergenic claims require clinical testing.",
+      "message": "防脱发/生发声称对化妆品是禁止的，需要药品注册。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -383,7 +399,7 @@
       ],
       "severity": "warning",
       "condition": "禁止无依据的排毒宣称",
-      "message": "Dermatologist recommendation claims require documentation.",
+      "message": "禁止无依据的排毒/净化绝对化声称，如\"完全清除毒素\"、\"深层净化\"等。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -402,7 +418,7 @@
       ],
       "severity": "info",
       "condition": "禁止价格绝对化宣称",
-      "message": "Age-specific claims must be verified.",
+      "message": "禁止价格绝对化声称，如\"最优价格\"、\"最低价格\"、\"独家优惠\"等。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -421,7 +437,7 @@
       ],
       "severity": "critical",
       "condition": "禁止细胞再生等医疗级修复宣称",
-      "message": "Acne treatment claims require medicine registration.",
+      "message": "禁止细胞再生/修复等医疗级声称，如\"细胞再生\"、\"修复组织\"、\"完全焕新皮肤\"等。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     },
     {
@@ -440,7 +456,7 @@
       ],
       "severity": "warning",
       "condition": "禁止对比贬低竞品",
-      "message": "Cell renewal claims require scientific evidence.",
+      "message": "禁止对比/贬低竞品声称，如\"优于竞争对手\"、\"市场上无与伦比\"、\"超越所有其他产品\"等。",
       "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
     }
   ]

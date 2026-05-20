@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { checkCompliance } from '@/lib/engine'
+import { checkCompliance, initRules } from '@/lib/engine'
 import { checkQuotaMiddleware, incrementQuota } from '@/lib/quota'
 
 import { translateCheckResult } from '@/lib/regulation-messages'
@@ -8,6 +8,9 @@ export const runtime = 'edge'
 
 export async function POST(request: NextRequest) {
   try {
+    // Ensure rules are loaded before processing
+    await initRules()
+
     // Check quota
     const { allowed, response } = checkQuotaMiddleware(request)
     if (!allowed) {

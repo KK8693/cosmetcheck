@@ -107,8 +107,8 @@ const enRegulations: RegulationDictionary = {
     suggestion: 'Remove hydroquinone. Use alternative brightening agents like alpha-arbutin.',
   },
   'MX-ING-004': {
-    message: 'Formaldehyde is prohibited in cosmetics except as preservative trace.',
-    suggestion: 'Ensure formaldehyde concentration is below 0.2% or remove entirely.',
+    message: 'Corticosteroids are prohibited in cosmetic products.',
+    suggestion: 'Remove corticosteroids - product must be registered as medicine.',
   },
   'MX-ING-005': {
     message: 'Formaldehyde releasers are restricted. Maximum 0.2% formaldehyde release.',
@@ -211,16 +211,171 @@ const zhRegulations: RegulationDictionary = {
     suggestion: '去除氢醌。使用替代美白成分如 α-熊果苷。',
   },
   'MX-ING-004': {
-    message: '甲醛禁止用于化妆品，除非作为防腐剂痕迹。',
-    suggestion: '确保甲醛浓度低于 0.2%，或完全去除。',
+    message: '皮质类固醇（Corticosteroids）属于激素类药物，禁止添加到化妆品中。',
+    suggestion: '去除皮质类固醇。产品必须按药品向COFEPRIS注册。',
   },
   'MX-ING-005': {
     message: '甲醛释放体受限制。最大 0.2% 甲醛释放量。',
     suggestion: '确保甲醛释放不超过 0.2%。使用替代防腐剂。',
   },
+
+  // === Mexico Banned Ingredients ===
+  'MX-BAN-001': {
+    message: '汞（Mercury）是重金属，禁止用于化妆品。',
+    suggestion: '从配方中去除汞化合物。',
+  },
+  'MX-BAN-002': {
+    message: '所有汞化合物（如氯化汞、氧化汞）均禁止用于化妆品。',
+    suggestion: '从配方中去除所有汞化合物。',
+  },
+  'MX-BAN-003': {
+    message: '铅（Lead）是重金属，禁止用于化妆品。',
+    suggestion: '从配方中去除铅及其化合物。',
+  },
+  'MX-BAN-004': {
+    message: '砷（Arsenic）是重金属，禁止用于化妆品。',
+    suggestion: '从配方中去除砷及其化合物。',
+  },
+  'MX-BAN-005': {
+    message: '镉（Cadmium）是重金属，禁止用于化妆品。',
+    suggestion: '从配方中去除镉及其化合物。',
+  },
+  'MX-BAN-006': {
+    message: '氢醌（Hydroquinone）禁止用于化妆品美白（NOM-141-SSA1/SCF1-2012）。',
+    suggestion: '去除氢醌。使用替代美白成分如 α-熊果苷。',
+  },
+  'MX-BAN-007': {
+    message: '维A酸（Tretinoin）属于药品级成分，禁止用于化妆品。',
+    suggestion: '去除维A酸。若使用，产品必须按药品向COFEPRIS注册。',
+  },
+  'MX-BAN-008': {
+    message: '视黄酸（Retinoic Acid）属于药品级成分，禁止用于化妆品。',
+    suggestion: '去除视黄酸。若使用，产品必须按药品向COFEPRIS注册。',
+  },
+  'MX-BAN-009': {
+    message: '六氯酚（Hexachlorophene）禁止用于化妆品。',
+    suggestion: '从配方中去除六氯酚。',
+  },
+  'MX-BAN-010': {
+    message: '硫双二氯酚（Bithionol）禁止用于化妆品。',
+    suggestion: '从配方中去除硫双二氯酚。',
+  },
+  'MX-BAN-011': {
+    message: '氯二甲苯酚（Cloroxylenol/PCMX）禁止用于化妆品。',
+    suggestion: '从配方中去除氯二甲苯酚。',
+  },
+  'MX-BAN-012': {
+    message: '对苯二酚甲醚（Mequinol）禁止用于化妆品。',
+    suggestion: '从配方中去除对苯二酚甲醚。',
+  },
+  'MX-BAN-013': {
+    message: '皮质类固醇（Corticosteroids）属于激素类药物，禁止添加到化妆品中。',
+    suggestion: '去除皮质类固醇。产品必须按药品向COFEPRIS注册。',
+  },
+  'MX-BAN-014': {
+    message: '氢化可的松（Hydrocortisone）属于皮质类固醇，禁止用于化妆品。',
+    suggestion: '去除氢化可的松。产品必须按药品向COFEPRIS注册。',
+  },
+  'MX-BAN-015': {
+    message: '倍他米松（Betamethasone）属于皮质类固醇，禁止用于化妆品。',
+    suggestion: '去除倍他米松。产品必须按药品向COFEPRIS注册。',
+  },
+  'MX-BAN-016': {
+    message: '氯霉素（Chloramphenicol）是抗生素，禁止用于化妆品。',
+    suggestion: '从配方中去除氯霉素。',
+  },
+  'MX-BAN-017': {
+    message: '维A酸类（Retinoids）属于药品级成分，化妆品中禁止使用。',
+    suggestion: '去除维A酸类成分。若使用，产品必须按药品向COFEPRIS注册。',
+  },
+  // === Mexico Claims ===
   'MX-CLAIM-001': {
-    message: '化妆品不得声称治疗、治愈或预防疾病。',
-    suggestion: '仅使用化妆品宣称（保湿、清洁、美化、香氛、防护）。',
+    message: '化妆品不得声称治愈、治疗或预防疾病。',
+    suggestion: '仅使用化妆品声称（保湿、清洁、美化、香氛、防护）。',
+  },
+  'MX-CLAIM-002': {
+    message: '禁止使用"百分百天然"、"无化学成分"、"有机"等绝对化无添加/纯天然声称，需要科学证据支撑。',
+    suggestion: '去除绝对化用语，或提供有效认证。',
+  },
+  'MX-CLAIM-003': {
+    message: '防晒产品必须标示SPF值和UVA/UVB防护。禁止"完全防护"、"无需补涂"等绝对化声称。',
+    suggestion: '标示SPF值和UVA/UVB标签。避免绝对防护声称。',
+  },
+  'MX-CLAIM-004': {
+    message: '禁止无依据的安全绝对化声称，如"零风险"、"绝不致敏"、"人人安全"等。',
+    suggestion: '使用"经过皮肤兼容性测试"等有据声称。',
+  },
+  'MX-CLAIM-005': {
+    message: '抗衰老声称需要科学证据支撑，禁止"完全消除皱纹"、"停止衰老"、"年轻10岁"等绝对化声称。',
+    suggestion: '使用"有助于改善皮肤外观"等合规声称。',
+  },
+  'MX-CLAIM-006': {
+    message: '禁止误导性FDA相关声称，如"FDA批准"、"FDA认证"、"药品级"等。',
+    suggestion: '去除FDA相关声称。使用产品功效声称。',
+  },
+  'MX-CLAIM-007': {
+    message: '皮肤科医生测试声称需要真实有效的测试报告支撑。',
+    suggestion: '确保拥有真实有效的皮肤科测试报告。',
+  },
+  'MX-CLAIM-008': {
+    message: '低致敏声称需要临床测试支持，禁止无证据使用"低致敏"、"无过敏"等。',
+    suggestion: '提供低致敏性临床测试证明。',
+  },
+  'MX-CLAIM-009': {
+    message: '无残忍测试声称需要有效的证明文件支撑。',
+    suggestion: '确保拥有有效的无残忍测试证明。',
+  },
+  'MX-CLAIM-010': {
+    message: '化妆品不得声称治愈、治疗或预防疾病，禁止使用"治愈"、"根治"、"彻底解决"等术语。',
+    suggestion: '去除治愈/治疗声称。仅使用化妆品声称。',
+  },
+  'MX-CLAIM-011': {
+    message: '禁止声称去除脂肪团，如"燃脂"、"脂肪燃烧"、"完全消除橘皮"等。',
+    suggestion: '去除脂肪团去除声称。使用"有助于改善皮肤外观"。',
+  },
+  'MX-CLAIM-012': {
+    message: '丰胸声称对化妆品是禁止的，需要药品注册。',
+    suggestion: '去除丰胸声称。仅使用身体护理化妆品声称。',
+  },
+  'MX-CLAIM-013': {
+    message: '禁止绝对化永久功效声称，如"永久"、"彻底"、"根治"、"永远"、"保证持久效果"等。',
+    suggestion: '去除永久/彻底声称。使用"有助于维护"或"持久保养"。',
+  },
+  'MX-CLAIM-014': {
+    message: '禁止承诺具体时效和绝对效果，如"7天见效"、"100%有效"、"立即见效"、"保证结果"等。',
+    suggestion: '去除固定时间声称。使用"坚持使用"、"逐渐改善"。',
+  },
+  'MX-CLAIM-015': {
+    message: '禁止医疗化声称，如"医疗级"、"医学配方"、"临床级"、"专业治疗"等。化妆品不得模仿药品营销。',
+    suggestion: '去除医疗/临床术语。使用"精心研发"、"优质配方"。',
+  },
+  'MX-CLAIM-016': {
+    message: '特殊人群（婴儿、孕妇、儿童、新生儿）声称需要特殊审批和标签警示。',
+    suggestion: '获得婴儿产品注册，或去除婴儿/孕妇声称。',
+  },
+  'MX-CLAIM-017': {
+    message: '禁止绝对化美白声称，如"消除所有斑点"、"唯一有效"、"永久美白"、"完全消除黑色素"等。',
+    suggestion: '替换为合规声称："帮助提亮肤色"、"均匀肤色"。',
+  },
+  'MX-CLAIM-018': {
+    message: '防脱发/生发声称对化妆品是禁止的，需要药品注册。',
+    suggestion: '去除防脱发/生发声称。仅使用护发化妆品声称。',
+  },
+  'MX-CLAIM-019': {
+    message: '禁止无依据的排毒/净化绝对化声称，如"完全清除毒素"、"深层净化"等。',
+    suggestion: '去除排毒/净化绝对化声称。使用"清洁皮肤"。',
+  },
+  'MX-CLAIM-020': {
+    message: '禁止价格绝对化声称，如"最优价格"、"最低价格"、"独家优惠"等。',
+    suggestion: '去除价格绝对化声称。使用市场价格描述。',
+  },
+  'MX-CLAIM-021': {
+    message: '禁止细胞再生/修复等医疗级声称，如"细胞再生"、"修复组织"、"完全焕新皮肤"等。',
+    suggestion: '去除细胞再生/修复声称。使用"滋润皮肤"。',
+  },
+  'MX-CLAIM-022': {
+    message: '禁止对比/贬低竞品声称，如"优于竞争对手"、"市场上无与伦比"、"超越所有其他产品"等。',
+    suggestion: '去除对比/贬低竞品声称。使用产品特点描述。',
   },
 }
 
@@ -315,8 +470,8 @@ const ptRegulations: RegulationDictionary = {
     suggestion: 'Remova hidroquinona. Use agentes clareadores alternativos como alfa-arbutina.',
   },
   'MX-ING-004': {
-    message: 'Formaldeído é proibido em cosméticos, exceto como traço de conservante.',
-    suggestion: 'Garanta concentração de formaldeído abaixo de 0,2% ou remova completamente.',
+    message: 'Corticosteroides são proibidos em produtos cosméticos.',
+    suggestion: 'Remova corticosteroides - o produto deve ser registrado como medicamento.',
   },
   'MX-ING-005': {
     message: 'Liberadores de formaldeído são restritos. Máximo de 0,2% de liberação de formaldeído.',
