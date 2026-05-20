@@ -628,7 +628,7 @@
     },
     "cookie-policy": {
       "title": "Cookie 政策",
-      "lastUpdated": "最后更新日期：2025年5月12日",
+      "lastUpdated": "最后更新日期：2026年5月20日",
       "s1": "<h2 className=\"text-2xl font-bold text-black mb-4\">1. 什么是 Cookie</h2><p className=\"text-black leading-relaxed\"> Cookie 是您访问网站时存储在设备上的小型文本文件。它们帮助网站正常运行，并为网站所有者提供分析数据。 </p>",
       "s2": "<h2 className=\"text-2xl font-bold text-black mb-4\">2. 我们使用的 Cookie</h2><h3 className=\"text-lg font-semibold text-black mb-3\">必要 Cookie</h3><div className=\"overflow-x-auto mb-6\"><table className=\"w-full text-sm text-left\"><thead className=\"bg-gray-50\"><tr><th className=\"px-4 py-2\">Cookie 名称</th><th className=\"px-4 py-2\">用途</th><th className=\"px-4 py-2\">持续时间</th></tr></thead><tbody><tr className=\"border-b\"><td className=\"px-4 py-2\">supabase-auth-token</td><td className=\"px-4 py-2\">保持登录状态</td><td className=\"px-4 py-2\">会话期间</td></tr><tr className=\"border-b\"><td className=\"px-4 py-2\">__cf_bm</td><td className=\"px-4 py-2\">Cloudflare 机器人管理</td><td className=\"px-4 py-2\">30 分钟</td></tr></tbody></table></div><h3 className=\"text-lg font-semibold text-black mb-3\">分析 Cookie</h3><p className=\"text-black leading-relaxed mb-4\"> 目前，我们<strong>不使用</strong>分析 Cookie（Google Analytics、Plausible 等）。如果将来添加分析功能，我们将更新本政策并征求您的同意。 </p>",
       "s3": "<h2 className=\"text-2xl font-bold text-black mb-4\">3. 第三方 Cookie</h2><p className=\"text-black leading-relaxed mb-4\"> 当您使用我们的服务时，以下第三方可能会设置 Cookie： </p><ul className=\"list-disc list-inside text-black space-y-2\"><li><strong>Stripe</strong> - 支付安全和欺诈预防</li><li><strong>Supabase</strong> - 身份验证和会话管理</li><li><strong>Cloudflare</strong> - 安全和性能</li></ul>",
