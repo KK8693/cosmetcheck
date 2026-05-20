@@ -5,7 +5,7 @@ import ptBRMessages from '../../messages/pt-BR.json'
 import esMXMessages from '../../messages/es-MX.json'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const messagesMap: Record<string, any> = {
+export const messagesMap: Record<string, any> = {
   zh: zhMessages,
   en: enMessages,
   'pt-BR': ptBRMessages,
