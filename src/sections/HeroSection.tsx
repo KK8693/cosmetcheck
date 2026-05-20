@@ -49,6 +49,56 @@ const categoryLabels: Record<string, string> = {
   packaging: '包装违规',
 }
 
+function HighlightText({ text, matchedText }: { text: string; matchedText: string }) {
+  if (!text || !matchedText) return <span>{text}</span>
+  const lowerText = text.toLowerCase()
+  const lowerMatch = matchedText.toLowerCase()
+  const idx = lowerText.indexOf(lowerMatch)
+  if (idx === -1) return <span>{text}</span>
+  return (
+    <span>
+      {text.slice(0, idx)}
+      <mark className="bg-yellow-200 rounded px-0.5 font-semibold text-yellow-900">{text.slice(idx, idx + matchedText.length)}</mark>
+      {text.slice(idx + matchedText.length)}
+    </span>
+  )
+}
+
+function SourceHighlight({ violation, ingredients, productBenefits, productName }: {
+  violation: ViolationItem
+  ingredients: string
+  productBenefits: string
+  productName: string
+}) {
+  const fields = violation.allSourceFields?.length ? violation.allSourceFields : [violation.sourceField].filter(Boolean)
+  if (!fields || fields.length === 0) return null
+  
+  const sourceMap: Record<string, string> = {
+    ingredients,
+    description: productBenefits,
+    label: '',
+  }
+  
+  return (
+    <div className="mt-2 space-y-1">
+      {fields.map(field => {
+        const sourceText = sourceMap[field as string] || (field === 'description' ? productBenefits : '')
+        if (!sourceText || !violation.matchedText) return null
+        return (
+          <div key={field} className="text-xs bg-gray-100 rounded p-2">
+            <span className="font-medium text-gray-500 uppercase text-[10px]">
+              {field === 'ingredients' ? '成分表' : field === 'description' ? '产品描述' : field === 'label' ? '产品标签' : field}
+            </span>
+            <p className="text-gray-700 mt-0.5">
+              <HighlightText text={sourceText} matchedText={violation.matchedText} />
+            </p>
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
 function groupByCategory(items: ViolationItem[]): [string, ViolationItem[]][] {
   const groups = new Map<string, ViolationItem[]>()
   for (const item of items) {
@@ -180,6 +230,7 @@ export function HeroSection() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          productName,
           ingredients,
           description: productBenefits,
           country,
@@ -507,13 +558,21 @@ export function HeroSection() {
                         <h5 className="text-xs font-medium text-red-500/70 uppercase tracking-wide">{categoryLabels[category] || category}</h5>
                         {items.map((v, i) => (
                           <div key={i} className="bg-red-50 rounded-lg p-3 text-sm">
-                            <p className="font-medium text-red-700">{v.message}</p>
+                            <div className="flex items-start justify-between gap-2">
+                              <p className="font-medium text-red-700 flex-1">{v.message}</p>
+                              {v.matchedText && (
+                                <span className="shrink-0 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-red-100 text-red-700 border border-red-200">
+                                  {v.matchedText}
+                                </span>
+                              )}
+                            </div>
                             <p className="text-red-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
                             {(v.sourceField || (v.allSourceFields && v.allSourceFields.length > 0)) && (
                               <p className="text-red-500/60 text-xs mt-1">
                                 来源字段{formatSourceFields(v.allSourceFields || [v.sourceField!])}
                               </p>
                             )}
+                            <SourceHighlight violation={v} ingredients={ingredients} productBenefits={productBenefits} productName={productName} />
                           </div>
                         ))}
                       </div>
@@ -529,13 +588,21 @@ export function HeroSection() {
                         <h5 className="text-xs font-medium text-amber-500/70 uppercase tracking-wide">{categoryLabels[category] || category}</h5>
                         {items.map((v, i) => (
                           <div key={i} className="bg-amber-50 rounded-lg p-3 text-sm">
-                            <p className="font-medium text-amber-700">{v.message}</p>
+                            <div className="flex items-start justify-between gap-2">
+                              <p className="font-medium text-amber-700 flex-1">{v.message}</p>
+                              {v.matchedText && (
+                                <span className="shrink-0 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700 border border-amber-200">
+                                  {v.matchedText}
+                                </span>
+                              )}
+                            </div>
                             <p className="text-amber-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
                             {(v.sourceField || (v.allSourceFields && v.allSourceFields.length > 0)) && (
                               <p className="text-amber-500/60 text-xs mt-1">
                                 来源字段{formatSourceFields(v.allSourceFields || [v.sourceField!])}
                               </p>
                             )}
+                            <SourceHighlight violation={v} ingredients={ingredients} productBenefits={productBenefits} productName={productName} />
                           </div>
                         ))}
                       </div>
@@ -551,13 +618,21 @@ export function HeroSection() {
                         <h5 className="text-xs font-medium text-blue-500/70 uppercase tracking-wide">{categoryLabels[category] || category}</h5>
                         {items.map((v, i) => (
                           <div key={i} className="bg-blue-50 rounded-lg p-3 text-sm">
-                            <p className="font-medium text-blue-700">{v.message}</p>
+                            <div className="flex items-start justify-between gap-2">
+                              <p className="font-medium text-blue-700 flex-1">{v.message}</p>
+                              {v.matchedText && (
+                                <span className="shrink-0 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700 border border-blue-200">
+                                  {v.matchedText}
+                                </span>
+                              )}
+                            </div>
                             <p className="text-blue-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
                             {(v.sourceField || (v.allSourceFields && v.allSourceFields.length > 0)) && (
                               <p className="text-blue-500/60 text-xs mt-1">
                                 来源字段{formatSourceFields(v.allSourceFields || [v.sourceField!])}
                               </p>
                             )}
+                            <SourceHighlight violation={v} ingredients={ingredients} productBenefits={productBenefits} productName={productName} />
                           </div>
                         ))}
                       </div>
