@@ -1178,8 +1178,8 @@ function generateContextSnippet(
     }
   }
 
-  // \u5982\u679c\u53e5\u5b50\u8d85\u8fc7 200 \u5b57\u7b26\uff0c\u9000\u56de\u5230\u56fa\u5b9a\u4e0a\u4e0b\u6587\u957f\u5ea6
-  if (snippetEnd - snippetStart > 200) {
+  // \u5982\u679c\u53e5\u5b50\u8d85\u8fc7 150 \u5b57\u7b26\uff0c\u9000\u56de\u5230\u56fa\u5b9a\u4e0a\u4e0b\u6587\u957f\u5ea6
+  if (snippetEnd - snippetStart > 150) {
     const ctxLen = 50
     const fixedStart = Math.max(0, matchStart - ctxLen)
     const fixedEnd = Math.min(text.length, matchEnd + ctxLen)
@@ -1190,10 +1190,12 @@ function generateContextSnippet(
     return snippet
   }
 
-  const sentence = text.substring(snippetStart, snippetEnd).trim()
-  const relativeStart = matchStart - snippetStart
+  const sentence = text.substring(snippetStart, snippetEnd)
+  const leadingTrimmed = sentence.length - sentence.trimStart().length
+  const sentenceTrimmed = sentence.trim()
+  const relativeStart = matchStart - snippetStart - leadingTrimmed
 
-  return sentence.substring(0, relativeStart) + '\u3010' + matchText + '\u3011' + sentence.substring(relativeStart + matchText.length)
+  return sentenceTrimmed.substring(0, relativeStart) + '\u3010' + matchText + '\u3011' + sentenceTrimmed.substring(relativeStart + matchText.length)
 }
 
 // 检查匹配位置是否为词边界（避免子字符串误匹配，如 "lead" 匹配 "sunflower"）
@@ -1307,6 +1309,18 @@ function calculateConfidence(
       'remove', 'removes', 'removing', 'removed', 'completely removes',
       'radically', 'radical',
       'zero irritation', 'zero-irritation',
+      // \u8461\u8404\u7259\u8bed
+      'grau m\u00e9dico', 'grau-medico', 'grau medico',
+      'f\u00f3rmula cl\u00ednica', 'f\u00f3rmula m\u00e9dica',
+      'n\u00edvel cl\u00ednico', 'n\u00edvel m\u00e9dico',
+      'definitivamente', 'completamente', 'totalmente', 'para sempre',
+      '7 dias', '7-dias', '7dias', 'em 7 dias', 'em 3 dias',
+      'sem efeitos colaterais', 'sem efeitos secund\u00e1rios',
+      'zero efeitos colaterais', 'zero efeitos secund\u00e1rios',
+      'efeitos colaterais',
+      'f\u00f3rmula suave', 'seguro para gestantes',
+      'cura definitivamente', 'cura completamente', 'cura totalmente',
+      'branqueamento', 'clareamento total', 'clareamento completo',
     ]
     if (absolutePatterns.some(p => matchedText.toLowerCase().includes(p.toLowerCase()))) {
       return 'high'
@@ -1416,25 +1430,33 @@ function findMatches(
       const match = findWordBoundaryMatch(lowerText, candidate.text)
       if (!match) continue
 
-      // ── 负向过滤：排除植物激素误报 ──
-      // 当规则 category 为 'ingredient' 且 keyword 包含 "corticosteroid" 时
-      // 如果匹配文本本身以 "植物"/"vegetal"/"phyto" 等前缀开头，或前面紧邻这些词，则跳过该匹配
+      // \u2014\u2014 \u8d1f\u5411\u8fc7\u6ee4\uff1a\u6392\u9664\u690d\u7269\u6fc0\u7d20\u8bef\u62a5 \u2014\u2014
+      // \u5f53\u89c4\u5219 category \u4e3a 'ingredient' \u4e14 keyword \u5305\u542b "corticosteroid" \u65f6
+      // \u5982\u679c\u5339\u914d\u6587\u672c\u672c\u8eab\u4ee5 "\u690d\u7269"/"vegetal"/"phyto" \u7b49\u524d\u7f00\u5f00\u5934\uff0c\u6216\u524d\u540e\u7d27\u90bb\u8fd9\u4e9b\u8bcd\uff0c\u5219\u8df3\u8fc7\u8be5\u5339\u914d
       if (rule.category === 'ingredient' && 
-          (rule.keyword.includes('corticosteroid') || rule.keyword.includes('激素'))) {
-      // 获取匹配位置之前的上下文（不包含匹配文本本身）
-        const contextBefore = lowerText.substring(Math.max(0, match.index - 15), match.index)
-        // 检查是否包含植物激素相关的负向关键词（作为独立词或紧邻）
-        const negativePrefixes = ['植物', 'vegetal', 'phyto', 'hormônio vegetal', 'hormona vegetal', 'extracto de hormona vegetal', 'extrato de hormônio vegetal']
+          (rule.keyword.includes('corticosteroid') || rule.keyword.includes('\u6fc0\u7d20'))) {
+        // \u83b7\u53d6\u5339\u914d\u4f4d\u7f6e\u524d\u540e\u7684\u4e0a\u4e0b\u6587
+        const contextBefore = lowerText.substring(Math.max(0, match.index - 20), match.index)
+        const contextAfter = lowerText.substring(match.index + match.length, Math.min(lowerText.length, match.index + match.length + 20))
+        const negativePrefixes = ['\u690d\u7269', 'vegetal', 'phyto', 'plant', 'extracto de', 'extrato de', 'de horm\u00f4nio', 'de hormona']
+        const negativeSuffixes = ['vegetal', 'hormona vegetal', 'horm\u00f4nio vegetal', 'de origem vegetal']
         let shouldSkip = false
         for (const prefix of negativePrefixes) {
-          // 只检查匹配位置之前的上下文
           if (contextBefore.includes(prefix)) {
             shouldSkip = true
             break
           }
         }
+        if (!shouldSkip) {
+          for (const suffix of negativeSuffixes) {
+            if (contextAfter.includes(suffix)) {
+              shouldSkip = true
+              break
+            }
+          }
+        }
         if (shouldSkip) {
-          continue // 跳过本次匹配，继续尝试下一个候选
+          continue // \u8df3\u8fc7\u672c\u6b21\u5339\u914d\uff0c\u7ee7\u7eed\u5c1d\u8bd5\u4e0b\u4e00\u4e2a\u5019\u9009
         }
       }
 
