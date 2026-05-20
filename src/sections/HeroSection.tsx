@@ -23,6 +23,7 @@ interface ViolationItem {
   contextSnippet?: string
   sourceField?: string
   allSourceFields?: string[]
+  confidence?: 'high' | 'medium' | 'low'
 }
 
 interface CheckResult {
@@ -96,6 +97,22 @@ function SourceHighlight({ violation, ingredients, productBenefits, productName 
         )
       })}
     </div>
+  )
+}
+
+function ConfidenceBadge({ confidence }: { confidence?: 'high' | 'medium' | 'low' }) {
+  if (!confidence) return null
+  const configs = {
+    high: { label: '确定性违规', color: 'text-red-600', bg: 'bg-red-50', dot: '●' },
+    medium: { label: '需复核', color: 'text-amber-600', bg: 'bg-amber-50', dot: '◐' },
+    low: { label: '推测性违规', color: 'text-gray-500', bg: 'bg-gray-50', dot: '○' },
+  }
+  const cfg = configs[confidence]
+  return (
+    <span className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-medium ${cfg.bg} ${cfg.color}`}>
+      <span>{cfg.dot}</span>
+      {cfg.label}
+    </span>
   )
 }
 
@@ -560,11 +577,14 @@ export function HeroSection() {
                           <div key={i} className="bg-red-50 rounded-lg p-3 text-sm">
                             <div className="flex items-start justify-between gap-2">
                               <p className="font-medium text-red-700 flex-1">{v.message}</p>
-                              {v.matchedText && (
-                                <span className="shrink-0 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-red-100 text-red-700 border border-red-200">
-                                  {v.matchedText}
-                                </span>
-                              )}
+                              <div className="shrink-0 flex items-center gap-1">
+                                <ConfidenceBadge confidence={v.confidence} />
+                                {v.matchedText && (
+                                  <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-red-100 text-red-700 border border-red-200">
+                                    {v.matchedText}
+                                  </span>
+                                )}
+                              </div>
                             </div>
                             <p className="text-red-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
                             {(v.sourceField || (v.allSourceFields && v.allSourceFields.length > 0)) && (
@@ -590,11 +610,14 @@ export function HeroSection() {
                           <div key={i} className="bg-amber-50 rounded-lg p-3 text-sm">
                             <div className="flex items-start justify-between gap-2">
                               <p className="font-medium text-amber-700 flex-1">{v.message}</p>
-                              {v.matchedText && (
-                                <span className="shrink-0 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700 border border-amber-200">
-                                  {v.matchedText}
-                                </span>
-                              )}
+                              <div className="shrink-0 flex items-center gap-1">
+                                <ConfidenceBadge confidence={v.confidence} />
+                                {v.matchedText && (
+                                  <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700 border border-amber-200">
+                                    {v.matchedText}
+                                  </span>
+                                )}
+                              </div>
                             </div>
                             <p className="text-amber-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
                             {(v.sourceField || (v.allSourceFields && v.allSourceFields.length > 0)) && (
@@ -620,11 +643,14 @@ export function HeroSection() {
                           <div key={i} className="bg-blue-50 rounded-lg p-3 text-sm">
                             <div className="flex items-start justify-between gap-2">
                               <p className="font-medium text-blue-700 flex-1">{v.message}</p>
-                              {v.matchedText && (
-                                <span className="shrink-0 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700 border border-blue-200">
-                                  {v.matchedText}
-                                </span>
-                              )}
+                              <div className="shrink-0 flex items-center gap-1">
+                                <ConfidenceBadge confidence={v.confidence} />
+                                {v.matchedText && (
+                                  <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700 border border-blue-200">
+                                    {v.matchedText}
+                                  </span>
+                                )}
+                              </div>
                             </div>
                             <p className="text-blue-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
                             {(v.sourceField || (v.allSourceFields && v.allSourceFields.length > 0)) && (

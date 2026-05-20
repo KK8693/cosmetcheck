@@ -47,6 +47,11 @@ export interface Violation {
   // 格式：['anti_aging_cream', 'eye_cream', 'neck_cream'] 等
   // 如果产品品类不在此列表中，该规则不会被触发
   applicableCategories?: string[]
+  // === 置信度标注（#8）===
+  // high: 文本直接命中，无需额外信息（如禁用成分、绝对化宣称）
+  // medium: 需要额外确认（如浓度限制、间接推断）
+  // low: 推测性命中，强烈建议人工复核
+  confidence?: 'high' | 'medium' | 'low'
 }
 
 export interface CheckResult {
@@ -1256,6 +1261,37 @@ function findWordBoundaryMatch(text: string, candidate: string): { index: number
   }
 }
 
+// ── 置信度计算（#8）──
+function calculateConfidence(
+  rule: Omit<Violation, 'matchedText' | 'position' | 'sourceField' | 'contextSnippet'>,
+  matchedText: string
+): 'high' | 'medium' | 'low' {
+  // 禁用成分：文本直接命中，high confidence
+  if (rule.category === 'ingredient' && rule.ruleType === 'prohibited') return 'high'
+  
+  // 限制成分（浓度依赖）：medium confidence（需要浓度数据才能确定）
+  if (rule.category === 'ingredient' && rule.ruleType === 'restricted') return 'medium'
+  
+  // 标签要求：high confidence（明确的法规要求）
+  if (rule.category === 'label') return 'high'
+  
+  // 宣称类：绝对化用语为 high，其他为 medium
+  if (rule.category === 'claim') {
+    const absolutePatterns = [
+      '永久', '彻底', '根治', '治愈', '100%', '保证', '医疗级',
+      '完全', '绝对', '永远', '7天', '3天', '立即', '立刻',
+      'permanent', 'completely', 'totally', '100%', 'guaranteed', 'medical grade',
+      'clinical grade', 'forever', 'always', 'immediate', 'instant'
+    ]
+    if (absolutePatterns.some(p => matchedText.toLowerCase().includes(p.toLowerCase()))) {
+      return 'high'
+    }
+    return 'medium'
+  }
+  
+  return 'medium'
+}
+
 function findMatches(
   text: string, 
   rules: Omit<Violation, 'matchedText' | 'position' | 'sourceField' | 'contextSnippet'>[],
@@ -1382,17 +1418,20 @@ function findMatches(
           },
           sourceField,
           contextSnippet: `成分族匹配: 识别到 ${candidate.familyTerm} 属于 ${rule.rootFamily} 成分族`,
+          confidence: calculateConfidence(rule, candidate.familyTerm!),
         })
       } else {
+        const matchedText = text.substring(match.index, match.index + match.length)
         violations.push({
           ...rule,
-          matchedText: text.substring(match.index, match.index + match.length),
+          matchedText,
           position: {
             start: match.index,
             end: match.index + match.length,
           },
           sourceField,
           contextSnippet: generateContextSnippet(text, match.index, match.index + match.length),
+          confidence: calculateConfidence(rule, matchedText),
         })
       }
       break // 只取最长的一个匹配
