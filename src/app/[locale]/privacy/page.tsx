@@ -26,11 +26,11 @@ export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-white">
       <div className="container-custom max-w-3xl py-20">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">
+        <h1 className="text-4xl font-bold text-black mb-8">
           {messages.legal.privacy.title}
         </h1>
         <p
-          className="text-gray-500 mb-12"
+          className="text-black mb-12"
           dangerouslySetInnerHTML={{
             __html: messages.legal.privacy.lastUpdated,
           }}
