@@ -25,7 +25,7 @@ export default function RefundPage() {
           }}
         />
 
-        <div className="prose max-w-none">
+        <div className="max-w-none">
           <div dangerouslySetInnerHTML={{ __html: messages.legal.refund.s1 }} />
           <div dangerouslySetInnerHTML={{ __html: messages.legal.refund.s2 }} />
           <div dangerouslySetInnerHTML={{ __html: messages.legal.refund.s3 }} />

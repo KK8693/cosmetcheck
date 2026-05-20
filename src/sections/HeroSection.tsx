@@ -135,8 +135,7 @@ export function HeroSection() {
     const idx = lowerText.indexOf(lowerMatch)
     if (idx === -1) return text
 
-    const sentenceDelimiters = /[.!?\u3002\uff01\uff1f\n]/
-
+    const sentenceDelimiters = /[.!?\u3002\uff01\uff1f\u000a]/
     // 向前找句子开头
     let start = 0
     for (let i = idx - 1; i >= 0; i--) {

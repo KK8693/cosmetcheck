@@ -1158,7 +1158,7 @@ function generateContextSnippet(
   matchEnd: number
 ): string {
   const matchText = text.substring(matchStart, matchEnd)
-  const sentenceDelimiters = /[.!?\u3002\uff01\uff1f\\n]/
+  const sentenceDelimiters = /[.!?\u3002\uff01\uff1f\u000a]/
 
   // \u5411\u524d\u627e\u53e5\u5b50\u5f00\u5934
   let snippetStart = 0
