@@ -296,39 +296,8 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     aliases: ['dermatologist tested', 'dermatologicamente testado', 'teste dermatológico'],
   },
   // === 补齐宣传违规检测 - 医疗级/孕妇/安全类绝对化 ===
-  {
-    ruleId: 'BR-CLAIM-011',
-    category: 'claim',
-    ruleType: 'prohibited',
-    keyword: 'medical grade',
-    severity: 'critical',
-    message: 'Cosmetics cannot claim "medical grade", "pharmaceutical grade", or imply drug-level standards.',
-    suggestion: 'Remove medical/pharmaceutical grade claims. Use "high quality" or "premium" instead.',
-    source: 'ANVISA RDC 529/2021',
-    aliases: ['medical grade', 'medical standard', 'medical level', '医疗级', '医用级', '医疗标准', 'grau médico', 'padrão médico', 'nível médico', 'grado médico', 'estándar médico', 'nivel médico', 'farmaceutical grade', 'pharmaceutical grade', 'grau farmacêutico', 'grado farmacéutico'],
-  },
-  {
-    ruleId: 'BR-CLAIM-012',
-    category: 'claim',
-    ruleType: 'prohibited',
-    keyword: 'pregnant women',
-    severity: 'critical',
-    message: 'Cosmetics cannot make claims specifically targeting pregnant women or imply safety for pregnancy without testing.',
-    suggestion: 'Remove pregnancy-specific claims. General safety claims require substantiation.',
-    source: 'ANVISA RDC 529/2021',
-    aliases: ['pregnant', 'pregnancy', 'expectant mother', 'gestante', 'grávida', 'mulher grávida', 'embarazada', 'mujer embarazada', 'gestante', '孕妇', '孕期', '准妈妈', '怀孕', '产妇', 'pregnant women', 'safe for pregnancy', 'seguro para gestantes', 'seguro durante el embarazo'],
-  },
-  {
-    ruleId: 'BR-CLAIM-013',
-    category: 'claim',
-    ruleType: 'prohibited',
-    keyword: '100% effective',
-    severity: 'warning',
-    message: 'Absolute effectiveness and safety claims (100% effective, no side effects, zero irritation, absolute safety) are prohibited without scientific proof.',
-    suggestion: 'Remove absolute claims. Use "clinically tested" or "suitable for most skin types" instead.',
-    source: 'ANVISA IN 26/2022',
-    aliases: ['100% effective', '100% efficacy', '100% results', '100% eficaz', '100% efetivo', '100% resultados', 'no side effects', 'zero side effects', 'no adverse effects', 'sem efeitos colaterais', 'zero efeitos colaterais', 'sem efeitos adversos', 'sin efectos secundarios', 'cero efectos secundarios', 'sin efectos adversos', 'zero irritation', 'no irritation', 'non-irritating', 'zero irritação', 'sem irritação', 'não irritante', 'cero irritación', 'sin irritación', 'no irritante', 'absolute safety', 'completely safe', '100% safe', 'segurança absoluta', 'completamente seguro', '100% seguro', 'seguridad absoluta', 'completamente seguro', '100% seguro', '绝对安全', '完全安全', '100%安全', '无副作用', '零副作用', '无不良反应', '零刺激', '无刺激', '不刺激', '100%效果', '百分之百效果', '百分百有效'],
-  },
+  // 注：BR-CLAIM-011/012/013 的硬编码规则已迁移至 brazil/claims.json 中的 BR-CLAIM-015/016/009
+  // 避免 ruleId 冲突导致 aliases 被覆盖或 applicableCategories 误杀
   {
     ruleId: 'BR-LBL-004',
     category: 'label',
