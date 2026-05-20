@@ -678,6 +678,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     message: 'Formaldehyde is prohibited in nail products and restricted in others.',
     suggestion: 'Ensure formaldehyde is not used as an ingredient.',
     aliases: ['甲醛', 'formaldeído', 'formaldehído', 'formalin', 'methanal', 'formol', '福尔马林', '蚁醛', 'methylene oxide'],
+    indirectAliases: ['Conservante potente', 'conservante potente', 'preservative agent', '强力防腐剂', '高效防腐剂'],
     source: 'COFEPRIS NOM-259-SSA1-2014',
   },
   {
