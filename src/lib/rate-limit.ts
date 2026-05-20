@@ -1,19 +1,11 @@
 /**
- * Token Bucket Rate Limiter - Edge Runtime Compatible
- * 
- * A lightweight rate limiter using the token bucket algorithm.
- * Works in Cloudflare Workers (Edge Runtime) without external dependencies.
- * 
- * Usage:
- *   import { checkRateLimit, createRateLimiter } from '@/lib/rate-limit'
- * 
- *   // Simple global limiter (30 requests/minute)
- *   checkRateLimit(identifier)
- * 
- *   // Custom limiter per endpoint
- *   const limiter = createRateLimiter({ rpm: 10, burst: 5 })
- *   limiter.check(userId)
+ * Token Bucket Rate Limiter - Edge Runtime Compatible with Supabase Persistence
+ *
+ * Uses Supabase for persistent state storage across serverless instances.
+ * Requires the migration: 20250520_fix_serverless_state.sql
  */
+
+import { createClient } from '@supabase/supabase-js'
 
 export interface RateLimitConfig {
   /** Requests per minute (RPM) */
@@ -31,17 +23,14 @@ export interface RateLimitResult {
   retryAfterMs?: number
 }
 
-interface TokenBucket {
-  tokens: number
-  lastRefill: number
-  maxTokens: number
+function getSupabaseAdmin() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SERVICE_KEY
+  if (!url || !key) {
+    throw new Error('Missing Supabase environment variables for rate limiting')
+  }
+  return createClient(url, key)
 }
-
-/**
- * Global rate limit store (in-memory, per-instance)
- * Note: In multi-instance部署, each instance has its own limit
- */
-const buckets = new Map<string, TokenBucket>()
 
 /**
  * Default configurations for different endpoints
@@ -62,24 +51,39 @@ export const RATE_LIMIT_CONFIGS = {
  */
 export function createRateLimiter(config: RateLimitConfig) {
   const { rpm, burst = Math.ceil(rpm / 6), windowMs = 60000 } = config
-  
+
   return {
-    check(identifier: string): RateLimitResult {
+    async check(identifier: string): Promise<RateLimitResult> {
       return checkTokenBucket(identifier, rpm, burst, windowMs)
     },
-    
+
     /**
      * Reset the rate limit for an identifier (useful for testing)
      */
-    reset(identifier: string): void {
-      buckets.delete(identifier)
+    async reset(identifier: string): Promise<void> {
+      try {
+        const supabase = getSupabaseAdmin()
+        await supabase.from('rate_limits').delete().eq('identifier', identifier)
+      } catch (e) {
+        console.error('[rate-limit] Reset error:', e)
+      }
     },
-    
+
     /**
      * Get current state for monitoring
      */
-    getState(identifier: string): TokenBucket | undefined {
-      return buckets.get(identifier)
+    async getState(identifier: string) {
+      try {
+        const supabase = getSupabaseAdmin()
+        const { data } = await supabase
+          .from('rate_limits')
+          .select('*')
+          .eq('identifier', identifier)
+          .single()
+        return data || null
+      } catch {
+        return null
+      }
     }
   }
 }
@@ -94,128 +98,124 @@ export const generateRateLimiter = createRateLimiter(RATE_LIMIT_CONFIGS.generate
  * @param identifier - Unique identifier (user ID, IP, etc.)
  * @param customRpm - Optional custom RPM override
  */
-export function checkRateLimit(
-  identifier: string, 
+export async function checkRateLimit(
+  identifier: string,
   customRpm?: number
-): RateLimitResult {
+): Promise<RateLimitResult> {
   let config: { rpm: number; burst: number; windowMs: number }
-  
+
   if (customRpm) {
     config = { rpm: customRpm, burst: Math.ceil(customRpm / 6), windowMs: 60000 }
   } else {
-    // Cast to get access to windowMs property
     config = RATE_LIMIT_CONFIGS.generate as { rpm: number; burst: number; windowMs: number }
   }
-    
+
   return checkTokenBucket(identifier, config.rpm, config.burst, config.windowMs)
 }
 
 /**
- * Core token bucket algorithm
- * 
+ * Core token bucket algorithm with Supabase persistence
+ *
  * @param identifier - Unique key for this bucket
  * @param rpm - Requests per minute
  * @param burst - Maximum tokens (burst capacity)
  * @param windowMs - Time window in milliseconds
  */
-function checkTokenBucket(
+async function checkTokenBucket(
   identifier: string,
   rpm: number,
   burst: number,
   windowMs: number
-): RateLimitResult {
-  const now = Date.now()
-  let bucket = buckets.get(identifier)
-  
-  // Initialize bucket if doesn't exist
-  if (!bucket) {
-    bucket = {
-      tokens: burst,
-      lastRefill: now,
-      maxTokens: burst,
+): Promise<RateLimitResult> {
+  try {
+    const supabase = getSupabaseAdmin()
+
+    // Try atomic RPC first (best for concurrency)
+    try {
+      const { data, error } = await supabase.rpc('check_rate_limit_rpc', {
+        p_identifier: identifier,
+        p_rpm: rpm,
+        p_burst: burst,
+        p_window_ms: windowMs,
+      })
+
+      if (!error && data && data.length > 0) {
+        const result = data[0]
+        return {
+          allowed: result.allowed,
+          remaining: result.remaining,
+          resetInMs: result.reset_in_ms,
+        }
+      }
+    } catch (rpcError) {
+      // RPC not available (migration not run yet), fall through to direct table ops
+      console.warn('[rate-limit] RPC unavailable, using direct table ops:', rpcError)
     }
-    buckets.set(identifier, bucket)
-    
+
+    // Fallback: direct table read-update (best-effort in concurrent scenarios)
+    const now = Date.now()
+    const { data: bucket, error: fetchError } = await supabase
+      .from('rate_limits')
+      .select('tokens, last_refill, max_tokens')
+      .eq('identifier', identifier)
+      .single()
+
+    if (fetchError || !bucket) {
+      // Create new bucket
+      await supabase.from('rate_limits').upsert({
+        identifier,
+        tokens: burst - 1,
+        last_refill: now,
+        max_tokens: burst,
+      })
+      return { allowed: true, remaining: burst - 1, resetInMs: windowMs }
+    }
+
+    // Calculate refill
+    const timeElapsed = now - bucket.last_refill
+    const tokensToAdd = Math.floor((timeElapsed / windowMs) * rpm)
+
+    let newTokens = bucket.tokens
+    if (tokensToAdd > 0) {
+      newTokens = Math.min(bucket.max_tokens, bucket.tokens + tokensToAdd)
+    }
+
+    if (newTokens >= 1) {
+      newTokens -= 1
+      await supabase.from('rate_limits').upsert({
+        identifier,
+        tokens: newTokens,
+        last_refill: now,
+        max_tokens: burst,
+      })
+      return { allowed: true, remaining: Math.floor(newTokens), resetInMs: windowMs }
+    }
+
+    // No tokens available
+    const tokensNeeded = 1 - newTokens
+    const retryAfterMs = Math.ceil((tokensNeeded / rpm) * windowMs)
+
     return {
-      allowed: true,
-      remaining: burst - 1,
+      allowed: false,
+      remaining: 0,
       resetInMs: windowMs,
+      retryAfterMs,
     }
-  }
-  
-  // Calculate tokens to add based on time elapsed
-  const timeElapsed = now - bucket.lastRefill
-  const tokensToAdd = Math.floor((timeElapsed / windowMs) * rpm)
-  
-  if (tokensToAdd > 0) {
-    bucket.tokens = Math.min(bucket.maxTokens, bucket.tokens + tokensToAdd)
-    bucket.lastRefill = now
-  }
-  
-  // Check if we have tokens available
-  if (bucket.tokens >= 1) {
-    bucket.tokens -= 1
-    
-    const result: RateLimitResult = {
-      allowed: true,
-      remaining: Math.floor(bucket.tokens),
-      resetInMs: windowMs,
-    }
-    
-    // Cleanup old buckets periodically (5% chance per request)
-    if (Math.random() < 0.05) {
-      cleanupOldBuckets(now, windowMs * 2)
-    }
-    
-    return result
-  }
-  
-  // No tokens available - calculate retry time
-  const tokensNeeded = 1 - bucket.tokens
-  const retryAfterMs = Math.ceil((tokensNeeded / rpm) * windowMs)
-  
-  return {
-    allowed: false,
-    remaining: 0,
-    resetInMs: windowMs,
-    retryAfterMs,
-  }
-}
-
-/**
- * Clean up stale buckets to prevent memory leaks
- */
-function cleanupOldBuckets(now: number, maxAge: number): void {
-  for (const [key, bucket] of buckets.entries()) {
-    if (now - bucket.lastRefill > maxAge) {
-      buckets.delete(key)
-    }
-  }
-}
-
-/**
- * Get rate limit info for monitoring
- */
-export function getRateLimitInfo(identifier: string): {
-  exists: boolean
-  tokens: number
-  maxTokens: number
-  lastRefill: number
-} | null {
-  const bucket = buckets.get(identifier)
-  if (!bucket) return null
-  
-  return {
-    exists: true,
-    tokens: bucket.tokens,
-    maxTokens: bucket.maxTokens,
-    lastRefill: bucket.lastRefill,
+  } catch (e) {
+    console.error('[rate-limit] Error, falling back to permissive:', e)
+    // Fail-open on catastrophic error to avoid blocking all traffic
+    return { allowed: true, remaining: 1, resetInMs: windowMs }
   }
 }
 
 /**
  * Reset all rate limits (useful for testing or admin operations)
  */
-export function resetAllRateLimits(): void {
-  buckets.clear()
+export async function resetAllRateLimits(): Promise<void> {
+  try {
+    const supabase = getSupabaseAdmin()
+    await supabase.from('rate_limits').delete().neq('identifier', '')
+  } catch (e) {
+    console.error('[rate-limit] Reset all error:', e)
+  }
 }

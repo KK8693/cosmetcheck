@@ -1,89 +1,116 @@
 import { NextRequest, NextResponse } from 'next/server'
-
-// Simple in-memory quota tracking (replace with DB in production)
-const quotaStore = new Map<string, { count: number; resetAt: Date }>()
+import { createClient } from '@supabase/supabase-js'
 
 const FREE_QUOTA = 10
 const RESET_DAYS = 30
 
-// Whitelist of emails that bypass quota limits (for testing/VIP users)
-const QUOTA_WHITELIST = new Set([
-  'lifaqiang06@gmail.com',
-  'stormy@example.com', // Add more emails here
-])
+// Whitelist: load from env or empty set (DO NOT hardcode emails in production)
+const QUOTA_WHITELIST = new Set<string>(
+  process.env.QUOTA_WHITELIST?.split(',').map(s => s.trim().toLowerCase()) || []
+)
+
+function getSupabaseAdmin() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SERVICE_KEY
+  if (!url || !key) {
+    throw new Error('Missing Supabase environment variables for quota service')
+  }
+  return createClient(url, key)
+}
 
 function getResetDate(): Date {
   const now = new Date()
   return new Date(now.getTime() + RESET_DAYS * 24 * 60 * 60 * 1000)
 }
 
-export function getQuotaStatus(identifier: string): {
+export async function getQuotaStatus(identifier: string): Promise<{
   used: number
   limit: number
   remaining: number
   resetAt: Date
-} {
-  // Check if identifier is whitelisted (email-based bypass)
+}> {
   if (QUOTA_WHITELIST.has(identifier.toLowerCase())) {
     return {
       used: 0,
       limit: Infinity,
       remaining: Infinity,
-      resetAt: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000), // 1 year
+      resetAt: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000),
     }
   }
 
-  const now = new Date()
-  let record = quotaStore.get(identifier)
+  try {
+    const supabase = getSupabaseAdmin()
+    const { data, error } = await supabase
+      .from('user_quotas')
+      .select('count, reset_at')
+      .eq('identifier', identifier)
+      .single()
 
-  if (!record || now > record.resetAt) {
-    record = { count: 0, resetAt: getResetDate() }
-    quotaStore.set(identifier, record)
-  }
+    const now = new Date()
 
-  return {
-    used: record.count,
-    limit: FREE_QUOTA,
-    remaining: Math.max(0, FREE_QUOTA - record.count),
-    resetAt: record.resetAt,
+    if (error || !data || new Date(data.reset_at) < now) {
+      const resetAt = getResetDate()
+      await supabase.from('user_quotas').upsert({
+        identifier,
+        count: 0,
+        reset_at: resetAt.toISOString(),
+      })
+      return { used: 0, limit: FREE_QUOTA, remaining: FREE_QUOTA, resetAt }
+    }
+
+    const used = data.count
+    return {
+      used,
+      limit: FREE_QUOTA,
+      remaining: Math.max(0, FREE_QUOTA - used),
+      resetAt: new Date(data.reset_at),
+    }
+  } catch (e) {
+    console.error('[quota] DB error, falling back to permissive mode:', e)
+    return { used: 0, limit: FREE_QUOTA, remaining: FREE_QUOTA, resetAt: getResetDate() }
   }
 }
 
-export function incrementQuota(identifier: string): boolean {
-  // Skip quota increment for whitelisted users
-  if (QUOTA_WHITELIST.has(identifier.toLowerCase())) {
-    return true
-  }
-  
-  const status = getQuotaStatus(identifier)
+export async function incrementQuota(identifier: string): Promise<boolean> {
+  if (QUOTA_WHITELIST.has(identifier.toLowerCase())) return true
 
-  if (status.remaining <= 0) {
+  try {
+    const status = await getQuotaStatus(identifier)
+    if (status.remaining <= 0) return false
+
+    const supabase = getSupabaseAdmin()
+    const { error } = await supabase.from('user_quotas').upsert({
+      identifier,
+      count: status.used + 1,
+      reset_at: status.resetAt.toISOString(),
+    })
+
+    if (error) {
+      console.error('[quota] Failed to increment:', error)
+      return false
+    }
+    return true
+  } catch (e) {
+    console.error('[quota] Increment error:', e)
     return false
   }
-
-  const record = quotaStore.get(identifier)!
-  record.count += 1
-  return true
 }
 
-export function checkQuotaMiddleware(
+export async function checkQuotaMiddleware(
   request: NextRequest
-): { allowed: boolean; response?: NextResponse } {
-  // First check if user email is provided in header (for authenticated users)
+): Promise<{ allowed: boolean; response?: NextResponse }> {
   const userEmail = request.headers.get('x-user-email')
-  
-  // If user email is provided and is whitelisted, allow unlimited access
+
   if (userEmail && QUOTA_WHITELIST.has(userEmail.toLowerCase())) {
     return { allowed: true }
   }
-  
-  // Otherwise, use IP-based quota (existing behavior)
+
   const identifier =
     request.headers.get('x-forwarded-for') ||
     request.headers.get('x-real-ip') ||
     'anonymous'
 
-  const status = getQuotaStatus(identifier)
+  const status = await getQuotaStatus(identifier)
 
   if (status.remaining <= 0) {
     return {

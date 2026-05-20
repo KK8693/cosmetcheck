@@ -17,7 +17,7 @@ function getSupabaseAdmin() {
 export async function POST(request: NextRequest) {
   try {
     // Check quota first
-    const quotaCheck = checkQuotaMiddleware(request)
+    const quotaCheck = await checkQuotaMiddleware(request)
     if (!quotaCheck.allowed) {
       return quotaCheck.response!
     }
@@ -28,8 +28,8 @@ export async function POST(request: NextRequest) {
       request.headers.get('x-forwarded-for')?.split(',')[0] ||
       request.headers.get('x-real-ip') ||
       'anonymous'
-    
-    const rateLimitResult = checkRateLimit(identifier)
+
+    const rateLimitResult = await checkRateLimit(identifier)
     
     if (!rateLimitResult.allowed) {
       return NextResponse.json(
@@ -106,7 +106,7 @@ export async function POST(request: NextRequest) {
     })
 
     // Increment quota after successful generation
-    incrementQuota(identifier)
+    await incrementQuota(identifier)
 
     // Moderate AI-generated output
     const outputText = `${result.title} ${result.description} ${result.bulletPoints.join(' ')}`

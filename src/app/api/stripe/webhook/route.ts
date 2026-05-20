@@ -21,20 +21,23 @@ export async function POST(request: NextRequest) {
 
     let event
 
-    if (endpointSecret) {
-      try {
-        event = stripe.webhooks.constructEvent(payload, signature, endpointSecret)
-      } catch (err: unknown) {
-        const errorMessage = err instanceof Error ? err.message : 'Unknown error'
-        console.error(`Webhook signature verification failed: ${errorMessage}`)
-        return NextResponse.json(
-          { error: 'Invalid signature' },
-          { status: 400 }
-        )
-      }
-    } else {
-      // For development without webhook secret
-      event = JSON.parse(payload)
+    if (!endpointSecret) {
+      console.error('STRIPE_WEBHOOK_SECRET is not configured')
+      return NextResponse.json(
+        { error: 'Webhook secret not configured' },
+        { status: 400 }
+      )
+    }
+
+    try {
+      event = stripe.webhooks.constructEvent(payload, signature, endpointSecret)
+    } catch (err: unknown) {
+      const errorMessage = err instanceof Error ? err.message : 'Unknown error'
+      console.error(`Webhook signature verification failed: ${errorMessage}`)
+      return NextResponse.json(
+        { error: 'Invalid signature' },
+        { status: 400 }
+      )
     }
 
     // Handle the event

@@ -114,9 +114,164 @@ const enRegulations: RegulationDictionary = {
     message: 'Formaldehyde releasers are restricted. Maximum 0.2% formaldehyde release.',
     suggestion: 'Ensure formaldehyde release does not exceed 0.2%. Use alternative preservatives.',
   },
+
+
+  // === Mexico Banned & Claims (auto-translated) ===
+  'MX-BAN-001': {
+    message: 'Mercury is a heavy metal prohibited in cosmetics.',
+    suggestion: 'Remove mercury compounds from the formula.',
+  },
+  'MX-BAN-002': {
+    message: 'All mercury compounds (e.g. mercuric chloride, mercuric oxide) are prohibited in cosmetics.',
+    suggestion: 'Remove all mercury compounds from the formula.',
+  },
+  'MX-BAN-003': {
+    message: 'Lead is a heavy metal prohibited in cosmetics.',
+    suggestion: 'Remove lead and its compounds from the formula.',
+  },
+  'MX-BAN-004': {
+    message: 'Arsenic is a heavy metal prohibited in cosmetics.',
+    suggestion: 'Remove arsenic and its compounds from the formula.',
+  },
+  'MX-BAN-005': {
+    message: 'Cadmium is a heavy metal prohibited in cosmetics.',
+    suggestion: 'Remove cadmium and its compounds from the formula.',
+  },
+  'MX-BAN-006': {
+    message: 'Hydroquinone is prohibited for skin lightening in cosmetics (NOM-141-SSA1/SCF1-2012).',
+    suggestion: 'Remove hydroquinone. Use alternative brightening agents like alpha-arbutin.',
+  },
+  'MX-BAN-007': {
+    message: 'Tretinoin is a pharmaceutical-grade ingredient prohibited in cosmetics.',
+    suggestion: 'Remove tretinoin. If used, the product must be registered as a medicine with COFEPRIS.',
+  },
+  'MX-BAN-008': {
+    message: 'Retinoic acid is a pharmaceutical-grade ingredient prohibited in cosmetics.',
+    suggestion: 'Remove retinoic acid. If used, the product must be registered as a medicine with COFEPRIS.',
+  },
+  'MX-BAN-009': {
+    message: 'Hexachlorophene is prohibited in cosmetics.',
+    suggestion: 'Remove hexachlorophene from the formula.',
+  },
+  'MX-BAN-010': {
+    message: 'Bithionol is prohibited in cosmetics.',
+    suggestion: 'Remove bithionol from the formula.',
+  },
+  'MX-BAN-011': {
+    message: 'Cloroxylenol (PCMX) is prohibited in cosmetics.',
+    suggestion: 'Remove cloroxylenol from the formula.',
+  },
+  'MX-BAN-012': {
+    message: 'Mequinol is prohibited in cosmetics.',
+    suggestion: 'Remove mequinol from the formula.',
+  },
+  'MX-BAN-013': {
+    message: 'Corticosteroids are hormone drugs prohibited in cosmetics.',
+    suggestion: 'Remove corticosteroids. The product must be registered as a medicine with COFEPRIS.',
+  },
+  'MX-BAN-014': {
+    message: 'Hydrocortisone is a corticosteroid prohibited in cosmetics.',
+    suggestion: 'Remove hydrocortisone. The product must be registered as a medicine with COFEPRIS.',
+  },
+  'MX-BAN-015': {
+    message: 'Betamethasone is a corticosteroid prohibited in cosmetics.',
+    suggestion: 'Remove betamethasone. The product must be registered as a medicine with COFEPRIS.',
+  },
+  'MX-BAN-016': {
+    message: 'Chloramphenicol is an antibiotic prohibited in cosmetics.',
+    suggestion: 'Remove chloramphenicol from the formula.',
+  },
+  'MX-BAN-017': {
+    message: 'Tretinoin is a pharmaceutical-grade ingredient prohibited in cosmetics.',
+    suggestion: 'Remove tretinoin. If used, the product must be registered as a medicine with COFEPRIS.',
+  },
   'MX-CLAIM-001': {
-    message: 'Cosmetics cannot claim to cure, treat, or prevent diseases.',
-    suggestion: 'Use cosmetic claims only (moisturizing, cleansing, beautifying, perfuming, protecting).',
+    message: `Cosmetics cannot use medical treatment terms (e.g. 'cure', 'anti-inflammatory', 'antibacterial') or claim drug efficacy such as treating acne or wound healing.`,
+    suggestion: 'Remove medical/therapeutic claims. Use cosmetic claims only.',
+  },
+  'MX-CLAIM-002': {
+    message: `Absolute claims like '100% natural', 'no chemicals', 'organic' are prohibited without scientific evidence.`,
+    suggestion: 'Remove absolute claims or provide valid certification.',
+  },
+  'MX-CLAIM-003': {
+    message: `Sunscreen products must display SPF and UVA/UVB protection. Absolute claims like 'total protection' or 'no reapplication needed' are prohibited.`,
+    suggestion: 'Include SPF value and UVA/UVB labels. Avoid absolute protection claims.',
+  },
+  'MX-CLAIM-004': {
+    message: `Absolute safety claims without evidence are prohibited, such as 'zero risk', 'never causes allergies', 'safe for everyone'.`,
+    suggestion: `Use claims with evidence such as 'tested for skin compatibility'.`,
+  },
+  'MX-CLAIM-005': {
+    message: `Anti-aging claims require scientific evidence. Absolute claims like 'completely eliminates wrinkles', 'stops aging', '10 years younger' are prohibited.`,
+    suggestion: `Use compliant claims like 'helps improve skin appearance'.`,
+  },
+  'MX-CLAIM-006': {
+    message: `Misleading FDA-related claims are prohibited, such as 'FDA approved', 'FDA certified', 'pharmaceutical grade'.`,
+    suggestion: 'Remove FDA-related claims. Use product efficacy claims.',
+  },
+  'MX-CLAIM-007': {
+    message: 'Dermatologist-tested claims require valid and authentic test reports.',
+    suggestion: 'Ensure you have valid dermatological test reports.',
+  },
+  'MX-CLAIM-008': {
+    message: `Hypoallergenic claims require clinical testing support. Using 'hypoallergenic' or 'allergy-free' without evidence is prohibited.`,
+    suggestion: 'Provide clinical hypoallergenic testing proof.',
+  },
+  'MX-CLAIM-009': {
+    message: 'Cruelty-free claims require valid documentation.',
+    suggestion: 'Ensure you have valid cruelty-free certification.',
+  },
+  'MX-CLAIM-010': {
+    message: `Cosmetics cannot claim to cure, treat, or prevent diseases. Terms like 'cure', 'root cause treatment', 'completely solve' are prohibited.`,
+    suggestion: 'Remove cure/treatment claims. Use cosmetic claims only.',
+  },
+  'MX-CLAIM-011': {
+    message: `Claims of cellulite removal are prohibited, such as 'fat burning', 'burns fat', 'completely eliminates cellulite'.`,
+    suggestion: `Remove cellulite removal claims. Use 'helps improve skin appearance'.`,
+  },
+  'MX-CLAIM-012': {
+    message: 'Breast enhancement claims are prohibited for cosmetics and require drug registration.',
+    suggestion: 'Remove breast enhancement claims. Use body care cosmetic claims only.',
+  },
+  'MX-CLAIM-013': {
+    message: `Absolute permanent efficacy claims are prohibited, such as 'permanent', 'thorough', 'root cause treatment', 'forever', 'guaranteed lasting results'.`,
+    suggestion: `Remove permanent/thorough claims. Use 'helps maintain' or 'long-lasting care'.`,
+  },
+  'MX-CLAIM-014': {
+    message: `Promises of specific timeframes and absolute results are prohibited, such as 'results in 7 days', '100% effective', 'immediate results', 'guaranteed results'.`,
+    suggestion: `Remove fixed-time claims. Use 'with consistent use' or 'gradual improvement'.`,
+  },
+  'MX-CLAIM-015': {
+    message: `Medical-grade claims are prohibited, such as 'medical grade', 'medical formula', 'clinical grade', 'professional treatment'. Cosmetics cannot mimic drug marketing.`,
+    suggestion: `Remove medical/clinical terminology. Use 'carefully developed' or 'premium formula'.`,
+  },
+  'MX-CLAIM-016': {
+    message: 'Special population claims (infants, pregnant women, children, newborns) require special approval and warning labels.',
+    suggestion: 'Obtain infant product registration or remove infant/pregnancy claims.',
+  },
+  'MX-CLAIM-017': {
+    message: `Absolute whitening claims are prohibited, such as 'eliminates all spots', 'only effective one', 'permanent whitening', 'completely eliminates melanin'.`,
+    suggestion: `Replace with compliant claims: 'helps brighten skin tone', 'evens skin tone'.`,
+  },
+  'MX-CLAIM-018': {
+    message: 'Hair loss prevention / hair growth claims are prohibited for cosmetics and require drug registration.',
+    suggestion: 'Remove hair loss/growth claims. Use hair care cosmetic claims only.',
+  },
+  'MX-CLAIM-019': {
+    message: `Absolute detox/purification claims without evidence are prohibited, such as 'completely removes toxins', 'deep purification'.`,
+    suggestion: `Remove absolute detox/purification claims. Use 'cleans skin'.`,
+  },
+  'MX-CLAIM-020': {
+    message: `Absolute price claims are prohibited, such as 'best price', 'lowest price', 'exclusive offer'.`,
+    suggestion: 'Remove absolute price claims. Use market price descriptions.',
+  },
+  'MX-CLAIM-021': {
+    message: `Medical-grade cell regeneration/repair claims are prohibited, such as 'cell regeneration', 'tissue repair', 'completely renews skin'.`,
+    suggestion: `Remove cell regeneration/repair claims. Use 'moisturizes skin'.`,
+  },
+  'MX-CLAIM-022': {
+    message: `Comparative/derogatory competitor claims are prohibited, such as 'better than competitors', 'unmatched in the market', 'surpasses all other products'.`,
+    suggestion: 'Remove comparative/derogatory competitor claims. Use product feature descriptions.',
   },
 }
 
@@ -149,26 +304,6 @@ const zhRegulations: RegulationDictionary = {
   'BR-ING-007': {
     message: '视黄醇（维生素A）浓度超过安全化妆品限值（>0.3%）。',
     suggestion: '将视黄醇浓度降至 0.3% 或以下。',
-  },
-  'BR-CLAIM-001': {
-    message: "化妆品不得声称治疗、治愈或预防疾病。必须包含 'este produto não é um medicamento'（本产品不是药品）。",
-    suggestion: '去除医疗/治疗性宣称。仅使用化妆品宣称（保湿、清洁、美化）。',
-  },
-  'BR-CLAIM-002': {
-    message: "禁止绝对化美白宣称——不得使用'永久美白'、'完全消除黑色素'。氢醌禁止用于化妆品。请改用'帮助提亮肤色'。",
-    suggestion: "替换为合规宣称：'帮助提亮肤色'、'均匀肤色'。",
-  },
-  'BR-CLAIM-003': {
-    message: "防晒产品必须标明 SPF 和 UVA/UVB 防护。禁止使用'完全防护'或'无需补涂'等绝对化宣称（RDC 907/2024）。",
-    suggestion: '包含 SPF 值和 UVA/UVB 标识。避免绝对防护宣称。',
-  },
-  'BR-CLAIM-004': {
-    message: '化妆品不得声称防脱发或促进生发。这些宣称需要 ANVISA 药品注册。',
-    suggestion: '使用化妆品护发宣称：保湿、调理、光泽。',
-  },
-  'BR-CLAIM-005': {
-    message: '丰胸/紧致宣称对化妆品是禁止的。这些需要药品注册。',
-    suggestion: '去除丰胸增强宣称。仅使用身体护理化妆品宣称。',
   },
   'BR-ABS-001': {
     message: "禁止使用'永久'、'彻底治愈'、'永远'等绝对化用语。请改用'帮助维持'。",
@@ -377,6 +512,103 @@ const zhRegulations: RegulationDictionary = {
     message: '禁止对比/贬低竞品声称，如"优于竞争对手"、"市场上无与伦比"、"超越所有其他产品"等。',
     suggestion: '去除对比/贬低竞品声称。使用产品特点描述。',
   },
+  // === Brazil Claims (auto-translated) ===
+  'BR-CLAIM-001': {
+    message: `化妆品不得声称治愈、治疗或预防疾病。必须包含'este produto não é um medicamento'（本产品不是药品）。`,
+    suggestion: '去除医疗/治疗性宣称。仅使用化妆品宣称（保湿、清洁、美化）。',
+  },
+  'BR-CLAIM-002': {
+    message: `禁止绝对化美白宣称——不得使用'永久美白'、'完全消除黑色素'。氢醌禁止用于化妆品。请改用'帮助提亮肤色'。`,
+    suggestion: `替换为合规宣称：'帮助提亮肤色'、'均匀肤色'。`,
+  },
+  'BR-CLAIM-003': {
+    message: `防晞产品必须标明SPF和UVA/UVB防护。禁止使用'完全防护'或'无需补涂'等绝对化宣称（RDC 907/2024）。`,
+    suggestion: '包含SPF值和UVA/UVB标识。避免绝对防护宣称。',
+  },
+  'BR-CLAIM-004': {
+    message: '化妆品不得声称防脱发或促进生发。这些宣称需要ANVISA药品注册。',
+    suggestion: '使用化妆品护发宣称：保湿、调理、光泽。',
+  },
+  'BR-CLAIM-005': {
+    message: '丰胸/紧致宣称对化妆品是禁止的。这些需要药品注册。',
+    suggestion: '去除丰胸增强宣称。仅使用身体护理化妆品宣称。',
+  },
+  'BR-CLAIM-006': {
+    message: '化妆品不得声称减肥、瘦身或燃脂效果。',
+    suggestion: '去除减肥/瘦身宣称。仅使用身体护理化妆品宣称。',
+  },
+  'BR-CLAIM-007': {
+    message: `妊娠纹宣称需要科学证据支撑。避免绝对化用语如'完全消除妊娠纹'。`,
+    suggestion: `使用'帮助改善皮肤外观'等合规宣称。`,
+  },
+  'BR-CLAIM-008': {
+    message: `禁止使用'立即'、'瞬间'、'即刻'等绝对化时效用语。`,
+    suggestion: `替换为：'逐渐'、'持续使用'、'定期护理'。`,
+  },
+  'BR-CLAIM-009': {
+    message: `禁止使用'100%'、'彻底'、'根治'等绝对化功效用语。`,
+    suggestion: `替换为：'有助于'、'帮助改善'、'支持'。`,
+  },
+  'BR-CLAIM-010': {
+    message: `禁止使用'医疗级'或'药品级'等可能误导消费者的宣称。化妆品不得暗示药用功效。`,
+    suggestion: `去除医疗/临床术语。使用'精心研发'、'优质配方'。`,
+  },
+  'BR-CLAIM-011': {
+    message: '抗菌宣称需要特定合规要求。部分产品可能需要消毒产品注册。',
+    suggestion: '确保拥有有效的抗菌测试证明，或去除抗菌宣称。',
+  },
+  'BR-CLAIM-012': {
+    message: '止汗剂和除臭剂属于不同产品类别。止汗剂需要药品注册。',
+    suggestion: '正确分类产品。除臭剂仅声称香气/清爽，止汗剂需药品注册。',
+  },
+  'BR-CLAIM-013': {
+    message: `禁止使用'永久'、'彻底治愈'、'永远'等绝对化用语。请改用'帮助维持'。`,
+    suggestion: `替换为：'帮助维持'、'支持'、'辅助'。`,
+  },
+  'BR-CLAIM-014': {
+    message: `禁止承诺具体时效（如'3天见效'、'7天见效'）和绝对效果保证（如'100%有效'、'保证效果'）。功效必须有科学依据。`,
+    suggestion: `去除固定时间宣称。使用：'坚持使用'、'逐渐改善'。`,
+  },
+  'BR-CLAIM-015': {
+    message: `禁止使用'医疗级'、'临床配方'、'临床级别'等暗示药用功效的宣称。化妆品不得模仿药品营销。`,
+    suggestion: `去除医疗/临床术语。使用：'精心研发'、'优质配方'。`,
+  },
+  'BR-CLAIM-016': {
+    message: '宣称适用于婴儿、孕妇需要明确标注适用年龄和特殊状况警告。婴儿产品需要单独注册。',
+    suggestion: '获得婴儿产品注册，或去除婴儿/孕妇宣称。',
+  },
+  'BR-CLAIM-017': {
+    message: `避免使用'100%天然'、'无化学成分'等绝对化用语。天然宣称需要有效认证。`,
+    suggestion: '去除绝对化用语，或提供有效认证。',
+  },
+  'BR-CLAIM-018': {
+    message: '化妆品不得声称细胞再生、组织修复或其他医疗级效果。',
+    suggestion: `去除细胞再生/修复宣称。使用'滋润皮肤'。`,
+  },
+  'BR-CLAIM-019': {
+    message: `避免使用'排毒'、'净化'等暗示药用功效的术语。`,
+    suggestion: `去除排毒/净化宣称。使用'清洁皮肤'。`,
+  },
+  'BR-CLAIM-020': {
+    message: '贬低竞争对手或对比广告是禁止的。',
+    suggestion: '去除对比/贬低竞品宣称。使用产品特点描述。',
+  },
+  'BR-CLAIM-021': {
+    message: `安全宣称需要测试支持。禁止使用'零风险'、'永不致敏'等绝对化用语。低致敏性需要临床验证。`,
+    suggestion: `使用：'经过皮肤兼容性测试'、'适合敏感肌肤'（需有证明）。`,
+  },
+  'BR-CLAIM-022': {
+    message: `禁止使用'完全消除皱纹'、'全面抗衰老'等绝对化用语。请改用'改善皱纹外观'（RDC 907/2024）。`,
+    suggestion: `替换为：'有助于改善皱纹外观'、'帮助维持肌肤状态'。`,
+  },
+  'BR-CLAIM-023': {
+    message: `禁止无科学依据地宣称适用于所有肤质。需要测试支持。请改用'兼容大多数肤质'或'适用于干/油/中性皮肤'。`,
+    suggestion: '明确说明经过测试的肤质，或进行兼容性测试。',
+  },
+  'BR-CLAIM-024': {
+    message: `禁止'100%有效'等绝对效果保证。功效因人而异。请改用'效果可能因人而异'或'坚持使用效果最佳'。`,
+    suggestion: `去除绝对保证。添加：'效果可能因人而异'。`,
+  },
 }
 
 // Brazilian Portuguese translations
@@ -477,9 +709,162 @@ const ptRegulations: RegulationDictionary = {
     message: 'Liberadores de formaldeído são restritos. Máximo de 0,2% de liberação de formaldeído.',
     suggestion: 'Garanta que a liberação de formaldeído não exceda 0,2%. Use conservantes alternativos.',
   },
+  // === Mexico Banned & Claims (auto-translated) ===
+  'MX-BAN-001': {
+    message: 'O mercúrio é um metal pesado proibido em cosméticos.',
+    suggestion: 'Remova compostos de mercúrio da fórmula.',
+  },
+  'MX-BAN-002': {
+    message: 'Todos os compostos de mercúrio (ex: cloreto de mercúrio, óxido de mercúrio) são proibidos em cosméticos.',
+    suggestion: 'Remova todos os compostos de mercúrio da fórmula.',
+  },
+  'MX-BAN-003': {
+    message: 'O chumbo é um metal pesado proibido em cosméticos.',
+    suggestion: 'Remova chumbo e seus compostos da fórmula.',
+  },
+  'MX-BAN-004': {
+    message: 'O arsênico é um metal pesado proibido em cosméticos.',
+    suggestion: 'Remova arsênico e seus compostos da fórmula.',
+  },
+  'MX-BAN-005': {
+    message: 'O cádmio é um metal pesado proibido em cosméticos.',
+    suggestion: 'Remova cádmio e seus compostos da fórmula.',
+  },
+  'MX-BAN-006': {
+    message: 'Hidroquinona é proibida para clareamento de pele em cosméticos (NOM-141-SSA1/SCF1-2012).',
+    suggestion: 'Remova hidroquinona. Use agentes clareadores alternativos como alfa-arbutina.',
+  },
+  'MX-BAN-007': {
+    message: 'A tretinoína é um ingrediente de grau farmacêutico proibido em cosméticos.',
+    suggestion: 'Remova a tretinoína. Se usada, o produto deve ser registrado como medicamento.',
+  },
+  'MX-BAN-008': {
+    message: 'O ácido retinoico é um ingrediente de grau farmacêutico proibido em cosméticos.',
+    suggestion: 'Remova o ácido retinoico. Se usado, o produto deve ser registrado como medicamento.',
+  },
+  'MX-BAN-009': {
+    message: 'Hexaclorofeno é proibido em cosméticos.',
+    suggestion: 'Remova hexaclorofeno da fórmula.',
+  },
+  'MX-BAN-010': {
+    message: 'Bitionol é proibido em cosméticos.',
+    suggestion: 'Remova bitionol da fórmula.',
+  },
+  'MX-BAN-011': {
+    message: 'Cloroxilenol (PCMX) é proibido em cosméticos.',
+    suggestion: 'Remova cloroxilenol da fórmula.',
+  },
+  'MX-BAN-012': {
+    message: 'Mequinol é proibido em cosméticos.',
+    suggestion: 'Remova mequinol da fórmula.',
+  },
+  'MX-BAN-013': {
+    message: 'Corticosteroides são drogas hormonais proibidas em cosméticos.',
+    suggestion: 'Remova corticosteroides. O produto deve ser registrado como medicamento.',
+  },
+  'MX-BAN-014': {
+    message: 'Hidrocortisona é um corticosteroide proibido em cosméticos.',
+    suggestion: 'Remova hidrocortisona. O produto deve ser registrado como medicamento.',
+  },
+  'MX-BAN-015': {
+    message: 'Betametasona é um corticosteroide proibido em cosméticos.',
+    suggestion: 'Remova betametasona. O produto deve ser registrado como medicamento.',
+  },
+  'MX-BAN-016': {
+    message: 'Cloranfenicol é um antibiótico proibido em cosméticos.',
+    suggestion: 'Remova cloranfenicol da fórmula.',
+  },
+  'MX-BAN-017': {
+    message: 'A tretinoína é um ingrediente de grau farmacêutico proibido em cosméticos.',
+    suggestion: 'Remova a tretinoína. Se usada, o produto deve ser registrado como medicamento.',
+  },
   'MX-CLAIM-001': {
-    message: 'Cosméticos não podem alegar curar, tratar ou prevenir doenças.',
-    suggestion: 'Use apenas alegações cosméticas (hidratação, limpeza, embelezamento, perfumação, proteção).',
+    message: `Cosméticos não podem usar termos de tratamento médico (ex: 'cura', 'anti-inflamatório', 'antibacteriano') ou alegar eficácia medicinal como tratamento de acne ou cicatrização.`,
+    suggestion: 'Remova alegações médicas/terapêuticas. Use apenas alegações cosméticas.',
+  },
+  'MX-CLAIM-002': {
+    message: `Alegações absolutas como '100% natural', 'sem produtos químicos', 'orgânico' são proibidas sem evidência científica.`,
+    suggestion: 'Remova alegações absolutas ou forneça certificação válida.',
+  },
+  'MX-CLAIM-003': {
+    message: `Produtos de proteção solar devem exibir FPS e proteção UVA/UVB. Alegações absolutas como 'proteção total' ou 'sem necessidade de reaplicação' são proibidas.`,
+    suggestion: 'Inclua valor de FPS e rótulos UVA/UVB. Evite alegações absolutas de proteção.',
+  },
+  'MX-CLAIM-004': {
+    message: `Alegações absolutas de segurança sem evidência são proibidas, como 'zero risco', 'nunca causa alergias', 'seguro para todos'.`,
+    suggestion: `Use alegações com evidência como 'testado para compatibilidade com a pele'.`,
+  },
+  'MX-CLAIM-005': {
+    message: `Alegações anti-envelhecimento exigem evidência científica. Alegações absolutas como 'elimina completamente rugas', 'para o envelhecimento', '10 anos mais jovem' são proibidas.`,
+    suggestion: `Use alegações compatíveis como 'ajuda a melhorar a aparência da pele'.`,
+  },
+  'MX-CLAIM-006': {
+    message: `Alegações enganosas relacionadas à FDA são proibidas, como 'aprovado pela FDA', 'certificado pela FDA', 'grau farmacêutico'.`,
+    suggestion: 'Remova alegações relacionadas à FDA. Use alegações de eficácia do produto.',
+  },
+  'MX-CLAIM-007': {
+    message: 'Alegações de teste dermatológico exigem relatórios de teste válidos e autênticos.',
+    suggestion: 'Certifique-se de ter relatórios de teste dermatológicos válidos.',
+  },
+  'MX-CLAIM-008': {
+    message: `Alegações hipoalergênicas exigem suporte de testes clínicos. Usar 'hipoalergênico' ou 'livre de alergias' sem evidência é proibido.`,
+    suggestion: 'Forneça comprovação de testes clínicos hipoalergênicos.',
+  },
+  'MX-CLAIM-009': {
+    message: 'Alegações de livre de crueldade exigem documentação válida.',
+    suggestion: 'Certifique-se de ter certificação válida de livre de crueldade.',
+  },
+  'MX-CLAIM-010': {
+    message: `Cosméticos não podem alegar curar, tratar ou prevenir doenças. Termos como 'cura', 'tratamento da raiz', 'solução completa' são proibidos.`,
+    suggestion: 'Remova alegações de cura/tratamento. Use apenas alegações cosméticas.',
+  },
+  'MX-CLAIM-011': {
+    message: `Alegações de remoção de celulite são proibidas, como 'queima gordura', 'queima de gordura', 'elimina completamente a celulite'.`,
+    suggestion: `Remova alegações de remoção de celulite. Use 'ajuda a melhorar a aparência da pele'.`,
+  },
+  'MX-CLAIM-012': {
+    message: 'Alegações de aumento de seios são proibidas para cosméticos e exigem registro de medicamento.',
+    suggestion: 'Remova alegações de aumento de seios. Use apenas alegações cosméticas de cuidado corporal.',
+  },
+  'MX-CLAIM-013': {
+    message: `Alegações absolutas de eficácia permanente são proibidas, como 'permanente', 'completo', 'tratamento da raiz', 'para sempre', 'resultados duradouros garantidos'.`,
+    suggestion: `Remova alegações permanentes/completas. Use 'ajuda a manter' ou 'cuidado duradouro'.`,
+  },
+  'MX-CLAIM-014': {
+    message: `Promessas de prazos específicos e resultados absolutos são proibidas, como 'resultados em 7 dias', '100% eficaz', 'resultados imediatos', 'resultados garantidos'.`,
+    suggestion: `Remova alegações de prazo fixo. Use 'com uso contínuo' ou 'melhora gradual'.`,
+  },
+  'MX-CLAIM-015': {
+    message: `Alegações de grau médico são proibidas, como 'grau médico', 'fórmula médica', 'grau clínico', 'tratamento profissional'. Cosméticos não podem imitar marketing de medicamentos.`,
+    suggestion: `Remova terminologia médica/clínica. Use 'desenvolvido com cuidado' ou 'fórmula premium'.`,
+  },
+  'MX-CLAIM-016': {
+    message: 'Alegações para populações especiais (bebês, gestantes, crianças, recém-nascidos) exigem aprovação especial e rótulos de aviso.',
+    suggestion: 'Obtenha registro de produto infantil ou remova alegações de bebês/gestantes.',
+  },
+  'MX-CLAIM-017': {
+    message: `Alegações absolutas de clareamento são proibidas, como 'elimina todas as manchas', 'único eficaz', 'clareamento permanente', 'elimina completamente a melanina'.`,
+    suggestion: `Substitua por alegações compatíveis: 'ajuda a iluminar o tom da pele', 'uniformiza o tom da pele'.`,
+  },
+  'MX-CLAIM-018': {
+    message: 'Alegações de prevenção de queda de cabelo / crescimento capilar são proibidas para cosméticos e exigem registro de medicamento.',
+    suggestion: 'Remova alegações de queda/crescimento capilar. Use apenas alegações cosméticas de cuidado capilar.',
+  },
+  'MX-CLAIM-019': {
+    message: `Alegações absolutas de desintoxicação/purificação sem evidência são proibidas, como 'remove completamente toxinas', 'purificação profunda'.`,
+    suggestion: `Remova alegações absolutas de desintoxicação/purificação. Use 'limpa a pele'.`,
+  },
+  'MX-CLAIM-020': {
+    message: `Alegações absolutas de preço são proibidas, como 'melhor preço', 'menor preço', 'oferta exclusiva'.`,
+    suggestion: 'Remova alegações absolutas de preço. Use descrições de preço de mercado.',
+  },
+  'MX-CLAIM-021': {
+    message: `Alegações de regeneração/reparação celular de grau médico são proibidas, como 'regeneração celular', 'reparação de tecidos', 'renova completamente a pele'.`,
+    suggestion: `Remova alegações de regeneração/reparação celular. Use 'hidrata a pele'.`,
+  },
+  'MX-CLAIM-022': {
+    message: `Alegações comparativas/depreciativas de concorrentes são proibidas, como 'melhor que concorrentes', 'sem igual no mercado', 'supera todos os outros produtos'.`,
+    suggestion: 'Remova alegações comparativas/depreciativas de concorrentes. Use descrições de características do produto.',
   },
 }
 
@@ -581,9 +966,162 @@ const esRegulations: RegulationDictionary = {
     message: 'Los liberadores de formaldehído están restringidos. Máximo 0,2% de liberación de formaldehído.',
     suggestion: 'Asegure que la liberación de formaldehído no exceda el 0,2%. Use conservantes alternativos.',
   },
+  // === Mexico Banned & Claims (auto-translated) ===
+  'MX-BAN-001': {
+    message: 'El mercurio es un metal pesado prohibido en cosméticos.',
+    suggestion: 'Elimine los compuestos de mercurio de la fórmula.',
+  },
+  'MX-BAN-002': {
+    message: 'Todos los compuestos de mercurio (ej. cloruro de mercurio, óxido de mercurio) están prohibidos en cosméticos.',
+    suggestion: 'Elimine todos los compuestos de mercurio de la fórmula.',
+  },
+  'MX-BAN-003': {
+    message: 'El plomo es un metal pesado prohibido en cosméticos.',
+    suggestion: 'Elimine el plomo y sus compuestos de la fórmula.',
+  },
+  'MX-BAN-004': {
+    message: 'El arsénico es un metal pesado prohibido en cosméticos.',
+    suggestion: 'Elimine el arsénico y sus compuestos de la fórmula.',
+  },
+  'MX-BAN-005': {
+    message: 'El cadmio es un metal pesado prohibido en cosméticos.',
+    suggestion: 'Elimine el cadmio y sus compuestos de la fórmula.',
+  },
+  'MX-BAN-006': {
+    message: 'La hidroquinona está prohibida para blanqueamiento de piel en cosméticos (NOM-141-SSA1/SCF1-2012).',
+    suggestion: 'Elimine la hidroquinona. Use agentes blanqueadores alternativos como alfa-arbutina.',
+  },
+  'MX-BAN-007': {
+    message: 'La tretinoína es un ingrediente de grado farmacéutico prohibido en cosméticos.',
+    suggestion: 'Elimine la tretinoína. Si se usa, el producto debe registrarse como medicamento.',
+  },
+  'MX-BAN-008': {
+    message: 'El ácido retinoico es un ingrediente de grado farmacéutico prohibido en cosméticos.',
+    suggestion: 'Elimine el ácido retinoico. Si se usa, el producto debe registrarse como medicamento.',
+  },
+  'MX-BAN-009': {
+    message: 'El hexaclorofeno está prohibido en cosméticos.',
+    suggestion: 'Elimine el hexaclorofeno de la fórmula.',
+  },
+  'MX-BAN-010': {
+    message: 'El bitionol está prohibido en cosméticos.',
+    suggestion: 'Elimine el bitionol de la fórmula.',
+  },
+  'MX-BAN-011': {
+    message: 'El cloroxilenol (PCMX) está prohibido en cosméticos.',
+    suggestion: 'Elimine el cloroxilenol de la fórmula.',
+  },
+  'MX-BAN-012': {
+    message: 'La mequinol está prohibida en cosméticos.',
+    suggestion: 'Elimine la mequinol de la fórmula.',
+  },
+  'MX-BAN-013': {
+    message: 'Los corticosteroides son drogas hormonales prohibidas en cosméticos.',
+    suggestion: 'Elimine los corticosteroides. El producto debe registrarse como medicamento.',
+  },
+  'MX-BAN-014': {
+    message: 'La hidrocortisona es un corticosteroide prohibido en cosméticos.',
+    suggestion: 'Elimine la hidrocortisona. El producto debe registrarse como medicamento.',
+  },
+  'MX-BAN-015': {
+    message: 'La betametasona es un corticosteroide prohibido en cosméticos.',
+    suggestion: 'Elimine la betametasona. El producto debe registrarse como medicamento.',
+  },
+  'MX-BAN-016': {
+    message: 'El cloranfenicol es un antibiótico prohibido en cosméticos.',
+    suggestion: 'Elimine el cloranfenicol de la fórmula.',
+  },
+  'MX-BAN-017': {
+    message: 'La tretinoína es un ingrediente de grado farmacéutico prohibido en cosméticos.',
+    suggestion: 'Elimine la tretinoína. Si se usa, el producto debe registrarse como medicamento.',
+  },
   'MX-CLAIM-001': {
-    message: 'Los cosméticos no pueden afirmar curar, tratar o prevenir enfermedades.',
-    suggestion: 'Use solo afirmaciones cosméticas (hidratación, limpieza, embellecimiento, perfumado, protección).',
+    message: `Los cosméticos no pueden usar términos de tratamiento médico (ej. 'cura', 'antiinflamatorio', 'antibacteriano') ni afirmar eficacia medicinal como tratar acné o cicatrización.`,
+    suggestion: 'Elimine las afirmaciones médicas/terapéuticas. Use solo afirmaciones cosméticas.',
+  },
+  'MX-CLAIM-002': {
+    message: `Las afirmaciones absolutas como '100% natural', 'sin químicos', 'orgánico' están prohibidas sin evidencia científica.`,
+    suggestion: 'Elimine las afirmaciones absolutas o proporcione certificación válida.',
+  },
+  'MX-CLAIM-003': {
+    message: `Los productos de protección solar deben mostrar SPF y protección UVA/UVB. Las afirmaciones absolutas como 'protección total' o 'sin necesidad de reaplicación' están prohibidas.`,
+    suggestion: 'Incluya valor de SPF y etiquetas UVA/UVB. Evite afirmaciones absolutas de protección.',
+  },
+  'MX-CLAIM-004': {
+    message: `Las afirmaciones absolutas de seguridad sin evidencia están prohibidas, como 'cero riesgo', 'nunca causa alergias', 'seguro para todos'.`,
+    suggestion: `Use afirmaciones con evidencia como 'probado para compatibilidad con la piel'.`,
+  },
+  'MX-CLAIM-005': {
+    message: `Las afirmaciones anti-envejecimiento requieren evidencia científica. Las afirmaciones absolutas como 'elimina completamente arrugas', 'detiene el envejecimiento', '10 años más joven' están prohibidas.`,
+    suggestion: `Use afirmaciones compatibles como 'ayuda a mejorar la apariencia de la piel'.`,
+  },
+  'MX-CLAIM-006': {
+    message: `Las afirmaciones engañosas relacionadas con la FDA están prohibidas, como 'aprobado por la FDA', 'certificado por la FDA', 'grado farmacéutico'.`,
+    suggestion: 'Elimine las afirmaciones relacionadas con la FDA. Use afirmaciones de eficacia del producto.',
+  },
+  'MX-CLAIM-007': {
+    message: 'Las afirmaciones de prueba dermatológica requieren informes de prueba válidos y auténticos.',
+    suggestion: 'Asegúrese de tener informes de prueba dermatológicos válidos.',
+  },
+  'MX-CLAIM-008': {
+    message: `Las afirmaciones hipoalergénicas requieren respaldo de pruebas clínicas. Usar 'hipoalergénico' o 'libre de alergias' sin evidencia está prohibido.`,
+    suggestion: 'Proporcione prueba de pruebas clínicas hipoalergénicas.',
+  },
+  'MX-CLAIM-009': {
+    message: 'Las afirmaciones de libre de crueldad requieren documentación válida.',
+    suggestion: 'Asegúrese de tener certificación válida de libre de crueldad.',
+  },
+  'MX-CLAIM-010': {
+    message: `Los cosméticos no pueden afirmar curar, tratar o prevenir enfermedades. Términos como 'cura', 'tratamiento de la raíz', 'solución completa' están prohibidos.`,
+    suggestion: 'Elimine las afirmaciones de cura/tratamiento. Use solo afirmaciones cosméticas.',
+  },
+  'MX-CLAIM-011': {
+    message: `Las afirmaciones de eliminación de celulitis están prohibidas, como 'quema grasa', 'quema de grasa', 'elimina completamente la celulitis'.`,
+    suggestion: `Elimine las afirmaciones de eliminación de celulitis. Use 'ayuda a mejorar la apariencia de la piel'.`,
+  },
+  'MX-CLAIM-012': {
+    message: 'Las afirmaciones de aumento de senos están prohibidas para cosméticos y requieren registro de medicamento.',
+    suggestion: 'Elimine las afirmaciones de aumento de senos. Use solo afirmaciones cosméticas de cuidado corporal.',
+  },
+  'MX-CLAIM-013': {
+    message: `Las afirmaciones absolutas de eficacia permanente están prohibidas, como 'permanente', 'completo', 'tratamiento de la raíz', 'para siempre', 'resultados duraderos garantizados'.`,
+    suggestion: `Elimine las afirmaciones permanentes/completas. Use 'ayuda a mantener' o 'cuidado duradero'.`,
+  },
+  'MX-CLAIM-014': {
+    message: `Las promesas de plazos específicos y resultados absolutos están prohibidas, como 'resultados en 7 días', '100% eficaz', 'resultados inmediatos', 'resultados garantizados'.`,
+    suggestion: `Elimine las afirmaciones de plazo fijo. Use 'con uso continuo' o 'mejora gradual'.`,
+  },
+  'MX-CLAIM-015': {
+    message: `Las afirmaciones de grado médico están prohibidas, como 'grado médico', 'fórmula médica', 'grado clínico', 'tratamiento profesional'. Los cosméticos no pueden imitar el marketing de medicamentos.`,
+    suggestion: `Elimine terminología médica/clínica. Use 'desarrollado con cuidado' o 'fórmula premium'.`,
+  },
+  'MX-CLAIM-016': {
+    message: 'Las afirmaciones para poblaciones especiales (bebés, embarazadas, niños, recién nacidos) requieren aprobación especial y etiquetas de advertencia.',
+    suggestion: 'Obtenga registro de producto infantil o elimine afirmaciones de bebés/embarazadas.',
+  },
+  'MX-CLAIM-017': {
+    message: `Las afirmaciones absolutas de blanqueamiento están prohibidas, como 'elimina todas las manchas', 'único eficaz', 'blanqueamiento permanente', 'elimina completamente la melanina'.`,
+    suggestion: `Reemplace con afirmaciones compatibles: 'ayuda a iluminar el tono de la piel', 'unifica el tono de la piel'.`,
+  },
+  'MX-CLAIM-018': {
+    message: 'Las afirmaciones de prevención de caída de cabello / crecimiento capilar están prohibidas para cosméticos y requieren registro de medicamento.',
+    suggestion: 'Elimine las afirmaciones de caída/crecimiento capilar. Use solo afirmaciones cosméticas de cuidado capilar.',
+  },
+  'MX-CLAIM-019': {
+    message: `Las afirmaciones absolutas de desintoxicación/purificación sin evidencia están prohibidas, como 'elimina completamente toxinas', 'purificación profunda'.`,
+    suggestion: `Elimine las afirmaciones absolutas de desintoxicación/purificación. Use 'limpia la piel'.`,
+  },
+  'MX-CLAIM-020': {
+    message: `Las afirmaciones absolutas de precio están prohibidas, como 'mejor precio', 'precio más bajo', 'oferta exclusiva'.`,
+    suggestion: 'Elimine las afirmaciones absolutas de precio. Use descripciones de precio de mercado.',
+  },
+  'MX-CLAIM-021': {
+    message: `Las afirmaciones de regeneración/reparación celular de grado médico están prohibidas, como 'regeneración celular', 'reparación de tejidos', 'renueva completamente la piel'.`,
+    suggestion: `Elimine las afirmaciones de regeneración/reparación celular. Use 'hidrata la piel'.`,
+  },
+  'MX-CLAIM-022': {
+    message: `Las afirmaciones comparativas/derogatorias de competidores están prohibidas, como 'mejor que los competidores', 'sin igual en el mercado', 'supera todos los demás productos'.`,
+    suggestion: 'Elimine las afirmaciones comparativas/derogatorias de competidores. Use descripciones de características del producto.',
   },
 }
 
@@ -605,7 +1143,7 @@ export const DEFAULT_LOCALE = 'en'
 
 /**
  * Translate a violation's message and suggestion based on ruleId and locale
- * Falls back to English if translation not found
+ * Falls back to English if translation not found, then to original as last resort
  */
 export function translateViolation(
   ruleId: string,
@@ -619,7 +1157,17 @@ export function translateViolation(
     return translation
   }
 
-  // Fallback: return original English
+  // If current locale is not Chinese and original appears to be Chinese,
+  // try English fallback first to avoid Chinese leaking into non-Chinese UIs
+  if (locale !== 'zh' && locale !== 'zh-CN') {
+    const enDict = REGULATION_MESSAGES['en']
+    const enTranslation = enDict?.[ruleId]
+    if (enTranslation) {
+      return enTranslation
+    }
+  }
+
+  // Last resort: return original (may be Chinese for JSON rules without translations)
   return original
 }
 

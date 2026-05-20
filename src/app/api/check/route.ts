@@ -12,9 +12,9 @@ export async function POST(request: NextRequest) {
     await initRules()
 
     // Check quota
-    const { allowed, response } = checkQuotaMiddleware(request)
-    if (!allowed) {
-      return response
+    const quotaResult = await checkQuotaMiddleware(request)
+    if (!quotaResult.allowed) {
+      return quotaResult.response
     }
 
     const body = await request.json()
@@ -39,7 +39,7 @@ export async function POST(request: NextRequest) {
       request.headers.get('x-forwarded-for') ||
       request.headers.get('x-real-ip') ||
       'anonymous'
-    incrementQuota(identifier)
+    await incrementQuota(identifier)
 
     // Run compliance check
     const result = checkCompliance({

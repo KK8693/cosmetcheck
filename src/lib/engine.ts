@@ -110,7 +110,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Corticosteroids require medical prescription and cannot be in cosmetics.',
     suggestion: 'Remove corticosteroids - product must be registered as medicine.',
-    aliases: ['皮质类固醇', 'corticosteróide', 'corticosteroide', 'steroid', 'cortisone', 'prednisone', '氢化可的松', '类固醇激素', 'corticoides', '激素提取物', '激素', 'hormone extract', 'animal hormone', '植物激素', '雌激素', '孕激素'],
+    aliases: ['皮质类固醇', 'corticosteróide', 'corticosteroide', 'steroid', 'cortisone', 'prednisone', '氢化可的松', '类固醇激素', 'corticoides', '激素提取物', '激素', 'hormone extract', 'animal hormone', '植物激素', '雌激素', '孕激素', 'hormônio', 'extrato de hormônio', 'extrato de hormônio vegetal', 'hormônio vegetal', 'estrogênio', 'progesterona', 'hormona', 'extracto de hormona', 'extracto de hormona vegetal', 'hormona vegetal', 'estrógeno', 'progesterona'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -166,7 +166,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Cosmetics cannot claim to cure, treat, or prevent diseases.',
     suggestion: 'Use cosmetic claims only (moisturizing, cleansing, beautifying).',
-    aliases: ['治愈', 'cura', 'cura', 'heal', 'healing', '治疗', '痊愈', 'curativo', 'terapêutico', 'cures', 'heals', 'treats', 'permanently', 'permanente'],
+    aliases: ['治愈', 'cura', 'cura', 'heal', 'healing', '治疗', '痊愈', 'curativo', 'terapêutico', 'cures', 'heals', 'treats', 'permanently', 'permanente', '根治', '彻底治愈', '完全治愈', 'radical cure', 'cura radical', 'cura completa', 'cura total', 'completely cure', 'total cure'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -271,7 +271,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     message: 'Permanent results claims require proof and are often misleading.',
     suggestion: 'Do not claim permanent results. Use "helps maintain" or "long-lasting".',
     source: 'ANVISA RDC 529/2021',
-    aliases: ['permanente', 'permanent results', 'efecto permanente', 'permanente'],
+    aliases: ['permanente', 'permanent results', 'efecto permanente', 'permanente', '永久', '永久美白', '永久去斑', '永久效果', '永久保持', 'permanently whiten', 'resultado permanente', 'efecto permanente', 'resultado permanente', 'resultados permanentes'],
   },
   {
     ruleId: 'BR-CLM-009',
@@ -294,6 +294,40 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     suggestion: 'If claiming dermatologist-tested, ensure clinical evidence exists.',
     source: 'ANVISA IN 26/2022',
     aliases: ['dermatologist tested', 'dermatologicamente testado', 'teste dermatológico'],
+  },
+  // === 补齐宣传违规检测 - 医疗级/孕妇/安全类绝对化 ===
+  {
+    ruleId: 'BR-CLAIM-011',
+    category: 'claim',
+    ruleType: 'prohibited',
+    keyword: 'medical grade',
+    severity: 'critical',
+    message: 'Cosmetics cannot claim "medical grade", "pharmaceutical grade", or imply drug-level standards.',
+    suggestion: 'Remove medical/pharmaceutical grade claims. Use "high quality" or "premium" instead.',
+    source: 'ANVISA RDC 529/2021',
+    aliases: ['medical grade', 'medical standard', 'medical level', '医疗级', '医用级', '医疗标准', 'grau médico', 'padrão médico', 'nível médico', 'grado médico', 'estándar médico', 'nivel médico', 'farmaceutical grade', 'pharmaceutical grade', 'grau farmacêutico', 'grado farmacéutico'],
+  },
+  {
+    ruleId: 'BR-CLAIM-012',
+    category: 'claim',
+    ruleType: 'prohibited',
+    keyword: 'pregnant women',
+    severity: 'critical',
+    message: 'Cosmetics cannot make claims specifically targeting pregnant women or imply safety for pregnancy without testing.',
+    suggestion: 'Remove pregnancy-specific claims. General safety claims require substantiation.',
+    source: 'ANVISA RDC 529/2021',
+    aliases: ['pregnant', 'pregnancy', 'expectant mother', 'gestante', 'grávida', 'mulher grávida', 'embarazada', 'mujer embarazada', 'gestante', '孕妇', '孕期', '准妈妈', '怀孕', '产妇', 'pregnant women', 'safe for pregnancy', 'seguro para gestantes', 'seguro durante el embarazo'],
+  },
+  {
+    ruleId: 'BR-CLAIM-013',
+    category: 'claim',
+    ruleType: 'prohibited',
+    keyword: '100% effective',
+    severity: 'warning',
+    message: 'Absolute effectiveness and safety claims (100% effective, no side effects, zero irritation, absolute safety) are prohibited without scientific proof.',
+    suggestion: 'Remove absolute claims. Use "clinically tested" or "suitable for most skin types" instead.',
+    source: 'ANVISA IN 26/2022',
+    aliases: ['100% effective', '100% efficacy', '100% results', '100% eficaz', '100% efetivo', '100% resultados', 'no side effects', 'zero side effects', 'no adverse effects', 'sem efeitos colaterais', 'zero efeitos colaterais', 'sem efeitos adversos', 'sin efectos secundarios', 'cero efectos secundarios', 'sin efectos adversos', 'zero irritation', 'no irritation', 'non-irritating', 'zero irritação', 'sem irritação', 'não irritante', 'cero irritación', 'sin irritación', 'no irritante', 'absolute safety', 'completely safe', '100% safe', 'segurança absoluta', 'completamente seguro', '100% seguro', 'seguridad absoluta', 'completamente seguro', '100% seguro', '绝对安全', '完全安全', '100%安全', '无副作用', '零副作用', '无不良反应', '零刺激', '无刺激', '不刺激', '100%效果', '百分之百效果', '百分百有效'],
   },
   {
     ruleId: 'BR-LBL-004',
@@ -652,7 +686,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Corticosteroids are prohibited in cosmetic products.',
     suggestion: 'Remove corticosteroids - product must be registered as medicine.',
-    aliases: ['皮质类固醇', 'corticosteróide', 'corticosteroide', 'steroid', 'cortisone', 'prednisone', '氢化可的松', '类固醇激素', 'corticoides', '激素提取物', '激素', 'hormone extract', 'animal hormone', '植物激素', '雌激素', '孕激素'],
+    aliases: ['皮质类固醇', 'corticosteróide', 'corticosteroide', 'steroid', 'cortisone', 'prednisone', '氢化可的松', '类固醇激素', 'corticoides', '激素提取物', '激素', 'hormone extract', 'animal hormone', '植物激素', '雌激素', '孕激素', 'hormônio', 'extrato de hormônio', 'extrato de hormônio vegetal', 'hormônio vegetal', 'estrogênio', 'progesterona', 'hormona', 'extracto de hormona', 'extracto de hormona vegetal', 'hormona vegetal', 'estrógeno', 'progesterona'],
     source: 'COFEPRIS NOM-259-SSA1-2014',
   },
   {
@@ -802,7 +836,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     message: 'Permanent results claims require proof.',
     suggestion: 'Do not claim permanent results.',
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
-    aliases: ['permanente', 'resultados permanentes', 'efecto permanente'],
+    aliases: ['permanente', 'resultados permanentes', 'efecto permanente', '永久', '永久美白', '永久去斑', '永久效果', '永久保持', 'permanently whiten', 'resultado permanente', 'resultados permanentes'],
   },
   {
     ruleId: 'MX-CLM-009',
@@ -825,6 +859,40 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     suggestion: 'If claiming dermatologist-tested, ensure clinical evidence exists.',
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
     aliases: ['dermatologist tested', 'testeado por dermatólogo', 'dermatológicamente testado'],
+  },
+  // === 补齐宣传违规检测 - 医疗级/孕妇/安全类绝对化 ===
+  {
+    ruleId: 'MX-CLAIM-018',
+    category: 'claim',
+    ruleType: 'prohibited',
+    keyword: 'medical grade',
+    severity: 'critical',
+    message: 'Cosmetics cannot claim "medical grade", "pharmaceutical grade", or imply drug-level standards.',
+    suggestion: 'Remove medical/pharmaceutical grade claims. Use "high quality" or "premium" instead.',
+    source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
+    aliases: ['medical grade', 'medical standard', 'medical level', '医疗级', '医用级', '医疗标准', 'grau médico', 'padrão médico', 'nível médico', 'grado médico', 'estándar médico', 'nivel médico', 'farmaceutical grade', 'pharmaceutical grade', 'grau farmacêutico', 'grado farmacéutico'],
+  },
+  {
+    ruleId: 'MX-CLAIM-019',
+    category: 'claim',
+    ruleType: 'prohibited',
+    keyword: 'pregnant women',
+    severity: 'critical',
+    message: 'Cosmetics cannot make claims specifically targeting pregnant women or imply safety for pregnancy without testing.',
+    suggestion: 'Remove pregnancy-specific claims. General safety claims require substantiation.',
+    source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
+    aliases: ['pregnant', 'pregnancy', 'expectant mother', 'gestante', 'grávida', 'mulher grávida', 'embarazada', 'mujer embarazada', 'gestante', '孕妇', '孕期', '准妈妈', '怀孕', '产妇', 'pregnant women', 'safe for pregnancy', 'seguro para gestantes', 'seguro durante el embarazo'],
+  },
+  {
+    ruleId: 'MX-CLAIM-020',
+    category: 'claim',
+    ruleType: 'prohibited',
+    keyword: '100% effective',
+    severity: 'warning',
+    message: 'Absolute effectiveness and safety claims (100% effective, no side effects, zero irritation, absolute safety) are prohibited without scientific proof.',
+    suggestion: 'Remove absolute claims. Use "clinically tested" or "suitable for most skin types" instead.',
+    source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
+    aliases: ['100% effective', '100% efficacy', '100% results', '100% eficaz', '100% efetivo', '100% resultados', 'no side effects', 'zero side effects', 'no adverse effects', 'sem efeitos colaterais', 'zero efeitos colaterais', 'sem efeitos adversos', 'sin efectos secundarios', 'cero efectos secundarios', 'sin efectos adversos', 'zero irritation', 'no irritation', 'non-irritating', 'zero irritação', 'sem irritação', 'não irritante', 'cero irritación', 'sin irritación', 'no irritante', 'absolute safety', 'completely safe', '100% safe', 'segurança absoluta', 'completamente seguro', '100% seguro', 'seguridad absoluta', 'completamente seguro', '100% seguro', '绝对安全', '完全安全', '100%安全', '无副作用', '零副作用', '无不良反应', '零刺激', '无刺激', '不刺激', '100%效果', '百分之百效果', '百分百有效'],
   },
   {
     ruleId: 'MX-LBL-003',
@@ -1400,19 +1468,22 @@ export function checkCompliance(input: CheckInput): CheckResult {
   const contextText = [input.description || '', input.label || ''].join(' ').toLowerCase()
   
   // === 品类检测关键词 ===
-  // 抗老品类
-  const antiAgingCategoryKeywords = ['抗老', '抗衰老', '抗皱', '去皱', '除皱', 'anti-aging', 'antiage', 'anti age', 'anti-wrinkle', 'antienvejecimiento', 'antiarrug', '抗龄', '抗衰']
+  // 抗老品类（严格匹配，避免"抗老"等泛词误触发）
+  const antiAgingCategoryKeywords = ['抗衰老', '抗皱', '去皱', '除皱', 'anti-aging', 'anti-wrinkle', 'antienvejecimiento', 'antiarrug', 'anti-edad', 'anti envelhecimento', 'anti rugas']
   // 防晒品类
   const sunscreenCategoryKeywords = ['防晒', 'sunscreen', 'sun block', 'protector solar', 'bloqueador solar', 'spf', 'fps', '防紫外线', 'uv protection', '隔离紫外线', '防晒精华', '防晒乳', '防晒霜']
   // 美白品类
-  const whiteningCategoryKeywords = ['美白', '淡斑', '提亮', '亮肤', 'whitening', 'brightening', 'blanqueamiento', 'branqueamento', 'aclarante']
+  const whiteningCategoryKeywords = ['美白', '淡斑', '祛斑', '提亮', '亮肤', 'whitening', 'brightening', 'blanqueamiento', 'branqueamento', 'aclarante', 'desmanchante', 'clareamento']
   // 抗菌品类
   const antibacterialCategoryKeywords = ['洗手', '消毒', '抗菌', '抑菌', 'disinfectant', 'hand sanitizer', 'hand wash', '洗手液', '消毒洗手', '免洗洗手', '沐浴', 'body wash', 'shower gel', '卸妆', 'makeup remover', 'cleanser']
   
   // 检测产品品类
-  const isAntiAgingCategory = antiAgingCategoryKeywords.some(kw => contextText.includes(kw.toLowerCase()))
+  const hasExplicitAntiAging = antiAgingCategoryKeywords.some(kw => contextText.includes(kw.toLowerCase()))
+  const hasExplicitWhitening = whiteningCategoryKeywords.some(kw => contextText.includes(kw.toLowerCase()))
+  // "抗老"等泛词仅在未明确属于美白品类时才归类为抗老（避免美白产品误触发抗老规则）
+  const isAntiAgingCategory = hasExplicitAntiAging || (!hasExplicitWhitening && contextText.includes('抗老'))
   const isSunscreenCategory = sunscreenCategoryKeywords.some(kw => contextText.includes(kw.toLowerCase()))
-  const isWhiteningCategory = whiteningCategoryKeywords.some(kw => contextText.includes(kw.toLowerCase()))
+  const isWhiteningCategory = hasExplicitWhitening || contextText.includes('抗老') // 抗老产品常带美白功效，保留兼容
   const isAntibacterialCategory = antibacterialCategoryKeywords.some(kw => contextText.includes(kw.toLowerCase()))
   
   // 构建产品品类标识符列表（用于规则匹配）
@@ -1499,12 +1570,43 @@ export function checkCompliance(input: CheckInput): CheckResult {
   violations.length = 0
   violations.push(...uniqueByRuleId.values())
 
-  // ── 同文本跨规则去重 ──
-  // 同一成分/概念被多条规则（硬编码+JSON）命中时，只保留最严重的一条
+  // ── 同文本跨规则去重 — 使用智能归一化 key 确保氢醛/激素/皮质类固醇等同源规则正确去重 ──
   const severityRank = { critical: 3, warning: 2, info: 1 }
+  // 成分中英文映射（确保硬编码与JSON规则能够正确去重）
+  const ingredientKeywordMap: Record<string, string> = {
+    '氢醛': 'hydroquinone',
+    '对苯二酚': 'hydroquinone',
+    '皮质类固醇': 'corticosteroid',
+    '激素': 'hormone',
+    '激素提取物': 'hormone',
+    '植物激素': 'hormone',
+    '甲醛': 'formaldehyde',
+    '汞': 'mercury',
+    '铅': 'lead',
+    '视黄醇': 'retinol',
+    '对羟基苯甲酸酯': 'paraben',
+    'hidroquinona': 'hydroquinone',
+    'corticosteróide': 'corticosteroid',
+    'corticosteroide': 'corticosteroid',
+    'hormônio': 'hormone',
+    'hormona': 'hormone',
+    'formaldeído': 'formaldehyde',
+    'formaldehído': 'formaldehyde',
+    'mercúrio': 'mercury',
+    'plomo': 'lead',
+    'chumbo': 'lead',
+  }
   const uniqueByMatch = new Map<string, Violation>()
   for (const v of violations) {
-    const key = `${v.category}:${(v.matchedText || v.keyword).toLowerCase()}`
+    let key: string
+    if (v.category === 'ingredient') {
+      const normalizedKeyword = v.keyword.toLowerCase().trim()
+      const normalizedMatched = (v.matchedText || '').toLowerCase().trim()
+      const mappedKey = ingredientKeywordMap[normalizedKeyword] || ingredientKeywordMap[normalizedMatched] || normalizedKeyword || normalizedMatched
+      key = `ingredient:${mappedKey}`
+    } else {
+      key = `${v.category}:${(v.matchedText || v.keyword).toLowerCase()}`
+    }
     const existing = uniqueByMatch.get(key)
     if (!existing) {
       uniqueByMatch.set(key, v)
