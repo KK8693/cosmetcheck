@@ -32,11 +32,11 @@ const enRegulations: RegulationDictionary = {
   },
   'BR-ING-005': {
     message: 'Formaldehyde is prohibited in cosmetics except as preservative trace below 0.2%.',
-    suggestion: 'Ensure formaldehyde concentration is below 0.2% or remove entirely.',
+    suggestion: 'Remove formaldehyde and formaldehyde-releasing agents (DMDM hydantoin, imidazolidinyl urea). Replace with phenoxyethanol, ethylhexylglycerin, or potassium sorbate.',
   },
   'BR-ING-006': {
     message: 'Parabens are restricted. Maximum concentration: 0.4% for single, 0.8% for mixture.',
-    suggestion: 'Verify paraben concentration complies with ANVISA limits.',
+    suggestion: 'Reduce parabens to ≤0.4% (single) or ≤0.8% (mixture). If exceeding, remove or replace with phenoxyethanol, ethylhexylglycerin, or potassium sorbate.',
   },
   'BR-ING-007': {
     message: 'Retinol (Vitamin A) concentration exceeds safe cosmetic limits (>0.3%).',
@@ -53,11 +53,11 @@ const enRegulations: RegulationDictionary = {
   },
   'BR-CLAIM-003': {
     message: "Sunscreen products must display SPF and UVA/UVB protection. Absolute claims like 'total protection' or 'no reapplication needed' are prohibited per RDC 907/2024.",
-    suggestion: 'Include SPF value and UVA/UVB labels. Avoid absolute protection claims.',
+    suggestion: 'Remove absolute claims like "total protection" or "no reapplication". Replace with specific SPF value (e.g., SPF 30) and UVA/UVB labeling per regulations.',
   },
   'BR-CLAIM-004': {
     message: 'Cosmetics cannot claim hair loss prevention or hair growth promotion. These claims require ANVISA medicine registration.',
-    suggestion: 'Use cosmetic hair care claims: moisturizing, conditioning, shine.',
+    suggestion: 'Remove medical hair claims (e.g., "prevents hair loss", "promotes growth"). Replace with cosmetic claims: "moisturizes scalp", "conditions hair", "adds shine".',
   },
   'BR-CLAIM-005': {
     message: 'Breast enlargement/firming claims are prohibited for cosmetics. These require pharmaceutical registration.',
@@ -82,7 +82,7 @@ const enRegulations: RegulationDictionary = {
   },
   'BR-ABS-005': {
     message: "Claims of suitability for all skin types without scientific evidence are prohibited. Test support required. Use 'compatible with most skin types' or 'suitable for dry/oily/normal skin' instead.",
-    suggestion: 'Specify tested skin types or conduct compatibility testing.',
+    suggestion: 'Remove "suitable for all skin types" without evidence. Replace with "tested on [normal/dry/oily] skin" or provide dermatological compatibility report.',
   },
   'BR-ABS-006': {
     message: "Absolute effectiveness guarantees like '100% effective' are prohibited. Efficacy varies by individual. Use 'results may vary' or 'works best with regular use' instead.",
@@ -91,7 +91,7 @@ const enRegulations: RegulationDictionary = {
   // === Special Population ===
   'BR-POP-001': {
     message: 'Claims suitability for infants, pregnant women require specific labeling of applicable age and special condition warnings. Infant products require separate registration.',
-    suggestion: 'Obtain infant product registration or remove infant/pregnancy claims.',
+    suggestion: 'Remove "safe for infants/pregnant women" claims unless product has pediatric/prenatal registration. Replace with general safety claims or apply for special category registration.',
   },
   // === Mexico ===
   'MX-ING-001': {
@@ -112,7 +112,7 @@ const enRegulations: RegulationDictionary = {
   },
   'MX-ING-005': {
     message: 'Formaldehyde releasers are restricted. Maximum 0.2% formaldehyde release.',
-    suggestion: 'Ensure formaldehyde release does not exceed 0.2%. Use alternative preservatives.',
+    suggestion: 'Remove formaldehyde-releasing preservatives (DMDM hydantoin, imidazolidinyl urea). Replace with phenoxyethanol, ethylhexylglycerin, or potassium sorbate.',
   },
 
 
@@ -211,15 +211,15 @@ const enRegulations: RegulationDictionary = {
   },
   'MX-CLAIM-007': {
     message: 'Dermatologist-tested claims require valid and authentic test reports.',
-    suggestion: 'Ensure you have valid dermatological test reports.',
+    suggestion: 'Remove "dermatologically tested" claim without accepted test report. Replace with specific test details ("tested by [Institute] on [n] volunteers") or remove entirely.',
   },
   'MX-CLAIM-008': {
     message: `Hypoallergenic claims require clinical testing support. Using 'hypoallergenic' or 'allergy-free' without evidence is prohibited.`,
-    suggestion: 'Provide clinical hypoallergenic testing proof.',
+    suggestion: 'Remove "hypoallergenic" claim without clinical study. Replace with "tested for skin compatibility" plus testing institution name, or remove entirely.',
   },
   'MX-CLAIM-009': {
     message: 'Cruelty-free claims require valid documentation.',
-    suggestion: 'Ensure you have valid cruelty-free certification.',
+    suggestion: 'Remove "cruelty-free" / "not tested on animals" claims unless certified by approved body. Replace with ingredient sourcing claims or obtain valid certification.',
   },
   'MX-CLAIM-010': {
     message: `Cosmetics cannot claim to cure, treat, or prevent diseases. Terms like 'cure', 'root cause treatment', 'completely solve' are prohibited.`,
@@ -295,15 +295,15 @@ const zhRegulations: RegulationDictionary = {
   },
   'BR-ING-005': {
     message: '甲醛禁止用于化妆品，除非作为防腐剂痕迹低于 0.2%。',
-    suggestion: '确保甲醛浓度低于 0.2%，或完全去除。',
+    suggestion: '去除甲醛及甲醛释放体（如DMDM乙内酰脲、咪唑烷基脲）。替换为苯氧乙醇、乙基己基甘油或山梨酸钾。',
   },
   'BR-ING-006': {
     message: '对羟基苯甲酸酯（Parabens）受限制。单一最高 0.4%，混合物最高 0.8%。',
-    suggestion: '验证对羟基苯甲酸酯浓度符合 ANVISA 限制。',
+    suggestion: '将甲酯浓度降至≤0.4%，混合酯≤0.8%；超出则删除或替换为苯氧乙醇、山梨酸钾等无限制防腐剂。',
   },
   'BR-ING-007': {
     message: '视黄醇（维生素A）浓度超过安全化妆品限值（>0.3%）。',
-    suggestion: '将视黄醇浓度降至 0.3% 或以下。',
+    suggestion: '将视黄醇降至≤0.3%，或替换为补骨脂酚（无浓度限制）。若需更高浓度，申请药品注册。',
   },
   'BR-ABS-001': {
     message: "禁止使用'永久'、'彻底治愈'、'永远'等绝对化用语。请改用'帮助维持'。",
@@ -323,7 +323,7 @@ const zhRegulations: RegulationDictionary = {
   },
   'BR-ABS-005': {
     message: "禁止无科学依据地宣称适用于所有肤质。需要测试支持。请改用'兼容大多数肤质'或'适用于干/油/中性皮肤'。",
-    suggestion: '明确说明经过测试的肤质，或进行兼容性测试。',
+    suggestion: '删除"适合所有肤质"等绝对化描述；替换为"适合干性/油性/混合性肤质（经测试验证）"。',
   },
   'BR-ABS-006': {
     message: "禁止'100%有效'等绝对效果保证。功效因人而异。请改用'效果可能因人而异'或'坚持使用效果最佳'。",
@@ -331,7 +331,7 @@ const zhRegulations: RegulationDictionary = {
   },
   'BR-POP-001': {
     message: '宣称适用于婴儿、孕妇需要明确标注适用年龄和特殊状况警告。婴儿产品需要单独注册。',
-    suggestion: '获得婴儿产品注册，或去除婴儿/孕妇宣称。',
+    suggestion: '删除"适合婴儿/孕妇"声称；除非产品已取得特殊类别注册，否则替换为一般安全性声明。',
   },
   'MX-ING-001': {
     message: '汞（Mercurio）被 COFEPRIS NOM-141-SSA1/SCF1-2012 禁止用于化妆品。',
@@ -351,7 +351,7 @@ const zhRegulations: RegulationDictionary = {
   },
   'MX-ING-005': {
     message: '甲醛释放体受限制。最大 0.2% 甲醛释放量。',
-    suggestion: '确保甲醛释放不超过 0.2%。使用替代防腐剂。',
+    suggestion: '去除甲醛释放体（DMDM乙内酰脲、咪唑烷基脲）。替换为苯氧乙醇、乙基己基甘油或山梨酸钾。',
   },
 
   // === Mexico Banned Ingredients ===
@@ -450,15 +450,15 @@ const zhRegulations: RegulationDictionary = {
   },
   'MX-CLAIM-007': {
     message: '皮肤科医生测试声称需要真实有效的测试报告支撑。',
-    suggestion: '确保拥有真实有效的皮肤科测试报告。',
+    suggestion: '删除"经皮肤科医生测试"声称；若无有效报告，替换为具体测试详情或完全去除。',
   },
   'MX-CLAIM-008': {
     message: '低致敏声称需要临床测试支持，禁止无证据使用"低致敏"、"无过敏"等。',
-    suggestion: '提供低致敏性临床测试证明。',
+    suggestion: '删除"低致敏""抗敏感"等声称；若实际测试，替换为"经皮肤安全测试验证"并附上测试机构名称。',
   },
   'MX-CLAIM-009': {
     message: '无残忍测试声称需要有效的证明文件支撑。',
-    suggestion: '确保拥有有效的无残忍测试证明。',
+    suggestion: '删除"无残忍""未动物测试"声称；除非持有认证机构证书，否则替换为成分来源声明。',
   },
   'MX-CLAIM-010': {
     message: '化妆品不得声称治愈、治疗或预防疾病，禁止使用"治愈"、"根治"、"彻底解决"等术语。',
