@@ -1,123 +1,49 @@
-// CosmetCheck Engine Test Script
-import { checkCompliance, initRules } from './src/lib/engine'
+import { checkCompliance } from './src/lib/engine'
 
-const testInput = {
-  ingredients: "Água, Glicerina, Hidroquinona, Extrato de aloe, Essência floral, Conservante com formaldeído",
-  description: "Nosso sérum clareador age 7 dias eliminando todas as manchas escuras, melasma e sinais de envelhecimento de forma permanente. Com fórmula médica exclusiva, cura completamente o melanina escura e deixa a pele branca para sempre. Ideal para todos os tipos de pele, incluindo bebês e mulheres grávidas, sem nenhum risco de irritação. Modo de uso: Aplicar no rosto todas as manhãs e noites, resultados garantidos 100%.",
-  country: "BR" as const
-}
+const productName = '速效医疗级美白祛斑防晒精华'
+const description = '这款医疗级焕肤精华可在7天内彻底祛除面部色斑、黄褐斑，根治底层黑色素沉淀，实现永久白皙透亮的肌肤状态。配方温和安全，孕妇、敏感肌均可放心使用，使用后100%达到嫩肤美白效果，长期使用无任何副作用、零肌肤刺激，可有效隔离紫外线，长效锁住肌肤白皙状态。'
+const ingredients = '去离子水、丙二醇、氢醌、植物激素提取物、泛醇、透明质酸钠、天然植物精油、苯氧乙醇'
 
-async function runTest() {
-  console.log("=" .repeat(60))
-  console.log("🧪 COSMETCHECK ENGINE TEST - Product Compliance Scan")
-  console.log("=" .repeat(60))
-  
-  console.log("\n📝 INPUT TEXT:")
-  console.log("-".repeat(40))
-  console.log("Ingredients:", testInput.ingredients)
-  console.log("\nDescription:", testInput.description.substring(0, 150) + "...")
-  
-  // Initialize rules first
-  await initRules()
-  
-  // Run compliance check
-  const result = checkCompliance(testInput)
-  
-  console.log("\n" + "=" .repeat(60))
-  console.log("📊 DETECTION RESULTS")
-  console.log("=" .repeat(60))
-  
-  console.log(`\n✅ Overall Compliant: ${result.isCompliant ? 'YES' : 'NO'}`)
-  console.log(`📈 Total Issues: ${result.summary.totalIssues}`)
-  console.log(`   🔴 Critical: ${result.summary.criticalCount}`)
-  console.log(`   🟡 Warning: ${result.summary.warningCount}`)
-  console.log(`   🔵 Info: ${result.summary.infoCount}`)
-  
-  console.log("\n" + "-".repeat(60))
-  console.log("🚨 VIOLATIONS (CRITICAL - Must Fix)")
-  console.log("-".repeat(60))
-  
-  if (result.violations.length === 0) {
-    console.log("   ✅ No critical violations detected!")
+console.log('=== 测试产品 ===')
+console.log('名称:', productName)
+console.log('描述:', description)
+console.log('成分:', ingredients)
+console.log('')
+
+for (const country of ['BR', 'MX'] as const) {
+  console.log(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`)
+  console.log(`  目标市场: ${country}`)
+  console.log(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`)
+
+  const result = checkCompliance({
+    productName,
+    description,
+    ingredients,
+    country,
+  })
+
+  console.log('合规状态:', result.isCompliant ? '✅ 合规' : '❌ 不合规')
+  console.log('')
+
+  const allIssues = [...result.violations, ...result.warnings, ...result.info]
+  console.log(`总问题数: ${allIssues.length} (Critical: ${result.summary.criticalCount}, Warning: ${result.summary.warningCount}, Info: ${result.summary.infoCount})`)
+  console.log('')
+
+  if (allIssues.length === 0) {
+    console.log('⚠️ 未检测到任何违规！')
   } else {
-    result.violations.forEach((v, i) => {
-      console.log(`\n   ${i + 1}. [${v.ruleId}] ${v.keyword}`)
-      console.log(`      Category: ${v.category} | Type: ${v.ruleType}`)
-      console.log(`      📍 Source: ${v.sourceField}`)
-      console.log(`      💬 ${v.message}`)
-      console.log(`      🎯 Matched: "${v.matchedText}"`)
-      if (v.contextSnippet) {
-        console.log(`      📝 Context: ${v.contextSnippet}`)
-      }
-    })
-  }
-  
-  console.log("\n" + "-".repeat(60))
-  console.log("⚠️ WARNINGS (Should Fix)")
-  console.log("-".repeat(60))
-  
-  if (result.warnings.length === 0) {
-    console.log("   ✅ No warnings!")
-  } else {
-    result.warnings.forEach((v, i) => {
-      console.log(`\n   ${i + 1}. [${v.ruleId}] ${v.keyword}`)
-      console.log(`      📍 Source: ${v.sourceField}`)
-      console.log(`      💬 ${v.message}`)
-      console.log(`      🎯 Matched: "${v.matchedText}"`)
-    })
-  }
-  
-  console.log("\n" + "-".repeat(60))
-  console.log("ℹ️ INFO (Good to Know)")
-  console.log("-".repeat(60))
-  
-  if (result.info.length === 0) {
-    console.log("   ✅ No additional info!")
-  } else {
-    result.info.forEach((v, i) => {
-      console.log(`\n   ${i + 1}. [${v.ruleId}] ${v.keyword}`)
-      console.log(`      💬 ${v.message}`)
-    })
-  }
-  
-  // Group by category for summary
-  const byCategory = {
-    ingredient: { critical: 0, warning: 0 },
-    claim: { critical: 0, warning: 0 },
-    label: { critical: 0, warning: 0 }
-  }
-  
-  ;[...result.violations, ...result.warnings].forEach(v => {
-    if (byCategory[v.category as keyof typeof byCategory]) {
-      byCategory[v.category as keyof typeof byCategory][v.severity === 'critical' ? 'critical' : 'warning']++
+    for (const v of allIssues) {
+      const severityIcon = v.severity === 'critical' ? '🔴' : v.severity === 'warning' ? '🟡' : '🔵'
+      const confidenceIcon = v.confidence === 'high' ? '●' : v.confidence === 'medium' ? '◐' : v.confidence === 'low' ? '○' : '?'
+      console.log(`${severityIcon} [${v.ruleId}] ${v.category.toUpperCase()} | confidence:${confidenceIcon} | severity:${v.severity}`)
+      console.log(`   keyword: "${v.keyword}"`)
+      console.log(`   matchedText: "${v.matchedText}"`)
+      console.log(`   message: ${v.message}`)
+      console.log(`   suggestion: ${v.suggestion}`)
+      console.log(`   sourceField: ${v.sourceField || 'N/A'}${v.allSourceFields ? ` | allFields:[${v.allSourceFields.join(',')}]` : ''}`)
+      console.log('')
     }
-  })
-  
-  console.log("\n" + "=" .repeat(60))
-  console.log("📋 SUMMARY BY CATEGORY")
-  console.log("=" .repeat(60))
-  
-  Object.entries(byCategory).forEach(([cat, counts]) => {
-    console.log(`   ${cat.toUpperCase()}: ${counts.critical} critical, ${counts.warning} warnings`)
-  })
-  
-  console.log("\n" + "=" .repeat(60))
-  console.log("🎯 RECOMMENDATIONS")
-  console.log("=" .repeat(60))
-  
-  if (result.summary.criticalCount > 0) {
-    console.log("   ❌ Product CANNOT be sold in Brazil without reforms!")
-    console.log("   📋 Priority actions:")
-    console.log("      1. Remove prohibited ingredients (Hidroquinona, Formaldeído)")
-    console.log("      2. Remove medical/curative claims")
-    console.log("      3. Add required label information")
-  } else if (result.summary.warningCount > 0) {
-    console.log("   ⚠️ Product has compliance issues that should be fixed before sale")
-  } else {
-    console.log("   ✅ Product appears compliant")
   }
-  
-  console.log("\n" + "=".repeat(60))
-}
 
-runTest().catch(console.error)
+  console.log('')
+}

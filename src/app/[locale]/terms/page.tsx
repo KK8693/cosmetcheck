@@ -1,17 +1,15 @@
 /**
  * Terms of Service page - i18n version
- * Bypasses next-intl entirely; reads directly from messagesMap via params.locale
+ * Client Component: reads locale from URL pathname
  */
+'use client'
+
+import { usePathname } from 'next/navigation'
 import { messagesMap } from '@/i18n/request'
 
-export const runtime = 'edge'
-
-export default async function TermsPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
-  const { locale } = await params
+export default function TermsPage() {
+  const pathname = usePathname()
+  const locale = pathname?.split('/')[1] || 'en'
   const messages = messagesMap[locale] || messagesMap['en']
 
   return (
