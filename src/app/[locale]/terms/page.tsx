@@ -25,7 +25,7 @@ export default function TermsPage() {
           }}
         />
 
-        <div className="prose prose-gray max-w-none">
+        <div className="prose max-w-none">
           <div dangerouslySetInnerHTML={{ __html: messages.legal.terms.s1 }} />
           <div dangerouslySetInnerHTML={{ __html: messages.legal.terms.s2 }} />
           <div dangerouslySetInnerHTML={{ __html: messages.legal.terms.s3 }} />

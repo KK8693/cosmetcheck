@@ -36,7 +36,7 @@ export default function PrivacyPage() {
           }}
         />
 
-        <div className="prose prose-gray max-w-none">
+        <div className="prose max-w-none">
           <div dangerouslySetInnerHTML={{ __html: messages.legal.privacy.s1 }} />
           <div dangerouslySetInnerHTML={{ __html: messages.legal.privacy.s2 }} />
           <div dangerouslySetInnerHTML={{ __html: messages.legal.privacy.s3 }} />

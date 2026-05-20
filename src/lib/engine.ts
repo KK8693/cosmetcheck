@@ -1151,48 +1151,49 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
   },
 ]
 
-// 生成上下文片段：在匹配词前后各取一定字符，高亮显示匹配位置
+// \u751f\u6210\u4e0a\u4e0b\u6587\u7247\u6bb5\uff1a\u63d0\u53d6\u5305\u542b\u5339\u914d\u8bcd\u7684\u5b8c\u6574\u53e5\u5b50\uff0c\u9ad8\u4eae\u663e\u793a\u5339\u914d\u4f4d\u7f6e
 function generateContextSnippet(
   text: string,
   matchStart: number,
-  matchEnd: number,
-  contextLength: number = 50
+  matchEnd: number
 ): string {
-  const lowerText = text.toLowerCase()
   const matchText = text.substring(matchStart, matchEnd)
-  
-  // 提取匹配词前后各 contextLength 个字符
-  const snippetStart = Math.max(0, matchStart - contextLength)
-  const snippetEnd = Math.min(text.length, matchEnd + contextLength)
-  
-  let snippet = ''
-  
-  // 添加前导省略标记
-  if (snippetStart > 0) {
-    snippet += '...'
+  const sentenceDelimiters = /[.!?\u3002\uff01\uff1f\\n]/
+
+  // \u5411\u524d\u627e\u53e5\u5b50\u5f00\u5934
+  let snippetStart = 0
+  for (let i = matchStart - 1; i >= 0; i--) {
+    if (sentenceDelimiters.test(text[i])) {
+      snippetStart = i + 1
+      break
+    }
   }
-  
-  // 获取中间部分（包括匹配词）
-  const middlePart = text.substring(snippetStart, snippetEnd)
-  
-  // 在中间部分中找到匹配词的位置（相对位置）
-  const relativeMatchStart = matchStart - snippetStart
-  const relativeMatchEnd = matchEnd - snippetStart
-  
-  // 构建带高亮的片段：前导部分 + 高亮匹配 + 后续部分
-  const beforeMatch = middlePart.substring(0, relativeMatchStart)
-  const matched = middlePart.substring(relativeMatchStart, relativeMatchEnd)
-  const afterMatch = middlePart.substring(relativeMatchEnd)
-  
-  // 使用【匹配词】格式高亮
-  snippet += beforeMatch + '【' + matched + '】' + afterMatch
-  
-  // 添加尾部省略标记
-  if (snippetEnd < text.length) {
-    snippet += '...'
+
+  // \u5411\u540e\u627e\u53e5\u5b50\u7ed3\u5c3e
+  let snippetEnd = text.length
+  for (let i = matchEnd; i < text.length; i++) {
+    if (sentenceDelimiters.test(text[i])) {
+      snippetEnd = i + 1
+      break
+    }
   }
-  
-  return snippet
+
+  // \u5982\u679c\u53e5\u5b50\u8d85\u8fc7 200 \u5b57\u7b26\uff0c\u9000\u56de\u5230\u56fa\u5b9a\u4e0a\u4e0b\u6587\u957f\u5ea6
+  if (snippetEnd - snippetStart > 200) {
+    const ctxLen = 50
+    const fixedStart = Math.max(0, matchStart - ctxLen)
+    const fixedEnd = Math.min(text.length, matchEnd + ctxLen)
+    let snippet = ''
+    if (fixedStart > 0) snippet += '...'
+    snippet += text.substring(fixedStart, matchStart) + '\u3010' + matchText + '\u3011' + text.substring(matchEnd, fixedEnd)
+    if (fixedEnd < text.length) snippet += '...'
+    return snippet
+  }
+
+  const sentence = text.substring(snippetStart, snippetEnd).trim()
+  const relativeStart = matchStart - snippetStart
+
+  return sentence.substring(0, relativeStart) + '\u3010' + matchText + '\u3011' + sentence.substring(relativeStart + matchText.length)
 }
 
 // 检查匹配位置是否为词边界（避免子字符串误匹配，如 "lead" 匹配 "sunflower"）

@@ -36,7 +36,7 @@ export default function CookiePolicyPage() {
           }}
         />
 
-        <div className="prose prose-gray max-w-none">
+        <div className="prose max-w-none">
           <div dangerouslySetInnerHTML={{ __html: messages.legal['cookie-policy'].s1 }} />
           <div dangerouslySetInnerHTML={{ __html: messages.legal['cookie-policy'].s2 }} />
           <div dangerouslySetInnerHTML={{ __html: messages.legal['cookie-policy'].s3 }} />
