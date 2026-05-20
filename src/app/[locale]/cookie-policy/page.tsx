@@ -36,7 +36,7 @@ export default function CookiePolicyPage() {
           }}
         />
 
-        <div className="max-w-none">
+        <div className="max-w-none text-black">
           <div dangerouslySetInnerHTML={{ __html: messages.legal['cookie-policy'].s1 }} />
           <div dangerouslySetInnerHTML={{ __html: messages.legal['cookie-policy'].s2 }} />
           <div dangerouslySetInnerHTML={{ __html: messages.legal['cookie-policy'].s3 }} />

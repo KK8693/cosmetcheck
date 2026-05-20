@@ -25,7 +25,7 @@ export default function DisclaimerPage() {
           }}
         />
 
-        <div className="max-w-none">
+        <div className="max-w-none text-black">
           <div dangerouslySetInnerHTML={{ __html: messages.legal.disclaimer.s1 }} />
           <div dangerouslySetInnerHTML={{ __html: messages.legal.disclaimer.s2 }} />
           <div dangerouslySetInnerHTML={{ __html: messages.legal.disclaimer.s3 }} />
