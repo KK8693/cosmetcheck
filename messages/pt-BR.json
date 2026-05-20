@@ -117,7 +117,24 @@
       "loginRequired": "Por favor, faça login primeiro para gerar Listing",
       "quotaExceeded": "Cota gratuita esgotada, atualize para Pro para uso ilimitado",
       "generateFailed": "Falha na geração, tente novamente mais tarde"
-    }
+    },
+    "categoryLabels": {
+      "ingredient": "Violação de Ingrediente",
+      "claim": "Violação de Claim",
+      "label": "Violação de Rótulo",
+      "packaging": "Violação de Embalagem"
+    },
+    "confidenceBadge": {
+      "high": "Violação Definida",
+      "medium": "Necessita Revisão",
+      "low": "Especulativo"
+    },
+    "sourceFields": {
+      "ingredients": "Ingredientes",
+      "description": "Descrição do Produto",
+      "label": "Rótulo do Produto"
+    },
+    "sourceFieldLabel": "Fonte"
   },
   "howItWorks": {
     "title": "Verificação de Conformidade em 3 Etapas",

@@ -1284,13 +1284,28 @@ function calculateConfidence(
   // 标签要求：high confidence（明确的法规要求）
   if (rule.category === 'label') return 'high'
   
-  // 宣称类：绝对化用语为 high，其他为 medium
+  // \u5ba3\u79f0\u7c7b\uff1a\u7edd\u5bf9\u5316\u7528\u8bed\u4e3a high\uff0c\u5176\u4ed6\u4e3a medium
   if (rule.category === 'claim') {
     const absolutePatterns = [
-      '永久', '彻底', '根治', '治愈', '100%', '保证', '医疗级',
-      '完全', '绝对', '永远', '7天', '3天', '立即', '立刻',
+      // \u4e2d\u6587
+      '\u6c38\u4e45', '\u5f7b\u5e95', '\u6839\u6cbb', '\u6cbb\u6108', '100%', '\u4fdd\u8bc1', '\u533b\u7597\u7ea7',
+      '\u5b8c\u5168', '\u7edd\u5bf9', '\u6c38\u8fdc', '7\u5929', '3\u5929', '\u7acb\u5373', '\u7acb\u523b',
+      // \u82f1\u6587 - \u539f\u6709
       'permanent', 'completely', 'totally', '100%', 'guaranteed', 'medical grade',
-      'clinical grade', 'forever', 'always', 'immediate', 'instant'
+      'clinical grade', 'forever', 'always', 'immediate', 'instant',
+      // \u82f1\u6587 - \u65b0\u589e\u5b8c\u6574\u77ed\u8bed\u53ca\u53d8\u4f53
+      '7 days', '7-days', '7days', 'in 7 days', 'within 7 days',
+      '3 days', '3-days', '3days', 'in 3 days', 'within 3 days',
+      'medical-grade', 'medicalgrade', 'medical grade',
+      'clinical-grade', 'clinicalgrade', 'clinical grade',
+      'pregnant women', 'pregnant-women', 'pregnantwomen',
+      'no side effects', 'no-side-effects', 'zero side effects', 'zero-side-effects',
+      'side effects', 'side-effects',
+      'whitening', 'skin whitening', 'skin-whitening',
+      'cure', 'cures', 'curing', 'cured',
+      'remove', 'removes', 'removing', 'removed', 'completely removes',
+      'radically', 'radical',
+      'zero irritation', 'zero-irritation',
     ]
     if (absolutePatterns.some(p => matchedText.toLowerCase().includes(p.toLowerCase()))) {
       return 'high'

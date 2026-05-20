@@ -43,12 +43,6 @@ interface CheckResult {
 
 // P4.3: Group violations by category for organized display
 const categoryOrder = ['ingredient', 'claim', 'label', 'packaging']
-const categoryLabels: Record<string, string> = {
-  ingredient: '成分违规',
-  claim: '宣称违规', 
-  label: '标签违规',
-  packaging: '包装违规',
-}
 
 function HighlightText({ text, matchedText }: { text: string; matchedText: string }) {
   if (!text || !matchedText) return <span>{text}</span>
@@ -65,56 +59,7 @@ function HighlightText({ text, matchedText }: { text: string; matchedText: strin
   )
 }
 
-function SourceHighlight({ violation, ingredients, productBenefits, productName }: {
-  violation: ViolationItem
-  ingredients: string
-  productBenefits: string
-  productName: string
-}) {
-  const fields = violation.allSourceFields?.length ? violation.allSourceFields : [violation.sourceField].filter(Boolean)
-  if (!fields || fields.length === 0) return null
-  
-  const sourceMap: Record<string, string> = {
-    ingredients,
-    description: productBenefits,
-    label: '',
-  }
-  
-  return (
-    <div className="mt-2 space-y-1">
-      {fields.map(field => {
-        const sourceText = sourceMap[field as string] || (field === 'description' ? productBenefits : '')
-        if (!sourceText || !violation.matchedText) return null
-        return (
-          <div key={field} className="text-xs bg-gray-100 rounded p-2">
-            <span className="font-medium text-gray-500 uppercase text-[10px]">
-              {field === 'ingredients' ? '成分表' : field === 'description' ? '产品描述' : field === 'label' ? '产品标签' : field}
-            </span>
-            <p className="text-gray-700 mt-0.5">
-              <HighlightText text={sourceText} matchedText={violation.matchedText} />
-            </p>
-          </div>
-        )
-      })}
-    </div>
-  )
-}
 
-function ConfidenceBadge({ confidence }: { confidence?: 'high' | 'medium' | 'low' }) {
-  if (!confidence) return null
-  const configs = {
-    high: { label: '确定性违规', color: 'text-red-600', bg: 'bg-red-50', dot: '●' },
-    medium: { label: '需复核', color: 'text-amber-600', bg: 'bg-amber-50', dot: '◐' },
-    low: { label: '推测性违规', color: 'text-gray-500', bg: 'bg-gray-50', dot: '○' },
-  }
-  const cfg = configs[confidence]
-  return (
-    <span className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-medium ${cfg.bg} ${cfg.color}`}>
-      <span>{cfg.dot}</span>
-      {cfg.label}
-    </span>
-  )
-}
 
 function groupByCategory(items: ViolationItem[]): [string, ViolationItem[]][] {
   const groups = new Map<string, ViolationItem[]>()
@@ -134,15 +79,6 @@ function groupByCategory(items: ViolationItem[]): [string, ViolationItem[]][] {
   })
 }
 
-function formatSourceFields(fields?: string[]): string {
-  if (!fields || fields.length === 0) return ''
-  const labelMap: Record<string, string> = {
-    ingredients: '成分表',
-    description: '产品描述',
-    label: '产品标签',
-  }
-  return ' · ' + fields.map(f => labelMap[f] || f).join('、')
-}
 
 interface GeneratedListing {
   title: string
@@ -157,6 +93,111 @@ export function HeroSection() {
   const tCommon = useTranslations('common')
   const tDemo = useTranslations('demo')
   const locale = useLocale()
+
+  // ── 翻译与辅助组件（内部定义，避免硬编码中文）──
+  const categoryLabels: Record<string, string> = {
+    ingredient: t('categoryLabels.ingredient'),
+    claim: t('categoryLabels.claim'),
+    label: t('categoryLabels.label'),
+    packaging: t('categoryLabels.packaging'),
+  }
+
+  function ConfidenceBadge({ confidence }: { confidence?: 'high' | 'medium' | 'low' }) {
+    if (!confidence) return null
+    const configs = {
+      high: { label: t('confidenceBadge.high'), color: 'text-red-600', bg: 'bg-red-50', dot: '●' },
+      medium: { label: t('confidenceBadge.medium'), color: 'text-amber-600', bg: 'bg-amber-50', dot: '◐' },
+      low: { label: t('confidenceBadge.low'), color: 'text-gray-500', bg: 'bg-gray-50', dot: '○' },
+    }
+    const cfg = configs[confidence]
+    return (
+      <span className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-medium ${cfg.bg} ${cfg.color}`}>
+        <span>{cfg.dot}</span>
+        {cfg.label}
+      </span>
+    )
+  }
+
+  function formatSourceFields(fields?: string[]): string {
+    if (!fields || fields.length === 0) return ''
+    const labelMap: Record<string, string> = {
+      ingredients: t('sourceFields.ingredients'),
+      description: t('sourceFields.description'),
+      label: t('sourceFields.label'),
+    }
+    return ' · ' + fields.map(f => labelMap[f] || f).join(', ')
+  }
+
+  function extractSentence(text: string, matchedText: string): string {
+    if (!text || !matchedText) return text
+    const lowerText = text.toLowerCase()
+    const lowerMatch = matchedText.toLowerCase()
+    const idx = lowerText.indexOf(lowerMatch)
+    if (idx === -1) return text
+
+    const sentenceDelimiters = /[.!?\u3002\uff01\uff1f\n]/
+
+    // 向前找句子开头
+    let start = 0
+    for (let i = idx - 1; i >= 0; i--) {
+      if (sentenceDelimiters.test(text[i])) {
+        start = i + 1
+        break
+      }
+    }
+
+    // 向后找句子结尾
+    let end = text.length
+    for (let i = idx + matchedText.length; i < text.length; i++) {
+      if (sentenceDelimiters.test(text[i])) {
+        end = i + 1
+        break
+      }
+    }
+
+    return text.substring(start, end).trim()
+  }
+
+  function SourceHighlight({ violation, ingredients, productBenefits, productName }: {
+    violation: ViolationItem
+    ingredients: string
+    productBenefits: string
+    productName: string
+  }) {
+    const fields = violation.allSourceFields?.length ? violation.allSourceFields : [violation.sourceField].filter(Boolean)
+    if (!fields || fields.length === 0) return null
+
+    const sourceMap: Record<string, string> = {
+      ingredients,
+      description: productBenefits,
+      label: '',
+    }
+
+    return (
+      <div className="mt-2 space-y-1">
+        {fields.map(field => {
+          const sourceText = sourceMap[field as string] || (field === 'description' ? productBenefits : '')
+          if (!sourceText || !violation.matchedText) return null
+
+          // 优先使用 API 返回的 contextSnippet，否则提取单句
+          const displayText = violation.contextSnippet
+            ? violation.contextSnippet.replace(/【(.+?)】/g, '$1')
+            : extractSentence(sourceText, violation.matchedText)
+
+          return (
+            <div key={field} className="text-xs bg-gray-100 rounded p-2">
+              <span className="font-medium text-gray-500 uppercase text-[10px]">
+                {field === 'ingredients' ? t('sourceFields.ingredients') : field === 'description' ? t('sourceFields.description') : field === 'label' ? t('sourceFields.label') : field}
+              </span>
+              <p className="text-gray-700 mt-0.5">
+                <HighlightText text={displayText} matchedText={violation.matchedText} />
+              </p>
+            </div>
+          )
+        })}
+      </div>
+    )
+  }
   // Default demo data - Hydroquinone banned ingredient example
   const [ingredients, setIngredients] = useState('')
   const [country, setCountry] = useState<'BR' | 'MX'>('BR')
@@ -589,7 +630,7 @@ export function HeroSection() {
                             <p className="text-red-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
                             {(v.sourceField || (v.allSourceFields && v.allSourceFields.length > 0)) && (
                               <p className="text-red-500/60 text-xs mt-1">
-                                来源字段{formatSourceFields(v.allSourceFields || [v.sourceField!])}
+                                {t('sourceFieldLabel')}{formatSourceFields(v.allSourceFields || [v.sourceField!])}
                               </p>
                             )}
                             <SourceHighlight violation={v} ingredients={ingredients} productBenefits={productBenefits} productName={productName} />
@@ -622,7 +663,7 @@ export function HeroSection() {
                             <p className="text-amber-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
                             {(v.sourceField || (v.allSourceFields && v.allSourceFields.length > 0)) && (
                               <p className="text-amber-500/60 text-xs mt-1">
-                                来源字段{formatSourceFields(v.allSourceFields || [v.sourceField!])}
+                                {t('sourceFieldLabel')}{formatSourceFields(v.allSourceFields || [v.sourceField!])}
                               </p>
                             )}
                             <SourceHighlight violation={v} ingredients={ingredients} productBenefits={productBenefits} productName={productName} />
@@ -655,7 +696,7 @@ export function HeroSection() {
                             <p className="text-blue-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
                             {(v.sourceField || (v.allSourceFields && v.allSourceFields.length > 0)) && (
                               <p className="text-blue-500/60 text-xs mt-1">
-                                来源字段{formatSourceFields(v.allSourceFields || [v.sourceField!])}
+                                {t('sourceFieldLabel')}{formatSourceFields(v.allSourceFields || [v.sourceField!])}
                               </p>
                             )}
                             <SourceHighlight violation={v} ingredients={ingredients} productBenefits={productBenefits} productName={productName} />

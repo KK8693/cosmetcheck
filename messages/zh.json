@@ -117,7 +117,24 @@
       "loginRequired": "请先登录后再生成 Listing",
       "quotaExceeded": "免费次数已用完，请升级 Pro 无限次使用",
       "generateFailed": "生成失败，请稍后再试"
-    }
+    },
+    "categoryLabels": {
+      "ingredient": "成分违规",
+      "claim": "宣称违规",
+      "label": "标签违规",
+      "packaging": "包装违规"
+    },
+    "confidenceBadge": {
+      "high": "确定性违规",
+      "medium": "需复核",
+      "low": "推测性违规"
+    },
+    "sourceFields": {
+      "ingredients": "成分表",
+      "description": "产品描述",
+      "label": "产品标签"
+    },
+    "sourceFieldLabel": "来源字段"
   },
   "howItWorks": {
     "title": "三步完成合规检测",

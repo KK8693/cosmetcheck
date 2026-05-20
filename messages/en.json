@@ -117,7 +117,24 @@
       "loginRequired": "Please login first to generate Listing",
       "quotaExceeded": "Free quota exhausted, upgrade to Pro for unlimited use",
       "generateFailed": "Generation failed, please try again later"
-    }
+    },
+    "categoryLabels": {
+      "ingredient": "Ingredient Violation",
+      "claim": "Claim Violation",
+      "label": "Label Violation",
+      "packaging": "Packaging Violation"
+    },
+    "confidenceBadge": {
+      "high": "Definite Violation",
+      "medium": "Needs Review",
+      "low": "Speculative"
+    },
+    "sourceFields": {
+      "ingredients": "Ingredients",
+      "description": "Product Description",
+      "label": "Product Label"
+    },
+    "sourceFieldLabel": "Source"
   },
   "howItWorks": {
     "title": "Complete Compliance Check in 3 Steps",
