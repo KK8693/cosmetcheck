@@ -109,7 +109,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Hydroquinone is restricted and generally prohibited in cosmetic products.',
     suggestion: 'Remove hydroquinone or reformulate as a pharmaceutical product.',
-    aliases: ['对苯二酚', 'hidroquinona', 'hidroquinona', 'HQ', 'quinol', 'benzenediol', '1,4-benzenediol', '美白剂', 'bleaching agent'],
+    aliases: ['对苯二酚', '氢醌', 'hidroquinona', 'hidroquinona', 'HQ', 'quinol', 'benzenediol', '1,4-benzenediol', '美白剂', 'bleaching agent'],
     source: 'ANVISA RDC 529/2021',
   },
   {
@@ -655,7 +655,7 @@ const COFEPRIS_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Hydroquinone is prohibited in cosmetics by COFEPRIS.',
     suggestion: 'Remove hydroquinone or register as pharmaceutical product.',
-    aliases: ['对苯二酚', 'hidroquinona', 'hidroquinona', 'HQ', 'quinol', 'benzenediol', '1,4-benzenediol', '美白剂', 'bleaching agent'],
+    aliases: ['对苯二酚', '氢醌', 'hidroquinona', 'hidroquinona', 'HQ', 'quinol', 'benzenediol', '1,4-benzenediol', '美白剂', 'bleaching agent'],
     source: 'COFEPRIS NOM-141-SSA1/SCF1-2012',
   },
   {
@@ -1405,13 +1405,13 @@ function findMatches(
       // 如果匹配文本本身以 "植物"/"vegetal"/"phyto" 等前缀开头，或前面紧邻这些词，则跳过该匹配
       if (rule.category === 'ingredient' && 
           (rule.keyword.includes('corticosteroid') || rule.keyword.includes('激素'))) {
-        // 获取匹配位置前后的完整上下文（前15个字符）
-        const contextBefore = lowerText.substring(Math.max(0, match.index - 15), match.index + match.length)
+      // 获取匹配位置之前的上下文（不包含匹配文本本身）
+        const contextBefore = lowerText.substring(Math.max(0, match.index - 15), match.index)
         // 检查是否包含植物激素相关的负向关键词（作为独立词或紧邻）
         const negativePrefixes = ['植物', 'vegetal', 'phyto', 'hormônio vegetal', 'hormona vegetal', 'extracto de hormona vegetal', 'extrato de hormônio vegetal']
         let shouldSkip = false
         for (const prefix of negativePrefixes) {
-          // 检查前缀是否在匹配文本中作为独立词出现
+          // 只检查匹配位置之前的上下文
           if (contextBefore.includes(prefix)) {
             shouldSkip = true
             break

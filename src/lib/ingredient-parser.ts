@@ -88,6 +88,7 @@ function initMappings() {
 
 // 成分拆分模式 - 支持中英葡西多语言
 const SPLIT_PATTERNS = [
+  /\u3001/g,                          // 中文顿号 "、"
   /,\s*/g,                           // 逗号分割 "Water, Glycerin"
   /\s*;\s*/g,                        // 分号分割
   /\s*\|\s*/g,                       // 竖线分割

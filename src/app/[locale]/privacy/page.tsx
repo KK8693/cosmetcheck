@@ -1,12 +1,22 @@
 /**
  * Privacy Policy page - i18n version
- * Client Component: reads locale from URL pathname, bypassing
- * next-on-pages edge function param/header passing issues.
+ * Client Component: directly imports JSON files to ensure they are bundled.
  */
 'use client'
 
 import { usePathname } from 'next/navigation'
-import { messagesMap } from '@/i18n/request'
+import zhMessages from '../../../../messages/zh.json'
+import enMessages from '../../../../messages/en.json'
+import ptBRMessages from '../../../../messages/pt-BR.json'
+import esMXMessages from '../../../../messages/es-MX.json'
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const messagesMap: Record<string, any> = {
+  zh: zhMessages,
+  en: enMessages,
+  'pt-BR': ptBRMessages,
+  'es-MX': esMXMessages,
+}
 
 export default function PrivacyPage() {
   const pathname = usePathname()
