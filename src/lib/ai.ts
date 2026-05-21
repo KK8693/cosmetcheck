@@ -371,16 +371,17 @@ function validateListing(
   const sunscreenActives = [
     'zinc oxide', 'titanium dioxide', 'avobenzone', 'oxybenzone', 'octinoxate',
     'octocrylene', 'homosalate', 'octisalate', 'ensulizole', 'tinosorb',
-    '氧化锌', '氧化钛', '防晒剂', 'avobenzona'
+    '氧化锌', '氧化钛', '防晒剂', 'avobenzona', 'óxido de zinco', 'dióxido de titânio'
   ]
   const hasSunscreenIngredients = sunscreenActives.some(a => ingredients.includes(a))
+  // Expanded regex to catch UV-related claims even without explicit SPF/FPS
   const hasSunscreenClaim =
-    /fps\s*\d+|spf\s*\d+|prote[cç][aã]o\s+solar|protege\s+.*uv|sunscreen|bloqueador|anti-uv/.test(allText)
+    /fps\s*\d+|spf\s*\d+|prote[cç][aã]o\s+solar|bloqueador|sunscreen|anti-uv|\bradia[cç][aã]o\s+uv\b|protege[r]?\b.*\buv\b|prote[cç][aã]o\s+.*\buv\b|contra\s+.*\buv\b|efeitos?\s+.*\buv\b|exposi[cç][aã]o\s+.*\buv\b|danos?\s+.*\buv\b|estresse\s+oxidativo\s+.*\buv\b/i.test(allText)
 
   if (hasSunscreenClaim && !hasSunscreenIngredients) {
-    const inconsistencyWarning = `⚠️ INCONSISTÊNCIA: A listagem menciona proteção solar/UV, mas a fórmula NÃO contém ativos de proteção solar (ex: óxido de zinco, dióxido de titânio). Remova as alegações de FPS/SPF ou adicione ativos de proteção solar à fórmula. Além disso, produtos com FPS requerem registro ESPECIAL na ANVISA.`
+    const inconsistencyWarning = `⚠️ INCONSISTÊNCIA: A listagem menciona proteção/efeitos relacionados a UV, mas a fórmula NÃO contém ativos de proteção solar (ex: óxido de zinco, dióxido de titânio, avobenzona). Remova as alegações de proteção UV/SPF/FPS ou adicione ativos de proteção solar à fórmula. Além disso, produtos com proteção UV requerem registro ESPECIAL na ANVISA.`
     result.warnings = [inconsistencyWarning, ...result.warnings]
-    console.warn('[AI Validate] 🔴 Sunscreen claim without sunscreen ingredients')
+    console.warn('[AI Validate] 🔴 Sunscreen/UV claim without sunscreen ingredients')
   }
 
   // 3. SENSITIVE SKIN CLAIM CHECK
@@ -444,30 +445,37 @@ CRITICAL RULES (violating any will cause regulatory penalties):
 2. INGREDIENT HONESTY (MOST IMPORTANT):
    - You MUST truthfully reflect ALL ingredients provided by the user
    - NEVER falsely claim a banned/restricted ingredient is "not present" when it IS in the formula
-   - For banned ingredients, state them honestly in the listing with a ⚠️ warning flag
-   - Example correct: "Ingredients: Water, Glycerin, Hydroquinone (⚠️ banned by ANVISA - must be removed before listing)"
-   - Example WRONG: "Does not contain hydroquinone" (when it IS in the formula)
-   - This is a compliance tool - users input non-compliant formulas to get them fixed. Do NOT lie about ingredients.
+   - For PROHIBITED ingredients (completely banned in cosmetics), use STRONG language in complianceNotes:
+     CORRECT: "🔴 [ingredient] é PROIBIDO em cosméticos pela ANVISA. Este produto NÃO pode ser comercializado sem reformulação."
+     WRONG: "⚠️ [ingredient] é substância controlada" (too weak, implies it might be allowed)
+   - For antibiotics (metronidazol, etc.), state clearly: "🔴 [ingredient] é um antibiótico PROIBIDO em cosméticos"
+   - NEVER use prohibited ingredients in the product TITLE as selling points
+   - Example correct title: "Sérum Hidratante Clareador" (no banned ingredients mentioned)
+   - Example WRONG title: "Sérum com Ácido Retinoico" (banned ingredient in title!)
+   - Do NOT lie about ingredients.
 
 3. CLAIM-INGREDIENT CONSISTENCY:
-   - NEVER claim sun protection (SPF/FPS/UV protection) unless the ingredient list contains sunscreen actives (zinc oxide, titanium dioxide, avobenzone, etc.)
-   - If NO sunscreen actives are present but user mentions sun protection, do NOT include FPS/SPF claims in the title or description
+   - NEVER claim sun protection or UV defense (SPF/FPS/UV protection/anti-UV/radiação UV) unless the ingredient list contains sunscreen actives (zinc oxide, titanium dioxide, avobenzone, etc.)
+   - If NO sunscreen actives are present but user mentions UV/sun protection, do NOT include any UV-related claims in the title, description, or bullet points
    - Only list benefits that are supported by the actual ingredients provided
 
 4. SPECIAL PRODUCT REGISTRATION WARNINGS:
    - If the product claims skin lightening/whitening ("clareador", "clareamento", "branqueador"), it requires SPECIAL registration with ${regulation} beyond normal cosmetic notification
-   - If the product claims sun protection (SPF/FPS), it requires SPECIAL registration with ${regulation}
+   - If the product claims sun protection (SPF/FPS/UV), it requires SPECIAL registration with ${regulation}
    - These claims MUST be flagged in complianceNotes with: "⚠️ Requires special ${regulation} registration for [whitening/sun protection] products"
 
 5. SENSITIVE SKIN CLAIMS:
    - Do NOT claim "suitable for all skin types including sensitive skin" ("indicado para todos os tipos de pele, inclusive sensíveis")
+   - Do NOT claim "todos os tipos de pele" (all skin types) anywhere in bullet points
    - Instead use softer language: "suitable for most skin types" or "gentle formula"
    - If you mention sensitive skin, add a warning: "Patch test recommended for sensitive skin"
 
 6. COMPLIANCE - ${regulation} regulations:
    - NO medical/therapeutic claims (no "treats", "cures", "heals", "medicinal", "medical grade")
+   - NO anti-aging claims as primary selling point (no "anti-idade", "anti-envelhecimento" in title)
+   - Instead use: "para pele madura" or "reduz a aparência de linhas finas"
    - NO absolute claims without proof (no "100%", "completely", "totally", "zero", "permanent", "forever")
-   - NO specific time-based results (no "7 days", "instant", "immediate", "24 hours")
+   - NO specific time-based results (no "7 days", "instant", "immediate", "24 hours", "28 days")
    - NO safety claims about pregnancy or children without clinical proof
    - Use only cosmetic claims: moisturizing, cleansing, beautifying, perfuming, protecting
    - Use hedging language: "helps to", "promotes", "assists in", "reduces the appearance of"
