@@ -60,23 +60,27 @@ export function FooterCTASection() {
         <p className="text-lg text-white/90 mb-8 max-w-xl mx-auto">
           {t('subtitle')}
         </p>
-        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-          <Input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder={t('emailPlaceholder')}
-            className="border-white/20 bg-white/10 text-white placeholder:text-white/50 h-12 text-base"
-            disabled={loading}
-          />
-          <Button
-            type="submit"
-            disabled={loading}
-            className="bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold h-12 px-8 whitespace-nowrap shadow-lg shadow-amber-500/25 animate-pulse-subtle disabled:opacity-60"
-          >
-            {loading ? tCommon('submitting') : t('button')}
-          </Button>
-        </form>
+        <div className="max-w-lg mx-auto">
+          <div className="rounded-2xl bg-white/5 border border-white/10 p-6 backdrop-blur-sm">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+              <Input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder={t('emailPlaceholder')}
+                className="border-white/20 bg-white/10 text-white placeholder:text-white/50 h-14 rounded-xl text-base px-4"
+                disabled={loading}
+              />
+              <Button
+                type="submit"
+                disabled={loading}
+                className="bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold h-14 w-full rounded-xl shadow-lg shadow-amber-500/25 animate-pulse-subtle disabled:opacity-60"
+              >
+                {loading ? tCommon('submitting') : t('button')}
+              </Button>
+            </form>
+          </div>
+        </div>
         {error && (
           <p className="mt-3 text-sm text-red-300">{error}</p>
         )}

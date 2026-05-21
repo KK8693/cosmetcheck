@@ -1,26 +1,27 @@
-/**
- * Cookie Policy page - i18n version
- * Client Component: directly imports JSON files to ensure they are bundled.
- */
-'use client'
+import { messagesMap } from '@/i18n/request'
+import { setRequestLocale } from 'next-intl/server'
 
-import { usePathname } from 'next/navigation'
-import zhMessages from '../../../../messages/zh.json'
-import enMessages from '../../../../messages/en.json'
-import ptBRMessages from '../../../../messages/pt-BR.json'
-import esMXMessages from '../../../../messages/es-MX.json'
+export const runtime = 'edge'
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const messagesMap: Record<string, any> = {
-  zh: zhMessages,
-  en: enMessages,
-  'pt-BR': ptBRMessages,
-  'es-MX': esMXMessages,
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  const messages = messagesMap[locale] || messagesMap['en']
+  return {
+    title: messages.legal['cookie-policy'].title,
+  }
 }
 
-export default function CookiePolicyPage() {
-  const pathname = usePathname()
-  const locale = pathname?.split('/')[1] || 'en'
+export default async function CookiePolicyPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  setRequestLocale(locale)
   const messages = messagesMap[locale] || messagesMap['en']
 
   return (

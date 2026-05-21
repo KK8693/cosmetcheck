@@ -89,23 +89,23 @@ export function CookieConsent() {
 
   return (
     <div className="fixed bottom-4 right-4 z-50 max-w-sm">
-      <Card className="shadow-xl border-2 border-blue-100">
+      <Card className="shadow-2xl border border-white/10 bg-[#1A1A24]">
         <CardContent className="p-4">
-          <h3 className="font-semibold text-gray-900 mb-2">{t('title')}</h3>
-          <p className="text-sm text-gray-600 mb-4">{t('description')}</p>
+          <h3 className="font-semibold text-white mb-2">{t('title')}</h3>
+          <p className="text-sm text-gray-400 mb-4">{t('description')}</p>
 
           {showCustomize && (
-            <div className="space-y-3 mb-4 border-t border-gray-100 pt-3">
+            <div className="space-y-3 mb-4 border-t border-white/10 pt-3">
               {/* Essential */}
               <div className="flex items-start gap-3">
                 <input
                   type="checkbox"
                   checked={preferences.essential}
                   disabled
-                  className="mt-1 h-4 w-4 text-blue-600 rounded border-gray-300"
+                  className="mt-1 h-4 w-4 text-[#fbbf24] rounded border-gray-600 bg-gray-700"
                 />
                 <div>
-                  <p className="text-sm font-medium text-gray-900">{t('essential')}</p>
+                  <p className="text-sm font-medium text-white">{t('essential')}</p>
                   <p className="text-xs text-gray-500">{t('essentialDesc')}</p>
                 </div>
               </div>
@@ -116,10 +116,10 @@ export function CookieConsent() {
                   type="checkbox"
                   checked={preferences.analytics}
                   onChange={() => togglePreference('analytics')}
-                  className="mt-1 h-4 w-4 text-blue-600 rounded border-gray-300 cursor-pointer"
+                  className="mt-1 h-4 w-4 text-[#fbbf24] rounded border-gray-600 bg-gray-700 cursor-pointer"
                 />
                 <div>
-                  <p className="text-sm font-medium text-gray-900">{t('analytics')}</p>
+                  <p className="text-sm font-medium text-white">{t('analytics')}</p>
                   <p className="text-xs text-gray-500">{t('analyticsDesc')}</p>
                 </div>
               </div>
@@ -130,10 +130,10 @@ export function CookieConsent() {
                   type="checkbox"
                   checked={preferences.marketing}
                   onChange={() => togglePreference('marketing')}
-                  className="mt-1 h-4 w-4 text-blue-600 rounded border-gray-300 cursor-pointer"
+                  className="mt-1 h-4 w-4 text-[#fbbf24] rounded border-gray-600 bg-gray-700 cursor-pointer"
                 />
                 <div>
-                  <p className="text-sm font-medium text-gray-900">{t('marketing')}</p>
+                  <p className="text-sm font-medium text-white">{t('marketing')}</p>
                   <p className="text-xs text-gray-500">{t('marketingDesc')}</p>
                 </div>
               </div>
@@ -143,22 +143,22 @@ export function CookieConsent() {
           <div className="flex flex-wrap gap-2">
             {!showCustomize ? (
               <>
-                <Button size="sm" onClick={handleAcceptAll}>
+                <Button size="sm" onClick={handleAcceptAll} className="bg-[#fbbf24] text-black hover:bg-[#f59e0b] font-semibold">
                   {t('accept')}
                 </Button>
-                <Button size="sm" variant="outline" onClick={handleDeclineAll}>
+                <Button size="sm" variant="outline" onClick={handleDeclineAll} className="border-white/20 text-gray-300 hover:bg-white/10 hover:text-white">
                   {t('decline')}
                 </Button>
-                <Button size="sm" variant="ghost" onClick={() => setShowCustomize(true)}>
+                <Button size="sm" variant="ghost" onClick={() => setShowCustomize(true)} className="text-gray-400 hover:text-white hover:bg-white/5">
                   {t('customize')}
                 </Button>
               </>
             ) : (
               <>
-                <Button size="sm" onClick={handleAcceptSelected}>
+                <Button size="sm" onClick={handleAcceptSelected} className="bg-[#fbbf24] text-black hover:bg-[#f59e0b] font-semibold">
                   {t('acceptSelected')}
                 </Button>
-                <Button size="sm" variant="outline" onClick={() => setShowCustomize(false)}>
+                <Button size="sm" variant="outline" onClick={() => setShowCustomize(false)} className="border-white/20 text-gray-300 hover:bg-white/10 hover:text-white">
                   {t('decline')}
                 </Button>
               </>
@@ -166,7 +166,7 @@ export function CookieConsent() {
           </div>
 
           <p className="text-xs text-gray-500 mt-3">
-            <Link href="/cookie-policy" className="underline hover:text-blue-600">
+            <Link href="/cookie-policy" className="underline hover:text-[#fbbf24] transition-colors">
               {t('policy')}
             </Link>
           </p>

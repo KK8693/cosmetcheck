@@ -1,29 +1,29 @@
 'use client'
 
-import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import { ShieldCheck, FileText, Zap, ListChecks } from 'lucide-react'
 
 export function FeaturesSection() {
   const t = useTranslations('features')
 
   const features = [
     {
-      icon: '/assets/icons/icon-shield.svg',
+      Icon: ShieldCheck,
       title: t('autoBlockTitle'),
       desc: t('autoBlockDesc'),
     },
     {
-      icon: '/assets/icons/icon-globe.svg',
+      Icon: FileText,
       title: t('listingTitle'),
       desc: t('listingDesc'),
     },
     {
-      icon: '/assets/icons/icon-bolt.svg',
+      Icon: Zap,
       title: t('highlightTitle'),
       desc: t('highlightDesc'),
     },
     {
-      icon: '/assets/icons/icon-gift.svg',
+      Icon: ListChecks,
       title: t('freeTryTitle'),
       desc: t('freeTryDesc'),
     },
@@ -47,7 +47,7 @@ export function FeaturesSection() {
               className="rounded-2xl border border-gray-700/50 bg-[#1E1E28] p-6 hover:border-[#0A4D8C]/50 hover:shadow-lg hover:shadow-[#0A4D8C]/10 transition-all"
             >
               <div className="mb-4">
-                <Image src={item.icon} alt="" width={48} height={48} />
+                <item.Icon className="w-12 h-12 text-[#0A4D8C]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
               <p className="text-sm text-gray-400 leading-relaxed">{item.desc}</p>

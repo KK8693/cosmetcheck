@@ -1,15 +1,27 @@
-/**
- * Refund Policy page - i18n version
- * Client Component: reads locale from URL pathname
- */
-'use client'
-
-import { usePathname } from 'next/navigation'
 import { messagesMap } from '@/i18n/request'
+import { setRequestLocale } from 'next-intl/server'
 
-export default function RefundPage() {
-  const pathname = usePathname()
-  const locale = pathname?.split('/')[1] || 'en'
+export const runtime = 'edge'
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  const messages = messagesMap[locale] || messagesMap['en']
+  return {
+    title: messages.legal.refund.title,
+  }
+}
+
+export default async function RefundPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  setRequestLocale(locale)
   const messages = messagesMap[locale] || messagesMap['en']
 
   return (

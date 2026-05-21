@@ -16,6 +16,12 @@ export const runtime = 'edge'
 // Force dynamic rendering for Cloudflare Pages compatibility
 export const dynamic = 'force-dynamic'
 
+export const metadata = {
+  title: {
+    absolute: 'CosmetCheck — LatAm Beauty Compliance AI',
+  },
+}
+
 export default async function HomePage({
   params
 }: {

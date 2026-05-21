@@ -1,12 +1,20 @@
 import { FAQSection } from '@/sections/FAQSection'
+import { messagesMap } from '@/i18n/request'
 import { setRequestLocale } from 'next-intl/server'
 
 export const runtime = 'edge'
 export const dynamic = 'force-dynamic'
 
-export const metadata = {
-  title: 'FAQ - CosmetCheck',
-  description: '常见问题解答：CosmetCheck 美妆合规检测服务',
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  const messages = messagesMap[locale] || messagesMap['en']
+  return {
+    title: messages.faq?.title || 'FAQ',
+  }
 }
 
 export default async function FAQPage({
