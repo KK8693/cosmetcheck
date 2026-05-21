@@ -404,6 +404,33 @@ function validateListing(
     }
   }
 
+  // 5. PROHIBITED INGREDIENTS IN TITLE
+  // Check if banned ingredients appear in the product title as selling points
+  const titleLower = result.title.toLowerCase()
+  for (const banned of problematicIngredients) {
+    if (titleLower.includes(banned)) {
+      const titleWarning = `🔴 ERRO NO TÍTULO: O ingrediente proibido "${banned}" NÃO deve aparecer no título do produto como ponto de venda. O título deve focar nos benefícios cosméticos (ex: "Sérum Hidratante Clareador"), não em ingredientes proibidos. Remova "${banned}" do título.`
+      result.warnings = [titleWarning, ...result.warnings]
+      console.warn(`[AI Validate] 🔴 Prohibited ingredient "${banned}" found in title`)
+    }
+  }
+
+  // 6. PARABEN / INGREDIENT DENIAL CHECK
+  // Check if listing claims "free of parabens" when parabens ARE in the formula
+  const parabenKeywords = ['paraben', 'parabeno', 'nipagin', 'nipasol', '尼泊金酯', '对羰基苯甲酸酯', 'methylparaben', 'propylparaben', 'butylparaben', 'ethylparaben']
+  const hasParabenInFormula = parabenKeywords.some(p => ingredients.includes(p))
+  const parabenDenialPatterns = [
+    'livre de parabenos?', 'sem parabenos?', 'não contém parabenos?', 'nao contem parabenos?',
+    'free of parabens?', 'no parabens?', 'without parabens?', 'paraben-free',
+    '不含尼泊金酯', '无尼泊金酯', '不含paraben', '无paraben'
+  ]
+  const hasParabenDenial = parabenDenialPatterns.some(p => allText.includes(p) || allNotes.includes(p))
+  if (hasParabenInFormula && hasParabenDenial) {
+    const parabenWarning = `🖔️ INCONSISTÊNCIA DE INGREDIENTE: A fórmula CONTÉM parabenos (ex: nipagin), mas a listagem alega "livre de parabenos". Isso é FALSO e pode resultar em penalidades da ANVISA. Se a fórmula contém parabenos, NÃO alegue que é livre deles. Ou remova os parabenos da fórmula, ou remova a alegação "livre de parabenos".`
+    result.warnings = [parabenWarning, ...result.warnings]
+    console.warn('[AI Validate] 🔴 Paraben denial detected when parabens ARE in formula')
+  }
+
   return result
 }
 
@@ -450,6 +477,8 @@ CRITICAL RULES (violating any will cause regulatory penalties):
      WRONG: "⚠️ [ingredient] é substância controlada" (too weak, implies it might be allowed)
    - For antibiotics (metronidazol, etc.), state clearly: "🔴 [ingredient] é um antibiótico PROIBIDO em cosméticos"
    - NEVER use prohibited ingredients in the product TITLE as selling points
+   - NEVER mention prohibited ingredients in bullet points as benefits
+   - Prohibited ingredients should ONLY appear in: (a) honest ingredient list, (b) complianceNotes with 🔴 PROIBIDO warning
    - Example correct title: "Sérum Hidratante Clareador" (no banned ingredients mentioned)
    - Example WRONG title: "Sérum com Ácido Retinoico" (banned ingredient in title!)
    - Do NOT lie about ingredients.
