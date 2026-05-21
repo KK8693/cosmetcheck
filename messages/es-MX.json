@@ -54,11 +54,12 @@
     "copy": "Copiar"
   },
   "nav": {
-    "features": "Características",
+    "features": "Caracter\u00edsticas",
     "pricing": "Precios",
-    "contact": "Contáctanos",
-    "howItWorks": "Cómo Funciona",
-    "faq": "FAQ"
+    "contact": "Contacto",
+    "howItWorks": "C\u00f3mo Funciona",
+    "faq": "FAQ",
+    "batch": "Detecci\u00f3n por Lotes"
   },
   "hero": {
     "title": "Vende Belleza en México",

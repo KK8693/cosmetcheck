@@ -55,10 +55,11 @@
   },
   "nav": {
     "features": "Recursos",
-    "pricing": "Preços",
+    "pricing": "Pre\u00e7os",
     "contact": "Fale Conosco",
     "howItWorks": "Como Funciona",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "batch": "Detec\u00e7\u00e3o em Lote"
   },
   "hero": {
     "title": "Venda Beleza no Brasil",

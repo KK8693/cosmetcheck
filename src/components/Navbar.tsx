@@ -27,10 +27,11 @@ export function Navbar() {
   }, [])
 
   const navLinks = [
-    { href: '#features', label: t('features') },
-    { href: '#how-it-works', label: t('howItWorks') },
-    { href: '#pricing', label: t('pricing') },
-    { href: '#faq', label: t('faq') },
+    { href: '#features', label: t('features'), isPage: false },
+    { href: '#how-it-works', label: t('howItWorks'), isPage: false },
+    { href: '/batch', label: t('batch'), isPage: true },
+    { href: '#pricing', label: t('pricing'), isPage: false },
+    { href: '#faq', label: t('faq'), isPage: false },
   ]
 
   return (
@@ -58,15 +59,25 @@ export function Navbar() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="text-white/70 hover:text-white transition-colors text-sm font-medium"
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                link.isPage ? (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="text-white/70 hover:text-white transition-colors text-sm font-medium"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className="text-white/70 hover:text-white transition-colors text-sm font-medium"
+                  >
+                    {link.label}
+                  </a>
+                )
+              )}
             </div>
 
             {/* Desktop CTA */}
@@ -101,16 +112,27 @@ export function Navbar() {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-[#0D0D12]/98 backdrop-blur-lg border-t border-white/10">
             <div className="container-custom py-4 space-y-3">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="block text-white/70 hover:text-white transition-colors py-2 text-sm font-medium"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                link.isPage ? (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="block text-white/70 hover:text-white transition-colors py-2 text-sm font-medium"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className="block text-white/70 hover:text-white transition-colors py-2 text-sm font-medium"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                )
+              )}
               <div className="py-2">
                 <LanguageSwitcher />
               </div>
