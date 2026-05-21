@@ -359,13 +359,14 @@ function buildIngredientList(input: GenerateListingInput): {
 
   // Known prohibited ingredient keywords (fallback when checkResult is not available)
   const prohibitedKeywords = [
-    'hydroquinone', 'hidroquinona', '氢醛', '对苯二酚',
-    'tretinoin', 'retinoic', 'retinoico', '维a酸', 'tretinoína',
-    'metronidazol', 'metronidazole', '甲硝唑',
-    'mercury', 'mercúrio', '汞',
-    'lead', 'chumbo', '铅',
-    'corticosteroid', 'corticosteróide', '皮质类固醇',
-    'formaldehyde', 'formaldeído', '甲醛',
+    'hydroquinone', 'hidroquinona', '\u6c22\u919b', '\u5bf9\u82ef\u4e8c\u915a',
+    'tretinoin', 'retinoic', 'retinoico', '\u7ef4a\u9178', 'tretino\u00edna', '\u00e1cido retinoico',
+    'metronidazol', 'metronidazole', '\u7532\u785d\u5511',
+    'mercury', 'merc\u00fario', '\u6c5e',
+    'lead', 'chumbo', '\u94c5',
+    'corticosteroid', 'corticoster\u00f3ide', '\u76ae\u8d28\u7c7b\u56fa\u9187',
+    'formaldehyde', 'formalde\u00eddo', '\u7532\u919b',
+    'hormone', 'horm\u00f4nio', 'hormonio', '\u6fc0\u7d20',
   ]
 
   const restrictedKeywords = [
@@ -446,11 +447,27 @@ function validateListing(
   // 1. DETECT AI INVENTING INGREDIENTS IN MARKETING COPY
   // AI should never mention specific ingredient names. If it does, flag it.
   const allNotesText = [...result.complianceNotes, ...result.warnings].join(' ').toLowerCase()
+
+  // Multi-language alias map for common prohibited ingredients
+  const ingredientAliases: Record<string, string[]> = {
+    'hydroquinone': ['hidroquinona', '\u6c22\u919b'],
+    'retinoic': ['\u00e1cido retinoico', 'retinoico', '\u7ef4a\u9178'],
+    'metronidazol': ['metronidazol', '\u7532\u785d\u5511'],
+    'hormone': ['horm\u00f4nio', 'hormonio', '\u6fc0\u7d20'],
+    'mercury': ['merc\u00fario', '\u6c5e'],
+    'lead': ['chumbo', '\u94c5'],
+    'formaldehyde': ['formalde\u00eddo', '\u7532\u919b'],
+    'paraben': ['parabeno', 'nipagin', 'nipasol', '\u5c3c\u6cca\u91d1\u916f'],
+  }
+
   for (const banned of problematicIngredients) {
-    if (allText.includes(banned) || allNotesText.includes(banned)) {
-      const inventionWarning = `🔴 ERRO DE IA: O ingrediente proibido "${banned}" foi mencionado no texto de marketing (título/descrição/bullet points). A IA NÃO deve mencionar nomes de ingredientes específicos no conteúdo de marketing. Remova todas as referências a "${banned}" do texto.`
+    const aliases = ingredientAliases[banned] || []
+    const allForms = [banned, ...aliases]
+    const isMentioned = allForms.some(form => allText.includes(form) || allNotesText.includes(form))
+    if (isMentioned) {
+      const inventionWarning = `\ud83d\udd34 ERRO DE IA: O ingrediente proibido "${banned}" (ou sua varia\u00e7\u00e3o lingu\u00edstica) foi mencionado no texto de marketing (t\u00edtulo/descri\u00e7\u00e3o/bullet points). A IA N\u00c3O deve mencionar nomes de ingredientes espec\u00edficos no conte\u00fado de marketing. Remova todas as refer\u00eancias a este ingrediente do texto.`
       result.warnings = [inventionWarning, ...result.warnings]
-      console.warn(`[AI Validate] 🕄 AI mentioned prohibited ingredient "${banned}" in marketing copy`)
+      console.warn(`[AI Validate] \ud83d\udd34 AI mentioned prohibited ingredient "${banned}" in marketing copy`)
     }
   }
 
@@ -459,71 +476,86 @@ function validateListing(
   const sunscreenActives = [
     'zinc oxide', 'titanium dioxide', 'avobenzone', 'oxybenzone', 'octinoxate',
     'octocrylene', 'homosalate', 'octisalate', 'ensulizole', 'tinosorb',
-    '氧化锌', '氧化钛', '防晒剂', 'avobenzona', 'óxido de zinco', 'dióxido de titânio'
+    '\u6c27\u5316\u950c', '\u6c27\u5316\u949b', '\u9632\u6652\u5242', 'avobenzona', '\u00f3xido de zinco', 'di\u00f3xido de tit\u00e2nio'
   ]
   const hasSunscreenIngredients = sunscreenActives.some(a => ingredients.includes(a))
   const hasSunscreenClaim =
-    /fps\s*\d+|spf\s*\d+|prote[cç][aã]o\s+solar|bloqueador|sunscreen|anti-uv|\bradia[cç][aã]o\s+uv\b|protege[r]?\b.*\buv\b|prote[cç][aã]o\s+.*\buv\b|contra\s+.*\buv\b|efeitos?\s+.*\buv\b|exposi[cç][aã]o\s+.*\buv\b|danos?\s+.*\buv\b|estresse\s+oxidativo\s+.*\buv\b/i.test(allText)
+    /fps\s*\d+|spf\s*\d+|prote[c\u00e7][a\u00e3]o\s+solar|bloqueador|sunscreen|anti-uv|\bradia[c\u00e7][a\u00e3]o\s+uv\b|protege[r]?\b.*\buv\b|prote[c\u00e7][a\u00e3]o\s+.*\buv\b|contra\s+.*\buv\b|efeitos?\s+.*\buv\b|exposi[c\u00e7][a\u00e3]o\s+.*\buv\b|danos?\s+.*\buv\b|estresse\s+oxidativo\s+.*\buv\b/i.test(allText)
 
   if (hasSunscreenClaim && !hasSunscreenIngredients) {
-    const inconsistencyWarning = `⚠️ INCONSISTÊNCIA: A listagem menciona proteção/efeitos relacionados a UV, mas a fórmula NÃO contém ativos de proteção solar (ex: óxido de zinco, dióxido de titânio, avobenzona). Remova as alegações de proteção UV/SPF/FPS ou adicione ativos de proteção solar à fórmula. Além disso, produtos com proteção UV requerem registro ESPECIAL na ANVISA.`
+    const inconsistencyWarning = `\u26a0\ufe0f INCONSIST\u00caNCIA: A listagem menciona prote\u00e7\u00e3o/efeitos relacionados a UV, mas a f\u00f3rmula N\u00c3O cont\u00e9m ativos de prote\u00e7\u00e3o solar (ex: \u00f3xido de zinco, di\u00f3xido de tit\u00e2nio, avobenzona). Remova as alega\u00e7\u00f5es de prote\u00e7\u00e3o UV/SPF/FPS ou adicione ativos de prote\u00e7\u00e3o solar \u00e0 f\u00f3rmula. Al\u00e9m disso, produtos com prote\u00e7\u00e3o UV requerem registro ESPECIAL na ANVISA.`
     result.warnings = [inconsistencyWarning, ...result.warnings]
-    console.warn('[AI Validate] 🔴 Sunscreen/UV claim without sunscreen ingredients')
+    console.warn('[AI Validate] \ud83d\udd34 Sunscreen/UV claim without sunscreen ingredients')
   }
 
   // 3. SENSITIVE SKIN CLAIM CHECK
-  const sensitiveSkinPattern = /todos\s+os\s+tipos\s+de\s+pele.*sens[ií]veis|todos\s+tipos\s+de\s+pele.*inclusive|all\s+skin\s+types.*sensitive|suitable\s+for\s+all\s+skin\s+types/i
+  // Catch "todos os tipos de pele" in any form - this requires clinical proof
+  const sensitiveSkinPattern = /todos\s+(os\s+)?tipos\s+de\s+pele|all\s+skin\s+types|suitable\s+for\s+all\s+skin\s+types/i
   if (sensitiveSkinPattern.test(allText)) {
-    const sensitiveWarning = `⚠️ ALEGAÇÃO DE PELE SENSÍVEL: A frase "adequado para todos os tipos de pele, inclusive sensíveis" requer testes dermatológicos comprovados. Recomendado: "adequado para a maioria dos tipos de pele" ou incluir aviso "Teste de toque recomendado para peles sensíveis".`
+    const sensitiveWarning = `\u26a0\ufe0f ALEGA\u00c7\u00c3O DE PELE: A frase "todos os tipos de pele" (ou similar) requer testes dermatol\u00f3gicos comprovados. Recomendado: "adequado para a maioria dos tipos de pele" ou incluir aviso "Teste de toque recomendado para peles sens\u00edveis".`
     result.warnings = [sensitiveWarning, ...result.warnings]
-    console.warn('[AI Validate] 🟡 Sensitive skin claim detected')
+    console.warn('[AI Validate] \ud83d\udfe1 Sensitive skin claim detected')
   }
 
   // 4. WHITENING/SKIN LIGHTENING REGISTRATION WARNING
   const whiteningPattern = /clareador|clareamento|branqueador|whitening|lightening|desmanchador|anti-manchas\s+intenso/i
   if (whiteningPattern.test(allText)) {
-    const whiteningNote = `⚠️ REGISTRO ESPECIAL REQUERIDO: Produtos com alegações de clareamento/branqueamento da pele ("clareador", "anti-manchas intensivo") requerem registro ESPECIAL na ANVISA, além da notificação cosmética normal. O processo é mais longo e exige estudos de segurança adicionais.`
+    const whiteningNote = `\u26a0\ufe0f REGISTRO ESPECIAL REQUERIDO: Produtos com alega\u00e7\u00f5es de clareamento/branqueamento da pele ("clareador", "anti-manchas intensivo") requerem registro ESPECIAL na ANVISA, al\u00e9m da notifica\u00e7\u00e3o cosm\u00e9tica normal. O processo \u00e9 mais longo e exige estudos de seguran\u00e7a adicionais.`
     const alreadyMentioned = result.complianceNotes.some(n => n.toLowerCase().includes('registro especial') && n.toLowerCase().includes('clareamento'))
     if (!alreadyMentioned) {
       result.complianceNotes = [whiteningNote, ...result.complianceNotes]
-      console.warn('[AI Validate] 🟡 Whitening claim - special registration required')
+      console.warn('[AI Validate] \ud83d\udfe1 Whitening claim - special registration required')
     }
   }
 
   // 5. INGREDIENT DENIAL CHECK
-  // Check if listing claims "free of X" when X IS in the formula
-  const parabenKeywords = ['paraben', 'parabeno', 'nipagin', 'nipasol', '尼泊金酯', '对羳基苯甲酸酯', 'methylparaben', 'propylparaben', 'butylparaben', 'ethylparaben']
+  // Check if listing claims "free of X" or "does not contain X" when X IS in the formula
+  const parabenKeywords = ['paraben', 'parabeno', 'nipagin', 'nipasol', '\u5c3c\u6cca\u91d1\u916f', '\u5bf9\u7fb3\u57fa\u82ef\u7532\u9178\u916f', 'methylparaben', 'propylparaben', 'butylparaben', 'ethylparaben']
   const hasParabenInFormula = parabenKeywords.some(p => ingredients.includes(p))
   const parabenDenialPatterns = [
-    'livre de parabenos?', 'sem parabenos?', 'não contém parabenos?', 'nao contem parabenos?',
+    'livre de parabenos?', 'sem parabenos?', 'n\u00e3o cont\u00e9m parabenos?', 'nao contem parabenos?',
     'free of parabens?', 'no parabens?', 'without parabens?', 'paraben-free',
-    '不含尼泊金酯', '无尼泊金酯', '不含paraben', '无paraben'
+    '\u4e0d\u542b\u5c3c\u6cca\u91d1\u916f', '\u65e0\u5c3c\u6cca\u91d1\u916f', '\u4e0d\u542bparaben', '\u65e0paraben'
   ]
   const hasParabenDenial = parabenDenialPatterns.some(p => allText.includes(p) || allNotesText.includes(p))
   if (hasParabenInFormula && hasParabenDenial) {
-    const parabenWarning = `🔴 INCONSISTÊNCIA: A fórmula CONTÉM parabenos, mas a listagem alega "livre de parabenos". Isso é FALSO e pode resultar em penalidades da ANVISA. A fórmula real é a informada pelo usuário — a listagem não deve negar ingredientes reais.`
+    const parabenWarning = `\ud83d\udd34 INCONSIST\u00caNCIA: A f\u00f3rmula CONT\u00c9M parabenos, mas a listagem alega "livre de parabenos". Isso \u00e9 FALSO e pode resultar em penalidades da ANVISA. A f\u00f3rmula real \u00e9 a informada pelo usu\u00e1rio \u2014 a listagem n\u00e3o deve negar ingredientes reais.`
     result.warnings = [parabenWarning, ...result.warnings]
-    console.warn('[AI Validate] 🔴 Paraben denial detected when parabens ARE in formula')
+    console.warn('[AI Validate] \ud83d\udd34 Paraben denial detected when parabens ARE in formula')
   }
 
   // 6. DETECT FALSE "REMOVED" OR "REFORMULATED" CLAIMS
+  // Build dynamic patterns from problematic ingredients
   const removalPatterns = [
-    /não\s+contém\s+.*removido/i,
+    /n\u00e3o\s+cont\u00e9m\s+.*removido/i,
     /foi\s+removido/i,
     /reformulado\s+sem/i,
     /removido\s+para\s+conformidade/i,
     /does\s+not\s+contain.*removed/i,
     /was\s+removed/i,
     /reformulated\s+without/i,
-    /不含.*已移除/i,
-    /已移除/i,
-    /去除.*后/i,
+    /\u4e0d\u542b.*\u5df2\u79fb\u9664/i,
+    /\u5df2\u79fb\u9664/i,
+    /\u53bb\u9664.*\u540e/i,
   ]
+  // Also check dynamic patterns: "não contém [banned ingredient]"
+  for (const banned of problematicIngredients) {
+    const aliases = ingredientAliases[banned] || []
+    const allForms = [banned, ...aliases]
+    for (const form of allForms) {
+      removalPatterns.push(new RegExp(`n\u00e3o\\s+cont\u00e9m\\s+.*${form}`, 'i'))
+      removalPatterns.push(new RegExp(`nao\\s+contem\\s+.*${form}`, 'i'))
+      removalPatterns.push(new RegExp(`sem\\s+.*${form}`, 'i'))
+      removalPatterns.push(new RegExp(`reformulado\\s+sem\\s+.*${form}`, 'i'))
+      removalPatterns.push(new RegExp(`reformulada\\s+sem\\s+.*${form}`, 'i'))
+      removalPatterns.push(new RegExp(`foi\\s+removid[oa]\\s+.*${form}`, 'i'))
+    }
+  }
   for (const pattern of removalPatterns) {
     if (pattern.test(allText) || pattern.test(allNotesText)) {
-      const removalWarning = `🔴 ERRO DE IA: A listagem contém alegação falsa de que ingredientes foram "removidos" ou "reformulados". A fórmula é exatamente a informada pelo usuário — a IA NÃO deve inventar remoções de ingredientes. O ingredient list é gerado pelo sistema com honestidade total.`
+      const removalWarning = `\ud83d\udd34 ERRO DE IA: A listagem cont\u00e9m alega\u00e7\u00e3o falsa de que ingredientes foram "removidos" ou "reformulados". A f\u00f3rmula \u00e9 exatamente a informada pelo usu\u00e1rio \u2014 a IA N\u00c3O deve inventar remo\u00e7\u00f5es de ingredientes. O ingredient list \u00e9 gerado pelo sistema com honestidade total.`
       result.warnings = [removalWarning, ...result.warnings]
-      console.warn('[AI Validate] 🔴 AI falsely claimed ingredients were removed/reformulated')
+      console.warn('[AI Validate] \ud83d\udd34 AI falsely claimed ingredients were removed/reformulated')
       break
     }
   }
