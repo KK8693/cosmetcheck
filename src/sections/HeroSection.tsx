@@ -83,6 +83,7 @@ interface GeneratedListing {
   title: string
   description: string
   bulletPoints: string[]
+  ingredientList: string[]
   complianceNotes: string[]
   warnings: string[]
   language: 'pt-BR' | 'es-MX'
@@ -724,6 +725,41 @@ export function HeroSection() {
                     ))}
                   </ul>
                 </div>
+
+                {/* Ingredient List (honest, code-generated) */}
+                {generatedListing.ingredientList.length > 0 && (
+                  <div className="mb-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <Label className="text-xs font-semibold text-gray-500">{tDemo('ingredients')}</Label>
+                      <button
+                        onClick={() => copyToClipboard(generatedListing.ingredientList.join('\n'))}
+                        className="text-xs text-[#0A4D8C] hover:underline"
+                      >
+                        {t('copyAll')}
+                      </button>
+                    </div>
+                    <ul className="space-y-1">
+                      {generatedListing.ingredientList.map((ing, i) => {
+                        const isProhibited = ing.includes('🔴 PROIBIDO')
+                        const isRestricted = ing.includes('⚠️ RESTRITO')
+                        return (
+                          <li
+                            key={i}
+                            className={`text-sm rounded-lg p-2 ${
+                              isProhibited
+                                ? 'bg-red-50 text-red-700'
+                                : isRestricted
+                                ? 'bg-amber-50 text-amber-700'
+                                : 'bg-gray-50 text-gray-700'
+                            }`}
+                          >
+                            {ing}
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  </div>
+                )}
 
                 {/* Compliance Notes */}
                 {generatedListing.complianceNotes.length > 0 && (
