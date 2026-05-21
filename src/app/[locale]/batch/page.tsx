@@ -1,4 +1,4 @@
-import BatchContent from './BatchContent'
+import { BatchContent } from '@/components/batch/BatchContent'
 import { setRequestLocale } from 'next-intl/server'
 
 // Required for Cloudflare Pages
