@@ -159,8 +159,17 @@ export function BatchContent() {
       if (!response.ok) {
         const errorData = await response.json()
         if (response.status === 403) {
-          // Pro required
-          setError(errorData.message || t('proRequiredMessage'))
+          // Pro Annual required - show contextual upgrade message
+          const isMonthly = errorData.isMonthly
+          const isLoginRequired = errorData.error === 'Login required'
+          
+          if (isLoginRequired) {
+            setError(errorData.message || t('freeUpgradeHint'))
+          } else if (isMonthly) {
+            setError(t('monthlyUpgradeHint'))
+          } else {
+            setError(errorData.message || t('freeUpgradeHint'))
+          }
           return
         }
         throw new Error(errorData.error || 'Detection failed')
@@ -235,6 +244,14 @@ export function BatchContent() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#fbbf24]/10 border border-[#fbbf24]/30 mb-4">
+            <span className="text-[#fbbf24] text-xs font-semibold tracking-wide uppercase">
+              {t('annualOnly')}
+            </span>
+            <span className="text-[#fbbf24]/70 text-xs">
+              {t('save40')}
+            </span>
+          </div>
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-3">
             {t('title')}
           </h1>
@@ -249,15 +266,13 @@ export function BatchContent() {
             <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
             <div className="flex-1">
               <p className="text-red-300 text-sm">{error}</p>
-              {error.includes('Pro') && (
-                <Button 
-                  onClick={() => router.push('/pricing')}
-                  className="mt-2 bg-[#fbbf24] text-black hover:bg-[#f59e0b] font-semibold"
-                  size="sm"
-                >
-                  {t('upgrade')}
-                </Button>
-              )}
+              <Button 
+                onClick={() => router.push('/pricing')}
+                className="mt-2 bg-[#fbbf24] text-black hover:bg-[#f59e0b] font-semibold"
+                size="sm"
+              >
+                {t('upgradeToAnnual')}
+              </Button>
             </div>
             <button onClick={() => setError(null)} className="text-red-400 hover:text-red-300">
               <XCircle className="w-5 h-5" />

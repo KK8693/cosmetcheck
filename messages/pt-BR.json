@@ -32,7 +32,13 @@
     "all": "Todos",
     "compliant": "Conforme",
     "nonCompliant": "Não Conforme",
-    "clearResults": "Limpar Resultados"
+    "clearResults": "Limpar Resultados",
+    "annualOnly": "Exclusivo Plano Anual",
+    "annualOnlyDesc": "Detecção em lote disponível apenas para assinantes Pro Anual",
+    "monthlyUpgradeHint": "Assinantes mensais podem fazer upgrade para anual e economizar 40%",
+    "freeUpgradeHint": "Faça upgrade para o plano Pro Anual para usar detecção em lote",
+    "upgradeToAnnual": "Fazer Upgrade para Anual",
+    "save40": "Economize 40% no Anual"
   },
   "common": {
     "loggedInAs": "Conectado como {email}",

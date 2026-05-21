@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient, SupabaseClient } from '@supabase/supabase-js'
+import { checkBatchAccess } from '@/lib/subscription'
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
@@ -42,6 +43,23 @@ export async function GET(
       return NextResponse.json(
         { error: 'Task ID is required' },
         { status: 400 }
+      )
+    }
+
+    // Check Pro Annual subscription
+    const userEmail = request.headers.get('x-user-email')
+    if (userEmail) {
+      const { allowed } = await checkBatchAccess(userEmail)
+      if (!allowed) {
+        return NextResponse.json(
+          { error: 'Pro Annual subscription required' },
+          { status: 403 }
+        )
+      }
+    } else {
+      return NextResponse.json(
+        { error: 'Login required' },
+        { status: 403 }
       )
     }
 

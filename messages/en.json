@@ -32,7 +32,13 @@
     "all": "All",
     "compliant": "Compliant",
     "nonCompliant": "Non-Compliant",
-    "clearResults": "Clear Results"
+    "clearResults": "Clear Results",
+    "annualOnly": "Annual Plan Exclusive",
+    "annualOnlyDesc": "Batch detection is only available for Pro Annual subscribers",
+    "monthlyUpgradeHint": "Monthly subscribers can upgrade to Annual and save 40%",
+    "freeUpgradeHint": "Please upgrade to Pro Annual plan to use batch detection",
+    "upgradeToAnnual": "Upgrade to Annual Plan",
+    "save40": "Save 40% with Annual"
   },
   "common": {
     "brand": "CosmetCheck",

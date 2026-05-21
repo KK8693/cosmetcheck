@@ -32,7 +32,13 @@
     "all": "全部",
     "compliant": "合规",
     "nonCompliant": "不合规",
-    "clearResults": "清除结果"
+    "clearResults": "清除结果",
+    "annualOnly": "年付专享",
+    "annualOnlyDesc": "批量检测功能仅限 Pro 年付用户使用",
+    "monthlyUpgradeHint": "月付用户升级年付可立省 40%",
+    "freeUpgradeHint": "请先升级到 Pro 年付套餐以使用批量检测",
+    "upgradeToAnnual": "升级到年付套餐",
+    "save40": "年付立省 40%"
   },
   "common": {
     "brand": "CosmetCheck",

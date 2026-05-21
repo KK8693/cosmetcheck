@@ -59,34 +59,36 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Check Pro subscription - accept email from header or body
+    // Check Pro Annual subscription - accept email from header or body
     const userEmail = request.headers.get('x-user-email') || body.userEmail
     if (userEmail) {
-      const { allowed, tier } = await checkBatchAccess(userEmail)
+      const { allowed, tier, reason } = await checkBatchAccess(userEmail)
       if (!allowed) {
+        const isMonthly = tier === 'pro-monthly'
         return NextResponse.json(
           {
-            error: 'Pro subscription required',
-            message: '批量检测功能仅限 Pro 用户使用。请先升级到 Pro 套餐。',
+            error: 'Pro Annual subscription required',
+            message: isMonthly
+              ? '批量检测功能仅限年付 Pro 用户使用。月付用户可升级至年付套餐立省 40%。'
+              : '批量检测功能仅限年付 Pro 用户使用。请先升级到 Pro 年付套餐。',
             tier,
+            reason,
             upgradeUrl: '/pricing',
+            isMonthly,
           },
           { status: 403 }
         )
       }
     } else {
-      // No email provided, check IP-based quota fallback for free users
-      // For now, allow up to 5 items for anonymous users
-      if (items.length > 5) {
-        return NextResponse.json(
-          {
-            error: 'Pro subscription required for large batches',
-            message: '批量检测超过 5 条需要 Pro 订阅。请升级到 Pro 套餐获取无限批量检测。',
-            upgradeUrl: '/pricing',
-          },
-          { status: 403 }
-        )
-      }
+      // No email provided, reject all batch requests for anonymous users
+      return NextResponse.json(
+        {
+          error: 'Login required',
+          message: '批量检测功能仅限年付 Pro 用户使用。请先登录并升级到 Pro 年付套餐。',
+          upgradeUrl: '/pricing',
+        },
+        { status: 403 }
+      )
     }
 
     // Create batch task (use admin client to bypass RLS)
