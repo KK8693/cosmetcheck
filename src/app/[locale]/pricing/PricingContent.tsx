@@ -182,12 +182,43 @@ export default function PricingContent() {
                   </p>
                 </div>
                 <ul className="space-y-3 mb-8">
-                  {proCard.features.map((item: string, idx: number) => (
-                    <li key={idx} className="flex items-center text-gray-300">
-                      <Check className="w-5 h-5 text-[#00A86B] mr-3 flex-shrink-0" />
-                      {item}
-                    </li>
-                  ))}
+                  {proCard.features.map((item: string, idx: number) => {
+                    const isSupportFeature = item.includes('客服') || item.includes('support') || item.includes('atendimento')
+                    const isAdvisorFeature = item.includes('顾问') || item.includes('advisor') || item.includes('consultor')
+                    const isClickable = isSupportFeature || isAdvisorFeature
+
+                    const handleClick = () => {
+                      if (typeof window !== 'undefined') {
+                        window.dispatchEvent(
+                          new CustomEvent('open-chat-widget', {
+                            detail: { mode: isAdvisorFeature ? 'advisor' : 'support' },
+                          })
+                        )
+                      }
+                    }
+
+                    return (
+                      <li
+                        key={idx}
+                        className={`flex items-center text-gray-300 ${
+                          isClickable
+                            ? 'cursor-pointer hover:text-[#00A86B] transition-colors group'
+                            : ''
+                        }`}
+                        onClick={isClickable ? handleClick : undefined}
+                      >
+                        <Check className="w-5 h-5 text-[#00A86B] mr-3 flex-shrink-0" />
+                        <span className={isClickable ? 'group-hover:underline' : ''}>
+                          {item}
+                        </span>
+                        {isClickable && (
+                          <span className="ml-2 text-xs text-[#00A86B] opacity-0 group-hover:opacity-100 transition-opacity">
+                            → AI
+                          </span>
+                        )}
+                      </li>
+                    )
+                  })}
                 </ul>
                 <SubscribeButton
                   billingCycle={yearly ? 'yearly' : 'monthly'}

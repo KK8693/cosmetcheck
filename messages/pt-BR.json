@@ -275,15 +275,15 @@
           "active": true
         },
         {
-          "text": "Detecção em lote (CSV)",
-          "active": true
-        },
-        {
           "text": "🌟 Acesso antecipado novos mercados (Argentina/Colômbia Q3)",
           "active": true
         },
         {
           "text": "🌟 Assessor de conformidade 1v1 (anual)",
+          "active": true
+        },
+        {
+          "text": "Detecção em lote (CSV) (Apenas Anual)",
           "active": true
         }
       ],
@@ -526,9 +526,9 @@
         "Geração de Listing IA (PT/ES)",
         "Atualizações regulatórias em tempo real",
         "Suporte prioritário",
-        "Detecção em lote (CSV)",
         "🌟 Acesso antecipado a novos mercados (Argentina/Colômbia Q3)",
-        "🌟 Assessor de conformidade 1v1 (assinatura anual)"
+        "🌟 Assessor de conformidade 1v1 (assinatura anual)",
+        "Detecção em lote (CSV) (Apenas Anual)"
       ],
       "cta_monthly": "Desbloqueie Ilimitado — R$149/mês",
       "cta_yearly": "Desbloqueie Pro Anual — R$1.290/ano"
@@ -571,7 +571,7 @@
       {
         "name": "Detecção em Lote CSV",
         "free": "—",
-        "pro": "✓"
+        "pro": "Apenas Anual"
       },
       {
         "name": "Atualizações Regulatórias em Tempo Real",

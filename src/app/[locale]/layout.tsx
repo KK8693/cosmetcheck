@@ -2,6 +2,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { AuthProvider } from '@/contexts/AuthContext'
 import { CookieConsent } from '@/components/CookieConsent'
 import { Navbar } from '@/components/Navbar'
+import ChatWidget from '@/components/ChatWidget'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
@@ -130,6 +131,7 @@ export default async function LocaleLayout({
               <Navbar />
               {children}
               <CookieConsent />
+              <ChatWidget />
             </AuthProvider>
           </ThemeProvider>
       </NextIntlClientProvider>

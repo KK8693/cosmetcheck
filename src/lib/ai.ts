@@ -859,3 +859,148 @@ export async function generateListing(
     throw error
   }
 }
+
+// ============================================
+// AI Chat (Customer Support & Compliance Advisor)
+// ============================================
+
+export type ChatMode = 'support' | 'advisor'
+
+const SUPPORT_SYSTEM_PROMPT = `You are CosmetCheck's AI customer support assistant. You help users with product usage, pricing, feature questions, and common issues.
+
+CosmetCheck is a compliance detection tool for Chinese sellers exporting cosmetics to Latin America, primarily Brazil (ANVISA) and Mexico (COFEPRIS).
+
+Key facts:
+- Free plan: 10 compliance checks per 30 days, no registration required (IP-based)
+- Pro plan ($29/month or $245/year): unlimited checks, AI Listing generation (PT/ES), real-time regulation updates, priority support, batch CSV detection, early access to new markets
+- AI Listing generates compliant product listings in Brazilian Portuguese or Mexican Spanish
+- Batch detection requires Pro Annual subscription
+- 7-day money-back guarantee
+
+Tone: friendly, professional, concise. Answer in the user's language. If asked complex compliance questions, suggest using "Compliance Advisor mode".`
+
+const ADVISOR_SYSTEM_PROMPT = `You are CosmetCheck's AI Compliance Advisor, specializing in Brazilian (ANVISA) and Mexican (COFEPRIS) cosmetics regulations.
+
+Your expertise:
+- Analyze product listings for compliance risks
+- Interpret ANVISA RDC 751/2022 and COFEPRIS regulations
+- Determine if ingredients are permitted in target markets
+- Provide modification suggestions and compliant listing copy
+- Explain labeling requirements, claim restrictions, banned ingredients
+
+Guidelines:
+1. Cite specific regulation articles when possible
+2. Give clear, actionable recommendations
+3. State severity and consequences for any risks
+4. Reply in the user's language
+5. Remind users this is reference advice; final compliance responsibility lies with the seller. For major legal decisions, recommend consulting a licensed local attorney.`
+
+function getChatSystemPrompt(mode: ChatMode): string {
+  return mode === 'advisor' ? ADVISOR_SYSTEM_PROMPT : SUPPORT_SYSTEM_PROMPT
+}
+
+export async function chatWithAI(
+  messages: Array<{ role: 'system' | 'user' | 'assistant'; content: string }>,
+  mode: ChatMode = 'support'
+): Promise<ReadableStream<Uint8Array>> {
+  const primary = getPrimaryProvider()
+  const fallback = getFallbackProvider()
+
+  let openai: OpenAI
+  let currentProvider: string
+  let model: string
+
+  openai = getOpenAIClient(primary)
+  currentProvider = primary.provider
+  model = primary.model
+
+  const systemPrompt = getChatSystemPrompt(mode)
+  const fullMessages = [
+    { role: 'system' as const, content: systemPrompt },
+    ...messages,
+  ]
+
+  const maxTokens = mode === 'advisor' ? 4000 : 2000
+
+  try {
+    const response = await withRetry(
+      () =>
+        openai.chat.completions.create({
+          model,
+          messages: fullMessages,
+          stream: true,
+          temperature: 0.7,
+          max_tokens: maxTokens,
+        }),
+      `${currentProvider} chat(${mode})`
+    )
+
+    const encoder = new TextEncoder()
+    return new ReadableStream({
+      async start(controller) {
+        try {
+          for await (const chunk of response as unknown as AsyncIterable<{
+            choices: Array<{ delta?: { content?: string } }>
+          }>) {
+            const content = chunk.choices[0]?.delta?.content
+            if (content) {
+              controller.enqueue(encoder.encode(content))
+            }
+          }
+          controller.close()
+        } catch (streamError) {
+          controller.error(streamError)
+        }
+      },
+    })
+  } catch (error) {
+    // Fallback on rate limit or connection error
+    const errorMessage = error instanceof Error ? error.message : String(error)
+    const isConnectionError =
+      errorMessage.includes('fetch failed') ||
+      errorMessage.includes('ECONNREFUSED') ||
+      errorMessage.includes('ETIMEDOUT') ||
+      errorMessage.includes('timeout') ||
+      errorMessage.includes('unable to connect') ||
+      errorMessage.includes('getaddrinfo') ||
+      (typeof (error as Record<string, unknown>).status === 'number' &&
+        [429, 500, 502, 503, 504].includes((error as Record<string, unknown>).status as number))
+
+    if ((isRateLimitError(error) || isConnectionError) && fallback) {
+      console.warn(`[AI] ${currentProvider} failed for chat, falling back to ${fallback.provider}`)
+      openai = getOpenAIClient(fallback)
+      currentProvider = fallback.provider
+      model = fallback.model
+
+      const fallbackResponse = await openai.chat.completions.create({
+        model,
+        messages: fullMessages,
+        stream: true,
+        temperature: 0.7,
+        max_tokens: maxTokens,
+      })
+
+      const encoder = new TextEncoder()
+      return new ReadableStream({
+        async start(controller) {
+          try {
+            for await (const chunk of fallbackResponse as unknown as AsyncIterable<{
+              choices: Array<{ delta?: { content?: string } }>
+            }>) {
+              const content = chunk.choices[0]?.delta?.content
+              if (content) {
+                controller.enqueue(encoder.encode(content))
+              }
+            }
+            controller.close()
+          } catch (streamError) {
+            controller.error(streamError)
+          }
+        },
+      })
+    }
+
+    console.error(`[AI] ${currentProvider} chat failed:`, errorMessage)
+    throw error
+  }
+}

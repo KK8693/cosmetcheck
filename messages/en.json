@@ -275,15 +275,15 @@
           "active": true
         },
         {
-          "text": "Batch detection (CSV import)",
-          "active": true
-        },
-        {
           "text": "🌟 New markets early access (Argentina/Colombia Q3)",
           "active": true
         },
         {
           "text": "🌟 Dedicated compliance advisor 1v1 (annual)",
+          "active": true
+        },
+        {
+          "text": "Batch detection (CSV import) (Annual Only)",
           "active": true
         }
       ],
@@ -526,9 +526,9 @@
         "AI Listing Generation (PT/ES)",
         "Real-time regulation updates",
         "Priority support",
-        "Batch detection (CSV import)",
         "🌟 Early access to new markets (Argentina/Colombia Q3)",
-        "🌟 Dedicated compliance advisor 1v1 (annual)"
+        "🌟 Dedicated compliance advisor 1v1 (annual)",
+        "Batch detection (CSV import) (Annual Only)"
       ],
       "cta_monthly": "Unlock Unlimited — $29/mo",
       "cta_yearly": "Unlock Annual Pro — $245/yr"
@@ -571,7 +571,7 @@
       {
         "name": "Batch CSV Detection",
         "free": "—",
-        "pro": "✓"
+        "pro": "Annual Only"
       },
       {
         "name": "Real-time Regulation Updates",

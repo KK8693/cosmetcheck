@@ -90,6 +90,44 @@ export async function checkBatchAccess(
 }
 
 /**
+ * 检查 AI 聊天功能权限
+ *
+ * @param userIdOrEmail - 用户 ID 或邮箱
+ * @param mode - 'support' | 'advisor'
+ * @returns Promise<{ allowed: boolean; tier: SubscriptionTier; reason?: string }>
+ */
+export async function checkChatAccess(
+  userIdOrEmail: string,
+  mode: 'support' | 'advisor'
+): Promise<{ allowed: boolean; tier: SubscriptionTier; reason?: string }> {
+  const tier = await checkSubscriptionTier(userIdOrEmail)
+
+  // Support mode: all tiers allowed (free has daily limit checked client-side)
+  if (mode === 'support') {
+    return { allowed: true, tier }
+  }
+
+  // Advisor mode: pro-annual or team only
+  if (tier === 'pro-annual' || tier === 'team') {
+    return { allowed: true, tier }
+  }
+
+  if (tier === 'pro-monthly') {
+    return {
+      allowed: false,
+      tier,
+      reason: 'advisor_requires_annual',
+    }
+  }
+
+  return {
+    allowed: false,
+    tier,
+    reason: 'requires_pro_annual',
+  }
+}
+
+/**
  * 检查用户是否已认证（用于需要登录的 API）
  *
  * @param authHeader - Authorization header
