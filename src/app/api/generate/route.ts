@@ -130,10 +130,55 @@ export async function POST(request: NextRequest) {
     })
   } catch (error) {
     console.error('Generate API error:', error)
-    // Log detailed error for debugging
+
+    // 错误分类：让后端日志和前端都能明确知道是哪一层坏了
     const errorMessage = error instanceof Error ? error.message : String(error)
     const errorStack = error instanceof Error ? error.stack : undefined
-    console.error('[Generate] Detailed error:', { message: errorMessage, stack: errorStack })
+
+    // 1. 检测 AI provider 配置问题（key 无效/缺失）
+    if (
+      errorMessage.includes('API_KEY is not configured') ||
+      errorMessage.includes('No AI provider configured') ||
+      errorMessage.includes('Incorrect API key')
+    ) {
+      console.error('[Generate] 🔴 AI Provider Auth Error:', { message: errorMessage, stack: errorStack })
+      return NextResponse.json(
+        { error: 'AI generation service is not configured correctly', details: 'Invalid or missing AI API key. Please contact support.' },
+        { status: 503 }
+      )
+    }
+
+    // 2. 检测 AI provider 连接/网络问题
+    if (
+      errorMessage.includes('fetch failed') ||
+      errorMessage.includes('ECONNREFUSED') ||
+      errorMessage.includes('ETIMEDOUT') ||
+      errorMessage.includes('timeout') ||
+      errorMessage.includes('network') ||
+      errorMessage.includes('unable to connect')
+    ) {
+      console.error('[Generate] 🔴 AI Provider Network Error:', { message: errorMessage, stack: errorStack })
+      return NextResponse.json(
+        { error: 'AI generation service temporarily unavailable', details: 'Network error connecting to AI provider. Please retry in a moment.' },
+        { status: 504 }
+      )
+    }
+
+    // 3. 检测 AI 响应格式问题（JSON 解析失败、空响应）
+    if (
+      errorMessage.includes('JSON') ||
+      errorMessage.includes('Empty response') ||
+      errorMessage.includes('Unexpected token')
+    ) {
+      console.error('[Generate] 🔴 AI Response Parsing Error:', { message: errorMessage, stack: errorStack })
+      return NextResponse.json(
+        { error: 'AI generated invalid response', details: 'The AI provider returned an unexpected format. Please retry.' },
+        { status: 502 }
+      )
+    }
+
+    // 4. 默认：未知服务端错误
+    console.error('[Generate] 🔴 Unknown Server Error:', { message: errorMessage, stack: errorStack })
     return NextResponse.json(
       { error: 'Failed to generate listing', details: errorMessage },
       { status: 500 }

@@ -445,7 +445,53 @@ export async function generateListing(
       return JSON.parse(content)
     }
     
-    // No fallback or not a rate limit error, throw
+    // 增强：非 rate limit 错误也尝试 fallback（如果是严重连接错误或 provider 服务不可用）
+    const errorMessage = error instanceof Error ? error.message : String(error)
+    const isConnectionError = 
+      errorMessage.includes('fetch failed') ||
+      errorMessage.includes('ECONNREFUSED') ||
+      errorMessage.includes('ETIMEDOUT') ||
+      errorMessage.includes('timeout') ||
+      errorMessage.includes('unable to connect') ||
+      errorMessage.includes('getaddrinfo') ||
+      (typeof (error as Record<string, unknown>).status === 'number' && 
+       [500, 502, 503, 504].includes((error as Record<string, unknown>).status as number))
+    
+    if (isConnectionError && fallback && !usedFallback) {
+      console.warn(`[AI] ${currentProvider} connection failed (${errorMessage}), falling back to ${fallback.provider}`)
+      usedFallback = true
+      
+      openai = getOpenAIClient(fallback)
+      currentProvider = fallback.provider
+      model = fallback.model
+      
+      const response = await openai.chat.completions.create({
+        model: model,
+        messages: [
+          {
+            role: 'system',
+            content: getSystemPrompt(input),
+          },
+          {
+            role: 'user',
+            content: `Generate a ${input.targetCountry === 'BR' ? 'Brazilian Portuguese' : 'Mexican Spanish'} listing for: ${input.productName}`,
+          },
+        ],
+        temperature: 0.7,
+        max_tokens: 1500,
+        response_format: { type: 'json_object' },
+      })
+      
+      const content = response.choices[0]?.message?.content
+      if (!content) {
+        throw new Error('Empty response from fallback provider')
+      }
+      
+      return JSON.parse(content)
+    }
+    
+    // No fallback or not a recoverable error, throw with provider context
+    console.error(`[AI] ${currentProvider} generation failed:`, errorMessage)
     throw error
   }
 }
