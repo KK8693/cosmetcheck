@@ -318,11 +318,6 @@ export function HeroSection() {
       setAuthOpen(true)
       return
     }
-    // Check if quota exceeded
-    if (quotaUsed >= quotaLimit) {
-      setGenerateError(t('errors.quotaExceeded'))
-      return
-    }
     setGenerateError('')
     setIsGenerating(true)
     setGeneratedListing(null)
@@ -346,8 +341,8 @@ export function HeroSection() {
       const data = await res.json()
       if (data.success) {
         setGeneratedListing(data.data)
-        // Update quota display locally (will be refreshed on next auth state change)
-        setQuotaUsed(prev => prev + 1)
+      } else if (res.status === 403) {
+        setGenerateError(data.message || t('errors.proRequired'))
       } else if (res.status === 429) {
         setGenerateError(t('errors.quotaExceeded'))
       } else {

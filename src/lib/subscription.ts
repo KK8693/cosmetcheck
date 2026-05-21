@@ -90,6 +90,28 @@ export async function checkBatchAccess(
 }
 
 /**
+ * 检查 AI Listing 生成功能权限（仅 Pro 可用，不限年付/月付）
+ *
+ * @param userIdOrEmail - 用户 ID 或邮箱
+ * @returns Promise<{ allowed: boolean; tier: SubscriptionTier; reason?: string }>
+ */
+export async function checkListingAccess(
+  userIdOrEmail: string
+): Promise<{ allowed: boolean; tier: SubscriptionTier; reason?: string }> {
+  const tier = await checkSubscriptionTier(userIdOrEmail)
+
+  if (tier === 'pro-monthly' || tier === 'pro-annual' || tier === 'team') {
+    return { allowed: true, tier }
+  }
+
+  return {
+    allowed: false,
+    tier,
+    reason: 'requires_pro',
+  }
+}
+
+/**
  * 检查 AI 聊天功能权限
  *
  * @param userIdOrEmail - 用户 ID 或邮箱

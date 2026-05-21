@@ -3,6 +3,7 @@ import { generateListing } from '@/lib/ai'
 import { moderateContent, getModerationWarnings } from '@/lib/moderation'
 import { checkQuotaMiddleware, incrementQuota } from '@/lib/quota'
 import { checkRateLimit } from '@/lib/rate-limit'
+import { checkListingAccess } from '@/lib/subscription'
 import { createClient } from '@supabase/supabase-js'
 
 export const runtime = 'edge'
@@ -16,6 +17,29 @@ function getSupabaseAdmin() {
 
 export async function POST(request: NextRequest) {
   try {
+    // Pro subscription check: Listing generation is Pro-only
+    const userEmail = request.headers.get('x-user-email')
+    if (!userEmail) {
+      return NextResponse.json(
+        { error: 'Login required', message: 'Please sign in to generate listings.', upgradeUrl: '/pricing' },
+        { status: 403 }
+      )
+    }
+
+    const { allowed, tier, reason } = await checkListingAccess(userEmail)
+    if (!allowed) {
+      return NextResponse.json(
+        {
+          error: 'Pro subscription required',
+          message: 'AI Listing generation is a Pro feature. Upgrade to unlock unlimited AI-powered listing creation.',
+          tier,
+          reason,
+          upgradeUrl: '/pricing',
+        },
+        { status: 403 }
+      )
+    }
+
     // Check quota first
     const quotaCheck = await checkQuotaMiddleware(request)
     if (!quotaCheck.allowed) {
@@ -23,7 +47,6 @@ export async function POST(request: NextRequest) {
     }
 
     // Rate limit check (token bucket, 10 req/min)
-    const userEmail = request.headers.get('x-user-email')
     const identifier = userEmail ||
       request.headers.get('x-forwarded-for')?.split(',')[0] ||
       request.headers.get('x-real-ip') ||
@@ -83,11 +106,6 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Note: Input moderation removed (Option A). 
-    // CosmetCheck is a compliance tool - users intentionally input non-compliant 
-    // product descriptions to get them fixed. The compliance engine and AI prompt
-    // already handle problematic content. Output moderation remains as safeguard.
-
     const result = await generateListing({
       productName,
       ingredients,
@@ -108,7 +126,6 @@ export async function POST(request: NextRequest) {
     if (outputModeration.flagged) {
       const warnings = getModerationWarnings(outputModeration)
       console.warn('AI output flagged:', warnings)
-      // Log but don't block - let user review with warning
       return NextResponse.json({
         success: true,
         data: result,
@@ -124,11 +141,9 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Generate API error:', error)
 
-    // 错误分类：让后端日志和前端都能明确知道是哪一层坏了
     const errorMessage = error instanceof Error ? error.message : String(error)
     const errorStack = error instanceof Error ? error.stack : undefined
 
-    // 1. 检测 AI provider 配置问题（key 无效/缺失）
     if (
       errorMessage.includes('API_KEY is not configured') ||
       errorMessage.includes('No AI provider configured') ||
@@ -141,7 +156,6 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // 2. 检测 AI provider 连接/网络问题
     if (
       errorMessage.includes('fetch failed') ||
       errorMessage.includes('ECONNREFUSED') ||
@@ -157,7 +171,6 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // 3. 检测 AI 响应格式问题（JSON 解析失败、空响应）
     if (
       errorMessage.includes('JSON') ||
       errorMessage.includes('Empty response') ||
@@ -170,7 +183,6 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // 4. 默认：未知服务端错误
     console.error('[Generate] 🔴 Unknown Server Error:', { message: errorMessage, stack: errorStack })
     return NextResponse.json(
       { error: 'Failed to generate listing', details: errorMessage },

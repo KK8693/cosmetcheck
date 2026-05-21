@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { MessageCircle, X, Send, Sparkles, Shield, Loader2 } from 'lucide-react'
+import { Link } from '@/i18n/routing'
 import { useAuth } from '@/contexts/AuthContext'
 
 interface ChatMessage {
@@ -418,12 +419,12 @@ export default function ChatWidget() {
               <div className="bg-red-900/20 border border-red-800/30 rounded-xl px-3 py-2 text-sm text-red-400">
                 {error}
                 {error.includes('Upgrade') && (
-                  <a
+                  <Link
                     href="/pricing"
                     className="block mt-1 text-[#00A86B] hover:underline"
                   >
                     View Pricing →
-                  </a>
+                  </Link>
                 )}
               </div>
             )}
