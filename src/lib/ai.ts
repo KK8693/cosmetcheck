@@ -282,10 +282,16 @@ export interface GenerateListingInput {
     violations: Array<{
       message: string
       suggestion: string
+      category?: string
+      keyword?: string
+      severity?: string
     }>
     warnings: Array<{
       message: string
       suggestion: string
+      category?: string
+      keyword?: string
+      severity?: string
     }>
   }
 }
@@ -299,33 +305,185 @@ export interface GeneratedListing {
   language: 'pt-BR' | 'es-MX'
 }
 
+// Post-processing validation: enforce ingredient honesty and claim-consistency
+function validateListing(
+  listing: GeneratedListing,
+  input: GenerateListingInput
+): GeneratedListing {
+  const result = { ...listing }
+  const ingredients = (input.ingredients || '').toLowerCase()
+  const titleDesc = `${result.title} ${result.description}`.toLowerCase()
+  const bullets = result.bulletPoints.join(' ').toLowerCase()
+  const allText = `${titleDesc} ${bullets}`
+
+  // Extract problematic ingredients from checkResult
+  const problematicIngredients: string[] = []
+  if (input.checkResult) {
+    for (const v of input.checkResult.violations) {
+      if (v.category === 'ingredient' && v.keyword) {
+        problematicIngredients.push(v.keyword.toLowerCase())
+      }
+    }
+    for (const w of input.checkResult.warnings) {
+      if (w.category === 'ingredient' && w.keyword) {
+        problematicIngredients.push(w.keyword.toLowerCase())
+      }
+    }
+  }
+
+  // 1. INGREDIENT HONESTY CHECK
+  // If a banned ingredient is in the formula, verify the listing does NOT falsely deny it
+  const allNotes = [...result.complianceNotes, ...result.warnings].join(' ').toLowerCase()
+  for (const banned of problematicIngredients) {
+    // Check if listing falsely claims the ingredient is NOT present
+    const denialPatterns = [
+      `não contém ${banned}`,
+      `nao contem ${banned}`,
+      `sem ${banned}`,
+      `livre de ${banned}`,
+      `does not contain ${banned}`,
+      `free of ${banned}`,
+      `no ${banned}`,
+      `without ${banned}`,
+      `不含${banned}`,
+      `无${banned}`,
+    ]
+    const hasDenial = denialPatterns.some(p => allText.includes(p) || allNotes.includes(p))
+    if (hasDenial) {
+      // Force-add a correction warning
+      const correctionNote = `⚠️ CORREÇÃO DE INGREDIENTE: A fórmula original CONTÉM ${banned}, que é proibido pela ANVISA. Este ingrediente DEVE ser removido antes do lançamento. A listagem não deve negar a presença de ingredientes reais.`
+      result.warnings = [correctionNote, ...result.warnings]
+      console.warn(`[AI Validate] 🔴 Ingredient honesty violation: listing falsely denies presence of ${banned}`)
+    }
+
+    // Also check if the banned ingredient is mentioned AT ALL in the listing
+    const mentionedInListing = allText.includes(banned) || allNotes.includes(banned)
+    if (!mentionedInListing) {
+      // The banned ingredient should be disclosed in complianceNotes
+      const disclosureNote = `⚠️ INGREDIENTE PROIBIDO DETECTADO: A fórmula contém ${banned}, que é proibido/restrito pela ANVISA. Este produto NÃO pode ser comercializado no Brasil sem reformulação.`
+      result.complianceNotes = [disclosureNote, ...result.complianceNotes]
+      console.warn(`[AI Validate] 🔴 Missing disclosure for banned ingredient: ${banned}`)
+    }
+  }
+
+  // 2. SUNSCREEN CLAIM CONSISTENCY
+  // Check if listing claims sun protection but ingredients lack sunscreen actives
+  const sunscreenActives = [
+    'zinc oxide', 'titanium dioxide', 'avobenzone', 'oxybenzone', 'octinoxate',
+    'octocrylene', 'homosalate', 'octisalate', 'ensulizole', 'tinosorb',
+    '氧化锌', '氧化钛', '防晒剂', 'avobenzona'
+  ]
+  const hasSunscreenIngredients = sunscreenActives.some(a => ingredients.includes(a))
+  const hasSunscreenClaim =
+    /fps\s*\d+|spf\s*\d+|prote[cç][aã]o\s+solar|protege\s+.*uv|sunscreen|bloqueador|anti-uv/.test(allText)
+
+  if (hasSunscreenClaim && !hasSunscreenIngredients) {
+    const inconsistencyWarning = `⚠️ INCONSISTÊNCIA: A listagem menciona proteção solar/UV, mas a fórmula NÃO contém ativos de proteção solar (ex: óxido de zinco, dióxido de titânio). Remova as alegações de FPS/SPF ou adicione ativos de proteção solar à fórmula. Além disso, produtos com FPS requerem registro ESPECIAL na ANVISA.`
+    result.warnings = [inconsistencyWarning, ...result.warnings]
+    console.warn('[AI Validate] 🔴 Sunscreen claim without sunscreen ingredients')
+  }
+
+  // 3. SENSITIVE SKIN CLAIM CHECK
+  const sensitiveSkinPattern = /todos\s+os\s+tipos\s+de\s+pele.*sens[ií]veis|todos\s+tipos\s+de\s+pele.*inclusive|all\s+skin\s+types.*sensitive|suitable\s+for\s+all\s+skin\s+types/i
+  if (sensitiveSkinPattern.test(allText)) {
+    const sensitiveWarning = `⚠️ ALEGAÇÃO DE PELE SENSÍVEL: A frase "adequado para todos os tipos de pele, inclusive sensíveis" requer testes dermatológicos comprovados. Recomendado: "adequado para a maioria dos tipos de pele" ou incluir aviso "Teste de toque recomendado para peles sensíveis".`
+    result.warnings = [sensitiveWarning, ...result.warnings]
+    console.warn('[AI Validate] 🟡 Sensitive skin claim detected')
+  }
+
+  // 4. WHITENING/SKIN LIGHTENING REGISTRATION WARNING
+  const whiteningPattern = /clareador|clareamento|branqueador|whitening|lightening|desmanchador|anti-manchas\s+intenso/i
+  if (whiteningPattern.test(allText)) {
+    const whiteningNote = `⚠️ REGISTRO ESPECIAL REQUERIDO: Produtos com alegações de clareamento/branqueamento da pele ("clareador", "anti-manchas intensivo") requerem registro ESPECIAL na ANVISA, além da notificação cosmética normal. O processo é mais longo e exige estudos de segurança adicionais.`
+    // Check if already mentioned
+    const alreadyMentioned = result.complianceNotes.some(n => n.toLowerCase().includes('registro especial') && n.toLowerCase().includes('clareamento'))
+    if (!alreadyMentioned) {
+      result.complianceNotes = [whiteningNote, ...result.complianceNotes]
+      console.warn('[AI Validate] 🟡 Whitening claim - special registration required')
+    }
+  }
+
+  return result
+}
+
 function getSystemPrompt(input: GenerateListingInput): string {
   const country = input.targetCountry === 'BR' ? 'Brazil' : 'Mexico'
   const language = input.targetCountry === 'BR' ? 'Brazilian Portuguese (pt-BR)' : 'Mexican Spanish (es-MX)'
   const regulation = input.targetCountry === 'BR' ? 'ANVISA' : 'COFEPRIS'
 
+  // Extract problematic ingredients from checkResult
+  const problematicIngredients: string[] = []
+  const problematicClaims: string[] = []
+  if (input.checkResult) {
+    for (const v of input.checkResult.violations) {
+      if (v.category === 'ingredient' && v.keyword) {
+        problematicIngredients.push(v.keyword)
+      }
+      if ((v.category === 'claim' || v.category === 'label') && v.keyword) {
+        problematicClaims.push(v.keyword)
+      }
+    }
+    for (const w of input.checkResult.warnings) {
+      if (w.category === 'ingredient' && w.keyword) {
+        problematicIngredients.push(w.keyword)
+      }
+      if ((w.category === 'claim' || w.category === 'label') && w.keyword) {
+        problematicClaims.push(w.keyword)
+      }
+    }
+  }
+
   let prompt = `You are an expert e-commerce copywriter specializing in Latin American beauty products.
 
 TASK: Generate a high-converting, ${regulation}-compliant product listing for ${country} in ${language}.
 
-RULES:
-1. Language: Write ONLY in ${language}. Do not mix languages.
-2. Compliance: Follow ${regulation} cosmetic regulations strictly:
-   - NO medical/therapeutic claims (no "treats", "cures", "heals", "medicinal")
-   - NO absolute claims without proof (no "100% natural", "completely safe")
+CRITICAL RULES (violating any will cause regulatory penalties):
+
+1. LANGUAGE: Write ONLY in ${language}. Do not mix languages.
+
+2. INGREDIENT HONESTY (MOST IMPORTANT):
+   - You MUST truthfully reflect ALL ingredients provided by the user
+   - NEVER falsely claim a banned/restricted ingredient is "not present" when it IS in the formula
+   - For banned ingredients, state them honestly in the listing with a ⚠️ warning flag
+   - Example correct: "Ingredients: Water, Glycerin, Hydroquinone (⚠️ banned by ANVISA - must be removed before listing)"
+   - Example WRONG: "Does not contain hydroquinone" (when it IS in the formula)
+   - This is a compliance tool - users input non-compliant formulas to get them fixed. Do NOT lie about ingredients.
+
+3. CLAIM-INGREDIENT CONSISTENCY:
+   - NEVER claim sun protection (SPF/FPS/UV protection) unless the ingredient list contains sunscreen actives (zinc oxide, titanium dioxide, avobenzone, etc.)
+   - If NO sunscreen actives are present but user mentions sun protection, do NOT include FPS/SPF claims in the title or description
+   - Only list benefits that are supported by the actual ingredients provided
+
+4. SPECIAL PRODUCT REGISTRATION WARNINGS:
+   - If the product claims skin lightening/whitening ("clareador", "clareamento", "branqueador"), it requires SPECIAL registration with ${regulation} beyond normal cosmetic notification
+   - If the product claims sun protection (SPF/FPS), it requires SPECIAL registration with ${regulation}
+   - These claims MUST be flagged in complianceNotes with: "⚠️ Requires special ${regulation} registration for [whitening/sun protection] products"
+
+5. SENSITIVE SKIN CLAIMS:
+   - Do NOT claim "suitable for all skin types including sensitive skin" ("indicado para todos os tipos de pele, inclusive sensíveis")
+   - Instead use softer language: "suitable for most skin types" or "gentle formula"
+   - If you mention sensitive skin, add a warning: "Patch test recommended for sensitive skin"
+
+6. COMPLIANCE - ${regulation} regulations:
+   - NO medical/therapeutic claims (no "treats", "cures", "heals", "medicinal", "medical grade")
+   - NO absolute claims without proof (no "100%", "completely", "totally", "zero", "permanent", "forever")
+   - NO specific time-based results (no "7 days", "instant", "immediate", "24 hours")
+   - NO safety claims about pregnancy or children without clinical proof
    - Use only cosmetic claims: moisturizing, cleansing, beautifying, perfuming, protecting
-   - Include required disclaimer style if applicable
-3. Structure: Provide exactly this JSON format:
+   - Use hedging language: "helps to", "promotes", "assists in", "reduces the appearance of"
+
+7. Structure: Provide exactly this JSON format:
    {
-     "title": "Product title (max 200 chars, catchy, keyword-rich)",
+     "title": "Product title (max 200 chars, catchy, keyword-rich, NO banned terms)",
      "description": "Engaging product description (2-3 paragraphs, 300-500 chars)",
      "bulletPoints": ["5-7 selling points, each 1-2 sentences"],
-     "complianceNotes": ["Notes about regulatory compliance"],
+     "complianceNotes": ["Notes about regulatory compliance, ingredient honesty, and registration requirements"],
      "warnings": ["Any compliance warnings to be aware of"]
    }
-4. Tone: ${input.tone || 'professional'}
-5. Target audience: Beauty consumers in ${country}
-6. Platform style: Adapt for Mercado Livre / Amazon / Shopee style listings
+
+8. Tone: ${input.tone || 'professional'}
+9. Target audience: Beauty consumers in ${country}
+10. Platform style: Adapt for Mercado Livre / Amazon / Shopee style listings
 
 PRODUCT INFO:
 - Name: ${input.productName}
@@ -337,12 +495,23 @@ ${input.benefits ? `- Benefits: ${input.benefits}` : ''}
   if (input.checkResult) {
     if (!input.checkResult.isCompliant) {
       prompt += `
-COMPLIANCE ISSUES TO AVOID:
-${input.checkResult.violations.map(v => `- ${v.message}: ${v.suggestion}`).join('\n')}
-${input.checkResult.warnings.map(w => `- Warning: ${w.message}: ${w.suggestion}`).join('\n')}
-
-CRITICAL: Do NOT use any of the problematic ingredients or claims mentioned above in the listing.
+COMPLIANCE ISSUES DETECTED:
+${input.checkResult.violations.map(v => `- [${v.severity?.toUpperCase() || 'VIOLATION'}] ${v.category?.toUpperCase() || 'GENERAL'}: ${v.message} (${v.suggestion})`).join('\n')}
+${input.checkResult.warnings.map(w => `- [WARNING] ${w.category?.toUpperCase() || 'GENERAL'}: ${w.message} (${w.suggestion})`).join('\n')}
 `
+      if (problematicIngredients.length > 0) {
+        prompt += `
+BANNED/RESTRICTED INGREDIENTS IN FORMULA (MUST be listed honestly with warnings):
+${problematicIngredients.map(i => `- ${i}`).join('\n')}
+DO NOT claim these are "not present" - they ARE in the formula and must be disclosed.
+`
+      }
+      if (problematicClaims.length > 0) {
+        prompt += `
+PROBLEMATIC CLAIMS TO AVOID:
+${problematicClaims.map(c => `- ${c}`).join('\n')}
+`
+      }
     }
   }
 
@@ -401,7 +570,7 @@ export async function generateListing(
     }
 
     const parsed = JSON.parse(content)
-    return {
+    const rawListing: GeneratedListing = {
       title: parsed.title || '',
       description: parsed.description || '',
       bulletPoints: Array.isArray(parsed.bulletPoints) ? parsed.bulletPoints : [],
@@ -409,6 +578,8 @@ export async function generateListing(
       warnings: Array.isArray(parsed.warnings) ? parsed.warnings : [],
       language: input.targetCountry === 'BR' ? 'pt-BR' : 'es-MX',
     }
+    // Post-process: enforce ingredient honesty and claim-consistency
+    return validateListing(rawListing, input)
   } catch (error) {
     // If rate limit and fallback available, try OpenAI
     if (isRateLimitError(error) && fallback && !usedFallback) {
@@ -442,7 +613,16 @@ export async function generateListing(
         throw new Error('Empty response from fallback provider')
       }
       
-      return JSON.parse(content)
+      const parsedFallback = JSON.parse(content)
+      const rawFallbackListing: GeneratedListing = {
+        title: parsedFallback.title || '',
+        description: parsedFallback.description || '',
+        bulletPoints: Array.isArray(parsedFallback.bulletPoints) ? parsedFallback.bulletPoints : [],
+        complianceNotes: Array.isArray(parsedFallback.complianceNotes) ? parsedFallback.complianceNotes : [],
+        warnings: Array.isArray(parsedFallback.warnings) ? parsedFallback.warnings : [],
+        language: input.targetCountry === 'BR' ? 'pt-BR' : 'es-MX',
+      }
+      return validateListing(rawFallbackListing, input)
     }
     
     // 增强：非 rate limit 错误也尝试 fallback（如果是严重连接错误或 provider 服务不可用）
@@ -487,7 +667,16 @@ export async function generateListing(
         throw new Error('Empty response from fallback provider')
       }
       
-      return JSON.parse(content)
+      const parsedConn = JSON.parse(content)
+      const rawConnListing: GeneratedListing = {
+        title: parsedConn.title || '',
+        description: parsedConn.description || '',
+        bulletPoints: Array.isArray(parsedConn.bulletPoints) ? parsedConn.bulletPoints : [],
+        complianceNotes: Array.isArray(parsedConn.complianceNotes) ? parsedConn.complianceNotes : [],
+        warnings: Array.isArray(parsedConn.warnings) ? parsedConn.warnings : [],
+        language: input.targetCountry === 'BR' ? 'pt-BR' : 'es-MX',
+      }
+      return validateListing(rawConnListing, input)
     }
     
     // No fallback or not a recoverable error, throw with provider context
