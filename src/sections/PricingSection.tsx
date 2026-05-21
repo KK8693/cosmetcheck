@@ -51,7 +51,7 @@ export function PricingSection() {
   ]
 
   return (
-    <section id="pricing" className="py-20 bg-gradient-to-b from-[#0A4D8C] via-[#0a5d8c] to-[#00A86B]">
+    <section id="pricing" className="py-20 bg-[#0D0D12]">
       <div className="container-custom">
         <div className="text-center mb-12">
           <div className="inline-block rounded-full bg-white/10 px-4 py-1 text-sm font-semibold text-white mb-4">
@@ -149,17 +149,17 @@ export function PricingSection() {
           </Card>
         </div>
 
-        {/* Stats row */}
+        {/* Stats row - 暗黑主题适配：纯色背景+微妙边框+金色数字 */}
         <div className="mt-12 md:mt-16 grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {stats.map((item, idx) => (
             <div
               key={idx}
-              className="bg-[#1A1A24]/80 backdrop-blur-sm rounded-2xl border border-[#252530] p-6 text-center hover:border-[#00A86B]/30 transition-colors"
+              className="bg-[#1A1A24] rounded-2xl border border-white/10 p-6 text-center hover:border-[#fbbf24]/30 transition-colors"
             >
               <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl ${item.iconBg} mb-4`}>
                 <item.icon className={`w-6 h-6 ${item.iconColor}`} />
               </div>
-              <p className="text-3xl md:text-4xl font-extrabold text-white mb-1">{item.num}</p>
+              <p className="text-3xl md:text-4xl font-extrabold text-[#fbbf24] mb-1">{item.num}</p>
               <p className="font-semibold text-white/90 mb-1">{item.label}</p>
               <p className="text-sm text-gray-400">{item.desc}</p>
             </div>

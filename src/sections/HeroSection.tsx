@@ -391,39 +391,6 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* 真实案例卡 - 新增 */}
-            <div className="mx-auto max-w-full md:max-w-2xl mb-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {[
-                {
-                  tag: t('caseStudies.bannedIngredient'),
-                  tagColor: 'text-red-500',
-                  body: t('caseStudies.bannedIngredientBody'),
-                  result: t('caseStudies.bannedIngredientResult'),
-                },
-                {
-                  tag: t('caseStudies.labelViolation'),
-                  tagColor: 'text-amber-500',
-                  body: t('caseStudies.labelViolationBody'),
-                  result: t('caseStudies.labelViolationResult'),
-                },
-                {
-                  tag: t('caseStudies.copywritingError'),
-                  tagColor: 'text-blue-500',
-                  body: t('caseStudies.copywritingErrorBody'),
-                  result: t('caseStudies.copywritingErrorResult'),
-                },
-              ].map((item, idx) => (
-                <div
-                  key={idx}
-                  className="rounded-xl bg-white/10 backdrop-blur border border-white/10 p-4 text-left hover:bg-white/15 transition-colors"
-                >
-                  <p className={`text-xs font-bold ${item.tagColor} mb-2`}>{item.tag}</p>
-                  <p className="text-sm text-white/90 leading-relaxed mb-2">{item.body}</p>
-                  <p className="text-xs text-green-400 font-semibold">{item.result}</p>
-                </div>
-              ))}
-            </div>
-
             <p className="mx-auto mb-10 max-w-full md:max-w-2xl text-lg text-white/90 md:text-xl">
               {t('subtitleShort')}
             </p>
@@ -431,8 +398,8 @@ export function HeroSection() {
               {t('ctaLine')}
             </p>
 
-            {/* Hero Demo */}
-            <div className="mx-auto w-full max-w-full md:max-w-xl rounded-2xl bg-white/10 p-4 backdrop-blur-lg md:p-8 text-left">
+            {/* Hero Demo - 输入框容器加背景/边框增加呼吸空间 */}
+            <div className="mx-auto w-full max-w-full md:max-w-xl rounded-2xl bg-[#1A1A24]/80 backdrop-blur-lg border border-white/10 p-4 md:p-6 text-left shadow-2xl">
               <div className="mb-4">
                 <Label className="text-white/80 text-sm">{t('form.inputProductInfo')}</Label>
               </div>
