@@ -83,17 +83,10 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Moderate user input before generation
-    const userInput = `${productName} ${ingredients || ''} ${benefits || ''}`
-    const inputModeration = await moderateContent(userInput)
-    
-    if (inputModeration.flagged) {
-      const warnings = getModerationWarnings(inputModeration)
-      return NextResponse.json(
-        { error: 'Content violates our usage policy', details: warnings },
-        { status: 400 }
-      )
-    }
+    // Note: Input moderation removed (Option A). 
+    // CosmetCheck is a compliance tool - users intentionally input non-compliant 
+    // product descriptions to get them fixed. The compliance engine and AI prompt
+    // already handle problematic content. Output moderation remains as safeguard.
 
     const result = await generateListing({
       productName,
