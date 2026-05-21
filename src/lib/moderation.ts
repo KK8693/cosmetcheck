@@ -42,7 +42,7 @@ export async function moderateContent(text: string): Promise<ModerationResult> {
             'Authorization': `Bearer ${apiKey}`,
           },
           body: JSON.stringify({
-            model: 'deepseek-chat',
+            model: 'deepseek-v4-flash',
             messages: [
               {
                 role: 'system',

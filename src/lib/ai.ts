@@ -19,7 +19,7 @@ const PROVIDERS: AIProviderConfig[] = [
     provider: 'deepseek',
     apiKey: process.env.DEEPSEEK_API_KEY || '',
     baseURL: 'https://api.deepseek.com',
-    model: 'deepseek-chat',
+    model: 'deepseek-v4-flash',
   },
   {
     provider: 'openai',
