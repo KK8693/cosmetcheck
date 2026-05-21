@@ -158,7 +158,7 @@
     "title": "Recursos Principais",
     "subtitle": "Motor de IA para conformidade desenvolvido para o mercado de beleza latino-americano",
     "autoBlockTitle": "Bloqueio Automático Antes da Listagem",
-    "autoBlockDesc": "Insira ingredientes, receba relatórios de risco instantâneos: o que viola, como corrigir, qual regulamentação — paremultas antes de chegarem",
+    "autoBlockDesc": "Insira ingredientes, receba relatórios de risco instantâneos: o que viola, como corrigir, qual regulamentação — pare multas antes de chegarem",
     "listingTitle": "Listagem Que Vende",
     "listingDesc": "Não é tradução — reescreva títulos e pontos de venda conforme hábitos de busca de consumidores brasileiros e mexicanos, com conformidade integrada",
     "highlightTitle": "Destaque Palavras de Risco com Citações",
@@ -335,7 +335,7 @@
     "cookiePolicy": "Política de Cookies",
     "refund": "Política de Reembolso",
     "disclaimer": "Aviso Legal",
-    "copyright": "© 2025 CosmetCheck. Todos os direitos reservados."
+    "copyright": "© 2025-2026 CosmetCheck. Todos os direitos reservados."
   },
   "auth": {
     "login": "Entrar",
@@ -422,7 +422,7 @@
   "interactiveDemo": {
     "title": "Veja em 30 Segundos: Seu Produto Será Retirado?",
     "subtitle": "Insira um ingrediente real e veja a IA bloquear riscos em 3 passos → Gerar Listing compatível",
-    "inputLabel": "Ingrirdientes do Produto",
+    "inputLabel": "Ingredientes do Produto",
     "inputPlaceholder": "Insira os ingredientes, separados por vírgula",
     "brazilAnvisa": "Brasil ANVISA",
     "mexicoCofepris": "México COFEPRIS",

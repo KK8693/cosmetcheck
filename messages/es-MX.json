@@ -209,8 +209,8 @@
       "badge": "Ahorra 40%",
       "recommend": "Recomendado",
       "name": "Pro",
-      "priceOriginal": "Mex$699",
-      "price": "Mex$499",
+      "priceOriginal": "MX$699",
+      "price": "MX$499",
       "period": "/mes",
       "desc": "Cancela cuando quieras",
       "taxNote": "* Precio sin impuestos, auto-renovación",
@@ -245,13 +245,13 @@
           "active": true
         }
       ],
-      "cta": "Desbloquea Ilimitado — Mex$499/mes"
+      "cta_monthly": "Desbloquea Ilimitado — MX$499/mes"
     },
     "stats": {
       "savedFine": {
         "num": "$8,500",
         "label": "Promedio Ahorrado",
-        "desc": "Basado en 200+ búsquedas"
+        "desc": "Basado en encuestas de 200+ vendedores"
       },
       "savedTime": {
         "num": "7 días",
@@ -335,7 +335,7 @@
     "cookiePolicy": "Política de Cookies",
     "refund": "Política de Reembolso",
     "disclaimer": "Aviso de Disclaimer",
-    "copyright": "© 2025 CosmetCheck. Todos los derechos reservados."
+    "copyright": "© 2025-2026 CosmetCheck. Todos los derechos reservados."
   },
   "auth": {
     "login": "Iniciar Sesión",
@@ -488,8 +488,8 @@
         "🌟 Acceso anticipado a nuevos mercados (Argentina/Colombia Q3)",
         "🌟 Asesor de cumplimiento 1v1 (suscripción anual)"
       ],
-      "cta_monthly": "Desbloquea Ilimitado — Mex$499/mes",
-      "cta_yearly": "Desbloquea Pro Anual — Mex$4.990/año"
+      "cta_monthly": "Desbloquea Ilimitado — MX$499/mes",
+      "cta_yearly": "Desbloquea Pro Anual — MX$4.990/año"
     },
     "comparison": {
       "title": "Comparación Detallada de Características",
@@ -582,7 +582,7 @@
         },
         {
           "q": "¿Cuál es la diferencia entre mensual y anual?",
-          "a": "Mismas características. El plan anual es Mex$4.990 (ahorra Mex$998), ideal para vendedores comprometidos."
+          "a": "Mismas características. El plan anual es MX$4.990 (ahorra MX$998), ideal para vendedores comprometidos."
         },
         {
           "q": "¿Qué métodos de pago se aceptan?",
@@ -607,12 +607,12 @@
     },
     "currency": {
       "code": "MXN",
-      "symbol": "Mex$",
-      "monthlyPrice": "Mex$499",
-      "yearlyPrice": "Mex$4.990",
-      "yearlyOriginal": "Mex$5.988",
-      "saveAmount": "Mex$998",
-      "monthlyOriginal": "Mex$699"
+      "symbol": "MX$",
+      "monthlyPrice": "MX$499",
+      "yearlyPrice": "MX$4.990",
+      "yearlyOriginal": "MX$5.988",
+      "saveAmount": "MX$998",
+      "monthlyOriginal": "MX$699"
     }
   },
   "legal": {

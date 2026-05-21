@@ -8,7 +8,6 @@ import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { useAuth } from '@/contexts/AuthContext'
 import AuthModal from '@/components/AuthModal'
-import { AnimatedCounter } from '@/components/AnimatedCounter'
 import { AlertTriangle, Info, CheckCircle, XCircle, Zap, Shield, X } from 'lucide-react'
 
 interface ViolationItem {
@@ -370,23 +369,7 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-30" />
         <div className="container-custom relative py-12 md:py-16">
           <div className="mx-auto max-w-full md:max-w-4xl text-center">
-            {/* SocialProofBar - 增强版数据徽章 */}
-            <div className="mb-6 inline-flex flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-medium backdrop-blur">
-              <span className="inline-flex items-center">
-                <span className="mr-2 h-2 w-2 rounded-full bg-green-400 animate-pulse" />
-                <span className="text-white/80">{t('socialProof.served')}</span>
-                <AnimatedCounter end={2000} suffix="+" className="mx-1 font-bold text-white" />
-                <span className="text-white/80">{t('socialProof.sellers')}</span>
-              </span>
-              <span className="hidden sm:inline text-white/30">|</span>
-              <span className="text-white/80">
-                {t('socialProof.blocked')} <AnimatedCounter end={340000} suffix="+" className="font-bold text-white" /> {t('socialProof.complianceRisks')}
-              </span>
-              <span className="hidden sm:inline text-white/30">|</span>
-              <span className="text-white/80">
-                {t('socialProof.coverage')} <span className="font-bold text-white">{t('socialProof.brazilMexico')}</span>
-              </span>
-            </div>
+            {/* SocialProofBar — 已移除，待接入真实数据后恢复 */}
             <h1 className="mb-6 text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
               {t('title')} <span className="hidden md:block"> </span> {t('titleLine2')}
             </h1>
