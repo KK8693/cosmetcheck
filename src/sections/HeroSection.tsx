@@ -382,6 +382,11 @@ export function HeroSection() {
         <div className="absolute bottom-[20%] left-[5%] w-[300px] h-[300px] bg-[radial-gradient(ellipse_at_center,rgba(255,184,0,0.05)_0%,transparent_70%)] pointer-events-none" />
         
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-30" />
+        {/* 极淡网格纹理 — 消除纯色背景廉价感 */}
+        <div className="absolute inset-0 pointer-events-none" style={{
+          backgroundImage: `linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px)`,
+          backgroundSize: '48px 48px'
+        }} />
         <div className="container-custom relative py-6 md:py-8">
           <div className="mx-auto max-w-full md:max-w-4xl text-center">
             {/* SocialProofBar — 已移除，待接入真实数据后恢复 */}
@@ -396,7 +401,7 @@ export function HeroSection() {
 
             {/* Logo 墙 — 弧形排列 + SVG 图标 + 玻璃态底板 */}
             <div className="mb-6">
-              <p className="text-xs text-[#9CA3AF] uppercase tracking-widest mb-3 font-medium">
+              <p className="text-xs text-white/70 uppercase tracking-widest mb-3 font-bold">
                 {t('trustedBy')}
               </p>
               <div 
@@ -413,14 +418,12 @@ export function HeroSection() {
                 ].map(({ name, icon: Icon, rotate }) => (
                   <span
                     key={name}
-                    className="inline-flex flex-col items-center gap-1.5 px-3 py-2.5 rounded-xl text-xs font-medium text-white/40 hover:text-white transition-all duration-300 cursor-default group relative"
+                    className="inline-flex flex-col items-center gap-1.5 px-3 py-2.5 rounded-xl text-xs font-semibold text-white/50 hover:text-white transition-all duration-300 cursor-default group"
                     title={name}
                     style={{ transform: `rotate(${rotate}deg)`, transformOrigin: 'bottom center' }}
                   >
-                    <Icon className="w-6 h-6 opacity-40 group-hover:opacity-100 group-hover:drop-shadow-[0_0_8px_rgba(255,184,0,0.5)] transition-all duration-300" />
-                    <span className="text-[10px] leading-tight group-hover:text-white/80">{name}</span>
-                    {/* 微光效果 */}
-                    <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-[#FFB800]/40 blur-[2px] group-hover:bg-[#FFB800]/80 group-hover:w-3 group-hover:h-3 group-hover:blur-[4px] transition-all duration-300" />
+                    <Icon strokeWidth={2} className="w-6 h-6 opacity-60 group-hover:opacity-100 group-hover:drop-shadow-[0_0_10px_rgba(255,184,0,0.6)] transition-all duration-300" />
+                    <span className="text-xs leading-tight group-hover:text-white/90">{name}</span>
                   </span>
                 ))}
               </div>
@@ -464,7 +467,7 @@ export function HeroSection() {
             </div>
 
             {/* Hero Demo - 输入框容器加背景/边框增加呼吸空间 */}
-            <div className="mx-auto w-full max-w-full md:max-w-xl rounded-2xl bg-white/5 backdrop-blur-xl border border-white/15 p-4 md:p-6 text-left shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+            <div className="mx-auto w-full max-w-full md:max-w-xl rounded-2xl bg-white/5 backdrop-blur-xl border border-white/15 p-4 md:p-6 text-left shadow-[0_20px_60px_rgba(0,0,0,0.55),0_0_0_1px_rgba(255,255,255,0.06),inset_0_1px_0_rgba(255,255,255,0.06)] hover:shadow-[0_24px_72px_rgba(0,0,0,0.6),0_0_0_1px_rgba(255,255,255,0.08)] hover:-translate-y-0.5 transition-all duration-500">
               <div className="flex flex-wrap gap-2 mb-3">
                 <button
                   onClick={() => { setCountry('BR'); setCheckResult(null); setShowDemo(true) }}
@@ -495,7 +498,7 @@ export function HeroSection() {
                   value={productName}
                   onChange={(e) => setProductName(e.target.value)}
                   placeholder={t('productNamePlaceholder')}
-                  className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl focus:border-[#FFB800] focus:shadow-[0_0_15px_rgba(255,184,0,0.2)] focus:outline-none transition-all duration-300"
+                  className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl hover:border-[#FFB800]/30 hover:shadow-[0_0_10px_rgba(255,184,0,0.08)] hover:scale-[1.01] focus:border-[#FFB800] focus:shadow-[0_0_20px_rgba(255,184,0,0.25)] focus:outline-none focus:scale-[1.01] transition-all duration-300"
                 />
                 {productName && (
                   <button
@@ -515,7 +518,7 @@ export function HeroSection() {
                   value={ingredients}
                   onChange={(e) => setIngredients(e.target.value)}
                   placeholder={t('ingredientsPlaceholder')}
-                  className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl focus:border-[#FFB800] focus:shadow-[0_0_15px_rgba(255,184,0,0.2)] focus:outline-none transition-all duration-300"
+                  className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl hover:border-[#FFB800]/30 hover:shadow-[0_0_10px_rgba(255,184,0,0.08)] hover:scale-[1.01] focus:border-[#FFB800] focus:shadow-[0_0_20px_rgba(255,184,0,0.25)] focus:outline-none focus:scale-[1.01] transition-all duration-300"
                 />
                 {ingredients && (
                   <button
@@ -535,7 +538,7 @@ export function HeroSection() {
                   value={productBenefits}
                   onChange={(e) => setProductBenefits(e.target.value)}
                   placeholder={t('productBenefitsPlaceholder')}
-                  className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl focus:border-[#FFB800] focus:shadow-[0_0_15px_rgba(255,184,0,0.2)] focus:outline-none transition-all duration-300"
+                  className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl hover:border-[#FFB800]/30 hover:shadow-[0_0_10px_rgba(255,184,0,0.08)] hover:scale-[1.01] focus:border-[#FFB800] focus:shadow-[0_0_20px_rgba(255,184,0,0.25)] focus:outline-none focus:scale-[1.01] transition-all duration-300"
                 />
                 {productBenefits && (
                   <button
