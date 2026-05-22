@@ -385,17 +385,22 @@ export function HeroSection() {
         <div className="container-custom relative py-8 md:py-10">
           <div className="mx-auto max-w-full md:max-w-4xl text-center">
             {/* SocialProofBar — 已移除，待接入真实数据后恢复 */}
-            <h1 className="mb-6 text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-              {t('title')} <span className="hidden md:block"> </span> {t('titleLine2')}
+            <h1 className="mb-6 leading-tight">
+              <span className="block text-3xl md:text-5xl lg:text-6xl font-medium tracking-wider text-white/80 mb-1">
+                {t('title')}
+              </span>
+              <span className="block text-3xl md:text-5xl lg:text-6xl font-black text-white drop-shadow-[0_2px_12px_rgba(255,184,0,0.25)]">
+                {t('titleLine2')}
+              </span>
             </h1>
 
-            {/* Logo 墙 — 弧形排列 + SVG 图标 */}
+            {/* Logo 墙 — 弧形排列 + SVG 图标 + 玻璃态底板 */}
             <div className="mb-6">
               <p className="text-xs text-[#9CA3AF] uppercase tracking-widest mb-3 font-medium">
                 {t('trustedBy')}
               </p>
               <div 
-                className="inline-flex flex-wrap justify-center items-end gap-2 sm:gap-3 rounded-xl border border-white/10 bg-[#1A1A24]/60 backdrop-blur-sm px-5 py-3"
+                className="inline-flex flex-wrap justify-center items-end gap-2 sm:gap-3 rounded-2xl border border-white/[0.08] bg-[#1A1A24]/40 backdrop-blur-md px-6 py-4 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]"
                 style={{ perspective: '600px' }}
               >
                 {[
@@ -408,15 +413,16 @@ export function HeroSection() {
                 ].map(({ name, icon: Icon, rotate }) => (
                   <span
                     key={name}
-                    className="inline-flex flex-col items-center gap-1 px-2 py-1.5 rounded-lg text-xs font-medium text-[#9CA3AF] hover:text-white transition-all duration-300 cursor-default"
+                    className="inline-flex flex-col items-center gap-1 px-3 py-2 rounded-xl text-xs font-medium text-[#9CA3AF] hover:text-white transition-all duration-300 cursor-default group relative"
                     title={name}
                     style={{ transform: `rotate(${rotate}deg)`, transformOrigin: 'bottom center' }}
                   >
-                    <Icon className="w-5 h-5 opacity-70" />
+                    <Icon className="w-5 h-5 opacity-60 group-hover:opacity-100 transition-opacity" />
                     <span className="text-[10px] leading-tight">{name}</span>
+                    {/* 微光效果 */}
+                    <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#FFB800]/20 blur-[2px] group-hover:bg-[#FFB800]/50 transition-colors duration-300" />
                   </span>
                 ))}
-                <span className="text-xs text-[#6B7280] self-center ml-1">{t('andMorePlatforms')}</span>
               </div>
             </div>
 
@@ -427,28 +433,28 @@ export function HeroSection() {
             {/* Multi-step Progress Bar (P2-16) */}
             <div className="mx-auto w-full max-w-full md:max-w-xl mb-6">
               <div className="flex items-center justify-between relative">
-                {/* Background line */}
-                <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-white/10 -translate-y-1/2" />
-                {/* Active line */}
+                {/* Background dashed line */}
+                <div className="absolute top-1/2 left-0 right-0 h-1 border-t-2 border-dashed border-white/10 -translate-y-1/2" />
+                {/* Active solid line */}
                 <div 
-                  className="absolute top-1/2 left-0 h-0.5 bg-[#FFB800] -translate-y-1/2 transition-all duration-500"
+                  className="absolute top-1/2 left-0 h-1 bg-[#FFB800] -translate-y-1/2 transition-all duration-500"
                   style={{ width: `${((currentStep - 1) / (totalSteps - 1)) * 100}%` }}
                 />
                 {Array.from({ length: totalSteps }, (_, i) => i + 1).map((step) => (
-                  <div key={step} className="relative z-10 flex flex-col items-center gap-1.5">
+                  <div key={step} className="relative z-10 flex flex-col items-center gap-2">
                     <div 
-                      className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 ${
+                      className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${
                         step < currentStep 
                           ? 'bg-[#FFB800] text-[#0F1419]' 
                           : step === currentStep 
-                            ? 'bg-[#FFB800] text-[#0F1419] ring-2 ring-[#FFB800]/40 shadow-lg shadow-amber-500/20'
-                            : 'bg-[#1A1A24] text-white/40 border border-white/10'
+                            ? 'bg-[#FFB800] text-[#0F1419] ring-4 ring-[#FFB800]/30 shadow-[0_0_20px_rgba(255,184,0,0.4)] scale-110'
+                            : 'bg-[#1A1A24] text-white/30 border border-white/10'
                       }`}
                     >
-                      {step < currentStep ? <CheckCircle className="w-4 h-4" /> : step}
+                      {step < currentStep ? <CheckCircle className="w-5 h-5" /> : step}
                     </div>
-                    <span className={`text-[10px] font-medium whitespace-nowrap ${
-                      step <= currentStep ? 'text-white/80' : 'text-white/30'
+                    <span className={`text-xs font-medium whitespace-nowrap text-center ${
+                      step <= currentStep ? 'text-white/90' : 'text-white/30'
                     }`}>
                       {stepLabels[step - 1]}
                     </span>
@@ -465,20 +471,20 @@ export function HeroSection() {
               <div className="flex flex-wrap gap-2 mb-3">
                 <button
                   onClick={() => { setCountry('BR'); setCheckResult(null); setShowDemo(true) }}
-                  className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors min-h-[44px] ${
+                  className={`px-5 py-2 rounded-full text-sm font-bold transition-all duration-300 min-h-[48px] ${
                     country === 'BR'
-                      ? 'bg-[#FFB800] text-[#0F1419] shadow-lg shadow-amber-500/20'
-                      : 'bg-white/5 text-white/60 hover:bg-white/10'
+                      ? 'bg-[#FFB800] text-[#0F1419] shadow-[0_4px_20px_rgba(255,184,0,0.3)] scale-[1.02]'
+                      : 'bg-[#1A1A24] text-white/40 hover:text-white/60 hover:bg-[#252530] border border-white/[0.06]'
                   }`}
                 >
                   {t('brazilAnvisa')}
                 </button>
                 <button
                   onClick={() => { setCountry('MX'); setCheckResult(null); setShowDemo(true) }}
-                  className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors min-h-[44px] ${
+                  className={`px-5 py-2 rounded-full text-sm font-bold transition-all duration-300 min-h-[48px] ${
                     country === 'MX'
-                      ? 'bg-[#FFB800] text-[#0F1419] shadow-lg shadow-amber-500/20'
-                      : 'bg-white/5 text-white/60 hover:bg-white/10'
+                      ? 'bg-[#FFB800] text-[#0F1419] shadow-[0_4px_20px_rgba(255,184,0,0.3)] scale-[1.02]'
+                      : 'bg-[#1A1A24] text-white/40 hover:text-white/60 hover:bg-[#252530] border border-white/[0.06]'
                   }`}
                 >
                   {t('mexicoCofeppris')}
@@ -491,7 +497,7 @@ export function HeroSection() {
                   value={productName}
                   onChange={(e) => setProductName(e.target.value)}
                   placeholder={t('productNamePlaceholder')}
-                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-[#6B7280] min-h-[60px] resize-none pr-10 text-base focus:border-[#FFB800]/40 focus:ring-2 focus:ring-[#FFB800]/30 focus:shadow-[0_0_12px_rgba(255,184,0,0.15)] transition-all"
+                  className="w-full border border-white/[0.08] bg-white/[0.04] text-white placeholder:text-[#8C93A0] min-h-[60px] resize-none pr-10 text-base rounded-xl focus:border-[#FFB800]/50 focus:ring-2 focus:ring-[#FFB800]/20 focus:shadow-[0_0_15px_rgba(255,184,0,0.2)] transition-all duration-300"
                 />
                 {productName && (
                   <button
@@ -513,7 +519,7 @@ export function HeroSection() {
                   value={ingredients}
                   onChange={(e) => setIngredients(e.target.value)}
                   placeholder={t('ingredientsPlaceholder') + ` (${t('form.optional')})`}
-                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-[#6B7280] min-h-[80px] resize-none pr-10 text-base focus:border-[#FFB800]/40 focus:ring-2 focus:ring-[#FFB800]/30 focus:shadow-[0_0_12px_rgba(255,184,0,0.15)] transition-all"
+                  className="w-full border border-white/[0.08] bg-white/[0.04] text-white placeholder:text-[#8C93A0] min-h-[60px] resize-none pr-10 text-base rounded-xl focus:border-[#FFB800]/50 focus:ring-2 focus:ring-[#FFB800]/20 focus:shadow-[0_0_15px_rgba(255,184,0,0.2)] transition-all duration-300"
                 />
                 {ingredients && (
                   <button
@@ -532,7 +538,7 @@ export function HeroSection() {
                   value={productBenefits}
                   onChange={(e) => setProductBenefits(e.target.value)}
                   placeholder={t('productBenefitsPlaceholder')}
-                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-[#6B7280] min-h-[60px] resize-none pr-10 text-base focus:border-[#FFB800]/40 focus:ring-2 focus:ring-[#FFB800]/30 focus:shadow-[0_0_12px_rgba(255,184,0,0.15)] transition-all"
+                  className="w-full border border-white/[0.08] bg-white/[0.04] text-white placeholder:text-[#8C93A0] min-h-[60px] resize-none pr-10 text-base rounded-xl focus:border-[#FFB800]/50 focus:ring-2 focus:ring-[#FFB800]/20 focus:shadow-[0_0_15px_rgba(255,184,0,0.2)] transition-all duration-300"
                 />
                 {productBenefits && (
                   <button
@@ -548,35 +554,35 @@ export function HeroSection() {
               {checkError && <p className="text-red-300 text-sm mb-2">{checkError}</p>}
               {generateError && <p className="text-red-300 text-sm mb-2">{generateError}</p>}
 
-              <div className="flex flex-col sm:flex-row gap-2">
+              <div className="flex flex-col sm:flex-row gap-3">
                 <Button
                   onClick={handleCheck}
                   disabled={isChecking}
                   variant="outline"
-                  className="w-full sm:flex-1 border-white/30 text-white hover:bg-white/10 hover:-translate-y-0.5 hover:shadow-lg font-medium min-h-[48px] transition-all duration-200 active:translate-y-0"
+                  className="w-full sm:flex-1 bg-transparent border border-[#FFB800]/40 text-[#FFB800] hover:bg-[#FFB800]/10 hover:border-[#FFB800]/60 font-semibold min-h-[48px] transition-all duration-200"
                 >
                   {isChecking ? t('checking') : t('checkFirst')}
                 </Button>
                 <Button
                   onClick={handleGenerate}
                   disabled={isGenerating}
-                  className="w-full sm:flex-1 bg-gradient-to-r from-[#FFB800] to-[#F59E0B] text-[#0F1419] hover:from-[#F59E0B] hover:to-[#D97706] font-bold shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 hover:-translate-y-0.5 transition-all duration-200 active:translate-y-0 min-h-[48px]"
+                  className="w-full sm:flex-1 bg-gradient-to-r from-[#FFB800] to-[#F59E0B] text-[#0F1419] hover:from-[#F59E0B] hover:to-[#D97706] font-bold shadow-[0_4px_20px_rgba(255,184,0,0.3)] hover:shadow-[0_6px_30px_rgba(255,184,0,0.4)] hover:-translate-y-0.5 transition-all duration-200 active:translate-y-0 min-h-[48px]"
                 >
                   {isGenerating ? <><Loader2 className="w-4 h-4 mr-1 animate-spin" /> AI 正在生成...</> : <><Zap className="w-4 h-4 mr-1" /> {t('freeGenerateListing')}</>}
                 </Button>
               </div>
 
               {/* 信任密度 */}
-              <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-[#9CA3AF]">
-                <span className="flex items-center gap-1">
-                  <Lock className="w-3 h-3 text-[#00A86B]" /> SSL 加密传输
-                </span>
-                <span className="flex items-center gap-1">
-                  <CreditCard className="w-3 h-3 text-[#FFB800]" /> 无需信用卡
-                </span>
-                <span className="flex items-center gap-1">
-                  <Users className="w-3 h-3 text-[#0A4D8C]" /> 1,200+ 跨境卖家已使用
-                </span>
+              <div className="mt-5 flex flex-wrap items-center justify-center gap-3 text-xs">
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/[0.08] bg-white/[0.03] text-white/70">
+                  <Lock className="w-3.5 h-3.5 text-[#FFB800]" /> SSL 加密传输
+                </div>
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/[0.08] bg-white/[0.03] text-white/70">
+                  <CreditCard className="w-3.5 h-3.5 text-[#FFB800]" /> 无需信用卡
+                </div>
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/[0.08] bg-white/[0.03] text-white/70">
+                  <Users className="w-3.5 h-3.5 text-[#FFB800]" /> 1,200+ 跨境卖家已使用
+                </div>
               </div>
             </div>
 
