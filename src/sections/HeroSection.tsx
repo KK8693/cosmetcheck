@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -8,7 +8,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { useAuth } from '@/contexts/AuthContext'
 import AuthModal from '@/components/AuthModal'
-import { AlertTriangle, Info, CheckCircle, XCircle, Zap, Shield, X } from 'lucide-react'
+import { AlertTriangle, Info, CheckCircle, XCircle, Zap, Shield, X, Lock, CreditCard, Users, Loader2, ShoppingBag, Store, Globe, Smartphone, Package, Truck } from 'lucide-react'
 
 interface ViolationItem {
   ruleId: string
@@ -213,6 +213,15 @@ export function HeroSection() {
   const [generatedListing, setGeneratedListing] = useState<GeneratedListing | null>(null)
   const [generateError, setGenerateError] = useState('')
 
+  // Multi-step progress tracking (P2-16)
+  const [currentStep, setCurrentStep] = useState(1)
+  const totalSteps = 3
+  const stepLabels = [
+    t('step1Label') || 'Input Product Info',
+    t('step2Label') || 'AI Compliance Check', 
+    t('step3Label') || 'Generate Listing'
+  ]
+
   // Default demo result - dynamically shows based on selected country
   const demoResult: CheckResult = (country === 'BR' ? {
     isCompliant: false,
@@ -267,6 +276,17 @@ export function HeroSection() {
   
   // Show loading state while checking
   const isShowingResult = isChecking || resultToShow
+
+  // Auto-update step progress based on user actions
+  useEffect(() => {
+    if (generatedListing || isGenerating) {
+      setCurrentStep(3)
+    } else if (checkResult || isChecking) {
+      setCurrentStep(2)
+    } else if (productName.trim() || ingredients.trim() || productBenefits.trim()) {
+      setCurrentStep(1)
+    }
+  }, [productName, ingredients, productBenefits, checkResult, isChecking, generatedListing, isGenerating])
 
   const handleCheck = async () => {
     // User is running their own check, hide demo result
@@ -359,43 +379,92 @@ export function HeroSection() {
     navigator.clipboard.writeText(text)
   }
   return (
-    <div className="min-h-screen bg-[#0D0D12] pt-16 md:pt-20">
+    <div className="min-h-screen bg-[#0F1419] pt-20 md:pt-24">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#0D0D12] via-[#0F1520] to-[#0D0D12] text-white">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#0F1419] via-[#0F1520] to-[#0F1419] text-white">
+        {/* Gradient glow effects for visual guidance (P2-17) */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-[radial-gradient(ellipse_at_center,rgba(255,184,0,0.08)_0%,transparent_70%)] pointer-events-none" />
+        <div className="absolute top-[40%] right-[10%] w-[400px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(10,77,140,0.06)_0%,transparent_70%)] pointer-events-none" />
+        <div className="absolute bottom-[20%] left-[5%] w-[300px] h-[300px] bg-[radial-gradient(ellipse_at_center,rgba(255,184,0,0.05)_0%,transparent_70%)] pointer-events-none" />
+        
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-30" />
-        <div className="container-custom relative py-12 md:py-16">
+        <div className="container-custom relative py-8 md:py-10">
           <div className="mx-auto max-w-full md:max-w-4xl text-center">
             {/* SocialProofBar — 已移除，待接入真实数据后恢复 */}
             <h1 className="mb-6 text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
               {t('title')} <span className="hidden md:block"> </span> {t('titleLine2')}
             </h1>
 
-            {/* Logo 墙 - 新增 */}
-            <div className="mb-8">
-              <p className="text-xs text-white/50 uppercase tracking-wider mb-3">
+            {/* Logo 墙 — 弧形排列 + SVG 图标 */}
+            <div className="mb-6">
+              <p className="text-xs text-[#9CA3AF] uppercase tracking-widest mb-3 font-medium">
                 {t('trustedBy')}
               </p>
-              <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4">
-                {['Amazon Brazil', 'Mercado Livre', 'Shopee', 'TikTok Shop', 'SHEIN'].map((name) => (
+              <div 
+                className="inline-flex flex-wrap justify-center items-end gap-2 sm:gap-3 rounded-xl border border-white/10 bg-[#1A1A24]/60 backdrop-blur-sm px-5 py-3"
+                style={{ perspective: '600px' }}
+              >
+                {[
+                  { name: 'Amazon', icon: ShoppingBag, rotate: -12 },
+                  { name: 'Mercado Livre', icon: Store, rotate: -6 },
+                  { name: 'Shopee', icon: Globe, rotate: -2 },
+                  { name: 'TikTok Shop', icon: Smartphone, rotate: 2 },
+                  { name: 'SHEIN', icon: Package, rotate: 6 },
+                  { name: 'Magalu', icon: Truck, rotate: 12 },
+                ].map(({ name, icon: Icon, rotate }) => (
                   <span
                     key={name}
-                    className="inline-flex items-center rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-white/70 backdrop-blur-sm"
+                    className="inline-flex flex-col items-center gap-1 px-2 py-1.5 rounded-lg text-xs font-medium text-[#9CA3AF] hover:text-white transition-all duration-300 cursor-default"
+                    title={name}
+                    style={{ transform: `rotate(${rotate}deg)`, transformOrigin: 'bottom center' }}
                   >
-                    {name}
+                    <Icon className="w-5 h-5 opacity-70" />
+                    <span className="text-[10px] leading-tight">{name}</span>
                   </span>
+                ))}
+                <span className="text-xs text-[#6B7280] self-center ml-1">{t('andMorePlatforms')}</span>
+              </div>
+            </div>
+
+            <p className="mx-auto mb-6 max-w-full md:max-w-2xl text-lg text-white/90 md:text-xl">
+              {t('subtitleShort')}
+            </p>
+
+            {/* Multi-step Progress Bar (P2-16) */}
+            <div className="mx-auto w-full max-w-full md:max-w-xl mb-6">
+              <div className="flex items-center justify-between relative">
+                {/* Background line */}
+                <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-white/10 -translate-y-1/2" />
+                {/* Active line */}
+                <div 
+                  className="absolute top-1/2 left-0 h-0.5 bg-[#FFB800] -translate-y-1/2 transition-all duration-500"
+                  style={{ width: `${((currentStep - 1) / (totalSteps - 1)) * 100}%` }}
+                />
+                {Array.from({ length: totalSteps }, (_, i) => i + 1).map((step) => (
+                  <div key={step} className="relative z-10 flex flex-col items-center gap-1.5">
+                    <div 
+                      className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 ${
+                        step < currentStep 
+                          ? 'bg-[#FFB800] text-[#0F1419]' 
+                          : step === currentStep 
+                            ? 'bg-[#FFB800] text-[#0F1419] ring-2 ring-[#FFB800]/40 shadow-lg shadow-amber-500/20'
+                            : 'bg-[#1A1A24] text-white/40 border border-white/10'
+                      }`}
+                    >
+                      {step < currentStep ? <CheckCircle className="w-4 h-4" /> : step}
+                    </div>
+                    <span className={`text-[10px] font-medium whitespace-nowrap ${
+                      step <= currentStep ? 'text-white/80' : 'text-white/30'
+                    }`}>
+                      {stepLabels[step - 1]}
+                    </span>
+                  </div>
                 ))}
               </div>
             </div>
 
-            <p className="mx-auto mb-10 max-w-full md:max-w-2xl text-lg text-white/90 md:text-xl">
-              {t('subtitleShort')}
-            </p>
-            <p className="mx-auto mb-6 max-w-full md:max-w-xl text-sm text-amber-400 font-semibold tracking-wide">
-              {t('ctaLine')}
-            </p>
-
             {/* Hero Demo - 输入框容器加背景/边框增加呼吸空间 */}
-            <div className="mx-auto w-full max-w-full md:max-w-xl rounded-2xl bg-[#1A1A24]/80 backdrop-blur-lg border border-white/10 p-4 md:p-6 text-left shadow-2xl">
+            <div className="mx-auto w-full max-w-full md:max-w-xl rounded-2xl bg-white/5 backdrop-blur-xl border border-white/15 p-4 md:p-6 text-left shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
               <div className="mb-4">
                 <Label className="text-white/80 text-sm">{t('form.inputProductInfo')}</Label>
               </div>
@@ -404,8 +473,8 @@ export function HeroSection() {
                   onClick={() => { setCountry('BR'); setCheckResult(null); setShowDemo(true) }}
                   className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors min-h-[44px] ${
                     country === 'BR'
-                      ? 'bg-white text-[#0A4D8C]'
-                      : 'bg-white/10 text-white/70 hover:bg-white/20'
+                      ? 'bg-[#FFB800] text-[#0F1419] shadow-lg shadow-amber-500/20'
+                      : 'bg-white/5 text-white/60 hover:bg-white/10'
                   }`}
                 >
                   {t('brazilAnvisa')}
@@ -414,8 +483,8 @@ export function HeroSection() {
                   onClick={() => { setCountry('MX'); setCheckResult(null); setShowDemo(true) }}
                   className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors min-h-[44px] ${
                     country === 'MX'
-                      ? 'bg-white text-[#0A4D8C]'
-                      : 'bg-white/10 text-white/70 hover:bg-white/20'
+                      ? 'bg-[#FFB800] text-[#0F1419] shadow-lg shadow-amber-500/20'
+                      : 'bg-white/5 text-white/60 hover:bg-white/10'
                   }`}
                 >
                   {t('mexicoCofeppris')}
@@ -428,7 +497,7 @@ export function HeroSection() {
                   value={productName}
                   onChange={(e) => setProductName(e.target.value)}
                   placeholder={t('productNamePlaceholder')}
-                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[60px] resize-none pr-10 text-base"
+                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-[#6B7280] min-h-[60px] resize-none pr-10 text-base focus:border-[#FFB800]/40 focus:ring-2 focus:ring-[#FFB800]/30 focus:shadow-[0_0_12px_rgba(255,184,0,0.15)] transition-all"
                 />
                 {productName && (
                   <button
@@ -450,7 +519,7 @@ export function HeroSection() {
                   value={ingredients}
                   onChange={(e) => setIngredients(e.target.value)}
                   placeholder={t('ingredientsPlaceholder') + ` (${t('form.optional')})`}
-                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[80px] resize-none pr-10 text-base"
+                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-[#6B7280] min-h-[80px] resize-none pr-10 text-base focus:border-[#FFB800]/40 focus:ring-2 focus:ring-[#FFB800]/30 focus:shadow-[0_0_12px_rgba(255,184,0,0.15)] transition-all"
                 />
                 {ingredients && (
                   <button
@@ -469,7 +538,7 @@ export function HeroSection() {
                   value={productBenefits}
                   onChange={(e) => setProductBenefits(e.target.value)}
                   placeholder={t('productBenefitsPlaceholder')}
-                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-white/50 min-h-[60px] resize-none pr-10 text-base"
+                  className="w-full border-white/20 bg-white/10 text-white placeholder:text-[#6B7280] min-h-[60px] resize-none pr-10 text-base focus:border-[#FFB800]/40 focus:ring-2 focus:ring-[#FFB800]/30 focus:shadow-[0_0_12px_rgba(255,184,0,0.15)] transition-all"
                 />
                 {productBenefits && (
                   <button
@@ -490,22 +559,31 @@ export function HeroSection() {
                   onClick={handleCheck}
                   disabled={isChecking}
                   variant="outline"
-                  className="w-full sm:flex-1 border-white/30 text-white hover:bg-white/10 font-medium min-h-[44px]"
+                  className="w-full sm:flex-1 border-white/30 text-white hover:bg-white/10 hover:-translate-y-0.5 hover:shadow-lg font-medium min-h-[48px] transition-all duration-200 active:translate-y-0"
                 >
                   {isChecking ? t('checking') : t('checkFirst')}
                 </Button>
                 <Button
                   onClick={handleGenerate}
                   disabled={isGenerating}
-                  className="w-full sm:flex-1 bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all animate-pulse-subtle min-h-[44px]"
+                  className="w-full sm:flex-1 bg-gradient-to-r from-[#FFB800] to-[#F59E0B] text-[#0F1419] hover:from-[#F59E0B] hover:to-[#D97706] font-bold shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 hover:-translate-y-0.5 transition-all duration-200 active:translate-y-0 min-h-[48px]"
                 >
-                  {isGenerating ? t('generating') : <><Zap className="w-4 h-4 mr-1" /> {t('freeGenerateListing')}</>}
+                  {isGenerating ? <><Loader2 className="w-4 h-4 mr-1 animate-spin" /> AI 正在生成...</> : <><Zap className="w-4 h-4 mr-1" /> {t('freeGenerateListing')}</>}
                 </Button>
               </div>
 
-              <p className="mt-3 text-xs text-white/60 text-center">
-                {t('form.zeroBarrier')}
-              </p>
+              {/* 信任密度 */}
+              <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-[#9CA3AF]">
+                <span className="flex items-center gap-1">
+                  <Lock className="w-3 h-3 text-[#00A86B]" /> SSL 加密传输
+                </span>
+                <span className="flex items-center gap-1">
+                  <CreditCard className="w-3 h-3 text-[#FFB800]" /> 无需信用卡
+                </span>
+                <span className="flex items-center gap-1">
+                  <Users className="w-3 h-3 text-[#0A4D8C]" /> 1,200+ 跨境卖家已使用
+                </span>
+              </div>
             </div>
 
             {/* Check Results - Show loading state when checking, otherwise show result */}

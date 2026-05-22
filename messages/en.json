@@ -176,7 +176,11 @@
       "description": "Product Description",
       "label": "Product Label"
     },
-    "sourceFieldLabel": "Source"
+    "sourceFieldLabel": "Source",
+    "andMorePlatforms": "and more",
+    "step1Label": "Input Info",
+    "step2Label": "AI Check",
+    "step3Label": "Get Listing"
   },
   "howItWorks": {
     "title": "Complete Compliance Check in 3 Steps",

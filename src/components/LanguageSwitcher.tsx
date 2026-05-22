@@ -37,7 +37,7 @@ export function LanguageSwitcher() {
         }}
       >
         {languages.map((lang) => (
-          <option key={lang.code} value={lang.code} className="bg-[#0D0D12] text-white">
+          <option key={lang.code} value={lang.code} className="bg-[#0F1419] text-white">
             {lang.flag} {lang.label}
           </option>
         ))}

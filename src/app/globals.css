@@ -141,13 +141,13 @@
 /* CosmetCheck Dark Theme - Professional Edition (Design Tokens 63-83) */
 .dark {
   /* ===== Background Colors ===== */
-  --bg-primary: #0D0D12;
+  --bg-primary: #0F1419;
   --bg-surface: #252530;
   --bg-elevated: #2D2D3A;
   
   /* ===== Text Colors ===== */
   --text-primary: #E8ECF0;
-  --text-secondary: #9CA3AF;
+  --text-secondary: #E0E0E0;
   --text-muted: #6B7280;
   
   /* ===== Border ===== */
@@ -179,7 +179,7 @@
   --accent: #00A86B;
   --accent-foreground: #FFFFFF;
   
-  --background: #0D0D12;
+  --background: #0F1419;
   --foreground: #E8ECF0;
   
   --card: #252530;
@@ -203,7 +203,7 @@
   --chart-4: #1E6BB8;
   --chart-5: #6B7280;
   
-  --sidebar: #0D0D12;
+  --sidebar: #0F1419;
   --sidebar-foreground: #E8ECF0;
   --sidebar-primary: #0A4D8C;
   --sidebar-primary-foreground: #E8ECF0;

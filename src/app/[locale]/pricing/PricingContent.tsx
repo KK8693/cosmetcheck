@@ -90,7 +90,7 @@ export default function PricingContent() {
       </section>
 
       {/* Pricing Cards */}
-      <section className="py-12 md:py-20 bg-[#0D0D12]">
+      <section className="py-12 md:py-20 bg-[#0F1419]">
         <div className="container-custom max-w-5xl px-4">
           {/* Toggle */}
           <div className="flex justify-center mb-8 md:mb-12">
@@ -98,7 +98,7 @@ export default function PricingContent() {
               <button
                 onClick={() => setYearly(false)}
                 className={`px-4 md:px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                  !yearly ? 'bg-white text-[#0D0D12] shadow-sm' : 'text-gray-400 hover:text-gray-200'
+                  !yearly ? 'bg-white text-[#0F1419] shadow-sm' : 'text-gray-400 hover:text-gray-200'
                 }`}
               >
                 {toggle.monthly}
@@ -106,7 +106,7 @@ export default function PricingContent() {
               <button
                 onClick={() => setYearly(true)}
                 className={`px-4 md:px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                  yearly ? 'bg-white text-[#0D0D12] shadow-sm' : 'text-gray-400 hover:text-gray-200'
+                  yearly ? 'bg-white text-[#0F1419] shadow-sm' : 'text-gray-400 hover:text-gray-200'
                 }`}
               >
                 {toggle.yearly} <span className="text-[#00A86B] font-bold ml-1">{toggle.saveBadge}</span>
@@ -222,7 +222,7 @@ export default function PricingContent() {
                 </ul>
                 <SubscribeButton
                   billingCycle={yearly ? 'yearly' : 'monthly'}
-                  className="w-full bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-[#0D0D12] hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25"
+                  className="w-full bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-[#0F1419] hover:from-[#f59e0b] hover:to-[#d97706] font-bold shadow-lg shadow-amber-500/25"
                 >
                   {ctaText}
                 </SubscribeButton>
@@ -292,7 +292,7 @@ export default function PricingContent() {
       </section>
 
       {/* FAQ */}
-      <section className="py-12 md:py-20 bg-[#0D0D12]">
+      <section className="py-12 md:py-20 bg-[#0F1419]">
         <div className="container-custom max-w-3xl">
           <h2 className="text-3xl font-bold text-white text-center mb-12">{t('faq.title')}</h2>
           <div className="space-y-4">
@@ -317,7 +317,7 @@ export default function PricingContent() {
             {cta.subtitle}
           </p>
           <Link href="/">
-            <Button className="bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-[#0D0D12] hover:from-[#f59e0b] hover:to-[#d97706] font-bold h-12 px-8 shadow-lg shadow-amber-500/25">
+            <Button className="bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-[#0F1419] hover:from-[#f59e0b] hover:to-[#d97706] font-bold h-12 px-8 shadow-lg shadow-amber-500/25">
               {cta.button}
             </Button>
           </Link>

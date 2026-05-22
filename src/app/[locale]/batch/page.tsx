@@ -20,7 +20,7 @@ export default async function BatchPage({
   setRequestLocale(locale)
 
   return (
-    <div className="min-h-screen bg-[#0D0D12]">
+    <div className="min-h-screen bg-[#0F1419]">
       <BatchContent />
     </div>
   )

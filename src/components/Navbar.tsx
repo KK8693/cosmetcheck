@@ -20,9 +20,36 @@ export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [authOpen, setAuthOpen] = useState(false)
   const { user } = useAuth()
+  const [activeLink, setActiveLink] = useState<string>('#features')
 
   // Check if current page is the home page (pathname excludes locale prefix in next-intl)
   const isHomePage = pathname === '/'
+
+  // Track active section based on scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    const sections = ['#features', '#how-it-works', '#pricing', '#faq']
+    const handleScroll = () => {
+      if (!isHomePage || window.scrollY < 100) return
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const el = document.querySelector(sections[i])
+        if (el && el.getBoundingClientRect().top <= 120) {
+          setActiveLink(sections[i])
+          break
+        }
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+    handleScroll()
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [isHomePage])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,8 +73,8 @@ export function Navbar() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? 'bg-[#0D0D12]/95 backdrop-blur-lg border-b border-white/10 shadow-lg'
-            : 'bg-[#0D0D12]'
+            ? 'bg-[#0F1419]/80 backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/20'
+            : 'bg-[#0F1419]/80 backdrop-blur-md border-b border-white/5'
         }`}
         style={{ 
           transform: 'translateZ(0)', 
@@ -76,17 +103,30 @@ export function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="text-white/70 hover:text-white transition-colors text-sm font-medium"
+                    className={`text-sm font-medium transition-colors relative group ${
+                      pathname === link.href
+                        ? 'text-white'
+                        : 'text-white/70 hover:text-white'
+                    }`}
                   >
                     {link.label}
+                    {(pathname === link.href || (isHomePage && activeLink === link.href)) && (
+                      <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-5 h-0.5 bg-[#FFB800] rounded-full" />
+                    )}
                   </Link>
                 ) : (
                   <a
                     key={link.href}
                     href={resolvedHref}
-                    className="text-white/70 hover:text-white transition-colors text-sm font-medium"
+                    className={`text-sm font-medium transition-colors relative group ${
+                      activeLink === link.href ? 'text-white' : 'text-white/70 hover:text-white'
+                    }`}
+                    onClick={() => setActiveLink(link.href)}
                   >
                     {link.label}
+                    {activeLink === link.href && (
+                      <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-5 h-0.5 bg-[#FFB800] rounded-full" />
+                    )}
                   </a>
                 )
               })}
@@ -122,7 +162,7 @@ export function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-[#0D0D12]/98 backdrop-blur-lg border-t border-white/10">
+          <div className="md:hidden bg-[#0F1419]/98 backdrop-blur-lg border-t border-white/10">
             <div className="container-custom py-4 space-y-3">
               {navLinks.map((link) => {
                 // For anchor links on non-home pages, navigate to home page with hash
@@ -135,19 +175,31 @@ export function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="block text-white/70 hover:text-white transition-colors py-2 text-sm font-medium"
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`block py-2 text-sm font-medium transition-colors relative ${
+                      pathname === link.href
+                        ? 'text-white'
+                        : 'text-white/70 hover:text-white'
+                    }`}
+                    onClick={() => { setIsMobileMenuOpen(false); setActiveLink(link.href) }}
                   >
                     {link.label}
+                    {(pathname === link.href || activeLink === link.href) && (
+                      <span className="absolute left-0 bottom-0 w-5 h-0.5 bg-[#FFB800] rounded-full" />
+                    )}
                   </Link>
                 ) : (
                   <a
                     key={link.href}
                     href={resolvedHref}
-                    className="block text-white/70 hover:text-white transition-colors py-2 text-sm font-medium"
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`block py-2 text-sm font-medium transition-colors relative ${
+                      activeLink === link.href ? 'text-white' : 'text-white/70 hover:text-white'
+                    }`}
+                    onClick={() => { setIsMobileMenuOpen(false); setActiveLink(link.href) }}
                   >
                     {link.label}
+                    {activeLink === link.href && (
+                      <span className="absolute left-0 bottom-0 w-5 h-0.5 bg-[#FFB800] rounded-full" />
+                    )}
                   </a>
                 )
               })}

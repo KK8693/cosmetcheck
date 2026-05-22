@@ -24,7 +24,7 @@ export function FAQSection() {
   const emailHref = 'mailto:support@cosmetcheck.com?subject=Support%20Request'
 
   return (
-    <section id="faq" className="py-20 bg-[#0D0D12]">
+    <section id="faq" className="py-20 bg-[#0F1419]">
       <div className="container-custom max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-white md:text-4xl mb-4">

@@ -51,7 +51,7 @@ export function PricingSection() {
   ]
 
   return (
-    <section id="pricing" className="py-20 bg-[#0D0D12]">
+    <section id="pricing" className="py-20 bg-[#0F1419]">
       <div className="container-custom">
         <div className="text-center mb-12">
           <div className="inline-block rounded-full bg-white/10 px-4 py-1 text-sm font-semibold text-white mb-4">

@@ -240,7 +240,7 @@ export function BatchContent() {
   }) || []
 
   return (
-    <div className="min-h-screen bg-[#0D0D12] py-8 px-4">
+    <div className="min-h-screen bg-[#0F1419] py-8 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
@@ -320,7 +320,7 @@ export function BatchContent() {
                     value={inputText}
                     onChange={(e) => setInputText(e.target.value)}
                     placeholder={t('inputPlaceholder')}
-                    className="w-full h-48 bg-[#0D0D12] border-gray-700 text-white placeholder:text-gray-500 font-mono text-sm resize-none"
+                    className="w-full h-48 bg-[#0F1419] border-gray-700 text-white placeholder:text-gray-500 font-mono text-sm resize-none"
                   />
                 </div>
               ) : (
@@ -329,7 +329,7 @@ export function BatchContent() {
                     {t('csvTab')}
                   </Label>
                   <div 
-                    className="border-2 border-dashed border-gray-700 rounded-lg p-8 text-center cursor-pointer hover:border-gray-500 transition-colors bg-[#0D0D12]"
+                    className="border-2 border-dashed border-gray-700 rounded-lg p-8 text-center cursor-pointer hover:border-gray-500 transition-colors bg-[#0F1419]"
                     onClick={() => fileInputRef.current?.click()}
                   >
                     <FileUp className="w-8 h-8 text-gray-500 mx-auto mb-3" />
@@ -348,7 +348,7 @@ export function BatchContent() {
                         value={inputText}
                         onChange={(e) => setInputText(e.target.value)}
                         placeholder={t('csvPlaceholder')}
-                        className="w-full h-32 bg-[#0D0D12] border-gray-700 text-white placeholder:text-gray-500 font-mono text-sm resize-none"
+                        className="w-full h-32 bg-[#0F1419] border-gray-700 text-white placeholder:text-gray-500 font-mono text-sm resize-none"
                       />
                     </div>
                   )}
@@ -494,7 +494,7 @@ export function BatchContent() {
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
-                    <tr className="border-b border-white/10 bg-[#0D0D12]">
+                    <tr className="border-b border-white/10 bg-[#0F1419]">
                       <th className="px-4 py-3 text-left text-sm font-semibold text-gray-300">{t('productId')}</th>
                       <th className="px-4 py-3 text-left text-sm font-semibold text-gray-300">{t('status')}</th>
                       <th className="px-4 py-3 text-left text-sm font-semibold text-gray-300">{t('violations')}</th>
@@ -560,7 +560,7 @@ export function BatchContent() {
                           </td>
                         </tr>
                         {expandedRows.has(result.index) && (
-                          <tr className="bg-[#0D0D12]">
+                          <tr className="bg-[#0F1419]">
                             <td colSpan={4} className="px-4 py-4">
                               <div className="space-y-3">
                                 {result.violations.map((violation, vIdx) => (
