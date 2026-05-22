@@ -624,6 +624,48 @@ function validateListing(
     }
   }
 
+  // 7. DETECT CLAIM UPGRADES (AI escalating mild user claims to strong regulatory-risk claims)
+  const userBenefits = (input.benefits || '').toLowerCase()
+  const userIngredients = (input.ingredients || '').toLowerCase()
+  const userProductName = input.productName.toLowerCase()
+  const userInputCombined = `${userProductName} ${userBenefits} ${userIngredients}`
+
+  // 7a. Spot/melasma upgrade: user said "uneven tone" but AI wrote "reduces spots"
+  const hasSpotClaimInAI = /manchas?|melasma|desmanchador|clareador\s+de\s+manchas/i.test(allText)
+  const hasSpotMentionInInput = /manchas?|melasma|desmanchador|spot/i.test(userInputCombined)
+  if (hasSpotClaimInAI && !hasSpotMentionInInput) {
+    const spotWarning = `\u26a0\ufe0f UPGRADE DE ALEGA\u00c7\u00c3O: A IA adicionou alega\u00e7\u00f5es sobre "manchas/melasma" que N\u00c3O foram mencionadas na descri\u00e7\u00e3o original do produto. "Uniformizar o tom da pele" N\u00c3O \u00e9 o mesmo que "reduzir manchas". Produtos com alega\u00e7\u00f5es de clareamento de manchas podem exigir registro ESPECIAL na ANVISA.`
+    result.warnings = [spotWarning, ...result.warnings]
+    console.warn('[AI Validate] \ud83d\udfe1 AI upgraded "uneven tone" to "spot/melasma" claims')
+  }
+
+  // 7b. Pore refinement upgrade: user said "smooth texture" but AI wrote "refines pores"
+  const hasPoreClaimInAI = /refina\s+os\s+poros|refinando\s+os\s+poros|poros\s+dilatados|poros\s+abertos/i.test(allText)
+  const hasPoreMentionInInput = /poros?|pore/i.test(userInputCombined)
+  if (hasPoreClaimInAI && !hasPoreMentionInInput) {
+    const poreWarning = `\u26a0\ufe0f UPGRADE DE ALEGA\u00c7\u00c3O: A IA adicionou alega\u00e7\u00f5es sobre "refinamento de poros" que N\u00c3O foram mencionadas na descri\u00e7\u00e3o original. "Melhorar a textura da pele" N\u00c3O \u00e9 o mesmo que "refinar poros". Alega\u00e7\u00f5es de tratamento de poros podem exigir comprova\u00e7\u00e3o adicional.`
+    result.warnings = [poreWarning, ...result.warnings]
+    console.warn('[AI Validate] \ud83d\udfe1 AI upgraded "smooth texture" to "pore refining" claims')
+  }
+
+  // 7c. Non-comedogenic claim without user input
+  const hasNonComedogenicClaim = /n\u00e3o\s+obstrui\s+os\s+poros|n\u00e3o\s+comedog\u00eanico|non-comedogenic|n\u00e3o\s+comedog\u00eanica/i.test(allText)
+  const hasNonComedogenicInput = /n\u00e3o\s+obstrui|n\u00e3o\s+comedog|non-comedogenic|n\u00e3o\s+entope/i.test(userInputCombined)
+  if (hasNonComedogenicClaim && !hasNonComedogenicInput) {
+    const ncWarning = `\u26a0\ufe0f ALEGA\u00c7\u00c3O N\u00c3O SUPORTADA: A IA adicionou "n\u00e3o obstrui os poros" / "n\u00e3o comedog\u00eanico" sem que o usu\u00e1rio tenha informado isso. Alega\u00e7\u00f5es de n\u00e3o comedogenicidade requerem testes laboratoriais comprovados.`
+    result.warnings = [ncWarning, ...result.warnings]
+    console.warn('[AI Validate] \ud83d\udfe1 AI invented non-comedogenic claim without user input')
+  }
+
+  // 7d. Intensity escalation: lightweight → intense
+  const hasIntenseHydrationClaim = /hidrat[aa]\s+intensamente|hidrata\u00e7\u00e3o\s+intensa|hidratante\s+intensivo/i.test(allText)
+  const hasLightweightInput = /leve|ligeiro|lightweight|fresh|refrescante|n\u00e3o\s+oleoso/i.test(userInputCombined)
+  if (hasIntenseHydrationClaim && hasLightweightInput) {
+    const intensityWarning = `\u26a0\ufe0f ESCALA\u00c7\u00c3O DE INTENSIDADE: O usu\u00e1rio descreveu o produto como "leve/refrescante", mas a IA usou "hidrata intensamente". A intensidade da alega\u00e7\u00e3o deve corresponder \u00e0 descri\u00e7\u00e3o original do produto.`
+    result.warnings = [intensityWarning, ...result.warnings]
+    console.warn('[AI Validate] \ud83d\udfe1 AI escalated "lightweight" to "intense hydration"')
+  }
+
   return result
 }
 

@@ -663,15 +663,41 @@ export function HeroSection() {
               <div className="mx-auto max-w-full md:max-w-xl mt-6 rounded-2xl bg-white p-4 md:p-6 text-left text-gray-900">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-lg font-bold">{t('aiGeneratedListing')}</h3>
-                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#0A4D8C]/10 text-[#0A4D8C]">
-                    {generatedListing.language === 'pt-BR' ? `🇧🇷 ${t('ptBr')}` : `🇲🇽 ${t('esMx')}`}
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={() => {
+                        const fullText = [
+                          generatedListing.title,
+                          '',
+                          generatedListing.description,
+                          '',
+                          ...generatedListing.bulletPoints.map((bp, i) => `${i + 1}. ${bp}`),
+                          '',
+                          generatedListing.ingredientList.length > 0 ? 'Ingredientes:' : '',
+                          ...generatedListing.ingredientList,
+                          '',
+                          generatedListing.complianceNotes.length > 0 ? 'Observações de conformidade:' : '',
+                          ...generatedListing.complianceNotes,
+                          '',
+                          generatedListing.warnings.length > 0 ? 'Avisos:' : '',
+                          ...generatedListing.warnings,
+                        ].filter(Boolean).join('\n')
+                        copyToClipboard(fullText)
+                      }}
+                      className="text-xs font-medium px-3 py-1.5 rounded-full bg-[#0A4D8C]/10 text-[#0A4D8C] hover:bg-[#0A4D8C]/20 transition-colors"
+                    >
+                      {t('copyAllListing') || t('copyAll')}
+                    </button>
+                    <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#0A4D8C]/10 text-[#0A4D8C]">
+                      {generatedListing.language === 'pt-BR' ? `🇧🇷 ${t('ptBr')}` : `🇲🇽 ${t('esMx')}`}
+                    </span>
+                  </div>
                 </div>
 
                 {/* Title */}
                 <div className="mb-4">
                   <div className="flex items-center justify-between mb-1">
-                    <Label className="text-xs font-semibold text-gray-500">{t('title')}</Label>
+                    <Label className="text-xs font-semibold text-gray-500">{t('productName')}</Label>
                     <button
                       onClick={() => copyToClipboard(generatedListing.title)}
                       className="text-xs text-[#0A4D8C] hover:underline"

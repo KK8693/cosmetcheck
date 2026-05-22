@@ -118,6 +118,7 @@
     "copied": "Copiado",
     "copyBtn": "Copiar",
     "copyAll": "Copiar Tudo",
+    "copyAllListing": "Copiar Tudo",
     "ptBr": "Português",
     "esMx": "Espanhol",
     "disclaimer": "Este Listing foi gerado por IA apenas para referência. Por favor, confirme a conformidade final com as regulamentações locais antes de publicar.",
@@ -510,7 +511,9 @@
         "Geração de Listing IA",
         "Verificação CSV em lote",
         "Atualizações regulatórias",
-        "Suporte prioritário"
+        "Suporte prioritário",
+        "Acesso Antecipado a Novos Mercados (AR/CO)",
+        "Assessor de Conformidade 1v1"
       ],
       "cta": "Teste Grátis 10 Vezes"
     },

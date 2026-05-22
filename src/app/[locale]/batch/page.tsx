@@ -8,7 +8,7 @@ export const runtime = 'edge'
 export const dynamic = 'force-dynamic'
 
 export const metadata = {
-  title: 'Batch Detection — CosmetCheck',
+  title: 'Batch Detection',
 }
 
 export default async function BatchPage({
