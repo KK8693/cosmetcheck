@@ -373,7 +373,7 @@ export function HeroSection() {
     navigator.clipboard.writeText(text)
   }
   return (
-    <div className="min-h-screen bg-[#0F1419] pt-20 md:pt-24">
+    <div className="min-h-screen bg-[#0F1419] pt-10 md:pt-12">
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[#0F1419] via-[#0F1520] to-[#0F1419] text-white">
         {/* Gradient glow effects for visual guidance (P2-17) */}
@@ -382,14 +382,14 @@ export function HeroSection() {
         <div className="absolute bottom-[20%] left-[5%] w-[300px] h-[300px] bg-[radial-gradient(ellipse_at_center,rgba(255,184,0,0.05)_0%,transparent_70%)] pointer-events-none" />
         
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-30" />
-        <div className="container-custom relative py-8 md:py-10">
+        <div className="container-custom relative py-6 md:py-8">
           <div className="mx-auto max-w-full md:max-w-4xl text-center">
             {/* SocialProofBar — 已移除，待接入真实数据后恢复 */}
-            <h1 className="mb-6 leading-tight">
-              <span className="block text-3xl md:text-5xl lg:text-6xl font-medium tracking-wider text-white/80 mb-1">
+            <h1 className="mb-6 leading-[1.1]">
+              <span className="block text-2xl md:text-4xl lg:text-5xl font-light tracking-[0.15em] text-white/50 mb-2">
                 {t('title')}
               </span>
-              <span className="block text-3xl md:text-5xl lg:text-6xl font-black text-white drop-shadow-[0_2px_12px_rgba(255,184,0,0.25)]">
+              <span className="block text-4xl md:text-6xl lg:text-7xl font-black text-white drop-shadow-[0_4px_24px_rgba(255,184,0,0.35)]">
                 {t('titleLine2')}
               </span>
             </h1>
@@ -400,7 +400,7 @@ export function HeroSection() {
                 {t('trustedBy')}
               </p>
               <div 
-                className="inline-flex flex-wrap justify-center items-end gap-2 sm:gap-3 rounded-2xl border border-white/[0.08] bg-[#1A1A24]/40 backdrop-blur-md px-6 py-4 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]"
+                className="inline-flex flex-wrap justify-center items-end gap-2 sm:gap-3 rounded-2xl border border-white/10 bg-gradient-to-b from-[#1A1A24]/90 to-[#0F1419]/70 backdrop-blur-xl px-6 py-4 shadow-[0_8px_40px_rgba(0,0,0,0.5),inset_0_1px_1px_rgba(255,255,255,0.08),0_0_60px_rgba(255,184,0,0.06)]"
                 style={{ perspective: '600px' }}
               >
                 {[
@@ -413,14 +413,14 @@ export function HeroSection() {
                 ].map(({ name, icon: Icon, rotate }) => (
                   <span
                     key={name}
-                    className="inline-flex flex-col items-center gap-1 px-3 py-2 rounded-xl text-xs font-medium text-[#9CA3AF] hover:text-white transition-all duration-300 cursor-default group relative"
+                    className="inline-flex flex-col items-center gap-1.5 px-3 py-2.5 rounded-xl text-xs font-medium text-white/40 hover:text-white transition-all duration-300 cursor-default group relative"
                     title={name}
                     style={{ transform: `rotate(${rotate}deg)`, transformOrigin: 'bottom center' }}
                   >
-                    <Icon className="w-5 h-5 opacity-60 group-hover:opacity-100 transition-opacity" />
-                    <span className="text-[10px] leading-tight">{name}</span>
+                    <Icon className="w-6 h-6 opacity-40 group-hover:opacity-100 group-hover:drop-shadow-[0_0_8px_rgba(255,184,0,0.5)] transition-all duration-300" />
+                    <span className="text-[10px] leading-tight group-hover:text-white/80">{name}</span>
                     {/* 微光效果 */}
-                    <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#FFB800]/20 blur-[2px] group-hover:bg-[#FFB800]/50 transition-colors duration-300" />
+                    <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-[#FFB800]/40 blur-[2px] group-hover:bg-[#FFB800]/80 group-hover:w-3 group-hover:h-3 group-hover:blur-[4px] transition-all duration-300" />
                   </span>
                 ))}
               </div>
@@ -430,31 +430,31 @@ export function HeroSection() {
               {t('subtitleShort')}
             </p>
 
-            {/* Multi-step Progress Bar (P2-16) */}
+            {/* Multi-step Progress Bar (P2-16) — 文字放在虚线下方 */}
             <div className="mx-auto w-full max-w-full md:max-w-xl mb-6">
               <div className="flex items-center justify-between relative">
-                {/* Background dashed line */}
-                <div className="absolute top-1/2 left-0 right-0 h-1 border-t-2 border-dashed border-white/10 -translate-y-1/2" />
-                {/* Active solid line */}
+                {/* Background dashed line — 加粗 */}
+                <div className="absolute top-6 left-0 right-0 h-[3px] border-t-[3px] border-dashed border-white/10" />
+                {/* Active solid line — 填充动画 */}
                 <div 
-                  className="absolute top-1/2 left-0 h-1 bg-[#FFB800] -translate-y-1/2 transition-all duration-500"
-                  style={{ width: `${((currentStep - 1) / (totalSteps - 1)) * 100}%` }}
+                  className="absolute top-6 left-0 h-[3px] bg-gradient-to-r from-[#FFB800] to-[#F59E0B] transition-all duration-700 ease-out"
+                  style={{ width: `${((Math.max(currentStep, 1) - 1) / (totalSteps - 1)) * 100}%` }}
                 />
                 {Array.from({ length: totalSteps }, (_, i) => i + 1).map((step) => (
-                  <div key={step} className="relative z-10 flex flex-col items-center gap-2">
+                  <div key={step} className="relative z-10 flex flex-col items-center">
                     <div 
-                      className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${
+                      className={`w-12 h-12 rounded-full flex items-center justify-center text-base font-bold transition-all duration-300 mb-3 ${
                         step < currentStep 
-                          ? 'bg-[#FFB800] text-[#0F1419]' 
+                          ? 'bg-[#FFB800] text-[#0F1419] shadow-[0_0_16px_rgba(255,184,0,0.5)]' 
                           : step === currentStep 
-                            ? 'bg-[#FFB800] text-[#0F1419] ring-4 ring-[#FFB800]/30 shadow-[0_0_20px_rgba(255,184,0,0.4)] scale-110'
-                            : 'bg-[#1A1A24] text-white/30 border border-white/10'
+                            ? 'bg-[#FFB800] text-[#0F1419] ring-[6px] ring-[#FFB800]/25 shadow-[0_0_30px_rgba(255,184,0,0.5)] scale-[1.15]' 
+                            : 'bg-[#1A1A24] text-white/25 border-2 border-white/[0.08]'
                       }`}
                     >
-                      {step < currentStep ? <CheckCircle className="w-5 h-5" /> : step}
+                      {step < currentStep ? <CheckCircle className="w-6 h-6" /> : step}
                     </div>
-                    <span className={`text-xs font-medium whitespace-nowrap text-center ${
-                      step <= currentStep ? 'text-white/90' : 'text-white/30'
+                    <span className={`text-base font-semibold whitespace-nowrap text-center leading-tight ${
+                      step <= currentStep ? 'text-white' : 'text-white/25'
                     }`}>
                       {stepLabels[step - 1]}
                     </span>
@@ -465,26 +465,23 @@ export function HeroSection() {
 
             {/* Hero Demo - 输入框容器加背景/边框增加呼吸空间 */}
             <div className="mx-auto w-full max-w-full md:max-w-xl rounded-2xl bg-white/5 backdrop-blur-xl border border-white/15 p-4 md:p-6 text-left shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
-              <div className="mb-4">
-                <Label className="text-white/80 text-sm">{t('form.inputProductInfo')}</Label>
-              </div>
               <div className="flex flex-wrap gap-2 mb-3">
                 <button
                   onClick={() => { setCountry('BR'); setCheckResult(null); setShowDemo(true) }}
-                  className={`px-5 py-2 rounded-full text-sm font-bold transition-all duration-300 min-h-[48px] ${
+                  className={`px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 min-h-[52px] ${
                     country === 'BR'
-                      ? 'bg-[#FFB800] text-[#0F1419] shadow-[0_4px_20px_rgba(255,184,0,0.3)] scale-[1.02]'
-                      : 'bg-[#1A1A24] text-white/40 hover:text-white/60 hover:bg-[#252530] border border-white/[0.06]'
+                      ? 'bg-[#FFB800] text-[#0F1419] shadow-[0_4px_20px_rgba(255,184,0,0.35)] scale-[1.02]'
+                      : 'bg-[#0F1419] text-white/30 hover:text-white/50 hover:bg-[#1A1A24] border border-white/[0.08]'
                   }`}
                 >
                   {t('brazilAnvisa')}
                 </button>
                 <button
                   onClick={() => { setCountry('MX'); setCheckResult(null); setShowDemo(true) }}
-                  className={`px-5 py-2 rounded-full text-sm font-bold transition-all duration-300 min-h-[48px] ${
+                  className={`px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 min-h-[52px] ${
                     country === 'MX'
-                      ? 'bg-[#FFB800] text-[#0F1419] shadow-[0_4px_20px_rgba(255,184,0,0.3)] scale-[1.02]'
-                      : 'bg-[#1A1A24] text-white/40 hover:text-white/60 hover:bg-[#252530] border border-white/[0.06]'
+                      ? 'bg-[#FFB800] text-[#0F1419] shadow-[0_4px_20px_rgba(255,184,0,0.35)] scale-[1.02]'
+                      : 'bg-[#0F1419] text-white/30 hover:text-white/50 hover:bg-[#1A1A24] border border-white/[0.08]'
                   }`}
                 >
                   {t('mexicoCofeppris')}
@@ -493,11 +490,12 @@ export function HeroSection() {
 
               {/* Product Name */}
               <div className="mb-3 relative">
+                <label className="block text-sm font-medium text-white/80 mb-1.5">{t('productName')}</label>
                 <Textarea
                   value={productName}
                   onChange={(e) => setProductName(e.target.value)}
                   placeholder={t('productNamePlaceholder')}
-                  className="w-full border border-white/[0.08] bg-white/[0.04] text-white placeholder:text-[#8C93A0] min-h-[60px] resize-none pr-10 text-base rounded-xl focus:border-[#FFB800]/50 focus:ring-2 focus:ring-[#FFB800]/20 focus:shadow-[0_0_15px_rgba(255,184,0,0.2)] transition-all duration-300"
+                  className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl focus:border-[#FFB800] focus:shadow-[0_0_15px_rgba(255,184,0,0.2)] focus:outline-none transition-all duration-300"
                 />
                 {productName && (
                   <button
@@ -509,17 +507,15 @@ export function HeroSection() {
                   </button>
                 )}
               </div>
-              <p className="text-xs text-white/50 mb-3">
-                {t('form.generateHint')}
-              </p>
 
               {/* Ingredients */}
               <div className="mb-3 relative">
+                <label className="block text-sm font-medium text-white/80 mb-1.5">{t('ingredients')} <span className="text-white/40 font-normal">({t('form.optional')})</span></label>
                 <Textarea
                   value={ingredients}
                   onChange={(e) => setIngredients(e.target.value)}
-                  placeholder={t('ingredientsPlaceholder') + ` (${t('form.optional')})`}
-                  className="w-full border border-white/[0.08] bg-white/[0.04] text-white placeholder:text-[#8C93A0] min-h-[60px] resize-none pr-10 text-base rounded-xl focus:border-[#FFB800]/50 focus:ring-2 focus:ring-[#FFB800]/20 focus:shadow-[0_0_15px_rgba(255,184,0,0.2)] transition-all duration-300"
+                  placeholder={t('ingredientsPlaceholder')}
+                  className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl focus:border-[#FFB800] focus:shadow-[0_0_15px_rgba(255,184,0,0.2)] focus:outline-none transition-all duration-300"
                 />
                 {ingredients && (
                   <button
@@ -534,11 +530,12 @@ export function HeroSection() {
 
               {/* Benefits */}
               <div className="mb-3 relative">
+                <label className="block text-sm font-medium text-white/80 mb-1.5">{t('productBenefits')}</label>
                 <Textarea
                   value={productBenefits}
                   onChange={(e) => setProductBenefits(e.target.value)}
                   placeholder={t('productBenefitsPlaceholder')}
-                  className="w-full border border-white/[0.08] bg-white/[0.04] text-white placeholder:text-[#8C93A0] min-h-[60px] resize-none pr-10 text-base rounded-xl focus:border-[#FFB800]/50 focus:ring-2 focus:ring-[#FFB800]/20 focus:shadow-[0_0_15px_rgba(255,184,0,0.2)] transition-all duration-300"
+                  className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl focus:border-[#FFB800] focus:shadow-[0_0_15px_rgba(255,184,0,0.2)] focus:outline-none transition-all duration-300"
                 />
                 {productBenefits && (
                   <button
@@ -559,29 +556,31 @@ export function HeroSection() {
                   onClick={handleCheck}
                   disabled={isChecking}
                   variant="outline"
-                  className="w-full sm:flex-1 bg-transparent border border-[#FFB800]/40 text-[#FFB800] hover:bg-[#FFB800]/10 hover:border-[#FFB800]/60 font-semibold min-h-[48px] transition-all duration-200"
+                  className="w-full sm:flex-1 bg-transparent border border-[#FFB800]/50 text-[#FFB800] hover:bg-[#FFB800]/10 hover:border-[#FFB800]/70 font-semibold min-h-[48px] transition-all duration-200"
                 >
                   {isChecking ? t('checking') : t('checkFirst')}
                 </Button>
                 <Button
                   onClick={handleGenerate}
                   disabled={isGenerating}
-                  className="w-full sm:flex-1 bg-gradient-to-r from-[#FFB800] to-[#F59E0B] text-[#0F1419] hover:from-[#F59E0B] hover:to-[#D97706] font-bold shadow-[0_4px_20px_rgba(255,184,0,0.3)] hover:shadow-[0_6px_30px_rgba(255,184,0,0.4)] hover:-translate-y-0.5 transition-all duration-200 active:translate-y-0 min-h-[48px]"
+                  className="w-full sm:flex-1 bg-gradient-to-r from-[#FFB800] to-[#F59E0B] text-[#0F1419] hover:from-[#F59E0B] hover:to-[#D97706] font-bold shadow-[0_4px_24px_rgba(255,184,0,0.35)] hover:shadow-[0_6px_32px_rgba(255,184,0,0.45)] hover:-translate-y-0.5 transition-all duration-200 active:translate-y-0 min-h-[48px]"
                 >
                   {isGenerating ? <><Loader2 className="w-4 h-4 mr-1 animate-spin" /> AI 正在生成...</> : <><Zap className="w-4 h-4 mr-1" /> {t('freeGenerateListing')}</>}
                 </Button>
               </div>
 
-              {/* 信任密度 */}
-              <div className="mt-5 flex flex-wrap items-center justify-center gap-3 text-xs">
-                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/[0.08] bg-white/[0.03] text-white/70">
-                  <Lock className="w-3.5 h-3.5 text-[#FFB800]" /> SSL 加密传输
-                </div>
-                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/[0.08] bg-white/[0.03] text-white/70">
-                  <CreditCard className="w-3.5 h-3.5 text-[#FFB800]" /> 无需信用卡
-                </div>
-                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/[0.08] bg-white/[0.03] text-white/70">
-                  <Users className="w-3.5 h-3.5 text-[#FFB800]" /> 1,200+ 跨境卖家已使用
+              {/* 信任密度 — 独立模块 */}
+              <div className="mt-5 pt-4 border-t border-white/[0.06]">
+                <div className="flex flex-wrap items-center justify-center gap-2 text-xs">
+                  <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.03] text-white">
+                    <Lock className="w-3.5 h-3.5 text-[#FFB800]" /> <span className="font-medium">SSL 加密传输</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.03] text-white">
+                    <CreditCard className="w-3.5 h-3.5 text-[#FFB800]" /> <span className="font-medium">无需信用卡</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.03] text-white">
+                    <Users className="w-3.5 h-3.5 text-[#FFB800]" /> <span className="font-medium">1,200+ 跨境卖家已使用</span>
+                  </div>
                 </div>
               </div>
             </div>
