@@ -485,55 +485,98 @@ function buildIngredientList(input: GenerateListingInput): {
 // Pre-validation sanitization: auto-downgrade AI claim escalations to safer language
 function sanitizeListing(listing: GeneratedListing, input: GenerateListingInput): GeneratedListing {
   const result = { ...listing }
+  const isPortuguese = result.language === 'pt-BR'
+  const isSpanish = result.language === 'es-MX'
+
   const userBenefits = (input.benefits || '').toLowerCase()
   const userIngredients = (input.ingredients || '').toLowerCase()
   const userProductName = input.productName.toLowerCase()
   const userInputCombined = `${userProductName} ${userBenefits} ${userIngredients}`
 
-  // Helper to check if user explicitly mentioned a concept (supports CN + PT + EN)
+  // Helper to check if user explicitly mentioned a concept (supports CN + PT + EN + ES)
   const userMentioned = (patterns: RegExp) => patterns.test(userInputCombined)
 
   // 1. Spot/melasma downgrade: if user didn't mention spots, downgrade AI spot claims
   const hasSpotMentionInInput = /manchas?|melasma|desmanchador|spot|色斑|斑点|痘印|色素|美白|淡斑|祛斑|黄褐斑|雀斑/i.test(userInputCombined)
   if (!hasSpotMentionInInput) {
-    // Downgrade "reduz a aparência de manchas" → "promove a aparência de tom mais uniforme"
-    result.description = result.description.replace(/reduz[ea]?\s+a\s+apar\u00eancia\s+de\s+manchas?/gi, 'promove a apar\u00eancia de tom mais uniforme')
-    result.description = result.description.replace(/diminui[\u00e7c]?\s+as?\s+manchas?/gi, 'ajuda a uniformizar o tom da pele')
-    result.bulletPoints = result.bulletPoints.map(bp =>
-      bp.replace(/reduz[ea]?\s+a\s+apar\u00eancia\s+de\s+manchas?/gi, 'promove a apar\u00eancia de tom mais uniforme')
-        .replace(/diminui[\u00e7c]?\s+as?\s+manchas?/gi, 'ajuda a uniformizar o tom da pele')
-        .replace(/manchas?/gi, 'tom da pele')
-    )
+    if (isPortuguese) {
+      result.description = result.description.replace(/reduz[ea]?\s+a\s+apar\u00eancia\s+de\s+manchas?/gi, 'promove a apar\u00eancia de tom mais uniforme')
+      result.description = result.description.replace(/diminui[\u00e7c]?\s+as?\s+manchas?/gi, 'ajuda a uniformizar o tom da pele')
+      result.bulletPoints = result.bulletPoints.map(bp =>
+        bp.replace(/reduz[ea]?\s+a\s+apar\u00eancia\s+de\s+manchas?/gi, 'promove a apar\u00eancia de tom mais uniforme')
+          .replace(/diminui[\u00e7c]?\s+as?\s+manchas?/gi, 'ajuda a uniformizar o tom da pele')
+          .replace(/manchas?/gi, 'tom da pele')
+      )
+    }
+    if (isSpanish) {
+      result.description = result.description.replace(/reduce\s+la\s+apariencia\s+de\s+manchas?/gi, 'promueve una apariencia de tono m\u00e1s uniforme')
+      result.description = result.description.replace(/disminuye\s+(las?\s+)?manchas?/gi, 'ayuda a uniformizar el tono de la piel')
+      result.bulletPoints = result.bulletPoints.map(bp =>
+        bp.replace(/reduce\s+la\s+apariencia\s+de\s+manchas?/gi, 'promueve una apariencia de tono m\u00e1s uniforme')
+          .replace(/disminuye\s+(las?\s+)?manchas?/gi, 'ayuda a uniformizar el tono de la piel')
+          .replace(/manchas?/gi, 'tono de la piel')
+      )
+    }
   }
 
-  // 2. Intensity downgrade: if user described product as lightweight, downgrade "intensa"
+  // 2. Intensity downgrade: if user described product as lightweight, downgrade "intensa/profunda"
   const hasLightweightInput = /leve|ligeiro|lightweight|fresh|refrescante|n\u00e3o\s+oleoso|轻盈|清爽|不粘腻|不闷|轻透|轻薄|水润|清透|透气|水感/i.test(userInputCombined)
   if (hasLightweightInput) {
-    result.description = result.description.replace(/hidrata\u00e7\u00e3o\s+intensa/gi, 'hidrata\u00e7\u00e3o leve e refrescante')
-    result.description = result.description.replace(/hidrat[aa]\s+intensamente/gi, 'hidrata suavemente')
-    result.description = result.description.replace(/hidratante\s+intensivo/gi, 'hidratante leve')
-    result.bulletPoints = result.bulletPoints.map(bp =>
-      bp.replace(/hidrata\u00e7\u00e3o\s+intensa/gi, 'hidrata\u00e7\u00e3o leve e refrescante')
-        .replace(/hidrat[aa]\s+intensamente/gi, 'hidrata suavemente')
-        .replace(/hidratante\s+intensivo/gi, 'hidratante leve')
-    )
+    if (isPortuguese) {
+      result.description = result.description.replace(/hidrata\u00e7\u00e3o\s+intensa/gi, 'hidrata\u00e7\u00e3o leve e refrescante')
+      result.description = result.description.replace(/hidrat[aa]\s+intensamente/gi, 'hidrata suavemente')
+      result.description = result.description.replace(/hidratante\s+intensivo/gi, 'hidratante leve')
+      result.bulletPoints = result.bulletPoints.map(bp =>
+        bp.replace(/hidrata\u00e7\u00e3o\s+intensa/gi, 'hidrata\u00e7\u00e3o leve e refrescante')
+          .replace(/hidrat[aa]\s+intensamente/gi, 'hidrata suavemente')
+          .replace(/hidratante\s+intensivo/gi, 'hidratante leve')
+      )
+    }
+    if (isSpanish) {
+      result.description = result.description.replace(/hidrataci[\u00f3o]n\s+profunda/gi, 'hidrataci\u00f3n ligera y refrescante')
+      result.description = result.description.replace(/hidrata\s+profundamente/gi, 'hidrata suavemente')
+      result.description = result.description.replace(/hidratante\s+intensivo/gi, 'hidratante ligero')
+      result.bulletPoints = result.bulletPoints.map(bp =>
+        bp.replace(/hidrataci[\u00f3o]n\s+profunda/gi, 'hidrataci\u00f3n ligera y refrescante')
+          .replace(/hidrata\s+profundamente/gi, 'hidrata suavemente')
+          .replace(/hidratante\s+intensivo/gi, 'hidratante ligero')
+      )
+    }
   }
 
-  // 3. Sensitive skin claim downgrade: replace "todos os tipos de pele" with softer variant
-  result.description = result.description.replace(/todos\s+os\s+tipos\s+de\s+pele/gi, 'a maioria dos tipos de pele')
-  result.bulletPoints = result.bulletPoints.map(bp =>
-    bp.replace(/todos\s+os\s+tipos\s+de\s+pele/gi, 'a maioria dos tipos de pele')
-  )
+  // 3. Sensitive skin claim downgrade: replace universal claims with softer variants
+  if (isPortuguese) {
+    result.description = result.description.replace(/todos\s+os\s+tipos\s+de\s+pele/gi, 'a maioria dos tipos de pele')
+    result.bulletPoints = result.bulletPoints.map(bp =>
+      bp.replace(/todos\s+os\s+tipos\s+de\s+pele/gi, 'a maioria dos tipos de pele')
+    )
+  }
+  if (isSpanish) {
+    result.description = result.description.replace(/todos\s+los\s+tipos\s+de\s+piel/gi, 'la mayor\u00eda de los tipos de piel')
+    result.bulletPoints = result.bulletPoints.map(bp =>
+      bp.replace(/todos\s+los\s+tipos\s+de\s+piel/gi, 'la mayor\u00eda de los tipos de piel')
+    )
+  }
 
   // 4. Pore refinement downgrade: if user didn't mention pores, downgrade pore claims
   const hasPoreMentionInInput = /poros?|pore|毛孔|毛孔细致|毛孔收缩|收敛毛孔|收毛孔|毛孔护理/i.test(userInputCombined)
   if (!hasPoreMentionInInput) {
-    result.description = result.description.replace(/refina\s+os\s+poros/gi, 'suaviza a textura da pele')
-    result.description = result.description.replace(/refinando\s+os\s+poros/gi, 'suavizando a textura da pele')
-    result.bulletPoints = result.bulletPoints.map(bp =>
-      bp.replace(/refina\s+os\s+poros/gi, 'suaviza a textura da pele')
-        .replace(/refinando\s+os\s+poros/gi, 'suavizando a textura da pele')
-    )
+    if (isPortuguese) {
+      result.description = result.description.replace(/refina\s+os\s+poros/gi, 'suaviza a textura da pele')
+      result.description = result.description.replace(/refinando\s+os\s+poros/gi, 'suavizando a textura da pele')
+      result.bulletPoints = result.bulletPoints.map(bp =>
+        bp.replace(/refina\s+os\s+poros/gi, 'suaviza a textura da pele')
+          .replace(/refinando\s+os\s+poros/gi, 'suavizando a textura da pele')
+      )
+    }
+    if (isSpanish) {
+      result.description = result.description.replace(/refina\s+los\s+poros/gi, 'suaviza la textura de la piel')
+      result.description = result.description.replace(/refinando\s+los\s+poros/gi, 'suavizando la textura de la piel')
+      result.bulletPoints = result.bulletPoints.map(bp =>
+        bp.replace(/refina\s+los\s+poros/gi, 'suaviza la textura de la piel')
+          .replace(/refinando\s+los\s+poros/gi, 'suavizando la textura de la piel')
+      )
+    }
   }
 
   return result
@@ -825,7 +868,7 @@ ${hasIngredientViolations ? `8. FORMULA HAS REGULATORY ISSUES:
      "title": "Product title (max 200 chars, catchy, keyword-rich, NO ingredient names, NO banned terms)",
      "description": "Engaging product description (2-3 paragraphs, 300-500 chars, NO ingredient names)",
      "bulletPoints": ["5-7 selling points, each 1-2 sentences, benefit-focused, NO ingredient names"],
-     "complianceNotes": ["General regulatory compliance notes (NOT ingredient-specific disclosures)"],
+     "complianceNotes": ["Regulatory compliance statements in third-person declarative form. Use factual product statements (e.g. 'Produto cosm\u00e9tico sem a\u00e7\u00e3o terap\u00eautica' or 'Producto cosm\u00e9tico sin acci\u00f3n terap\u00e9utica'). NEVER use second-person imperative/commands directed at sellers (e.g. 'Aseg\u00farate de', 'No realices', 'Evita', 'Certifique-se de'). These notes appear on the product listing itself, not as seller instructions."],
      "warnings": ["Any compliance warnings"]
    }
 
