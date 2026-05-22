@@ -40,7 +40,11 @@ export function FooterSection() {
                   {t('complianceCheck')}
                 </Link>
               </li>
-              <li>{t('aiListing')}</li>
+              <li>
+                <Link href="/pricing" className="hover:text-white transition-colors">
+                  {t('aiListing')}
+                </Link>
+              </li>
               <li>
                 <Link href="/pricing" className="hover:text-white transition-colors">
                   {t('pricing')}

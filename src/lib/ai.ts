@@ -1117,13 +1117,25 @@ Guidelines:
 4. Reply in the user's language
 5. Remind users this is reference advice; final compliance responsibility lies with the seller. For major legal decisions, recommend consulting a licensed local attorney.`
 
-function getChatSystemPrompt(mode: ChatMode): string {
-  return mode === 'advisor' ? ADVISOR_SYSTEM_PROMPT : SUPPORT_SYSTEM_PROMPT
+function getChatSystemPrompt(mode: ChatMode, locale?: string): string {
+  const basePrompt = mode === 'advisor' ? ADVISOR_SYSTEM_PROMPT : SUPPORT_SYSTEM_PROMPT
+  if (!locale) return basePrompt
+
+  const languageMap: Record<string, string> = {
+    zh: 'Chinese (中文)',
+    en: 'English',
+    'pt-BR': 'Brazilian Portuguese (Português do Brasil)',
+    'es-MX': 'Mexican Spanish (Español de México)',
+  }
+  const languageName = languageMap[locale] || 'the user\'s language'
+
+  return `${basePrompt}\n\nLANGUAGE INSTRUCTION: You must reply in ${languageName}. Do not switch to any other language unless the user explicitly asks you to.`
 }
 
 export async function chatWithAI(
   messages: Array<{ role: 'system' | 'user' | 'assistant'; content: string }>,
-  mode: ChatMode = 'support'
+  mode: ChatMode = 'support',
+  locale?: string
 ): Promise<ReadableStream<Uint8Array>> {
   const primary = getPrimaryProvider()
   const fallback = getFallbackProvider()
@@ -1136,7 +1148,7 @@ export async function chatWithAI(
   currentProvider = primary.provider
   model = primary.model
 
-  const systemPrompt = getChatSystemPrompt(mode)
+  const systemPrompt = getChatSystemPrompt(mode, locale)
   const fullMessages = [
     { role: 'system' as const, content: systemPrompt },
     ...messages,

@@ -732,5 +732,31 @@
       "s7": "<h2 className=\"text-2xl font-bold text-black mb-4\">7. Actualizaciones de este Aviso Legal</h2><p className=\"text-black leading-relaxed\"> Podemos actualizar este aviso legal en cualquier momento. El uso continuo de nuestro servicio constituye aceptación de este aviso legal. </p>",
       "s8": "<h2 className=\"text-2xl font-bold text-black mb-4\">8. Contáctenos</h2><p className=\"text-black leading-relaxed\"> Para preguntas sobre este aviso legal: support@cosmetcheck.com </p>"
     }
+  },
+  "chatWidget": {
+    "aiSupport": "Soporte de IA",
+    "aiAdvisor": "Asesor de Cumplimiento de IA",
+    "advisorSubtitle": "Experto en ANVISA y COFEPRIS",
+    "supportSubtitle": "Soporte al Cliente 24/7",
+    "supportTab": "Soporte",
+    "advisorTab": "Asesor",
+    "proBadge": "Pro",
+    "advisorPlaceholder": "Pregunte sobre regulaciones, ingredientes...",
+    "supportPlaceholder": "Pregunte cualquier cosa...",
+    "advisorWelcome1": "Pregúnteme sobre regulaciones ANVISA/COFEPRIS,",
+    "advisorWelcome2": "cumplimiento de ingredientes o revisiones de anuncios.",
+    "advisorLoginRequired": "El modo Asesor requiere iniciar sesión",
+    "supportWelcome": "¡Hola! ¿En qué puedo ayudarle?",
+    "freeRemaining": "Usuarios gratuitos: {count} conversaciones restantes hoy",
+    "thinking": "Pensando...",
+    "clearChat": "Borrar chat",
+    "todayRemaining": "{count} restantes hoy",
+    "monthRemaining": "{count} restantes este mes",
+    "errorLimit": "Ha alcanzado el límite diario (3 conversaciones). Actualice a Pro para soporte de IA ilimitado.",
+    "errorAdvisorLogin": "El Asesor de Cumplimiento es exclusivo para suscriptores Pro. Actualice para desbloquear asesoría de cumplimiento con IA 1 a 1.",
+    "errorGeneric": "Lo sentimos, algo salió mal. Inténtelo de nuevo.",
+    "errorUnavailable": "Lo sentimos, estoy temporalmente no disponible. Inténtelo de nuevo más tarde.",
+    "errorAdvisorUnavailable": "Lo sentimos, el Asesor de Cumplimiento está temporalmente no disponible. Inténtelo de nuevo más tarde o contacte a soporte.",
+    "viewPricing": "Ver Precios →"
   }
 }

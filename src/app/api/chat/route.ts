@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
       return m
     })
 
-    const stream = await chatWithAI(processedMessages, mode)
+    const stream = await chatWithAI(processedMessages, mode, locale)
 
     return new Response(stream, {
       headers: {

@@ -732,5 +732,31 @@
       "s7": "<h2 className=\"text-2xl font-bold text-black mb-4\">7. 免责声明更新</h2><p className=\"text-black leading-relaxed\"> 我们可能随时更新本免责声明。继续使用我们的服务即表示接受本免责声明。 </p>",
       "s8": "<h2 className=\"text-2xl font-bold text-black mb-4\">8. 联系我们</h2><p className=\"text-black leading-relaxed\"> 如有关于本免责声明的问题：support@cosmetcheck.com </p>"
     }
+  },
+  "chatWidget": {
+    "aiSupport": "AI 客服",
+    "aiAdvisor": "AI 合规顾问",
+    "advisorSubtitle": "ANVISA & COFEPRIS 专家",
+    "supportSubtitle": "24/7 在线客服",
+    "supportTab": "客服",
+    "advisorTab": "顾问",
+    "proBadge": "Pro",
+    "advisorPlaceholder": "咨询法规、成分、Listing 合规...",
+    "supportPlaceholder": "输入您的问题...",
+    "advisorWelcome1": "问我关于 ANVISA/COFEPRIS 法规、",
+    "advisorWelcome2": "成分合规或 Listing 审核的问题。",
+    "advisorLoginRequired": "顾问模式需要登录",
+    "supportWelcome": "您好！有什么可以帮您？",
+    "freeRemaining": "免费用户：今日还可使用 {count} 次",
+    "thinking": "思考中...",
+    "clearChat": "清空对话",
+    "todayRemaining": "今日剩余 {count} 次",
+    "monthRemaining": "本月剩余 {count} 次",
+    "errorLimit": "您已达到每日限制（3 次对话）。升级到 Pro 解锁无限 AI 客服。",
+    "errorAdvisorLogin": "合规顾问仅限 Pro 订阅用户使用。升级以解锁 1 对 1 AI 合规咨询。",
+    "errorGeneric": "抱歉，发生了错误。请重试。",
+    "errorUnavailable": "抱歉，暂时无法提供服务。请稍后重试。",
+    "errorAdvisorUnavailable": "抱歉，合规顾问暂时无法使用。请稍后重试或联系客服。",
+    "viewPricing": "查看价格 →"
   }
 }

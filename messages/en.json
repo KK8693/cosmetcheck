@@ -732,5 +732,31 @@
       "s7": "<h2 className=\"text-2xl font-bold text-black mb-4\">7. Updates to This Disclaimer</h2><p className=\"text-black leading-relaxed\"> We may update this disclaimer at any time. Continued use of our service constitutes acceptance of this disclaimer. </p>",
       "s8": "<h2 className=\"text-2xl font-bold text-black mb-4\">8. Contact</h2><p className=\"text-black leading-relaxed\"> For questions about this disclaimer: support@cosmetcheck.com </p>"
     }
+  },
+  "chatWidget": {
+    "aiSupport": "AI Support",
+    "aiAdvisor": "AI Compliance Advisor",
+    "advisorSubtitle": "Expert in ANVISA & COFEPRIS",
+    "supportSubtitle": "24/7 Customer Support",
+    "supportTab": "Support",
+    "advisorTab": "Advisor",
+    "proBadge": "Pro",
+    "advisorPlaceholder": "Ask about regulations, ingredients...",
+    "supportPlaceholder": "Ask anything...",
+    "advisorWelcome1": "Ask me about ANVISA/COFEPRIS regulations,",
+    "advisorWelcome2": "ingredient compliance, or listing reviews.",
+    "advisorLoginRequired": "Login required for Advisor mode",
+    "supportWelcome": "Hi! How can I help you today?",
+    "freeRemaining": "Free users: {count} chats remaining today",
+    "thinking": "Thinking...",
+    "clearChat": "Clear chat",
+    "todayRemaining": "{count} left today",
+    "monthRemaining": "{count} left this month",
+    "errorLimit": "You have reached the daily limit (3 chats). Upgrade to Pro for unlimited AI support.",
+    "errorAdvisorLogin": "Compliance Advisor is exclusive to Pro subscribers. Upgrade to unlock 1v1 AI compliance consulting.",
+    "errorGeneric": "Sorry, something went wrong. Please try again.",
+    "errorUnavailable": "Sorry, I am temporarily unavailable. Please try again later.",
+    "errorAdvisorUnavailable": "Sorry, the Compliance Advisor is temporarily unavailable. Please try again later or contact support.",
+    "viewPricing": "View Pricing →"
   }
 }

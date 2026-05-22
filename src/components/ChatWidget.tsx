@@ -4,6 +4,7 @@ import { useState, useRef, useEffect, useCallback } from 'react'
 import { MessageCircle, X, Send, Sparkles, Shield, Loader2 } from 'lucide-react'
 import { Link } from '@/i18n/routing'
 import { useAuth } from '@/contexts/AuthContext'
+import { useLocale, useTranslations } from 'next-intl'
 
 interface ChatMessage {
   role: 'user' | 'assistant'
@@ -80,15 +81,6 @@ function getSavedMode(): ChatMode {
   return 'support'
 }
 
-function detectLocale(): string {
-  if (typeof navigator === 'undefined') return 'zh'
-  const lang = navigator.language
-  if (lang.startsWith('pt')) return 'pt-BR'
-  if (lang.startsWith('es')) return 'es-MX'
-  if (lang.startsWith('zh')) return 'zh'
-  return 'en'
-}
-
 export default function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false)
   const [mode, setMode] = useState<ChatMode>(getSavedMode)
@@ -99,6 +91,8 @@ export default function ChatWidget() {
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLTextAreaElement>(null)
   const { user } = useAuth()
+  const locale = useLocale()
+  const t = useTranslations('chatWidget')
 
   // Listen for external open events
   useEffect(() => {
@@ -168,18 +162,14 @@ export default function ChatWidget() {
     // Check support limit for free users
     if (mode === 'support' && isFreeUser) {
       if (effectiveSupportUsage.count >= LIMITS.support.free) {
-        setError(
-          'You have reached the daily limit (3 chats). Upgrade to Pro for unlimited AI support.'
-        )
+        setError(t('errorLimit'))
         return
       }
     }
 
     // Check advisor permission
     if (mode === 'advisor' && isFreeUser) {
-      setError(
-        'Compliance Advisor is exclusive to Pro subscribers. Upgrade to unlock 1v1 AI compliance consulting.'
-      )
+      setError(t('errorAdvisorLogin'))
       return
     }
 
@@ -203,14 +193,14 @@ export default function ChatWidget() {
         body: JSON.stringify({
           messages: newMessages,
           mode,
-          locale: detectLocale(),
+          locale,
         }),
       })
 
       if (!response.ok) {
         if (response.status === 403) {
           const data = await response.json()
-          setError(data.message || 'This feature requires a subscription upgrade.')
+          setError(data.message || t('errorGeneric'))
           setIsLoading(false)
           return
         }
@@ -254,21 +244,21 @@ export default function ChatWidget() {
       }
     } catch (err) {
       console.error('Chat error:', err)
-      setError('Sorry, something went wrong. Please try again.')
+      setError(t('errorGeneric'))
       setMessages((prev) => [
         ...prev,
         {
           role: 'assistant',
           content:
             mode === 'advisor'
-              ? 'Sorry, the Compliance Advisor is temporarily unavailable. Please try again later or contact support.'
-              : 'Sorry, I am temporarily unavailable. Please try again later.',
+              ? t('errorAdvisorUnavailable')
+              : t('errorUnavailable'),
         },
       ])
     } finally {
       setIsLoading(false)
     }
-  }, [input, isLoading, mode, messages, user, isFreeUser, effectiveSupportUsage, effectiveAdvisorUsage])
+  }, [input, isLoading, mode, messages, user, isFreeUser, effectiveSupportUsage, effectiveAdvisorUsage, locale, t])
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
@@ -308,12 +298,12 @@ export default function ChatWidget() {
               )}
               <div>
                 <h3 className="text-sm font-semibold text-white">
-                  {mode === 'advisor' ? 'AI Compliance Advisor' : 'AI Support'}
+                  {mode === 'advisor' ? t('aiAdvisor') : t('aiSupport')}
                 </h3>
                 <p className="text-xs text-gray-400">
                   {mode === 'advisor'
-                    ? 'Expert in ANVISA & COFEPRIS'
-                    : '24/7 Customer Support'}
+                    ? t('advisorSubtitle')
+                    : t('supportSubtitle')}
                 </p>
               </div>
             </div>
@@ -336,7 +326,7 @@ export default function ChatWidget() {
                   : 'text-gray-400 hover:text-gray-200'
               }`}
             >
-              Support
+              {t('supportTab')}
             </button>
             <button
               onClick={() => handleModeSwitch('advisor')}
@@ -347,9 +337,9 @@ export default function ChatWidget() {
               }`}
             >
               <Sparkles className="w-3 h-3" />
-              Advisor
+              {t('advisorTab')}
               <span className="text-[10px] px-1 py-0.5 rounded bg-amber-500/20 text-amber-400">
-                Pro
+                {t('proBadge')}
               </span>
             </button>
           </div>
@@ -361,21 +351,21 @@ export default function ChatWidget() {
                 {mode === 'advisor' ? (
                   <div className="space-y-2">
                     <Shield className="w-8 h-8 mx-auto text-[#00A86B]" />
-                    <p>Ask me about ANVISA/COFEPRIS regulations,</p>
-                    <p>ingredient compliance, or listing reviews.</p>
+                    <p>{t('advisorWelcome1')}</p>
+                    <p>{t('advisorWelcome2')}</p>
                     {!user && (
                       <p className="text-amber-400 text-xs mt-2">
-                        Login required for Advisor mode
+                        {t('advisorLoginRequired')}
                       </p>
                     )}
                   </div>
                 ) : (
                   <div className="space-y-2">
                     <MessageCircle className="w-8 h-8 mx-auto text-[#0A4D8C]" />
-                    <p>Hi! How can I help you today?</p>
+                    <p>{t('supportWelcome')}</p>
                     {isFreeUser && (
                       <p className="text-gray-500 text-xs">
-                        Free users: {supportRemaining} chats remaining today
+                        {t('freeRemaining', { count: supportRemaining })}
                       </p>
                     )}
                   </div>
@@ -410,7 +400,7 @@ export default function ChatWidget() {
               <div className="flex justify-start">
                 <div className="bg-[#252530] rounded-xl px-3 py-2 flex items-center gap-2">
                   <Loader2 className="w-4 h-4 text-gray-400 animate-spin" />
-                  <span className="text-sm text-gray-400">Thinking...</span>
+                  <span className="text-sm text-gray-400">{t('thinking')}</span>
                 </div>
               </div>
             )}
@@ -423,7 +413,7 @@ export default function ChatWidget() {
                     href="/pricing"
                     className="block mt-1 text-[#00A86B] hover:underline"
                   >
-                    View Pricing →
+                    {t('viewPricing')}
                   </Link>
                 )}
               </div>
@@ -442,8 +432,8 @@ export default function ChatWidget() {
                 onKeyDown={handleKeyDown}
                 placeholder={
                   mode === 'advisor'
-                    ? 'Ask about regulations, ingredients...'
-                    : 'Ask anything...'
+                    ? t('advisorPlaceholder')
+                    : t('supportPlaceholder')
                 }
                 className="flex-1 bg-[#252530] text-white text-sm rounded-lg px-3 py-2 resize-none outline-none focus:ring-1 focus:ring-[#0A4D8C] placeholder-gray-500 min-h-[40px] max-h-[100px]"
                 rows={1}
@@ -467,16 +457,16 @@ export default function ChatWidget() {
                 onClick={clearHistory}
                 className="text-xs text-gray-500 hover:text-gray-300 transition-colors cursor-pointer"
               >
-                Clear chat
+                {t('clearChat')}
               </button>
               {mode === 'support' && isFreeUser && (
                 <span className="text-xs text-gray-500">
-                  {supportRemaining} left today
+                  {t('todayRemaining', { count: supportRemaining })}
                 </span>
               )}
               {mode === 'advisor' && user && (
                 <span className="text-xs text-gray-500">
-                  {advisorRemaining} left this month
+                  {t('monthRemaining', { count: advisorRemaining })}
                 </span>
               )}
             </div>
