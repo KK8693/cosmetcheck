@@ -497,7 +497,7 @@ function sanitizeListing(listing: GeneratedListing, input: GenerateListingInput)
   const userMentioned = (patterns: RegExp) => patterns.test(userInputCombined)
 
   // 1. Spot/melasma downgrade: if user didn't mention spots, downgrade AI spot claims
-  const hasSpotMentionInInput = /manchas?|melasma|desmanchador|spot|色斑|斑点|痘印|色素|美白|淡斑|祛斑|黄褐斑|雀斑/i.test(userInputCombined)
+  const hasSpotMentionInInput = /manchas?|melasma|desmanchador|spot|decoloraci[\u00f3o]n|色斑|斑点|痘印|色素|美白|淡斑|祛斑|黄褐斑|雀斑/i.test(userInputCombined)
   if (!hasSpotMentionInInput) {
     if (isPortuguese) {
       result.description = result.description.replace(/reduz[ea]?\s+a\s+apar\u00eancia\s+de\s+manchas?/gi, 'promove a apar\u00eancia de tom mais uniforme')
@@ -511,10 +511,12 @@ function sanitizeListing(listing: GeneratedListing, input: GenerateListingInput)
     if (isSpanish) {
       result.description = result.description.replace(/reduce\s+la\s+apariencia\s+de\s+manchas?/gi, 'promueve una apariencia de tono m\u00e1s uniforme')
       result.description = result.description.replace(/disminuye\s+(las?\s+)?manchas?/gi, 'ayuda a uniformizar el tono de la piel')
+      result.description = result.description.replace(/decoloraci[\u00f3o]n/gi, 'tono desigual')
       result.bulletPoints = result.bulletPoints.map(bp =>
         bp.replace(/reduce\s+la\s+apariencia\s+de\s+manchas?/gi, 'promueve una apariencia de tono m\u00e1s uniforme')
           .replace(/disminuye\s+(las?\s+)?manchas?/gi, 'ayuda a uniformizar el tono de la piel')
           .replace(/manchas?/gi, 'tono de la piel')
+          .replace(/decoloraci[\u00f3o]n/gi, 'tono desigual')
       )
     }
   }
