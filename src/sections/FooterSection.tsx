@@ -63,11 +63,6 @@ export function FooterSection() {
                   {t('contact')}
                 </Link>
               </li>
-              <li>
-                <Link href="/careers" className="hover:text-white transition-colors">
-                  {t('careers')}
-                </Link>
-              </li>
             </ul>
           </div>
 

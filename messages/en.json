@@ -657,6 +657,15 @@
       "monthlyOriginal": "$49"
     }
   },
+  "about": {
+    "title": "About Us",
+    "description": "CosmetCheck is your trusted partner for Latin American beauty compliance. We help cosmetic brands navigate complex regulations in Brazil (ANVISA), Mexico (COFEPRIS), and beyond.",
+    "mission": "Our mission is to simplify market entry for beauty brands through AI-powered compliance checks and automated listing generation."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Need help? Our team is here to assist you. Reach out via email and we'll get back to you within 24 hours."
+  },
   "legal": {
     "privacy": {
       "title": "Privacy Policy",

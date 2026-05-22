@@ -657,6 +657,15 @@
       "monthlyOriginal": "MX$699"
     }
   },
+  "about": {
+    "title": "Nosotros",
+    "description": "CosmetCheck es su socio de confianza para el cumplimiento cosmético en América Latina. Ayudamos a las marcas de belleza a navegar regulaciones complejas en Brasil (ANVISA), México (COFEPRIS) y más allá.",
+    "mission": "Nuestra misión es simplificar la entrada al mercado para marcas de belleza mediante verificaciones de cumplimiento impulsadas por IA y generación automatizada de listings."
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "description": "¿Necesita ayuda? Nuestro equipo está aquí para asistirle. Envíenos un correo electrónico y le responderemos dentro de 24 horas."
+  },
   "legal": {
     "privacy": {
       "title": "Política de Privacidad",

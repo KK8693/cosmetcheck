@@ -657,6 +657,15 @@
       "monthlyOriginal": "$49"
     }
   },
+  "about": {
+    "title": "关于我们",
+    "description": "CosmetCheck 是您值得信赖的拉美美妆合规合作伙伴。我们帮助美妆品牌应对巴西（ANVISA）、墨西哥（COFEPRIS）等地区的复杂法规。",
+    "mission": "我们的使命是通过 AI 驱动的合规检测和自动化 Listing 生成，简化美妆品牌的市场准入流程。"
+  },
+  "contact": {
+    "title": "联系我们",
+    "description": "需要帮助？我们的团队随时为您服务。请发送邮件，我们将在 24 小时内回复。"
+  },
   "legal": {
     "privacy": {
       "title": "隐私政策",
