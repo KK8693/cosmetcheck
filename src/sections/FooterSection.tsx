@@ -70,9 +70,21 @@ export function FooterSection() {
           <div>
             <div className="text-white font-semibold mb-4">{t('resources')}</div>
             <ul className="space-y-2 text-sm">
-              <li>{t('knowledgeBase')}</li>
-              <li>{t('helpCenter')}</li>
-              <li>{t('apiDocs')}</li>
+              <li>
+                <Link href="/faq" className="hover:text-white transition-colors">
+                  {t('knowledgeBase')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-white transition-colors">
+                  {t('helpCenter')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/pricing" className="hover:text-white transition-colors">
+                  {t('apiDocs')}
+                </Link>
+              </li>
             </ul>
           </div>
 

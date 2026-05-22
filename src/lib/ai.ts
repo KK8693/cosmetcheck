@@ -306,6 +306,68 @@ export interface GeneratedListing {
   language: 'pt-BR' | 'es-MX'
 }
 
+// INCI name mapping for common Chinese ingredient names
+// Ensures output uses internationally recognized INCI nomenclature (ANVISA/COFEPRIS compliant)
+const INCI_NAME_MAP: Record<string, string> = {
+  '\u53bb\u79bb\u5b50\u6c34': 'Aqua',
+  '\u6c34': 'Aqua',
+  '\u7518\u6cb9': 'Glycerin',
+  '\u4e19\u4e09\u9187': 'Glycerin',
+  '\u6cdb\u9187': 'Panthenol',
+  '\u7ef4\u751f\u7d20b5': 'Panthenol',
+  '\u900f\u660e\u8d28\u9178\u94a0': 'Sodium Hyaluronate',
+  '\u73bb\u5c3f\u9178': 'Sodium Hyaluronate',
+  '\u79ef\u96ea\u8349\u63d0\u53d6\u7269': 'Centella Asiatica Extract',
+  '\u79ef\u96ea\u8349': 'Centella Asiatica Extract',
+  '\u7eff\u8336\u63d0\u53d6\u7269': 'Camellia Sinensis Leaf Extract',
+  '\u7eff\u8336': 'Camellia Sinensis Leaf Extract',
+  '\u751c\u83dc\u78b1': 'Betaine',
+  '\u4e59\u57fa\u5df1\u57fa\u7518\u6cb9': 'Ethylhexylglycerin',
+  '\u70df\u9170\u80fa': 'Niacinamide',
+  '\u7ef4\u751f\u7d20c': 'Ascorbic Acid',
+  '\u6297\u574f\u8840\u9178': 'Ascorbic Acid',
+  '\u89c6\u9ec4\u9187': 'Retinol',
+  '\u89d2\u9ca8\u70f7': 'Squalane',
+  '\u795e\u7ecf\u9170\u80fa': 'Ceramide',
+  '\u80f6\u539f\u86cb\u767d': 'Collagen',
+  '\u8f85\u9176q10': 'Ubiquinone',
+  '\u80dc\u80bd': 'Peptide',
+  '\u6c28\u57fa\u9178': 'Amino Acids',
+  '\u5c3f\u56ca\u7d20': 'Allantoin',
+  '\u82a6\u8358\u63d0\u53d6\u7269': 'Aloe Barbadensis Leaf Extract',
+  '\u82a6\u8358': 'Aloe Barbadensis Leaf Extract',
+  '\u8336\u6811\u6cb9': 'Melaleuca Alternifolia Leaf Oil',
+  '\u8336\u6811\u7cbe\u6cb9': 'Melaleuca Alternifolia Leaf Oil',
+  '\u6c34\u6768\u9178': 'Salicylic Acid',
+  '\u679c\u9178': 'AHA',
+  '\u4e73\u9178': 'Lactic Acid',
+  '\u718a\u679c\u82f7': 'Arbutin',
+  '\u66f2\u9178': 'Kojic Acid',
+  '\u7518\u8349\u63d0\u53d6\u7269': 'Glycyrrhiza Glabra Root Extract',
+  '\u91d1\u7f05\u6885\u63d0\u53d6\u7269': 'Hamamelis Virginiana Extract',
+  '\u73ab\u7470\u63d0\u53d6\u7269': 'Rosa Damascena Flower Extract',
+  '\u85b0\u8863\u8349\u63d0\u53d6\u7269': 'Lavandula Angustifolia Extract',
+  '\u6d0b\u7518\u83ca\u63d0\u53d6\u7269': 'Chamomilla Recutita Flower Extract',
+  '\u9a6c\u9f7f\u82a5\u63d0\u53d6\u7269': 'Portulaca Oleracea Extract',
+  '\u4e8c\u70c8\u57fa\u7532\u915a': 'BHT',
+  '\u5c3c\u6cca\u91d1\u916f': 'Paraben',
+  '\u5bf9\u7fb3\u57fa\u82ef\u7532\u9178\u916f': 'Paraben',
+  '\u7532\u6c27\u57fa\u82ef\u7532\u9178\u916f\u7532\u916f': 'Methylparaben',
+  '\u7532\u6c27\u57fa\u82ef\u7532\u9178\u916f\u4e19\u916f': 'Propylparaben',
+  '\u82ef\u6c27\u57fa\u4e59\u9187': 'Phenoxyethanol',
+  '\u5361\u6ce2\u59c6': 'Carbomer',
+  '\u4e09\u4e59\u9187\u80fa': 'Triethanolamine',
+  '\u78b3\u9178\u4e8c\u7532\u916f': 'Dimethicone',
+  '\u73af\u4e94\u805a\u4e8c\u7532\u57fa\u7845\u6c27\u70f7': 'Cyclopentasiloxane',
+  '\u767d\u6cb9': 'Mineral Oil',
+  '\u6db2\u4f53\u77f3\u8721': 'Mineral Oil',
+  '\u6843\u80b1\u7ea2\u8272\u7d20': 'CI 16035',
+}
+
+function getIncIName(rawName: string): string {
+  return INCI_NAME_MAP[rawName] || rawName
+}
+
 // Build honest ingredient list directly from code (not AI)
 // This ensures ingredient honesty regardless of AI behavior
 function buildIngredientList(input: GenerateListingInput): {
@@ -323,7 +385,7 @@ function buildIngredientList(input: GenerateListingInput): {
 
   // Parse ingredients string (support Chinese commas, English commas, etc.)
   const rawIngredients = input.ingredients
-    .split(/[,，、;；]/)
+    .split(/[,\uff0c\u3001;\uff1b]/)
     .map(s => s.trim())
     .filter(Boolean)
 
@@ -370,22 +432,24 @@ function buildIngredientList(input: GenerateListingInput): {
   ]
 
   const restrictedKeywords = [
-    'paraben', 'parabeno', 'nipagin', 'nipasol', '尼泊金酯',
-    'retinol', '视黄醇',
+    'paraben', 'parabeno', 'nipagin', 'nipasol', '\u5c3c\u6cca\u91d1\u916f',
+    'retinol', '\u89c6\u9ec4\u9187',
   ]
 
-  for (const ingredient of rawIngredients) {
-    const lower = ingredient.toLowerCase()
+  for (const originalIngredient of rawIngredients) {
+    const lower = originalIngredient.toLowerCase()
+    // Convert to INCI name for display (ANVISA/COFEPRIS compliant labeling)
+    const displayIngredient = getIncIName(originalIngredient)
     let flagged = false
 
     // Check against violation map (from compliance engine)
     for (const [keyword, info] of violationMap) {
       if (lower.includes(keyword)) {
-        const icon = info.severity === 'critical' ? '🔴' : '⚠️'
+        const icon = info.severity === 'critical' ? '\ud83d\udd34' : '\u26a0\ufe0f'
         const prefix = info.isAntibiotic
           ? `${icon} PROIBIDO (antibiótico)`
           : `${icon} PROIBIDO`
-        result.ingredientList.push(`${ingredient} (${prefix}: ${info.message})`)
+        result.ingredientList.push(`${displayIngredient} (${prefix}: ${info.message})`)
         flagged = true
         break
       }
@@ -397,20 +461,20 @@ function buildIngredientList(input: GenerateListingInput): {
       const isRestricted = restrictedKeywords.some(k => lower.includes(k))
 
       if (isProhibited) {
-        result.ingredientList.push(`${ingredient} (🔴 PROIBIDO em cosméticos pela ANVISA)`)
+        result.ingredientList.push(`${displayIngredient} (\ud83d\udd34 PROIBIDO em cosméticos pela ANVISA)`)
       } else if (isRestricted) {
-        result.ingredientList.push(`${ingredient} (⚠️ RESTRITO - verificar concentração)`)
+        result.ingredientList.push(`${displayIngredient} (\u26a0\ufe0f RESTRITO - verificar concentração)`)
       } else {
-        result.ingredientList.push(ingredient)
+        result.ingredientList.push(displayIngredient)
       }
     }
   }
 
   // Generate compliance notes for prohibited ingredients
-  const prohibitedInFormula = result.ingredientList.filter(i => i.includes('🔴 PROIBIDO'))
+  const prohibitedInFormula = result.ingredientList.filter(i => i.includes('\ud83d\udd34 PROIBIDO'))
   if (prohibitedInFormula.length > 0) {
     result.complianceNotes.push(
-      `🔴 PRODUTO NÃO COMERCIALIZÁVEL: A fórmula contém ${prohibitedInFormula.length} ingrediente(s) PROIBIDO(s) pela ANVISA. ` +
+      `\ud83d\udd34 PRODUTO NÃO COMERCIALIZÁVEL: A fórmula contém ${prohibitedInFormula.length} ingrediente(s) PROIBIDO(s) pela ANVISA. ` +
       `Este produto NÃO pode ser vendido no Brasil sem reformulação completa.`
     )
   }
