@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useMemo } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -213,8 +213,13 @@ export function HeroSection() {
   const [generatedListing, setGeneratedListing] = useState<GeneratedListing | null>(null)
   const [generateError, setGenerateError] = useState('')
 
-  // Multi-step progress tracking (P2-16)
-  const [currentStep, setCurrentStep] = useState(1)
+  // Multi-step progress tracking (P2-16) — derived state, no setState in effect
+  const currentStep = useMemo(() => {
+    if (generatedListing || isGenerating) return 3
+    if (checkResult || isChecking) return 2
+    if (productName.trim() || ingredients.trim() || productBenefits.trim()) return 1
+    return 0
+  }, [generatedListing, isGenerating, checkResult, isChecking, productName, ingredients, productBenefits])
   const totalSteps = 3
   const stepLabels = [
     t('step1Label') || 'Input Product Info',
@@ -276,17 +281,6 @@ export function HeroSection() {
   
   // Show loading state while checking
   const isShowingResult = isChecking || resultToShow
-
-  // Auto-update step progress based on user actions
-  useEffect(() => {
-    if (generatedListing || isGenerating) {
-      setCurrentStep(3)
-    } else if (checkResult || isChecking) {
-      setCurrentStep(2)
-    } else if (productName.trim() || ingredients.trim() || productBenefits.trim()) {
-      setCurrentStep(1)
-    }
-  }, [productName, ingredients, productBenefits, checkResult, isChecking, generatedListing, isGenerating])
 
   const handleCheck = async () => {
     // User is running their own check, hide demo result
