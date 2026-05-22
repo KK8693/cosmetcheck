@@ -8,6 +8,7 @@ import { FAQSection } from '@/sections/FAQSection'
 import { FooterCTASection } from '@/sections/FooterCTASection'
 import { FooterSection } from '@/sections/FooterSection'
 import EmailFAB from '@/components/EmailFAB'
+import { HashScrollHandler } from '@/components/HashScrollHandler'
 import { setRequestLocale } from 'next-intl/server'
 
 // Required for Cloudflare Pages
@@ -32,6 +33,7 @@ export default async function HomePage({
 
   return (
     <div className="min-h-screen">
+      <HashScrollHandler />
       <HeroSection />
       <HowItWorksSection />
       <UseCasesSection />

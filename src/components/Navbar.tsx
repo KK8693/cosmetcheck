@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
+import { usePathname } from '@/i18n/routing'
 import { useAuth } from '@/contexts/AuthContext'
 import { Button } from '@/components/ui/button'
 import { Logo } from '@/components/Logo'
@@ -13,10 +14,15 @@ import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 export function Navbar() {
   const t = useTranslations('nav')
   const tCommon = useTranslations('common')
+  const locale = useLocale()
+  const pathname = usePathname()
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [authOpen, setAuthOpen] = useState(false)
   const { user } = useAuth()
+
+  // Check if current page is the home page (pathname excludes locale prefix in next-intl)
+  const isHomePage = pathname === '/'
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,8 +65,14 @@ export function Navbar() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
-              {navLinks.map((link) =>
-                link.isPage ? (
+              {navLinks.map((link) => {
+                // For anchor links on non-home pages, navigate to home page with hash
+                const resolvedHref =
+                  !link.isPage && !isHomePage
+                    ? `/${locale}${link.href}`
+                    : link.href
+
+                return link.isPage ? (
                   <Link
                     key={link.href}
                     href={link.href}
@@ -71,13 +83,13 @@ export function Navbar() {
                 ) : (
                   <a
                     key={link.href}
-                    href={link.href}
+                    href={resolvedHref}
                     className="text-white/70 hover:text-white transition-colors text-sm font-medium"
                   >
                     {link.label}
                   </a>
                 )
-              )}
+              })}
             </div>
 
             {/* Desktop CTA */}
@@ -112,8 +124,14 @@ export function Navbar() {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-[#0D0D12]/98 backdrop-blur-lg border-t border-white/10">
             <div className="container-custom py-4 space-y-3">
-              {navLinks.map((link) =>
-                link.isPage ? (
+              {navLinks.map((link) => {
+                // For anchor links on non-home pages, navigate to home page with hash
+                const resolvedHref =
+                  !link.isPage && !isHomePage
+                    ? `/${locale}${link.href}`
+                    : link.href
+
+                return link.isPage ? (
                   <Link
                     key={link.href}
                     href={link.href}
@@ -125,14 +143,14 @@ export function Navbar() {
                 ) : (
                   <a
                     key={link.href}
-                    href={link.href}
+                    href={resolvedHref}
                     className="block text-white/70 hover:text-white transition-colors py-2 text-sm font-medium"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {link.label}
                   </a>
                 )
-              )}
+              })}
               <div className="py-2">
                 <LanguageSwitcher />
               </div>
