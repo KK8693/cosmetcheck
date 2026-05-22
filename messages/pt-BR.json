@@ -61,11 +61,11 @@
   },
   "nav": {
     "features": "Recursos",
-    "pricing": "Pre\u00e7os",
+    "pricing": "Preços",
     "contact": "Fale Conosco",
     "howItWorks": "Como Funciona",
     "faq": "FAQ",
-    "batch": "Detec\u00e7\u00e3o em Lote"
+    "batch": "Detecção em Lote"
   },
   "hero": {
     "title": "Venda Beleza no Brasil",
@@ -418,7 +418,8 @@
     "regulationBR": "Regulamentação: ANVISA RDC 529/2021 proíbe Hidroquinona em produtos de clareamento",
     "regulationMX": "Regulamentação: COFEPRIS NOM-141 proíbe Hidroquinona em cosméticos comuns",
     "replacedWith": "Substituído por Alpha Arbutin",
-    "compliantNote": "Este produto atende aos requisitos regulatórios da {regulator}"
+    "compliantNote": "Este produto atende aos requisitos regulatórios da {regulator}",
+    "ingredients": "Ingredientes"
   },
   "dispute": {
     "title": "Reportar Falso Positivo / Submeter Dispute",

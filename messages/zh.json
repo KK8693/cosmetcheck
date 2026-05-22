@@ -418,7 +418,8 @@
     "regulationBR": "法规：ANVISA RDC 529/2021 禁止 Hydroquinone 用于美白产品",
     "regulationMX": "法规：COFEPRIS NOM-141 禁用 Hydroquinone 用于普通化妆品",
     "replacedWith": "已替换为 Alpha Arbutin",
-    "compliantNote": "此产品符合 {regulator} 法规要求"
+    "compliantNote": "此产品符合 {regulator} 法规要求",
+    "ingredients": "成分表"
   },
   "dispute": {
     "title": "报告规则误检 / 提交争议",

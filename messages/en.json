@@ -418,7 +418,8 @@
     "regulationBR": "Regulation: ANVISA RDC 529/2021 prohibits Hydroquinone in whitening products",
     "regulationMX": "Regulation: COFEPRIS NOM-141 prohibits Hydroquinone in regular cosmetics",
     "replacedWith": "Replaced with Alpha Arbutin",
-    "compliantNote": "This product meets {regulator} regulatory requirements"
+    "compliantNote": "This product meets {regulator} regulatory requirements",
+    "ingredients": "Ingredients"
   },
   "dispute": {
     "title": "Report False Positive / Submit Dispute",

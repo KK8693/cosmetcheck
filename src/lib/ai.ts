@@ -482,6 +482,63 @@ function buildIngredientList(input: GenerateListingInput): {
   return result
 }
 
+// Pre-validation sanitization: auto-downgrade AI claim escalations to safer language
+function sanitizeListing(listing: GeneratedListing, input: GenerateListingInput): GeneratedListing {
+  const result = { ...listing }
+  const userBenefits = (input.benefits || '').toLowerCase()
+  const userIngredients = (input.ingredients || '').toLowerCase()
+  const userProductName = input.productName.toLowerCase()
+  const userInputCombined = `${userProductName} ${userBenefits} ${userIngredients}`
+
+  // Helper to check if user explicitly mentioned a concept (supports CN + PT + EN)
+  const userMentioned = (patterns: RegExp) => patterns.test(userInputCombined)
+
+  // 1. Spot/melasma downgrade: if user didn't mention spots, downgrade AI spot claims
+  const hasSpotMentionInInput = /manchas?|melasma|desmanchador|spot|色斑|斑点|痘印|色素|美白|淡斑|祛斑|黄褐斑|雀斑/i.test(userInputCombined)
+  if (!hasSpotMentionInInput) {
+    // Downgrade "reduz a aparência de manchas" → "promove a aparência de tom mais uniforme"
+    result.description = result.description.replace(/reduz[ea]?\s+a\s+apar\u00eancia\s+de\s+manchas?/gi, 'promove a apar\u00eancia de tom mais uniforme')
+    result.description = result.description.replace(/diminui[\u00e7c]?\s+as?\s+manchas?/gi, 'ajuda a uniformizar o tom da pele')
+    result.bulletPoints = result.bulletPoints.map(bp =>
+      bp.replace(/reduz[ea]?\s+a\s+apar\u00eancia\s+de\s+manchas?/gi, 'promove a apar\u00eancia de tom mais uniforme')
+        .replace(/diminui[\u00e7c]?\s+as?\s+manchas?/gi, 'ajuda a uniformizar o tom da pele')
+        .replace(/manchas?/gi, 'tom da pele')
+    )
+  }
+
+  // 2. Intensity downgrade: if user described product as lightweight, downgrade "intensa"
+  const hasLightweightInput = /leve|ligeiro|lightweight|fresh|refrescante|n\u00e3o\s+oleoso|轻盈|清爽|不粘腻|不闷|轻透|轻薄|水润|清透|透气|水感/i.test(userInputCombined)
+  if (hasLightweightInput) {
+    result.description = result.description.replace(/hidrata\u00e7\u00e3o\s+intensa/gi, 'hidrata\u00e7\u00e3o leve e refrescante')
+    result.description = result.description.replace(/hidrat[aa]\s+intensamente/gi, 'hidrata suavemente')
+    result.description = result.description.replace(/hidratante\s+intensivo/gi, 'hidratante leve')
+    result.bulletPoints = result.bulletPoints.map(bp =>
+      bp.replace(/hidrata\u00e7\u00e3o\s+intensa/gi, 'hidrata\u00e7\u00e3o leve e refrescante')
+        .replace(/hidrat[aa]\s+intensamente/gi, 'hidrata suavemente')
+        .replace(/hidratante\s+intensivo/gi, 'hidratante leve')
+    )
+  }
+
+  // 3. Sensitive skin claim downgrade: replace "todos os tipos de pele" with softer variant
+  result.description = result.description.replace(/todos\s+os\s+tipos\s+de\s+pele/gi, 'a maioria dos tipos de pele')
+  result.bulletPoints = result.bulletPoints.map(bp =>
+    bp.replace(/todos\s+os\s+tipos\s+de\s+pele/gi, 'a maioria dos tipos de pele')
+  )
+
+  // 4. Pore refinement downgrade: if user didn't mention pores, downgrade pore claims
+  const hasPoreMentionInInput = /poros?|pore|毛孔|毛孔细致|毛孔收缩|收敛毛孔|收毛孔|毛孔护理/i.test(userInputCombined)
+  if (!hasPoreMentionInInput) {
+    result.description = result.description.replace(/refina\s+os\s+poros/gi, 'suaviza a textura da pele')
+    result.description = result.description.replace(/refinando\s+os\s+poros/gi, 'suavizando a textura da pele')
+    result.bulletPoints = result.bulletPoints.map(bp =>
+      bp.replace(/refina\s+os\s+poros/gi, 'suaviza a textura da pele')
+        .replace(/refinando\s+os\s+poros/gi, 'suavizando a textura da pele')
+    )
+  }
+
+  return result
+}
+
 // Post-processing validation: enforce claim-consistency and detect AI hallucinations
 function validateListing(
   listing: GeneratedListing,
@@ -632,7 +689,7 @@ function validateListing(
 
   // 7a. Spot/melasma upgrade: user said "uneven tone" but AI wrote "reduces spots"
   const hasSpotClaimInAI = /manchas?|melasma|desmanchador|clareador\s+de\s+manchas/i.test(allText)
-  const hasSpotMentionInInput = /manchas?|melasma|desmanchador|spot/i.test(userInputCombined)
+  const hasSpotMentionInInput = /manchas?|melasma|desmanchador|spot|色斑|斑点|痘印|色素|美白|淡斑|祛斑|黄褐斑|雀斑/i.test(userInputCombined)
   if (hasSpotClaimInAI && !hasSpotMentionInInput) {
     const spotWarning = `\u26a0\ufe0f UPGRADE DE ALEGA\u00c7\u00c3O: A IA adicionou alega\u00e7\u00f5es sobre "manchas/melasma" que N\u00c3O foram mencionadas na descri\u00e7\u00e3o original do produto. "Uniformizar o tom da pele" N\u00c3O \u00e9 o mesmo que "reduzir manchas". Produtos com alega\u00e7\u00f5es de clareamento de manchas podem exigir registro ESPECIAL na ANVISA.`
     result.warnings = [spotWarning, ...result.warnings]
@@ -641,7 +698,7 @@ function validateListing(
 
   // 7b. Pore refinement upgrade: user said "smooth texture" but AI wrote "refines pores"
   const hasPoreClaimInAI = /refina\s+os\s+poros|refinando\s+os\s+poros|poros\s+dilatados|poros\s+abertos/i.test(allText)
-  const hasPoreMentionInInput = /poros?|pore/i.test(userInputCombined)
+  const hasPoreMentionInInput = /poros?|pore|毛孔|毛孔细致|毛孔收缩|收敛毛孔|收毛孔|毛孔护理/i.test(userInputCombined)
   if (hasPoreClaimInAI && !hasPoreMentionInInput) {
     const poreWarning = `\u26a0\ufe0f UPGRADE DE ALEGA\u00c7\u00c3O: A IA adicionou alega\u00e7\u00f5es sobre "refinamento de poros" que N\u00c3O foram mencionadas na descri\u00e7\u00e3o original. "Melhorar a textura da pele" N\u00c3O \u00e9 o mesmo que "refinar poros". Alega\u00e7\u00f5es de tratamento de poros podem exigir comprova\u00e7\u00e3o adicional.`
     result.warnings = [poreWarning, ...result.warnings]
@@ -650,16 +707,16 @@ function validateListing(
 
   // 7c. Non-comedogenic claim without user input
   const hasNonComedogenicClaim = /n\u00e3o\s+obstrui\s+os\s+poros|n\u00e3o\s+comedog\u00eanico|non-comedogenic|n\u00e3o\s+comedog\u00eanica/i.test(allText)
-  const hasNonComedogenicInput = /n\u00e3o\s+obstrui|n\u00e3o\s+comedog|non-comedogenic|n\u00e3o\s+entope/i.test(userInputCombined)
+  const hasNonComedogenicInput = /n\u00e3o\s+obstrui|n\u00e3o\s+comedog|non-comedogenic|n\u00e3o\s+entope|不堵毛孔|不致痘|非致痘|不闷痘|不堵塞|不闷肤|不闷/i.test(userInputCombined)
   if (hasNonComedogenicClaim && !hasNonComedogenicInput) {
     const ncWarning = `\u26a0\ufe0f ALEGA\u00c7\u00c3O N\u00c3O SUPORTADA: A IA adicionou "n\u00e3o obstrui os poros" / "n\u00e3o comedog\u00eanico" sem que o usu\u00e1rio tenha informado isso. Alega\u00e7\u00f5es de n\u00e3o comedogenicidade requerem testes laboratoriais comprovados.`
     result.warnings = [ncWarning, ...result.warnings]
     console.warn('[AI Validate] \ud83d\udfe1 AI invented non-comedogenic claim without user input')
   }
 
-  // 7d. Intensity escalation: lightweight → intense
+  // 7d. Intensity escalation: lightweight \u2192 intense
   const hasIntenseHydrationClaim = /hidrat[aa]\s+intensamente|hidrata\u00e7\u00e3o\s+intensa|hidratante\s+intensivo/i.test(allText)
-  const hasLightweightInput = /leve|ligeiro|lightweight|fresh|refrescante|n\u00e3o\s+oleoso/i.test(userInputCombined)
+  const hasLightweightInput = /leve|ligeiro|lightweight|fresh|refrescante|n\u00e3o\s+oleoso|轻盈|清爽|不粘腻|不闷|轻透|轻薄|水润|清透|透气|水感/i.test(userInputCombined)
   if (hasIntenseHydrationClaim && hasLightweightInput) {
     const intensityWarning = `\u26a0\ufe0f ESCALA\u00c7\u00c3O DE INTENSIDADE: O usu\u00e1rio descreveu o produto como "leve/refrescante", mas a IA usou "hidrata intensamente". A intensidade da alega\u00e7\u00e3o deve corresponder \u00e0 descri\u00e7\u00e3o original do produto.`
     result.warnings = [intensityWarning, ...result.warnings]
@@ -860,8 +917,9 @@ export async function generateListing(
       warnings: Array.isArray(parsed.warnings) ? parsed.warnings : [],
       language: input.targetCountry === 'BR' ? 'pt-BR' : 'es-MX',
     }
-    // Post-process: enforce claim-consistency
-    return validateListing(rawListing, input)
+    // Post-process: sanitize claim escalations, then enforce claim-consistency
+    const sanitizedListing = sanitizeListing(rawListing, input)
+    return validateListing(sanitizedListing, input)
   } catch (error) {
     // If rate limit and fallback available, try OpenAI
     if (isRateLimitError(error) && fallback && !usedFallback) {
@@ -909,7 +967,8 @@ export async function generateListing(
         warnings: Array.isArray(parsedFallback.warnings) ? parsedFallback.warnings : [],
         language: input.targetCountry === 'BR' ? 'pt-BR' : 'es-MX',
       }
-      return validateListing(rawFallbackListing, input)
+      const sanitizedFallbackListing = sanitizeListing(rawFallbackListing, input)
+      return validateListing(sanitizedFallbackListing, input)
     }
     
     // 增强：非 rate limit 错误也尝试 fallback（如果是严重连接错误或 provider 服务不可用）
@@ -968,7 +1027,8 @@ export async function generateListing(
         warnings: Array.isArray(parsedConn.warnings) ? parsedConn.warnings : [],
         language: input.targetCountry === 'BR' ? 'pt-BR' : 'es-MX',
       }
-      return validateListing(rawConnListing, input)
+      const sanitizedConnListing = sanitizeListing(rawConnListing, input)
+      return validateListing(sanitizedConnListing, input)
     }
     
     // No fallback or not a recoverable error, throw with provider context
