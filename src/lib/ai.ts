@@ -745,6 +745,17 @@ CRITICAL RULES (violating any will cause regulatory penalties):
    - Use only cosmetic claims: moisturizing, cleansing, beautifying, perfuming, protecting
    - Use hedging language: "helps to", "promotes", "assists in", "reduces the appearance of"
 
+7b. CLAIM UPGRADE PROHIBITION (CRITICAL - prevents regulatory escalation):
+   - NEVER add benefits that are NOT explicitly mentioned in the user's original product description
+   - If user mentions "uneven skin tone", do NOT upgrade to "reduces spots/manchas/desmancha"
+   - If user mentions "smooth skin texture", do NOT upgrade to "refines pores/refinando os poros"
+   - If user mentions "lightweight hydration", do NOT upgrade to "intense hydration/hidrata intensamente"
+   - NEVER claim "non-comedogenic" / "does not clog pores" / "n\u00e3o obstrui os poros" unless user explicitly states it
+   - NEVER claim acne-related benefits (anti-acne, prevents pimples) unless user explicitly states it
+   - Match the INTENSITY LEVEL of the original description \u2014 do not escalate mild claims to strong claims
+   - CORRECT: "ajuda a uniformizar a apar\u00eancia do tom da pele" (matches "uneven skin tone")
+   - WRONG: "reduz a apar\u00eancia de manchas e melasma" (upgrades to spots/pigmentation!)
+
 ${hasIngredientViolations ? `8. FORMULA HAS REGULATORY ISSUES:
    - The product formula contains ingredients that are prohibited or restricted by ${regulation}
    - You MUST write marketing copy that does NOT highlight these problematic aspects
