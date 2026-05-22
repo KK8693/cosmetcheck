@@ -4,6 +4,7 @@ import { Logo } from '@/components/Logo'
 import { Link } from '@/i18n/routing'
 import { useTranslations, useLocale } from 'next-intl'
 import { Mail } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 export function FooterSection() {
   const t = useTranslations('footer')
@@ -34,94 +35,107 @@ export function FooterSection() {
           {/* Column 2: Product */}
           <div>
             <div className="text-white font-semibold mb-4">{t('product')}</div>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/pricing" className="hover:text-white transition-colors">
-                  {t('complianceCheck')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/pricing" className="hover:text-white transition-colors">
-                  {t('aiListing')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/pricing" className="hover:text-white transition-colors">
-                  {t('pricing')}
-                </Link>
-              </li>
-            </ul>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <Link href="/pricing" className="group inline-flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                {t('complianceCheck')}
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+            </li>
+            <li>
+              <Link href="/pricing" className="group inline-flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                {t('aiListing')}
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+            </li>
+            <li>
+              <Link href="/pricing" className="group inline-flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                {t('pricing')}
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+            </li>
+          </ul>
           </div>
 
           {/* Column 3: Company */}
           <div>
             <div className="text-white font-semibold mb-4">{t('company')}</div>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/about" className="hover:text-white transition-colors">
-                  {t('aboutUs')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-white transition-colors">
-                  {t('contact')}
-                </Link>
-              </li>
-            </ul>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <Link href="/about" className="group inline-flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                {t('aboutUs')}
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="group inline-flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                {t('contact')}
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+            </li>
+          </ul>
           </div>
 
           {/* Column 4: Resources */}
           <div>
             <div className="text-white font-semibold mb-4">{t('resources')}</div>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/faq" className="hover:text-white transition-colors">
-                  {t('knowledgeBase')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-white transition-colors">
-                  {t('helpCenter')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/pricing" className="hover:text-white transition-colors">
-                  {t('apiDocs')}
-                </Link>
-              </li>
-            </ul>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <Link href="/faq" className="group inline-flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                {t('knowledgeBase')}
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="group inline-flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                {t('helpCenter')}
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+            </li>
+            <li>
+              <Link href="/pricing" className="group inline-flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                {t('apiDocs')}
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+            </li>
+          </ul>
           </div>
 
           {/* Column 5: Legal */}
           <div>
             <div className="text-white font-semibold mb-4">{t('legal')}</div>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/privacy" className="hover:text-white transition-colors">
-                  {t('privacy')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms" className="hover:text-white transition-colors">
-                  {t('terms')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/cookie-policy" className="hover:text-white transition-colors">
-                  {t('cookiePolicy')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/refund" className="hover:text-white transition-colors">
-                  {t('refund')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/disclaimer" className="hover:text-white transition-colors">
-                  {t('disclaimer')}
-                </Link>
-              </li>
-            </ul>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <Link href="/privacy" className="group inline-flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                {t('privacy')}
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+            </li>
+            <li>
+              <Link href="/terms" className="group inline-flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                {t('terms')}
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+            </li>
+            <li>
+              <Link href="/cookie-policy" className="group inline-flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                {t('cookiePolicy')}
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+            </li>
+            <li>
+              <Link href="/refund" className="group inline-flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                {t('refund')}
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+            </li>
+            <li>
+              <Link href="/disclaimer" className="group inline-flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                {t('disclaimer')}
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+            </li>
+          </ul>
           </div>
         </div>
 
