@@ -31,7 +31,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         .from('users')
         .select('quota_used, quota_limit')
         .eq('id', userId)
-        .maybeSingle()
+        .maybeSingle() as { data: { quota_used: number; quota_limit: number } | null; error: Error | null }
 
         if (error) {
           console.warn('Failed to fetch quota:', error)
