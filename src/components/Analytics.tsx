@@ -1,3 +1,4 @@
+// src/components/Analytics.tsx
 import Script from "next/script";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
@@ -25,8 +26,6 @@ function GA4Script() {
 
 export default function Analytics() {
   return (
-    <>
-      <GA4Script />
-    </>
+    <GA4Script />
   );
 }
