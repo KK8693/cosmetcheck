@@ -155,9 +155,6 @@ export default function PricingContent() {
                 {proCard.recommend}
               </div>
               <CardContent className="p-6 md:p-8">
-                <div className="inline-block rounded-full bg-[#0A4D8C]/30 px-3 py-1 text-xs font-bold text-[#00A86B] mb-4">
-                  {proCard.badge}
-                </div>
                 <h3 className="text-xl font-bold text-white mb-2">{proCard.name}</h3>
                 <div className="flex items-baseline mb-2">
                   {yearly ? (
@@ -309,9 +306,6 @@ export default function PricingContent() {
       {/* CTA */}
       <section className="py-12 md:py-20 bg-gradient-to-br from-[#0A4D8C] via-[#1E6BB8] to-[#00A86B] text-white text-center">
         <div className="container-custom">
-          <div className="mb-4 inline-flex items-center rounded-full bg-red-500 px-4 py-1.5 text-xs font-bold text-white shadow-lg animate-bounce">
-            {cta.badge}
-          </div>
           <h2 className="text-3xl font-bold md:text-4xl mb-4 text-white">{cta.title}</h2>
           <p className="text-lg text-white/90 mb-8 max-w-xl mx-auto">
             {cta.subtitle}

@@ -113,9 +113,6 @@ export function PricingSection() {
             {/* Urgency pulse bar */}
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-400 via-red-500 to-red-400 animate-pulse" />
             <CardContent className="p-8">
-              <div className="inline-block rounded-full bg-red-900/30 px-3 py-1 text-xs font-bold text-red-400 mb-4 animate-pulse">
-                {t('pro.badge')}
-              </div>
               <h3 className="text-xl font-bold text-white mb-2">{t('pro.name')}</h3>
               <div className="flex items-baseline mb-2">
                 <span className="text-lg text-gray-500 line-through mr-2">{t('pro.priceOriginal')}</span>

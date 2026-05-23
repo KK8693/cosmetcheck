@@ -51,9 +51,6 @@ export function FooterCTASection() {
   return (
     <section className="py-12 md:py-20 bg-[#1A1A24] text-white">
       <div className="container-custom text-center">
-        <div className="mb-4 inline-flex items-center rounded-full bg-[#FFB800] px-4 py-1.5 text-xs font-bold text-[#0F1419] shadow-lg animate-bounce">
-          {t('badge')}
-        </div>
         <h2 className="text-3xl font-bold md:text-4xl mb-4 max-w-lg mx-auto">
           {t('title')}
         </h2>

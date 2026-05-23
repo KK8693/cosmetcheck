@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { ChevronDown, Mail } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
 
@@ -20,8 +20,6 @@ export function FAQSection() {
 
   const currentItems = categories[activeCategory]?.items || {}
   const itemKeys = Object.keys(currentItems)
-
-  const emailHref = 'mailto:support@cosmetcheck.com?subject=Support%20Request'
 
   return (
     <section id="faq" className="py-20 bg-[#0F1419]">
@@ -86,16 +84,6 @@ export function FAQSection() {
           ))}
         </div>
 
-        {/* Email CTA */}
-        <div className="flex justify-center">
-          <a
-            href={emailHref}
-            className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold hover:from-blue-600 hover:to-blue-700 transition-all duration-200 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40"
-          >
-            <Mail className="w-5 h-5" />
-            {t('emailContact')}
-          </a>
-        </div>
       </div>
     </section>
   )

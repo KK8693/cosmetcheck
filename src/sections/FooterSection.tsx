@@ -2,14 +2,11 @@
 
 import { Logo } from '@/components/Logo'
 import { Link } from '@/i18n/routing'
-import { useTranslations, useLocale } from 'next-intl'
-import { Mail } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { ArrowRight } from 'lucide-react'
 
 export function FooterSection() {
   const t = useTranslations('footer')
-
-  const emailHref = 'mailto:support@cosmetcheck.com?subject=Support%20Request'
 
   return (
     <footer className="bg-[#08080C] text-gray-400 py-12">
@@ -23,13 +20,6 @@ export function FooterSection() {
               <span className="text-white font-bold text-xl">CosmetCheck</span>
             </div>
             <p className="text-sm">{t('tagline')}</p>
-            <a
-              href={emailHref}
-              className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-medium hover:bg-blue-600 transition-colors"
-            >
-              <Mail className="w-4 h-4" />
-              Email
-            </a>
           </div>
 
           {/* Column 2: Product */}

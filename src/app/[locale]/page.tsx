@@ -7,7 +7,6 @@ import { PricingSection } from '@/sections/PricingSection'
 import { FAQSection } from '@/sections/FAQSection'
 import { FooterCTASection } from '@/sections/FooterCTASection'
 import { FooterSection } from '@/sections/FooterSection'
-import EmailFAB from '@/components/EmailFAB'
 import { HashScrollHandler } from '@/components/HashScrollHandler'
 import { setRequestLocale } from 'next-intl/server'
 
@@ -43,7 +42,6 @@ export default async function HomePage({
       <FAQSection />
       <FooterCTASection />
       <FooterSection />
-      <EmailFAB />
     </div>
   )
 }

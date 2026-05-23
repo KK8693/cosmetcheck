@@ -9,7 +9,7 @@ import { Logo } from '@/components/Logo'
 import { setRequestLocale } from 'next-intl/server'
 import { useTranslations } from 'next-intl'
 import { FooterSection } from '@/sections/FooterSection'
-import EmailFAB from '@/components/EmailFAB'
+import { HashScrollHandler } from '@/components/HashScrollHandler'
 
 export const metadata: Metadata = {
   title: 'CosmetCheck Brasil - Verificação de Conformidade ANVISA para Cosméticos',
@@ -343,7 +343,6 @@ export default function BrasilPage() {
       </section>
 
       <FooterSection />
-      <EmailFAB />
     </div>
   )
 }

@@ -357,8 +357,7 @@
           }
         }
       }
-    },
-    "emailContact": "Have more questions? Email us"
+    }
   },
   "footer": {
     "tagline": "Latin America Beauty Compliance Expert — Simplifying Your Market Entry",
@@ -648,7 +647,6 @@
       ]
     },
     "cta": {
-      "badge": "Get 5 free Pro checks this month",
       "title": "Still have questions?",
       "subtitle": "Try 10 checks free first. Upgrade only if you find it useful. Zero risk, cancel anytime.",
       "button": "Start Free Check",
