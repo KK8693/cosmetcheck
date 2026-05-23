@@ -532,7 +532,7 @@ const zhRegulations: RegulationDictionary = {
   },
   'BR-CLAIM-003': {
     message: `防晞产品必须标明SPF和UVA/UVB防护。禁止使用'完全防护'或'无需补涂'等绝对化宣称（RDC 907/2024）。`,
-    suggestion: '包含SPF值和UVA/UVB标识。避免绝对防护宣称。',
+    suggestion: 'SPF值必须显示在包装正面（painel frontal），并配有UVA圈标。避免绝对防护宣称。防晞需单独向ANVISA注册。',
   },
   'BR-CLAIM-004': {
     message: '化妆品不得声称防脱发或促进生发。这些宣称需要ANVISA药品注册。',
@@ -584,7 +584,7 @@ const zhRegulations: RegulationDictionary = {
   },
   'BR-CLAIM-016': {
     message: '宣称适用于婴儿、孕妇需要明确标注适用年龄和特殊状况警告。婴儿产品需要单独注册。',
-    suggestion: '获得婴儿产品注册，或去除婴儿/孕妇宣称。',
+    suggestion: '婴儿产品必须标注 PRODUTO INFANTIL，标明适用年龄段（如 "Para crianças de 0 a 3 anos"），并包含 SAC 联系方式。孕妇产品必须标注 "Não recomendado para gestantes sem orientação médica"。获得婴儿产品注册或去除婴儿/孕妇宣称。',
   },
   'BR-CLAIM-017': {
     message: `避免使用'100%天然'、'无化学成分'等绝对化用语。天然宣称需要有效认证。`,
@@ -749,7 +749,7 @@ const zhRegulations: RegulationDictionary = {
   },
   'BR-LBL-004': {
     message: '巴西要求标签上标注制造商/经销商名称和地址。',
-    suggestion: '在标签上添加制造商名称、CNPJ和完整地址。',
+    suggestion: '在标签上添加制造商名称、CNPJ和完整地址。进口产品必须显示进口商名称、CNPJ、地址及SAC联系方式（电话/电子邮件/网站）。',
   },
   'BR-LBL-005': {
     message: '必须使用INCI命名法标注成分表。',
@@ -777,7 +777,7 @@ const zhRegulations: RegulationDictionary = {
   },
   'BR-LBL-011': {
     message: '产品必须显示使用警告/注意事项。',
-    suggestion: '添加相关警告（如"避免接触眼睛"、"置于儿童接触不到的地方"）。',
+    suggestion: '添加相关警告（如"避免接触眼睛"、"置于儿童接触不到的地方"）。巴西必须包含"仅限外用"（Uso externo / Uso tópico）和"如发生不良反应，停止使用并咨询医生"（Em caso de irritação, suspender o uso e procurar orientação médica）。',
   },
   'MX-CLM-001': {
     message: '抗衰老（anti-aging）宣称在墨西哥被视为药品类宣称。',
