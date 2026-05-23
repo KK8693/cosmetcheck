@@ -180,7 +180,12 @@
     "andMorePlatforms": "等平台",
     "step1Label": "输入信息",
     "step2Label": "AI 检测",
-    "step3Label": "生成文案"
+    "step3Label": "生成文案",
+    "trustBadges": {
+      "sslEncryption": "SSL 加密传输",
+      "noCreditCard": "无需信用卡",
+      "usersCount": "1,200+ 跨境卖家已使用"
+    }
   },
   "howItWorks": {
     "title": "三步完成合规检测",
@@ -315,45 +320,69 @@
     "title": "常见问题",
     "categories": {
       "general": {
-        "label": "通用",
+        "label": "\u901a\u7528",
         "items": {
           "1": {
-            "q": "支持哪些国家/地区？",
-            "a": "当前支持巴西（ANVISA）和墨西哥（COFEPRIS）的合规检测。Listing生成适配 Amazon、Mercado Livre、Shopee 等平台格式。"
+            "q": "\u652f\u6301\u54ea\u4e9b\u56fd\u5bb6/\u5730\u533a\uff1f",
+            "a": "\u5f53\u524d\u652f\u6301\u5df4\u897f\uff08ANVISA\uff09\u548c\u58a8\u897f\u54e5\uff08COFEPRIS\uff09\u7684\u5408\u89c4\u68c0\u6d4b\u3002Listing\u751f\u6210\u9002\u914d Amazon\u3001Mercado Livre\u3001Shopee \u7b49\u5e73\u53f0\u683c\u5f0f\u3002"
           },
           "2": {
-            "q": "检测结果准确吗？",
-            "a": "我们基于官方法规文档训练，定期更新规则库。对于复杂产品，提供人工复核通道。"
+            "q": "\u68c0\u6d4b\u7ed3\u679c\u51c6\u786e\u5417\uff1f",
+            "a": "\u6211\u4eec\u57fa\u4e8e\u5b98\u65b9\u6cd5\u89c4\u6587\u6863\u8bad\u7ec3\uff0c\u5b9a\u671f\u66f4\u65b0\u89c4\u5219\u5e93\u3002\u5bf9\u4e8e\u590d\u6742\u4ea7\u54c1\uff0c\u63d0\u4f9b\u4eba\u5de5\u590d\u6838\u901a\u9053\u3002"
+          },
+          "8": {
+            "q": "\u751f\u6210\u7684 Listing \u53ef\u4ee5\u76f4\u63a5\u4e0a\u67b6\u5417\uff1f",
+            "a": "AI \u751f\u6210\u7684 Listing \u5df2\u7ecf\u8fc7\u5408\u89c4\u8fc7\u6ee4\uff0c\u4f46\u5efa\u8bae\u60a8\u5728\u4e0a\u67b6\u524d\u8fdb\u884c\u6700\u7ec8\u5ba1\u6838\u3002\u6211\u4eec\u63d0\u4f9b\u7684\u662f\u9ad8\u8d28\u91cf\u8349\u7a3f\uff0c\u60a8\u53ef\u4ee5\u6839\u636e\u5b9e\u9645\u9700\u6c42\u8fdb\u884c\u5fae\u8c03\u3002"
+          },
+          "9": {
+            "q": "\u652f\u6301\u54ea\u4e9b\u7535\u5546\u5e73\u53f0\uff1f",
+            "a": "\u5f53\u524d\u652f\u6301 Amazon Brazil/Mexico\u3001Mercado Livre\u3001Shopee Brazil/Mexico\u3001Magalu \u7b49\u4e3b\u6d41\u5e73\u53f0\u7684 Listing \u683c\u5f0f\u3002\u6211\u4eec\u6301\u7eed\u6269\u5c55\u5e73\u53f0\u652f\u6301\u3002"
           }
         }
       },
       "pricing": {
-        "label": "价格与套餐",
+        "label": "\u4ef7\u683c\u4e0e\u5957\u9910",
         "items": {
           "3": {
-            "q": "如何收费？",
-            "a": "免费版每月10次检测，专业版 $29/月无限次。检测API按次计费，适合批量场景。"
+            "q": "\u5982\u4f55\u6536\u8d39\uff1f",
+            "a": "\u514d\u8d39\u7248\u6bcf\u670810\u6b21\u68c0\u6d4b\uff0c\u4e13\u4e1a\u7248 $29/\u6708\u65e0\u9650\u6b21\u3002\u68c0\u6d4bAPI\u6309\u6b21\u8ba1\u8d39\uff0c\u9002\u5408\u6279\u91cf\u573a\u666f\u3002"
           },
           "4": {
-            "q": "有免费试用吗？",
-            "a": "有的！每月可免费使用10次合规模检测。无需信用卡。"
+            "q": "\u6709\u514d\u8d39\u8bd5\u7528\u5417\uff1f",
+            "a": "\u6709\u7684\uff01\u6bcf\u6708\u53ef\u514d\u8d39\u4f7f\u752810\u6b21\u5408\u89c4\u6a21\u68c0\u6d4b\u3002\u65e0\u9700\u4fe1\u7528\u5361\u3002"
           },
           "5": {
-            "q": "可以退款吗？",
-            "a": "专业版提供7天无理由退款。联系客服即可申请。"
+            "q": "\u53ef\u4ee5\u9000\u6b3e\u5417\uff1f",
+            "a": "\u4e13\u4e1a\u7248\u63d0\u4f9b7\u5929\u65e0\u7406\u7531\u9000\u6b3e\u3002\u8054\u7cfb\u5ba2\u670d\u5373\u53ef\u7533\u8bf7\u3002"
+          },
+          "10": {
+            "q": "\u5982\u4f55\u53d6\u6d88\u8ba2\u9605\uff1f",
+            "a": "\u60a8\u53ef\u4ee5\u968f\u65f6\u5728\u8d26\u6237\u8bbe\u7f6e\u4e2d\u53d6\u6d88\u8ba2\u9605\u3002\u53d6\u6d88\u540e\u5f53\u6708\u4ecd\u53ef\u4f7f\u7528\u5df2\u4ed8\u8d39\u670d\u52a1\uff0c\u4e0b\u4e2a\u8d26\u5355\u5468\u671f\u4e0d\u4f1a\u7eed\u8d39\u3002"
+          },
+          "11": {
+            "q": "Pro \u7248\u6709\u4f7f\u7528\u9650\u5236\u5417\uff1f",
+            "a": "Pro \u7248\u63d0\u4f9b\u65e0\u9650\u6b21\u5355\u6b21\u68c0\u6d4b\u548c AI Listing \u751f\u6210\u3002\u6279\u91cf\u68c0\u6d4b\u529f\u80fd\u4ec5\u9650 Pro \u5e74\u4ed8\u7528\u6237\u4f7f\u7528\uff0c\u6708\u4ed8\u7528\u6237\u53ef\u5347\u7ea7\u81f3\u5e74\u4ed8\u89e3\u9501\u3002"
           }
         }
       },
       "technical": {
-        "label": "技术问题",
+        "label": "\u6280\u672f\u95ee\u9898",
         "items": {
           "6": {
-            "q": "可以检测哪些成分？",
-            "a": "我们支持所有化妆品成分检测，包括美白成分、防腐剂、香精等。我们的数据库覆盖超过10,000种成分。"
+            "q": "\u53ef\u4ee5\u68c0\u6d4b\u54ea\u4e9b\u6210\u5206\uff1f",
+            "a": "\u6211\u4eec\u652f\u6301\u6240\u6709\u5316\u5986\u54c1\u6210\u5206\u68c0\u6d4b\uff0c\u5305\u62ec\u7f8e\u767d\u6210\u5206\u3001\u9632\u8150\u5242\u3001\u9999\u7cbe\u7b49\u3002\u6211\u4eec\u7684\u6570\u636e\u5e93\u8986\u76d6\u8d85\u8fc710,000\u79cd\u6210\u5206\u3002"
           },
           "7": {
-            "q": "检测需要多长时间？",
-            "a": "大多数检测在5秒内完成。批量CSV文件处理约1分钟处理100个产品。"
+            "q": "\u68c0\u6d4b\u9700\u8981\u591a\u957f\u65f6\u95f4\uff1f",
+            "a": "\u5927\u591a\u6570\u68c0\u6d4b\u57285\u79d2\u5185\u5b8c\u6210\u3002\u6279\u91cfCSV\u6587\u4ef6\u5904\u7406\u7ea61\u5206\u949f\u5904\u7406100\u4e2a\u4ea7\u54c1\u3002"
+          },
+          "12": {
+            "q": "\u6211\u7684\u6570\u636e\u5b89\u5168\u5417\uff1f",
+            "a": "\u6211\u4eec\u4f7f\u7528 SSL \u52a0\u5bc6\u4f20\u8f93\u6240\u6709\u6570\u636e\uff0c\u4e0d\u4f1a\u5c06\u60a8\u7684\u4ea7\u54c1\u4fe1\u606f\u7528\u4e8e\u8bad\u7ec3 AI \u6a21\u578b\u6216\u5171\u4eab\u7ed9\u7b2c\u4e09\u65b9\u3002\u8be6\u60c5\u8bf7\u53c2\u9605\u9690\u79c1\u653f\u7b56\u3002"
+          },
+          "13": {
+            "q": "\u5982\u4f55\u66f4\u65b0\u4ea7\u54c1\u4fe1\u606f\uff1f",
+            "a": "\u767b\u5f55\u540e\u53ef\u5728\u5386\u53f2\u8bb0\u5f55\u4e2d\u67e5\u770b\u5e76\u91cd\u65b0\u68c0\u6d4b\u5df2\u6709\u4ea7\u54c1\u3002\u4fee\u6539\u4ea7\u54c1\u4fe1\u606f\u540e\u53ef\u76f4\u63a5\u91cd\u65b0\u68c0\u6d4b\uff0c\u7cfb\u7edf\u4f1a\u81ea\u52a8\u66f4\u65b0\u68c0\u6d4b\u7ed3\u679c\u3002"
           }
         }
       }

@@ -208,11 +208,6 @@ export default function PricingContent() {
                         <span className={isClickable ? 'group-hover:underline' : ''}>
                           {item}
                         </span>
-                        {isClickable && (
-                          <span className="ml-2 text-xs text-[#00A86B] opacity-0 group-hover:opacity-100 transition-opacity">
-                            → AI
-                          </span>
-                        )}
                       </li>
                     )
                   })}

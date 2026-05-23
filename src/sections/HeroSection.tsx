@@ -584,7 +584,7 @@ export function HeroSection() {
                   disabled={isGenerating}
                   className="w-full sm:flex-1 bg-gradient-to-r from-[#FFB800] to-[#F59E0B] text-[#0F1419] hover:from-[#F59E0B] hover:to-[#D97706] font-bold shadow-[0_4px_24px_rgba(255,184,0,0.35)] hover:shadow-[0_6px_32px_rgba(255,184,0,0.45)] hover:-translate-y-0.5 transition-all duration-200 active:translate-y-0 min-h-[48px]"
                 >
-                  {isGenerating ? <><Loader2 className="w-4 h-4 mr-1 animate-spin" /> AI 正在生成...</> : <><Zap className="w-4 h-4 mr-1" /> {t('freeGenerateListing')}</>}
+                  {isGenerating ? <><Loader2 className="w-4 h-4 mr-1 animate-spin" /> {t('generating')}</> : <><Zap className="w-4 h-4 mr-1" /> {t('freeGenerateListing')}</>}
                 </Button>
               </div>
 
@@ -592,13 +592,13 @@ export function HeroSection() {
               <div className="mt-5 pt-4 border-t border-white/[0.06]">
                 <div className="flex flex-wrap items-center justify-center gap-2 text-xs">
                   <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.03] text-white">
-                    <Lock className="w-3.5 h-3.5 text-[#FFB800]" /> <span className="font-medium">SSL 加密传输</span>
+                    <Lock className="w-3.5 h-3.5 text-[#FFB800]" /> <span className="font-medium">{t('trustBadges.sslEncryption')}</span>
                   </div>
                   <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.03] text-white">
-                    <CreditCard className="w-3.5 h-3.5 text-[#FFB800]" /> <span className="font-medium">无需信用卡</span>
+                    <CreditCard className="w-3.5 h-3.5 text-[#FFB800]" /> <span className="font-medium">{t('trustBadges.noCreditCard')}</span>
                   </div>
                   <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.03] text-white">
-                    <Users className="w-3.5 h-3.5 text-[#FFB800]" /> <span className="font-medium">1,200+ 跨境卖家已使用</span>
+                    <Users className="w-3.5 h-3.5 text-[#FFB800]" /> <span className="font-medium">{t('trustBadges.usersCount')}</span>
                   </div>
                 </div>
               </div>

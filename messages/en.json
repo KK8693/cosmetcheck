@@ -180,7 +180,12 @@
     "andMorePlatforms": "and more",
     "step1Label": "Input Info",
     "step2Label": "AI Check",
-    "step3Label": "Get Listing"
+    "step3Label": "Generate Copy",
+    "trustBadges": {
+      "sslEncryption": "SSL Encrypted",
+      "noCreditCard": "No Credit Card",
+      "usersCount": "1,200+ Sellers Using"
+    }
   },
   "howItWorks": {
     "title": "Complete Compliance Check in 3 Steps",
@@ -324,6 +329,14 @@
           "2": {
             "q": "How accurate are the check results?",
             "a": "We train on official regulation documents and update the rule library regularly. For complex products, we offer manual review."
+          },
+          "8": {
+            "q": "Can I publish the generated Listing directly?",
+            "a": "AI-generated Listings are compliance-filtered, but we recommend a final review before publishing. We provide high-quality drafts that you can fine-tune as needed."
+          },
+          "9": {
+            "q": "Which e-commerce platforms are supported?",
+            "a": "Currently supports Amazon Brazil/Mexico, Mercado Livre, Shopee Brazil/Mexico, Magalu and other major platforms. We continuously expand platform support."
           }
         }
       },
@@ -341,6 +354,14 @@
           "5": {
             "q": "Can I get a refund?",
             "a": "We offer a 7-day money-back guarantee for Pro plans. Contact our support team."
+          },
+          "10": {
+            "q": "How do I cancel my subscription?",
+            "a": "You can cancel anytime in your account settings. You'll retain access until the end of your current billing period. No further charges will apply."
+          },
+          "11": {
+            "q": "Are there any usage limits on Pro?",
+            "a": "Pro offers unlimited single checks and AI Listing generation. Batch detection is exclusively available for Pro Annual subscribers; monthly users can upgrade to Annual to unlock it."
           }
         }
       },
@@ -354,6 +375,14 @@
           "7": {
             "q": "How long does a check take?",
             "a": "Most checks complete in under 5 seconds. Batch processing for CSV files takes ~1 minute per 100 products."
+          },
+          "12": {
+            "q": "Is my data secure?",
+            "a": "We use SSL encryption for all data transmission. Your product information is never used to train AI models or shared with third parties. See our Privacy Policy for details."
+          },
+          "13": {
+            "q": "How do I update product information?",
+            "a": "After logging in, you can view and re-check existing products in your history. Modify product details and re-check directly — the system will automatically update results."
           }
         }
       }
