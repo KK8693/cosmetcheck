@@ -609,6 +609,319 @@ const zhRegulations: RegulationDictionary = {
     message: `禁止'100%有效'等绝对效果保证。功效因人而异。请改用'效果可能因人而异'或'坚持使用效果最佳'。`,
     suggestion: `去除绝对保证。添加：'效果可能因人而异'。`,
   },
+
+  'BR-CLM-001': {
+    message: '抗衰老（anti-aging）宣称被视为药品类宣称，需要药品注册。',
+    suggestion: '使用"有助于减少细纹外观"替代"抗衰老"。',
+  },
+  'BR-CLM-002': {
+    message: '祛皱宣称被视为治疗性宣称，需要科学证明。',
+    suggestion: '使用"有助于改善皮肤外观"替代明确的祛皱宣称。',
+  },
+  'BR-CLM-003': {
+    message: '美白/淡斑宣称需要特殊注册（药品类别）。',
+    suggestion: '使用"提亮"或"均匀肤色"替代美白宣称。',
+  },
+  'BR-CLM-004': {
+    message: '"治疗"（treats）暗示治疗意图——化妆品禁止此类宣称。',
+    suggestion: '仅使用化妆品宣称："帮助维持"、"有助于"。',
+  },
+  'BR-CLM-005': {
+    message: '祛疤宣称需要药品注册。',
+    suggestion: '不得宣称祛疤。使用"有助于改善皮肤外观"。',
+  },
+  'BR-CLM-006': {
+    message: '瘦身/燃脂宣称属于药品类宣称，被禁止。',
+    suggestion: '身体产品使用"有助于改善皮肤质地"。',
+  },
+  'BR-CLM-007': {
+    message: '抗橘皮组织宣称需要科学证明，可能被视为药品类宣称。',
+    suggestion: '使用"有助于改善皮肤外观"或"有助于减少外观"。',
+  },
+  'BR-CLM-008': {
+    message: '永久效果宣称需要证明，通常具有误导性。',
+    suggestion: '不得宣称永久效果。使用"帮助维持"或"持久"。',
+  },
+  'BR-CLM-009': {
+    message: '临床宣称需要科学依据，不能暗示药品功效。',
+    suggestion: '使用"经测试"或"经皮肤科测试"替代"临床结果"。',
+  },
+  'BR-CLM-010': {
+    message: '皮肤科医生背书宣称需要证明文件。',
+    suggestion: '若宣称经皮肤科医生测试，确保存在临床证据。',
+  },
+  'BR-ING-008': {
+    message: '维A酸（Retinoic Acid）属于药品级成分，在巴西化妆品中禁止使用。',
+    suggestion: '去除维A酸。若使用，产品必须按药品向ANVISA注册。',
+  },
+  'BR-ING-009': {
+    message: '砷（Arsenic）及其化合物被ANVISA禁止用于化妆品。',
+    suggestion: '从配方中去除砷化合物。',
+  },
+  'BR-ING-010': {
+    message: '镉（Cadmium）及其化合物被ANVISA禁止用于化妆品。',
+    suggestion: '从配方中去除镉化合物。',
+  },
+  'BR-ING-011': {
+    message: '倍他米松（Betamethasone）属于皮质类固醇，禁止用于化妆品。',
+    suggestion: '去除皮质类固醇——产品必须按药品注册。',
+  },
+  'BR-ING-012': {
+    message: '氢化可的松（Hydrocortisone）属于皮质类固醇，禁止用于化妆品。',
+    suggestion: '去除皮质类固醇——产品必须按药品注册。',
+  },
+  'BR-ING-013': {
+    message: '汞化合物（如氯化汞、氧化汞）禁止用于化妆品。',
+    suggestion: '去除所有汞化合物。使用替代防腐剂。',
+  },
+  'BR-ING-014': {
+    message: '氢醌禁止用于化妆品美白（RDC 907/2024）。',
+    suggestion: '去除氢醌。使用替代美白成分如α-熊果苷。',
+  },
+  'BR-ING-015': {
+    message: '果酸（AHAs）受限制——浓度有限制（洗去型最高10%，驻留型最高4%）。',
+    suggestion: '确保果酸浓度符合RDC 907/2024限值。',
+  },
+  'BR-ING-016': {
+    message: '水杨酸浓度受限制（驻留型产品最高2%）。',
+    suggestion: '确保驻留型产品水杨酸不超过2%。',
+  },
+  'BR-ING-017': {
+    message: '类视黄醇（视黄醇、视黄醇棕榈酸酯、维A酸）在化妆品中受限制。',
+    suggestion: '确保视黄醇浓度不超过0.05%（5000 IU/g）。维A酸需要医疗处方。',
+  },
+  'BR-ING-018': {
+    message: '三氯卡班（Triclocarban）在巴西化妆品中禁止。',
+    suggestion: '去除三氯卡班。使用替代抗菌剂。',
+  },
+  'BR-ING-019': {
+    message: '三氯生（Triclosan）在化妆品中受限制——禁止用于驻留型产品。',
+    suggestion: '仅可用于洗去型产品，最高0.3%。禁止用于驻留型。',
+  },
+  'BR-ING-020': {
+    message: '甲醛释放体受限制。最大甲醛释放量0.2%。',
+    suggestion: '确保甲醛释放不超过0.2%。使用替代防腐剂。',
+  },
+  'BR-ING-021': {
+    message: '滑石粉（Talco）在化妆品中需要纯度验证——婴儿产品必须有无石棉认证。',
+    suggestion: '确保滑石粉无石棉。婴儿产品ANVISA需要特定认证。',
+  },
+  'BR-ING-022': {
+    message: '砷及其化合物禁止用于化妆品。',
+    suggestion: '从配方中去除所有砷化合物。',
+  },
+  'BR-ING-023': {
+    message: '镉及其化合物禁止用于化妆品。',
+    suggestion: '从配方中去除所有镉化合物。',
+  },
+  'BR-ING-024': {
+    message: '六氯酚（Hexachlorophene）禁止用于化妆品。',
+    suggestion: '去除六氯酚。使用替代防腐剂。',
+  },
+  'BR-ING-025': {
+    message: '硫双二氯酚（Bithionol）禁止用于化妆品。',
+    suggestion: '去除硫双二氯酚。使用替代防腐剂。',
+  },
+  'BR-ING-026': {
+    message: '维A酸（Tretinoin）属于药品级成分，在巴西化妆品中禁止。',
+    suggestion: '去除维A酸。若使用，产品必须按药品向ANVISA注册。',
+  },
+  'BR-LBL-001': {
+    message: '化妆品不得声称药用或治疗性功效。',
+    suggestion: '从产品宣称中去除"治疗"、"治愈"、"药用"等术语。',
+  },
+  'BR-LBL-002': {
+    message: '化妆品不得声称治愈、治疗或预防疾病。',
+    suggestion: '仅使用化妆品宣称（保湿、清洁、美化）。',
+  },
+  'BR-LBL-003': {
+    message: '"100%天然"宣称需要证明和特定注册。',
+    suggestion: '除非有认证，否则去除绝对化宣称。使用"含天然成分"。',
+  },
+  'BR-LBL-004': {
+    message: '巴西要求标签上标注制造商/经销商名称和地址。',
+    suggestion: '在标签上添加制造商名称、CNPJ和完整地址。',
+  },
+  'BR-LBL-005': {
+    message: '必须使用INCI命名法标注成分表。',
+    suggestion: '以INCI标准格式包含完整成分表。',
+  },
+  'BR-LBL-006': {
+    message: '在巴西销售的产品需要ANVISA注册号。',
+    suggestion: '商业化前获得ANVISA注册。',
+  },
+  'BR-LBL-007': {
+    message: '产品必须在标签上显示批号。',
+    suggestion: '添加批号以实现可追溯性。',
+  },
+  'BR-LBL-008': {
+    message: '产品必须显示有效期（PAO：开封后保质期）。',
+    suggestion: '添加有效期或PAO符号。',
+  },
+  'BR-LBL-009': {
+    message: '产品必须显示净含量（体积/重量）。',
+    suggestion: '以公制单位（mL、g等）添加净含量。',
+  },
+  'BR-LBL-010': {
+    message: '进口产品必须显示进口商信息。',
+    suggestion: '添加进口商名称、CNPJ和完整地址。',
+  },
+  'BR-LBL-011': {
+    message: '产品必须显示使用警告/注意事项。',
+    suggestion: '添加相关警告（如"避免接触眼睛"、"置于儿童接触不到的地方"）。',
+  },
+  'MX-CLM-001': {
+    message: '抗衰老（anti-aging）宣称在墨西哥被视为药品类宣称。',
+    suggestion: '使用"ayuda a reducir la apariencia de líneas de expresión"。',
+  },
+  'MX-CLM-002': {
+    message: '祛皱宣称需要科学证明。',
+    suggestion: '使用"ayuda a mejorar la apariencia de la piel"。',
+  },
+  'MX-CLM-003': {
+    message: '美白宣称在墨西哥需要药品注册。',
+    suggestion: '使用"aclarante"或"iluminador"替代"blanqueador"。',
+  },
+  'MX-CLM-004': {
+    message: '"治疗"（treats）暗示治疗意图——化妆品禁止此类宣称。',
+    suggestion: '仅使用化妆品宣称。',
+  },
+  'MX-CLM-005': {
+    message: '祛疤宣称需要药品注册。',
+    suggestion: '不得宣称祛疤。',
+  },
+  'MX-CLM-006': {
+    message: '瘦身/燃脂宣称在墨西哥被禁止。',
+    suggestion: '身体产品使用"ayuda a mejorar la textura de la piel"。',
+  },
+  'MX-CLM-007': {
+    message: '抗橘皮组织宣称需要科学证明。',
+    suggestion: '使用"ayuda a mejorar la apariencia de la piel"。',
+  },
+  'MX-CLM-008': {
+    message: '永久效果宣称需要证明。',
+    suggestion: '不得宣称永久效果。',
+  },
+  'MX-CLM-009': {
+    message: '临床宣称需要科学依据。',
+    suggestion: '使用"testado dermatológicamente"替代"clínico"。',
+  },
+  'MX-CLM-010': {
+    message: '皮肤科医生背书宣称需要证明文件。',
+    suggestion: '若宣称经皮肤科医生测试，确保存在临床证据。',
+  },
+  'MX-ING-006': {
+    message: '对羟基苯甲酸酯（Parabens）受限制——浓度有限制。',
+    suggestion: '验证对羟基苯甲酸酯浓度符合NOM限值。',
+  },
+  'MX-ING-007': {
+    message: '视黄醇（Retinol）浓度在化妆品中受限制。',
+    suggestion: '确保视黄醇浓度在允许限值内。',
+  },
+  'MX-ING-008': {
+    message: '维A酸（Retinoic Acid）属于药品级成分，在墨西哥化妆品中禁止。',
+    suggestion: '去除维A酸。若使用，产品必须按药品注册。',
+  },
+  'MX-ING-009': {
+    message: '砷（Arsenic）及其化合物被COFEPRIS禁止用于化妆品。',
+    suggestion: '从配方中去除砷化合物。',
+  },
+  'MX-ING-010': {
+    message: '镉（Cadmium）及其化合物被COFEPRIS禁止用于化妆品。',
+    suggestion: '从配方中去除镉化合物。',
+  },
+  'MX-ING-011': {
+    message: '倍他米松（Betamethasone）属于皮质类固醇，禁止用于化妆品。',
+    suggestion: '去除皮质类固醇——产品必须按药品注册。',
+  },
+  'MX-ING-012': {
+    message: '氢化可的松（Hydrocortisone）属于皮质类固醇，禁止用于化妆品。',
+    suggestion: '去除皮质类固醇——产品必须按药品注册。',
+  },
+  'MX-ING-013': {
+    message: '三氯卡班（Triclocarban）在墨西哥化妆品中禁止。',
+    suggestion: '去除三氯卡班。使用替代抗菌剂。',
+  },
+  'MX-ING-014': {
+    message: '三氯生（Triclosan）在化妆品中受限制——禁止用于驻留型产品。',
+    suggestion: '仅可用于洗去型产品，最高0.3%。禁止用于驻留型。',
+  },
+  'MX-ING-015': {
+    message: '甲醛在美甲产品中禁止，在其他产品中受限制。',
+    suggestion: '确保甲醛不作为成分使用。防腐剂中最高0.2%。',
+  },
+  'MX-ING-016': {
+    message: '六氯酚（Hexachlorophene）禁止用于化妆品。',
+    suggestion: '去除六氯酚。使用替代防腐剂。',
+  },
+  'MX-ING-017': {
+    message: '硫双二氯酚（Bithionol）禁止用于化妆品。',
+    suggestion: '去除硫双二氯酚。使用替代防腐剂。',
+  },
+  'MX-ING-018': {
+    message: '维A酸（Tretinoin）属于药品级成分，在墨西哥化妆品中禁止。',
+    suggestion: '去除维A酸。若使用，产品必须按药品向COFEPRIS注册。',
+  },
+  'MX-LBL-001': {
+    message: '化妆品不得声称药用或治疗性功效。',
+    suggestion: '去除治疗性宣称。仅使用化妆品宣称。',
+  },
+  'MX-LBL-002': {
+    message: '化妆品不得声称治愈、治疗或预防疾病。',
+    suggestion: '去除疾病相关宣称。',
+  },
+  'MX-LBL-003': {
+    message: '墨西哥要求标签上标注制造商/进口商名称和地址。',
+    suggestion: '以西班牙语添加制造商名称和地址。',
+  },
+  'MX-LBL-004': {
+    message: '必须使用INCI命名法标注成分表。',
+    suggestion: '以INCI标准格式包含完整成分表。',
+  },
+  'MX-LBL-005': {
+    message: '在墨西哥销售的产品需要COFEPRIS注册。',
+    suggestion: '商业化前获得COFEPRIS注册。',
+  },
+  'MX-LBL-006': {
+    message: '防晒产品必须在标签上显示SPF值（NOM-141要求）。',
+    suggestion: '在标签上添加SPF值。无SPF值海关可能扣留产品。',
+  },
+  'MX-LBL-007': {
+    message: '防晒产品必须在标签上显示SPF值（NOM-141要求）。',
+    suggestion: '在标签上添加SPF值。无SPF值海关可能扣留产品。',
+  },
+  'MX-LBL-008': {
+    message: '验证SPF值是否在标签上清晰显示。',
+    suggestion: 'SPF必须显示在包装正面板上。',
+  },
+  'MX-LBL-009': {
+    message: '验证SPF（FPS）值是否在标签上清晰显示。',
+    suggestion: 'SPF/FPS必须显示在包装正面板上。',
+  },
+  'MX-LBL-010': {
+    message: '防晒产品必须在标签上显示SPF值。',
+    suggestion: '在标签上添加SPF。无SPF海关可能扣留产品。',
+  },
+  'MX-LBL-011': {
+    message: '产品必须在标签上显示批号。',
+    suggestion: '添加批号以实现可追溯性。',
+  },
+  'MX-LBL-012': {
+    message: '产品必须显示有效期（PAO：开封后保质期）。',
+    suggestion: '添加有效期或PAO符号。',
+  },
+  'MX-LBL-013': {
+    message: '产品必须显示净含量（体积/重量）。',
+    suggestion: '以公制单位（mL、g等）添加净含量。',
+  },
+  'MX-LBL-014': {
+    message: '进口产品必须显示进口商信息。',
+    suggestion: '添加进口商名称、地址和RFC。',
+  },
+  'MX-LBL-015': {
+    message: '产品必须显示使用警告/注意事项。',
+    suggestion: '添加相关警告（如"避免接触眼睛"、"置于儿童接触不到的地方"）。',
+  },
 }
 
 // Brazilian Portuguese translations
