@@ -401,7 +401,7 @@ export function HeroSection() {
 
             {/* Logo 墙 — 弧形排列 + SVG 图标 + 玻璃态底板 */}
             <div className="mb-6">
-              <p className="text-xs text-white/70 uppercase tracking-widest mb-3 font-bold">
+              <p className="text-sm text-white/70 uppercase tracking-widest mb-3 font-bold">
                 {t('trustedBy')}
               </p>
               <div 
@@ -429,8 +429,12 @@ export function HeroSection() {
               </div>
             </div>
 
-            <p className="mx-auto mb-6 max-w-full md:max-w-2xl text-lg text-white/90 md:text-xl">
-              {t('subtitleShort')}
+            <p className="mx-auto mb-6 max-w-full md:max-w-2xl text-lg md:text-xl">
+              {t('subtitleShort').split('\n').map((line, i) => (
+                <span key={i} className={`block ${i === 0 ? 'text-white/90' : 'text-white/60'}`}>
+                  {line}
+                </span>
+              ))}
             </p>
 
             {/* Multi-step Progress Bar (P2-16) — 文字放在虚线下方 */}
@@ -492,63 +496,69 @@ export function HeroSection() {
               </div>
 
               {/* Product Name */}
-              <div className="mb-3 relative">
+              <div className="mb-3">
                 <label className="block text-sm font-medium text-white/80 mb-1.5">{t('productName')}</label>
-                <Textarea
-                  value={productName}
-                  onChange={(e) => setProductName(e.target.value)}
-                  placeholder={t('productNamePlaceholder')}
-                  className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl hover:border-[#FFB800]/30 hover:shadow-[0_0_10px_rgba(255,184,0,0.08)] hover:scale-[1.01] focus:border-[#FFB800] focus:shadow-[0_0_20px_rgba(255,184,0,0.25)] focus:outline-none focus:scale-[1.01] transition-all duration-300"
-                />
-                {productName && (
-                  <button
-                    type="button"
-                    onClick={() => setProductName('')}
-                    className="absolute right-3 top-3 text-white/50 hover:text-white/80 transition-colors"
-                  >
-                    <X className="w-4 h-4" />
-                  </button>
-                )}
+                <div className="relative">
+                  <Textarea
+                    value={productName}
+                    onChange={(e) => setProductName(e.target.value)}
+                    placeholder={t('productNamePlaceholder')}
+                    className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl hover:border-[#FFB800]/30 hover:shadow-[0_0_10px_rgba(255,184,0,0.08)] hover:scale-[1.01] focus:border-[#FFB800] focus:shadow-[0_0_20px_rgba(255,184,0,0.25)] focus:outline-none focus:scale-[1.01] transition-all duration-300"
+                  />
+                  {productName && (
+                    <button
+                      type="button"
+                      onClick={() => setProductName('')}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-white/50 hover:text-white/80 transition-colors"
+                    >
+                      <X className="w-4 h-4" />
+                    </button>
+                  )}
+                </div>
               </div>
 
               {/* Ingredients */}
-              <div className="mb-3 relative">
+              <div className="mb-3">
                 <label className="block text-sm font-medium text-white/80 mb-1.5">{t('ingredients')} <span className="text-white/40 font-normal">({t('form.optional')})</span></label>
-                <Textarea
-                  value={ingredients}
-                  onChange={(e) => setIngredients(e.target.value)}
-                  placeholder={t('ingredientsPlaceholder')}
-                  className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl hover:border-[#FFB800]/30 hover:shadow-[0_0_10px_rgba(255,184,0,0.08)] hover:scale-[1.01] focus:border-[#FFB800] focus:shadow-[0_0_20px_rgba(255,184,0,0.25)] focus:outline-none focus:scale-[1.01] transition-all duration-300"
-                />
-                {ingredients && (
-                  <button
-                    type="button"
-                    onClick={() => setIngredients('')}
-                    className="absolute right-3 top-3 text-white/50 hover:text-white/80 transition-colors"
-                  >
-                    <X className="w-4 h-4" />
-                  </button>
-                )}
+                <div className="relative">
+                  <Textarea
+                    value={ingredients}
+                    onChange={(e) => setIngredients(e.target.value)}
+                    placeholder={t('ingredientsPlaceholder')}
+                    className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl hover:border-[#FFB800]/30 hover:shadow-[0_0_10px_rgba(255,184,0,0.08)] hover:scale-[1.01] focus:border-[#FFB800] focus:shadow-[0_0_20px_rgba(255,184,0,0.25)] focus:outline-none focus:scale-[1.01] transition-all duration-300"
+                  />
+                  {ingredients && (
+                    <button
+                      type="button"
+                      onClick={() => setIngredients('')}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-white/50 hover:text-white/80 transition-colors"
+                    >
+                      <X className="w-4 h-4" />
+                    </button>
+                  )}
+                </div>
               </div>
 
               {/* Benefits */}
-              <div className="mb-3 relative">
+              <div className="mb-3">
                 <label className="block text-sm font-medium text-white/80 mb-1.5">{t('productBenefits')}</label>
-                <Textarea
-                  value={productBenefits}
-                  onChange={(e) => setProductBenefits(e.target.value)}
-                  placeholder={t('productBenefitsPlaceholder')}
-                  className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl hover:border-[#FFB800]/30 hover:shadow-[0_0_10px_rgba(255,184,0,0.08)] hover:scale-[1.01] focus:border-[#FFB800] focus:shadow-[0_0_20px_rgba(255,184,0,0.25)] focus:outline-none focus:scale-[1.01] transition-all duration-300"
-                />
-                {productBenefits && (
-                  <button
-                    type="button"
-                    onClick={() => setProductBenefits('')}
-                    className="absolute right-3 top-3 text-white/50 hover:text-white/80 transition-colors"
-                  >
-                    <X className="w-4 h-4" />
-                  </button>
-                )}
+                <div className="relative">
+                  <Textarea
+                    value={productBenefits}
+                    onChange={(e) => setProductBenefits(e.target.value)}
+                    placeholder={t('productBenefitsPlaceholder')}
+                    className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl hover:border-[#FFB800]/30 hover:shadow-[0_0_10px_rgba(255,184,0,0.08)] hover:scale-[1.01] focus:border-[#FFB800] focus:shadow-[0_0_20px_rgba(255,184,0,0.25)] focus:outline-none focus:scale-[1.01] transition-all duration-300"
+                  />
+                  {productBenefits && (
+                    <button
+                      type="button"
+                      onClick={() => setProductBenefits('')}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-white/50 hover:text-white/80 transition-colors"
+                    >
+                      <X className="w-4 h-4" />
+                    </button>
+                  )}
+                </div>
               </div>
 
               {checkError && <p className="text-red-300 text-sm mb-2">{checkError}</p>}
