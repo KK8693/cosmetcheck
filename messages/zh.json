@@ -394,7 +394,18 @@
     "loginSuccess": "登录成功！",
     "registerSuccess": "注册成功！请登录",
     "loginFailed": "登录失败",
-    "registerFailed": "注册失败"
+    "registerFailed": "注册失败",
+    "emailInvalid": "请输入有效的邮箱地址",
+    "emailRequired": "请输入邮箱地址",
+    "passwordRequired": "请输入密码",
+    "passwordHint": "至少6个字符",
+    "resetPassword": "重置密码",
+    "resetSent": "重置链接已发送到您的邮箱，请查收",
+    "createAccount": "创建账户",
+    "sendResetLink": "发送重置链接",
+    "processing": "处理中...",
+    "backToLogin": "返回登录",
+    "operationFailed": "操作失败"
   },
   "demo": {
     "title": "3步拦截风险 → 生成合规 Listing",

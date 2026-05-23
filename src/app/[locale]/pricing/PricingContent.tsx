@@ -262,7 +262,10 @@ export default function PricingContent() {
                       {f.pro === '✓' ? (
                         <Check className="w-5 h-5 text-[#00A86B] mx-auto" />
                       ) : (
-                        <span className="text-gray-300 text-sm font-medium">{f.pro}</span>
+                        <span className="text-gray-300 text-sm font-medium flex items-center justify-center gap-1">
+                          <Check className="w-4 h-4 text-[#00A86B] flex-shrink-0" />
+                          {f.pro}
+                        </span>
                       )}
                     </td>
                   </tr>

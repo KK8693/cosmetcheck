@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { useAuth } from '@/contexts/AuthContext'
 import { CheckCircle, XCircle } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 interface AuthModalProps {
   open: boolean
@@ -24,6 +25,7 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
   const [emailValid, setEmailValid] = useState<boolean | null>(null)
 
   const { signIn, signUp, resetPassword } = useAuth()
+  const t = useTranslations('auth')
 
   const validateEmail = (value: string) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -40,23 +42,38 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
     e.preventDefault()
     setError('')
     setSuccess('')
+
+    // Manual validation: empty form feedback
+    if (!email.trim()) {
+      setError(t('emailRequired') || '请输入邮箱地址')
+      return
+    }
+    if (emailValid === false) {
+      setError(t('emailInvalid') || '请输入有效的邮箱地址')
+      return
+    }
+    if (!isForgotPassword && !password.trim()) {
+      setError(t('passwordRequired') || '请输入密码')
+      return
+    }
+
     setLoading(true)
 
     try {
       if (isForgotPassword) {
         await resetPassword(email)
-        setSuccess('重置链接已发送到您的邮箱，请查收')
+        setSuccess(t('resetSent') || '重置链接已发送到您的邮箱，请查收')
       } else if (isSignUp) {
         await signUp(email, password)
-        setSuccess('注册成功！请登录')
+        setSuccess(t('registerSuccess'))
         setIsSignUp(false)
       } else {
         await signIn(email, password)
-        setSuccess('登录成功！')
+        setSuccess(t('loginSuccess'))
         setTimeout(() => onOpenChange(false), 1000)
       }
     } catch (err: Error | unknown) {
-      setError(err instanceof Error ? err.message : '操作失败')
+      setError(err instanceof Error ? err.message : (t('operationFailed') || '操作失败'))
     } finally {
       setLoading(false)
     }
@@ -79,15 +96,15 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
   }
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
+    <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>
             {isForgotPassword 
-              ? '重置密码' 
+              ? t('resetPassword') || '重置密码'
               : isSignUp 
-                ? '创建账户' 
-                : '登录'}
+                ? t('createAccount') || '创建账户'
+                : t('login')}
           </DialogTitle>
         </DialogHeader>
 
@@ -100,10 +117,10 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
           )}
 
           <div className="space-y-2 relative">
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="auth-email">{t('email')}</Label>
             <div className="relative">
               <Input
-                id="email"
+                id="auth-email"
                 type="email"
                 placeholder="you@example.com"
                 value={email}
@@ -119,18 +136,18 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
               )}
             </div>
             {emailValid === false && (
-              <p className="text-xs text-red-400">Please enter a valid email address</p>
+              <p className="text-xs text-red-400">{t('emailInvalid') || '请输入有效的邮箱地址'}</p>
             )}
           </div>
 
           {/* Password field - hide when in forgot password mode */}
           {!isForgotPassword && (
             <div className="space-y-2">
-              <Label htmlFor="password">密码</Label>
+              <Label htmlFor="auth-password">{t('password')}</Label>
               <Input
-                id="password"
+                id="auth-password"
                 type="password"
-                placeholder="至少6个字符"
+                placeholder={t('passwordHint') || '至少6个字符'}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required={!isForgotPassword}
@@ -145,35 +162,35 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
             disabled={loading}
           >
             {loading 
-              ? '处理中...' 
+              ? (t('processing') || '处理中...')
               : isForgotPassword 
-                ? '发送重置链接' 
+                ? (t('sendResetLink') || '发送重置链接')
                 : isSignUp 
-                  ? '创建账户' 
-                  : '登录'}
+                  ? t('createAccount') || '创建账户'
+                  : t('login')}
           </Button>
 
           <div className="text-center text-sm text-gray-500">
             {isSignUp ? (
               <>
-                <span className="text-gray-500">已有账户？</span>{' '}
+                <span className="text-gray-500">{t('hasAccount') || '已有账户？'}</span>{' '}
                 <button
                   type="button"
                   className="text-[#0A4D8C] hover:underline font-medium"
-                  onClick={() => { setIsSignUp(false); setError(''); setSuccess('') }}
+                  onClick={(e) => { e.preventDefault(); e.stopPropagation(); setIsSignUp(false); setError(''); setSuccess('') }}
                 >
-                  登录
+                  {t('login')}
                 </button>
               </>
             ) : (
               <>
-                <span className="text-gray-500">没有账户？</span>{' '}
+                <span className="text-gray-500">{t('noAccount') || '没有账户？'}</span>{' '}
                 <button
                   type="button"
                   className="text-[#0A4D8C] hover:underline font-medium"
-                  onClick={() => { setIsSignUp(true); setError(''); setSuccess('') }}
+                  onClick={(e) => { e.preventDefault(); e.stopPropagation(); setIsSignUp(true); setError(''); setSuccess('') }}
                 >
-                  注册
+                  {t('register') || '注册'}
                 </button>
               </>
             )}
@@ -185,9 +202,9 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
               <button
                 type="button"
                 className="text-[#0A4D8C] hover:underline"
-                onClick={() => { setIsForgotPassword(true); setError(''); setSuccess('') }}
+                onClick={(e) => { e.preventDefault(); e.stopPropagation(); setIsForgotPassword(true); setError(''); setSuccess('') }}
               >
-                忘记密码？
+                {t('forgotPassword')}
               </button>
             </div>
           )}
@@ -198,9 +215,9 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
               <button
                 type="button"
                 className="text-[#0A4D8C] hover:underline font-medium"
-                onClick={() => { setIsForgotPassword(false); setError(''); setSuccess('') }}
+                onClick={(e) => { e.preventDefault(); e.stopPropagation(); setIsForgotPassword(false); setError(''); setSuccess('') }}
               >
-                返回登录
+                {t('backToLogin') || '返回登录'}
               </button>
             </div>
           )}

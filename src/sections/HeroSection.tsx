@@ -497,9 +497,11 @@ export function HeroSection() {
 
               {/* Product Name */}
               <div className="mb-3">
-                <label className="block text-sm font-medium text-white/80 mb-1.5">{t('productName')}</label>
+                <label htmlFor="product-name" className="block text-sm font-medium text-white/80 mb-1.5">{t('productName')}</label>
                 <div className="relative">
                   <Textarea
+                    id="product-name"
+                    name="product-name"
                     value={productName}
                     onChange={(e) => setProductName(e.target.value)}
                     placeholder={t('productNamePlaceholder')}
@@ -519,9 +521,11 @@ export function HeroSection() {
 
               {/* Ingredients */}
               <div className="mb-3">
-                <label className="block text-sm font-medium text-white/80 mb-1.5">{t('ingredients')} <span className="text-white/40 font-normal">({t('form.optional')})</span></label>
+                <label htmlFor="product-ingredients" className="block text-sm font-medium text-white/80 mb-1.5">{t('ingredients')} <span className="text-white/40 font-normal">({t('form.optional')})</span></label>
                 <div className="relative">
                   <Textarea
+                    id="product-ingredients"
+                    name="product-ingredients"
                     value={ingredients}
                     onChange={(e) => setIngredients(e.target.value)}
                     placeholder={t('ingredientsPlaceholder')}
@@ -541,9 +545,11 @@ export function HeroSection() {
 
               {/* Benefits */}
               <div className="mb-3">
-                <label className="block text-sm font-medium text-white/80 mb-1.5">{t('productBenefits')}</label>
+                <label htmlFor="product-benefits" className="block text-sm font-medium text-white/80 mb-1.5">{t('productBenefits')}</label>
                 <div className="relative">
                   <Textarea
+                    id="product-benefits"
+                    name="product-benefits"
                     value={productBenefits}
                     onChange={(e) => setProductBenefits(e.target.value)}
                     placeholder={t('productBenefitsPlaceholder')}
