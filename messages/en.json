@@ -109,6 +109,7 @@
     "criticalIssues": "Critical Issues (Must Fix)",
     "warningIssues": "Warnings (Recommended to Fix)",
     "suggestion": "Suggestion",
+    "moreRelatedIssues": "{count} more related issues",
     "aiGeneratedListing": "AI-Generated Compliant Listing",
     "portuguese": "Portuguese",
     "spanish": "Spanish",

@@ -56,10 +56,10 @@
     "warning": "警告",
     "loading": "加载中...",
     "download": "下载",
-    "copy": "\u590d\u5236",
-    "loggedInAs": "\u5df2\u7528 {email}\u767b\u5f55",
-    "logout": "\u9000\u51fa\u767b\u5f55",
-    "accountSettings": "\u8d26\u6237\u8bbe\u7f6e"
+    "copy": "复制",
+    "loggedInAs": "已用 {email}登录",
+    "logout": "退出登录",
+    "accountSettings": "账户设置"
   },
   "nav": {
     "features": "功能",
@@ -109,6 +109,7 @@
     "criticalIssues": "严重问题（必须修复）",
     "warningIssues": "警告（建议修复）",
     "suggestion": "建议",
+    "moreRelatedIssues": "还有 {count} 条相关提示",
     "aiGeneratedListing": "AI生成的合规Listing",
     "portuguese": "葡语",
     "spanish": "西语",
@@ -319,97 +320,97 @@
     }
   },
   "account": {
-    "title": "\u8d26\u6237\u8bbe\u7f6e",
-    "subtitle": "\u7ba1\u7406\u60a8\u7684\u8ba2\u9605\u548c\u8d26\u6237\u4fe1\u606f",
-    "plan": "\u5f53\u524d\u8ba1\u5212",
-    "status": "\u8ba2\u9605\u72b6\u6001",
-    "quota": "\u4f7f\u7528\u989d\u5ea6",
-    "provider": "\u652f\u4ed8\u65b9\u5f0f",
-    "freePlan": "\u514d\u8d39\u7248",
+    "title": "账户设置",
+    "subtitle": "管理您的订阅和账户信息",
+    "plan": "当前计划",
+    "status": "订阅状态",
+    "quota": "使用额度",
+    "provider": "支付方式",
+    "freePlan": "免费版",
     "proPlan": "Pro",
-    "inactive": "\u672a\u6fc0\u6d3b",
-    "cancelingAtPeriodEnd": "\u5f53\u524d\u5468\u671f\u7ed3\u675f\u540e\u53d6\u6d88",
-    "nextBilling": "\u4e0b\u6b21\u6263\u8d39\uff1a{date}",
-    "accessUntil": "\u670d\u52a1\u6709\u6548\u81f3\uff1a{date}",
-    "subscriptionManagement": "\u8ba2\u9605\u7ba1\u7406",
-    "cancelDescription": "\u60a8\u53ef\u4ee5\u968f\u65f6\u53d6\u6d88\u8ba2\u9605\u3002\u53d6\u6d88\u540e\u5f53\u6708\u4ecd\u53ef\u4f7f\u7528\u5df2\u4ed8\u8d39\u670d\u52a1\uff0c\u4e0b\u4e2a\u8d26\u5355\u5468\u671f\u4e0d\u4f1a\u7eed\u8d39\u3002",
-    "cancelSubscription": "\u53d6\u6d88\u8ba2\u9605",
-    "canceling": "\u53d6\u6d88\u4e2d...",
-    "cancelConfirm": "\u786e\u5b9a\u8981\u53d6\u6d88\u8ba2\u9605\u5417\uff1f\u60a8\u5c06\u5728\u5f53\u524d\u8d26\u5355\u5468\u671f\u7ed3\u675f\u540e\u5931\u53bb Pro \u6743\u9650\u3002",
-    "cancelError": "\u53d6\u6d88\u8ba2\u9605\u5931\u8d25\uff0c\u8bf7\u8054\u7cfb\u5ba2\u670d\u3002",
-    "fetchError": "\u83b7\u53d6\u8d26\u6237\u4fe1\u606f\u5931\u8d25",
-    "upgradeTitle": "\u5347\u7ea7\u5230 Pro",
-    "upgradeDescription": "\u89e3\u9501\u65e0\u9650\u68c0\u6d4b\u6b21\u6570\u3001AI Listing \u751f\u6210\u548c\u6279\u91cf\u68c0\u6d4b\u529f\u80fd\u3002",
-    "upgradeButton": "\u67e5\u770b\u5b9a\u4ef7",
-    "accountSettings": "\u8d26\u6237\u8bbe\u7f6e"
+    "inactive": "未激活",
+    "cancelingAtPeriodEnd": "当前周期结束后取消",
+    "nextBilling": "下次扣费：{date}",
+    "accessUntil": "服务有效至：{date}",
+    "subscriptionManagement": "订阅管理",
+    "cancelDescription": "您可以随时取消订阅。取消后当月仍可使用已付费服务，下个账单周期不会续费。",
+    "cancelSubscription": "取消订阅",
+    "canceling": "取消中...",
+    "cancelConfirm": "确定要取消订阅吗？您将在当前账单周期结束后失去 Pro 权限。",
+    "cancelError": "取消订阅失败，请联系客服。",
+    "fetchError": "获取账户信息失败",
+    "upgradeTitle": "升级到 Pro",
+    "upgradeDescription": "解锁无限检测次数、AI Listing 生成和批量检测功能。",
+    "upgradeButton": "查看定价",
+    "accountSettings": "账户设置"
   },
   "faq": {
     "title": "常见问题",
     "categories": {
       "general": {
-        "label": "\u901a\u7528",
+        "label": "通用",
         "items": {
           "1": {
-            "q": "\u652f\u6301\u54ea\u4e9b\u56fd\u5bb6/\u5730\u533a\uff1f",
-            "a": "\u5f53\u524d\u652f\u6301\u5df4\u897f\uff08ANVISA\uff09\u548c\u58a8\u897f\u54e5\uff08COFEPRIS\uff09\u7684\u5408\u89c4\u68c0\u6d4b\u3002Listing\u751f\u6210\u9002\u914d Amazon\u3001Mercado Livre\u3001Shopee \u7b49\u5e73\u53f0\u683c\u5f0f\u3002"
+            "q": "支持哪些国家/地区？",
+            "a": "当前支持巴西（ANVISA）和墨西哥（COFEPRIS）的合规检测。Listing生成适配 Amazon、Mercado Livre、Shopee 等平台格式。"
           },
           "2": {
-            "q": "\u68c0\u6d4b\u7ed3\u679c\u51c6\u786e\u5417\uff1f",
-            "a": "\u6211\u4eec\u57fa\u4e8e\u5b98\u65b9\u6cd5\u89c4\u6587\u6863\u8bad\u7ec3\uff0c\u5b9a\u671f\u66f4\u65b0\u89c4\u5219\u5e93\u3002\u5bf9\u4e8e\u590d\u6742\u4ea7\u54c1\uff0c\u63d0\u4f9b\u4eba\u5de5\u590d\u6838\u901a\u9053\u3002"
+            "q": "检测结果准确吗？",
+            "a": "我们基于官方法规文档训练，定期更新规则库。对于复杂产品，提供人工复核通道。"
           },
           "8": {
-            "q": "\u751f\u6210\u7684 Listing \u53ef\u4ee5\u76f4\u63a5\u4e0a\u67b6\u5417\uff1f",
-            "a": "AI \u751f\u6210\u7684 Listing \u5df2\u7ecf\u8fc7\u5408\u89c4\u8fc7\u6ee4\uff0c\u4f46\u5efa\u8bae\u60a8\u5728\u4e0a\u67b6\u524d\u8fdb\u884c\u6700\u7ec8\u5ba1\u6838\u3002\u6211\u4eec\u63d0\u4f9b\u7684\u662f\u9ad8\u8d28\u91cf\u8349\u7a3f\uff0c\u60a8\u53ef\u4ee5\u6839\u636e\u5b9e\u9645\u9700\u6c42\u8fdb\u884c\u5fae\u8c03\u3002"
+            "q": "生成的 Listing 可以直接上架吗？",
+            "a": "AI 生成的 Listing 已经过合规过滤，但建议您在上架前进行最终审核。我们提供的是高质量草稿，您可以根据实际需求进行微调。"
           },
           "9": {
-            "q": "\u652f\u6301\u54ea\u4e9b\u7535\u5546\u5e73\u53f0\uff1f",
-            "a": "\u5f53\u524d\u652f\u6301 Amazon Brazil/Mexico\u3001Mercado Livre\u3001Shopee Brazil/Mexico\u3001Magalu \u7b49\u4e3b\u6d41\u5e73\u53f0\u7684 Listing \u683c\u5f0f\u3002\u6211\u4eec\u6301\u7eed\u6269\u5c55\u5e73\u53f0\u652f\u6301\u3002"
+            "q": "支持哪些电商平台？",
+            "a": "当前支持 Amazon Brazil/Mexico、Mercado Livre、Shopee Brazil/Mexico、Magalu 等主流平台的 Listing 格式。我们持续扩展平台支持。"
           }
         }
       },
       "pricing": {
-        "label": "\u4ef7\u683c\u4e0e\u5957\u9910",
+        "label": "价格与套餐",
         "items": {
           "3": {
-            "q": "\u5982\u4f55\u6536\u8d39\uff1f",
-            "a": "\u514d\u8d39\u7248\u6bcf\u670810\u6b21\u68c0\u6d4b\uff0c\u4e13\u4e1a\u7248 $29/\u6708\u65e0\u9650\u6b21\u3002\u68c0\u6d4bAPI\u6309\u6b21\u8ba1\u8d39\uff0c\u9002\u5408\u6279\u91cf\u573a\u666f\u3002"
+            "q": "如何收费？",
+            "a": "免费版每月10次检测，专业版 $29/月无限次。检测API按次计费，适合批量场景。"
           },
           "4": {
-            "q": "\u6709\u514d\u8d39\u8bd5\u7528\u5417\uff1f",
-            "a": "\u6709\u7684\uff01\u6bcf\u6708\u53ef\u514d\u8d39\u4f7f\u752810\u6b21\u5408\u89c4\u6a21\u68c0\u6d4b\u3002\u65e0\u9700\u4fe1\u7528\u5361\u3002"
+            "q": "有免费试用吗？",
+            "a": "有的！每月可免费使用10次合规模检测。无需信用卡。"
           },
           "5": {
-            "q": "\u53ef\u4ee5\u9000\u6b3e\u5417\uff1f",
-            "a": "\u4e13\u4e1a\u7248\u63d0\u4f9b7\u5929\u65e0\u7406\u7531\u9000\u6b3e\u3002\u8054\u7cfb\u5ba2\u670d\u5373\u53ef\u7533\u8bf7\u3002"
+            "q": "可以退款吗？",
+            "a": "专业版提供7天无理由退款。联系客服即可申请。"
           },
           "10": {
-            "q": "\u5982\u4f55\u53d6\u6d88\u8ba2\u9605\uff1f",
-            "a": "\u60a8\u53ef\u4ee5\u968f\u65f6\u5728\u8d26\u6237\u8bbe\u7f6e\u4e2d\u53d6\u6d88\u8ba2\u9605\u3002\u53d6\u6d88\u540e\u5f53\u6708\u4ecd\u53ef\u4f7f\u7528\u5df2\u4ed8\u8d39\u670d\u52a1\uff0c\u4e0b\u4e2a\u8d26\u5355\u5468\u671f\u4e0d\u4f1a\u7eed\u8d39\u3002"
+            "q": "如何取消订阅？",
+            "a": "您可以随时在账户设置中取消订阅。取消后当月仍可使用已付费服务，下个账单周期不会续费。"
           },
           "11": {
-            "q": "Pro \u7248\u6709\u4f7f\u7528\u9650\u5236\u5417\uff1f",
-            "a": "Pro \u7248\u63d0\u4f9b\u65e0\u9650\u6b21\u5355\u6b21\u68c0\u6d4b\u548c AI Listing \u751f\u6210\u3002\u6279\u91cf\u68c0\u6d4b\u529f\u80fd\u4ec5\u9650 Pro \u5e74\u4ed8\u7528\u6237\u4f7f\u7528\uff0c\u6708\u4ed8\u7528\u6237\u53ef\u5347\u7ea7\u81f3\u5e74\u4ed8\u89e3\u9501\u3002"
+            "q": "Pro 版有使用限制吗？",
+            "a": "Pro 版提供无限次单次检测和 AI Listing 生成。批量检测功能仅限 Pro 年付用户使用，月付用户可升级至年付解锁。"
           }
         }
       },
       "technical": {
-        "label": "\u6280\u672f\u95ee\u9898",
+        "label": "技术问题",
         "items": {
           "6": {
-            "q": "\u53ef\u4ee5\u68c0\u6d4b\u54ea\u4e9b\u6210\u5206\uff1f",
-            "a": "\u6211\u4eec\u652f\u6301\u6240\u6709\u5316\u5986\u54c1\u6210\u5206\u68c0\u6d4b\uff0c\u5305\u62ec\u7f8e\u767d\u6210\u5206\u3001\u9632\u8150\u5242\u3001\u9999\u7cbe\u7b49\u3002\u6211\u4eec\u7684\u6570\u636e\u5e93\u8986\u76d6\u8d85\u8fc710,000\u79cd\u6210\u5206\u3002"
+            "q": "可以检测哪些成分？",
+            "a": "我们支持所有化妆品成分检测，包括美白成分、防腐剂、香精等。我们的数据库覆盖超过10,000种成分。"
           },
           "7": {
-            "q": "\u68c0\u6d4b\u9700\u8981\u591a\u957f\u65f6\u95f4\uff1f",
-            "a": "\u5927\u591a\u6570\u68c0\u6d4b\u57285\u79d2\u5185\u5b8c\u6210\u3002\u6279\u91cfCSV\u6587\u4ef6\u5904\u7406\u7ea61\u5206\u949f\u5904\u7406100\u4e2a\u4ea7\u54c1\u3002"
+            "q": "检测需要多长时间？",
+            "a": "大多数检测在5秒内完成。批量CSV文件处理约1分钟处理100个产品。"
           },
           "12": {
-            "q": "\u6211\u7684\u6570\u636e\u5b89\u5168\u5417\uff1f",
-            "a": "\u6211\u4eec\u4f7f\u7528 SSL \u52a0\u5bc6\u4f20\u8f93\u6240\u6709\u6570\u636e\uff0c\u4e0d\u4f1a\u5c06\u60a8\u7684\u4ea7\u54c1\u4fe1\u606f\u7528\u4e8e\u8bad\u7ec3 AI \u6a21\u578b\u6216\u5171\u4eab\u7ed9\u7b2c\u4e09\u65b9\u3002\u8be6\u60c5\u8bf7\u53c2\u9605\u9690\u79c1\u653f\u7b56\u3002"
+            "q": "我的数据安全吗？",
+            "a": "我们使用 SSL 加密传输所有数据，不会将您的产品信息用于训练 AI 模型或共享给第三方。详情请参阅隐私政策。"
           },
           "13": {
-            "q": "\u5982\u4f55\u66f4\u65b0\u4ea7\u54c1\u4fe1\u606f\uff1f",
-            "a": "\u767b\u5f55\u540e\u53ef\u5728\u5386\u53f2\u8bb0\u5f55\u4e2d\u67e5\u770b\u5e76\u91cd\u65b0\u68c0\u6d4b\u5df2\u6709\u4ea7\u54c1\u3002\u4fee\u6539\u4ea7\u54c1\u4fe1\u606f\u540e\u53ef\u76f4\u63a5\u91cd\u65b0\u68c0\u6d4b\uff0c\u7cfb\u7edf\u4f1a\u81ea\u52a8\u66f4\u65b0\u68c0\u6d4b\u7ed3\u679c\u3002"
+            "q": "如何更新产品信息？",
+            "a": "登录后可在历史记录中查看并重新检测已有产品。修改产品信息后可直接重新检测，系统会自动更新检测结果。"
           }
         }
       }

@@ -227,6 +227,81 @@ export function HeroSection() {
     t('step3Label') || 'Generate Listing'
   ]
 
+  // === P4: Collapsible violation group by sourceField ===
+  function ViolationCardGroup({ 
+    items, 
+    colorScheme 
+  }: { 
+    items: ViolationItem[]
+    colorScheme: 'red' | 'amber' | 'blue'
+  }) {
+    // 按 sourceField 分组，同一来源字段的多条违规折叠展示
+    const groups = new Map<string, ViolationItem[]>()
+    for (const item of items) {
+      const key = item.sourceField || 'other'
+      if (!groups.has(key)) groups.set(key, [])
+      groups.get(key)!.push(item)
+    }
+    
+    const c = {
+      red: { bg: 'bg-red-50', text: 'text-red-700', textLight: 'text-red-600/80', textMuted: 'text-red-500/60', badgeBg: 'bg-red-100', badgeText: 'text-red-700', badgeBorder: 'border-red-200' },
+      amber: { bg: 'bg-amber-50', text: 'text-amber-700', textLight: 'text-amber-600/80', textMuted: 'text-amber-500/60', badgeBg: 'bg-amber-100', badgeText: 'text-amber-700', badgeBorder: 'border-amber-200' },
+      blue: { bg: 'bg-blue-50', text: 'text-blue-700', textLight: 'text-blue-600/80', textMuted: 'text-blue-500/60', badgeBg: 'bg-blue-100', badgeText: 'text-blue-700', badgeBorder: 'border-blue-200' },
+    }[colorScheme]
+    
+    return Array.from(groups.entries()).map(([sourceField, groupItems]) => {
+      const [first, ...rest] = groupItems
+      return (
+        <div key={sourceField}>
+          <div className={`${c.bg} rounded-lg p-3 text-sm`}>
+            <div className="flex items-start justify-between gap-2">
+              <p className={`font-medium ${c.text} flex-1`}>{first.message}</p>
+              <div className="shrink-0 flex items-center gap-1">
+                <ConfidenceBadge confidence={first.confidence} />
+                {first.matchedText && (
+                  <span className={`inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium ${c.badgeBg} ${c.badgeText} border ${c.badgeBorder}`}>
+                    {first.matchedText}
+                  </span>
+                )}
+              </div>
+            </div>
+            <p className={`${c.textLight} mt-1`}>{t('suggestion')}: {first.suggestion}</p>
+            {(first.sourceField || (first.allSourceFields && first.allSourceFields.length > 0)) && (
+              <p className={`${c.textMuted} text-xs mt-1`}>
+                {t('sourceFieldLabel')}{formatSourceFields(first.allSourceFields || [first.sourceField!])}
+              </p>
+            )}
+            <SourceHighlight violation={first} ingredients={ingredients} productBenefits={productBenefits} productName={productName} />
+            
+            {rest.length > 0 && (
+              <details className="mt-2 group">
+                <summary className={`text-xs ${c.textMuted} cursor-pointer hover:underline select-none list-none flex items-center gap-1`}>
+                  <span className="inline-block transition-transform duration-200 group-open:rotate-90">&#9654;</span>
+                  {t('moreRelatedIssues', { count: rest.length })}
+                </summary>
+                <div className="mt-2 space-y-2 border-t border-current/10 pt-2">
+                  {rest.map((v, i) => (
+                    <div key={i}>
+                      <div className="flex items-start justify-between gap-2">
+                        <p className={`font-medium ${c.text} flex-1 text-xs`}>{v.message}</p>
+                        {v.matchedText && (
+                          <span className={`inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium ${c.badgeBg} ${c.badgeText} border ${c.badgeBorder}`}>
+                            {v.matchedText}
+                          </span>
+                        )}
+                      </div>
+                      <p className={`${c.textLight} mt-0.5 text-xs`}>{t('suggestion')}: {v.suggestion}</p>
+                    </div>
+                  ))}
+                </div>
+              </details>
+            )}
+          </div>
+        </div>
+      )
+    })
+  }
+
   // Default demo result - dynamically shows based on selected country
   const demoResult: CheckResult = (country === 'BR' ? {
     isCompliant: false,
@@ -655,28 +730,7 @@ export function HeroSection() {
                     {groupByCategory(resultToShow.violations).map(([category, items]) => (
                       <div key={category} className="space-y-2">
                         <h5 className="text-xs font-medium text-red-500/70 uppercase tracking-wide">{categoryLabels[category] || category}</h5>
-                        {items.map((v, i) => (
-                          <div key={i} className="bg-red-50 rounded-lg p-3 text-sm">
-                            <div className="flex items-start justify-between gap-2">
-                              <p className="font-medium text-red-700 flex-1">{v.message}</p>
-                              <div className="shrink-0 flex items-center gap-1">
-                                <ConfidenceBadge confidence={v.confidence} />
-                                {v.matchedText && (
-                                  <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-red-100 text-red-700 border border-red-200">
-                                    {v.matchedText}
-                                  </span>
-                                )}
-                              </div>
-                            </div>
-                            <p className="text-red-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
-                            {(v.sourceField || (v.allSourceFields && v.allSourceFields.length > 0)) && (
-                              <p className="text-red-500/60 text-xs mt-1">
-                                {t('sourceFieldLabel')}{formatSourceFields(v.allSourceFields || [v.sourceField!])}
-                              </p>
-                            )}
-                            <SourceHighlight violation={v} ingredients={ingredients} productBenefits={productBenefits} productName={productName} />
-                          </div>
-                        ))}
+                        <ViolationCardGroup items={items} colorScheme="red" />
                       </div>
                     ))}
                   </div>
@@ -688,28 +742,7 @@ export function HeroSection() {
                     {groupByCategory(resultToShow.warnings).map(([category, items]) => (
                       <div key={category} className="space-y-2">
                         <h5 className="text-xs font-medium text-amber-500/70 uppercase tracking-wide">{categoryLabels[category] || category}</h5>
-                        {items.map((v, i) => (
-                          <div key={i} className="bg-amber-50 rounded-lg p-3 text-sm">
-                            <div className="flex items-start justify-between gap-2">
-                              <p className="font-medium text-amber-700 flex-1">{v.message}</p>
-                              <div className="shrink-0 flex items-center gap-1">
-                                <ConfidenceBadge confidence={v.confidence} />
-                                {v.matchedText && (
-                                  <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700 border border-amber-200">
-                                    {v.matchedText}
-                                  </span>
-                                )}
-                              </div>
-                            </div>
-                            <p className="text-amber-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
-                            {(v.sourceField || (v.allSourceFields && v.allSourceFields.length > 0)) && (
-                              <p className="text-amber-500/60 text-xs mt-1">
-                                {t('sourceFieldLabel')}{formatSourceFields(v.allSourceFields || [v.sourceField!])}
-                              </p>
-                            )}
-                            <SourceHighlight violation={v} ingredients={ingredients} productBenefits={productBenefits} productName={productName} />
-                          </div>
-                        ))}
+                        <ViolationCardGroup items={items} colorScheme="amber" />
                       </div>
                     ))}
                   </div>
@@ -721,28 +754,7 @@ export function HeroSection() {
                     {groupByCategory(resultToShow.info).map(([category, items]) => (
                       <div key={category} className="space-y-2">
                         <h5 className="text-xs font-medium text-blue-500/70 uppercase tracking-wide">{categoryLabels[category] || category}</h5>
-                        {items.map((v, i) => (
-                          <div key={i} className="bg-blue-50 rounded-lg p-3 text-sm">
-                            <div className="flex items-start justify-between gap-2">
-                              <p className="font-medium text-blue-700 flex-1">{v.message}</p>
-                              <div className="shrink-0 flex items-center gap-1">
-                                <ConfidenceBadge confidence={v.confidence} />
-                                {v.matchedText && (
-                                  <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700 border border-blue-200">
-                                    {v.matchedText}
-                                  </span>
-                                )}
-                              </div>
-                            </div>
-                            <p className="text-blue-600/80 mt-1">{t('suggestion')}: {v.suggestion}</p>
-                            {(v.sourceField || (v.allSourceFields && v.allSourceFields.length > 0)) && (
-                              <p className="text-blue-500/60 text-xs mt-1">
-                                {t('sourceFieldLabel')}{formatSourceFields(v.allSourceFields || [v.sourceField!])}
-                              </p>
-                            )}
-                            <SourceHighlight violation={v} ingredients={ingredients} productBenefits={productBenefits} productName={productName} />
-                          </div>
-                        ))}
+                        <ViolationCardGroup items={items} colorScheme="blue" />
                       </div>
                     ))}
                   </div>
