@@ -1708,6 +1708,26 @@ export function checkCompliance(input: CheckInput): CheckResult {
     ].join(' ')
     
     violations.push(...findMatches(ingredientTextToCheck, filteredRules.filter(r => r.category === 'ingredient'), 'ingredients'))
+    
+    // ── 模糊成分提示 ──
+    // 当成分未匹配到INCI词典且被识别为模糊描述时，生成 info 级别提示
+    if (parsedIngredients.vague.length > 0) {
+      for (const vagueItem of parsedIngredients.vague) {
+        violations.push({
+          ruleId: `${input.country}-ING-VAGUE-${vagueItem.original}`,
+          category: 'ingredient',
+          ruleType: 'required',
+          keyword: vagueItem.original,
+          severity: 'info',
+          message: `成分 "${vagueItem.original}" 描述模糊，未能识别为标准 INCI 名称`,
+          suggestion: vagueItem.vagueReason || '建议使用 INCI 标准名称替换模糊描述，如 "Aloe Barbadensis Leaf Extract" 替换 "Extrato de aloe"',
+          source: input.country === 'BR' ? 'ANVISA RDC 169/2024 (INCI naming standards)' : 'COFEPRIS NOM-141-SSA1/SCF1-2012',
+          matchedText: vagueItem.original,
+          sourceField: 'ingredients',
+          contextSnippet: vagueItem.original,
+        })
+      }
+    }
   }
 
   // Check description/claims (with sourceField)

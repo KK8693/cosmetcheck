@@ -273,6 +273,15 @@ const enRegulations: RegulationDictionary = {
     message: `Comparative/derogatory competitor claims are prohibited, such as 'better than competitors', 'unmatched in the market', 'surpasses all other products'.`,
     suggestion: 'Remove comparative/derogatory competitor claims. Use product feature descriptions.',
   },
+  // ── Vague ingredient descriptions ──
+  'BR-ING-VAGUE': {
+    message: 'Ingredient description is vague and not recognized as a standard INCI name.',
+    suggestion: 'Replace with the INCI standard name, e.g., "Aloe Barbadensis Leaf Extract" instead of "Extrato de aloe".',
+  },
+  'MX-ING-VAGUE': {
+    message: 'Ingredient description is vague and not recognized as a standard INCI name.',
+    suggestion: 'Replace with the INCI standard name, e.g., "Aloe Barbadensis Leaf Extract" instead of "Extracto de aloe".',
+  },
 }
 
 // Chinese translations
@@ -921,6 +930,15 @@ const zhRegulations: RegulationDictionary = {
   'MX-LBL-015': {
     message: '产品必须显示使用警告/注意事项。',
     suggestion: '添加相关警告（如"避免接触眼睛"、"置于儿童接触不到的地方"）。',
+  },
+  // ── 模糊成分描述 ──
+  'BR-ING-VAGUE': {
+    message: '成分描述模糊，未能识别为标准 INCI 名称。',
+    suggestion: '建议使用 INCI 标准名称替换模糊描述，如 "Aloe Barbadensis Leaf Extract" 替换 "Extrato de aloe"。',
+  },
+  'MX-ING-VAGUE': {
+    message: '成分描述模糊，未能识别为标准 INCI 名称。',
+    suggestion: '建议使用 INCI 标准名称替换模糊描述，如 "Aloe Barbadensis Leaf Extract" 替换 "Extracto de aloe"。',
   },
 }
 
@@ -1624,6 +1642,16 @@ export function translateViolation(
     return translation
   }
 
+  // ── 前缀匹配 fallback ──
+  // 支持动态生成的 ruleId 如 BR-ING-VAGUE-Essência floral → BR-ING-VAGUE
+  if (ruleId.includes('-VAGUE-') || ruleId.includes('-AGGREGATED')) {
+    const prefix = ruleId.split('-').slice(0, -1).join('-')
+    const prefixTranslation = dictionary[prefix]
+    if (prefixTranslation) {
+      return prefixTranslation
+    }
+  }
+
   // If current locale is not Chinese and original appears to be Chinese,
   // try English fallback first to avoid Chinese leaking into non-Chinese UIs
   if (locale !== 'zh' && locale !== 'zh-CN') {
@@ -1631,6 +1659,14 @@ export function translateViolation(
     const enTranslation = enDict?.[ruleId]
     if (enTranslation) {
       return enTranslation
+    }
+    // 英文也尝试前缀匹配
+    if (ruleId.includes('-VAGUE-') || ruleId.includes('-AGGREGATED')) {
+      const prefix = ruleId.split('-').slice(0, -1).join('-')
+      const prefixEnTranslation = enDict?.[prefix]
+      if (prefixEnTranslation) {
+        return prefixEnTranslation
+      }
     }
   }
 

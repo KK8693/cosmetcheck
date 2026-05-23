@@ -36,7 +36,9 @@ export interface ParsedIngredient {
   isProhibited?: boolean     // 是否为禁用成分
   isRestricted?: boolean     // 是否为限用成分
   hasConcentration?: boolean // 是否需要标注浓度
-  matchedBy: 'inci' | 'alias' | 'fuzzy'  // 匹配方式
+  isVague?: boolean          // 是否为模糊描述
+  vagueReason?: string       // 模糊原因说明
+  matchedBy: 'inci' | 'alias' | 'fuzzy' | 'vague'  // 匹配方式
   confidence: number         // 匹配置信度 0-1
 }
 
@@ -44,10 +46,12 @@ export interface ParseResult {
   original: string
   parsed: ParsedIngredient[]
   unparsed: string[]         // 无法匹配的成分
+  vague: ParsedIngredient[]  // 模糊描述的成分
   statistics: {
     total: number
     matched: number
     unmatched: number
+    vague: number
     prohibited: number
     restricted: number
   }
@@ -138,9 +142,23 @@ export function splitIngredients(ingredientString: string): string[] {
   return result
 }
 
-/**
- * 标准化单个成分
- */
+// 模糊成分描述词汇表 - 多语言
+// 当成分未匹配到INCI词典时，检查是否属于模糊描述
+const VAGUE_TERMS: Array<{ pattern: RegExp; reason: string }> = [
+  // 英语
+  { pattern: /\b(fragrance|parfum|perfume|scent|flavor)\b/i, reason: 'Fragrance/Parfum 应使用 INCI 标准名称或列出具体香精成分' },
+  { pattern: /\b(natural extract|plant extract|herbal extract|botanical extract|organic extract)\b/i, reason: '"Natural/Plant extract" 太模糊，建议使用 INCI 标准名称如 "Camellia Sinensis Leaf Extract"' },
+  { pattern: /\b(active ingredient|active complex|bioactive)\b/i, reason: '"Active ingredient" 太模糊，建议使用 INCI 标准名称' },
+  { pattern: /\b(essential oil blend|oil blend|extract blend)\b/i, reason: '油类/提取物混合物应分别列出具体 INCI 名称' },
+  // 葡萄牙语
+  { pattern: /\b(ess[eê]ncia floral|ess[eê]ncia natural|extrato natural|extrato vegetal|extrato bot[aâ]nico)\b/i, reason: '"Essência/Extrato" 太模糊，建议使用 INCI 标准名称如 "Aloe Barbadensis Leaf Extract"' },
+  { pattern: /\b(conservante|emulsificante|surfactante|tensoativo|estabilizante)\b/i, reason: '功能性描述词太模糊，建议使用 INCI 标准名称如 "Phenoxyethanol" 或 "Cetearyl Alcohol"' },
+  { pattern: /\b(óleo essencial|mistura de óleos|composto natural)\b/i, reason: '精油/混合物应分别列出具体 INCI 名称' },
+  // 西班牙语
+  { pattern: /\b(esencia floral|extracto natural|extracto vegetal|conservador|emulsionante)\b/i, reason: '"Esencia/Extracto" 太模糊，建议使用 INCI 标准名称' },
+  // 中文
+  { pattern: /[花香精]油|植物提取物|天然提取物|保湿因子|活性成分/i, reason: '成分描述太模糊，建议使用 INCI 标准名称' },
+]
 export function normalizeIngredient(input: string): ParsedIngredient {
   initMappings()
   
@@ -183,6 +201,22 @@ export function normalizeIngredient(input: string): ParsedIngredient {
     }
   }
   
+  // 未找到匹配，检查是否为模糊描述
+  for (const vague of VAGUE_TERMS) {
+    if (vague.pattern.test(input)) {
+      return {
+        original: input,
+        normalized: input,
+        inci: input,
+        category: 'vague',
+        isVague: true,
+        vagueReason: vague.reason,
+        matchedBy: 'vague',
+        confidence: 0.3
+      }
+    }
+  }
+  
   // 未找到匹配，返回原始信息
   return {
     original: input,
@@ -201,20 +235,24 @@ export function parseIngredients(ingredientString: string): ParseResult {
   const parts = splitIngredients(ingredientString)
   const parsed: ParsedIngredient[] = []
   const unparsed: string[] = []
+  const vague: ParsedIngredient[] = []
   
   for (const part of parts) {
     const normalized = normalizeIngredient(part)
     parsed.push(normalized)
     
-    if (normalized.confidence === 0) {
+    if (normalized.isVague) {
+      vague.push(normalized)
+    } else if (normalized.confidence === 0) {
       unparsed.push(part)
     }
   }
   
   const statistics = {
     total: parsed.length,
-    matched: parsed.length - unparsed.length,
+    matched: parsed.length - unparsed.length - vague.length,
     unmatched: unparsed.length,
+    vague: vague.length,
     prohibited: parsed.filter(p => p.isProhibited).length,
     restricted: parsed.filter(p => p.isRestricted).length
   }
@@ -223,6 +261,7 @@ export function parseIngredients(ingredientString: string): ParseResult {
     original: ingredientString,
     parsed,
     unparsed,
+    vague,
     statistics
   }
 }
