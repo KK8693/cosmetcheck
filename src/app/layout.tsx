@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Space_Grotesk, DM_Sans } from 'next/font/google'
 import './globals.css'
+import Analytics from '@/components/Analytics'
 
 // Required for Cloudflare Pages
 export const runtime = 'edge'
@@ -86,6 +87,7 @@ export default async function RootLayout({
     <html suppressHydrationWarning>
       <body className={`${inter.className} ${spaceGrotesk.variable} ${dmSans.variable}`}>
         {children}
+        <Analytics />
       </body>
     </html>
   )
