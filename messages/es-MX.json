@@ -57,7 +57,9 @@
     "warning": "Advertencia",
     "loading": "Cargando...",
     "download": "Descargar",
-    "copy": "Copiar"
+    "copy": "Copiar",
+    "logout": "Cerrar sesión",
+    "accountSettings": "Configuración de la cuenta"
   },
   "nav": {
     "features": "Características",
@@ -310,6 +312,31 @@
         "desc": "IA vs Manual"
       }
     }
+  },
+  "account": {
+    "title": "Configuración de la Cuenta",
+    "subtitle": "Administre su suscripción e información de la cuenta",
+    "plan": "Plan Actual",
+    "status": "Estado de la Suscripción",
+    "quota": "Cuota de Uso",
+    "provider": "Proveedor de Pago",
+    "freePlan": "Gratis",
+    "proPlan": "Pro",
+    "inactive": "Inactivo",
+    "cancelingAtPeriodEnd": "Cancelando al final del período",
+    "nextBilling": "Próxima facturación: {date}",
+    "accessUntil": "Acceso hasta: {date}",
+    "subscriptionManagement": "Gestión de Suscripción",
+    "cancelDescription": "Puede cancelar su suscripción en cualquier momento. Mantendrá el acceso hasta el final del período de facturación actual.",
+    "cancelSubscription": "Cancelar Suscripción",
+    "canceling": "Cancelando...",
+    "cancelConfirm": "¿Está seguro de que desea cancelar su suscripción? Perderá el acceso Pro después de que termine el período de facturación actual.",
+    "cancelError": "No se pudo cancelar la suscripción. Por favor contacte al soporte.",
+    "fetchError": "No se pudo cargar la información de la cuenta",
+    "upgradeTitle": "Actualizar a Pro",
+    "upgradeDescription": "Desbloquee detecciones ilimitadas, generación de Listing con IA y detección por lotes.",
+    "upgradeButton": "Ver Precios",
+    "accountSettings": "Configuración de la cuenta"
   },
   "faq": {
     "title": "Preguntas Frecuentes",

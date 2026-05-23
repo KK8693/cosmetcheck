@@ -57,7 +57,9 @@
     "warning": "Aviso",
     "loading": "Carregando...",
     "download": "Baixar",
-    "copy": "Copiar"
+    "copy": "Copiar",
+    "logout": "Sair",
+    "accountSettings": "Configurações da Conta"
   },
   "nav": {
     "features": "Recursos",
@@ -310,6 +312,31 @@
         "desc": "IA vs Manual"
       }
     }
+  },
+  "account": {
+    "title": "Configurações da Conta",
+    "subtitle": "Gerencie sua assinatura e informações da conta",
+    "plan": "Plano Atual",
+    "status": "Status da Assinatura",
+    "quota": "Cota de Uso",
+    "provider": "Provedor de Pagamento",
+    "freePlan": "Gratuito",
+    "proPlan": "Pro",
+    "inactive": "Inativo",
+    "cancelingAtPeriodEnd": "Cancelando no final do período",
+    "nextBilling": "Próxima cobrança: {date}",
+    "accessUntil": "Acesso até: {date}",
+    "subscriptionManagement": "Gerenciamento de Assinatura",
+    "cancelDescription": "Você pode cancelar sua assinatura a qualquer momento. Manterá o acesso até o final do período de cobrança atual.",
+    "cancelSubscription": "Cancelar Assinatura",
+    "canceling": "Cancelando...",
+    "cancelConfirm": "Tem certeza de que deseja cancelar sua assinatura? Você perderá o acesso Pro após o término do período de cobrança atual.",
+    "cancelError": "Falha ao cancelar assinatura. Por favor, entre em contato com o suporte.",
+    "fetchError": "Falha ao carregar informações da conta",
+    "upgradeTitle": "Atualizar para Pro",
+    "upgradeDescription": "Desbloqueie detecções ilimitadas, geração de Listing com IA e detecção em lote.",
+    "upgradeButton": "Ver Preços",
+    "accountSettings": "Configurações da Conta"
   },
   "faq": {
     "title": "Perguntas Frequentes",

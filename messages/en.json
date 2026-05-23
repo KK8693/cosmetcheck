@@ -57,7 +57,9 @@
     "loading": "Loading...",
     "download": "Download",
     "copy": "Copy",
-    "loggedInAs": "Logged in as {email}"
+    "loggedInAs": "Logged in as {email}",
+    "logout": "Logout",
+    "accountSettings": "Account Settings"
   },
   "nav": {
     "features": "Features",
@@ -316,6 +318,31 @@
       }
     }
   },
+  "account": {
+    "title": "Account Settings",
+    "subtitle": "Manage your subscription and account information",
+    "plan": "Current Plan",
+    "status": "Subscription Status",
+    "quota": "Usage Quota",
+    "provider": "Payment Provider",
+    "freePlan": "Free",
+    "proPlan": "Pro",
+    "inactive": "Inactive",
+    "cancelingAtPeriodEnd": "Canceling at period end",
+    "nextBilling": "Next billing: {date}",
+    "accessUntil": "Access until: {date}",
+    "subscriptionManagement": "Subscription Management",
+    "cancelDescription": "You can cancel your subscription at any time. You'll retain access until the end of your current billing period.",
+    "cancelSubscription": "Cancel Subscription",
+    "canceling": "Canceling...",
+    "cancelConfirm": "Are you sure you want to cancel your subscription? You will lose Pro access after the current billing period ends.",
+    "cancelError": "Failed to cancel subscription. Please contact support.",
+    "fetchError": "Failed to load account information",
+    "upgradeTitle": "Upgrade to Pro",
+    "upgradeDescription": "Unlock unlimited detections, AI Listing generation, and batch detection.",
+    "upgradeButton": "View Pricing",
+    "accountSettings": "Account Settings"
+  },
   "faq": {
     "title": "FAQ",
     "categories": {
@@ -357,7 +384,7 @@
           },
           "10": {
             "q": "How do I cancel my subscription?",
-            "a": "You can cancel anytime in your account settings. You'll retain access until the end of your current billing period. No further charges will apply."
+            "a": "You can cancel your subscription at any time in your account settings. You'll retain access until the end of your current billing period. No further charges will apply."
           },
           "11": {
             "q": "Are there any usage limits on Pro?",

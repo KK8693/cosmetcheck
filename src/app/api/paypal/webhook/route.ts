@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { verifyWebhookSignature, getTierFromSubscriptionStatus } from '@/lib/paypal'
+import { getSupabaseAdmin } from '@/lib/supabase-admin'
 
 export const runtime = 'edge'
 
@@ -13,6 +14,68 @@ const SUBSCRIPTION_EVENTS = {
   'BILLING.SUBSCRIPTION.EXPIRED': 'subscription_expired',
   'BILLING.SUBSCRIPTION.PAYMENT.FAILED': 'payment_failed',
 } as const
+
+async function updateUserSubscription(
+  subscriptionId: string,
+  status: string,
+  planId?: string,
+  customId?: string
+) {
+  try {
+    const supabase = getSupabaseAdmin()
+    const tier = getTierFromSubscriptionStatus(status)
+    const isActive = tier === 'pro'
+
+    // Map PayPal plan ID to subscription plan
+    let subscriptionPlan: string | null = null
+    if (planId) {
+      if (planId.includes('YEAR') || planId.includes('ANNUAL')) {
+        subscriptionPlan = 'pro-annual'
+      } else {
+        subscriptionPlan = 'pro-monthly'
+      }
+    }
+
+    const updateData: Record<string, string | boolean | null> = {
+      paypal_subscription_id: subscriptionId,
+      subscription_provider: 'paypal',
+      subscription_status: isActive ? 'active' : (status?.toLowerCase() || 'canceled'),
+      subscription_tier: isActive ? 'pro' : 'free',
+      updated_at: new Date().toISOString(),
+    }
+
+    if (subscriptionPlan) {
+      updateData.subscription_plan = subscriptionPlan
+    }
+
+    // Try to find user by custom_id (user ID from our app) first
+    if (customId) {
+      const { error } = await supabase
+        .from('users')
+        .update(updateData as never)
+        .eq('id', customId)
+
+      if (!error) {
+        console.log(`✅ Updated user ${customId} subscription via custom_id`)
+        return
+      }
+    }
+
+    // Fallback: find user by paypal_subscription_id
+    const { error } = await supabase
+      .from('users')
+      .update(updateData as never)
+      .eq('paypal_subscription_id', subscriptionId)
+
+    if (error) {
+      console.error('Failed to update user subscription:', error)
+    } else {
+      console.log(`✅ Updated subscription ${subscriptionId}`)
+    }
+  } catch (error) {
+    console.error('Error updating subscription:', error)
+  }
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -57,35 +120,34 @@ export async function POST(request: NextRequest) {
     const subscriptionId = event.resource?.id
     const customId = event.resource?.custom_id // Customer ID from our app
 
-    // Handle subscription status changes
+      // Handle subscription status changes
     if (subscriptionId && eventType in SUBSCRIPTION_EVENTS) {
       const newStatus = event.resource?.status
       const tier = getTierFromSubscriptionStatus(newStatus || '')
 
       console.log(`Subscription ${subscriptionId} status: ${newStatus} -> tier: ${tier}`)
 
-      // TODO: Update user subscription in Supabase
-      // await updateUserSubscription(customId, subscriptionId, tier)
-      
-      // For now, just log - we'll integrate with Supabase auth later
+      await updateUserSubscription(
+        subscriptionId,
+        newStatus || '',
+        event.resource?.plan_id,
+        customId
+      )
+
       switch (eventType) {
         case 'BILLING.SUBSCRIPTION.ACTIVATED':
         case 'BILLING.SUBSCRIPTION.REACTIVATED':
           console.log('✅ Subscription ACTIVE:', subscriptionId)
-          // TODO: Update database to pro tier
           break
         case 'BILLING.SUBSCRIPTION.SUSPENDED':
           console.log('⚠️ Subscription SUSPENDED:', subscriptionId)
-          // TODO: Handle payment failure - warn user
           break
         case 'BILLING.SUBSCRIPTION.CANCELLED':
         case 'BILLING.SUBSCRIPTION.EXPIRED':
           console.log('❌ Subscription CANCELLED/EXPIRED:', subscriptionId)
-          // TODO: Downgrade to free tier
           break
         case 'BILLING.SUBSCRIPTION.PAYMENT.FAILED':
           console.log('💳 Payment FAILED for subscription:', subscriptionId)
-          // TODO: Send email notification, offer retry
           break
       }
     }

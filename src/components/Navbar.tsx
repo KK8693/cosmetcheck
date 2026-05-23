@@ -1,13 +1,13 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { usePathname } from '@/i18n/routing'
 import { useAuth } from '@/contexts/AuthContext'
 import { Button } from '@/components/ui/button'
 import { Logo } from '@/components/Logo'
-import { Menu, X, Zap } from 'lucide-react'
+import { Menu, X, Zap, LogOut, ChevronDown, User } from 'lucide-react'
 import AuthModal from '@/components/AuthModal'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 
@@ -19,8 +19,21 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [authOpen, setAuthOpen] = useState(false)
-  const { user } = useAuth()
+  const { user, signOut } = useAuth()
   const [activeLink, setActiveLink] = useState<string>('#features')
+  const [userMenuOpen, setUserMenuOpen] = useState(false)
+  const userMenuRef = useRef<HTMLDivElement>(null)
+
+  // Close user menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (userMenuRef.current && !userMenuRef.current.contains(event.target as Node)) {
+        setUserMenuOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
 
   // Check if current page is the home page (pathname excludes locale prefix in next-intl)
   const isHomePage = pathname === '/'
@@ -136,9 +149,40 @@ export function Navbar() {
             <div className="hidden md:flex items-center gap-3">
               <LanguageSwitcher />
               {user ? (
-                <span className="text-sm text-white/60">
-                  {tCommon('loggedInAs', { email: user?.email?.split('@')[0] ?? 'user' })}
-                </span>
+                <div ref={userMenuRef} className="relative">
+                  <button
+                    onClick={() => setUserMenuOpen(!userMenuOpen)}
+                    className="flex items-center gap-1.5 text-sm text-white/60 hover:text-white transition-colors"
+                  >
+                    <span>{tCommon('loggedInAs', { email: user?.email?.split('@')[0] ?? 'user' })}</span>
+                    <ChevronDown className={`w-3.5 h-3.5 transition-transform ${userMenuOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  {userMenuOpen && (
+                    <div className="absolute right-0 mt-2 w-52 bg-[#1A1A24] border border-[#252530] rounded-xl shadow-xl shadow-black/40 overflow-hidden z-50">
+                      <div className="px-4 py-3 border-b border-[#252530]">
+                        <p className="text-xs text-gray-500">{user?.email}</p>
+                      </div>
+                      <Link
+                        href={`/${locale}/account`}
+                        onClick={() => setUserMenuOpen(false)}
+                        className="w-full flex items-center gap-2 px-4 py-2.5 text-sm text-white/80 hover:bg-[#252530] transition-colors"
+                      >
+                        <User className="w-4 h-4" />
+                        {tCommon('accountSettings') || 'Account Settings'}
+                      </Link>
+                      <button
+                        onClick={async () => {
+                          await signOut()
+                          setUserMenuOpen(false)
+                        }}
+                        className="w-full flex items-center gap-2 px-4 py-2.5 text-sm text-red-400 hover:bg-red-900/20 transition-colors"
+                      >
+                        <LogOut className="w-4 h-4" />
+                        {tCommon('logout') || 'Logout'}
+                      </button>
+                    </div>
+                  )}
+                </div>
               ) : (
                 <Button
                   onClick={() => setAuthOpen(true)}
@@ -206,13 +250,36 @@ export function Navbar() {
               <div className="py-2">
                 <LanguageSwitcher />
               </div>
-              <Button
-                onClick={() => { setAuthOpen(true); setIsMobileMenuOpen(false) }}
-                className="w-full mt-4 bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 font-semibold"
-              >
-                <Zap className="w-4 h-4 mr-1" />
-                {tCommon('freeStart')}
-              </Button>
+              {user ? (
+                <div className="space-y-2 pt-2 border-t border-white/10">
+                  <Link
+                    href={`/${locale}/account`}
+                    className="flex items-center gap-2 py-2 text-sm text-white/80 hover:text-white transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    <User className="w-4 h-4" />
+                    {tCommon('accountSettings') || 'Account Settings'}
+                  </Link>
+                  <button
+                    onClick={async () => {
+                      await signOut()
+                      setIsMobileMenuOpen(false)
+                    }}
+                    className="flex items-center gap-2 py-2 text-sm text-red-400 hover:text-red-300 transition-colors"
+                  >
+                    <LogOut className="w-4 h-4" />
+                    {tCommon('logout') || 'Logout'}
+                  </button>
+                </div>
+              ) : (
+                <Button
+                  onClick={() => { setAuthOpen(true); setIsMobileMenuOpen(false) }}
+                  className="w-full mt-4 bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] text-gray-900 font-semibold"
+                >
+                  <Zap className="w-4 h-4 mr-1" />
+                  {tCommon('freeStart')}
+                </Button>
+              )}
             </div>
           </div>
         )}
