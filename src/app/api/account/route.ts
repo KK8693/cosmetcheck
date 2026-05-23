@@ -35,7 +35,7 @@ export async function GET(request: NextRequest) {
       .from('users')
       .select('*')
       .eq('id', user.id)
-      .single()
+      .maybeSingle()
 
     if (userError) {
       console.error('Failed to fetch user data:', userError)
@@ -45,20 +45,46 @@ export async function GET(request: NextRequest) {
       )
     }
 
+    // 如果用户记录不存在（trigger 未生效或未部署），自动创建默认记录
+    let finalUserData = userData
+    if (!finalUserData) {
+      const { data: newUser, error: insertError } = await supabase
+        .from('users')
+        .insert({
+          id: user.id,
+          email: user.email,
+          subscription_tier: 'free',
+          quota_used: 0,
+          quota_limit: 10,
+        })
+        .select()
+        .single()
+
+      if (insertError) {
+        console.error('Failed to create user record:', insertError)
+        return NextResponse.json(
+          { error: 'Failed to create user record' },
+          { status: 500 }
+        )
+      }
+
+      finalUserData = newUser
+    }
+
     return NextResponse.json({
       user: {
         id: user.id,
         email: user.email,
-        fullName: userData?.full_name || null,
-        subscriptionTier: userData?.subscription_tier || 'free',
-        subscriptionProvider: userData?.subscription_provider || null,
-        subscriptionStatus: userData?.subscription_status || null,
-        subscriptionPlan: userData?.subscription_plan || null,
-        currentPeriodStart: userData?.current_period_start || null,
-        currentPeriodEnd: userData?.current_period_end || null,
-        cancelAtPeriodEnd: userData?.cancel_at_period_end || false,
-        quotaUsed: userData?.quota_used || 0,
-        quotaLimit: userData?.quota_limit || 10,
+        fullName: finalUserData?.full_name || null,
+        subscriptionTier: finalUserData?.subscription_tier || 'free',
+        subscriptionProvider: finalUserData?.subscription_provider || null,
+        subscriptionStatus: finalUserData?.subscription_status || null,
+        subscriptionPlan: finalUserData?.subscription_plan || null,
+        currentPeriodStart: finalUserData?.current_period_start || null,
+        currentPeriodEnd: finalUserData?.current_period_end || null,
+        cancelAtPeriodEnd: finalUserData?.cancel_at_period_end || false,
+        quotaUsed: finalUserData?.quota_used || 0,
+        quotaLimit: finalUserData?.quota_limit || 10,
       },
     })
   } catch (error) {
