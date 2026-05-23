@@ -177,7 +177,7 @@ const ANVISA_RULES: Omit<Violation, 'matchedText' | 'position'>[] = [
     severity: 'critical',
     message: 'Cosmetics cannot claim to cure, treat, or prevent diseases.',
     suggestion: 'Use cosmetic claims only (moisturizing, cleansing, beautifying).',
-    aliases: ['治愈', 'cura', 'cura', 'heal', 'healing', '治疗', '痊愈', 'curativo', 'terapêutico', 'cures', 'heals', 'treats', 'permanently', 'permanente', '根治', '彻底治愈', '完全治愈', 'radical cure', 'cura radical', 'cura completa', 'cura total', 'completely cure', 'total cure'],
+    aliases: ['治愈', 'cura', 'cura', 'heal', 'healing', '治疗', '痊愈', 'curativo', 'terapêutico', 'cures', 'heals', 'treats', '根治', '彻底治愈', '完全治愈', 'radical cure', 'cura radical', 'cura completa', 'cura total', 'completely cure', 'total cure'],
     source: 'ANVISA RDC 529/2021',
   },
   {
