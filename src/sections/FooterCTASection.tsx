@@ -86,15 +86,26 @@ export function FooterCTASection() {
         )}
         <div className="mt-6 flex flex-col items-center gap-4">
           <span className="text-white/50 text-sm">{t('or')}</span>
-          <a
-            href={emailHref}
+          <button
+            onClick={async () => {
+              try {
+                await navigator.clipboard.writeText('support@cosmetcheck.com')
+                setSuccess(true)
+                setTimeout(() => setSuccess(false), 2000)
+              } catch {
+                window.location.href = emailHref
+              }
+            }}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-white/30 text-white font-semibold hover:bg-white/10 hover:border-white/50 transition-all duration-200"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
             {t('emailContact')}
-          </a>
+          </button>
+          {success && (
+            <p className="text-sm text-green-300 animate-pulse">✅ 邮箱已复制到剪贴板</p>
+          )}
         </div>
         <p className="mt-6 text-sm text-white/60">
           {t('noCreditCard')}
