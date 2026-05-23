@@ -49,15 +49,15 @@ export function FooterCTASection() {
   const emailHref = 'mailto:support@cosmetcheck.com?subject=Support%20Request'
 
   return (
-    <section className="py-12 md:py-20 bg-gradient-to-br from-[#0A4D8C] via-[#1E6BB8] to-[#00A86B] text-white">
+    <section className="py-12 md:py-20 bg-[#1A1A24] text-white">
       <div className="container-custom text-center">
-        <div className="mb-4 inline-flex items-center rounded-full bg-red-500 px-4 py-1.5 text-xs font-bold text-white shadow-lg animate-bounce">
+        <div className="mb-4 inline-flex items-center rounded-full bg-[#FFB800] px-4 py-1.5 text-xs font-bold text-[#0F1419] shadow-lg animate-bounce">
           {t('badge')}
         </div>
-        <h2 className="text-3xl font-bold md:text-4xl mb-4">
+        <h2 className="text-3xl font-bold md:text-4xl mb-4 max-w-lg mx-auto">
           {t('title')}
         </h2>
-        <p className="text-lg text-white/90 mb-8 max-w-xl mx-auto">
+        <p className="text-lg text-white/90 mb-8 max-w-lg mx-auto">
           {t('subtitle')}
         </p>
         <div className="max-w-lg mx-auto">
