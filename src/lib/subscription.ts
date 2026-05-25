@@ -124,9 +124,16 @@ export async function checkChatAccess(
 ): Promise<{ allowed: boolean; tier: SubscriptionTier; reason?: string }> {
   const tier = await checkSubscriptionTier(userIdOrEmail)
 
-  // Support mode: all tiers allowed (free has daily limit checked client-side)
+  // Support mode: pro-monthly, pro-annual, or team
   if (mode === 'support') {
-    return { allowed: true, tier }
+    if (tier === 'pro-monthly' || tier === 'pro-annual' || tier === 'team') {
+      return { allowed: true, tier }
+    }
+    return {
+      allowed: false,
+      tier,
+      reason: 'requires_pro',
+    }
   }
 
   // Advisor mode: pro-annual or team only

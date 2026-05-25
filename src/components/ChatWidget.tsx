@@ -130,22 +130,16 @@ export default function ChatWidget() {
   }, [messages])
 
   const isFreeUser = !user
-  const supportUsage = getUsage(STORAGE_KEYS.support)
   const advisorUsage = getUsage(STORAGE_KEYS.advisor)
 
   // Reset counters if period changed
-  const effectiveSupportUsage =
-    supportUsage.date === getToday() ? supportUsage : { date: getToday(), count: 0 }
   const effectiveAdvisorUsage =
     advisorUsage.date === getMonth() ? advisorUsage : { date: getMonth(), count: 0 }
 
-  const supportRemaining = isFreeUser
-    ? Math.max(0, LIMITS.support.free - effectiveSupportUsage.count)
-    : Infinity
   const advisorRemaining =
     Math.max(0, LIMITS.advisor.monthly - effectiveAdvisorUsage.count)
 
-  const canUseSupport = isFreeUser ? supportRemaining > 0 : true
+  const canUseSupport = !isFreeUser
   const canUseAdvisor = !isFreeUser // Free users cannot use advisor at all
 
   const handleModeSwitch = (newMode: ChatMode) => {
@@ -159,16 +153,8 @@ export default function ChatWidget() {
 
     setError(null)
 
-    // Check support limit for free users
-    if (mode === 'support' && isFreeUser) {
-      if (effectiveSupportUsage.count >= LIMITS.support.free) {
-        setError(t('errorLimit'))
-        return
-      }
-    }
-
-    // Check advisor permission
-    if (mode === 'advisor' && isFreeUser) {
+    // Check login requirement for all modes
+    if (isFreeUser) {
       setError(t('errorAdvisorLogin'))
       return
     }
@@ -229,13 +215,7 @@ export default function ChatWidget() {
       }
 
       // Update usage counter
-      if (mode === 'support' && isFreeUser) {
-        const updated = {
-          date: getToday(),
-          count: effectiveSupportUsage.count + 1,
-        }
-        saveUsage(STORAGE_KEYS.support, updated)
-      } else if (mode === 'advisor') {
+      if (mode === 'advisor') {
         const updated = {
           date: getMonth(),
           count: effectiveAdvisorUsage.count + 1,
@@ -258,7 +238,7 @@ export default function ChatWidget() {
     } finally {
       setIsLoading(false)
     }
-  }, [input, isLoading, mode, messages, user, isFreeUser, effectiveSupportUsage, effectiveAdvisorUsage, locale, t])
+  }, [input, isLoading, mode, messages, user, isFreeUser, effectiveAdvisorUsage, locale, t])
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
@@ -364,8 +344,8 @@ export default function ChatWidget() {
                     <MessageCircle className="w-8 h-8 mx-auto text-[#0A4D8C]" />
                     <p>{t('supportWelcome')}</p>
                     {isFreeUser && (
-                      <p className="text-gray-500 text-xs">
-                        {t('freeRemaining', { count: supportRemaining })}
+                      <p className="text-amber-400 text-xs mt-2">
+                        {t('advisorLoginRequired')}
                       </p>
                     )}
                   </div>
@@ -459,11 +439,6 @@ export default function ChatWidget() {
               >
                 {t('clearChat')}
               </button>
-              {mode === 'support' && isFreeUser && (
-                <span className="text-xs text-gray-500">
-                  {t('todayRemaining', { count: supportRemaining })}
-                </span>
-              )}
               {mode === 'advisor' && user && (
                 <span className="text-xs text-gray-500">
                   {t('monthRemaining', { count: advisorRemaining })}

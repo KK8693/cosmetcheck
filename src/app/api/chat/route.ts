@@ -28,37 +28,36 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Check permissions for advisor mode
+    // Check permissions for all modes
     const userEmail = request.headers.get('x-user-email')
-    if (mode === 'advisor') {
-      if (!userEmail) {
-        return new Response(
-          JSON.stringify({
-            error: 'Login required',
-            message: 'Compliance Advisor mode requires login. Please sign in or upgrade to Pro Annual.',
-            upgradeUrl: '/pricing',
-          }),
-          { status: 403, headers: { 'Content-Type': 'application/json' } }
-        )
-      }
+    if (!userEmail) {
+      return new Response(
+        JSON.stringify({
+          error: 'Login required',
+          message: 'Chat requires login. Please sign in or upgrade to Pro.',
+          upgradeUrl: '/pricing',
+        }),
+        { status: 403, headers: { 'Content-Type': 'application/json' } }
+      )
+    }
 
-      const { allowed, tier, reason } = await checkChatAccess(userEmail, mode)
-      if (!allowed) {
-        const isMonthly = tier === 'pro-monthly'
-        return new Response(
-          JSON.stringify({
-            error: 'Pro Annual subscription required',
-            message: isMonthly
-              ? 'Compliance Advisor is exclusive to Pro Annual subscribers. Upgrade to unlock 1v1 AI compliance consulting.'
-              : 'Compliance Advisor is exclusive to Pro Annual subscribers. Please upgrade to unlock this feature.',
-            tier,
-            reason,
-            upgradeUrl: '/pricing',
-            isMonthly,
-          }),
-          { status: 403, headers: { 'Content-Type': 'application/json' } }
-        )
-      }
+    const { allowed, tier, reason } = await checkChatAccess(userEmail, mode)
+    if (!allowed) {
+      const isMonthly = tier === 'pro-monthly'
+      const isAdvisor = mode === 'advisor'
+      return new Response(
+        JSON.stringify({
+          error: isAdvisor ? 'Pro Annual subscription required' : 'Pro subscription required',
+          message: isAdvisor && isMonthly
+            ? 'Compliance Advisor is exclusive to Pro Annual subscribers. Upgrade to unlock 1v1 AI compliance consulting.'
+            : 'Chat is exclusive to Pro subscribers. Please upgrade to unlock this feature.',
+          tier,
+          reason,
+          upgradeUrl: '/pricing',
+          isMonthly,
+        }),
+        { status: 403, headers: { 'Content-Type': 'application/json' } }
+      )
     }
 
     // Convert messages to include locale hint in the last user message
