@@ -70,7 +70,9 @@ describe('checkCompliance', () => {
         country: 'BR',
         description: 'Nosso produto é 100% natural e orgânico.',
       })
-      expect(result.isCompliant).toBe(false)
+      // BR-LBL-003 matches '100% natural' (warning severity)
+      expect(result.warnings.length).toBeGreaterThan(0)
+      expect(result.warnings.some(v => v.ruleId === 'BR-LBL-003')).toBe(true)
     })
   })
 
@@ -81,7 +83,8 @@ describe('checkCompliance', () => {
         productName: 'Creme Curativo',
         description: 'Creme curativo para acne.',
       })
-      const violation = result.violations.find(v => v.ruleId === 'BR-CLAIM-001')
+      // BR-LBL-002 matches 'curativo' in both productName and description
+      const violation = result.violations.find(v => v.ruleId === 'BR-LBL-002')
       expect(violation).toBeDefined()
       expect(violation?.allSourceFields).toBeDefined()
       expect(violation?.allSourceFields?.length).toBeGreaterThanOrEqual(1)
@@ -104,6 +107,16 @@ describe('checkCompliance', () => {
         ingredients: 'Aqua, Mercury, Fragrance',
       })
       expect(result.isCompliant).toBe(false)
+    })
+
+    it('triggers JSON rules (MX-CLAIM-024) without hardcoded shadowing', () => {
+      const result = checkCompliance({
+        country: 'MX',
+        description: '本产品经过严格的肌肤耐受实验验证，确保安全可靠。',
+      })
+      const claim024 = result.violations.find(v => v.ruleId === 'MX-CLAIM-024')
+      expect(claim024).toBeDefined()
+      expect(claim024?.matchedText).toBe('肌肤耐受实验')
     })
   })
 

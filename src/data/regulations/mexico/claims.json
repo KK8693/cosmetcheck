@@ -638,7 +638,11 @@
         "dermatological experiment",
         "laboratory test",
         "lab tested",
-        "lab verified"
+        "lab verified",
+        "teste de tolerabilidade cutânea",
+        "validação clínica",
+        "prova clínica",
+        "teste dermatológico clínico"
       ],
       "severity": "critical",
       "condition": "禁止化妆品擅自宣称完成医学实验、临床测试或皮肤科验证",
@@ -685,7 +689,14 @@
         "no risk",
         "suitable for all skin types",
         "for all skin types",
-        "all skin types compatible"
+        "all skin types compatible",
+        "sem rejeição",
+        "zero rejeição",
+        "100% compatível",
+        "para todos os tipos de pele",
+        "zero alergia",
+        "sem nenhum efeito colateral",
+        "sem risco"
       ],
       "severity": "critical",
       "condition": "禁止使用\"100%安全\"、\"零过敏\"、\"所有肤质适用\"等绝对化安全承诺",
@@ -730,7 +741,15 @@
         "metabolic mechanism",
         "physiological function",
         "intervene metabolism",
-        "improve physiological function"
+        "improve physiological function",
+        "estabilizar o mecanismo metabólico",
+        "regulação do metabolismo de melanina",
+        "mecanismo de pigmentação",
+        "intervir no metabolismo",
+        "regular a melanina",
+        "mecanismo metabólico",
+        "função fisiológica",
+        "regulação fisiológica"
       ],
       "severity": "critical",
       "condition": "化妆品只能宣称美化、清洁、保湿功效，不得涉及生理机制或药理作用",

@@ -847,33 +847,9 @@ const zhRegulations: RegulationDictionary = {
     message: '皮肤科医生背书宣称需要证明文件。',
     suggestion: '若宣称经皮肤科医生测试，确保存在临床证据。',
   },
-  'BR-CLM-011': {
-    message: '化妆品未经ANVISA认可的资质，不得声称完成临床试验、医学实验或皮肤科测试。',
-    suggestion: '删除所有未经授权的"临床/医学/实验"声称。化妆品非药品，不能声称医疗级测试资质。',
-  },
-  'BR-CLM-012': {
-    message: '绝对化安全承诺（如"零排斥"、"百分百适配"、"适用所有肤质"）必须有正式测试报告支撑，且不得绝对化表述。',
-    suggestion: '删除绝对化安全承诺。替换为具体测试支撑的声称（如"经敏感肌测试验证"）并提供测试机构名称。禁用"100%"、"零"、"所有"等绝对化用语。',
-  },
-  'BR-CLM-013': {
-    message: '化妆品仅可声称美化、清洁、保湿效果。"调理色素"、"稳定代谢机制"、"干预生理功能"等属于药品/医疗级声称，化妆品禁止使用。',
-    suggestion: '删除所有生理/机制类声称。仅使用合规化妆品声称：保湿、清洁、美化或改善肌肤外观。不得提及代谢、黑色素调控机制或生理功能。',
-  },
   'BR-ING-027': {
     message: '植物激素及植物生长调节物质在化妆品中禁用。使用"植物调节因子"等暧昧别名掩盖激素属于成分欺诈。',
     suggestion: '删除所有植物激素提取物、生长因子及植物激素衍生物。替换为无激素活性的标准植物提取物。',
-  },
-  'MX-CLM-011': {
-    message: '化妆品未经COFEPRIS认可的资质，不得声称完成临床试验、医学实验或皮肤科测试。',
-    suggestion: '删除所有未经授权的"临床/医学/实验"声称。化妆品非药品，不能声称医疗级测试资质。',
-  },
-  'MX-CLM-012': {
-    message: '绝对化安全承诺（如"零排斥"、"百分百适配"、"适用所有肤质"）必须有正式测试报告支撑，且不得绝对化表述。',
-    suggestion: '删除绝对化安全承诺。替换为具体测试支撑的声称（如"经敏感肌测试验证"）并提供测试机构名称。禁用"100%"、"零"、"所有"等绝对化用语。',
-  },
-  'MX-CLM-013': {
-    message: '化妆品仅可声称美化、清洁、保湿效果。"调理色素"、"稳定代谢机制"、"干预生理功能"等属于药品/医疗级声称，化妆品禁止使用。',
-    suggestion: '删除所有生理/机制类声称。仅使用合规化妆品声称：保湿、清洁、美化或改善肌肤外观。不得提及代谢、黑色素调控机制或生理功能。',
   },
   'MX-ING-006': {
     message: '对羟基苯甲酸酯（Parabens）受限制——浓度有限制。',
@@ -1357,33 +1333,9 @@ const ptRegulations: RegulationDictionary = {
     message: `Alegações comparativas/depreciativas de concorrentes são proibidas, como 'melhor que concorrentes', 'sem igual no mercado', 'supera todos os outros produtos'.`,
     suggestion: 'Remova alegações comparativas/depreciativas de concorrentes. Use descrições de características do produto.',
   },
-  'BR-CLM-011': {
-    message: 'Cosméticos não podem alegar a realização de ensaios clínicos, experimentos médicos ou testes dermatológicos sem certificação reconhecida pela ANVISA.',
-    suggestion: 'Remova todas as alegações não autorizadas de "clínico/dermatológico/experimental". Cosméticos não são medicamentos e não podem reivindicar credenciais de teste de grau médico.',
-  },
-  'BR-CLM-012': {
-    message: 'Alegações de segurança absoluta (como "rejeição zero", "100% compatível" ou "adequado para todos os tipos de pele") são proibidas sem relatórios formais de teste e não podem ser declaradas em termos absolutos.',
-    suggestion: 'Remova as promessas de segurança absoluta. Substitua por alegações específicas respaldadas por testes (por exemplo, "testado em pele sensível") e forneça os detalhes da instituição de teste. Nunca use "100%", "zero", "todos" para segurança.',
-  },
-  'BR-CLM-013': {
-    message: 'Cosméticos só podem alegar efeitos de embelezamento, limpeza e hidratação. Alegações envolvendo "regulação de pigmento", "estabilização de mecanismos metabólicos" ou "intervenção em funções fisiológicas" são alegações de grau medicinal/proibidas para cosméticos.',
-    suggestion: 'Remova todas as alegações fisiológicas/de mecanismo. Use apenas alegações de cosméticos permitidas: hidratação, limpeza, embelezamento ou melhoria da aparência da pele. Não mencione metabolismo, mecanismos de regulação de melanina ou funções fisiológicas.',
-  },
   'BR-ING-027': {
     message: 'Hormônios vegetais e fitohormônios são proibidos em cosméticos. O uso de aliases vagos como "fator regulador vegetal" para ocultar hormônios constitui fraude de ingredientes.',
     suggestion: 'Remova todos os extratos de hormônios vegetais, fatores de crescimento e derivados de fitohormônios. Substitua por extratos botânicos padrão que não tenham atividade hormonal.',
-  },
-  'MX-CLM-011': {
-    message: 'Cosméticos não podem alegar a realização de ensaios clínicos, experimentos médicos ou testes dermatológicos sem certificação reconhecida pela COFEPRIS.',
-    suggestion: 'Remova todas as alegações não autorizadas de "clínico/dermatológico/experimental". Cosméticos não são medicamentos e não podem reivindicar credenciais de teste de grau médico.',
-  },
-  'MX-CLM-012': {
-    message: 'Alegações de segurança absoluta (como "rejeição zero", "100% compatível" ou "adequado para todos os tipos de pele") são proibidas sem relatórios formais de teste e não podem ser declaradas em termos absolutos.',
-    suggestion: 'Remova as promessas de segurança absoluta. Substitua por alegações específicas respaldadas por testes (por exemplo, "testado em pele sensível") e forneça os detalhes da instituição de teste. Nunca use "100%", "zero", "todos" para segurança.',
-  },
-  'MX-CLM-013': {
-    message: 'Cosméticos só podem alegar efeitos de embelezamento, limpeza e hidratação. Alegações envolvendo "regulação de pigmento", "estabilização de mecanismos metabólicos" ou "intervenção em funções fisiológicas" são alegações de grau medicinal/proibidas para cosméticos.',
-    suggestion: 'Remova todas as alegações fisiológicas/de mecanismo. Use apenas alegações de cosméticos permitidas: hidratação, limpeza, embelezamento ou melhoria da aparência da pele. Não mencione metabolismo, mecanismos de regulação de melanina ou funções fisiológicas.',
   },
 
   'MX-CLAIM-023': {
@@ -1748,33 +1700,9 @@ const esRegulations: RegulationDictionary = {
     message: `Las afirmaciones comparativas/derogatorias de competidores están prohibidas, como 'mejor que los competidores', 'sin igual en el mercado', 'supera todos los demás productos'.`,
     suggestion: 'Elimine las afirmaciones comparativas/derogatorias de competidores. Use descripciones de características del producto.',
   },
-  'BR-CLM-011': {
-    message: 'Los cosméticos no pueden afirmar la realización de ensayos clínicos, experimentos médicos o pruebas dermatológicas sin certificación reconocida por ANVISA.',
-    suggestion: 'Elimine todas las afirmaciones no autorizadas de "clínico/dermatológico/experimental". Los cosméticos no son medicamentos y no pueden reclamar credenciales de prueba de grado médico.',
-  },
-  'BR-CLM-012': {
-    message: 'Las afirmaciones de seguridad absoluta (como "rechazo cero", "100% compatible" o "adecuado para todo tipo de piel") están prohibidas sin informes formales de prueba y no pueden declararse en términos absolutos.',
-    suggestion: 'Elimine las promesas de seguridad absoluta. Reemplácelas con afirmaciones específicas respaldadas por pruebas (por ejemplo, "probado en piel sensible") y proporcione los detalles de la institución de prueba. Nunca use "100%", "cero", "todos" para seguridad.',
-  },
-  'BR-CLM-013': {
-    message: 'Los cosméticos solo pueden afirmar efectos de embellecimiento, limpieza e hidratación. Las afirmaciones que involucran "regulación de pigmento", "estabilización de mecanismos metabólicos" o "intervención en funciones fisiológicas" son afirmaciones de grado medicinal/prohibidas para cosméticos.',
-    suggestion: 'Elimine todas las afirmaciones fisiológicas/de mecanismo. Use solo afirmaciones de cosméticos permitidas: hidratación, limpieza, embellecimiento o mejora de la apariencia de la piel. No mencione metabolismo, mecanismos de regulación de melanina o funciones fisiológicas.',
-  },
   'BR-ING-027': {
     message: 'Las hormonas vegetales y fitohormonas están prohibidas en cosméticos. El uso de alias vagos como "factor regulador vegetal" para ocultar hormonas constituye fraude de ingredientes.',
     suggestion: 'Elimine todos los extractos de hormonas vegetales, factores de crecimiento y derivados de fitohormonas. Reemplácelos por extractos botánicos estándar que no tengan actividad hormonal.',
-  },
-  'MX-CLM-011': {
-    message: 'Los cosméticos no pueden afirmar la realización de ensayos clínicos, experimentos médicos o pruebas dermatológicas sin certificación reconocida por COFEPRIS.',
-    suggestion: 'Elimine todas las afirmaciones no autorizadas de "clínico/dermatológico/experimental". Los cosméticos no son medicamentos y no pueden reclamar credenciales de prueba de grado médico.',
-  },
-  'MX-CLM-012': {
-    message: 'Las afirmaciones de seguridad absoluta (como "rechazo cero", "100% compatible" o "adecuado para todo tipo de piel") están prohibidas sin informes formales de prueba y no pueden declararse en términos absolutos.',
-    suggestion: 'Elimine las promesas de seguridad absoluta. Reemplácelas con afirmaciones específicas respaldadas por pruebas (por ejemplo, "probado en piel sensible") y proporcione los detalles de la institución de prueba. Nunca use "100%", "cero", "todos" para seguridad.',
-  },
-  'MX-CLM-013': {
-    message: 'Los cosméticos solo pueden afirmar efectos de embellecimiento, limpieza e hidratación. Las afirmaciones que involucran "regulación de pigmento", "estabilización de mecanismos metabólicos" o "intervención en funciones fisiológicas" son afirmaciones de grado medicinal/prohibidas para cosméticos.',
-    suggestion: 'Elimine todas las afirmaciones fisiológicas/de mecanismo. Use solo afirmaciones de cosméticos permitidas: hidratación, limpieza, embellecimiento o mejora de la apariencia de la piel. No mencione metabolismo, mecanismos de regulación de melanina o funciones fisiológicas.',
   },
 
   'MX-CLAIM-023': {
