@@ -16,10 +16,20 @@ function getSupabaseAdmin() {
 }
 
 export async function POST(request: NextRequest) {
+  const requestId = crypto.randomUUID()
+  const startTime = Date.now()
+  
+  // Extract identity info for tracing
+  const userEmail = request.headers.get('x-user-email')
+  const clientIp = request.headers.get('x-forwarded-for')?.split(',')[0] ||
+    request.headers.get('x-real-ip') ||
+    'anonymous'
+  const identifier = userEmail || clientIp
+
   try {
     // Pro subscription check: Listing generation is Pro-only
-    const userEmail = request.headers.get('x-user-email')
     if (!userEmail) {
+      console.log(`[Generate:${requestId}] REJECTED auth missing | ip=${clientIp}`)
       return NextResponse.json(
         { error: 'Login required', message: 'Please sign in to generate listings.', upgradeUrl: '/pricing' },
         { status: 403 }
@@ -28,6 +38,7 @@ export async function POST(request: NextRequest) {
 
     const { allowed, tier, reason } = await checkListingAccess(userEmail)
     if (!allowed) {
+      console.log(`[Generate:${requestId}] REJECTED subscription | user=${userEmail} tier=${tier} reason=${reason}`)
       return NextResponse.json(
         {
           error: 'Pro subscription required',
@@ -43,18 +54,15 @@ export async function POST(request: NextRequest) {
     // Check quota first
     const quotaCheck = await checkQuotaMiddleware(request)
     if (!quotaCheck.allowed) {
+      console.log(`[Generate:${requestId}] REJECTED quota | user=${userEmail}`)
       return quotaCheck.response!
     }
 
     // Rate limit check (token bucket, 10 req/min)
-    const identifier = userEmail ||
-      request.headers.get('x-forwarded-for')?.split(',')[0] ||
-      request.headers.get('x-real-ip') ||
-      'anonymous'
-
     const rateLimitResult = await checkRateLimit(identifier)
     
     if (!rateLimitResult.allowed) {
+      console.log(`[Generate:${requestId}] REJECTED rateLimit | user=${userEmail} retryAfter=${rateLimitResult.retryAfterMs}ms`)
       return NextResponse.json(
         { 
           error: 'Rate limit exceeded', 
@@ -77,6 +85,7 @@ export async function POST(request: NextRequest) {
 
     // Validation
     if (!productName || typeof productName !== 'string') {
+      console.log(`[Generate:${requestId}] REJECTED badRequest | user=${userEmail} missing=productName`)
       return NextResponse.json(
         { error: 'productName is required' },
         { status: 400 }
@@ -84,6 +93,7 @@ export async function POST(request: NextRequest) {
     }
 
     if (!targetCountry || !['BR', 'MX'].includes(targetCountry)) {
+      console.log(`[Generate:${requestId}] REJECTED badRequest | user=${userEmail} invalid=targetCountry`)
       return NextResponse.json(
         { error: 'targetCountry must be BR or MX' },
         { status: 400 }
@@ -91,6 +101,7 @@ export async function POST(request: NextRequest) {
     }
 
     if (!category || !['skincare', 'makeup', 'haircare', 'fragrance', 'bodycare'].includes(category)) {
+      console.log(`[Generate:${requestId}] REJECTED badRequest | user=${userEmail} invalid=category`)
       return NextResponse.json(
         { error: 'Invalid category' },
         { status: 400 }
@@ -100,12 +111,16 @@ export async function POST(request: NextRequest) {
     // Check if AI API key is configured
     const apiKey = process.env.OPENAI_API_KEY || process.env.DEEPSEEK_API_KEY
     if (!apiKey) {
+      console.error(`[Generate:${requestId}] ERROR noApiKey | user=${userEmail}`)
       return NextResponse.json(
         { error: 'AI generation service is not configured' },
         { status: 503 }
       )
     }
 
+    console.log(`[Generate:${requestId}] START | user=${userEmail} country=${targetCountry} category=${category} product="${productName.substring(0, 50)}"`)
+
+    const genStart = Date.now()
     const result = await generateListing({
       productName,
       ingredients,
@@ -115,17 +130,24 @@ export async function POST(request: NextRequest) {
       tone,
       checkResult,
     })
+    const genDuration = Date.now() - genStart
+    console.log(`[Generate:${requestId}] GENERATE_OK | duration=${genDuration}ms user=${userEmail} country=${targetCountry}`)
 
     // Increment quota after successful generation
     await incrementQuota(identifier)
 
     // Moderate AI-generated output
+    const modStart = Date.now()
     const outputText = `${result.title} ${result.description} ${result.bulletPoints.join(' ')}`
     const outputModeration = await moderateContent(outputText)
+    const modDuration = Date.now() - modStart
+    console.log(`[Generate:${requestId}] MODERATE_OK | duration=${modDuration}ms flagged=${outputModeration.flagged} user=${userEmail}`)
+    
+    const totalDuration = Date.now() - startTime
     
     if (outputModeration.flagged) {
       const warnings = getModerationWarnings(outputModeration)
-      console.warn('AI output flagged:', warnings)
+      console.warn(`[Generate:${requestId}] COMPLETE_WITH_WARNING | total=${totalDuration}ms user=${userEmail} warnings=${warnings.join(';')}`)
       return NextResponse.json({
         success: true,
         data: result,
@@ -134,6 +156,7 @@ export async function POST(request: NextRequest) {
       })
     }
 
+    console.log(`[Generate:${requestId}] COMPLETE | total=${totalDuration}ms user=${userEmail} country=${targetCountry}`)
     return NextResponse.json({
       success: true,
       data: result,
