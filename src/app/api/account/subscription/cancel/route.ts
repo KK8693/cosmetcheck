@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
 import { cancelSubscription as cancelPayPalSubscription } from '@/lib/paypal'
 import { getStripe } from '@/lib/stripe'
+import { trackSubscriptionCancelled } from '@/lib/analytics-server'
 
 export const runtime = 'edge'
 
@@ -35,7 +36,7 @@ export async function POST(request: NextRequest) {
 
     const { data: userData, error: userError } = await supabase
       .from('users')
-      .select('subscription_provider, stripe_subscription_id, paypal_subscription_id')
+      .select('subscription_provider, stripe_subscription_id, paypal_subscription_id, subscription_plan')
       .eq('id', user.id)
       .single()
 
@@ -82,6 +83,12 @@ export async function POST(request: NextRequest) {
         { status: 500 }
       )
     }
+
+    // Track subscription cancelled
+    const plan = userData.subscription_plan?.includes('annual') ? 'yearly' : 'monthly'
+    await trackSubscriptionCancelled(request, plan, user.id, 'User requested cancellation').catch(() => {
+      // silently fail
+    })
 
     return NextResponse.json({
       success: true,

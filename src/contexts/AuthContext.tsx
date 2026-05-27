@@ -3,6 +3,7 @@
 import { createContext, useContext, useState, useEffect } from 'react'
 import { supabase } from '@/lib/supabase'
 import type { User } from '@supabase/supabase-js'
+import { trackEvent, setUserId, captureSignupSource, setUserProperties } from '@/lib/analytics'
 
 interface AuthContextType {
   user: User | null
@@ -21,8 +22,21 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined)
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
   const [loading, setLoading] = useState(true)
-  const [quotaUsed, setQuotaUsed] = useState(0)
+  const [quotaUsed, setQuotaUsed] = useState(() => {
+    if (typeof window === 'undefined') return 0
+    try {
+      const stored = localStorage.getItem('cosmetcheck_anonymous_checks')
+      return stored ? parseInt(stored, 10) : 0
+    } catch {
+      return 0
+    }
+  })
   const [quotaLimit, setQuotaLimit] = useState(10)
+
+  useEffect(() => {
+    // Capture signup source on first app load
+    captureSignupSource()
+  }, [])
 
   useEffect(() => {
     const fetchQuota = async (userId: string) => {
@@ -52,6 +66,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setUser(session?.user ?? null)
       if (session?.user) {
         fetchQuota(session.user.id)
+        setUserId(session.user.id)
+        setUserProperties({ user_type: 'free' })
       }
       setLoading(false)
     })
@@ -61,9 +77,18 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setUser(session?.user ?? null)
       if (session?.user) {
         fetchQuota(session.user.id)
+        setUserId(session.user.id)
+        setUserProperties({ user_type: 'free' })
       } else {
-        setQuotaUsed(0)
+        // Restore anonymous quota from localStorage on logout
+        try {
+          const stored = localStorage.getItem('cosmetcheck_anonymous_checks')
+          setQuotaUsed(stored ? parseInt(stored, 10) : 0)
+        } catch {
+          setQuotaUsed(0)
+        }
         setQuotaLimit(10)
+        setUserId(null)
       }
     })
 
@@ -73,11 +98,27 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const signIn = async (email: string, password: string) => {
     const { error } = await supabase.auth.signInWithPassword({ email, password })
     if (error) throw error
+    trackEvent('login', { method: 'email' })
   }
 
   const signUp = async (email: string, password: string) => {
     const { error } = await supabase.auth.signUp({ email, password })
     if (error) throw error
+    trackEvent('sign_up', { method: 'email' })
+
+    // Store signup source in users table (best-effort)
+    const { source, domain } = captureSignupSource()
+    try {
+      const { data: { session } } = await supabase.auth.getSession()
+      if (session?.user) {
+        await supabase.from('users').update({
+          signup_source: source,
+          first_referral_domain: domain,
+        } as never).eq('id', session.user.id)
+      }
+    } catch {
+      // non-blocking
+    }
   }
 
   const signOut = async () => {

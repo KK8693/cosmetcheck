@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { verifyWebhookSignature, getTierFromSubscriptionStatus } from '@/lib/paypal'
 import { getSupabaseAdmin } from '@/lib/supabase-admin'
+import { trackSubscriptionCompleted } from '@/lib/analytics-server'
 
 export const runtime = 'edge'
 
@@ -135,9 +136,27 @@ export async function POST(request: NextRequest) {
       )
 
       switch (eventType) {
+        case 'BILLING.SUBSCRIPTION.CREATED':
+          console.log('✅ Subscription CREATED:', subscriptionId)
+          break
         case 'BILLING.SUBSCRIPTION.ACTIVATED':
         case 'BILLING.SUBSCRIPTION.REACTIVATED':
           console.log('✅ Subscription ACTIVE:', subscriptionId)
+          // Track subscription completed
+          {
+            const plan = event.resource?.plan_id?.includes('YEAR') || event.resource?.plan_id?.includes('ANNUAL')
+              ? 'yearly'
+              : 'monthly'
+            const paymentAmount = event.resource?.billing_info?.last_payment?.amount
+            await trackSubscriptionCompleted(
+              request,
+              plan,
+              parseFloat(paymentAmount?.value || '0'),
+              paymentAmount?.currency_code?.toUpperCase() || 'USD',
+              'paypal',
+              customId || subscriptionId
+            ).catch(() => { /* silently fail */ })
+          }
           break
         case 'BILLING.SUBSCRIPTION.SUSPENDED':
           console.log('⚠️ Subscription SUSPENDED:', subscriptionId)

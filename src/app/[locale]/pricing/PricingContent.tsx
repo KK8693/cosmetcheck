@@ -1,17 +1,41 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Check, X, AlertTriangle } from 'lucide-react'
 import SubscribeButton from '@/components/SubscribeButton'
 import { Link } from '@/i18n/routing'
 import { useTranslations, useLocale } from 'next-intl'
+import { trackEvent } from '@/lib/analytics'
 
 export default function PricingContent() {
   const t = useTranslations('pricingPage')
   const locale = useLocale()
   const [yearly, setYearly] = useState(false)
+
+  // Track checkout abandonment
+  useEffect(() => {
+    const startTime = Date.now()
+    sessionStorage.removeItem('cc_checkout_initiated')
+
+    const handleBeforeUnload = () => {
+      const initiated = sessionStorage.getItem('cc_checkout_initiated')
+      if (!initiated) {
+        const timeOnPage = Math.round((Date.now() - startTime) / 1000)
+        trackEvent('checkout_abandoned', {
+          plan: yearly ? 'yearly' : 'monthly',
+          time_on_page: timeOnPage,
+        })
+      }
+    }
+
+    window.addEventListener('beforeunload', handleBeforeUnload)
+    return () => {
+      handleBeforeUnload()
+      window.removeEventListener('beforeunload', handleBeforeUnload)
+    }
+  }, [yearly])
 
   // Get locale-aware currency config from messages
   const currency = t.raw('currency') as {

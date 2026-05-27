@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getStripe } from '@/lib/stripe'
 import { getSupabaseAdmin } from '@/lib/supabase-admin'
+import { trackSubscriptionCompleted } from '@/lib/analytics-server'
 import { headers } from 'next/headers'
 
 export const runtime = 'edge'
@@ -104,6 +105,8 @@ export async function POST(request: NextRequest) {
           customer?: string
           subscription?: string
           metadata?: { priceId?: string }
+          amount_total?: number
+          currency?: string
         }
         console.log('Payment successful for session:', session.id)
         if (session.customer && session.subscription) {
@@ -113,6 +116,19 @@ export async function POST(request: NextRequest) {
             'active',
             session.metadata?.priceId
           )
+
+          // Track subscription completed
+          const plan = session.metadata?.priceId?.includes('year') || session.metadata?.priceId?.includes('annual')
+            ? 'yearly'
+            : 'monthly'
+          await trackSubscriptionCompleted(
+            request,
+            plan,
+            (session.amount_total ?? 0) / 100,
+            session.currency?.toUpperCase() || 'USD',
+            'stripe',
+            session.customer
+          ).catch(() => { /* silently fail */ })
         }
         break
       }

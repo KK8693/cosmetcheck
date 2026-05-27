@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { useLocale } from 'next-intl'
 import { getPlanId } from '@/lib/paypal'
+import { trackEvent } from '@/lib/analytics'
 
 interface SubscribeButtonProps {
   children: React.ReactNode
@@ -24,6 +25,13 @@ export default function SubscribeButton({
   const handleSubscribe = async () => {
     setLoading(true)
     try {
+      // Track subscription initiated
+      trackEvent('subscription_initiated', {
+        plan: billingCycle,
+        provider: 'paypal',
+      })
+      sessionStorage.setItem('cc_checkout_initiated', '1')
+
       // Select PayPal plan by locale + billing cycle
       const planIdValue = getPlanId(locale, billingCycle === 'yearly')
 

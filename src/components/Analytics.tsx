@@ -18,7 +18,11 @@ function GA4Script() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', '${GA_ID}');
+          gtag('config', '${GA_ID}', {
+            anonymize_ip: true,
+            send_page_view: false,
+            transport_type: 'beacon'
+          });
         `}
       </Script>
     </>

@@ -6,6 +6,7 @@ import { useTranslations, useLocale } from 'next-intl'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
+import { trackEvent } from '@/lib/analytics'
 import { LogOut, Settings, CreditCard, AlertCircle, CheckCircle, Loader2 } from 'lucide-react'
 
 interface AccountData {
@@ -144,6 +145,9 @@ export default function AccountPage() {
       }
 
       setSuccess(data.message)
+      trackEvent('subscription_cancelled', {
+        plan: accountData?.subscriptionPlan?.includes('annual') ? 'yearly' : 'monthly',
+      })
       await fetchAccountData()
     } catch (e) {
       setError(e instanceof Error ? e.message : t('cancelError'))

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback, useRef } from 'react'
+import { useState, useCallback, useRef, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
@@ -8,6 +8,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Label } from '@/components/ui/label'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
+import { trackEvent } from '@/lib/analytics'
 import { 
   FileUp, 
   ClipboardPaste, 
@@ -118,6 +119,7 @@ export function BatchContent() {
     reader.onload = (event) => {
       const text = event.target?.result as string
       setInputText(text)
+      trackEvent('product_upload', { product_type: 'batch', source: 'file' })
     }
     reader.readAsText(file)
   }
@@ -139,6 +141,10 @@ export function BatchContent() {
     setProgress(0)
     setError(null)
     setStats(null)
+    
+    // Track analysis start
+    const regulation = selectedCountry === 'BOTH' ? 'anvisa' : selectedCountry === 'BR' ? 'anvisa' : 'cofepris'
+    trackEvent('analysis_start', { regulation })
     
     try {
       // Simulate progress updates
@@ -191,6 +197,8 @@ export function BatchContent() {
   const handleExport = async () => {
     if (!stats) return
     
+    trackEvent('report_export', { format: 'excel' })
+    
     try {
       const response = await fetch(`/api/batch/export/${stats.taskId}`, {
         method: 'GET',
@@ -232,6 +240,14 @@ export function BatchContent() {
     setError(null)
     setExpandedRows(new Set())
   }
+
+  // Track report view when results are first shown
+  useEffect(() => {
+    if (stats && stats.results.length > 0) {
+      const regulation = selectedCountry === 'BOTH' ? 'anvisa' : selectedCountry === 'BR' ? 'anvisa' : 'cofepris'
+      trackEvent('report_view', { regulation })
+    }
+  }, [stats, selectedCountry])
 
   const filteredResults = stats?.results.filter(result => {
     if (filter === 'compliant') return result.isCompliant
