@@ -27,6 +27,25 @@ export default function PricingContent() {
           plan: yearly ? 'yearly' : 'monthly',
           time_on_page: timeOnPage,
         })
+
+        // 【M1b】Record abandoned checkout for email recovery (non-blocking)
+        try {
+          const userEmail = sessionStorage.getItem('cc_user_email')
+          if (userEmail) {
+            fetch('/api/email/abandoned-checkout', {
+              method: 'PUT',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                email: userEmail,
+                plan: yearly ? 'yearly' : 'monthly',
+                locale,
+              }),
+              keepalive: true,
+            }).catch(() => { /* silently fail */ })
+          }
+        } catch {
+          // non-blocking
+        }
       }
     }
 

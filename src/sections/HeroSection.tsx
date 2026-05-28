@@ -477,6 +477,27 @@ export function HeroSection() {
       // Update quota from API response (works for both logged-in and anonymous)
       if (data.quota) {
         setApiQuota(data.quota)
+
+        // 【M1b】Trigger quota warning email if threshold reached (logged-in users only)
+        try {
+          const q = data.quota as { used: number; limit: number }
+          const percent = Math.round((q.used / q.limit) * 100)
+          if (user?.email && (percent >= 100 || (percent >= 80 && percent < 100))) {
+            fetch('/api/email/quota-warning', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                email: user.email,
+                locale,
+                used: q.used,
+                limit: q.limit,
+                percent: percent >= 100 ? 100 : 80,
+              }),
+            }).catch(() => { /* silently fail */ })
+          }
+        } catch {
+          // non-blocking
+        }
       }
 
       if (res.status === 429) {

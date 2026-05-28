@@ -79,11 +79,16 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         fetchQuota(session.user.id)
         setUserId(session.user.id)
         setUserProperties({ user_type: 'free' })
+        // 【M1b】Store email for abandoned checkout tracking
+        if (session.user.email) {
+          try { sessionStorage.setItem('cc_user_email', session.user.email) } catch { /* ignore */ }
+        }
       } else {
         // Restore anonymous quota from localStorage on logout
         try {
           const stored = localStorage.getItem('cosmetcheck_anonymous_checks')
           setQuotaUsed(stored ? parseInt(stored, 10) : 0)
+          sessionStorage.removeItem('cc_user_email')
         } catch {
           setQuotaUsed(0)
         }
@@ -102,7 +107,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }
 
   const signUp = async (email: string, password: string) => {
-    const { error } = await supabase.auth.signUp({ email, password })
+    const { error, data } = await supabase.auth.signUp({ email, password })
     if (error) throw error
     trackEvent('sign_up', { method: 'email' })
 
@@ -116,6 +121,26 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           first_referral_domain: domain,
         } as never).eq('id', session.user.id)
       }
+    } catch {
+      // non-blocking
+    }
+
+    // 【M1b】Send onboarding welcome email (non-blocking)
+    try {
+      const locale = (typeof window !== 'undefined' && window.location.pathname.startsWith('/pt-BR'))
+        ? 'pt-BR'
+        : (typeof window !== 'undefined' && window.location.pathname.startsWith('/es-MX'))
+          ? 'es-MX'
+          : 'en'
+      fetch('/api/email/onboarding', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email,
+          locale,
+          step: 1,
+        }),
+      }).catch(() => { /* silently fail */ })
     } catch {
       // non-blocking
     }
