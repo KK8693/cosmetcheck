@@ -17,7 +17,6 @@ export const runtime = 'edge'
 // Force dynamic rendering for Cloudflare Pages compatibility
 export const dynamic = 'force-dynamic'
 
-/* Temporarily disabled for debugging
 export async function generateMetadata({
   params,
 }: {
@@ -39,7 +38,6 @@ export async function generateMetadata({
     },
   }
 }
-*/
 
 export default async function HomePage({
   params
