@@ -13,6 +13,9 @@ export async function generateMetadata({
   const { locale } = await params
   const messages = messagesMap[locale] || messagesMap['en']
   return {
+    alternates: {
+      canonical: `/${locale}/contact`,
+    },
     title: messages.contact?.title || 'Contact Us',
   }
 }

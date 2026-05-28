@@ -21,11 +21,40 @@ function handleLocaleAliases(request: NextRequest) {
   return null
 }
 
+function enforceHttps(request: NextRequest) {
+  // Cloudflare forwards the original protocol via x-forwarded-proto
+  const proto = request.headers.get('x-forwarded-proto')
+  if (proto === 'http') {
+    const httpsUrl = new URL(request.url)
+    httpsUrl.protocol = 'https'
+    return NextResponse.redirect(httpsUrl, 301)
+  }
+  return null
+}
+
+function addSecurityHeaders(response: NextResponse) {
+  // HSTS: tell browsers to always use HTTPS for this domain
+  response.headers.set(
+    'Strict-Transport-Security',
+    'max-age=63072000; includeSubDomains; preload'
+  )
+  return response
+}
+
 export default function middleware(request: NextRequest) {
+  // 1. Force HTTPS via 301 redirect
+  const httpsRedirect = enforceHttps(request)
+  if (httpsRedirect) return httpsRedirect
+
+  // 2. Handle locale short-code aliases (pt → pt-BR, es → es-MX)
   const aliasRedirect = handleLocaleAliases(request)
   if (aliasRedirect) return aliasRedirect
 
-  return createMiddleware(routing)(request)
+  // 3. Run next-intl middleware
+  const response = createMiddleware(routing)(request)
+
+  // 4. Add HSTS header to all responses
+  return addSecurityHeaders(response)
 }
 
 export const config = {
