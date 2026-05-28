@@ -16,9 +16,6 @@ export async function generateMetadata({
   const { locale } = await params
   const messages = messagesMap[locale] || messagesMap['en']
   return {
-    alternates: {
-      canonical: `/${locale}/batch`,
-    },
     title: messages.batch?.title || 'Batch Detection',
   }
 }

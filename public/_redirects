@@ -1,10 +1,3 @@
-# Cloudflare Pages redirects
-# Order matters: more specific rules first
-
-# HTTP -> HTTPS (301 permanent redirect)
-# Cloudflare Pages does not support protocol-based redirects in _redirects.
-# Use Cloudflare Dashboard > SSL/TLS > Edge Certificates > Always Use HTTPS instead.
-# The middleware also enforces HTTPS via x-forwarded-proto detection.
-
-# SPA fallback for Next.js dynamic routes
+# Cloudflare Pages SPA fallback
+# All routes go to root for Next.js to handle via middleware
 /* /index.html 200

@@ -1,4 +1,3 @@
-import { Metadata } from 'next'
 import { HeroSection } from '@/sections/HeroSection'
 import { HowItWorksSection } from '@/sections/HowItWorksSection'
 import { UseCasesSection } from '@/sections/UseCasesSection'
@@ -17,26 +16,10 @@ export const runtime = 'edge'
 // Force dynamic rendering for Cloudflare Pages compatibility
 export const dynamic = 'force-dynamic'
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>
-}): Promise<Metadata> {
-  const { locale } = await params
-  return {
-    title: {
-      absolute: 'CosmetCheck — LatAm Beauty Compliance AI',
-    },
-    alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        'zh-CN': '/zh',
-        'en': '/en',
-        'pt-BR': '/pt-BR',
-        'es-MX': '/es-MX',
-      },
-    },
-  }
+export const metadata = {
+  title: {
+    absolute: 'CosmetCheck — LatAm Beauty Compliance AI',
+  },
 }
 
 export default async function HomePage({

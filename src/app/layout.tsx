@@ -65,12 +65,12 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: '/',
+    canonical: 'https://cosmetcheck.com',
     languages: {
-      'zh-CN': '/zh',
-      'en': '/en',
-      'pt-BR': '/pt-BR',
-      'es-MX': '/es-MX',
+      'zh-CN': 'https://cosmetcheck.com/zh',
+      'en': 'https://cosmetcheck.com/en',
+      'pt-BR': 'https://cosmetcheck.com/pt-BR',
+      'es-MX': 'https://cosmetcheck.com/es-MX',
     },
   },
   verification: {

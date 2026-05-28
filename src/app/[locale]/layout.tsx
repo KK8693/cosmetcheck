@@ -19,17 +19,17 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-
+  
   // Validate locale
   if (!routing.locales.includes(locale as typeof routing.locales[number])) {
     notFound()
   }
-
+  
   // Enable static rendering for this locale
   setRequestLocale(locale)
-
+  
   const messages = await getMessages()
-
+  
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
