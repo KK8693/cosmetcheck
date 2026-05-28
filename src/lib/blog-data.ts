@@ -21,7 +21,7 @@ export interface BlogPost {
 }
 
 // ---------------------------------------------------------------------------
-// Blog posts (M2 content calendar Week 8-14)
+// Blog posts (M2 content calendar Week 8-14) — local fallback
 // ---------------------------------------------------------------------------
 
 export const blogPosts: BlogPost[] = [
@@ -213,21 +213,60 @@ export const blogPosts: BlogPost[] = [
 ]
 
 // ---------------------------------------------------------------------------
-// Helpers
+// Notion CMS integration — build-time data loading
 // ---------------------------------------------------------------------------
 
-export function getPostsByLocale(locale: BlogLocale): BlogPost[] {
-  return blogPosts.filter((p) => p.locale === locale)
+let cachedPosts: BlogPost[] | null = null
+
+/**
+ * Load all blog posts. Prefers Notion CMS if configured,
+ * otherwise falls back to local static data.
+ * Results are cached for the duration of the build process.
+ */
+export async function loadAllPosts(): Promise<BlogPost[]> {
+  if (cachedPosts) return cachedPosts
+
+  // Dynamic import to avoid bundling Notion client when not used
+  const { fetchBlogPostsFromNotion, isNotionConfigured } = await import('./notion')
+
+  if (isNotionConfigured()) {
+    try {
+      const notionPosts = await fetchBlogPostsFromNotion()
+      if (notionPosts.length > 0) {
+        cachedPosts = notionPosts
+        console.log(`[Blog] Loaded ${notionPosts.length} posts from Notion CMS`)
+        return cachedPosts
+      }
+      console.warn('[Blog] Notion configured but no published posts found, using fallback')
+    } catch (err) {
+      console.error('[Blog] Failed to fetch from Notion, using fallback:', err)
+    }
+  }
+
+  cachedPosts = blogPosts
+  return cachedPosts
 }
 
-export function getPostBySlug(slug: string): BlogPost | undefined {
-  return blogPosts.find((p) => p.slug === slug)
+// ---------------------------------------------------------------------------
+// Helpers (notion-aware)
+// ---------------------------------------------------------------------------
+
+export async function getPostsByLocale(locale: BlogLocale): Promise<BlogPost[]> {
+  const posts = await loadAllPosts()
+  return posts.filter((p) => p.locale === locale)
 }
 
-export function getAllSlugs(): string[] {
-  return blogPosts.map((p) => p.slug)
+export async function getPostBySlug(slug: string): Promise<BlogPost | undefined> {
+  const posts = await loadAllPosts()
+  return posts.find((p) => p.slug === slug)
 }
 
-export function getFeaturedPosts(locale: BlogLocale): BlogPost[] {
-  return blogPosts.filter((p) => p.locale === locale && p.featured)
+export async function getAllSlugs(): Promise<string[]> {
+  const posts = await loadAllPosts()
+  return posts.map((p) => p.slug)
+}
+
+export async function getFeaturedPosts(locale: BlogLocale): Promise<BlogPost[]> {
+  const posts = await loadAllPosts()
+  return posts.filter((p) => p.locale === locale && p.featured)
 }

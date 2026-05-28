@@ -9,7 +9,7 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  const slugs = getAllSlugs()
+  const slugs = await getAllSlugs()
   const locales: BlogLocale[] = ['pt-BR', 'es-MX', 'en']
   const params: { locale: string; slug: string }[] = []
 
@@ -23,7 +23,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params
-  const post = getPostBySlug(slug)
+  const post = await getPostBySlug(slug)
 
   if (!post) {
     return {
@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BlogPostPage({ params }: Props) {
   const { locale, slug } = await params
-  const post = getPostBySlug(slug)
+  const post = await getPostBySlug(slug)
 
   if (!post) {
     notFound()
