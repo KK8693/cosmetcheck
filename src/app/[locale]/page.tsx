@@ -28,7 +28,7 @@ export async function generateMetadata({
       absolute: 'CosmetCheck — LatAm Beauty Compliance AI',
     },
     alternates: {
-      canonical: `/${locale}`,
+      canonical: `https://cosmetcheck.com/${locale}`,
       languages: {
         'zh-CN': '/zh',
         'en': '/en',

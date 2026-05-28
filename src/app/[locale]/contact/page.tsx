@@ -14,7 +14,7 @@ export async function generateMetadata({
   const messages = messagesMap[locale] || messagesMap['en']
   return {
     alternates: {
-      canonical: `/${locale}/contact`,
+      canonical: `https://cosmetcheck.com/${locale}/contact`,
     },
     title: messages.contact?.title || 'Contact Us',
   }

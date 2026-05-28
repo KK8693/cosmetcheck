@@ -12,7 +12,7 @@ export async function generateMetadata({
   const messages = messagesMap[locale] || messagesMap['en']
   return {
     alternates: {
-      canonical: `/${locale}/refund`,
+      canonical: `https://cosmetcheck.com/${locale}/refund`,
     },
     title: messages.legal.refund.title,
   }
