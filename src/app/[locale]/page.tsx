@@ -36,9 +36,6 @@ export async function generateMetadata({
         'es-MX': '/es-MX',
       },
     },
-    openGraph: {
-      url: `https://cosmetcheck.com/${locale}`,
-    },
   }
 }
 
