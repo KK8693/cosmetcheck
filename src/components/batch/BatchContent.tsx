@@ -21,7 +21,8 @@ import {
   Info,
   ChevronDown,
   ChevronUp,
-  Loader2
+  Loader2,
+  Sparkles
 } from 'lucide-react'
 
 interface BatchItem {
@@ -274,6 +275,15 @@ export function BatchContent() {
           <p className="text-gray-400 max-w-2xl mx-auto">
             {t('subtitle')}
           </p>
+          {/* Feature requirement card */}
+          <div className="mt-6 inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-[#1A1A24] border border-[#fbbf24]/20 max-w-lg mx-auto">
+            <div className="w-10 h-10 rounded-lg bg-[#fbbf24]/10 flex items-center justify-center shrink-0">
+              <Sparkles className="w-5 h-5 text-[#fbbf24]" />
+            </div>
+            <p className="text-sm text-gray-300 text-left">
+              {t('annualOnlyDesc')}
+            </p>
+          </div>
         </div>
 
         {/* Error Alert */}

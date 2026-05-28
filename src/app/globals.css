@@ -298,3 +298,31 @@
     font-size: 16px;
   }
 }
+
+/* ===== Print styles for PDF export ===== */
+@media print {
+  body > * {
+    display: none !important;
+  }
+  #check-result,
+  #check-result * {
+    display: revert !important;
+    visibility: visible !important;
+    color: #000 !important;
+    background: #fff !important;
+  }
+  #check-result {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  #check-result button,
+  #check-result .no-print {
+    display: none !important;
+  }
+}

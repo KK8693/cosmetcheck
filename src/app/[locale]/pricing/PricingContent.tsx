@@ -195,6 +195,12 @@ export default function PricingContent() {
                     </>
                   )}
                 </div>
+                {yearly && (
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-green-500/20 border border-green-500/30 text-green-400 text-xs font-bold mb-3">
+                    <span className="inline-block w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+                    Save {currency.saveAmount}/year vs monthly
+                  </div>
+                )}
                 <p className="text-sm text-gray-400 mb-4">{desc}</p>
                 <div className="mb-6 rounded-lg bg-red-900/20 border border-red-800/30 p-3">
                   <p className="text-red-400 text-sm font-medium flex items-center gap-2">

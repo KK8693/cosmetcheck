@@ -402,6 +402,25 @@ export default function ChatWidget() {
             <div ref={messagesEndRef} />
           </div>
 
+          {/* Free user login prompt */}
+          {isFreeUser && (
+            <div className="bg-amber-500/10 border-t border-amber-500/20 px-4 py-3">
+              <p className="text-xs text-amber-400 text-center">
+                {t('freeUserBanner')}{' '}
+                <button
+                  onClick={() => {
+                    if (typeof window !== 'undefined') {
+                      window.dispatchEvent(new CustomEvent('open-auth-modal'))
+                    }
+                  }}
+                  className="underline font-medium hover:text-amber-300 cursor-pointer"
+                >
+                  {t('loginNow')}
+                </button>
+              </p>
+            </div>
+          )}
+
           {/* Input area */}
           <div className="border-t border-[#252530] p-3">
             <div className="flex gap-2">

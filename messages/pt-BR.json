@@ -105,6 +105,15 @@
     "testResult": "Resultado do Teste",
     "complianceCheckComplete": "Verificação Completa",
     "noIssuesFound": "Parabéns! Nenhum problema de conformidade encontrado.",
+    "noIssuesCTA": "Ótima notícia! Seu produto está totalmente conforme. Gere um anúncio profissional agora para impulsionar as vendas.",
+    "generateListingPrompt": "Gerar Anúncio Conforme",
+    "checkAnotherProduct": "Verificar Outro Produto",
+    "quotaHalfWarning": "Você já usou metade das verificações gratuitas. Atualize para Pro para acesso ilimitado.",
+    "quotaLowWarning": "Restam apenas {remaining} verificações — atualize para Pro para acesso ilimitado.",
+    "fixThenGenerate": "Corrija os {count} problemas acima e depois gere um anúncio conforme para impulsionar as vendas.",
+    "checkingStep1": "Analisando ingredientes e alegações...",
+    "checkingStep2": "Comparando com regulamentações ANVISA / COFEPRIS...",
+    "checkingStep3": "Gerando seu relatório de conformidade...",
     "critical": "Crítico",
     "criticalIssues": "Problemas Críticos (Deve Corrigir)",
     "warningIssues": "Avisos (Recomendado Corrigir)",
@@ -121,7 +130,11 @@
     "copyBtn": "Copiar",
     "copyAll": "Copiar Tudo",
     "copyAllListing": "Copiar Tudo",
-    "ptBr": "Português",
+    "shareResult": "Compartilhar",
+    "exportPDF": "Exportar PDF",
+    "shareSuccess": "Compartilhado com sucesso",
+    "shareFallback": "Resultado copiado para a \u00e1rea de transfer\u00eancia",
+    "ptBr": "Portugu\u00eas",
     "esMx": "Espanhol",
     "disclaimer": "Este Listing foi gerado por IA apenas para referência. Por favor, confirme a conformidade final com as regulamentações locais antes de publicar.",
     "complianceWarning": "Notas",
@@ -183,7 +196,12 @@
     "andMorePlatforms": "e mais",
     "step1Label": "Inserir Info",
     "step2Label": "Verificação IA",
-    "step3Label": "Gerar Listing"
+    "step3Label": "Gerar Listing",
+    "trustBadges": {
+      "sslEncryption": "Criptografia SSL",
+      "noCreditCard": "Sem Cartão de Crédito",
+      "usersCount": "1.200+ Vendedores Usando"
+    }
   },
   "howItWorks": {
     "title": "Verificação de Conformidade em 3 Etapas",
@@ -414,7 +432,8 @@
     "login": "Entrar",
     "register": "Cadastrar",
     "email": "E-mail",
-    "password": "Senha",
+    "password": "***",
+    "passwordHint": "Mínimo 6 caracteres",
     "confirmPassword": "Confirmar Senha",
     "forgotPassword": "Esqueceu a senha?",
     "noAccount": "Não tem conta?",
@@ -783,10 +802,19 @@
     "todayRemaining": "{count} restantes hoje",
     "monthRemaining": "{count} restantes este mês",
     "errorLimit": "Você atingiu o limite diário (3 conversas). Atualize para o Pro para suporte de IA ilimitado.",
-    "errorAdvisorLogin": "O Consultor de Conformidade é exclusivo para assinantes Pro. Atualize para desbloquear consultoria de conformidade com IA 1 a 1.",
+    "errorAdvisorLogin": "O Consultor de Conformidade \u00e9 exclusivo para assinantes Pro. Atualize para desbloquear consultoria de conformidade com IA 1 a 1.",
     "errorGeneric": "Desculpe, algo deu errado. Tente novamente.",
-    "errorUnavailable": "Desculpe, estou temporariamente indisponível. Tente novamente mais tarde.",
-    "errorAdvisorUnavailable": "Desculpe, o Consultor de Conformidade está temporariamente indisponível. Tente novamente mais tarde ou entre em contato com o suporte.",
-    "viewPricing": "Ver Preços →"
+    "errorUnavailable": "Desculpe, estou temporariamente indispon\u00edvel. Tente novamente mais tarde.",
+    "errorAdvisorUnavailable": "Desculpe, o Consultor de Conformidade est\u00e1 temporariamente indispon\u00edvel. Tente novamente mais tarde ou entre em contato com o suporte.",
+    "viewPricing": "Ver Pre\u00e7os \u2192",
+    "loginToChat": "Fa\u00e7a login para conversar com o suporte de IA",
+    "loginNow": "Entrar \u2192",
+    "freeUserBanner": "\ud83c\udf81 Fa\u00e7a login para acessar o Suporte de IA e Consultor de Conformidade"
+  },
+  "history": {
+    "title": "Verifica\u00e7\u00f5es Recentes",
+    "empty": "Nenhuma verifica\u00e7\u00e3o recente",
+    "checkAgain": "Verificar Novamente",
+    "clearHistory": "Limpar Hist\u00f3rico"
   }
 }

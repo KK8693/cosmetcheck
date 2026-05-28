@@ -66,7 +66,7 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
       } else if (isSignUp) {
         await signUp(email, password)
         setSuccess(t('registerSuccess'))
-        setIsSignUp(false)
+        setTimeout(() => onOpenChange(false), 1500)
       } else {
         await signIn(email, password)
         setSuccess(t('loginSuccess'))

@@ -105,6 +105,15 @@
     "testResult": "Resultado de la Prueba",
     "complianceCheckComplete": "Verificación Completa",
     "noIssuesFound": "¡Felicitaciones! No se encontraron problemas de cumplimiento.",
+    "noIssuesCTA": "¡Buenas noticias! Tu producto es totalmente conforme. Genera un listado profesional ahora para impulsar las ventas.",
+    "generateListingPrompt": "Generar Listado Conforme",
+    "checkAnotherProduct": "Verificar Otro Producto",
+    "quotaHalfWarning": "Has usado la mitad de tus verificaciones gratuitas. Actualiza a Pro para acceso ilimitado.",
+    "quotaLowWarning": "Solo quedan {remaining} verificaciones — actualiza a Pro para acceso ilimitado.",
+    "fixThenGenerate": "Corrige los {count} problemas anteriores y luego genera un listado conforme para impulsar las ventas.",
+    "checkingStep1": "Analizando ingredientes y afirmaciones...",
+    "checkingStep2": "Comparando con regulaciones ANVISA / COFEPRIS...",
+    "checkingStep3": "Generando tu informe de cumplimiento...",
     "critical": "Crítico",
     "criticalIssues": "Problemas Críticos (Debe Corregir)",
     "warningIssues": "Advertencias (Recomendado Corregir)",
@@ -121,7 +130,11 @@
     "copyBtn": "Copiar",
     "copyAll": "Copiar Todo",
     "copyAllListing": "Copiar Todo",
-    "ptBr": "Portugués",
+    "shareResult": "Compartir",
+    "exportPDF": "Exportar PDF",
+    "shareSuccess": "Compartido con \u00e9xito",
+    "shareFallback": "Resultado copiado al portapapeles",
+    "ptBr": "Portugu\u00e9s",
     "esMx": "Español",
     "disclaimer": "Este Listing fue generado por IA solo como referencia. Por favor, confirme el cumplimiento final con las regulaciones locales antes de publicar.",
     "complianceWarning": "Notas",
@@ -183,7 +196,12 @@
     "andMorePlatforms": "y más",
     "step1Label": "Ingresar Info",
     "step2Label": "Verificación IA",
-    "step3Label": "Generar Listing"
+    "step3Label": "Generar Listing",
+    "trustBadges": {
+      "sslEncryption": "Encriptación SSL",
+      "noCreditCard": "Sin Tarjeta de Crédito",
+      "usersCount": "1.200+ Vendedores Usando"
+    }
   },
   "howItWorks": {
     "title": "Cumplimiento en 3 Pasos",
@@ -414,7 +432,8 @@
     "login": "Iniciar Sesión",
     "register": "Registrarse",
     "email": "Correo Electrónico",
-    "password": "Contraseña",
+    "password": "***",
+    "passwordHint": "Mínimo 6 caracteres",
     "confirmPassword": "Confirmar Contraseña",
     "forgotPassword": "¿Olvidaste tu contraseña?",
     "noAccount": "¿No tienes cuenta?",
@@ -783,10 +802,19 @@
     "todayRemaining": "{count} restantes hoy",
     "monthRemaining": "{count} restantes este mes",
     "errorLimit": "Ha alcanzado el límite diario (3 conversaciones). Actualice a Pro para soporte de IA ilimitado.",
-    "errorAdvisorLogin": "El Asesor de Cumplimiento es exclusivo para suscriptores Pro. Actualice para desbloquear asesoría de cumplimiento con IA 1 a 1.",
-    "errorGeneric": "Lo sentimos, algo salió mal. Inténtelo de nuevo.",
-    "errorUnavailable": "Lo sentimos, estoy temporalmente no disponible. Inténtelo de nuevo más tarde.",
-    "errorAdvisorUnavailable": "Lo sentimos, el Asesor de Cumplimiento está temporalmente no disponible. Inténtelo de nuevo más tarde o contacte a soporte.",
-    "viewPricing": "Ver Precios →"
+    "errorAdvisorLogin": "El Asesor de Cumplimiento es exclusivo para suscriptores Pro. Actualice para desbloquear asesor\u00eda de cumplimiento con IA 1 a 1.",
+    "errorGeneric": "Lo sentimos, algo sali\u00f3 mal. Int\u00e9ntelo de nuevo.",
+    "errorUnavailable": "Lo sentimos, estoy temporalmente no disponible. Int\u00e9ntelo de nuevo m\u00e1s tarde.",
+    "errorAdvisorUnavailable": "Lo sentimos, el Asesor de Cumplimiento est\u00e1 temporalmente no disponible. Int\u00e9ntelo de nuevo m\u00e1s tarde o contacte a soporte.",
+    "viewPricing": "Ver Precios \u2192",
+    "loginToChat": "Inicie sesi\u00f3n para chatear con el soporte de IA",
+    "loginNow": "Iniciar sesi\u00f3n \u2192",
+    "freeUserBanner": "\ud83c\udf81 Inicie sesi\u00f3n para acceder al Soporte de IA y Asesor de Cumplimiento"
+  },
+  "history": {
+    "title": "Verificaciones Recientes",
+    "empty": "No hay verificaciones recientes",
+    "checkAgain": "Verificar de Nuevo",
+    "clearHistory": "Borrar Historial"
   }
 }

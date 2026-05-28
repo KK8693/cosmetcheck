@@ -1,14 +1,14 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
 import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { useAuth } from '@/contexts/AuthContext'
 import AuthModal from '@/components/AuthModal'
-import { AlertTriangle, Info, CheckCircle, XCircle, Zap, Shield, X, Lock, CreditCard, Users, Loader2, ShoppingBag, Store, Globe, Smartphone, Package, Truck } from 'lucide-react'
+import { AlertTriangle, Info, CheckCircle, XCircle, Zap, X, Lock, CreditCard, Users, Loader2, ShoppingBag, Store, Globe, Smartphone, Package, Truck } from 'lucide-react'
+import { Link } from '@/i18n/routing'
 
 interface ViolationItem {
   ruleId: string
@@ -88,10 +88,23 @@ interface GeneratedListing {
   warnings: string[]
   language: 'pt-BR' | 'es-MX'
 }
+
+interface CheckHistoryItem {
+  id: string
+  timestamp: number
+  productName: string
+  ingredientsPreview: string
+  country: 'BR' | 'MX'
+  isCompliant: boolean
+  issueCount: number
+}
+
+const HISTORY_KEY = 'cosmetcheck_check_history'
+
 export function HeroSection() {
   const t = useTranslations('hero')
-  const tCommon = useTranslations('common')
   const tDemo = useTranslations('demo')
+  const tHistory = useTranslations('history')
   const locale = useLocale()
 
   // ── 翻译与辅助组件（内部定义，避免硬编码中文）──
@@ -157,11 +170,10 @@ export function HeroSection() {
     return text.substring(start, end).trim()
   }
 
-  function SourceHighlight({ violation, ingredients, productBenefits, productName }: {
+  function SourceHighlight({ violation, ingredients, productBenefits }: {
     violation: ViolationItem
     ingredients: string
     productBenefits: string
-    productName: string
   }) {
     const fields = violation.allSourceFields?.length ? violation.allSourceFields : [violation.sourceField].filter(Boolean)
     if (!fields || fields.length === 0) return null
@@ -198,20 +210,67 @@ export function HeroSection() {
     )
   }
   // Default demo data - Hydroquinone banned ingredient example
-  const [ingredients, setIngredients] = useState('')
-  const [country, setCountry] = useState<'BR' | 'MX'>('BR')
+  const [ingredients, setIngredients] = useState(() => {
+    if (typeof window === 'undefined') return ''
+    try { return localStorage.getItem('cosmetcheck_ingredients') || '' } catch { return '' }
+  })
+  const [country, setCountry] = useState<'BR' | 'MX'>(() => {
+    if (typeof window === 'undefined') return 'BR'
+    try { return (localStorage.getItem('cosmetcheck_country') as 'BR' | 'MX') || 'BR' } catch { return 'BR' }
+  })
   const [isChecking, setIsChecking] = useState(false)
   const [checkResult, setCheckResult] = useState<CheckResult | null>(null)
   const [checkError, setCheckError] = useState('')
   const [authOpen, setAuthOpen] = useState(false)
-  const { user, signOut, quotaUsed, quotaLimit, setQuotaUsed } = useAuth()
+  const { user, quotaUsed, quotaLimit } = useAuth()
 
   // AI Generation state
-  const [productName, setProductName] = useState('')
-  const [productBenefits, setProductBenefits] = useState('')
+  const [productName, setProductName] = useState(() => {
+    if (typeof window === 'undefined') return ''
+    try { return localStorage.getItem('cosmetcheck_productName') || '' } catch { return '' }
+  })
+  const [productBenefits, setProductBenefits] = useState(() => {
+    if (typeof window === 'undefined') return ''
+    try { return localStorage.getItem('cosmetcheck_productBenefits') || '' } catch { return '' }
+  })
   const [isGenerating, setIsGenerating] = useState(false)
   const [generatedListing, setGeneratedListing] = useState<GeneratedListing | null>(null)
   const [generateError, setGenerateError] = useState('')
+  const [checkingStep, setCheckingStep] = useState(0)
+
+  // Local quota display state (works for both logged-in and anonymous users)
+  const [apiQuota, setApiQuota] = useState<{ used: number; limit: number; remaining: number } | null>(null)
+
+  // Derived display quota: prioritize API response, then AuthContext, then localStorage fallback
+  const displayQuota = useMemo(() => {
+    if (apiQuota) return apiQuota
+    if (user && quotaUsed !== undefined && quotaLimit !== undefined) {
+      return { used: quotaUsed, limit: quotaLimit, remaining: Math.max(0, quotaLimit - quotaUsed) }
+    }
+    return null
+  }, [apiQuota, user, quotaUsed, quotaLimit])
+
+  // Load anonymous check history from localStorage on mount
+  const [anonymousChecks, setAnonymousChecks] = useState<number>(() => {
+    if (typeof window === 'undefined') return 0
+    try {
+      const stored = localStorage.getItem('cosmetcheck_anonymous_checks')
+      return stored ? parseInt(stored, 10) : 0
+    } catch {
+      return 0
+    }
+  })
+
+  // Check history panel (localStorage, no backend needed)
+  const [checkHistory, setCheckHistory] = useState<CheckHistoryItem[]>(() => {
+    if (typeof window === 'undefined') return []
+    try {
+      const stored = localStorage.getItem(HISTORY_KEY)
+      return stored ? JSON.parse(stored) : []
+    } catch {
+      return []
+    }
+  })
 
   // Multi-step progress tracking (P2-16) — derived state, no setState in effect
   const currentStep = useMemo(() => {
@@ -226,6 +285,39 @@ export function HeroSection() {
     t('step2Label') || 'AI Compliance Check', 
     t('step3Label') || 'Generate Listing'
   ]
+
+  // Auto-save form inputs to localStorage (DP-10)
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    try {
+      localStorage.setItem('cosmetcheck_ingredients', ingredients)
+      localStorage.setItem('cosmetcheck_productName', productName)
+      localStorage.setItem('cosmetcheck_productBenefits', productBenefits)
+      localStorage.setItem('cosmetcheck_country', country)
+    } catch {
+      // ignore localStorage errors
+    }
+  }, [ingredients, productName, productBenefits, country])
+
+  // Animate checking steps during loading (DP-08)
+  useEffect(() => {
+    if (!isChecking) return
+    const timers = [
+      setTimeout(() => setCheckingStep(1), 800),
+      setTimeout(() => setCheckingStep(2), 1800),
+    ]
+    return () => {
+      timers.forEach(clearTimeout)
+      setCheckingStep(0)
+    }
+  }, [isChecking])
+
+  // Listen for external open-auth-modal events (from ChatWidget)
+  useEffect(() => {
+    const handler = () => setAuthOpen(true)
+    window.addEventListener('open-auth-modal', handler)
+    return () => window.removeEventListener('open-auth-modal', handler)
+  }, [])
 
   // === P4: Collapsible violation group by sourceField ===
   function ViolationCardGroup({ 
@@ -271,7 +363,7 @@ export function HeroSection() {
                 {t('sourceFieldLabel')}{formatSourceFields(first.allSourceFields || [first.sourceField!])}
               </p>
             )}
-            <SourceHighlight violation={first} ingredients={ingredients} productBenefits={productBenefits} productName={productName} />
+            <SourceHighlight violation={first} ingredients={ingredients} productBenefits={productBenefits} />
             
             {rest.length > 0 && (
               <details className="mt-2 group">
@@ -353,9 +445,6 @@ export function HeroSection() {
   // Use demo result if showDemo is true and no real result exists
   // Don't show demo if we're currently checking (isChecking)
   const resultToShow = !isChecking && showDemo && !checkResult ? demoResult : checkResult
-  
-  // Show loading state while checking
-  const isShowingResult = isChecking || resultToShow
 
   const handleCheck = async () => {
     // User is running their own check, hide demo result
@@ -384,8 +473,51 @@ export function HeroSection() {
         }),
       })
       const data = await res.json()
-      if (data.success) {
+
+      // Update quota from API response (works for both logged-in and anonymous)
+      if (data.quota) {
+        setApiQuota(data.quota)
+      }
+
+      if (res.status === 429) {
+        // Quota exceeded — show friendly message with upgrade CTA
+        const msg = data.message || t('errors.quotaExceeded')
+        setCheckError(msg)
+      } else if (data.success) {
         setCheckResult(data.data)
+        // Auto-scroll to result after rendering (P2)
+        setTimeout(() => {
+          const el = document.getElementById('check-result')
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }, 150)
+        // Track anonymous check in localStorage
+        if (!user) {
+          const newCount = anonymousChecks + 1
+          setAnonymousChecks(newCount)
+          try {
+            localStorage.setItem('cosmetcheck_anonymous_checks', String(newCount))
+          } catch {
+            // ignore localStorage errors
+          }
+        }
+        // Save to check history (P3-4)
+        const result = data.data as CheckResult
+        const newItem: CheckHistoryItem = {
+          id: `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+          timestamp: Date.now(),
+          productName: productName.trim() || (ingredients.trim().slice(0, 30) + '...'),
+          ingredientsPreview: ingredients.trim().slice(0, 60),
+          country,
+          isCompliant: result.isCompliant,
+          issueCount: result.summary.totalIssues,
+        }
+        const updated = [newItem, ...checkHistory].slice(0, 5)
+        setCheckHistory(updated)
+        try {
+          localStorage.setItem(HISTORY_KEY, JSON.stringify(updated))
+        } catch {
+          // ignore localStorage errors
+        }
       } else {
         setCheckError(data.error || t('errors.checkFailed'))
       }
@@ -446,6 +578,75 @@ export function HeroSection() {
 
   const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text)
+  }
+
+  // Share result via Web Share API (mobile native share)
+  const handleShare = async (result: CheckResult) => {
+    const text = formatResultText(result)
+    if (typeof navigator !== 'undefined' && navigator.share) {
+      try {
+        await navigator.share({
+          title: 'CosmetCheck Compliance Result',
+          text: text.slice(0, 500),
+        })
+      } catch {
+        // User cancelled or share failed — fallback to copy
+        copyToClipboard(text)
+      }
+    } else {
+      copyToClipboard(text)
+    }
+  }
+
+  // Export result as PDF via print dialog
+  const handleExportPDF = () => {
+    if (typeof window !== 'undefined') {
+      window.print()
+    }
+  }
+
+  // Mobile keyboard scroll helper (DP-05)
+  const scrollToField = (fieldId: string) => {
+    if (typeof window === 'undefined') return
+    // Delay to allow keyboard to open on mobile
+    setTimeout(() => {
+      const el = document.getElementById(fieldId)
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      }
+    }, 350)
+  }
+
+  // Format check result as plain text for sharing (P2)
+  const formatResultText = (result: CheckResult): string => {
+    const lines: string[] = []
+    lines.push(result.isCompliant ? '✅ ' + t('compliant') : '❌ ' + t('nonCompliant'))
+    lines.push(`${t('testResult')}: ${result.summary.totalIssues} (${t('critical')}: ${result.summary.criticalCount}, ${t('warning')}: ${result.summary.warningCount}, ${t('info')}: ${result.summary.infoCount})`)
+
+    if (result.violations.length > 0) {
+      lines.push('\n' + t('criticalIssues') + ':')
+      result.violations.forEach((v, i) => {
+        lines.push(`${i + 1}. [${categoryLabels[v.category] || v.category}] ${v.message}`)
+        lines.push(`   ${t('suggestion')}: ${v.suggestion}`)
+      })
+    }
+
+    if (result.warnings.length > 0) {
+      lines.push('\n' + t('warningIssues') + ':')
+      result.warnings.forEach((v, i) => {
+        lines.push(`${i + 1}. [${categoryLabels[v.category] || v.category}] ${v.message}`)
+        lines.push(`   ${t('suggestion')}: ${v.suggestion}`)
+      })
+    }
+
+    if (result.info.length > 0) {
+      lines.push('\n' + t('info') + ':')
+      result.info.forEach((v, i) => {
+        lines.push(`${i + 1}. [${categoryLabels[v.category] || v.category}] ${v.message}`)
+      })
+    }
+
+    return lines.join('\n')
   }
   return (
     <div className="min-h-screen bg-[#0F1419] pt-10 md:pt-12">
@@ -572,13 +773,14 @@ export function HeroSection() {
 
               {/* Product Name */}
               <div className="mb-3">
-                <label htmlFor="product-name" className="block text-sm font-medium text-white/80 mb-1.5">{t('productName')}</label>
+                <label htmlFor="product-name" className="block text-sm font-medium text-white/80 mb-1.5">{t('productName')} <span className="text-white/40 font-normal">({t('form.optional')})</span></label>
                 <div className="relative">
                   <Textarea
                     id="product-name"
                     name="product-name"
                     value={productName}
                     onChange={(e) => setProductName(e.target.value)}
+                    onFocus={() => scrollToField('product-name')}
                     placeholder={t('productNamePlaceholder')}
                     className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl hover:border-[#FFB800]/30 hover:shadow-[0_0_10px_rgba(255,184,0,0.08)] hover:scale-[1.01] focus:border-[#FFB800] focus:shadow-[0_0_20px_rgba(255,184,0,0.25)] focus:outline-none focus:scale-[1.01] transition-all duration-300"
                   />
@@ -596,13 +798,14 @@ export function HeroSection() {
 
               {/* Ingredients */}
               <div className="mb-3">
-                <label htmlFor="product-ingredients" className="block text-sm font-medium text-white/80 mb-1.5">{t('ingredients')} <span className="text-white/40 font-normal">({t('form.optional')})</span></label>
+                <label htmlFor="product-ingredients" className="block text-sm font-medium text-white/80 mb-1.5">{t('ingredients')}</label>
                 <div className="relative">
                   <Textarea
                     id="product-ingredients"
                     name="product-ingredients"
                     value={ingredients}
                     onChange={(e) => setIngredients(e.target.value)}
+                    onFocus={() => scrollToField('product-ingredients')}
                     placeholder={t('ingredientsPlaceholder')}
                     className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl hover:border-[#FFB800]/30 hover:shadow-[0_0_10px_rgba(255,184,0,0.08)] hover:scale-[1.01] focus:border-[#FFB800] focus:shadow-[0_0_20px_rgba(255,184,0,0.25)] focus:outline-none focus:scale-[1.01] transition-all duration-300"
                   />
@@ -620,13 +823,14 @@ export function HeroSection() {
 
               {/* Benefits */}
               <div className="mb-3">
-                <label htmlFor="product-benefits" className="block text-sm font-medium text-white/80 mb-1.5">{t('productBenefits')}</label>
+                <label htmlFor="product-benefits" className="block text-sm font-medium text-white/80 mb-1.5">{t('productBenefits')} <span className="text-white/40 font-normal">({t('form.optional')})</span></label>
                 <div className="relative">
                   <Textarea
                     id="product-benefits"
                     name="product-benefits"
                     value={productBenefits}
                     onChange={(e) => setProductBenefits(e.target.value)}
+                    onFocus={() => scrollToField('product-benefits')}
                     placeholder={t('productBenefitsPlaceholder')}
                     className="w-full border border-white/10 bg-white/[0.04] text-white placeholder:text-[#8C93A0] placeholder:italic min-h-[60px] resize-none pr-10 text-base rounded-xl hover:border-[#FFB800]/30 hover:shadow-[0_0_10px_rgba(255,184,0,0.08)] hover:scale-[1.01] focus:border-[#FFB800] focus:shadow-[0_0_20px_rgba(255,184,0,0.25)] focus:outline-none focus:scale-[1.01] transition-all duration-300"
                   />
@@ -642,8 +846,66 @@ export function HeroSection() {
                 </div>
               </div>
 
-              {checkError && <p className="text-red-300 text-sm mb-2">{checkError}</p>}
+              {checkError && (
+                <div className="mb-2">
+                  <p className="text-red-300 text-sm">{checkError}</p>
+                  {checkError.includes('quota') || checkError.includes('Quota') || checkError.includes('esgotada') || checkError.includes('agotada') ? (
+                    <p className="text-xs text-[#FFB800]/80 mt-1">
+                      <Link href="/pricing" className="underline hover:text-[#FFB800]">
+                        {locale === 'pt-BR' ? 'Atualize para Pro →' : locale === 'es-MX' ? 'Actualiza a Pro →' : 'Upgrade to Pro →'}
+                      </Link>
+                    </p>
+                  ) : null}
+                </div>
+              )}
               {generateError && <p className="text-red-300 text-sm mb-2">{generateError}</p>}
+
+              {/* Quota remaining indicator + staged warnings (DP-14) */}
+              {(displayQuota || (!user && anonymousChecks > 0)) && (
+                <div className="mb-3 space-y-2">
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="text-white/60">
+                      {t('remainingChecks') || 'Remaining'}:
+                    </span>
+                    <span className={`font-medium ${
+                      (displayQuota?.remaining ?? (10 - anonymousChecks)) <= 3 ? 'text-red-400' : 'text-[#FFB800]'
+                    }`}>
+                      {displayQuota
+                        ? `${displayQuota.remaining} / ${displayQuota.limit}`
+                        : `${Math.max(0, 10 - anonymousChecks)} / 10`
+                      }
+                    </span>
+                  </div>
+                  {/* Staged quota warnings */}
+                  {(() => {
+                    const remaining = displayQuota?.remaining ?? Math.max(0, 10 - anonymousChecks)
+                    const used = displayQuota?.used ?? anonymousChecks
+                    if (remaining <= 3 && remaining > 0) {
+                      return (
+                        <p className="text-xs text-red-400/90 bg-red-400/10 rounded-lg px-3 py-2">
+                          {t('quotaLowWarning', { remaining })}
+                          {' '}
+                          <Link href="/pricing" className="underline hover:text-red-300 font-medium">
+                            {locale === 'pt-BR' ? 'Atualize agora →' : locale === 'es-MX' ? 'Actualiza ahora →' : 'Upgrade now →'}
+                          </Link>
+                        </p>
+                      )
+                    }
+                    if (used >= 5 && remaining > 3) {
+                      return (
+                        <p className="text-xs text-amber-400/90 bg-amber-400/10 rounded-lg px-3 py-2">
+                          {t('quotaHalfWarning')}
+                          {' '}
+                          <Link href="/pricing" className="underline hover:text-amber-300 font-medium">
+                            {locale === 'pt-BR' ? 'Ver planos →' : locale === 'es-MX' ? 'Ver planes →' : 'See plans →'}
+                          </Link>
+                        </p>
+                      )
+                    }
+                    return null
+                  })()}
+                </div>
+              )}
 
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button
@@ -679,29 +941,113 @@ export function HeroSection() {
               </div>
             </div>
 
+            {/* Recent Check History Panel (P3-4) */}
+            {checkHistory.length > 0 && !isChecking && !checkResult && (
+              <div className="mx-auto w-full max-w-full md:max-w-xl mt-4 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-4 text-left">
+                <div className="flex items-center justify-between mb-3">
+                  <h4 className="text-sm font-semibold text-white/80">{tHistory('title')}</h4>
+                  <button
+                    onClick={() => {
+                      setCheckHistory([])
+                      try { localStorage.removeItem(HISTORY_KEY) } catch { /* ignore */ }
+                    }}
+                    className="text-xs text-white/40 hover:text-white/70 transition-colors"
+                  >
+                    {tHistory('clearHistory')}
+                  </button>
+                </div>
+                <div className="space-y-2">
+                  {checkHistory.map((item) => (
+                    <button
+                      key={item.id}
+                      onClick={() => {
+                        setProductName(item.productName === item.ingredientsPreview + '...' ? '' : item.productName)
+                        setIngredients(item.ingredientsPreview)
+                        setCountry(item.country)
+                        setCheckResult(null)
+                        setShowDemo(true)
+                        window.scrollTo({ top: 0, behavior: 'smooth' })
+                      }}
+                      className="w-full text-left flex items-center gap-3 p-2.5 rounded-xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/[0.05] hover:border-white/10 transition-all group"
+                    >
+                      <span className={`w-2 h-2 rounded-full shrink-0 ${item.isCompliant ? 'bg-green-400' : 'bg-red-400'}`} />
+                      <div className="flex-1 min-w-0">
+                        <p className="text-sm text-white/80 truncate group-hover:text-white transition-colors">
+                          {item.productName}
+                        </p>
+                        <p className="text-xs text-white/40 truncate">
+                          {item.country === 'BR' ? '🇧🇷 Brazil' : '🇲🇽 Mexico'} · {item.issueCount > 0 ? `${item.issueCount} issues` : 'All clear'}
+                        </p>
+                      </div>
+                      <span className="text-xs text-white/30 group-hover:text-[#FFB800] transition-colors shrink-0">
+                        {tHistory('checkAgain')}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Check Results - Show loading state when checking, otherwise show result */}
             {isChecking && (
               <div className="mx-auto max-w-full md:max-w-xl mt-6 rounded-2xl bg-white p-4 md:p-6 text-left text-gray-900">
-                <div className="flex items-center justify-center py-8">
+                <div className="flex flex-col items-center justify-center py-8">
                   <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-                  <span className="ml-3 text-gray-500">{t('checking')}...</span>
+                  <span className="mt-3 text-gray-700 font-medium">{t('checking')}...</span>
+                  {/* Step dots */}
+                  <div className="mt-3 flex items-center gap-1.5">
+                    {[0, 1, 2].map((step) => (
+                      <div
+                        key={step}
+                        className={`h-1.5 rounded-full transition-all duration-500 ${
+                          step <= checkingStep ? 'w-4 bg-blue-600' : 'w-1.5 bg-gray-300'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                  {/* Step description */}
+                  <span className="mt-2 text-xs text-gray-500 h-4">
+                    {checkingStep === 0 && t('checkingStep1')}
+                    {checkingStep === 1 && t('checkingStep2')}
+                    {checkingStep === 2 && t('checkingStep3')}
+                  </span>
                 </div>
               </div>
             )}
             
             {resultToShow && !isChecking && (
-              <div className="mx-auto max-w-full md:max-w-xl mt-6 rounded-2xl bg-white p-4 md:p-6 text-left text-gray-900">
+              <div id="check-result" className="mx-auto max-w-full md:max-w-xl mt-6 rounded-2xl bg-white p-4 md:p-6 text-left text-gray-900">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-lg font-bold">{t('testResult')}</h3>
-                  <span
-                    className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                      resultToShow.isCompliant
-                        ? 'bg-green-100 text-green-700'
-                        : 'bg-red-100 text-red-700'
-                    }`}
-                  >
-                    {resultToShow.isCompliant ? <><CheckCircle className="w-4 h-4 mr-1" /> {t('compliant')}</> : <><XCircle className="w-4 h-4 mr-1" /> {t('nonCompliant')}</>}
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={() => handleShare(resultToShow)}
+                      className="text-xs text-gray-500 hover:text-gray-700 underline"
+                    >
+                      {t('shareResult')}
+                    </button>
+                    <button
+                      onClick={handleExportPDF}
+                      className="text-xs text-gray-500 hover:text-gray-700 underline"
+                    >
+                      {t('exportPDF')}
+                    </button>
+                    <button
+                      onClick={() => copyToClipboard(formatResultText(resultToShow))}
+                      className="text-xs text-gray-500 hover:text-gray-700 underline"
+                    >
+                      {t('copyBtn')}
+                    </button>
+                    <span
+                      className={`px-3 py-1 rounded-full text-sm font-semibold ${
+                        resultToShow.isCompliant
+                          ? 'bg-green-100 text-green-700'
+                          : 'bg-red-100 text-red-700'
+                      }`}
+                    >
+                      {resultToShow.isCompliant ? <><CheckCircle className="w-4 h-4 mr-1" /> {t('compliant')}</> : <><XCircle className="w-4 h-4 mr-1" /> {t('nonCompliant')}</>}
+                    </span>
+                  </div>
                 </div>
 
                 {resultToShow.summary.totalIssues > 0 && (
@@ -761,7 +1107,59 @@ export function HeroSection() {
                 )}
 
                 {resultToShow.summary.totalIssues === 0 && (
-                  <p className="text-green-600 text-sm">{t('noIssuesFound')}</p>
+                  <div className="bg-green-50 border border-green-200 rounded-xl p-4 mb-4">
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 shrink-0" />
+                      <div>
+                        <p className="text-green-700 font-medium">{t('noIssuesFound')}</p>
+                        <p className="text-green-600 text-sm mt-1">{t('noIssuesCTA')}</p>
+                        <div className="flex flex-wrap gap-2 mt-3">
+                          <Button
+                            onClick={handleGenerate}
+                            disabled={isGenerating}
+                            size="sm"
+                            className="bg-gradient-to-r from-[#FFB800] to-[#F59E0B] text-[#0F1419] hover:from-[#F59E0B] hover:to-[#D97706] font-bold shadow-sm"
+                          >
+                            <Zap className="w-3.5 h-3.5 mr-1" /> {t('generateListingPrompt')}
+                          </Button>
+                          <Button
+                            onClick={() => { setCheckResult(null); setShowDemo(true); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+                            variant="outline"
+                            size="sm"
+                            className="border-green-300 text-green-700 hover:bg-green-100 bg-transparent"
+                          >
+                            {t('checkAnotherProduct')}
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {resultToShow.summary.totalIssues > 0 && (
+                  <div className="mt-4 pt-4 border-t border-gray-200">
+                    <p className="text-sm text-gray-600 mb-3">
+                      {t('fixThenGenerate', { count: resultToShow.summary.totalIssues })}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Button
+                        onClick={handleGenerate}
+                        disabled={isGenerating}
+                        size="sm"
+                        className="bg-gradient-to-r from-[#FFB800] to-[#F59E0B] text-[#0F1419] hover:from-[#F59E0B] hover:to-[#D97706] font-bold shadow-sm"
+                      >
+                        <Zap className="w-3.5 h-3.5 mr-1" /> {t('generateListingPrompt')}
+                      </Button>
+                      <Button
+                        onClick={() => { setCheckResult(null); setShowDemo(true); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+                        variant="outline"
+                        size="sm"
+                        className="border-gray-300 text-gray-700 hover:bg-gray-100 bg-transparent"
+                      >
+                        {t('checkAnotherProduct')}
+                      </Button>
+                    </div>
+                  </div>
                 )}
               </div>
             )}
