@@ -1,0 +1,18 @@
+name: Abandoned Checkout Recovery
+
+on:
+  schedule:
+    # Run every hour at minute 0
+    - cron: '0 * * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger abandoned checkout recovery
+        run: |
+          curl -s -X GET \
+            "https://cosmetcheck.com/api/email/cron/abandoned-checkout?secret=${{ secrets.CRON_SECRET }}" \
+            -H "User-Agent: GitHub-Actions-CosmetCheck-Cron/1.0" \
+            | jq .
