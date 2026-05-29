@@ -7,3 +7,7 @@ main = "_worker.js"
 # Force Edge Runtime for all routes
 [env.production]
   compatibility_flags = ["nodejs_compat"]
+
+# M1b: Abandoned checkout recovery cron — runs every hour
+[[triggers]]
+crons = ["0 * * * *"]
