@@ -1,0 +1,18 @@
+name: Onboarding Nurture Flow
+
+on:
+  schedule:
+    # Run every 6 hours (00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 */6 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  nurture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger onboarding nurture emails
+        run: |
+          curl -s -X GET \
+            "https://cosmetcheck.com/api/email/cron/onboarding-nurture?secret=${{ secrets.CRON_SECRET }}" \
+            -H "User-Agent: GitHub-Actions-CosmetCheck-Cron/1.0" \
+            | jq .
