@@ -67,7 +67,8 @@
     "contact": "Contacto",
     "howItWorks": "Cómo Funciona",
     "faq": "FAQ",
-    "batch": "Detección por Lotes"
+    "batch": "Detección por Lotes",
+    "blog": "Blog"
   },
   "hero": {
     "title": "Vende Belleza en México",
@@ -132,9 +133,9 @@
     "copyAllListing": "Copiar Todo",
     "shareResult": "Compartir",
     "exportPDF": "Exportar PDF",
-    "shareSuccess": "Compartido con \u00e9xito",
+    "shareSuccess": "Compartido con éxito",
     "shareFallback": "Resultado copiado al portapapeles",
-    "ptBr": "Portugu\u00e9s",
+    "ptBr": "Portugués",
     "esMx": "Español",
     "disclaimer": "Este Listing fue generado por IA solo como referencia. Por favor, confirme el cumplimiento final con las regulaciones locales antes de publicar.",
     "complianceWarning": "Notas",
@@ -802,14 +803,14 @@
     "todayRemaining": "{count} restantes hoy",
     "monthRemaining": "{count} restantes este mes",
     "errorLimit": "Ha alcanzado el límite diario (3 conversaciones). Actualice a Pro para soporte de IA ilimitado.",
-    "errorAdvisorLogin": "El Asesor de Cumplimiento es exclusivo para suscriptores Pro. Actualice para desbloquear asesor\u00eda de cumplimiento con IA 1 a 1.",
-    "errorGeneric": "Lo sentimos, algo sali\u00f3 mal. Int\u00e9ntelo de nuevo.",
-    "errorUnavailable": "Lo sentimos, estoy temporalmente no disponible. Int\u00e9ntelo de nuevo m\u00e1s tarde.",
-    "errorAdvisorUnavailable": "Lo sentimos, el Asesor de Cumplimiento est\u00e1 temporalmente no disponible. Int\u00e9ntelo de nuevo m\u00e1s tarde o contacte a soporte.",
-    "viewPricing": "Ver Precios \u2192",
-    "loginToChat": "Inicie sesi\u00f3n para chatear con el soporte de IA",
-    "loginNow": "Iniciar sesi\u00f3n \u2192",
-    "freeUserBanner": "\ud83c\udf81 Inicie sesi\u00f3n para acceder al Soporte de IA y Asesor de Cumplimiento"
+    "errorAdvisorLogin": "El Asesor de Cumplimiento es exclusivo para suscriptores Pro. Actualice para desbloquear asesoría de cumplimiento con IA 1 a 1.",
+    "errorGeneric": "Lo sentimos, algo salió mal. Inténtelo de nuevo.",
+    "errorUnavailable": "Lo sentimos, estoy temporalmente no disponible. Inténtelo de nuevo más tarde.",
+    "errorAdvisorUnavailable": "Lo sentimos, el Asesor de Cumplimiento está temporalmente no disponible. Inténtelo de nuevo más tarde o contacte a soporte.",
+    "viewPricing": "Ver Precios →",
+    "loginToChat": "Inicie sesión para chatear con el soporte de IA",
+    "loginNow": "Iniciar sesión →",
+    "freeUserBanner": "🎁 Inicie sesión para acceder al Soporte de IA y Asesor de Cumplimiento"
   },
   "history": {
     "title": "Verificaciones Recientes",

@@ -67,7 +67,8 @@
     "contact": "Fale Conosco",
     "howItWorks": "Como Funciona",
     "faq": "FAQ",
-    "batch": "Detecção em Lote"
+    "batch": "Detecção em Lote",
+    "blog": "Blog"
   },
   "hero": {
     "title": "Venda Beleza no Brasil",
@@ -133,8 +134,8 @@
     "shareResult": "Compartilhar",
     "exportPDF": "Exportar PDF",
     "shareSuccess": "Compartilhado com sucesso",
-    "shareFallback": "Resultado copiado para a \u00e1rea de transfer\u00eancia",
-    "ptBr": "Portugu\u00eas",
+    "shareFallback": "Resultado copiado para a área de transferência",
+    "ptBr": "Português",
     "esMx": "Espanhol",
     "disclaimer": "Este Listing foi gerado por IA apenas para referência. Por favor, confirme a conformidade final com as regulamentações locais antes de publicar.",
     "complianceWarning": "Notas",
@@ -802,19 +803,19 @@
     "todayRemaining": "{count} restantes hoje",
     "monthRemaining": "{count} restantes este mês",
     "errorLimit": "Você atingiu o limite diário (3 conversas). Atualize para o Pro para suporte de IA ilimitado.",
-    "errorAdvisorLogin": "O Consultor de Conformidade \u00e9 exclusivo para assinantes Pro. Atualize para desbloquear consultoria de conformidade com IA 1 a 1.",
+    "errorAdvisorLogin": "O Consultor de Conformidade é exclusivo para assinantes Pro. Atualize para desbloquear consultoria de conformidade com IA 1 a 1.",
     "errorGeneric": "Desculpe, algo deu errado. Tente novamente.",
-    "errorUnavailable": "Desculpe, estou temporariamente indispon\u00edvel. Tente novamente mais tarde.",
-    "errorAdvisorUnavailable": "Desculpe, o Consultor de Conformidade est\u00e1 temporariamente indispon\u00edvel. Tente novamente mais tarde ou entre em contato com o suporte.",
-    "viewPricing": "Ver Pre\u00e7os \u2192",
-    "loginToChat": "Fa\u00e7a login para conversar com o suporte de IA",
-    "loginNow": "Entrar \u2192",
-    "freeUserBanner": "\ud83c\udf81 Fa\u00e7a login para acessar o Suporte de IA e Consultor de Conformidade"
+    "errorUnavailable": "Desculpe, estou temporariamente indisponível. Tente novamente mais tarde.",
+    "errorAdvisorUnavailable": "Desculpe, o Consultor de Conformidade está temporariamente indisponível. Tente novamente mais tarde ou entre em contato com o suporte.",
+    "viewPricing": "Ver Preços →",
+    "loginToChat": "Faça login para conversar com o suporte de IA",
+    "loginNow": "Entrar →",
+    "freeUserBanner": "🎁 Faça login para acessar o Suporte de IA e Consultor de Conformidade"
   },
   "history": {
-    "title": "Verifica\u00e7\u00f5es Recentes",
-    "empty": "Nenhuma verifica\u00e7\u00e3o recente",
+    "title": "Verificações Recentes",
+    "empty": "Nenhuma verificação recente",
     "checkAgain": "Verificar Novamente",
-    "clearHistory": "Limpar Hist\u00f3rico"
+    "clearHistory": "Limpar Histórico"
   }
 }

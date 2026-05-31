@@ -13,24 +13,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const isPT = locale === 'pt-BR'
   const isES = locale === 'es-MX'
+  const isZH = locale === 'zh'
 
   return {
     title: isPT
       ? 'Blog CosmetCheck | Guias de Compliance para Vendedores de Cosméticos'
       : isES
         ? 'Blog CosmetCheck | Guías de Compliance para Vendedores de Belleza'
-        : 'CosmetCheck Blog | Cosmetics Compliance Guides',
+        : isZH
+          ? 'CosmetCheck 博客 | 拉丁美洲化妆品合规指南'
+          : 'CosmetCheck Blog | Cosmetics Compliance Guides',
     description: isPT
       ? 'Guias práticos sobre ANVISA, COFEPRIS e compliance de cosméticos para sellers da América Latina.'
       : isES
         ? 'Guías prácticas sobre COFEPRIS, ANVISA y compliance de belleza para vendedores de Latinoamérica.'
-        : 'Practical guides on ANVISA, COFEPRIS, and cosmetics compliance for LatAm sellers.',
+        : isZH
+          ? '关于 ANVISA、COFEPRIS 和拉丁美洲化妆品合规的实用指南。'
+          : 'Practical guides on ANVISA, COFEPRIS, and cosmetics compliance for LatAm sellers.',
     alternates: {
       canonical: `https://cosmetcheck.com/${locale}/blog`,
       languages: {
         'pt-BR': 'https://cosmetcheck.com/pt-BR/blog',
         'es-MX': 'https://cosmetcheck.com/es-MX/blog',
         'en': 'https://cosmetcheck.com/en/blog',
+        'zh': 'https://cosmetcheck.com/zh/blog',
       },
     },
   }
@@ -38,30 +44,47 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BlogPage({ params }: Props) {
   const { locale } = await params
-  const posts = await getPostsByLocale(locale as BlogLocale)
+  let posts = await getPostsByLocale(locale as BlogLocale)
+  let isFallback = false
+
+  // Fallback to English if no posts in current locale
+  if (posts.length === 0 && locale !== 'en') {
+    posts = await getPostsByLocale('en')
+    isFallback = true
+  }
 
   const isPT = locale === 'pt-BR'
   const isES = locale === 'es-MX'
+  const isZH = locale === 'zh'
 
   const t = {
     title: isPT
       ? 'Blog CosmetCheck'
       : isES
         ? 'Blog CosmetCheck'
-        : 'CosmetCheck Blog',
+        : isZH
+          ? 'CosmetCheck 博客'
+          : 'CosmetCheck Blog',
     subtitle: isPT
       ? 'Guias de compliance e dicas para vendedores de cosméticos na América Latina'
       : isES
         ? 'Guías de compliance y consejos para vendedores de belleza en Latinoamérica'
-        : 'Compliance guides and tips for cosmetics sellers in Latin America',
-    readMore: isPT ? 'Ler mais' : isES ? 'Leer más' : 'Read more',
-    readingTime: isPT ? 'min de leitura' : isES ? 'min de lectura' : 'min read',
-    category: isPT ? 'Categoria' : isES ? 'Categoría' : 'Category',
+        : isZH
+          ? '拉丁美洲化妆品卖家的合规指南与技巧'
+          : 'Compliance guides and tips for cosmetics sellers in Latin America',
+    fallbackNotice: isZH
+      ? '暂时没有中文文章，以下显示英文文章：'
+      : 'No articles in your language yet. Showing English articles:',
+    readMore: isPT ? 'Ler mais' : isES ? 'Leer más' : isZH ? '阅读更多' : 'Read more',
+    readingTime: isPT ? 'min de leitura' : isES ? 'min de lectura' : isZH ? '分钟阅读' : 'min read',
+    category: isPT ? 'Categoria' : isES ? 'Categoría' : isZH ? '分类' : 'Category',
     noPosts: isPT
       ? 'Nenhum artigo disponível neste idioma ainda.'
       : isES
         ? 'Ningún artículo disponible en este idioma todavía.'
-        : 'No articles available in this language yet.',
+        : isZH
+          ? '暂时没有文章。'
+          : 'No articles available in this language yet.',
   }
 
   // Breadcrumb JSON-LD
@@ -112,6 +135,13 @@ export default async function BlogPage({ params }: Props) {
             </div>
           ) : (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {isFallback && (
+                <div className="md:col-span-2 lg:col-span-3 text-center mb-2">
+                  <p className="text-sm text-gray-400 bg-[#1A1A24] border border-[#252530] rounded-lg px-4 py-3 inline-block">
+                    {t.fallbackNotice}
+                  </p>
+                </div>
+              )}
               {posts.map((post) => (
                 <article
                   key={post.slug}
