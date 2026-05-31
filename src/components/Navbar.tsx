@@ -76,6 +76,7 @@ export function Navbar() {
     { href: '#features', label: t('features'), isPage: false },
     { href: '#how-it-works', label: t('howItWorks'), isPage: false },
     { href: '/batch', label: t('batch'), isPage: true },
+    { href: '/blog', label: t('blog') || 'Blog', isPage: true },
     { href: '#pricing', label: t('pricing'), isPage: false },
     { href: '#faq', label: t('faq'), isPage: false },
   ]

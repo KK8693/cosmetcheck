@@ -482,3 +482,104 @@ export function getQuotaWarningEmail(data: QuotaWarningData) {
     html: wrapHtml(tmpl.subject, tmpl.content, locale),
   }
 }
+
+// ---------------------------------------------------------------------------
+// 4. Lead Magnet Download (PDF)
+// ---------------------------------------------------------------------------
+
+export interface LeadMagnetData {
+  email: string
+  locale: EmailLocale
+  userName?: string
+  pdfUrl: string
+  magnetType: 'checklist-compliance-anvisa-2025'
+}
+
+export function getLeadMagnetEmail(data: LeadMagnetData) {
+  const { locale, userName, pdfUrl, magnetType } = data
+  const name = userName || (locale === 'pt-BR' ? 'Olá' : locale === 'es-MX' ? 'Hola' : 'Hi there')
+
+  const templates = {
+    'pt-BR': {
+      subject: 'Seu PDF gratuito chegou! Checklist Compliance ANVISA 2025 📋',
+      content: `
+        <h2>${name}, aqui está o seu checklist! 📋</h2>
+        <p>Obrigado por baixar nosso <strong>Checklist Completo de Compliance ANVISA 2025</strong>.</p>
+        <p>Este PDF de 6 páginas contém:</p>
+        <ul style="padding-left:20px;margin:16px 0;">
+          <li style="margin-bottom:8px;">✅ Lista de substâncias proibidas e restritas</li>
+          <li style="margin-bottom:8px;">✅ Checklist de documentação obrigatória</li>
+          <li style="margin-bottom:8px;">✅ Template de email para fornecedores</li>
+          <li style="margin-bottom:8px;">✅ Checklist de rótulo em português</li>
+          <li style="margin-bottom:8px;">✅ Fluxograma: Notificação vs Registro</li>
+        </ul>
+        <div style="text-align:center;margin:24px 0;">
+          <a href="${pdfUrl}" class="cta" target="_blank">📥 Baixar PDF</a>
+        </div>
+        <p style="font-size:13px;color:#71717a;">Dica: Imprima o checklist e deixe na mesa do seu escritório. Ele vai salvar seu negócio de um prejuízo enorme.</p>
+        <div class="divider"></div>
+        <h3>Próximo passo: teste seus produtos</h3>
+        <p>Agora que você tem o checklist, que tal verificar se seus produtos estão em compliance?</p>
+        <div style="text-align:center;margin:24px 0;">
+          <a href="${APP_URL}" class="cta-secondary">Analisar meu produto (grátis)</a>
+        </div>
+      `,
+    },
+    'es-MX': {
+      subject: '¡Tu PDF gratuito llegó! Checklist Compliance ANVISA 2025 📋',
+      content: `
+        <h2>${name}, ¡aquí está tu checklist! 📋</h2>
+        <p>Gracias por descargar nuestro <strong>Checklist Completo de Compliance ANVISA 2025</strong>.</p>
+        <p>Este PDF de 6 páginas contiene:</p>
+        <ul style="padding-left:20px;margin:16px 0;">
+          <li style="margin-bottom:8px;">✅ Lista de sustancias prohibidas y restringidas</li>
+          <li style="margin-bottom:8px;">✅ Checklist de documentación obligatoria</li>
+          <li style="margin-bottom:8px;">✅ Template de email para proveedores</li>
+          <li style="margin-bottom:8px;">✅ Checklist de etiqueta en portugués</li>
+          <li style="margin-bottom:8px;">✅ Flujograma: Notificación vs Registro</li>
+        </ul>
+        <div style="text-align:center;margin:24px 0;">
+          <a href="${pdfUrl}" class="cta" target="_blank">📥 Descargar PDF</a>
+        </div>
+        <p style="font-size:13px;color:#71717a;">Consejo: Imprime el checklist y déjalo en tu escritorio. Te salvará de un gran perjuicio.</p>
+        <div class="divider"></div>
+        <h3>Próximo paso: prueba tus productos</h3>
+        <p>Ahora que tienes el checklist, ¿qué tal verificar si tus productos están en compliance?</p>
+        <div style="text-align:center;margin:24px 0;">
+          <a href="${APP_URL}" class="cta-secondary">Analizar mi producto (gratis)</a>
+        </div>
+      `,
+    },
+    'en': {
+      subject: 'Your free PDF is here! ANVISA Compliance Checklist 2025 📋',
+      content: `
+        <h2>${name}, here's your checklist! 📋</h2>
+        <p>Thanks for downloading our <strong>ANVISA Compliance Checklist 2025</strong>.</p>
+        <p>This 6-page PDF contains:</p>
+        <ul style="padding-left:20px;margin:16px 0;">
+          <li style="margin-bottom:8px;">✅ List of prohibited and restricted substances</li>
+          <li style="margin-bottom:8px;">✅ Mandatory documentation checklist</li>
+          <li style="margin-bottom:8px;">✅ Supplier email template</li>
+          <li style="margin-bottom:8px;">✅ Portuguese label checklist</li>
+          <li style="margin-bottom:8px;">✅ Flowchart: Notification vs Registration</li>
+        </ul>
+        <div style="text-align:center;margin:24px 0;">
+          <a href="${pdfUrl}" class="cta" target="_blank">📥 Download PDF</a>
+        </div>
+        <p style="font-size:13px;color:#71717a;">Tip: Print the checklist and keep it on your desk. It will save your business from huge losses.</p>
+        <div class="divider"></div>
+        <h3>Next step: test your products</h3>
+        <p>Now that you have the checklist, why not check if your products are compliant?</p>
+        <div style="text-align:center;margin:24px 0;">
+          <a href="${APP_URL}" class="cta-secondary">Analyze my product (free)</a>
+        </div>
+      `,
+    },
+  }
+
+  const tmpl = templates[locale]
+  return {
+    subject: tmpl.subject,
+    html: wrapHtml(tmpl.subject, tmpl.content, locale),
+  }
+}
