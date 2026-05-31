@@ -2,6 +2,8 @@
 // Static blog content for M2 SEO content matrix
 // Supports pt-BR, es-MX, en
 
+import { translatedPosts } from './blog-translated'
+
 export type BlogLocale = 'pt-BR' | 'es-MX' | 'en'
 
 export interface BlogPost {
@@ -1604,7 +1606,7 @@ export async function loadAllPosts(): Promise<BlogPost[]> {
     }
   }
 
-  cachedPosts = blogPosts
+  cachedPosts = [...blogPosts, ...translatedPosts]
   return cachedPosts
 }
 
@@ -1617,14 +1619,17 @@ export async function getPostsByLocale(locale: BlogLocale): Promise<BlogPost[]> 
   return posts.filter((p) => p.locale === locale)
 }
 
-export async function getPostBySlug(slug: string): Promise<BlogPost | undefined> {
+export async function getPostBySlug(slug: string, locale?: BlogLocale): Promise<BlogPost | undefined> {
   const posts = await loadAllPosts()
+  if (locale) {
+    return posts.find((p) => p.slug === slug && p.locale === locale)
+  }
   return posts.find((p) => p.slug === slug)
 }
 
 export async function getAllSlugs(): Promise<string[]> {
   const posts = await loadAllPosts()
-  return posts.map((p) => p.slug)
+  return [...new Set(posts.map((p) => p.slug))]
 }
 
 export async function getFeaturedPosts(locale: BlogLocale): Promise<BlogPost[]> {

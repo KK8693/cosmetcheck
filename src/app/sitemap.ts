@@ -1,11 +1,15 @@
 import { MetadataRoute } from 'next'
 import { blogPosts } from '@/lib/blog-data'
+import { translatedPosts } from '@/lib/blog-translated'
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cosmetcheck.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const locales = ['zh', 'en', 'pt-BR', 'es-MX']
   const currentDate = new Date()
+
+  // All blog posts including translations
+  const allPosts = [...blogPosts, ...translatedPosts]
 
   // ── Static routes ─────────────────────────────────────────
   const staticRoutes = [
@@ -85,7 +89,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   // ── Blog posts ────────────────────────────────────────────
-  for (const post of blogPosts) {
+  for (const post of allPosts) {
     // Each post is published in its native locale
     const localeMap: Record<string, string> = {
       'pt-BR': 'pt-BR',

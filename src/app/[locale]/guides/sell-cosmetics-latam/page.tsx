@@ -372,6 +372,41 @@ export default async function SellCosmeticsLatamPage({ params }: Props) {
           </div>
         </section>
 
+        {/* Related Articles */}
+        <section>
+          <h2 className="text-2xl font-bold text-white mb-6">
+            {isPT ? 'Artigos Relacionados' : isES ? 'Artículos Relacionados' : 'Related Articles'}
+          </h2>
+          <div className="bg-[#1A1A24] border border-[#252530] rounded-xl p-6">
+            <ul className="space-y-3">
+              <li>
+                <Link href={`/${locale}/blog/amazon-brazil-requirements`} className="text-[#00A86B] hover:text-[#00A86B]/80 transition-colors flex items-start gap-2">
+                  <span className="text-gray-500 mt-1">→</span>
+                  <span>{isPT ? 'Requisitos da Amazon Brasil para Vendedores de Beleza' : isES ? 'Requisitos de Amazon Brasil para Vendedores de Belleza' : 'Amazon Brazil Requirements for Beauty Sellers'}</span>
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/blog/mercado-livre-beauty-rules`} className="text-[#00A86B] hover:text-[#00A86B]/80 transition-colors flex items-start gap-2">
+                  <span className="text-gray-500 mt-1">→</span>
+                  <span>{isPT ? 'Regras e Conformidade de Beleza do Mercado Livre' : isES ? 'Reglas y Cumplimiento de Belleza de Mercado Libre' : 'Mercado Livre Beauty Rules & Compliance'}</span>
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/blog/customs-clearance-brazil`} className="text-[#00A86B] hover:text-[#00A86B]/80 transition-colors flex items-start gap-2">
+                  <span className="text-gray-500 mt-1">→</span>
+                  <span>{isPT ? 'Desembaraço Aduaneiro no Brasil — Guia Completo' : isES ? 'Despacho Aduanero en Brasil — Guía Completa' : 'Customs Clearance Brazil — Complete Guide'}</span>
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/blog/sell-cosmetics-latam`} className="text-[#00A86B] hover:text-[#00A86B]/80 transition-colors flex items-start gap-2">
+                  <span className="text-gray-500 mt-1">→</span>
+                  <span>{isPT ? 'Como Vender Cosméticos na América Latina' : isES ? 'Cómo Vender Cosméticos en América Latina' : 'How to Sell Cosmetics in Latin America'}</span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         <section className="p-8 rounded-2xl bg-gradient-to-r from-[#0A4D8C]/20 to-[#00A86B]/20 border border-[#0A4D8C]/30 text-center">
           <h2 className="text-2xl font-bold text-white mb-3">{t.ctaTitle}</h2>
           <p className="text-gray-300 mb-6 max-w-xl mx-auto">{t.ctaDesc}</p>

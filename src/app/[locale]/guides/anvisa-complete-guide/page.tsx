@@ -395,6 +395,65 @@ export default async function AnvisaCompleteGuidePage({ params }: Props) {
           </div>
         </section>
 
+        {/* Related Articles */}
+        <section>
+          <h2 className="text-2xl font-bold text-white mb-6">
+            {isPT ? 'Artigos Relacionados' : isES ? 'Artículos Relacionados' : 'Related Articles'}
+          </h2>
+          <div className="bg-[#1A1A24] border border-[#252530] rounded-xl p-6">
+            <ul className="space-y-3">
+          <li>
+            <Link href={`/${locale}/blog/anvisa-registration-timeline`} className="text-[#00A86B] hover:text-[#00A86B]/80 transition-colors flex items-start gap-2">
+              <span className="text-gray-500 mt-1">→</span>
+              <span>
+                {isPT ? 'Cronograma de Registro ANVISA 2025' : isES ? 'Cronograma de Registro ANVISA 2025' : 'ANVISA Registration Timeline 2025'}
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link href={`/${locale}/blog/anvisa-registration-cost`} className="text-[#00A86B] hover:text-[#00A86B]/80 transition-colors flex items-start gap-2">
+              <span className="text-gray-500 mt-1">→</span>
+              <span>
+                {isPT ? 'Detalhamento de Custos de Registro ANVISA' : isES ? 'Desglose de Costos de Registro ANVISA' : 'ANVISA Registration Cost Breakdown'}
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link href={`/${locale}/blog/anvisa-labeling-requirements`} className="text-[#00A86B] hover:text-[#00A86B]/80 transition-colors flex items-start gap-2">
+              <span className="text-gray-500 mt-1">→</span>
+              <span>
+                {isPT ? 'Requisitos de Rotulagem ANVISA' : isES ? 'Requisitos de Etiquetado ANVISA' : 'ANVISA Labeling Requirements'}
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link href={`/${locale}/blog/common-anvisa-rejections`} className="text-[#00A86B] hover:text-[#00A86B]/80 transition-colors flex items-start gap-2">
+              <span className="text-gray-500 mt-1">→</span>
+              <span>
+                {isPT ? 'Motivos Comuns de Rejeição da ANVISA' : isES ? 'Motivos Comunes de Rechazo de ANVISA' : 'Common ANVISA Rejection Reasons'}
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link href={`/${locale}/blog/anvisa-banned-ingredients-list-2025`} className="text-[#00A86B] hover:text-[#00A86B]/80 transition-colors flex items-start gap-2">
+              <span className="text-gray-500 mt-1">→</span>
+              <span>
+                {isPT ? 'Lista de Ingredientes Proibidos e Restritos da ANVISA 2025' : isES ? 'Lista de Ingredientes Prohibidos y Restringidos de ANVISA 2025' : 'ANVISA Banned & Restricted Ingredients List 2025'}
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link href={`/${locale}/blog/how-to-register-cosmetics-brazil-step-by-step`} className="text-[#00A86B] hover:text-[#00A86B]/80 transition-colors flex items-start gap-2">
+              <span className="text-gray-500 mt-1">→</span>
+              <span>
+                {isPT ? 'Como Registrar Cosméticos no Brasil Passo a Passo' : isES ? 'Cómo Registrar Cosméticos en Brasil Paso a Paso' : 'How to Register Cosmetics in Brazil Step-by-Step'}
+              </span>
+            </Link>
+          </li>
+            </ul>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="p-8 rounded-2xl bg-gradient-to-r from-[#0A4D8C]/20 to-[#00A86B]/20 border border-[#0A4D8C]/30 text-center">
           <h2 className="text-2xl font-bold text-white mb-3">{t.ctaTitle}</h2>

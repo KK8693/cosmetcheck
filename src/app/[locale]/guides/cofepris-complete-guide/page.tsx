@@ -332,6 +332,41 @@ export default async function CofeprisCompleteGuidePage({ params }: Props) {
           </div>
         </section>
 
+        {/* Related Articles */}
+        <section>
+          <h2 className="text-2xl font-bold text-white mb-6">
+            {isPT ? 'Artigos Relacionados' : isES ? 'Artículos Relacionados' : 'Related Articles'}
+          </h2>
+          <div className="bg-[#1A1A24] border border-[#252530] rounded-xl p-6">
+            <ul className="space-y-3">
+              <li>
+                <Link href={`/${locale}/blog/cofepris-registration-steps`} className="text-[#00A86B] hover:text-[#00A86B]/80 transition-colors flex items-start gap-2">
+                  <span className="text-gray-500 mt-1">→</span>
+                  <span>{isPT ? 'Passos para Registro COFEPRIS 2025' : isES ? 'Pasos para Registro COFEPRIS 2025' : 'COFEPRIS Registration Steps 2025'}</span>
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/blog/nom-141-labeling`} className="text-[#00A86B] hover:text-[#00A86B]/80 transition-colors flex items-start gap-2">
+                  <span className="text-gray-500 mt-1">→</span>
+                  <span>{isPT ? 'Guia de Conformidade de Rotulagem NOM-141' : isES ? 'Guía de Cumplimiento de Etiquetado NOM-141' : 'NOM-141 Labeling Compliance Guide'}</span>
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/blog/cofepris-cost-breakdown`} className="text-[#00A86B] hover:text-[#00A86B]/80 transition-colors flex items-start gap-2">
+                  <span className="text-gray-500 mt-1">→</span>
+                  <span>{isPT ? 'Detalhamento de Custos de Registro COFEPRIS' : isES ? 'Desglose de Costos de Registro COFEPRIS' : 'COFEPRIS Registration Cost Breakdown'}</span>
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/blog/cofepris-vs-anvisa-key-differences`} className="text-[#00A86B] hover:text-[#00A86B]/80 transition-colors flex items-start gap-2">
+                  <span className="text-gray-500 mt-1">→</span>
+                  <span>{isPT ? 'COFEPRIS vs ANVISA: Principais Diferenças' : isES ? 'COFEPRIS vs ANVISA: Diferencias Clave' : 'COFEPRIS vs ANVISA: Key Differences'}</span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         <section className="p-8 rounded-2xl bg-gradient-to-r from-[#0A4D8C]/20 to-[#00A86B]/20 border border-[#0A4D8C]/30 text-center">
           <h2 className="text-2xl font-bold text-white mb-3">{t.ctaTitle}</h2>
           <p className="text-gray-300 mb-6 max-w-xl mx-auto">{t.ctaDesc}</p>
