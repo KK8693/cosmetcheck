@@ -87,7 +87,7 @@ export async function GET(request: NextRequest) {
           .from('users')
           .select('preferred_language, full_name')
           .eq('email', email.toLowerCase())
-          .maybeSingle()
+          .maybeSingle() as { data: { preferred_language: string | null; full_name: string | null } | null }
 
         if (userData) {
           const lang = userData.preferred_language
