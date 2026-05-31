@@ -47,8 +47,13 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ success: true, message: 'No pending onboarding nurture', results })
     }
 
-    for (const record of step1Logs as any[]) {
-      const email = record.to_email as string
+    interface EmailLog {
+      to_email: string
+      sent_at: string
+    }
+
+    for (const record of (step1Logs || []) as EmailLog[]) {
+      const email = record.to_email
       const sentAt = new Date(record.sent_at)
       const hoursElapsed = (now.getTime() - sentAt.getTime()) / (1000 * 60 * 60)
 
