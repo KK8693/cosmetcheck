@@ -20,6 +20,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/disclaimer', priority: 0.4, freq: 'yearly' as const },
     { path: '/cookie-policy', priority: 0.4, freq: 'yearly' as const },
     { path: '/blog', priority: 0.8, freq: 'weekly' as const },
+    // Pillar pages (guides)
+    { path: '/guides', priority: 0.9, freq: 'weekly' as const },
+    { path: '/guides/anvisa-complete-guide', priority: 0.9, freq: 'monthly' as const },
+    { path: '/guides/cofepris-complete-guide', priority: 0.9, freq: 'monthly' as const },
+    { path: '/guides/sell-cosmetics-latam', priority: 0.9, freq: 'monthly' as const },
     // Landing pages (compliance guides)
     { path: '/compliance/brazil-anvisa', priority: 0.8, freq: 'monthly' as const },
     { path: '/compliance/mexico-cofepris', priority: 0.8, freq: 'monthly' as const },
