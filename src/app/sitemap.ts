@@ -48,6 +48,8 @@ const unlocalizedRoutes = [
   { path: '/status/mexico/allowed', priority: 0.6, freq: 'monthly' as const },
   { path: '/brasil', priority: 0.9, freq: 'weekly' as const },
   { path: '/mexico', priority: 0.9, freq: 'weekly' as const },
+  { path: '/regulation/brazil', priority: 0.85, freq: 'monthly' as const },
+  { path: '/regulation/mexico', priority: 0.85, freq: 'monthly' as const },
 ]
 
 // Build alternates for a localized path
