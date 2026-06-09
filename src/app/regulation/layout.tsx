@@ -1,5 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
+import { ThemeProvider } from '@/components/theme-provider'
+import { AuthProvider } from '@/contexts/AuthContext'
 
 export default async function RegulationLayout({
   children,
@@ -10,7 +12,16 @@ export default async function RegulationLayout({
 
   return (
     <NextIntlClientProvider messages={messages} locale="en">
-      {children}
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="dark"
+        enableSystem
+        disableTransitionOnChange
+      >
+        <AuthProvider>
+          {children}
+        </AuthProvider>
+      </ThemeProvider>
     </NextIntlClientProvider>
   )
 }
