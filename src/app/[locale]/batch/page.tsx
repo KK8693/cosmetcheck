@@ -18,6 +18,12 @@ export async function generateMetadata({
   return {
     alternates: {
       canonical: `https://cosmetcheck.com/${locale}/batch`,
+      languages: {
+        'en': `/en/batch`,
+        'zh': `/zh/batch`,
+        'pt-BR': `/pt-BR/batch`,
+        'es-MX': `/es-MX/batch`,
+      },
     },
     title: messages.batch?.title || 'Batch Detection',
   }

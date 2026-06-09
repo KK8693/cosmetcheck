@@ -13,6 +13,12 @@ export async function generateMetadata({
   return {
     alternates: {
       canonical: `https://cosmetcheck.com/${locale}/refund`,
+      languages: {
+        'en': `/en/refund`,
+        'zh': `/zh/refund`,
+        'pt-BR': `/pt-BR/refund`,
+        'es-MX': `/es-MX/refund`,
+      },
     },
     title: messages.legal.refund.title,
   }

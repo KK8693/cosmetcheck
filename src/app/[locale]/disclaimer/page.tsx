@@ -13,6 +13,12 @@ export async function generateMetadata({
   return {
     alternates: {
       canonical: `https://cosmetcheck.com/${locale}/disclaimer`,
+      languages: {
+        'en': `/en/disclaimer`,
+        'zh': `/zh/disclaimer`,
+        'pt-BR': `/pt-BR/disclaimer`,
+        'es-MX': `/es-MX/disclaimer`,
+      },
     },
     title: messages.legal.disclaimer.title,
   }

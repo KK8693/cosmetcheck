@@ -15,6 +15,12 @@ export async function generateMetadata({
   return {
     alternates: {
       canonical: `https://cosmetcheck.com/${locale}/contact`,
+      languages: {
+        'en': `/en/contact`,
+        'zh': `/zh/contact`,
+        'pt-BR': `/pt-BR/contact`,
+        'es-MX': `/es-MX/contact`,
+      },
     },
     title: messages.contact?.title || 'Contact Us',
   }

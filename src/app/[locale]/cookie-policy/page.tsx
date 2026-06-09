@@ -13,6 +13,12 @@ export async function generateMetadata({
   return {
     alternates: {
       canonical: `https://cosmetcheck.com/${locale}/cookie-policy`,
+      languages: {
+        'en': `/en/cookie-policy`,
+        'zh': `/zh/cookie-policy`,
+        'pt-BR': `/pt-BR/cookie-policy`,
+        'es-MX': `/es-MX/cookie-policy`,
+      },
     },
     title: messages.legal['cookie-policy'].title,
   }
