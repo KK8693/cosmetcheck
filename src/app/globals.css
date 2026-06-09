@@ -136,6 +136,10 @@
   --sidebar-accent-foreground: oklch(0.35 0.1 340);
   --sidebar-border: oklch(0.9 0.01 280);
   --sidebar-ring: oklch(0.55 0.2 280);
+  
+  /* Logo */
+  --logo-fill: #0A4D8C;
+  --logo-stroke: #FFFFFF;
 }
 
 /* CosmetCheck Dark Theme - Professional Edition (Design Tokens 63-83) */
@@ -211,6 +215,10 @@
   --sidebar-accent-foreground: #E8ECF0;
   --sidebar-border: #3A3A4A;
   --sidebar-ring: #0A4D8C;
+  
+  /* Logo */
+  --logo-fill: #FFFFFF;
+  --logo-stroke: #0A4D8C;
 }
 
 @layer base {

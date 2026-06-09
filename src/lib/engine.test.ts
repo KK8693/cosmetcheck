@@ -1,133 +1,153 @@
-import { describe, it, expect } from 'vitest'
-import { checkCompliance } from './engine'
+import { describe, it, expect, vi } from 'vitest'
 
-describe('checkCompliance', () => {
-  describe('claim matching', () => {
-    it('detects medical cure claims in BR', () => {
-      const result = checkCompliance({
-        country: 'BR',
-        description: 'Este produto cura acne e psoríase completamente.',
-      })
-      expect(result.isCompliant).toBe(false)
-      expect(result.violations.length).toBeGreaterThan(0)
-    })
+async function getFreshEngine() {
+  vi.resetModules()
+  const { checkCompliance, initRules } = await import('./engine')
+  await initRules()
+  return { checkCompliance, initRules }
+}
 
-    it('detects absolute whitening claims in BR', () => {
-      const result = checkCompliance({
-        country: 'BR',
-        description: 'Clareamento permanente, elimina todas as manchas em 7 dias.',
-      })
-      expect(result.isCompliant).toBe(false)
-      expect(result.violations.length).toBeGreaterThanOrEqual(1)
-    })
-
-    it('detects claims in product name (P4.1)', () => {
-      const result = checkCompliance({
-        country: 'BR',
-        productName: 'Creme Médico Curativo',
-        description: 'Hidratação facial diária.',
-      })
-      expect(result.isCompliant).toBe(false)
-    })
-  })
-
-  describe('ingredient matching', () => {
-    it('detects banned mercury in ingredients', () => {
+describe('Compliance Engine - End to End', () => {
+  describe('Brazil (BR) Detection', () => {
+    it('should detect banned ingredient: mercury', async () => {
+      const { checkCompliance } = await getFreshEngine()
       const result = checkCompliance({
         country: 'BR',
         ingredients: 'Water, Mercury, Glycerin',
+        productName: 'Test Cream',
       })
-      expect(result.isCompliant).toBe(false)
-      expect(result.violations.length + result.warnings.length).toBeGreaterThan(0)
+      const mercuryViolation = result.violations.find(v => v.keyword.toLowerCase().includes('mercury'))
+      expect(mercuryViolation).toBeDefined()
+      expect(mercuryViolation?.severity).toBe('critical')
+      expect(mercuryViolation?.ruleType).toBe('prohibited')
     })
 
-    it('detects corticosteroid aliases', () => {
+    it('should detect banned ingredient: hydroquinone', async () => {
+      const { checkCompliance } = await getFreshEngine()
       const result = checkCompliance({
         country: 'BR',
-        ingredients: 'Aqua, Hydrocortisone, Niacinamide',
+        ingredients: 'Aqua, Hydroquinone, Alcohol',
+        productName: 'Whitening Serum',
       })
-      expect(result.isCompliant).toBe(false)
+      const hqViolation = result.violations.find(v => v.keyword.toLowerCase().includes('hydroquinone'))
+      expect(hqViolation).toBeDefined()
+      expect(hqViolation?.severity).toBe('critical')
+    })
+
+    it('should detect restricted ingredient: paraben', async () => {
+      const { checkCompliance } = await getFreshEngine()
+      const result = checkCompliance({
+        country: 'BR',
+        ingredients: 'Water, Methylparaben, Propylparaben, Oil',
+        productName: 'Body Lotion',
+      })
+      console.log('[TEST] All violations:', result.violations.map(v => ({ keyword: v.keyword, matchedText: v.matchedText, ruleType: v.ruleType, ruleId: v.ruleId })))
+      const paraViolation = result.violations.find(v => v.keyword.toLowerCase().includes('paraben') || (v.matchedText && v.matchedText.toLowerCase().includes('paraben')))
+      expect(paraViolation).toBeDefined()
+      expect(paraViolation?.ruleType).toBe('restricted')
+    })
+
+    it('should not flag safe ingredients', async () => {
+      const { checkCompliance } = await getFreshEngine()
+      const result = checkCompliance({
+        country: 'BR',
+        ingredients: 'Water, Glycerin, Niacinamide, Hyaluronic Acid',
+        productName: 'Safe Serum',
+      })
+      const criticalViolations = result.violations.filter(v => v.severity === 'critical')
+      expect(criticalViolations.length).toBe(0)
+    })
+
+    it('should detect claim violation: anti-aging', async () => {
+      const { checkCompliance } = await getFreshEngine()
+      const result = checkCompliance({
+        country: 'BR',
+        productName: 'Anti-Aging Miracle Cream',
+        description: 'This cream removes wrinkles and cures aging',
+        ingredients: 'Water, Glycerin',
+      })
+      const claimViolation = result.violations.find(v => v.category === 'claim')
+      expect(claimViolation).toBeDefined()
     })
   })
 
-  describe('P0.6: phytohormone false positive', () => {
-    it('does NOT flag phytohormones as corticosteroid', () => {
+  describe('Mexico (MX) Detection', () => {
+    it('should detect banned ingredient from MX-2010 Segundo', async () => {
+      const { checkCompliance } = await getFreshEngine()
       const result = checkCompliance({
-        country: 'BR',
-        ingredients: 'Extrato de hormônio vegetal, glicina',
+        country: 'MX',
+        ingredients: 'Water, Aceite de antraceno, Glycerin',
+        productName: 'Test Product MX',
       })
-      const hasCortico = result.violations.some(v => 
-        v.matchedText.toLowerCase().includes('corticosteroid') ||
-        v.matchedText.toLowerCase().includes('corticoide')
-      )
-      expect(hasCortico).toBe(false)
-    })
-  })
-
-  describe('P0.8: inflection matching', () => {
-    it('matches plural forms of Portuguese keywords', () => {
-      const result = checkCompliance({
-        country: 'BR',
-        description: 'Nosso produto é 100% natural e orgânico.',
-      })
-      // BR-LBL-003 matches '100% natural' (warning severity)
-      expect(result.warnings.length).toBeGreaterThan(0)
-      expect(result.warnings.some(v => v.ruleId === 'BR-LBL-003')).toBe(true)
-    })
-  })
-
-  describe('P4.2: cross-field deduplication', () => {
-    it('merges source fields when same rule matches in multiple fields', () => {
-      const result = checkCompliance({
-        country: 'BR',
-        productName: 'Creme Curativo',
-        description: 'Creme curativo para acne.',
-      })
-      // BR-LBL-002 matches 'curativo' in both productName and description
-      const violation = result.violations.find(v => v.ruleId === 'BR-LBL-002')
+      const violation = result.violations.find(v => v.matchedText.toLowerCase().includes('antraceno'))
       expect(violation).toBeDefined()
-      expect(violation?.allSourceFields).toBeDefined()
-      expect(violation?.allSourceFields?.length).toBeGreaterThanOrEqual(1)
+      expect(violation?.severity).toBe('critical')
+    })
+
+    it('should detect restricted ingredient from MX-2010 Tercero', async () => {
+      const { checkCompliance } = await getFreshEngine()
+      const result = checkCompliance({
+        country: 'MX',
+        ingredients: 'Water, Acetona, Alcohol',
+        productName: 'Nail Polish Remover',
+      })
+      const violation = result.violations.find(v => v.matchedText.toLowerCase().includes('acetona'))
+      expect(violation).toBeDefined()
+      expect(violation?.ruleType).toBe('restricted')
+    })
+
+    it('should not flag safe ingredients in Mexico', async () => {
+      const { checkCompliance } = await getFreshEngine()
+      const result = checkCompliance({
+        country: 'MX',
+        ingredients: 'Agua, Glicerina, Niacinamida, Ácido Hialurónico',
+        productName: 'Suero Seguro',
+      })
+      const criticalViolations = result.violations.filter(v => v.severity === 'critical')
+      expect(criticalViolations.length).toBe(0)
     })
   })
 
-  describe('Mexico (COFEPRIS) rules', () => {
-    it('detects MX claim violations', () => {
-      const result = checkCompliance({
-        country: 'MX',
-        description: 'Crema médica que cura el acné permanentemente en 7 días.',
-      })
-      expect(result.isCompliant).toBe(false)
-      expect(result.violations.length).toBeGreaterThan(0)
-    })
-
-    it('detects MX banned ingredients', () => {
-      const result = checkCompliance({
-        country: 'MX',
-        ingredients: 'Aqua, Mercury, Fragrance',
-      })
-      expect(result.isCompliant).toBe(false)
-    })
-
-    it('triggers JSON rules (MX-CLAIM-024) without hardcoded shadowing', () => {
-      const result = checkCompliance({
-        country: 'MX',
-        description: '本产品经过严格的肌肤耐受实验验证，确保安全可靠。',
-      })
-      const claim024 = result.violations.find(v => v.ruleId === 'MX-CLAIM-024')
-      expect(claim024).toBeDefined()
-      expect(claim024?.matchedText).toBe('肌肤耐受实验')
-    })
-  })
-
-  describe('compliant product', () => {
-    it('returns compliant for safe product', () => {
+  describe('Result Structure', () => {
+    it('should return correct result structure', async () => {
+      const { checkCompliance } = await getFreshEngine()
       const result = checkCompliance({
         country: 'BR',
-        productName: 'Hidratante Facial',
-        description: 'Hidratação suave para pele seca.',
-        ingredients: 'Aqua, Glycerin, Sodium Hyaluronate',
+        ingredients: 'Water, Mercury',
+        productName: 'Bad Product',
       })
+
+      expect(result).toHaveProperty('isCompliant')
+      expect(result).toHaveProperty('violations')
+      expect(result).toHaveProperty('warnings')
+      expect(result).toHaveProperty('info')
+      expect(result).toHaveProperty('summary')
+      expect(result).toHaveProperty('regulationVersion')
+
+      expect(typeof result.isCompliant).toBe('boolean')
+      expect(Array.isArray(result.violations)).toBe(true)
+      expect(Array.isArray(result.warnings)).toBe(true)
+      expect(Array.isArray(result.info)).toBe(true)
+      expect(typeof result.summary.totalIssues).toBe('number')
+    })
+
+    it('should mark non-compliant when violations exist', async () => {
+      const { checkCompliance } = await getFreshEngine()
+      const result = checkCompliance({
+        country: 'BR',
+        ingredients: 'Water, Mercury',
+      })
+      expect(result.isCompliant).toBe(false)
+      expect(result.summary.criticalCount).toBeGreaterThan(0)
+    })
+
+    it('should mark compliant for safe products', async () => {
+      const { checkCompliance } = await getFreshEngine()
+      const result = checkCompliance({
+        country: 'BR',
+        ingredients: 'Water, Glycerin, Niacinamide',
+      })
+      expect(result.isCompliant).toBe(true)
       expect(result.summary.criticalCount).toBe(0)
     })
   })

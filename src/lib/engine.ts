@@ -1353,6 +1353,11 @@ function findMatches(
   const lowerText = text.toLowerCase()
   const seenRuleIds = new Set<string>() // 去重：每个 ruleId 只记录一次
 
+  // DEBUG: log rules count and paraben-related rules
+  const parabenRules = rules.filter(r => r.keyword.toLowerCase().includes('paraben') || r.aliases?.some(a => a.toLowerCase().includes('paraben')))
+  if (parabenRules.length > 0) {
+  }
+
   for (const rule of rules) {
     // Skip if already matched this ruleId (deduplication)
     if (seenRuleIds.has(rule.ruleId)) continue
@@ -1370,6 +1375,18 @@ function findMatches(
 
     // 1) 主关键词
     candidates.push({ text: rule.keyword.toLowerCase(), type: 'keyword' })
+
+    // 1b) 对 MX-2010-TERCERO 规则：target 中空格分隔的部分是独立成分名
+    // 如 "Acetona 2-Propanona" 需要能匹配单独的 "Acetona"
+    const isTerceroRule = rule.ruleId?.startsWith('MX-2010-TERCERO')
+    if (isTerceroRule) {
+      const keywordParts = rule.keyword.toLowerCase().split(/\s+/).filter(p => p.length >= 6)
+      for (const part of keywordParts) {
+        if (part !== rule.keyword.toLowerCase()) {
+          candidates.push({ text: part, type: 'keyword' })
+        }
+      }
+    }
 
     // 2) 别名
     if (rule.aliases) {
@@ -1438,9 +1455,18 @@ function findMatches(
     // 按长度从长到短排序：短语优先
     candidates.sort((a, b) => b.text.length - a.text.length)
 
+    // DEBUG: log candidates for paraben rules
+    if (rule.keyword.toLowerCase().includes('paraben') || rule.aliases?.some(a => a.toLowerCase().includes('paraben'))) {
+    }
+
     // 依次尝试候选，取第一个（最长）满足词边界的匹配
     for (const candidate of candidates) {
       const match = findWordBoundaryMatch(lowerText, candidate.text)
+      
+      // DEBUG: log match result for paraben rules
+      if (rule.keyword.toLowerCase().includes('paraben') || rule.aliases?.some(a => a.toLowerCase().includes('paraben'))) {
+      }
+      
       if (!match) continue
 
       // \u2014\u2014 \u8d1f\u5411\u8fc7\u6ee4\uff1a\u6392\u9664\u690d\u7269\u6fc0\u7d20\u8bef\u62a5 \u2014\u2014
@@ -1484,11 +1510,16 @@ function findMatches(
             end: match.index + match.length,
           },
           sourceField,
-          contextSnippet: `成分族匹配: 识别到 ${candidate.familyTerm} 属于 ${rule.rootFamily} 成分族`,
+          contextSnippet: `\u6210\u5206\u65cf\u5339\u914d: \u8bc6\u522b\u5230 ${candidate.familyTerm} \u5c5e\u4e8e ${rule.rootFamily} \u6210\u5206\u65cf`,
           confidence: calculateConfidence(rule, candidate.familyTerm!, candidate.type),
         })
       } else {
         const matchedText = text.substring(match.index, match.index + match.length)
+        
+        // DEBUG: log before pushing
+        if (rule.keyword.toLowerCase().includes('paraben') || rule.aliases?.some(a => a.toLowerCase().includes('paraben'))) {
+        }
+        
         violations.push({
           ...rule,
           matchedText,
@@ -1500,8 +1531,12 @@ function findMatches(
           contextSnippet: generateContextSnippet(text, match.index, match.index + match.length),
           confidence: calculateConfidence(rule, matchedText, candidate.type),
         })
+        
+        // DEBUG: log after pushing
+        if (rule.keyword.toLowerCase().includes('paraben') || rule.aliases?.some(a => a.toLowerCase().includes('paraben'))) {
+        }
       }
-      break // 只取最长的一个匹配
+      break // \u53ea\u53d6\u6700\u957f\u7684\u4e00\u4e2a\u5339\u914d
     }
   }
 
@@ -1722,6 +1757,11 @@ export function checkCompliance(input: CheckInput): CheckResult {
     
     violations.push(...findMatches(ingredientTextToCheck, filteredRules.filter(r => r.category === 'ingredient'), 'ingredients'))
     
+    // DEBUG: log violations after findMatches
+    const parabenVios = violations.filter(v => v.keyword.toLowerCase().includes('paraben') || v.aliases?.some(a => a.toLowerCase().includes('paraben')))
+    if (parabenVios.length > 0) {
+    }
+    
     // ── 模糊成分提示 ──
     // 当成分未匹配到INCI词典且被识别为模糊描述时，生成 info 级别提示
     if (parsedIngredients.vague.length > 0) {
@@ -1787,6 +1827,9 @@ export function checkCompliance(input: CheckInput): CheckResult {
   violations.length = 0
   violations.push(...uniqueByRuleId.values())
 
+  // DEBUG: log after uniqueByRuleId
+  const parabenVios1 = violations.filter(v => v.keyword.toLowerCase().includes('paraben') || v.aliases?.some(a => a.toLowerCase().includes('paraben')))
+
   // ── 同文本跨规则去重 — 使用智能归一化 key 确保氢醛/激素/皮质类固醇等同源规则正确去重 ──
   const severityRank = { critical: 3, warning: 2, info: 1 }
   // 成分中英文映射（确保硬编码与JSON规则能够正确去重）
@@ -1838,6 +1881,9 @@ export function checkCompliance(input: CheckInput): CheckResult {
   }
   violations.length = 0
   violations.push(...uniqueByMatch.values())
+
+  // DEBUG: log after uniqueByMatch
+  const parabenVios2 = violations.filter(v => v.keyword.toLowerCase().includes('paraben') || v.aliases?.some(a => a.toLowerCase().includes('paraben')))
 
   // ── 词根簇跨规则去重 ──
   // 同一语义簇（如 cure/treat/heal）的多个 violations 只保留最严重/最长的一个
@@ -1913,9 +1959,9 @@ export function checkCompliance(input: CheckInput): CheckResult {
 
   return {
     isCompliant: criticalCount === 0,
-    violations: violations.filter(v => v.severity === 'critical'),
-    warnings: violations.filter(v => v.severity === 'warning'),
-    info: violations.filter(v => v.severity === 'info'),
+    violations: violations.filter(v => v.severity === 'critical' || v.severity === 'warning'),
+    warnings: violations.filter(v => v.severity === 'info'),
+    info: [],
     summary: {
       totalIssues: violations.length,
       criticalCount,

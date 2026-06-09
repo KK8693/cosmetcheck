@@ -8,6 +8,13 @@ export default {
     const url = new URL(request.url)
     const pathname = url.pathname
 
+    // 1. Redirect www to non-www, preserving full path and query
+    if (url.hostname.startsWith('www.')) {
+      const redirectUrl = new URL(request.url)
+      redirectUrl.hostname = redirectUrl.hostname.replace(/^www\./, '')
+      return Response.redirect(redirectUrl.toString(), 301)
+    }
+
     // List of valid locales
     const locales = ['zh', 'pt-BR', 'es-MX', 'en']
     const defaultLocale = 'zh'

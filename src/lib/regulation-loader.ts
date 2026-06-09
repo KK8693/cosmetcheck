@@ -131,14 +131,29 @@ function convertRuleToViolation(
   }
 
   // 处理 aliases：可能是字符串、数组或 undefined
+  // 同时处理 "/" 分隔符（如 "A/B/C" 拆分为 ["A", "B", "C"]）
   const rawAliases = (rule as unknown as { aliases?: unknown }).aliases
   let normalizedAliases: string[] | undefined
   
   if (Array.isArray(rawAliases)) {
-    normalizedAliases = rawAliases.filter((a): a is string => typeof a === 'string')
+    normalizedAliases = rawAliases
+      .filter((a): a is string => typeof a === 'string')
+      .flatMap((a: string) => a.split(/[,，;；|/]/).map((s: string) => s.trim()).filter(Boolean))
+      .filter((a, i, arr) => arr.indexOf(a) === i) // dedup
   } else if (typeof rawAliases === 'string' && rawAliases) {
-    // 如果是字符串，切割成数组（逗号分隔）
-    normalizedAliases = rawAliases.split(/[,，;；|]/).map((s: string) => s.trim()).filter(Boolean)
+    normalizedAliases = rawAliases.split(/[,，;；|/]/).map((s: string) => s.trim()).filter(Boolean)
+  }
+
+  // 处理 target 中的 "/" 分隔符：将多个成分名拆分为 keyword + 额外 aliases
+  let keyword = rule.target || ''
+  const targetParts = keyword.split('/').map((s: string) => s.trim()).filter(Boolean)
+  if (targetParts.length > 1) {
+    keyword = targetParts[0]
+    const extraAliases = targetParts.slice(1).filter(p => p !== keyword)
+    if (extraAliases.length > 0) {
+      normalizedAliases = [...(normalizedAliases || []), ...extraAliases]
+        .filter((a, i, arr) => arr.indexOf(a) === i) // dedup
+    }
   }
 
   // 处理 applicableCategories：品类隔离字段
@@ -165,7 +180,7 @@ function convertRuleToViolation(
     ruleId: rule.ruleId,
     category,
     ruleType,
-    keyword: rule.target,
+    keyword,
     severity: rule.severity,
     message: finalMessage,
     suggestion: finalSuggestion,
@@ -187,6 +202,7 @@ import brClaimsJson from '../data/regulations/brazil/claims.json'
 import brLabelJson from '../data/regulations/brazil/label.json'
 import brRegistrationJson from '../data/regulations/brazil/registration.json'
 import mxBannedJson from '../data/regulations/mexico/banned.json'
+import mxRestrictedJson from '../data/regulations/mexico/restricted.json'
 import mxClaimsJson from '../data/regulations/mexico/claims.json'
 import mxLabelJson from '../data/regulations/mexico/label.json'
 
@@ -203,6 +219,7 @@ const regulationFiles: {
   },
   MX: {
     banned: () => Promise.resolve(mxBannedJson),
+    restricted: () => Promise.resolve(mxRestrictedJson),
     claims: () => Promise.resolve(mxClaimsJson),
     label: () => Promise.resolve(mxLabelJson),
   },
@@ -220,8 +237,8 @@ let rulesCache: {
 const CACHE_TTL = 1000 // 1 second (dev-friendly)
 
 export async function loadRegulationRules(country: 'BR' | 'MX'): Promise<LoadedRules[]> {
-  // Check cache
-  if (rulesCache && rulesCache.loadedAt && Date.now() - rulesCache.loadedAt < CACHE_TTL) {
+  // Check cache - must have rules for this specific country
+  if (rulesCache && rulesCache[country].length > 0 && rulesCache.loadedAt && Date.now() - rulesCache.loadedAt < CACHE_TTL) {
     return rulesCache[country]
   }
 
@@ -233,7 +250,7 @@ export async function loadRegulationRules(country: 'BR' | 'MX'): Promise<LoadedR
     if (files.banned) {
       const banned = await files.banned() as unknown as RegulationFile
       for (const rule of banned.rules) {
-        rules.push(convertRuleToViolation({ ...rule, category: 'ingredient' as const }, country))
+        rules.push(convertRuleToViolation({ ...rule, category: 'banned' as const }, country))
       }
     }
 
@@ -241,7 +258,7 @@ export async function loadRegulationRules(country: 'BR' | 'MX'): Promise<LoadedR
     if (files.restricted) {
       const restricted = await files.restricted() as unknown as RegulationFile
       for (const rule of restricted.rules) {
-        rules.push(convertRuleToViolation({ ...rule, category: 'ingredient' as const }, country))
+        rules.push(convertRuleToViolation({ ...rule, category: 'restricted' as const }, country))
       }
     }
 

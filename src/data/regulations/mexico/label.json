@@ -332,6 +332,210 @@
         "minValue": 2,
         "maxValue": 4
       }
+    },
+    {
+      "ruleId": "MX-LABEL-018",
+      "category": "label",
+      "target": "Etiqueta en español / 西班牙语标签",
+      "aliases": [
+        "etiqueta en español",
+        "idioma español",
+        "rotulado en español",
+        "西班牙语标签",
+        "西语标识"
+      ],
+      "severity": "warning",
+      "condition": "NOM-141-2012 5.1.1: 标签必须使用西班牙语，字符清晰、可见、不可擦除、对比色",
+      "message": "Los productos deben ostentar una etiqueta con la información en idioma español, con caracteres claros, visibles, indelebles y en colores contrastantes, fáciles de leer por el consumidor. (NOM-141-SSA1/SCFI-2012 5.1.1)",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-019",
+      "category": "label",
+      "target": "Denominación genérica del producto / 产品通用名称",
+      "aliases": [
+        "denominación genérica",
+        "nombre genérico",
+        "clasificación del producto",
+        "通用名称",
+        "产品分类",
+        "产品类别"
+      ],
+      "severity": "warning",
+      "condition": "NOM-141-2012 5.1.5.1: 所有产品必须显示通用名称",
+      "message": "Todos los productos deben ostentar la denominación genérica conforme al apéndice informativo A de la norma. (NOM-141-SSA1/SCFI-2012 5.1.5.1)",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-020",
+      "category": "label",
+      "target": "Identificación del lote / 批次声明",
+      "aliases": [
+        "lote",
+        "número de lote",
+        "identificación del lote",
+        "批次",
+        "批号",
+        "lot number"
+      ],
+      "severity": "warning",
+      "condition": "NOM-141-2012 5.1.7.1: 必须标注批次识别码",
+      "message": "En cualquier parte del envase primario o secundario debe figurar la identificación del lote, grabado, marcado con tinta indeleble o de cualquier otro modo similar, claro y permanente. (NOM-141-SSA1/SCFI-2012 5.1.7.1)",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-021",
+      "category": "label",
+      "target": "Instrucciones de uso / 使用说明",
+      "aliases": [
+        "instrucciones de uso",
+        "modo de uso",
+        "cómo usar",
+        "使用说明",
+        "使用方法",
+        "使用方式"
+      ],
+      "severity": "warning",
+      "condition": "NOM-141-2012 5.1.8.1: 染发剂、防晒、美黑、脱毛等产品必须包含使用说明",
+      "message": "Deben figurar las instrucciones de uso en la superficie de información del envase primario o secundario, o instructivo anexo, para: tintes, colorantes, decolorantes, permanentes, alaciadores permanentes, productos para la piel con función primaria de protección solar, bronceadores, autobronceadores, depilatorios y epilatorios. (NOM-141-SSA1/SCFI-2012 5.1.8.1)",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-022",
+      "category": "label",
+      "target": "Lista de ingredientes por orden / 成分列表（按降序）",
+      "aliases": [
+        "lista de ingredientes",
+        "orden cuantitativo decreciente",
+        "ingredientes por orden",
+        "成分列表",
+        "成分降序",
+        "成分表"
+      ],
+      "severity": "warning",
+      "condition": "NOM-141-2012 5.3.1: 成分必须按降序排列（>1%必须按序，≤1%可任意排列）",
+      "message": "La lista de nombres de los ingredientes debe ir precedida por el término 'ingredientes' y enlistarse: por orden cuantitativo decreciente; o por orden cuantitativo decreciente aquellos ingredientes cuya concentración sea superior al 1%, seguido por aquellos en concentración inferior o igual al 1% que podrán mencionarse en cualquier orden. (NOM-141-SSA1/SCFI-2012 5.3.1)",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-023",
+      "category": "label",
+      "target": "Fecha de caducidad / 保质期（≤24个月产品）",
+      "aliases": [
+        "caducidad",
+        "consumo preferente",
+        "vencimiento",
+        "duración mínima",
+        "validez",
+        "expiración",
+        "保质期",
+        "有效期",
+        "失效日期",
+        "最佳使用期"
+      ],
+      "severity": "warning",
+      "condition": "NOM-141-2012 5.3.6: 保质期≤24个月的产品必须标注有效期",
+      "message": "En productos con una duración menor o igual a 24 meses debe figurar la fecha hasta la cual el producto es seguro, indicando al menos el mes y el año, o bien el día, mes y año. (NOM-141-SSA1/SCFI-2012 5.3.6)",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-024",
+      "category": "label",
+      "target": "Leyendas precautorias en desodorantes / 止汗剂警示语",
+      "aliases": [
+        "no aplicar sobre piel irritada",
+        "descontinuar uso en caso de irritación",
+        "no dejar al alcance de los niños",
+        "evitar contacto con los ojos",
+        "勿用于受损皮肤",
+        "出现刺激请停用",
+        "远离儿童",
+        "避免接触眼睛"
+      ],
+      "severity": "warning",
+      "condition": "NOM-141-2012 5.3.7.1: 止汗剂必须包含特定警示语",
+      "message": "En desodorantes o antitranspirantes deben incluirse leyendas precautorias: no aplicar sobre piel irritada o lastimada; descontinuar su uso en caso de presentarse irritación, enrojecimiento o alguna molestia; no dejar al alcance de los niños; en caso de contener Fenolsulfonato de zinc, evitar contacto con los ojos. (NOM-141-SSA1/SCFI-2012 5.3.7.1)",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-025",
+      "category": "label",
+      "target": "Leyendas precautorias en tintes capilares / 染发剂警示语",
+      "aliases": [
+        "los colorantes del cabello pueden causar reacciones alérgicas graves",
+        "lea y siga las instrucciones",
+        "no está destinado a personas menores de dieciséis años",
+        "prueba preliminar",
+        "染发剂可引起严重过敏反应",
+        "请阅读并遵循说明",
+        "不适合16岁以下人群",
+        "皮肤敏感性测试"
+      ],
+      "severity": "warning",
+      "condition": "NOM-141-2012 5.3.7.2: 染发剂必须包含过敏风险提示等警示语",
+      "message": "En tintes, colorantes y coloración deben incluirse: los colorantes del cabello pueden causar reacciones alérgicas graves; lea y siga las instrucciones; no está destinado a personas menores de 16 años; realizar una prueba preliminar; puede causar alergia; no aplicar en cejas o pestañas; usar guantes apropiados. (NOM-141-SSA1/SCFI-2012 5.3.7.2)",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-026",
+      "category": "label",
+      "target": "Leyendas en permanentes y alaciadores / 烫发/拉直产品警示语",
+      "aliases": [
+        "sustancia que puede causar daño al cabello",
+        "no aplicar a cejas o pestañas",
+        "evitar contacto con los ojos",
+        "uso exclusivamente conforme al instructivo",
+        "reservado a profesionales",
+        "contiene un agente alcalino",
+        "可能损伤发质",
+        "勿用于眉毛或睫毛",
+        "避免接触眼睛",
+        "仅限专业使用",
+        "含碱性剂"
+      ],
+      "severity": "warning",
+      "condition": "NOM-141-2012 5.3.7.4: 烫发/拉直产品必须包含特定警示语",
+      "message": "En permanentes y alaciadores permanentes deben incluirse: destacar sustancias que puedan causar daño al cabello y piel cabelluda; no aplicar a cejas o pestañas; evitar contacto con los ojos; usar exclusivamente conforme al instructivo; no dejar al alcance de los niños; en productos profesionales: 'Reservado a profesionales'; si contienen hidróxido de sodio/potasio/litio/calcio, indicar 'Contiene un agente alcalino'. (NOM-141-SSA1/SCFI-2012 5.3.7.4)",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-027",
+      "category": "label",
+      "target": "Leyendas en decolorantes / 漂白剂警示语",
+      "aliases": [
+        "sustancia que puede causar daño",
+        "evitar contacto con los ojos",
+        "usar guantes apropiados",
+        "no aplicar si la piel cabelluda está irritada",
+        "suspender su empleo en caso de irritación",
+        "no aplicar en cejas o pestañas",
+        "可能造成伤害",
+        "避免接触眼睛",
+        "使用适当手套",
+        "头皮受损勿用",
+        "出现刺激请停用"
+      ],
+      "severity": "warning",
+      "condition": "NOM-141-2012 5.3.7.5: 漂白剂必须包含特定警示语",
+      "message": "En decolorantes deben incluirse: destacar sustancias que pueden causar daño; evitar contacto con los ojos; en caso de contacto, enjuagar inmediatamente con agua; usar guantes apropiados; no aplicar si la piel cabelluda está irritada; suspender su empleo en caso de irritación; no aplicar en cejas o pestañas; no dejar al alcance de los niños. (NOM-141-SSA1/SCFI-2012 5.3.7.5)",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-028",
+      "category": "label",
+      "target": "Advertencia de ácido salicílico en productos para niños / 儿童产品水杨酸警示",
+      "aliases": [
+        "ácido salicílico niños",
+        "salicilato niños",
+        "advertencia salicílico",
+        "儿童水杨酸",
+        "水杨酸警示",
+        "salicylic acid children"
+      ],
+      "severity": "warning",
+      "condition": "NOM-141-2014 5.3.7.18: 儿童产品含水杨酸及其盐类（除洗发水外）必须包含警示语",
+      "message": "En productos para niños que contengan ácido salicílico y sus sales, excepto en shampoos, deben incluirse advertencias específicas. (Modificación NOM-141-SSA1/SCFI-2012, DOF 14/02/2014, 5.3.7.18)",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5332692&fecha=14/02/2014"
     }
   ]
 }

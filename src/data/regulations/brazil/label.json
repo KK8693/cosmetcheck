@@ -136,6 +136,186 @@
       "condition": "必须标注客服联系方式",
       "message": "Consumer service phone or email must be displayed.",
       "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-011",
+      "category": "label",
+      "target": "Advertências e restrições de uso / 使用警示语和限制",
+      "aliases": [
+        "advertência",
+        "restrição de uso",
+        "precaução",
+        "警示语",
+        "使用限制",
+        "注意事项"
+      ],
+      "severity": "warning",
+      "condition": "RDC 907/2024 Art.13 I-a: 初级包装必须包含使用警示语和限制（如有）",
+      "message": "A embalagem primária deve conter advertências e restrições de uso, quando aplicável. (RDC 907/2024 Art.13 I-a)",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-012",
+      "category": "label",
+      "target": "Número do processo de regularização / 注册号",
+      "aliases": [
+        "processo de regularização",
+        "número de registro",
+        "notificação ANVISA",
+        "注册号",
+        "ANVISA注册",
+        "正规化编号"
+      ],
+      "severity": "warning",
+      "condition": "RDC 907/2024 Art.13 II-e: 次级包装必须包含产品注册号",
+      "message": "A embalagem secundária deve conter o número do processo de regularização do produto junto à Anvisa. (RDC 907/2024 Art.13 II-e)",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-013",
+      "category": "label",
+      "target": "Nome e CNPJ do titular / 公司名称和CNPJ",
+      "aliases": [
+        "CNPJ",
+        "razão social",
+        "nome do titular",
+        "titular do registro",
+        "公司名称",
+        "公司税号",
+        "注册持有人"
+      ],
+      "severity": "warning",
+      "condition": "RDC 907/2024 Art.13 II-g/h: 次级包装必须包含持有人公司名称和CNPJ",
+      "message": "A embalagem secundária deve conter o nome (razão social) e o CNPJ do titular da regularização. (RDC 907/2024 Art.13 II-g/h)",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-014",
+      "category": "label",
+      "target": "Prazo de validade / 保质期",
+      "aliases": [
+        "prazo de validade",
+        "validade",
+        "data de vencimento",
+        "uso até",
+        "保质期",
+        "有效期",
+        "失效日期",
+        "使用前"
+      ],
+      "severity": "warning",
+      "condition": "RDC 907/2024 Art.13 II-m: 次级包装必须包含保质期",
+      "message": "A embalagem secundária deve conter o prazo de validade do produto. (RDC 907/2024 Art.13 II-m)",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-015",
+      "category": "label",
+      "target": "Modo de uso detalhado / 详细使用方式",
+      "aliases": [
+        "modo de uso",
+        "instruções de uso",
+        "como usar",
+        "使用方式",
+        "使用方法",
+        "使用说明"
+      ],
+      "severity": "warning",
+      "condition": "RDC 907/2024 Art.13 III-a + Parágrafo único: 发型固定/造型产品必须包含详细使用说明（含理想用量）",
+      "message": "O modo de uso é obrigatório para produtos destinados a fixar e/ou modelar cabelos e barba, e deve ser detalhado, incluindo a quantidade ideal de produto a ser aplicado. (RDC 907/2024 Art.13 III-a)",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-016",
+      "category": "label",
+      "target": "Idioma português / 葡萄牙语标签",
+      "aliases": [
+        "idioma português",
+        "português do Brasil",
+        "rótulo em português",
+        "葡萄牙语",
+        "巴西葡萄牙语",
+        "葡语标签"
+      ],
+      "severity": "warning",
+      "condition": "RDC 907/2024 Art.20: 标签信息必须使用巴西葡萄牙语（INCI、名称和商标除外）",
+      "message": "As informações obrigatórias na rotulagem devem ser em português do Brasil, com exceção do código INCI, nome e marcas. (RDC 907/2024 Art.20)",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-017",
+      "category": "label",
+      "target": "Advertência em aerossóis / 气雾剂警示语",
+      "aliases": [
+        "aerossol inflamável",
+        "não pulverizar perto do fogo",
+        "não perfurar nem incinerar",
+        "não expor ao sol",
+        "proteger os olhos",
+        "manter fora do alcance de crianças",
+        "气雾剂",
+        "易燃",
+        "远离火源",
+        "勿刺穿焚烧",
+        "远离儿童"
+      ],
+      "severity": "warning",
+      "condition": "RDC 907/2024 Art.24 I: 气雾剂产品必须包含特定警示语",
+      "message": "Produtos em aerossóis devem conter advertências específicas: inflamável, não pulverizar perto do fogo, não perfurar/incinerar, não expor ao sol ou temperaturas superiores a 50°C, manter fora do alcance de crianças, proteger os olhos. (RDC 907/2024 Art.24 I)",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-018",
+      "category": "label",
+      "target": "Advertência em tinturas capilares / 染发剂警示语",
+      "aliases": [
+        "prova de toque",
+        "pode causar reação alérgica",
+        "não aplicar em couro cabeludo irritado",
+        "não usar nos cílios",
+        "manter fora do alcance das crianças",
+        "皮肤过敏测试",
+        "可能引起过敏反应",
+        "头皮受损勿用",
+        "勿用于睫毛",
+        "远离儿童"
+      ],
+      "severity": "warning",
+      "condition": "RDC 907/2024 Art.24 II: 染发剂/漂白剂必须包含过敏测试提示等警示语",
+      "message": "Agentes clareadores de cabelos e tinturas capilares devem conter: 'CUIDADO. Pode causar irritação na pele ou reação alérgica. Antes de usar, fazer a prova de toque', 'Não aplicar se o couro cabeludo estiver irritado ou lesionado', 'Não usar nos cílios', 'Manter fora do alcance das crianças'. (RDC 907/2024 Art.24 II)",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-019",
+      "category": "label",
+      "target": "Advertência em autobronzeadores / 美黑产品警示语",
+      "aliases": [
+        "não protege contra a ação solar",
+        "não é um protetor solar",
+        "不防晒",
+        "非防晒产品",
+        "不防紫外线"
+      ],
+      "severity": "warning",
+      "condition": "RDC 907/2024 Art.24 IV/V: 美黑激活/仿晒产品必须显示非防晒警示语",
+      "message": "Ativadores/aceleradores do bronzeado devem conter: 'Este produto não é um protetor solar'. Autobronzeadores devem conter: 'Atenção: não protege contra a ação solar'. (RDC 907/2024 Art.24 IV/V)",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-020",
+      "category": "label",
+      "target": "Advertência em produtos hipoalergênicos / 低敏感产品警示语",
+      "aliases": [
+        "hipoalergênico",
+        "formulado para minimizar alergia",
+        "低过敏",
+        "低敏配方",
+        "最小化过敏"
+      ],
+      "severity": "warning",
+      "condition": "RDC 907/2024 Art.24 XI: 低敏感产品必须包含特定警示语",
+      "message": "Produtos hipoalergênicos devem conter: 'Este produto foi formulado de maneira a minimizar possível surgimento de alergia'. (RDC 907/2024 Art.24 XI)",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
     }
   ]
 }
