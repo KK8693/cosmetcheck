@@ -1,3 +1,6 @@
+# www to non-www redirect (301)
+www.cosmetcheck.com/* https://cosmetcheck.com/:splat 301
+
 # Cloudflare Pages SPA fallback
 # All routes go to root for Next.js to handle via middleware
 /* /index.html 200
