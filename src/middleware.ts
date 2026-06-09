@@ -65,6 +65,6 @@ export const config = {
   // - root path (handled by [locale] catch-all)
   matcher: [
     '/(zh|pt|pt-BR|es|es-MX|en)/:path*',
-    '/((?!api|_next|favicon.ico|ingredients|ingredient|category|status|.*\\..*).*)'
+    '/((?!api|_next|favicon.ico|ingredients|ingredient|category|status|regulation|.*\\..*).*)'
   ]
 }
