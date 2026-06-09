@@ -20,7 +20,7 @@ export async function generateMetadata({
       canonical: `https://cosmetcheck.com/${locale}/batch`,
       languages: {
         'en': `/en/batch`,
-        'zh': `/zh/batch`,
+        'zh-CN': `/zh/batch`,
         'pt-BR': `/pt-BR/batch`,
         'es-MX': `/es-MX/batch`,
       },

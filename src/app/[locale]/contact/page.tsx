@@ -17,7 +17,7 @@ export async function generateMetadata({
       canonical: `https://cosmetcheck.com/${locale}/contact`,
       languages: {
         'en': `/en/contact`,
-        'zh': `/zh/contact`,
+        'zh-CN': `/zh/contact`,
         'pt-BR': `/pt-BR/contact`,
         'es-MX': `/es-MX/contact`,
       },

@@ -15,7 +15,7 @@ export async function generateMetadata({
       canonical: `https://cosmetcheck.com/${locale}/cookie-policy`,
       languages: {
         'en': `/en/cookie-policy`,
-        'zh': `/zh/cookie-policy`,
+        'zh-CN': `/zh/cookie-policy`,
         'pt-BR': `/pt-BR/cookie-policy`,
         'es-MX': `/es-MX/cookie-policy`,
       },
