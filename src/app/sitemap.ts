@@ -3,6 +3,8 @@ import { blogPosts } from '@/lib/blog-data'
 import { translatedPosts } from '@/lib/blog-translated'
 import { getAllSlugs } from '@/lib/ingredient-data'
 import { getAllProductTypeSlugs } from '@/data/product-types'
+import { getAllPlatformCountryCombinations, getAllPlatformSlugs } from '@/data/platform-guides'
+import { getAllCategories } from '@/data/category-index'
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cosmetcheck.com'
 const locales = ['zh', 'en', 'pt-BR', 'es-MX']
@@ -127,6 +129,51 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: 'monthly',
         priority: 0.7,
       })
+    }
+  }
+
+  // ── Platform pages (no locale versions) ──
+  const platformSlugs = getAllPlatformSlugs()
+  const platformCountries = ['brazil', 'mexico']
+  const categorySlugs = getAllCategories()
+
+  // Platform index
+  entries.push({
+    url: `${baseUrl}/platforms`,
+    lastModified: currentDate,
+    changeFrequency: 'weekly',
+    priority: 0.8,
+  })
+  entries.push({
+    url: `${baseUrl}/platforms/compare`,
+    lastModified: currentDate,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  })
+
+  // Platform × country × category
+  for (const pSlug of platformSlugs) {
+    entries.push({
+      url: `${baseUrl}/platforms/${pSlug}`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    })
+    for (const pc of platformCountries) {
+      entries.push({
+        url: `${baseUrl}/platforms/${pSlug}/${pc}`,
+        lastModified: currentDate,
+        changeFrequency: 'monthly',
+        priority: 0.7,
+      })
+      for (const cat of categorySlugs) {
+        entries.push({
+          url: `${baseUrl}/platforms/${pSlug}/${pc}/${cat}`,
+          lastModified: currentDate,
+          changeFrequency: 'monthly',
+          priority: 0.6,
+        })
+      }
     }
   }
 
