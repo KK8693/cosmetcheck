@@ -1,0 +1,42 @@
+{
+  "document": "MX-2014 SEXTO",
+  "totalChunks": 6,
+  "chunks": [
+    {
+      "chunkId": 1,
+      "startLine": 241,
+      "endLine": 470,
+      "charCount": 4425
+    },
+    {
+      "chunkId": 2,
+      "startLine": 471,
+      "endLine": 700,
+      "charCount": 4258
+    },
+    {
+      "chunkId": 3,
+      "startLine": 701,
+      "endLine": 930,
+      "charCount": 4518
+    },
+    {
+      "chunkId": 4,
+      "startLine": 931,
+      "endLine": 1160,
+      "charCount": 4756
+    },
+    {
+      "chunkId": 5,
+      "startLine": 1161,
+      "endLine": 1390,
+      "charCount": 4758
+    },
+    {
+      "chunkId": 6,
+      "startLine": 1391,
+      "endLine": 1619,
+      "charCount": 4492
+    }
+  ]
+}

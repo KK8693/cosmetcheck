@@ -1,0 +1,3323 @@
+{
+  "document": {
+    "id": "MX-2014 SEXTO",
+    "titleEs": "Sustancias restringidas en productos cosméticos (SEXTO)",
+    "titleZh": "墨西哥化妆品限用成分清单 (SEXTO)",
+    "annex": "SEXTO",
+    "sourceUrl": "https://diariooficial.segob.gob.mx/",
+    "effectiveDate": "2014-03-11",
+    "language": "es"
+  },
+  "totalRules": 96,
+  "rules": [
+    {
+      "ruleId": "MX-2014-SEXTO-1_2",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "1-2",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 1-2",
+        "inciNameEn": "Range 1-2",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "1. a 2."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-3",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "3",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Amarillo ácido No. 1",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "10316"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Amarillo naftol S\nAmarillo 7\nExt. amarillo 7\nExt. amarillo No. 7\nExt. D&C Amarillo 7\nAmarillo 403\nSal disódica del ácido 8-hidroxi-\n5,7-dinitro-2-naftalen sulfónico\n5,7-Dinitro-8-óxido-2-naftaleno-\nsulfonato de disodio\nSin restricción para todo\ntipo de productos,\nexcepto en productos\nque se apliquen..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "3. 10316 Amarillo ácido No. 1\n \nAmarillo naftol S\nAmarillo 7\nExt. amarillo 7\nExt. amarillo No. 7\nExt. D&C Amarillo 7\nAmarillo 403\nSal disódica del ácido 8-hidroxi-\n5,7-dinitro-2-naftalen sulfónico\n5,7-Dinitro-8-óxido-2-naftaleno-\nsulfonato de disodio\nSin restricción para todo\ntipo de productos,\nexcepto en productos\nque se apliquen cerca\ndel área de los ojos, y\nen específico en los\nproductos para maquillar\ny desmaquillar.\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\no"
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-4_11",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "4-11",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 4-11",
+        "inciNameEn": "Range 4-11",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "4. a 11."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-13_48",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "13-48",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 13-48",
+        "inciNameEn": "Range 13-48",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "13. a 48."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-49",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "49",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rojo alimentos 17 y sus",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "16035"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,4%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "lacas\nRojo curry\nFD&C Rojo No. 40\nRojo allura\nRojo 40\nSal disódica de ácido 5-hidroxi-\n[(2-metoxi-5-metil-4-sulfofenil)azo]\n-2-naftalensulfónico\n6-Hidroxi-5-[(2-metoxi-4-\nsulfonato-m-tolil)azo]naftaleno\n-2-sulfonato de disodio\n \nSin restricción para todo\ntipo de productos.\nPara tintes capilares no\no..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "49. 16035 Rojo alimentos 17 y sus\nlacas\nRojo curry\nFD&C Rojo No. 40\nRojo allura\nRojo 40\nSal disódica de ácido 5-hidroxi-\n[(2-metoxi-5-metil-4-sulfofenil)azo]\n-2-naftalensulfónico\n6-Hidroxi-5-[(2-metoxi-4-\nsulfonato-m-tolil)azo]naftaleno\n-2-sulfonato de disodio\n \nSin restricción para todo\ntipo de productos.\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado no debe\nexceder de 0,4%."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-50_51",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "50-51",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 50-51",
+        "inciNameEn": "Range 50-51",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "50. a 51."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-52",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "52",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rojo ácido 18 y sus lacas Ponceau 4R",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "16255"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Rojo No. 14\nRojo No. 102\nRojo alimentos 7\nRojo cochinilla A\nSal trisódica del ácido 7-hidroxi-8-\n[(4 sulfo-1-naftalenil) azo]\n-1,3-naftalénsulfónico\n1-(1-Naftilazo)-2-hidroxinaftaleno-\n4',6,8-trisulfonato de trisodio\ny su laca de aluminio\n \nSin restricción para todo\ntipo de productos.\nPara tintes ca..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "52. 16255 Rojo ácido 18 y sus lacas Ponceau 4R\nRojo No. 14\nRojo No. 102\nRojo alimentos 7\nRojo cochinilla A\nSal trisódica del ácido 7-hidroxi-8-\n[(4 sulfo-1-naftalenil) azo]\n-1,3-naftalénsulfónico\n1-(1-Naftilazo)-2-hidroxinaftaleno-\n4',6,8-trisulfonato de trisodio\ny su laca de aluminio\n \nSin restricción para todo\ntipo de productos.\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado no debe\nexceder de 0,5%.\n53.\n \n... ... ... ..."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-54",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "54",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rojo ácido 33 y sus",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "17200"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "lacas\n5-Amino-4-hidroxi-3-(fenilazo)\nNaftaleno-2,7-disulfonato de\ndisodio\nD&C Rojo 33\nRojo Naftaleno B4\nRojo fucsia\nRojo 33\nRojo No. 33\nSin restricción para todo\ntipo de productos.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el producto\nterminado 0,5%.\n2026/5/13 12:23 DOF - Diario ..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "54. 17200 Rojo ácido 33 y sus\nlacas\n5-Amino-4-hidroxi-3-(fenilazo)\nNaftaleno-2,7-disulfonato de\ndisodio\nD&C Rojo 33\nRojo Naftaleno B4\nRojo fucsia\nRojo 33\nRojo No. 33\nSin restricción para todo\ntipo de productos.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el producto\nterminado 0,5%.\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 4/20\n\n--- Page 5 ---\nRojo alimentos 12\n "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-55_60",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "55-60",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 55-60",
+        "inciNameEn": "Range 55-60",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "55. a 60."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-61",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "61",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Amarillo ácido 23 y su laca",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "19140"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "de aluminio\nAmarillo 5\nAmarillo 5 laca\nAmarillo No. 5\nAmarillo alimentos 4\nAmarillo laca 5\nFD&C amarillo 5\nSal trisódica del ácido 4,5\n-dihidro-5-oxo-(1-4-sulfofenil)\n-4-[(4-sulfofenil)azo]-1H-pirazol-3-\ncarboxílico-5-Hidroxi-1-(4-\nulfofenil)-4-(4-\nsulfofenilazo)pirazol-3-carboxilato\nde trisodio y s..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "61. 19140 Amarillo ácido 23 y su laca\nde aluminio\nAmarillo 5\nAmarillo 5 laca\nAmarillo No. 5\nAmarillo alimentos 4\nAmarillo laca 5\nFD&C amarillo 5\nSal trisódica del ácido 4,5\n-dihidro-5-oxo-(1-4-sulfofenil)\n-4-[(4-sulfofenil)azo]-1H-pirazol-3-\ncarboxílico-5-Hidroxi-1-(4-\nulfofenil)-4-(4-\nsulfofenilazo)pirazol-3-carboxilato\nde trisodio y su laca de aluminio\nTartrazina\n \nSin restricción para todo\ntipo de productos.\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-64_69",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "64-69",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 64-69",
+        "inciNameEn": "Range 64-69",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "64. a 69."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-71_84",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "71-84",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 71-84",
+        "inciNameEn": "Range 71-84",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "71. a 84."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-85",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "85",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Azul ácido 9 y sus sales Azul 1",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "42090"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Azul No. 1\nAzul brillante FCF\nFD&C Azul 1\nFD&C Azul No. 4\nAzul 4\nAzul No. 4\nSal disódica y diamónica\ndel hidróxido de N-etil-N-\n[4-[[4-[etil[(3-sulfofenil)metil]amino]\nfenil](2-sulfofenil)metilen]-2,5-\nciclohexadien-1-iliden]-3-\nsulfobencenmetanaminio\nBencenometanaminio, N-etil-N-[4-\n[[4-[etil[(3-su..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "85. 42090 Azul ácido 9 y sus sales Azul 1\nAzul No. 1\nAzul brillante FCF\nFD&C Azul 1\nFD&C Azul No. 4\nAzul 4\nAzul No. 4\nSal disódica y diamónica\ndel hidróxido de N-etil-N-\n[4-[[4-[etil[(3-sulfofenil)metil]amino]\nfenil](2-sulfofenil)metilen]-2,5-\nciclohexadien-1-iliden]-3-\nsulfobencenmetanaminio\nBencenometanaminio, N-etil-N-[4-\n[[4-[etil[(3-sulfofenil) metil]amino]\nfenil](2-sulfofenil)metilen]-2,5-\nciclohexadien-1-iliden]-3-sulfo, sal\ninterna, sal disódica y sus sales\nde amonio y aluminio\nSin restr"
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-86_88",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "86-88",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 86-88",
+        "inciNameEn": "Range 86-88",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "86. a 88."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-89",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "89",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Violeta básico 2 Monoclorhidrato de 4-[(4-amino",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "42520"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "-m-tolil)(4-imino-3-metilciclohexa-\n2,5-dien-1-iliden)metil]-o-toluidina\n \nSólo en productos\ndestinados a entrar en\ncontacto breve con la\npiel, la concentración\nmáxima en el producto\nterminado no debe\nexceder de 5,0 ppm.\nPara tintes capilares\noxidantes la\nconcentración máxima\nen producto terminado\nn..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "89. 42520 Violeta básico 2 Monoclorhidrato de 4-[(4-amino\n-m-tolil)(4-imino-3-metilciclohexa-\n2,5-dien-1-iliden)metil]-o-toluidina\n \nSólo en productos\ndestinados a entrar en\ncontacto breve con la\npiel, la concentración\nmáxima en el producto\nterminado no debe\nexceder de 5,0 ppm.\nPara tintes capilares\noxidantes la\nconcentración máxima\nen producto terminado\nno debe exceder de\n1,0%.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen producto terminado\nno debe exceder de\n0,5%.\n \n "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-90_93",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "90-93",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 90-93",
+        "inciNameEn": "Range 90-93",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "90. a 93."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-94",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "94",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rojo ácido 52 Rojo ácido 106",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "45100"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Rojo No. 106\nSal sódica de 3,6-Bis(dietilamino)\n-9-(2,4-disulfonatofenil)xantilio"
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "94. 45100 Rojo ácido 52 Rojo ácido 106\nRojo No. 106\nSal sódica de 3,6-Bis(dietilamino)\n-9-(2,4-disulfonatofenil)xantilio\n"
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-95_129",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "95-129",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 95-129",
+        "inciNameEn": "Range 95-129",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "95. a 129."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-130",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "130",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Azul ácido 62 Azul ácido 65",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "62045"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Azul No. 17\n2-Sulfonato-1-amino-4-\n(ciclohexilamino)-9,10-dihidro-\n9,10-dioxoantraceno de sodio\nSin restricción en\nproductos que entran en\ncontacto breve con la\npiel.\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado no debe\nexceder de 0,5%.\n_ No usar con agentes\nn..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "130. 62045 Azul ácido 62 Azul ácido 65\nAzul No. 17\n2-Sulfonato-1-amino-4-\n(ciclohexilamino)-9,10-dihidro-\n9,10-dioxoantraceno de sodio\nSin restricción en\nproductos que entran en\ncontacto breve con la\npiel.\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado no debe\nexceder de 0,5%.\n_ No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas: 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos.\n "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-131_154",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "131-154",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 131-154",
+        "inciNameEn": "Range 131-154",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "131. a 154."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-155",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "155",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "2,5-Diamino tolueno Tolueno 2,5-diamina y",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "76042"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "4%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "sus sales\nPara el teñido del\ncabello Uso normal y\nuso profesional.\nDespués de mezclarse\nen condiciones\noxidantes, la\nconcentración, no debe\nexceder del 4% como\nbase libre."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "155. 76042 2,5-Diamino tolueno Tolueno 2,5-diamina y\nsus sales\nPara el teñido del\ncabello Uso normal y\nuso profesional.\nDespués de mezclarse\nen condiciones\noxidantes, la\nconcentración, no debe\nexceder del 4% como\nbase libre."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-156",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "156",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Sulfato de 2,5-diamino",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "76043"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "4%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "tolueno\n Para el teñido del\ncabello Uso normal y\nuso profesional.\nDespués de mezclarse\nen condiciones\noxidantes, la\nconcentración no debe\nexceder del 4% como\nbase libre."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "156. 76043 Sulfato de 2,5-diamino\ntolueno\n Para el teñido del\ncabello Uso normal y\nuso profesional.\nDespués de mezclarse\nen condiciones\noxidantes, la\nconcentración no debe\nexceder del 4% como\nbase libre."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-157",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "157",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado Clorhidrato",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "fenilendiamina\n Para el teñido del\ncabello Uso normal y\nuso profesional.\nDespués de mezclarse\nen condiciones\noxidantes, la\nconcentración no debe\nexceder del 2% como\nbase libre."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "157. No reportado Clorhidrato de p-\nfenilendiamina\n Para el teñido del\ncabello Uso normal y\nuso profesional.\nDespués de mezclarse\nen condiciones\noxidantes, la\nconcentración no debe\nexceder del 2% como\nbase libre.\n "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-158_165",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "158-165",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 158-165",
+        "inciNameEn": "Range 158-165",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "158. a 165. ... .... ... ..."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-169",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "169",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "m-Aminofenol y sus sales  Sólo para tintes",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "76545"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "capilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,2%.\n170.\n \n... ... ... ..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "169. 76545 m-Aminofenol y sus sales  Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,2%.\n170.\n \n... ... ... ..."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-171",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "171",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "1-Naftol Alcohol naftílico",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "76605"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "2,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Alfa naftol\n1-Naftalenol\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 2,0%."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "171. 76605 1-Naftol Alcohol naftílico\nAlfa naftol\n1-Naftalenol\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 2,0%."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-172",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "172",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "1,5-Naftalenodiol  Sólo para tintes",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "76625"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "capilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,0%.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el producto\nterminado es de 1,0%."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "172. 76625 1,5-Naftalenodiol  Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,0%.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el producto\nterminado es de 1,0%.\n "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-173",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "173",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "2,7-Naftalenodiol 2,7-Dihidroxinaftaleno Sólo para tintes",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "76645"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "capilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,0%.\nPara tintes capilares no\noxidantes la\nconcentarción máxima\nen el producto\nterminado es de 1,0%."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "173. 76645 2,7-Naftalenodiol 2,7-Dihidroxinaftaleno Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,0%.\nPara tintes capilares no\noxidantes la\nconcentarción máxima\nen el producto\nterminado es de 1,0%."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-174_206",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "174-206",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 174-206",
+        "inciNameEn": "Range 174-206",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "174. a 206."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-207",
+      "status": "repealed",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "207",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Derogado",
+        "inciNameEn": "Repealed",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Derogado por el Acuerdo de 2014."
+      ],
+      "sourceText": "207. Derogado."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-208",
+      "status": "repealed",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "208",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Derogado",
+        "inciNameEn": "Repealed",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Derogado por el Acuerdo de 2014."
+      ],
+      "sourceText": "208. Derogado."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-209",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "209",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado Ácido",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "picrámico  Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5%.\nPara tintes capilares no\noxidantes concentración\nmáxima en el producto\nterminado es de 2,0%.\n_ No usar con agentes\nnitrosantes.\n- Conte..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "209. No reportado Ácido 2-hidroxietil\npicrámico  Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5%.\nPara tintes capilares no\noxidantes concentración\nmáxima en el producto\nterminado es de 2,0%.\n_ No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas: 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-210_211",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "210-211",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 210-211",
+        "inciNameEn": "Range 210-211",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "210. a 211."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-212",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "212",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 2-Amino-6-cloro-4-nitrofenol",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "2,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "capilares oxidantes,\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 7/20\n\n--- Page 8 ---\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "212. No reportado 2-Amino-6-cloro-4-nitrofenol  Sólo para tintes\ncapilares oxidantes,\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 7/20\n\n--- Page 8 ---\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 2,0%.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el producto\nterminado es de 2,0%."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-213",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "213",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 4-Amino-m-cresol",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "capilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5%."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "213. No reportado 4-Amino-m-cresol  Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5%."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-214_215",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "214-215",
+        "pageInSource": 24,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 214-215",
+        "inciNameEn": "Range 214-215",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "214. a 215."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-216",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "216",
+        "pageInSource": 36,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 3-Amino-2,4-diclorofenol",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "y su clorhidrato\n1-Hidroxi-3-amino-2,4-diclorofenol Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5%\n(como clorhidrato).\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\n..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "216. No reportado 3-Amino-2,4-diclorofenol\ny su clorhidrato\n1-Hidroxi-3-amino-2,4-diclorofenol Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5%\n(como clorhidrato).\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado es de 1,5%\n(como clorhidrato).\n "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-217_218",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "217-218",
+        "pageInSource": 36,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 217-218",
+        "inciNameEn": "Range 217-218",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "217. a 218."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-219",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "219",
+        "pageInSource": 36,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 2-Amino-4-hidroxietil-",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "aminoanisol y su\nsulfato\n Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5%\n(como sulfato).\n_ No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas: 50 µg/kg.\n- Conservar en\nrecipient..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "219. No reportado 2-Amino-4-hidroxietil-\naminoanisol y su\nsulfato\n Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5%\n(como sulfato).\n_ No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas: 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-220",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "220",
+        "pageInSource": 36,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 2-Amino-3-hidroxipiridina",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "2-Amino-3-hidroxipyridina\n2-Amino-3-piridinol\n2-Aminopiridin-3-ol\n3-Hidroxi-2-aminopiridina\n3-Hidroxi-2-piridinamina\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,0%."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "220. No reportado 2-Amino-3-hidroxipiridina 3-Piridinol, 2-amino-\n2-Amino-3-hidroxipyridina\n2-Amino-3-piridinol\n2-Aminopiridin-3-ol\n3-Hidroxi-2-aminopiridina\n3-Hidroxi-2-piridinamina\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,0%."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-221",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "221",
+        "pageInSource": 36,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 4-Amino-2-hidroxitolueno",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,5 %",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "capilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5 %.\n222.\n \n... ... ... ..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "221. No reportado 4-Amino-2-hidroxitolueno  Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5 %.\n222.\n \n... ... ... ..."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-223",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "223",
+        "pageInSource": 36,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 4-Amino-3-nitrofenol",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "capilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5%.\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 8/20\n\n--- Page..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "223. No reportado 4-Amino-3-nitrofenol  Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5%.\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 8/20\n\n--- Page 9 ---\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado es de 1,0%.\n224.\n \nDerogado.    \n225.\n \nDerogado.  "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-227_237",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "227-237",
+        "pageInSource": 36,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 227-237",
+        "inciNameEn": "Range 227-237",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "227. a 237."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-240",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "240",
+        "pageInSource": 36,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 2-Cloro-6-etilamino-4-",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "nitrofenol\n \n Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5%.\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado es de 3,0%.\n_ No usar con agentes\nnitrosantes.\n..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "240. No reportado 2-Cloro-6-etilamino-4-\nnitrofenol\n \n Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5%.\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado es de 3,0%.\n_ No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas: 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos.\n "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-241_243",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "241-243",
+        "pageInSource": 36,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 241-243",
+        "inciNameEn": "Range 241-243",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "241. a 243."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-244",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "244",
+        "pageInSource": 36,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 2,4-Diaminofenoxietanol",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "2,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "y sus clorhidrato y sulfato\nClorohidrato de 2,4-\ndiaminofenoxietanol\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 2,0%\n(como clorhidrato).\n245.\n \nDerogado.    \n246.\n \n...  ... ..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "244. No reportado 2,4-Diaminofenoxietanol\ny sus clorhidrato y sulfato\nClorohidrato de 2,4-\ndiaminofenoxietanol\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 2,0%\n(como clorhidrato).\n245.\n \nDerogado.    \n246.\n \n...  ... ..."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-247",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "247",
+        "pageInSource": 36,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 1,3-bis-(2,4-",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Diaminofenoxi)propano\ny sus sales\n4,4'-[1,3\npropanodiilbis(oxi)]bis(benceno\n-1,3-diamina) y su\ntetraclorhidarto\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,2%\ncalculada en base libre\n(1.8% en sa..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "247. No reportado 1,3-bis-(2,4-\nDiaminofenoxi)propano\ny sus sales\n4,4'-[1,3\npropanodiilbis(oxi)]bis(benceno\n-1,3-diamina) y su\ntetraclorhidarto\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,2%\ncalculada en base libre\n(1.8% en sal de\ntetraclorhidrato).\nPara tintes capilares no\noxidantes 1,2% en base\nlibre (1,8% en sal de\ntetraclorhidrato)."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-248_249",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "248-249",
+        "pageInSource": 36,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 248-249",
+        "inciNameEn": "Range 248-249",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "248. a 249."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-252",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "252",
+        "pageInSource": 36,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 2,6-Dihidroxi-3,4-dimetil",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "piridina\n Sólo para tintes\ncapilares oxidantes,\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 9/20\n\n--- Page 10 ---\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada a..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "252. No reportado 2,6-Dihidroxi-3,4-dimetil\npiridina\n Sólo para tintes\ncapilares oxidantes,\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 9/20\n\n--- Page 10 ---\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,0%.\n252 bis No reportado 2,6\nDihidroxietilaminotolueno\n1-Metil-2-6-bis-(2-\nhidroxietilamino)-benceno\nEtanol, 2,2 ´-[(2-metil-"
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-253",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "253",
+        "pageInSource": 36,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 5,6,-Dihidroxiindol",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "1H-Indol-5,6-diol\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,5%.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el producto\nterminado es de 0,5%."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "253. No reportado 5,6,-Dihidroxiindol Dihidroxiindol\n1H-Indol-5,6-diol\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,5%.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el producto\nterminado es de 0,5%.\n"
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-255",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "255",
+        "pageInSource": 47,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 2,6-",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,25%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "piridindiamina y su\nclorhidrato\nDiclorohidrato-2,6- dimetoxi-3,5-\npiridindiamina\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,25%\n(como clorhidrato)."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "255. No reportado 2,6- Dimetoxi-3,5-\npiridindiamina y su\nclorhidrato\nDiclorohidrato-2,6- dimetoxi-3,5-\npiridindiamina\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,25%\n(como clorhidrato)."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-256_258",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "256-258",
+        "pageInSource": 47,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 256-258",
+        "inciNameEn": "Range 256-258",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "256. a 258."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-259",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "259",
+        "pageInSource": 47,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado Estearato",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "260.\n \n... ... ... ...\n261.\n \nDerogado."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "259. No reportado Estearato de zinc Diesterato de zinc Sin restricciones.\n260.\n \n... ... ... ...\n261.\n \nDerogado.    "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-262",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "262",
+        "pageInSource": 47,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado p-Fenilendiamina",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "sus sales\n Sólo para colorantes de\noxidación para la\ncoloración del cabello,\nuso general y\nprofesional, después de\nmezclarse en\ncondiciones oxidantes la\nconcentración máxima\naplicada al cabello no\ndeberá exceder en un\n2% calculada en base\nlibre."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "262. No reportado p-Fenilendiamina y\nsus sales\n Sólo para colorantes de\noxidación para la\ncoloración del cabello,\nuso general y\nprofesional, después de\nmezclarse en\ncondiciones oxidantes la\nconcentración máxima\naplicada al cabello no\ndeberá exceder en un\n2% calculada en base\nlibre."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-263",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "263",
+        "pageInSource": 47,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado Fenilmetil",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,25%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "capilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,25%."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "263. No reportado Fenilmetil pirazolona  Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,25%."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-264",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "264",
+        "pageInSource": 47,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado HC",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,75%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "capilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 10/20\n\n--- Page 11 ---\naplicada al cabello no\ndebe exceder ..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "264. No reportado HC Amarillo No.2 2-[(2-nitrofenil)amino]etanol Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 10/20\n\n--- Page 11 ---\naplicada al cabello no\ndebe exceder de 0,75%.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el producto\nterminado es de 1,0%.\nPara tintes "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-265_266",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "265-266",
+        "pageInSource": 47,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 265-266",
+        "inciNameEn": "Range 265-266",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "265. a 266."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-267",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "267",
+        "pageInSource": 47,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado HC",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "y sus sales\n1,5-Di-(-hidroxietilamino)-\n2-nitro-4-clorobenceno\n \nSólo para tintes\ncapilares no oxidantes,\nla concentración\nmáxima en el producto\nterminado es de 0,1%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos...."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "267. No reportado HC Amarillo No. 10\ny sus sales\n1,5-Di-(-hidroxietilamino)-\n2-nitro-4-clorobenceno\n \nSólo para tintes\ncapilares no oxidantes,\nla concentración\nmáxima en el producto\nterminado es de 0,1%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos.\n \n268.\n \n... ... ... ..."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-269",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "269",
+        "pageInSource": 47,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado HC",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "2,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "nitrofluorometilbenceno\nN-(2-Hidroxietil)-2-nitro-4-\ntrifluorometil-anilina\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 2,5%.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el produ..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "269. No reportado HC Amarillo No.13 4-(2'âhidroxietil)-amino-3-\nnitrofluorometilbenceno\nN-(2-Hidroxietil)-2-nitro-4-\ntrifluorometil-anilina\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 2,5%.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el producto\nterminado es de 2,5%.\nPara tintes capilares\noxidante y no oxidantes:\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitros"
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-270",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "270",
+        "pageInSource": 47,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado HC",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "naranja No. 2\ny sus sales\n1-(2âaminoetil)amino-4-\n(2 âhidroxietil)oxi-2-\nnitrobenceno\n \nSólo para tintes\ncapilares no oxidantes la\nconcentración máxima\nen el producto\nterminado es de 1,0%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que ..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "270. No reportado HC Anaranjado o\nnaranja No. 2\ny sus sales\n1-(2âaminoetil)amino-4-\n(2 âhidroxietil)oxi-2-\nnitrobenceno\n \nSólo para tintes\ncapilares no oxidantes la\nconcentración máxima\nen el producto\nterminado es de 1,0%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos.\n271.\n \n... ... ... ..."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-272",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "272",
+        "pageInSource": 47,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado HC",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "2,8%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "nitrofenil]imino]bisetanol\nSólo para tintes\ncapilares no oxidantes la\nconcentración máxima\nen el producto\nterminado es de 2,8%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/not..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "272. No reportado HC Azul No. 2 y sus sales 2,2'-[[4-[(2-hidroxietil)amino]-3-\nnitrofenil]imino]bisetanol\nSólo para tintes\ncapilares no oxidantes la\nconcentración máxima\nen el producto\nterminado es de 2,8%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 11/20\n\n--- Page 12 ---\n- Conservar en\nrecipientes que no\nconteng"
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-273",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "273",
+        "pageInSource": 47,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado HC",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,68%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "piridindiamino\nClorhidrato de 6 metoxi-N2-\nmetil-2-3-piridindiamina\ny su diclorhidrato\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,68%\ncalculada en base libre\n(1,0% en diclorhidrato).\nPara tinte..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "273. No reportado HC Azul No. 7 6-Metoxi-N2-metil-2,3-\npiridindiamino\nClorhidrato de 6 metoxi-N2-\nmetil-2-3-piridindiamina\ny su diclorhidrato\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,68%\ncalculada en base libre\n(1,0% en diclorhidrato).\nPara tintes capilares no\noxidantes 0,68% en\nbase libre (1,0% en\ndiclorhidrato).\nPara tintes oxidantes y\nno oxidantes:\n- No usar con agentes\nnitrosantes.\n- "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-274_275",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "274-275",
+        "pageInSource": 47,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 274-275",
+        "inciNameEn": "Range 274-275",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "274. a 275."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-276",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "276",
+        "pageInSource": 47,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado HC",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "2,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "1-[(2-metoxietil)amino]-2-nitro\n-4-[di-(2 ´- hidroxietil)amino]\nbenceno\nSólo para tintes\ncapilares no oxidantes,\nla concentración\nmáxima en el producto\nterminado es de 2,0%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan ni..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "276. No reportado HC Azul No. 11 y sus sales\n \n1-[(2-metoxietil)amino]-2-nitro\n-4-[di-(2 ´- hidroxietil)amino]\nbenceno\nSólo para tintes\ncapilares no oxidantes,\nla concentración\nmáxima en el producto\nterminado es de 2,0%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-277",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "277",
+        "pageInSource": 47,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado HC",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "clorhidrato\nClorhidrato de 2-[4-[etil\n[(2-hidroxietil) amino]-2-\nnitrofenil] amino] etanol.\nEtanol, 2-[4-[etil\n[(2-hidroxietil) amino]\n-2-nitrofenil] amino]- y su\nclorhidrato\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la"
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "277. No reportado HC Azul No. 12 y su\nclorhidrato\nClorhidrato de 2-[4-[etil\n[(2-hidroxietil) amino]-2-\nnitrofenil] amino] etanol.\nEtanol, 2-[4-[etil\n[(2-hidroxietil) amino]\n-2-nitrofenil] amino]- y su\nclorhidrato\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\n"
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-278_279",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "278-279",
+        "pageInSource": 59,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 278-279",
+        "inciNameEn": "Range 278-279",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "278. a 279."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-280",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "280",
+        "pageInSource": 59,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado HC",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "etanol\nSólo para tintes\ncapilares no oxidantes,\nla concentración\nmáxima en el producto\nterminado es de 1,0%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "280. No reportado HC Rojo No. 7 2-(4-amino-3-nitroanilina)\netanol\nSólo para tintes\ncapilares no oxidantes,\nla concentración\nmáxima en el producto\nterminado es de 1,0%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-281_282",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "281-282",
+        "pageInSource": 59,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 281-282",
+        "inciNameEn": "Range 281-282",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "281. a 282. ... ... ... ..."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-283",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "283",
+        "pageInSource": 59,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado HC",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,25%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "clorhidrato\n2,2 ´-[(4-amino-3 ânitro-\nfenil)imino]bisetanol\nhidrocloruro\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,25%\n(como clorhidrato).\nPara tintes capilares no\noxidantes, la\nconcentración ..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "283. No reportado HC Rojo No. 13 y su\nclorhidrato\n2,2 ´-[(4-amino-3 ânitro-\nfenil)imino]bisetanol\nhidrocloruro\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,25%\n(como clorhidrato).\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado es de 2,5%\n(como clorhidrato).\n284.\n \n... ... ... ...\n "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-285",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "285",
+        "pageInSource": 59,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado HC",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,25%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "amino-6-nitrobenceno\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,25%.\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado es de 0,28%.\n- No usar con agentes\nnitr..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "285. No reportado HC Violeta No. 1 Amino-3-metil-4-(2-hidroxietil)\namino-6-nitrobenceno\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,25%.\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado es de 0,28%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-286",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "286",
+        "pageInSource": 59,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado HC",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "y sus sales\n1-Propanol,\n3-[[4-[bis(2-hidroxietil)amino]-2-\nnitrofenil]amino]\nSólo para tintes\ncapilares no oxidantes,\nla concentración\nmáxima en el producto\nterminado es de 2%.\nPuede ocasionar\nreacción alérgica.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conser..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "286. No reportado HC Violeta No.2\ny sus sales\n1-Propanol,\n3-[[4-[bis(2-hidroxietil)amino]-2-\nnitrofenil]amino]\nSólo para tintes\ncapilares no oxidantes,\nla concentración\nmáxima en el producto\nterminado es de 2%.\nPuede ocasionar\nreacción alérgica.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-287",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "287",
+        "pageInSource": 59,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado Hidroxi-benzomorfolina",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "capilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,0%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "287. No reportado Hidroxi-benzomorfolina  Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,0%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-288",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "288",
+        "pageInSource": 59,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 2-hidroxietilamino-5-",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "nitroanisol\n2-[(2-Metoxi-4-\nnitrofenil)amino]etanol\ny sus sales\nSólo para tintes\ncapilares no oxidantes,\nla concentración\nmáxima en el producto\nterminado es de 0,2%.\n- No usar con agentes\nnitrosantes.\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detal..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "288. No reportado 2-hidroxietilamino-5-\nnitroanisol\n2-[(2-Metoxi-4-\nnitrofenil)amino]etanol\ny sus sales\nSólo para tintes\ncapilares no oxidantes,\nla concentración\nmáxima en el producto\nterminado es de 0,2%.\n- No usar con agentes\nnitrosantes.\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 13/20\n\n--- Page 14 ---\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontenga"
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-289_290",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "289-290",
+        "pageInSource": 59,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 289-290",
+        "inciNameEn": "Range 289-290",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "289. a 290."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-291",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "291",
+        "pageInSource": 59,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado Hidroxietil-2-nitro",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "-p-toluidina\n2-(4-Metil-2-nitroanilino)\netanol\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,0%.\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado es de 1,0%.\nPa..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "291. No reportado Hidroxietil-2-nitro\n-p-toluidina\n2-(4-Metil-2-nitroanilino)\netanol\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,0%.\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado es de 1,0%.\nPara tintes capilares\noxidantes y no\noxidantes:\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\nco"
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-292",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "292",
+        "pageInSource": 59,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado Hidroxietil-3,4-",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "metilendioxianilina\ny su clorhidrato\n Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes q..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "292. No reportado Hidroxietil-3,4-\nmetilendioxianilina\ny su clorhidrato\n Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-293",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "293",
+        "pageInSource": 59,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "a 294",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "... ... ... ...\n295.\n \nDerogado."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "293. a 294\n \n... ... ... ...\n295.\n \nDerogado.    "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-296",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "296",
+        "pageInSource": 59,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 6-Hidroxiindol",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "capilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,5%.\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 14/20\n\n--- Pag..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "296. No reportado 6-Hidroxiindol 1H-indol-6-ol Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,5%.\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 14/20\n\n--- Page 15 ---"
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-297",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "297",
+        "pageInSource": 59,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 4-Hidroxipropil",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "2,6%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "amino-3-nitrofenol\ny sus sales\n1-Hidroxi-3-nitro4-(3\nhidroxipropilamino)-benceno\ny sus sales\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 2,6%.\nPara tintes capilares no\noxidantes, la\nconcentración m..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "297. No reportado 4-Hidroxipropil\namino-3-nitrofenol\ny sus sales\n1-Hidroxi-3-nitro4-(3\nhidroxipropilamino)-benceno\ny sus sales\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 2,6%.\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado es de 2,6%.\n- No usar con agentes\n"
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-298",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "298",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado Hidroxipropil",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,4%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "[N-hidroxietil-p-\nfenilendiamina]\ny su tetraclorhidrato\n Sólo, para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,4%\n(como tetraclorhidrato).\n \n299.\n \n... ... ... ..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "298. No reportado Hidroxipropil bis-\n[N-hidroxietil-p-\nfenilendiamina]\ny su tetraclorhidrato\n Sólo, para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,4%\n(como tetraclorhidrato).\n \n299.\n \n... ... ... ..."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-300",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "300",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "3-Metilamino-4-",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,15%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "nitrofenoxietanol  Sólo para tintes\ncapilares no oxidantes,\nla concentración\nmáxima en el producto\nterminado es de 0,15%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "300.  3-Metilamino-4-\nnitrofenoxietanol  Sólo para tintes\ncapilares no oxidantes,\nla concentración\nmáxima en el producto\nterminado es de 0,15%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-301",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "301",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado p-Metilaminofenol",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,68%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "y su sulfato\n Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,68%\n(como sulfato).\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\nco..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "301. No reportado p-Metilaminofenol\ny su sulfato\n Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,68%\n(como sulfato).\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-302",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "302",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 2-Metil-5-",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "hidroxietilaminofenol  Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "302. No reportado 2-Metil-5-\nhidroxietilaminofenol  Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,5%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-303",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "303",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 2-Metil",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,8%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "capilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 15/20\n\n--- Page 16 ---\naplicada al cabello no\ndebe exceder ..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "303. No reportado 2-Metil resorcinol  Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 15/20\n\n--- Page 16 ---\naplicada al cabello no\ndebe exceder de 1,8%.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el producto\nterminado es de 1,8%."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-304_305",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "304-305",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 304-305",
+        "inciNameEn": "Range 304-305",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "304. a 305."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-308",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "308",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado Negro",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,3%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "[(4-aminofenil)azo]\nfenil]amino]bis-\nSólo para tintes\ncapilares no oxidantes,\nla concentración\nmáxima en el producto\nterminado es de 0,3%\n(de una mezcla en una\nproporción 1:1, de 2, 2\n´[4-(4-aminofenilazo)\nfeniliminio]dietanol y\nlignosulfonato)."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "308. No reportado Negro disperso 9 Etanol,2,2 ´-[[4-\n[(4-aminofenil)azo]\nfenil]amino]bis-\nSólo para tintes\ncapilares no oxidantes,\nla concentración\nmáxima en el producto\nterminado es de 0,3%\n(de una mezcla en una\nproporción 1:1, de 2, 2\n´[4-(4-aminofenilazo)\nfeniliminio]dietanol y\nlignosulfonato).\n "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-309_310",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "309-310",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 309-310",
+        "inciNameEn": "Range 309-310",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "309. a 310."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-311",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "311",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 3-Nitro-p-",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "3,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "hidroxietilaminofenol\n Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 3,0%.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el producto\nterminado es de 1,85%.\n- No usar con agentes\nnitr..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "311. No reportado 3-Nitro-p-\nhidroxietilaminofenol\n Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 3,0%.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el producto\nterminado es de 1,85%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-312_313",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "312-313",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 312-313",
+        "inciNameEn": "Range 312-313",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "312. a 313."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-314",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "314",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado 4-Nitrofenil",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,25%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "capilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,25%.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el producto\nterminado es de 0,5%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosami..."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "314. No reportado 4-Nitrofenil aminoetilurea  Sólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 0,25%.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el producto\nterminado es de 0,5%.\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-315",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "315",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado Resorcinol",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,25%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "1,3-bencenediol\n \nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,25%.\nUso general.\nUso profesional.\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_det..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "315. No reportado Resorcinol Resorcina\n1,3-bencenediol\n \nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 1,25%.\nUso general.\nUso profesional.\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 16/20\n\n--- Page 17 ---\nPara lociones capilares\ny shampoos la\nconcentración máxima\nen el producto\nterminado no"
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-316_321",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "316-321",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 316-321",
+        "inciNameEn": "Range 316-321",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "316. a 321."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-322",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "322",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado Sulfato",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "2,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "p-fenilendiamina\nSulfato de\n3-(2-hidroxietil)-p\n-fenilenodiamonio\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 2,0%\n(calculado en sulfato)."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "322. No reportado Sulfato de hidroxietil\np-fenilendiamina\nSulfato de\n3-(2-hidroxietil)-p\n-fenilenodiamonio\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\noxidantes, la\nconcentración máxima\naplicada al cabello no\ndebe exceder de 2,0%\n(calculado en sulfato).\n "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-323_324",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "323-324",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 323-324",
+        "inciNameEn": "Range 323-324",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "323. a 324."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-325",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "325",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "reportado Sulfato",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "2,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "N,N'-Bis(2-hidroxietil)-p-\nfenilendiamina\nSulfato de\n2,2 ´-[(4-minofenil)\nimino]bis(etanol)\nPara tintes capilares\noxidantes, después de\nmezclarse en\ncondiciones oxidantes,\nla concentración\nmáxima aplicada al\ncabello no debe exceder\nde 2,5% (calculado\ncomo sulfato).\n- No usar con agentes\nnitrosantes...."
+          ],
+          "labelWarnings": [
+            "No usar con agentes nitrosantes",
+            "Contenido máximo de nitrosaminas: 50 µg/kg",
+            "Conservar en recipientes que no contengan nitritos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "325. No reportado Sulfato de\nN,N'-Bis(2-hidroxietil)-p-\nfenilendiamina\nSulfato de\n2,2 ´-[(4-minofenil)\nimino]bis(etanol)\nPara tintes capilares\noxidantes, después de\nmezclarse en\ncondiciones oxidantes,\nla concentración\nmáxima aplicada al\ncabello no debe exceder\nde 2,5% (calculado\ncomo sulfato).\n- No usar con agentes\nnitrosantes.\n- Contenido máximo de\nnitrosaminas 50 µg/kg.\n- Conservar en\nrecipientes que no\ncontengan nitritos.\n326.\n \nDerogado.    "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-327_331",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "327-331",
+        "pageInSource": 70,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 327-331",
+        "inciNameEn": "Range 327-331",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "327. a 331. ... ... ... ..."
+    }
+  ]
+}

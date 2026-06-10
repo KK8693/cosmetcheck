@@ -1,0 +1,1292 @@
+--- Page 1 ---
+ 
+DOF: 25/09/1995
+NORMA Oficial Mexicana NOM-089-SSA1-1994, Bienes y servicios. Métodos para la determinación del contenido
+microbiano en productos de belleza.
+Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Salud.
+NORMA OFICIAL MEXICANA NOM-089-SSA1-1994, BIENES Y SERVICIOS. METODOS PARA LA DETERMINACION DEL
+CONTENIDO MICROBIANO EN PRODUCTOS DE BELLEZA.
+JOSE MELJEM MOCTEZUMA, Director General de Control Sanitario de Bienes y Servicios, por acuerdo del Comité
+Consultivo Nacional de Normalización de Regulación y Fomento Sanitario, con fundamento en los artículos 39 de la Ley Orgánica
+de la Administración Pública Federal; 38 fracción II, 47 de la Ley Federal sobre Metrología y Normalización; 3o. fracción XXII, 13,
+194 fracción I, 197, 401-Bis-1 y 401-Bis-2 de la Ley General de Salud; 2o. fracción III, 40, 41, 1236, 1237, 1244 y 1245 del
+Reglamento de la Ley General de Salud en Materia de Control Sanitario de Actividades, Establecimientos, Productos y Servicios;
+8o. fracción IV y 13 fracción I del Reglamento Interior de la Secretaría de Salud, y
+CONSIDERANDO
+Que con fecha 23 de marzo de 1994, en cumplimiento de lo previsto en el artículo 46 fracción I de la Ley Federal sobre
+Metrología y Normalización la Dirección General de Control Sanitario de Bienes y Servicios presentó al Comité Consultivo
+Nacional de Normalización de Regulación y Fomento Sanitario, el anteproyecto de la presente Norma Oficial Mexicana.
+Que con fecha 4 de agosto de 1994, en cumplimiento del acuerdo del Comité y de lo previsto en el artículo 47 fracción I de la
+Ley Federal sobre Metrología y Normalización, se publicó en el Diario Oficial de la Federación el proyecto de la presente Norma
+Oficial Mexicana a efecto que dentro de los siguientes noventa días naturales posteriores a dicha publicación, los interesados
+presentaran sus comentarios al Comité Consultivo Nacional de Normalización de Regulación y Fomento Sanitario.
+Que en fecha previa fueron publicadas en el Diario Oficial de la Federación las respuesta a los comentarios recibidos por el
+mencionado Comité, en términos del artículo 47 fracción III de la Ley Federal sobre Metrología y Normalización.
+Que en atención a las anteriores consideraciones, contando con la aprobación del Comité Consultivo Nacional de
+Normalización de Regulación y Fomento Sanitario, se expide la siguiente:
+NORMA OFICIAL MEXICANA NOM-089-SSA1-1994, BIENES Y SERVICIOS. METODOS PARA LA DETERMINACION DEL
+CONTENIDO MICROBIANO EN PRODUCTOS DE BELLEZA.
+PREFACIO
+En la elaboración de la presente norma participaron los siguientes organismos e instituciones:
+SECRETARIA DE SALUD.
+Laboratorio Nacional de Salud Pública.
+Dirección General de Control Sanitario de Bienes y Servicios.
+UNIVERSIDAD NACIONAL AUTONOMA DE MEXICO.
+Facultad de Química.
+AVON COSMETICS, S.A. DE C.V.
+BEIERSDORF DE MEXICO, S.A. DE C.V.
+CLAIROL DE MEXICO, S.A. DE C.V.
+GILLETTE DE MEXICO, S.A. DE C.V.
+YVES ROCHER DE MEXICO, S.A. DE C.V.
+INDICE
+ 0.     INTRODUCCION
+ 1.     OBJETIVO Y CAMPO DE APLICACION
+ 2.     FUNDAMENTO
+ 3.     DEFINICIONES
+ 4.     SIMBOLOS Y ABREVIATURAS
+ 5.     DISPOSICIONES SANITARIAS
+ 6.     REACTIVOS Y MEDIOS DE CULTIVO
+ 7.     MATERIAL Y EQUIPO
+ 8.     CUENTA TOTAL DE HONGOS, LEVADURAS
+       Y MESOFILICOS AEROBIOS
+ 9.     IDENTIFICACION DE PATOGENOS
+10.    CONCORDANCIA CON NORMAS INTERNACIONALES
+11.    BIBLIOGRAFIA
+12.    OBSERVANCIA DE LA NORMA
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 1/23
+
+--- Page 2 ---
+13.    VIGENCIA
+0. Introducción
+Las disposiciones de la presente Norma Oficial Mexicana son de orden público e interés social y establece los métodos para la
+determinación del contenido microbiano en productos de belleza, para asegurar que están libres de contaminación y son aptos
+para uso humano, de acuerdo con lo establecido por la Ley General de Salud, su Reglamento y demás disposiciones aplicables
+de la Secretaría de Salud.
+1. Objetivo y campo de aplicación
+1.1 Esta Norma Oficial Mexicana establece los métodos de prueba para determinar el contenido microbiano en productos de
+belleza, con el fin de conocer la calidad sanitaria y precisar si son aptos para uso humano.
+1.2 Esta Norma Oficial Mexicana es de observancia obligatoria en el territorio nacional para las personas físicas o morales que
+requieran efectuar estos métodos.
+2. Fundamento
+Colocar una cantidad determinada de cosméticos o productos de belleza en medios de cultivo apropiados para poner de
+manifiesto la contaminación microbiana por bacterias, hongos y levaduras; después de su incubación realizar la cuenta del
+desarrollo e identificar los microorganismos potencialmente patógenos.
+3. Definiciones
+Para fines de esta norma se entiende por:
+3.1 Aeróbico, microorganismo capaz de crecer en presencia de oxígeno libre.
+3.2 Anaeróbico, microorganismo capaz de crecer en ausencia de oxígeno libre.
+3.3 Aséptico, libre de microorganismos que son capaces de causar contaminación o enfermedad.
+3.4 Bacterias, microorganismos unicelulares que derivan del reino vegetal, incluidos en el grupo de los Schycomysetes, su
+tamaño es variable y oscila entre 0,5-2 µ, algunos tienden a formar filamentos y pueden llegar a medir 30-40 µ. Por su forma se
+encuentran esféricas (cocos), bastones (bacilos) y espirales (vibrio), se reproducen por bipartición.
+3.5 Contenido microbiano, el número de microorganismos mesofílicos aerobios viables, hongos, levaduras y microorganismos
+objetables (patógenos) presentes en productos de belleza, que determina si el producto es apto para el uso humano.
+3.6 Estéril, medio totalmente libre de microorganismos viables.
+3.7 Hongos, son organismos pertenecientes al reino Fungi, que se caracterizan por tener un cuerpo formado por estructura
+filamentosa con ramificaciones, que se conocen con el nombre de hifas, el conjunto de hifas constituye el micelio, carecen de
+clorofila, se alimentan por absorción, pudiendo propagarse por esporas flageladas o no, las paredes celulares pueden ser de
+queratina, celulosa o manana, macro o microscópicas y su coeficiente de sedimentación del RNAm es de 25 s.
+Incluyen los Ordenes: Basidiomicetes, Ascomicetes, Deuteromicetes y Zygomicetes.
+3.8 Levaduras, grupo de hongos cuya forma dominante de crecimiento es unicelular. Poseen un núcleo y se multiplican por
+reproducción sexual o asexual. La forma común de reproducción es asexual, por gemación o por fisión transversal. La
+reproducción sexual cuando ocurre, es por medio de ascosporas contenida en un saco o asca.
+3.9 Medio, cualquier material líquido, sólido o semisólido, que soporta el crecimiento de microorganismos.
+Se le denomina medio de cultivo a las diferentes mezclas de sustancias nutritivas empleadas en el laboratorio para el cultivo
+de microorganismos.
+3.10 Medios diferenciales, son los que permiten distinguir entre las colonias de un organismo determinado y las de otro.
+3.11 Medios enriquecidos, son los que favorecen en general el desarrollo de los microorganismos.
+3.12 Medios múltiples, son medios que tienen incluidas sustancias que nos permiten determinar una prueba bioquímica.
+Usualmente dichos medios contienen dos o más pruebas al mismo tiempo.
+3.13 Medios selectivos, son medios sólidos que permiten el crecimiento de una clase de organismos, mientras que inhibe el de
+otros.
+3.14 Organismos coliformes, son bacilos gram negativos, aerobios, no esporulados, que fermentan la lactosa con producción
+de gas dentro de 48 horas cuando se incuban a 32-35°C. Una variedad de bacterias, muy abundantes y siempre presentes en la
+materia fecal del hombre y animales superiores; también pertenecen a ese grupo ciertas bacterias propias del suelo y vegetales.
+3.15 Patógeno, un organismo que es capaz de causar enfermedad a un animal o planta.
+4. Símbolos y abreviaturas
+Cuando en esta norma se haga referencia a los siguientes símbolos y abreviaturas se entiende por:
+UFC                 Unidad formadora de colonias
+lb                      libras
+g                       gramos
+ml                     mililitros
+µ                       micras
+ºC                     grados Celsius
+p/v                     peso sobre volumen
+v/v                     volumen sobre volumen
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 2/23
+
+--- Page 3 ---
+c.b.p.                cuanto basta para
+Q.P.                  químicamente puro
+UV                    ultravioleta
+HCl                   ácido clorhídrico
+DNA                 ácido desoxirribonucleico
+H2S                   ácido sulfhídrico
+EMB                 agar eosina azul de metileno
+AEM                  agar extracto de malta
+LIA                    agar hierro y lisina
+TSI                    agar hierro y triple azúcar
+ALM                  agar Letthen modificado
+AMC                 agar MacConkey
+PDA                  agar papa dextrosa
+AVJ                   agar Vogel Johnson
+CDS                 caldo dextrosa Sabouraud
+BHI                   caldo infusión de cerebro corazón
+CLM                 caldo Letthen modificado
+MIO                   medio indol ornitina
+MR-VP             medio rojo de metilo Voges Proskauer
+No.                   número
+Cuando en la presente norma se mencione al Reglamento, debe entenderse que se trata del Reglamento de la Ley General
+de Salud en Materia de Control Sanitario de Actividades, Establecimientos, Productos y Servicios.
+5. Disposiciones sanitarias
+5.1 Los productos en los cuales se aplicarán los métodos objeto de esta norma, se encuentran establecidos en el Reglamento.
+5.2 Los fabricantes podrán efectuar métodos diferentes a los incluidos en esta norma, para el control interno de sus productos;
+pero para efectos de comprobación de resultados por acciones de verificación sanitaria, se deben ajustar a los métodos de la
+presente norma.
+6. Reactivos y medios de cultivo
+Los reactivos empleados en esta prueba deben ser grado analítico a menos que se indique otra cosa. Cuando se hable de
+agua debe entenderse agua destilada.
+6.1 Reactivos
+Aceite mineral
+Acetona
+Acido acético 5 N
+Acido clorhídrico
+Acido oxálico
+Acido sulfanílico
+Acido tartárico
+Alcohol amílico o butílico
+Alfa naftilamino
+Amoniaco concentrado
+Cloruro de sodio
+Cristal violeta
+Diclorhidrato de N-N-dimetil p-fenilendiamina
+Etanol absoluto
+Fosfato monobásico de potasio
+Hidróxido de potasio
+Hidróxido de sodio al 10%
+1-Naftol
+Oxalato de amonio
+Para dimetilamino benzaldehído
+Peróxido de hidrógeno
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 3/23
+
+--- Page 4 ---
+Plasma de conejo o cobayo
+Rojo de metilo
+Safranina O
+Sulfato de cobre
+Telurito de potasio
+Tween 80
+Yodo
+Yoduro de potasio
+Zinc en polvo
+6.2 Medios de cultivo
+Agar cetrimida
+Agar citrato de Simmons
+Agar DNA azul-toluidina
+Agar eosina azul de metileno
+Agar extracto de malta
+Agar hierro y lisina
+Agar hierro y triple azúcar
+Agar Letthen modificado
+Agar MacConkey
+Agar pseudomona F
+Agar pseudomona P
+Agar papa dextrosa
+Agar sal-manitol
+Agar sulfito de bismuto
+Agar verde brillante
+Agar Vogel-Johnson
+Agar xilosa lisina desoxicolato (agar XLD)
+Base de caldo tetrationato
+Caldo cistina selenito
+Caldo Dextrosa Sabouraud
+Caldo infusión de cerebro corazón
+Caldo Letthen modificado
+Caldo lisina descarboxilasa
+Caldo urea
+Medio basal O/F (oxidativo-fermentativo)
+Medio indol ornitina
+Medio indol nitrito
+Medio rojo de metilo Voges Proskauer
+Medio SIM
+Tiras API para pruebas bioquímicas
+6.3 Preparación de reactivos y medios de cultivo
+6.3.1 Reactivos
+6.3.1.1 Solución salina al 0,85%
+Cloruro de sodio                                                     8,5 g
+Agua c.b.p.                                                               1 000,0 ml
+Disolver el cloruro de sodio en 500 ml de agua, aforar a 1 000 ml, ajustar el pH a 7,2 ± 0,1 filtrar, envasar y esterilizar en
+autoclave a 121ºC durante 15 minutos.
+6.3.1.2 Solución de etanol 80% y HCl al 1% v/v
+Etanol                                                                         80,0 ml
+HCl                                                                                1,0 ml
+Agua c.b.p.                                                               100,0 ml
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 4/23
+
+--- Page 5 ---
+Mezclar el etanol y el HCl, aforar a 100 ml con agua y envasar.
+6.3.1.3 Solución de tween 80%
+Tween 80% sin diluir
+Envasar y esterilizar en autoclave a 121ºC durante 15 minutos.
+6.3.1.4 Aceite mineral
+Envasar y esterilizar en autoclave a 121ºC durante 15 minutos.
+6.3.1.5 Solución de Acido Tartárico al 10% p/v
+Acido Tartárico                                                        10,0 g
+Agua c.b.p.                                                               100,0 ml
+Disolver el ácido tartárico en 50 ml de agua, aforar a 100 ml, envasar y esterilizar por filtración por membrana.
+6.3.1.6 Solución de telurito de potasio al 1% p/v
+Telurito de potasio                                                   1,0 g
+Agua c.b.p.                                                               100,0 ml
+Disolver el telurito en 50 ml de agua, aforar a 100 ml, envasar y esterilizar por filtración por membrana.
+6.3.1.7 Solución de yodo-yoduro de potasio p/v
+Yodo                                                                            6,0 g
+Yoduro de potasio                                                    5,0 g
+Agua                                                                            20,0 ml
+Disolver el yoduro de potasio en el agua y en esta solución disolver el yodo. Conservar en envases protegidos de la luz.
+6.3.1.8 Solución de agua oxigenada al 3% v/v
+Peróxido de Hidrógeno                                             3,0 ml
+Agua c.b.p.                                                               100,0 ml
+Mezclar el peróxido en agua, aforar a 100 ml y envasar.
+6.3.1.9 Solución indicadora rojo de metilo
+Rojo de metilo                                                           0,1 g
+Alcohol al 95%                                                        300,0 ml
+Agua c.b.p.                                                               500,0 ml
+Mezclar el rojo de metilo en el alcohol y diluir con agua a 500 ml.
+6.3.1.10 Reactivo de Griess-Ilosvays
+Solución A
+Acido sulfanílico                                                        8,0 g
+Acido acético 5N                                                         1 000,0 ml
+El ácido acético 5N se prepara agregándole un volumen de ácido acético glacial a 2,5 volúmenes de agua. Mezcle bien, añada
+luego el ácido sulfanílico y vuelva a mezclar.
+Solución B
+Alfa naftilamina                                                         8,0 g
+Acido acético 5N                                                         1 000,0 ml
+Mezclar y almacenar en refrigeración (4ºC) cuando no esté en uso. Generalmente ambos reactivos son estables
+aproximadamente durante 3 meses.
+6.3.1.11 Reactivo de Kovacs y Ehrlich
+Para-dimetil-amino-benzaldehído                        5,0 g
+Alcohol amílico o butílico                                        75,0 ml
+Acido clorhídrico (37%) Q.P.                                  25,0 ml
+Disuelva el para-dimetil-amino-benzaldehído en el alcohol. Caliente suavemente la solución en un baño de agua tibia. Una vez
+disueltos los ingredientes, agregue el ácido clorhídrico con cuidado.
+6.3.1.12 Reactivo de O'Meora
+Hidróxido de potasio                                             40,0 g
+Agua                                                                         100,0 ml
+Disolver y enfriar. Añadir 0,3 g de creatinina (monohidrato) La solución reactiva, lista para el uso, puede conservarse en
+refrigeración (+4ºC) durante 4 semanas aproximadamente.
+6.3.1.13 Solución de sulfato de cobre según Leifson
+Sulfato de cobre                                                        1,0 g
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 5/23
+
+--- Page 6 ---
+Amoniaco concentrado                                           40,0 ml
+Solución de sosa potásica al 10%                    690,0 ml
+Disolver el sulfato de cobre con amoniaco concentrado y añadir hidróxido de potasio al 10% que ha sido preparada con
+hidróxido de potasio.
+6.3.1.14 Reactivo de Barrit
+1-naftol A                                                                    5,0 g
+Alcohol absoluto                                                    100,0 ml
+Disolver el 1-naftol en el alcohol y envasar.
+6.3.1.15 Solución de cristal violeta
+Cristal violeta                                                        0,010 g
+Acido acético glacial                                          10,0 ml
+Disolver el cristal violeta en el ácido acético y envasar.
+6.3.1.16 Solución yodo-yodurada
+Yoduro de potasio                                                    2,0 g
+Yodo                                                                            1,0 g
+Agua                                                                         100,0 ml
+Triturar en un mortero el yodo y el yoduro de potasio, adicionar el agua necesaria para que se disuelva el yodo, agregar agua
+hasta un volumen de 100 ml. Conservar protegido de la luz.
+6.3.1.17 Solución safranina
+Safranina "O"                                                             2,5 g
+Alcohol etílico al 95%                                            100,0 ml
+Disolver la safranina "O" en el alcohol etílico.Tomar 10 ml de esta solución y llevar a 100 ml con agua. Agitar.
+6.3.1.18 Solución alcohol-acetona
+Partes iguales de acetona y alcohol etílico al 95%.
+6.3.2 Medios de cultivo
+Los medios de cultivo pueden prepararse a partir de medios comerciales deshidratados, o con los ingredientes que se
+especifican a continuación.
+6.3.2.1 Medios nutritivos o de enriquecimiento
+6.3.2.1.1 Agar Letheen modificado
+Agar Letheen                                                           32,0 g
+Peptona de caseína                                                 5,0 g
+Peptona de carne                                                   10,0 g
+Extracto de levadura                                                 2,0 g
+Cloruro de sodio                                                       5,0 g
+Bisulfito de sodio                                                      0,1 g
+Agar                                                                             5,0 g
+Agua                                                                              1 000,0 ml
+pH final después de esterilizar 7,2 ± 0,2
+Mezclar los componentes y calentar con agitación hasta la disolución completa del agar. Esterilizar en autoclave a 121ºC
+durante 15 minutos.
+6.3.2.1.2 Caldo Letheen modificado
+Caldo Letheen                                                        26,7 g
+Peptona de caseína                                                 5,0 g
+Peptona de carne                                                   10,0 g
+Extracto de levadura                                                 2,0 g
+Bisulfito de sodio                                                      0,1 g
+Agua                                                                             1 000,0 ml
+pH final después de esterilizar 7,2 ± 0,2
+Mezclar los componentes hasta la disolución completa y distribuir 95 ml en botellas con tapón de rosca para dilución.
+Esterilizar en autoclave a 121ºC durante 15 minutos.
+6.3.2.1.3 Agar papa dextrosa
+Infusión de papa                                                    200,0 ml
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 6/23
+
+--- Page 7 ---
+Dextrosa                                                                   20,0 g
+Agar                                                                           15,0 g
+Agua                                                                             1 000,0 ml
+pH final 5,6 ± 0,2
+Suspender los ingredientes en un litro de agua agitando, remojar de 10 a 15 minutos. Calentar agitando frecuentemente y
+hervir durante un minuto. Esterilizar a 121ºC durante 15 minutos. Antes de usarse se licua, se enfría a 45-50ºC, se ajusta el pH a
+3,5 con una solución de ácido tartárico al 10%.
+6.3.2.1.4 Base de caldo tetrationato
+Mezcla de peptonas                                                 5,0 g
+Mezcla de sales biliares                                         1,0 g
+Carbonato de calcio                                              10,0 g
+Tiosulfato de sodio                                                30,0 g
+Agua                                                                              1 000,0 ml
+pH final 7,0 ± 0,1
+Suspender el medio deshidratado en un litro de agua. Mezclar bien y calentar a ebullición. Dejar enfriar y envasar en tubos de
+ensayo estériles, en volúmenes de 10 ml cada uno.
+Guardar en refrigeración. No esterilizar en autoclave. Momentos antes de usarlo agregar 0,2 ml (de 3 a 4 gotas) de la solución
+yodo-yoduro de potasio (6.3.1.7) a cada tubo. Usar el medio el mismo día en que se le agrega la solución de yodo.
+6.3.2.1.5 Caldo Dextrosa Sabouraud
+Polipeptona o neopeptona                               10,0 g
+Dextrosa                                                               40,0 g
+Agua                                                                        1 000,0 ml
+pH después de esterilizar 5,6 ± 0,2
+Suspender el medio deshidratado en un litro de agua. Remojar de 10 a 15 minutos. Mezclar bien hasta obtener una
+suspensión uniforme. Calentar agitando frecuentemente durante un minuto. Distribuir y esterilizar a 121ºC durante 15 minutos. No
+sobrecalentar, ya que por su alto contenido en carbohidratos se obscurece y pierde eficacia.
+6.3.2.2 Medios selectivos y diferenciales.
+6.3.2.2.1 Agar MacConkey
+Digerido pancreático de gelatina                     17,0 g
+Digerido pancreático de caseína                       1,5 g
+Digerido péptico de tejido animal                      1,5 g
+Lactosa                                                                 10,0 g
+Mezcla de sales biliares                                      1,5 g
+Cloruro de sodio                                                    5,0 g
+Agar                                                                        13,5 g
+Rojo neutro                                                             0,03 g
+Cristal Violeta                                                         0,001 g
+Agua                                                                         1 000,0 ml
+pH después de esterilizar 7,1 ± 0,2
+Suspender el medio deshidratado en 1 000 ml de agua, remojar de 10 a 15 minutos y calentar a ebullición agitando
+continuamente. Hervir durante un minuto, esterilizar en autoclave a 121ºC durante 15 minutos. Enfriar a 45-50ºC y vaciar en cajas
+Petri unos 20 ml por placa. Dejar solidificar y luego invertir las cajas para evitar que se deposite un exceso de humedad en la
+superficie del medio.
+6.3.2.2.2 Agar Vogel Johnson
+Digerido pancreático de caseína                       10,0 g
+Extracto de levadura                                                5,0 g
+Manitol                                                                     10,0 g
+Fosfato dibásico de potasio                                   5,0 g
+Cloruro de litio                                                          5,0 g
+Glicina                                                                     10,0 g
+Agar                                                                          16,0 g
+Rojo de fenol                                                            0,025 g
+Agua                                                                             1 000,0 ml
+pH después de esterilizar 7,2 ± 0,2
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 7/23
+
+--- Page 8 ---
+Suspender el medio deshidratado en un litro de agua, mezclar, dejar remojar de 5 a 10 minutos. Calentar agitando
+frecuentemente y hervir durante un minuto. Distribuir y esterilizar en autoclave a 121ºC durante 15 minutos. Enfriar el medio entre
+45 y 50ºC y adicionar 20 ml de una solución estéril al 1 % de telurito de potasio. Agitar vigorosamente y distribuir unos 20 ml en
+cajas de Petri.
+6.3.2.2.3 Agar de sal y manitol
+Digerido pancreático de caseína                          5,0 g
+Digerido péptico de tejido animal                        5,0 g
+Extracto de carne                                                     1,0 g
+D-manitol                                                                 10,0 g
+Cloruro de sodio                                                   75,0 g
+Agar                                                                          15,0 g
+Rojo de fenol                                                            0,025 g
+Agua                                                                             1 000,0 ml
+pH después de esterilizar 7,4 ± 0,2
+Suspender el medio deshidratado en un litro de agua y remojar 15 minutos. Mezclar y calentar a ebullición durante un minuto.
+Esterilizar en autoclave a 121ºC durante 15 minutos. Distribuir porciones de 20 ml en cajas Petri de 15x100 mm.
+6.3.2.2.4 Agar Cetrimida
+Digerido pancreático de gelatina                       20,0 g
+Cloruro de magnesio                                              1,4 g
+Sulfato de potasio                                                  10,0 g
+Agar                                                                          13,6 g
+Cetil bromuro de trimetil amonio
+(cetrimida)                                                                  0,3 g
+Glicerol                                                                      10,0 ml
+Agua                                                                              1 000,0 ml
+pH después de esterilizar 7,2 ± 0,2
+Disolver en agua los componentes sólidos antes de adicionar el glicerol. Remojar unos 10 minutos. Calentar agitando
+frecuentemente y hervir un minuto. Distribuir y esterilizar en autoclave a 121ºC durante 15 minutos.
+6.3.2.2.5 Agar eosina azul de metileno
+Digerido pancreático de gelatina                       10,0 g
+Fosfato dibásico de potasio                                   2,0 g
+Agar                                                                          15,0 g
+Lactosa                                                                   10,0 g
+Eosina "Y"                                                                  0,4 g
+Azul de metileno (Metiltionina)                               0,065 g
+Agua                                                                             1 000,0 ml
+pH después de esterilizar 7,1 ± 0,2
+Disolver el digerido pancreático de gelatina, el fosfato dibásico de potasio y el agar en el agua. Esterilizar, dejar enfriar y antes
+de utilizar, agregar las siguientes soluciones a cada 100 ml de agar líquido: 5 ml de solución 1:5 de lactosa, 2 ml de solución 1:50
+de eosina "Y" y 2 ml de solución 1:300 de azul de metileno. Mezclar.
+6.3.2.2.6 Agar extracto de malta
+Extracto de malta                                                   30,0 g
+Agar                                                                          20,0 g
+Agua                                                                              1 000,0 ml
+pH después de esterilizar 5,5 ± 0,2
+Suspender el medio deshidratado en un litro de agua, homogeneizar y remojar de 10 a 15 minutos, calentar agitando
+frecuentemente, hervir durante un minuto. Esterilizar en autoclave a 121ºC durante 15 minutos. Si el medio se sobrecalienta el
+agar perderá su capacidad de gelificarse. Enfriar de 47-50°C y ajustar el pH a 3,5 con una solución de ácido tartárico al 10%
+estéril.
+6.3.2.2.7 Caldo infusión de cerebro corazón
+Infusión de cerebro de ternera                         200,0 g
+Infusión de corazón de res                               250,0 g
+Peptona de gelatina                                             10,0 g
+Dextrosa                                                                    2,0 g
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 8/23
+
+--- Page 9 ---
+Cloruro de sodio                                                      5,0 g
+Fosfato disódico                                                      2,5 g
+Agua                                                                             1 000,0 ml
+pH final 7,4 ± 0,2
+Suspender el medio deshidratado en un litro de agua y calentar ligeramente si es necesario. Se puede agregar 0,1% de agar
+si se desea. Envasar y esterilizar a 121ºC durante 15 minutos.
+6.3.2.2.8 Agar verde brillante.
+Extracto de levadura                                                3,0 g
+Mezcla de peptonas                                               10,0 g
+Cloruro de sodio                                                      5,0 g
+Lactosa                                                                   10,0 g
+Sacarosa                                                                10,0 g
+Rojo de fenol                                                            0,08 g
+Agar                                                                          20,0 g
+Verde brillante                                                           0,125 g
+Agua                                                                             1 000,0 ml
+pH final 6,9 ± 0,2
+Suspender el medio deshidratado en un litro de agua y dejar remojar unos 15 minutos. Calentar agitando frecuentemente y
+hervir durante un minuto. Esterilizar en autoclave a 121ºC durante 15 minutos, dejar enfriar a 45-50ºC y distribuir en cajas de Petri
+estériles.
+6.3.2.2.9 Agar xilosa lisina desoxicolato (agar XLD)
+Xilosa                                                                          3,5 g
+L-Lisina                                                                     5,0 g
+Lactosa                                                                       7,5 g
+Sacarosa                                                                   7,5 g
+Cloruro de sodio                                                      5,0 g
+Extracto de levadura                                                3,0 g
+Rojo de fenol                                                            0,08 g
+Agar                                                                          13,5 g
+Desoxicolato de sodio                                            2,5 g
+Tiosulfato de sodio                                                  6,8 g
+Citrato de hierro y amonio                                      0,8 g
+Agua                                                                             1 000,0 ml
+pH final 7,4 ± 0,2
+Suspender el medio deshidratado en un litro de agua y dejar que se remoje de 10 a 15 minutos. Calentar con todo cuidado y
+agitando con frecuencia justamente hasta que el medio hierva. No sobrecalentar. Transfiera al baño de agua, dejar enfriar a 50ºC
+y verter en cajas de Petri. El medio debe ser transparente y color rojo rubí anaranjado. El calentamiento excesivo o el mantener
+demasiado tiempo en baño de agua, puede ocasionar que se formen precipitados. En este caso se corre el riesgo de que las
+colonias sean de menor tamaño y presenten reacciones menos nítidas. Sin embargo el precipitado no perjudica el desarrollo
+bacteriano y puede eliminarse por filtración con papel filtro.
+6.3.2.2.10 Agar Pseudomona F
+Peptona de caseína                                             10,0 g
+Peptona de carne                                                   10,0 g
+Sulfato de magnesio                                              1,5 g
+Hidrogenofosfato dipotásico                                 1,5 g
+Agar-agar                                                                 12,0 g
+Glicerina                                                                     10,0 ml
+Agua                                                                             1 000,0 ml
+pH después de esterilizar 7,2 ± 0,2
+Disolver en agua los componentes sólidos, adicionar la glicerina. Distribuir en tubos y esterilizar en autoclave 15 minutos a
+121°C. Dejar solidificar los tubos en posición inclinada o bien verter en placas.
+6.3.2.2.11 Agar Pseudomona P
+Peptona de gelatina                                             20,0 g
+Cloruro de magnesio                                             1,4 g
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 9/23
+
+--- Page 10 ---
+Sulfato potásico                                                      10,0 g
+Agar-agar                                                                 12,6 g
+Glicerina                                                                     10,0 ml
+Agua                                                                             1 000,0 ml
+pH después de esterilizar 7,2 ± 0,2
+Disolver en agua los componentes sólidos, adicionar la glicerina. Distribuir en tubos y esterilizar en autoclave 15 minutos a
+121ºC. Dejar solidificar los tubos en posición inclinada o bien verter en placas.
+6.3.2.2.12 Caldo Cistina Selenito
+Mezcla de peptonas                                                 5,0 g
+Lactosa                                                                      4,0 g
+Fosfato de sodio                                                    10,0 g
+Selenito ácido de sodio                                         4,0 g
+Cistina                                                                       0,01 g
+Agua                                                                             1 000,0 ml
+pH final 7,0 ± 0,2
+Suspender 23 g del polvo en un litro de agua desionizada. Mezclar bien y calentar ligeramente hasta que el medio se disuelva.
+Envasar en tubos de ensaye, preferiblemente con tapas de rosca, volúmenes entre 10 y 15 ml por tubo. Esterilizar a vapor fluente
+durante 15 minutos. No en autoclave. No sobrecalentar. El medio así preparado y herméticamente tapado, puede conservarse en
+buenas condiciones, hasta 3 meses en refrigeración.
+6.3.2.2.13 Agar Sulfito y Bismuto
+Mezcla de peptonas                                              10,0 g
+Extracto de carne                                                      5,0 g
+Dextrosa                                                                    5,0 g
+Fosfato disódico                                                      4,0 g
+Sulfato ferroso                                                          0,3 g
+Indicador de sulfito de bismuto                            8,0 g
+Verde brillante                                                          0,025 g
+Agar                                                                           20,0 g
+Agua                                                                             1 000,0 ml
+pH final 7,5 ± 0,2
+Suspender el polvo en un litro de agua, mezclar bien y remojar el medio deshidratado de 10 a 15 minutos para obtener un
+buen gel. Hervir no más de un minuto agitando continuamente para que se disuelva completamente el agar.
+Dejar que el medio se enfríe a 45ºC y sin dejar de agitarlo vacíe en cajas de Petri no menos de 20 ml de medio fluido. Las
+placas deben permanecer parcialmente descubiertas hasta que se seque la superficie del medio y usarlos el mismo día. Evite el
+sobrecalentamiento.
+6.3.3 Medios para pruebas bioquímicas
+6.3.3.1 Medio Basal O/F (de Hugh y Leifson)
+Peptona Caseína                                                     2,0 g
+Cloruro de sodio                                                      5,0 g
+Fosfato dipotásico                                                    0,3 g
+Azul bromotimol                                                        0,03 g
+Agar                                                                            2,5 g
+Agua                                                                             1 000,0 ml
+pH final 7,1 ± 0,2
+Suspender el medio deshidratado en un litro de agua, remojar de 10 a 15 minutos. Calentar agitando con frecuencia, hasta
+disolver el agar. Agregar 10 ml de solución de glucosa al 10% esterilizada por filtración (o del azúcar apropiado) por cada 100 ml
+del medio fluido, mezclar y distribuir asépticamente 5 ml en tubos de 13 x 100 mm. Esterilizar en autoclave a 118°C durante 10
+minutos a fin de evitar la degradación del azúcar. El medio tiene un color verde.
+6.3.3.2 Medio Indol Ornitina (MIO)
+Extracto de levadura                                                3,0 g
+Peptona                                                                   10,0 g
+Triptona                                                                   10,0 g
+L-ornitina                                                                    5,0 g
+Dextrosa                                                                    1,0 g
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 10/23
+
+--- Page 11 ---
+Agar                                                                            2,0 g
+Bromocresol púrpura                                              0,02 g
+Agua                                                                             1 000,0 ml
+pH final 6,5 ± 0,2
+Disolver el medio deshidratado en un litro de agua, remojar unos 5 minutos, calentar a ebullición. Distribuir porciones de 4 ml
+en tubos de 10 x 100 mm y esterilizar en autoclave a 121ºC durante 15 minutos.
+6.3.3.3 Medio Indol Nitrito
+(Medio de tripcaseína y nitrato)
+Peptona de caseína                                              20,0 g
+Fosfato disódico                                                      2,0 g
+Dextrosa                                                                    1,0 g
+Nitrato de potasio                                                     1,0 g
+Agar                                                                            1,0 g
+Agua                                                                             1 000,0 ml
+pH final 7,2 ± 0,2
+Suspender el medio deshidratado en un litro de agua. Agregar 2 g de agar en el caso de hacerse movilidad y detección de
+gas. Calentar agitando continuamente y hervir durante más o menos un minuto hasta disolución total del medio. Envasar en tubos
+de ensayo hasta la mitad de su altura y esterilizar en autoclave durante 15 minutos. Si se prepara el medio semisólido, dejar que
+se solidifiquen los tubos en posición vertical.
+6.3.3.4 Medio Rojo de Metilo Voges Proskauer
+Peptona especial No. 1                                           7,0 g
+Dextrosa                                                                    5,0 g
+Fosfato dipotásico                                                    5,0 g
+Agua                                                                             1 000,0 ml
+pH final 6,9 ± 0,2
+Disolver el medio deshidratado en un litro de agua, mezclar bien, si es necesario calentar un poco hasta disolución total.
+Distribuir y esterilizar a 121ºC durante 15 minutos.
+6.3.3.5 Agar Citrato de Simmons
+Fosfato dehidrogenado de amonio                      1,0 g
+Fosfato dipotásico                                                    1,0 g
+Cloruro de sodio                                                      5,0 g
+Citrato de sodio                                                       2,0 g
+Sulfato de magnesio                                               0,2 g
+Agar                                                                          15,0 g
+Azul bromotimol                                                        0,06 g
+Agua                                                                             1 000,0 ml
+pH final 6,9 ± 0,2
+Suspender el medio deshidratado en un litro de agua, dejar remojar durante 5 a 10 minutos. Mezclar bien y calentar agitando
+frecuentemente hasta ebullición y completa disolución. Distribuir volúmenes de 3 ml en tubos de 13 x 100 mm. Esterilizar a 121ºC
+durante 15 minutos. Los tubos se dejan enfriar en posición inclinada de manera que el medio de cultivo en el fondo del tubo
+alcance una profundidad de 1 a 1,5 cm. Se puede emplear también como medio en placas.
+6.3.3.6 Caldo urea
+Urea                                                                         20,0 g
+Fosfato monopotásico                                           9,1 g
+Fosfato de sodio                                                      9,5 g
+Extracto de levadura                                                0,1 g
+Rojo de fenol                                                            0,01 g
+Agua                                                                             1 000,0 ml
+pH final 6,8 ± 0,2
+Disolver 38,61 g en 1 000 ml de agua, calentando en caso necesario a 60ºC como máximo. Esterilizar por filtración o tras
+distribución a razón de 3 ml por tubo; o bien esterilizar con cuidado en marmita de vapor durante 5 minutos. No esterilizar en
+autoclave.
+6.3.3.7 Agar lisina hierro
+Peptona de gelatina                                                 5,0 g
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 11/23
+
+--- Page 12 ---
+Extracto de levadura                                                3,0 g
+Dextrosa                                                                    1,0 g
+L-lisina                                                                    10,0 g
+Citrato férrico-amónico                                            0,5 g
+Trisulfato de sodio (anhidro)                                 0,04 g
+Púrpura de bromocresol                                         0,02 g
+Agar                                                                          15,0 g
+Agua                                                                             1 000,0 ml
+pH final 6,7 ± 0,2
+Suspender el medio deshidratado, remojar unos 15 minutos, calentar para disolver los ingredientes agitando con frecuencia y
+hervir durante un minuto o hasta disolución completa. Distribuir en porciones de 4 ml en tubos con tapón de rosca de 13 x 100
+mm. Esterilizar en autoclave 12 minutos a 121ºC. Dejar solidificar en posición inclinada a tener 4 cm de un extremo y 2,5 cm
+sesgado. Cerrar con cuidado las tapas a fin de evitar pérdidas de agua por evaporación.
+6.3.3.8 Agar de hierro y triple azúcar.
+Mezcla de peptonas                                               20,0 g
+Cloruro de sodio                                                      5,0 g
+Lactosa                                                                   10,0 g
+Sacarosa                                                                10,0 g
+Dextrosa                                                                    1,0 g
+Sulfato de amonio férrico                                       0,2 g
+Rojo fenol                                                                   0,025 g
+Agar                                                                          13,0 g
+Tiosulfato de sodio                                                  0,2 g
+Agua                                                                             1 000,0 ml
+pH final 7,3 ± 0,2
+Suspender el medio deshidratado en un litro de agua, remojar de 10 a 15 minutos. Calentar agitando frecuentemente hasta
+ebullición y completa disolución. Distribuir en tubos de 13 x 100 mm. Esterilizar a 118ºC durante 15 minutos. Los tubos se deben
+enfriar en posición inclinada de manera que el medio de cultivo en el fondo del tubo alcance una profundidad de 1,5 a 2,0 cm.
+6.3.3.9 Agar DNA azul toluidina
+Acido desoxirribonucleico (DNA)                           0,3 g
+Agar                                                                          10,0 g
+Cloruro de calcio (anhidro)                                     0,0011 g
+Cloruro de sodio                                                   10,0 g
+Azul O toluidina                                                        0,083 g
+Tris (hidroximetil) aminometano                           6,1 g
+Agua                                                                             1 000,0 ml
+Disolver el Tris (hidroximetil) aminometano en un litro de agua. Ajustar el pH a 9,0, adicionar los demás ingredientes excepto el
+azul O toluidina y calentar a ebullición para su disolución. Añadir al medio el color azul O toluidina. Distribuir en cajas Petri o
+portaobjetos.
+6.3.3.10 Caldo de lisina y descarboxilasa
+Peptona de gelatina                                                5,0 g
+Extracto de levadura                                                3,0 g
+Dextrosa                                                                    1,0 g
+L-Lisina                                                                     5,0 g
+Púrpura de bromocresol                                         0,02 g
+Agua                                                                             1 000,0 ml
+pH final 6,8 ± 0,2
+Disolver el medio deshidratado en un litro de agua. Distribuir en porciones de 5 ml en tubos con tapón de rosca. La tapa debe
+de estar algo floja para permitir un buen intercambio de gases. Apretarla bien al terminar la esterilización. Esterilizar en autoclave
+a 121ºC durante 15 minutos.
+6.3.3.11 Medio SIM
+Peptona de caseína                                             20,0 g
+Peptona de carne                                                    6,1 g
+Sulfato de hierro y amonio                                      0,2 g
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 12/23
+
+--- Page 13 ---
+Tiosulfato de sodio                                                 0,2 g
+Agar                                                                            3,5 g
+Agua                                                                      1000,0 ml
+pH final 7,3 ± 0,2
+Suspender el medio deshidratado en un litro de agua, agitando frecuentemente. Remojar durante 10 minutos y hervir a
+ebullición durante un minuto. Distribuir en tubos de ensayo a una altura de unos 4 cm y esterilizar en autoclave a 121ºC durante
+15 minutos.
+7. Material y equipo
+7.1 Material
+Matraces Erlenmeyer de 2000, 1000, 500, 200 y 100 ml
+Pipetas serológicas en 1/10 de 1, 2, 5, 10 y 25 ml
+Vasos de precipitados de 80 y 500 ml
+Probetas de 100, 500 y 1000 ml
+Embudos de vidrio
+Cajas de Petri 20 X 100 mm y 15 x 100 mm
+Pipetas Pasteur
+Tubos de ensayo 16 X 150 mm
+Botellas de 100 ml para dilución con tapón de rosca
+Botellas de dilución de leche de 250 ml
+Codos de vidrio
+Termómetros graduación de -10 a 200ºC
+Portaobjetos
+Papel parafilm
+Marcador
+Masking tape
+Gasa y algodón
+Bolsas estériles de polietileno
+Membrana de 0,45 µ
+Porta filtro
+7.2 Equipo
+Estufa a 35 ± 2ºC
+Estufa a 30 ± 1ºC
+Refrigerador
+Balanzas analítica y granataria
+Potenciómetro
+Autoclave
+Horno para esterilizar
+Recipiente para material contaminado
+Espátulas
+Microespátulas
+Microscopio
+Baño maría
+Cuenta colonias
+Asa y porta asa
+Pinzas y tijeras
+Esterilizar el material y equipo en autoclave (a 121ºC durante 15 minutos) u horno (170-180ºC durante 2 horas), según sea
+conveniente.
+7.2.1 Cepas de referencia
+Candida albicans (ATCC 10231)
+Aspergillus niger (ATCC 16404)
+Staphylococcus aureus (ATCC 6538)
+Escherichia coli (ATCC 11105, 10536)
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 13/23
+
+--- Page 14 ---
+Salmonella typhi (LNA 99)
+Pseudomona aeruginosa (ATCC 15442, 25619)
+8. Cuenta total de hongos, levaduras y mesofílicos aerobios
+8.1 Toma de muestra (del producto)
+8.1.1 Analizar la muestra tan pronto como sea posible. Si es necesario almacenar, debe hacerse a la temperatura ambiente.
+8.1.2 No incube, refrigere o congele las muestras antes o después de su análisis.
+8.1.3 Inspeccione las muestras cuidadosamente antes de abrirlas y anote cualquier irregularidad del contenedor de dichas
+muestras.
+8.1.4 Desinfecte la superficie del contenedor con un algodón estéril impregnado con cualquiera de los siguientes
+desinfectantes:
+Solución de etanol al 70% (v/v) y ácido clorhídrico 1% (v/v) (alcohol ácido).
+Solución de etanol al 70% con 4% de yodo
+Solución de glutaraldehído al 2%
+Benzal al 0,001%
+8.1.5 Antes de abrir y tomar la muestra o contenido; secar la superficie con gasa estéril.
+8.1.6 Homogeneizar el producto al tomar la muestra necesaria de acuerdo a su estado físico. Para líquidos, agitar el contenido
+del envase; para semisólidos y polvos, mezclar el contenido con una espátula estéril; para sólidos, raspar el producto con
+espátula estéril y tomar una muestra representativa; y para aerosoles, después de limpiar asépticamente el recipiente, expeler
+apropiadamente la cantidad de producto previa agitación.
+8.2 Preparación preliminar de las muestras
+8.2.1 Para las muestras que sean miscibles en CLM y CDS, adicionar 1 g o ml en 90 ml de CLM y 1 g o ml en 90 ml de CDS
+en condiciones asépticas.
+8.2.2 Para las muestras que no sean miscibles en CLM y CDS (ejemplo, cremas, labiales, etc.), en 2 frascos estériles o bolsas
+de polietileno estériles debidamente etiquetados; uno para CLM y otro para CDS, adicionar 1 g o 1 ml de la muestra y agregar 0,5
+ml de tween 80 estéril a cada uno de los frascos o bolsas previamente marcados y homogeneizar la muestra.
+8.2.3 En caso de usar los frascos poner en baño maría a 45ºC hasta formar una emulsión homogénea (el tiempo de
+exposición en el baño no debe exceder de 15 minutos).
+8.2.4 Posteriormente agregar a cada uno de los frascos o bolsas 90 ml de CLM y 90 ml de CDS respectivamente y agitar
+perfectamente.
+8.3 Procedimiento
+8.3.1 Incubar a 30ºC ± 2 durante 7 días los medios de cultivo inoculados. Marcar los frascos o bolsas que se enturbien al
+agregar la muestra.
+8.3.2 Confirmar si existe crecimiento a los 2 y 7 días de incubación.
+8.3.3 Cuando el crecimiento sea evidente o se tenga duda de desarrollo microbiano, hacer una resiembra en ALM y AEM,
+inoculando 0,5 ml de cultivo del CLM y CDS respectivamente, empleando el método de vaciado en placa o de dispersión con
+codos de vidrio esterilizado.
+8.3.4 Incubar durante 4 días a 30ºC ± 2.
+8.4 Interpretación de resultados
+Observar si hay crecimiento en los medios inoculados:
+Si no hay crecimiento reportar: menos de 10 UFC/ml o g de muestra. Concluyendo el ensayo.
+Si se presenta crecimiento, continuar con la prueba definitiva que se describe a continuación.
+8.5 Cuenta total de mesofílicos aerobios, hongos y levaduras.
+8.5.1 Procedimiento
+Agregar por separado 10 ml o g de muestra a 90 ml de medio CDS y CLM (Dilución 10-1) cuando las muestras sean miscibles
+en éstos.
+Para las muestras que no son miscibles; en dos frascos o bolsas estériles debidamente etiquetados: uno para CLM y otro para
+CDS, adicionar 10 g o ml de muestra y colocar 5 ml de tween 80 estéril a cada uno de los frascos o bolsas previamente marcados.
+En caso de usar los frascos poner en baño de agua a 45ºC hasta formar una emulsión homogénea (el tiempo de exposición en el
+baño de agua no debe exceder de 15 minutos).
+Posteriormente agregar a cada uno de los frascos o bolsas 85 ml de CLM y 85 ml de CDS respectivamente y agitar
+perfectamente. (Dilución 10-1)
+A partir de la dilución 10-1, realizar diluciones seriadas según el crecimiento esperado de la siguiente manera:
+TUBO                         DILUCION                      VOLUMEN AGREGADO       CLM o CDS (ml)
+1                        10-2 o 1:100                       1 ml de dilución 10-1                    9
+2                        10-3 o 1:1000                    1 ml de dilución 10-2                    9
+3                        10-4 o 1:10 000                 1 ml de dilución 10-3                    9
+4                             etc.
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 14/23
+
+--- Page 15 ---
+Para la cuenta estándar total, realizar las diluciones en CLM; y para la cuenta de hongos y levaduras, realizar las diluciones
+utilizando el CDS. Mezclar hasta homogeneizar. Colocar 1 ml de cada dilución en cajas de Petri estériles previamente marcadas
+con la dilución, registro y fecha, agregar de 18 a 20 ml de medio de cultivo cuidando que la temperatura no sea mayor de 45ºC;
+para cuenta estándar total, utilizar ALM; y para cuenta de hongos y levaduras, emplear AEM o PDA. Homogeneizar el inóculo en
+el medio de cultivo, rotando la caja sembrada de izquierda a derecha, vertical y horizontalmente 6 veces en cada ocasión. Dejar
+solidificar el medio de cultivo en las cajas. Si se emplea el método de dispersión con codos de vidrio, utilizar 0,5 ml de inóculo por
+cada dilución y colocarlo en cajas de Petri conteniendo ALM y AEM para cuenta estándar total y cuenta de hongos y levaduras
+respectivamente. Dispersar el inóculo con codos de vidrio estériles. Dejar que se absorba el inóculo. Invertir las cajas e incubar: a
+30°C ± 2 durante 48 horas para la cuenta estándar total; a 22ºC durante 5 días para la cuenta de hongos y a 35ºC por 48 horas
+para la cuenta de levaduras.
+8.5.2 Interpretación de resultados
+8.5.2.1 Cuenta total de hongos y levaduras
+Contar el número de hongos y levaduras que se encuentren.
+Reportar el número de colonias /ml o g de muestra multiplicando por el inverso de la dilución observada.
+En el caso de utilizar el método por dispersión de codo de vidrio, el resultado se multiplicará por 2. Concluyendo la prueba.
+8.5.2.2 Cuenta total de mesofílicos aerobios
+Contar las cajas en donde se encuentren de 25 a 250 UFC.
+Reportar el número de UFC/ml o g de muestra multiplicando por el inverso de la dilución observada. En el caso de utilizar el
+método por dispersión con codo de vidrio, el resultado obtenido se multiplicará por 2.
+Para identificación de microorganismos patógenos se continuará con el punto siguiente.
+9. Identificación de patógenos
+9.1 Procedimiento
+Incubar los tubos de la dilución 1:100 o 1:1000 de CLM utilizados para la cuenta estándar total, durante 7 días a 30ºC ± 2. A
+partir de los tubos inoculados sembrar una azada en los siguientes medios de cultivo diferenciales: agar cetrimida, EMB, AMC y
+AVJ. Incubar de 33 a 37ºC durante 24 horas los medios de EMB y AMC, y 48 horas el agar cetrimida y AVJ.
+Observar las cajas inoculadas para búsqueda de E. coli,
+S. Typhi, S. aureus y Ps. sp. en los medios respectivos (ver Tabla 1).
+Tabla No. 1
+ MEDIO                                                 MICROORGANISMO                            CARACTERISTICAS
+DE CULTIVO                                                                                                        COLONIALES
+Agar eosina azul de metileno          E. coli                                                     Colonias pequeñas azul negro
+                                                                                               en la parte central con brillo
+                                                                                               metálico verdoso a la luz
+                                                                                                reflejada
+                                               Salmonella                                           Transparentes, color ámbar
+                                               Staphylococcus coagulasa (+)         Colonias incoloras, en punta de
+                                                                                                alfiler
+Agar MacConkey                                Salmonella, Shigella y otros             Incoloros, transparentes
+                                               E. coli                                                     Grandes, rojas, que pueden
+                                                                                               estar rodeadas de una zona de
+                                                                                               precipitación de bilis
+                                               Enterobacter, Klebsiella                    Grandes, rosadas, mucosas
+                                               Enterococos, Staphylococcus           Diminutas, de crecimiento
+                                               y otros                                                    aislado, opacas
+Agar cetrimida                                    Ps. sp.                                                    Colonias grandes blancas o
+                                                                                               verdes cremosas
+                                               E. coli                                                     Crece poco, sin pigmento
+                                               S. aureus                                               No crece
+Agar Vogel Johnson                          S. aureus                                               Colonias pequeñas, negras,
+                                                                                               con halo amarillo.
+                                               S. epidermidis y otros                         Pequeñas, negro-grisáceas, sin
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 15/23
+
+--- Page 16 ---
+                                                                                               halo
+                                               E. coli                                                     No crece
+                                               Ps. aeruginosa                                     No crece
+9.2 Tinción de Gram
+Si se observan colonias sospechosas de los microorganismos antes mencionados, de acuerdo a la Tabla No. 1, realizar una
+tinción de Gram para identificar morfología microscópica.
+9.2.1 Procedimiento
+Preparar un frotis con microorganismos provenientes de un cultivo de 24-48 horas de incubación. Aplicar calor suave al
+portaobjetos con la llama de un mechero o de una lámpara de alcohol de manera paulatina. El calentamiento no debe ser
+excesivo ni violento. Enfriar y aplicar sobre el frotis unas gotas de solución de cristal violeta, dejar actuar un minuto. Lavar con
+agua y escurrir. Aplicar unas gotas de la solución yodo-yodurada con mordente, dejar actuar un minuto. Lavar con agua y escurrir.
+Decolorar el frotis con unas gotas de la solución alcohol-acetona, durante no más de 10 segundos. Lavar con agua y escurrir.
+Aplicar unas gotas de la solución de safranina, dejar actuar entre 15 y 30 segundos. Lavar con agua, inclinar el portaobjeto para
+dejar escurrir el exceso de agua y secar los bordes con papel secante.
+9.2.2 Interpretación de resultados
+Observar al microscopio con objetivo de inmersión.
+Las bacterias Gram positivas, se observan teñidas de color azul violáceo intenso.
+Las Gram negativas se observan de color rojo.
+9.3 Identificación de S. aureus
+En caso de encontrar cocos en racimo Gram positivos, continuar con las siguientes pruebas para búsqueda de S. aureus.
+9.3.1 Prueba de catalasa
+Aislar la colonia sospechosa en ALM, incubar a 33-37ºC durante 18-24 horas. Si se observa crecimiento, realizar la prueba de
+catalasa como se indica a continuación: en un portaobjetos adicionar una gota de solución de agua oxigenada al 3% y dispersar
+una porción de la colonia sospechosa. La reacción es positiva si se observan burbujas efervescentes del oxígeno desprendido,
+utilizar controles positivos y negativos.
+Aislar en agar de sal y manitol o AVJ, incubando a 33-37ºC durante 24-48 horas. Observar si hay colonias fermentadoras de
+manitol. Resembrar en medio de oxidación-fermentación con dextrosa, incubar a 33-37ºC durante 18-24 horas, y observar si hay
+desarrollo microbiano.
+Sembrar las colonias sospechosas en dos tubos con BHI, uno destinado para la técnica de coagulasa y otro para la técnica de
+termonucleasa, incubar a 35ºC de 18-24 horas.
+Reportar de acuerdo a la Tabla No. 2
+9.3.2 Prueba de coagulasa
+9.3.2.1 Procedimiento (método 1)
+Con la ayuda de una asa, transferir individualmente las colonias sospechosas de la cajas en que se desarrollaron de
+cualquiera de los dos medios de cultivo, de agar sal y manitol o AVJ para estafilococo, a tubos individuales que contengan 0,5 ml
+de plasma de conejo o de cobayo. Incubar en baño maría a 35ºC durante una hora, observar a las 3 horas y después a distintos
+intervalos hasta las 24 horas.
+Reportar positiva la prueba si hay formación de coágulo pequeño pero bien constituido o una coagulación total de la mezcla.
+Correr en paralelo el mismo procedimiento con el testigo, éste debe dar la prueba positiva.
+9.3.2.2 Procedimiento (método 2)
+Adicionar a cada tubo 0,5 ml de BHI. Transferir cada colonia sospechosa de las cajas en las que se desarrollaron al caldo con
+ayuda de una asa. Hacer lo mismo con el control positivo. Incubar 24 horas a 35ºC. Posteriormente adicionar a cada tubo 0,5 ml
+de plasma. Incubar 3 horas en baño de agua, entre 35-37ºC sin movimiento.
+9.3.2.3 Interpretación de resultados
+La presencia de un coágulo dará la prueba positiva, de lo contrario se procederá a continuar la incubación hasta 24 horas.
+Si al transcurrir el tiempo no se observa coágulo, la prueba se considera negativa.
+NOTA: No todos los tipos de S. aureus son coagulasa positiva.
+9.3.3 Prueba de la termonucleasa
+Al otro tubo sembrado en BHI, practicar la prueba de la termonucleasa, corriendo dicha prueba con un control positivo.
+9.3.3.1 Procedimiento (método 1)
+En una caja de Petri desechable con 10 ml de medio de cultivo, agar DNA azul toluidina, se efectúan orificios de 2 mm de
+diámetro.
+Calentar en baño maría durante 15 minutos el cultivo de Staphylococcus aureus seleccionado.
+Colocar una gota del cultivo obtenido en alguno de los orificios e identificarlo, incubar a 37ºC durante 24 horas.
+9.3.3.2 Procedimiento (método 2)
+Inactivar el cultivo en baño maría durante 15 minutos. En un portaobjetos con agar DNA azul toluidina, aplicar en oradaciones
+de 2 mm de diámetro (previamente realizadas) la muestra y el control positivo. Incubar durante 24 horas de 35-37ºC.
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 16/23
+
+--- Page 17 ---
+9.3.3.3 Interpretación de resultados
+Transcurrido el tiempo de incubación, observar vire del agar de morado a violeta o rosa y la presencia de halo.
+Se da como positiva la prueba con la presencia de un halo color rosa alrededor de los orificios que indican hidrólisis del DNA.
+Reportar: Staphylococcus aureus termonucleasa positiva.
+Tabla No. 2
+CARACTERISTICAS DIFERENCIALES DE S. aureus
+DETERMINACION                    S.aureus                          S.epidermidis                      Micrococcus sp.
+Prueba de catalasa                        +                                            -                                                 -
+Fermentación de manitol              +                                            -                                                 -
+Crecimiento en O/F                        fermentativo                                                                         
+Prueba de Coagulasa                   +                                            -                                                 -
+Prueba de Termonucleasa           +                                                                                             
+Vogel Proskauer                             +                                                                                              -
+Oxidasa                                             -                                                                                               -
+Reducción de nitratos                    +                                                                                              d
+d= variable
+9.4 Pruebas bioquímicas empleadas
+9.4.1 Prueba de oxidasa
+La prueba de oxidasa se realiza de la siguiente manera: impregnar una tira de papel filtro en diclorohidrato de N-N dimetil p-
+fenilendiamina y sobre ella colocar una porción de la colonia sospechosa. La prueba es positiva si se produce un color que va de
+rosa a púrpura.
+9.4.2 Prueba en TSI
+Sembrar el cultivo puro sometido a ensayo tanto por estría en la superficie inclinada como en la columna vertical, mediante
+estría central. Incubar 48 horas a 37ºC.
+9.4.2.1 Interpretación de resultados
+A =            Viraje a rojo por formación de álcali.
+OA =         Sin alteración del color original del medio de cultivo o rojo por formación de álcali.
+S =            Viraje a amarillo, por formación de ácido.
+SG =         Viraje a amarillo y formación de gas.
++ =            Ennegrecimiento por formación de H2S.
+- =             Ausencia de ennegrecimiento.
+9.4.3 Prueba en LIA
+Sembrar el cultivo puro sometido a ensayo, tanto por estría sobre la superficie inclinada como por picadura central en la
+columna vertical subyacente. Incubar de 16-18 horas a 37ºC.
+9.4.3.1 Interpretación de resultados
+Violeta =          Viraje del indicador de pH púrpura de bromocresol por la descarboxilación de lisina y la  consecuente
+alcalinidad.
+Amarillo =    Fermentación de glucosa con la consecuente acidez del medio.
+Negro =       Formación de coloración negra por el H2S y producción de sulfato de hierro.
+9.4.4 Prueba en medio basal O/F (de Hugh y Leifson)
+A partir del cultivo puro sometido a ensayo, que se encuentre lo más posible en la fase logarítmica de multiplicación, sembrar
+por el procedimiento de picadura hasta el fondo, un tubo con recubrimiento de parafina y otro tubo sin tal recubrimiento para cada
+carbohidrato elegido. Incubar 48 horas como mínimo a la temperatura de 35ºC.
+9.4.4.1 Interpretación de resultados
+Amarillo en ambos tubos = Fermentación del correspondiente carbohidrato.
+Amarillo en tubo no recubierto = Degradación oxidativa del carbohidrato. Oxidación en la superficie.
+Movilidad = Si la turbidez se extiende en la totalidad del medio.
+Gas = Observar formación de gas.
+9.4.5 Prueba en agar citrato de Simmons
+Sembrar el cultivo puro por estría, en la superficie del medio de cultivo e incubar de 24 a 48 horas a 37ºC.
+9.4.5.1 Interpretación de resultados
+Positivo = Medio de cultivo azul oscuro.
+Negativo o inhibido = Sin cambio.
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 17/23
+
+--- Page 18 ---
+9.4.6 Prueba en caldo urea
+Sembrar masivamente con el cultivo puro, objeto de ensayo.
+Incubar hasta 48 horas a 37ºC.
+9.4.6.1 Interpretación de resultados
+Rojo = Urea positivo.
+Amarillo = Urea negativo.
+9.4.7 Prueba en medio MR-VP
+9.4.7.1 Procedimiento
+Sembrar en dos tubos de caldo MR-VP con el cultivo puro, objeto de investigación. Incubar hasta 4 días a 37ºC.
+A continuación se realizan los ensayos:
+9.4.7.1.1 Prueba del rojo de metilo: añadir al primer tubo unas 5 gotas de la solución indicadora de rojo de metilo.
+9.4.7.1.2 Prueba de Voges-Proskauer: al segundo tubo se le añaden 5 ml de la solución de sulfato de cobre según Leifson o 3
+ml de reactivo de Barritt y un ml de hidróxido de potasio al 40% o 5 ml de reactivo de O'Meora. En caso positivo se presenta para
+los dos primeros métodos después de algunos minutos, un viraje a rojo. Con el reactivo de O'Meora aparece en caso positivo y
+tras frecuente agitación, una coloración rosa al cabo de unos 20 minutos, iniciándose en la superficie y que se intensifica en el
+transcurso aproximado de 2 horas.
+9.4.7.2 Interpretación de resultados
+De anaranjado a rojo = positivo por utilización de glucosa.
+De anaranjado a amarillo = negativo.
+Rojo = Positivo, por formación de acetoína a partir de glucosa.
+Sin reacción = negativo.
+9.4.8 Prueba en Medio indol nitrito
+9.4.8.1 Formación de nitritos:
+Para investigar nitritos utilice 3 tubos separados; uno para el control positivo (E. coli), otro para el control negativo y el tercero
+para la prueba con la cepa en estudio. Inocule masivamente cada tubo por punción. Incube a 35ºC de 12 a 24 horas. Agregue
+aproximadamente 10 gotas (mezcla de partes iguales de las soluciones A+B) del reactivo Griess-Ilosvays.
+9.4.8.2 Interpretación de resultados
+La formación de un color rojo en uno o 2 minutos indica reducción de nitratos a nitritos (prueba positiva). Si la cantidad de
+nitritos es elevada el color rojo cambia a amarillo.
+Si no aparece color, agregue a los tubos una pizca de zinc en polvo (libre de nitratos y de nitritos)
+Observe si se forma el color rojo o el cultivo permanece incoloro.
+Si no hubo reducción del nitrato presente en el medio de cultivo por el microorganismo, el zinc lo reducirá a nitrito y se formará
+un color rojo al reaccionar con el reactivo de Griess-Ilosvays. La prueba entonces será negativa (ausencia de nitratasa).
+Si no aparece color, esto nos indica que el germen redujo el nitrato presente en el medio de cultivo hasta más allá de la
+formación de nitritos, posiblemente llegando la reacción hasta nitrógeno gaseoso. La prueba entonces es positiva (presencia de
+nitratasa).
+9.4.8.3 Formación de indol
+Recubrir el medio con una capa de aproximadamente 0,5 cm de altura del reactivo del indol según Kovacs.
+En presencia del indol libre, se presenta al cabo de pocos minutos una coloración rojo cereza en la capa del reactivo.
+9.4.9 Prueba en medio SIM
+9.4.9.1 Procedimiento
+El cultivo puro sometido a examen se siembra por punción en la capa superior del medio de cultivo y se incuba de 18-24 horas
+a 37ºC.
+9.4.9.2 Interpretación de resultados
+La movilidad se pone de manifiesto por la turbidez difusa del medio de cultivo alrededor del canal de la picadura.
+La no movilidad se caracteriza por el crecimiento producido exclusivamente a lo largo de dicho canal. La formación de H2S se
+reconoce por el ennegrecimiento de la zona de crecimiento.
+La demostración del indol se efectúa mediante el reactivo de Kovacs. La formación del indol da lugar a una coloración rojo
+púrpura de la capa de reactivo.
+También puede usarse con el mismo propósito la tira de papel filtro impregnada con una solución de ácido oxálico. Esta se
+coloca seca, en la boca del tubo, virando a un color rosado en el caso de formación de indol.
+9.4.10 Prueba en medio MIO
+9.4.10.1 Procedimiento
+Los cultivos son inoculados por punción en el medio MIO preparado en tubos y se incuban de 18-24 horas a 35ºC.
+Se leen las reacciones de movilidad y de ornitina descarboxilasa antes de agregar el reactivo de Kovacs para la prueba de
+indol.
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 18/23
+
+--- Page 19 ---
+9.4.10.2 Interpretación de resultados
+La movilidad es indicada por turbidez del medio o por crecimiento extendido a partir de la línea de inoculación.
+La ornitina descarboxilasa es indicada por el color púrpura del medio.
+La ornitina negativa produce un color amarillo, en el fondo puede ser púrpura al final.
+Para la prueba de indol se añaden de 3-4 gotas de reactivo de Kovacs, y se agita suavemente el tubo. La aparición de color
+rosa o rojo en el reactivo se interpreta como prueba positiva de indol.
+Comparar los resultados obtenidos con un tubo testigo sin sembrarse
+9.4.11 Prueba en caldo lisina descarboxilasa
+9.4.11.1 Procedimiento
+Los tubos con el caldo se inoculan con los microorganismos de prueba y se incuban durante 24 horas de 32-35ºC o si se
+prefiere a 37ºC.
+Los bacilos entéricos producen ácido en la fermentación inicial de dextrosa, ocasionando un cambio de color amarillo.
+Los cultivos que también producen descarboxilación de la lisina, forman cadaverina y el caldo vuelve a tomar el color púrpura
+alcalino.
+9.4.11.2 Interpretación de resultados
+Un color amarillo después de 24 horas indica un resultado negativo.
+El color púrpura es un resultado positivo que indica la descarboxilación de la lisina.
+9.5 Identificación de bacterias Gram negativas
+9.5.1 Pruebas para identificación de Pseudomona sp.
+9.5.1.1 Procedimiento
+En caso de que en el medio agar cetrimida se encuentren colonias sospechosas de Pseudomona sp., realizar la prueba de
+oxidasa y una tinción de Gram (Tabla No. 3).
+Observar con luz ultravioleta las colonias desarrolladas y comparar la morfología colonial conforme a la Tabla No. 3.
+Tabla No. 3
+CARACTERISTICAS DE Pseudomona sp.
+Medio de cultivo                   Morfología colonial              Tinción de Gram            Prueba de oxidasa
+Agar cetrimida a 37ºC          Colonias grandes                         Bacilos                            +
+o 42ºC                                     blancas o verdes                           _
+                                     cremosas.
+Agar Pseudomonas             Colonias incoloras o                    Bacilos                            +
+F para obtención de             amarillentas, con luz                    _
+fluoresceína                           ultravioleta se                                
+                                     observan de color                         Bacilos                            +
+                                     amarillento.                                    _
+Agar Pseudomonas             Colonias verde-                            
+P para detección de             azulosas. Con luz                         
+piocianina                               ultravioleta se                                
+                                     observan de color                        
+                                     azul.                                                 
+9.5.1.2 La presencia de Pseudomona sp. puede confirmarse, si es necesario, con pruebas bioquímicas mencionadas en los
+puntos del 9.4.1 al 9.4.11 y comparar con la Tabla No.4.
+Tabla No. 4
+Pseudomona sp.
+Pruebas bioquímicas                                              Resultado
+H2S (formación)                                                                             -
+Movilidad                                                                                         +
+Indol                                                                                                 -
+Urea                                                                                                 d
+Lisina descarboxilasa                                                                  -
+Lactosa                                                                                           -
+VP                                                                                                     d
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 19/23
+
+--- Page 20 ---
+Citrato de Simmons                                                                     +
+Manitol                                                                                             d
+Glucosa (gas)                                                                                d
+Sorbitol                                                                                            -
+Inositol                                                                                             -
+OF/F                                                                                                 -
+OF/O                                                                                                 +
++= Positivo
+-= Negativo
+d= Variable
+9.5.2 Pruebas para identificación de Salmonella sp.
+En caso de que en los medios EMB o AMC se encuentren colonias sospechosas de Salmonella (cuadro No. 1), sembrarlas en
+medio caldo cistina-selenito y caldo tetrationato, incubar durante 12-24 horas a 37ºC o 43ºC.
+9.5.2.1 Pruebas selectivas para Salmonella sp.
+Si se presenta crecimiento en cualquiera de los medios de enriquecimiento, tomar una azada y aislar por estría cruzada en los
+siguientes medios: agar verde brillante, agar XLD y agar sulfito de bismuto.
+Si son bacilos Gram negativos, correspondiendo a la morfología de Salmonella sp., sembrar por estría y punción en el medio
+agar triple azúcar-hierro e incubar de 18 a 24 horas a 35ºC.
+Observar las morfologías coloniales y microscópicas y compararlas con las descritas en la Tabla No.5.
+Tabla No. 5
+CARACTERISTICAS MORFOLOGICAS DE Salmonella sp.
+Medio de cultivo                          Características morfológicas                         Tinción de Gram
+Agar verde brillante                             Colonias pequeñas transparentes,                Bacilos
+                                                incoloras, rosas o blancas opacas,                _
+                                                frecuentemente rodeadas de una
+                                                zona rosa o roja.
+Agar xilosa-lisina desoxicolato        Colonias rojas con o sin centro                       Bacilos
+                                                negro.                                                                    _
+Agar sulfito de bismuto                      Colonias negras o verdes                                 Bacilos
+                                                                                                            _
+Agar hierro triple azúcar                     Superficie alcalina (roja) punción                    Bacilos
+                                                ácida (amarilla), con o sin                                 _
+                                                producción de ácido sulfhídrico                      
+                                                (negro)
+9.5.2.2 Para confirmación de Salmonella realizar las pruebas bioquímicas mencionadas en los puntos del 9.4.1 al 9.4.11 y
+comparar con la Tabla No. 6.
+Tabla No. 6
+Salmonella typhi
+Pruebas bioquímicas                                                    Resultado
+TSI:                 Superficie                                                                  K
+                  Punción                                                                     A
+                  Gas                                                                            -
+                  H2S                                                                             +
+LIA:                 Superficie                                                                  K
+                  Punción                                                                     K
+                  Gas                                                                            -
+                  H2S                                                                             + (-)
+MIO:                Movilidad                                                                   +(-)
+                  Indol                                                                           -
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 20/23
+
+--- Page 21 ---
+                  Ornitina                                                                      -
+Urea               -
+Lisina descarboxilasa                                                                    +
+Malonato                                                                                           -
+Lactosa                                                                                             -
+VP                                                                                                       -
+Citrato de Simmons                                                                       -
+Manitol                                                                                               +
+Glucosa (gas)                                                                                  -
+Sorbitol                                                                                              +
+Ornitina Descarboxilasa                                                                -
+Dulcitol                                                                                              d
+Inositol                                                                                               -
+Triolosa                                                                                             +
+Arabinosa                                                                                         -
+Ramnosa                                                                                          -
+Celobiosa                                                                                         d
+Eritritol                                                                                               -
+Acetato de sodio                                                                              -
+Mucato                                                                                               -
+Fucsina glicerol                                                                               -
+K= Alcalino
+A= Acido
++= Positivo
+-= Negativo
+d= Variable
+9.5.3 Pruebas selectivas para Escherichia coli.
+9.5.3.1 Procedimiento
+En caso de que encuentren colonias sospechosas de E. coli (Tabla No. 1), sembrar por estría cruzada en los medios AMC y
+agar Levine-eosina azul de metileno e incubar a 35°C. Observar el crecimiento y si ninguna colonia corresponde a la morfología
+descrita en la Tabla No.1, la muestra cumple los requisitos de ausencia de Escherichia coli.
+Confirme la presencia utilizando las pruebas bioquímicas mencionadas en los puntos del 9.4.1 al 9.4.11 y comparar con la
+Tabla No. 7.
+Tabla No. 7
+Escherichia coli
+Pruebas bioquímicas                                                    Resultado
+TSI:                 Superficie                                                                  A
+                  Punción                                                                     A
+                  Gas                                                                            +
+                  H2S                                                                             -
+LIA:                 Superficie                                                                  K
+                  Punción                                                                     A
+                  Gas                                                                            +
+                  H2S                                                                             -
+MIO:                Movilidad                                                                   +(-)
+                  Indol                                                                           +
+Urea                                                                                                   -
+Lisina descarboxilasa                                                                    +
+Malonato                                                                                           -
+Lactosa                                                                                             +
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 21/23
+
+--- Page 22 ---
+VP                                                                                                       -
+Citrato de Simmons                                                                       -
+Manitol                                                                                               +
+Glucosa (gas)                                                                                  A
+Sorbitol                                                                                              +
+Ornitina descarboxilasa                                                                 d
+Dulcitol                                                                                              d
+Inositol                                                                                               -
+Triolosa                                                                                             +
+Arabinosa                                                                                         +
+Ramnosa                                                                                          d
+Eritritol                                                                                               -
+OF/F y OF/O                                                                                      +
+Mucato                                                                                               +
+K= Alcalino
+A= Acido
++= Positivo
+-= Negativo
+d= Variable
+9.6 Pruebas bioquímicas API
+9.6.1 Procedimiento
+Aislar la colonia sospechosa en ALM y los medios diferenciales que se mencionan: EMB (E. coli), AMC (S. typhi) y agar
+cetrimida (Ps. sp.). Incubar a 33-37ºC durante 18-24 horas.
+Sembrar el sistema API, siguiendo las indicaciones del fabricante. Leer las bioquímicas e identificar al microorganismo
+haciendo uso del manual de códigos. Corroborar que la morfología colonial de los medios diferenciales sea la correspondiente al
+microorganismo identificado por el sistema API.
+9.7 Diagrama para identificación de patógenos
+10. Concordancia con normas internacionales
+Esta norma no tiene concordancia con normas internacionales.
+11. Bibliografía
+11.1 Secretaría de Comercio y Fomento Industrial. 1992. Ley Federal sobre Metrología y Normalización. México, D.F.
+11.2 Secretaría de Salud. 1984. Ley General de Salud. México, D.F.
+11.3 Secretaría de Salud. 1988. Reglamento de la Ley General de Salud en Materia de Control Sanitario de Actividades,
+Establecimientos, Productos y Servicios. México, D.F.
+11.4 Secretaría de Salud. 1988. Farmacopea de los Estados Unidos Mexicanos. 5a. Ed. México, D.F., pp. 201-209.
+11.5 Secretaría de Comercio y Fomento Industrial. NOM-008-SCFI-1993. Sistema General de Unidades de Medida. México,
+D.F.
+11.6 Amador, L.R. 1982. Determinación de la enterotoxigenidad de cepas de Staphylococcus aureus aisladas de productos
+cárnicos. Tesis profesional ENCB. IPN. México, D.F.
+11.7 American Public Health Association. 1976. Compendium Methods for the Microbiological examination of foods.
+Intersociety Agency Committee on Microbiology Methods for Foods. Ed. Marvin L. Speck, pp. 399-407.
+11.8 Bacterological Analitical Manual. 1984. 6a. Ed. Capítulo 25, pp. 25-26
+11.9 Cook M., Osol L. y Van Metek T. 1985. Formación Práctica de Regmington. 2a. Ed. UTEHA.
+11.10 CTFA Microbiology Committee. 1985. Determination of the Microbial Content of Cosmetic Products (M-1) Microbiological
+Methods Section of the CTFA Technical Guidelines.
+11.11 Deacon J.W. 1990 Introducción a la Micología Moderna, Ed. Limusa, S.A. de C.V., pp. 11-16.
+11.12 Difco. Manual. 1974. 9th. Ed. Difco Laboratories Detroit Michigan, U.S.A., pp. 501-508.
+11.13 Don J.J.J., Farmer III., Hickman F.W., Asbury M.A. and Steigerwalt A.G. 1977. Enterobacteriaceae. Center for Discase
+Control Atlants. G.A., p. 78.
+11.14 Dr. Bradshaw L.J. 1973. Microbiología de Laboratorio. Ed. El Manual Moderno, S.A. de C.V., pp. 228-229.
+11.15 Ewing W.H. and Martin W.J. 1980. Enterobacteriaceae Manual of clinical microbiology. Editors 2nd ed. American Society
+for Microbiology. Washington, D.C., USA, p. 207.
+11.16 Ewing W.H. and Martin W.J. 1973. Enterobacteriaceae Manual of clinical microbiology. Editors 2nd ed. American Society
+for Microbiology. Washington, D.C., USA, pp. 15-16.
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 22/23
+
+--- Page 23 ---
+11.17 Herrera T., y Ulloa M. 1990. El reino de los Hongos. Micología básica y aplicada. Universidad Nacional Autónoma de
+México, Fondo de Cultura Económica, pp. 19-23.
+11.18 IPN. Escuela Nacional de Ciencias Biológicas. 1983. Manual de Laboratorio de Microbiología Sanitaria 1ra. Ed. México,
+D.F., p. 166.
+11.19 Jay. J.M. 1978. Modern Food Microbiology. Second ed., pp. 321-347.
+11.20 Lachica R.V.C., Genigeorgis y Horeprich P.D. 1971. Methacromatic agar Difusion Method for detecting Staphylococcal
+cleasa activity. Appl. microbiol 21. USA, pp. 585-587.
+11.21 Lachica R.V.C., Weiss V.F. y Deibel R.H. 1969. Relationships among coagulase enterotoxin and heat stable
+deoxyribonucleasa. Production by Staphylococcus aureus. Appl. Microbiol 18. USA, pp. 126-127.
+11.22 Lennette E.H., Spaubling y Traunt J.P. 1980, Enterobacteriaceas Manual of clinical microbiology. Edition 2nd. American
+Society for Microbiology. Washington, D.C., USA, p. 207.
+11.23 MacFaddin J.F. 1980. Biochemical test for identification of Medical Bacteria. USA, pp. 220-226.
+11.24 MacFaddin J.F. 1976. Biochemical test for Identification of Medical Bacteria. The Williams & Wilkins Co. Baltimore, USA.
+11.25 Merck E. 1990. Manual de Medios de Cultivo. Darnotadt, Alemania, pp. 206-207.
+11.26 Ramírez. V.M.P. 1983. Correlación entre las pruebas de coagulasa y producción de enterotoxina de cepas de
+Staphylococcus aureus aisladas de productos cárnicos. Tesis Profesional ENCB, IPN, México, D.F., p. 84.
+11.27 Reyes. H.M.L. 1981. Determinación de la enterotoxigenicidad de cepas aisladas de quesos. Tesis profesional. ENCB,
+IPN, México, D.F., p. 64 y 346.
+11.28 Rodríguez. M.R. 1980. Determinación de la toxigenicidad de cepas de Staphylococcus aureus. Tesis Profesional ENCB,
+IPN, México, D.F., p. 78.
+11.29 Secretaría de Comercio y Fomento Industrial.1981. Norma-Z-013/02. Guía para la redacción, estructuración y
+presentación de las Normas Oficiales Mexicanas. México, D.F.
+12. Observancia de la norma
+La vigilancia en el cumplimiento de la presente norma corresponde a la Secretaría de Salud.
+13. Vigencia
+La presente Norma Oficial Mexicana entrará en vigor, con su carácter de obligatoria, a los treinta dias siguientes a partir de su
+publicación en el Diario Oficial de la Federación.
+Sufragio Efectivo. No Reelección.
+México, D.F., a 10 de mayo de 1995.- El Director General, José Meljem Moctezuma.- Rúbrica.
+2026/5/26 12:33 DOF - Diario Oficial de la Federación
+https://www.dof.gob.mx/nota_detalle.php?codigo=4882015&fecha=25/09/1995&print=true 23/23

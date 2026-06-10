@@ -1,0 +1,918 @@
+{
+  "chunkId": 9,
+  "document": {
+    "id": "RDC 530/2021",
+    "annex": "I",
+    "effectiveDate": "2021-08-11"
+  },
+  "rules": [
+    {
+      "ruleId": "BR-RDC530-82",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "82",
+        "pageInSource": 18,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Carbonato de sódio",
+        "inciNameEn": "Sodium carbonate",
+        "cas": "497-19-8"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "soap_bath",
+          "productTypePt": "Sabonetes e produtos para banho",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [
+        "Texto incompleto na extração PDF"
+      ],
+      "sourceText": "82 | Carbonato de sódio | Sabonetes e produtos para banho | Texto incompleto"
+    },
+    {
+      "ruleId": "BR-RDC530-83",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "83",
+        "pageInSource": 18,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Carbonato de potássio e potássio caustico (hidróxido de potássio)",
+        "inciNameEn": "Potassium carbonate and caustic potash (potassium hydroxide)",
+        "cas": "1310-58-3 (KOH); 584-08-7 (K2CO3)"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "soap",
+          "productTypePt": "Sabonetes",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Não usar em crianças menores de 3 anos"
+          ],
+          "labelWarnings": [
+            "Não ingerir",
+            "Para produtos de uso adulto: 'Não usar em crianças'",
+            "Para produtos destinados ao público infantil: 'Não usar em crianças menores de 3 anos'",
+            "Não usar em pele lesionada ou irritada"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "other",
+          "productTypePt": "Outros produtos",
+          "maxConcentration": "3,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Não usar em crianças menores de 3 anos"
+          ],
+          "labelWarnings": [
+            "Não ingerir",
+            "Para produtos de uso adulto: 'Não usar em crianças'",
+            "Para produtos destinados ao público infantil: 'Não usar em crianças menores de 3 anos'",
+            "Não usar em pele lesionada ou irritada"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "83 | Carbonato de potássio / potássio caustico | a) Sabonetes: 0,1% | b) Outros: 3,0% | Não usar em crianças <3 anos | Não ingerir | Advertências adulto/infantil"
+    },
+    {
+      "ruleId": "BR-RDC530-84",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "84",
+        "pageInSource": 18,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Cloreto, brometo e sacarinato de benzalcônio",
+        "inciNameEn": "Benzalkonium chloride, bromide and saccharinate",
+        "cas": "8001-54-5 (Cl)"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_treatment_rinse",
+          "productTypePt": "Produtos para tratamento dos cabelos com enxágue",
+          "maxConcentration": "3%",
+          "calculationBasis": "expresso como cloreto de benzalcônio",
+          "phLimit": null,
+          "otherRequirements": [
+            "No produto final as concentrações de cloreto, brometo e sacarinato de benzalcônio de cadeia alifática com números de átomos de carbono igual ou inferior a 14 não deve exceder 0,1% (calculado como cloreto de benzalcônio)"
+          ],
+          "labelWarnings": [
+            "Evitar contato com os olhos"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "other",
+          "productTypePt": "Outros produtos",
+          "maxConcentration": "0,1%",
+          "calculationBasis": "calculado como cloreto de benzalcônio",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Evitar contato com os olhos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "84 | Cloreto/brometo/sacarinato de benzalcônio | a) Tratamento capilar com enxágue: 3% (como BKC) | b) Outros: 0,1% (como BKC) | Cadeia C≤14 ≤0,1% no produto final | Evitar olhos"
+    },
+    {
+      "ruleId": "BR-RDC530-85",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "85",
+        "pageInSource": 18,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Nitrato de prata",
+        "inciNameEn": "Silver nitrate",
+        "cas": "7761-88-8"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "eyelash_eyebrow_dye",
+          "productTypePt": "Somente em produtos destinados a colorir os cílios e sobrancelhas",
+          "maxConcentration": "4%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém Nitrato de prata (Contains silver nitrate)",
+            "Enxaguar imediatamente em caso de contato com os olhos (Rinse immediately in case of eye contact)"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "85 | Nitrato de prata | Somente colorir cílios/sobrancelhas: 4% | Contém nitrato de prata, enxaguar olhos imediatamente"
+    },
+    {
+      "ruleId": "BR-RDC530-86",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "86",
+        "pageInSource": 18,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Cloreto de Metileno",
+        "inciNameEn": "Methylene chloride",
+        "cas": "75-09-2"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Todos os produtos",
+          "maxConcentration": "35% (quando se encontra misturado com outras substâncias a concentração total não deve ser superior a 35%). 0,2% como máximo conteúdo de impureza.",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "86 | Cloreto de Metileno | 35% (total mistura ≤35%), impureza ≤0,2%"
+    },
+    {
+      "ruleId": "BR-RDC530-87",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "87",
+        "pageInSource": 19,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Poliacrilamidas",
+        "inciNameEn": "Polyacrylamides",
+        "cas": "9003-05-8"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "leave_on_body",
+          "productTypePt": "Produtos para o cuidado do corpo que não se enxáguem",
+          "maxConcentration": null,
+          "calculationBasis": "Conteúdo máximo de acrilamida residual: 0,1 mg/kg",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "other",
+          "productTypePt": "Outros produtos",
+          "maxConcentration": null,
+          "calculationBasis": "Conteúdo máximo de acrilamida residual: 0,5 mg/kg",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "87 | Poliacrilamidas | a) Sem enxágue corporal: acrilamida residual ≤0,1 mg/kg | b) Outros: acrilamida residual ≤0,5 mg/kg"
+    },
+    {
+      "ruleId": "BR-RDC530-89",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "89",
+        "pageInSource": 19,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "6-metil-coumarina",
+        "inciNameEn": "6-Methylcoumarin",
+        "cas": "92-48-8"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "oral_hygiene",
+          "productTypePt": "Produtos de higiene bucal",
+          "maxConcentration": "0,003%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "89 | 6-metil-coumarina | Higiene bucal: 0,003%"
+    },
+    {
+      "ruleId": "BR-RDC530-90",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "90",
+        "pageInSource": 19,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Almizcle xileno (CAS 81-15-2)",
+        "inciNameEn": "Musk xylene (CAS 81-15-2)",
+        "cas": "81-15-2"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all_except_oral",
+          "productTypePt": "Todos os produtos, exceto os produtos para higiene bucal",
+          "maxConcentration": "1% em fragrâncias finas / 0,4% em colônias / 0,03% em outros produtos",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": [
+            "oral_hygiene"
+          ]
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "90 | Almizcle xileno | Todos exceto higiene bucal: 1% fragrâncias / 0,4% colônias / 0,03% outros"
+    },
+    {
+      "ruleId": "BR-RDC530-91",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "91",
+        "pageInSource": 19,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Almizcle cetona (CAS 81-14-1)",
+        "inciNameEn": "Musk ketone (CAS 81-14-1)",
+        "cas": "81-14-1"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all_except_oral",
+          "productTypePt": "Todos os produtos exceto os produtos para higiene bucal",
+          "maxConcentration": "1,4% em fragrâncias finas / 0,56% em colônias / 0,042% em outros produtos",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": [
+            "oral_hygiene"
+          ]
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "91 | Almizcle cetona | Todos exceto higiene bucal: 1,4% fragrâncias / 0,56% colônias / 0,042% outros"
+    },
+    {
+      "ruleId": "BR-RDC530-92",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "92",
+        "pageInSource": 19,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Glioxal (CAS 107-22-2)",
+        "inciNameEn": "Glyoxal (CAS 107-22-2)",
+        "cas": "107-22-2"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Todos os produtos",
+          "maxConcentration": "100 mg/kg",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "92 | Glioxal | Todos os produtos: 100 mg/kg"
+    },
+    {
+      "ruleId": "BR-RDC530-93",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "93",
+        "pageInSource": 19,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Sulfitos e bissulfitos inorgânicos",
+        "inciNameEn": "Inorganic sulfites and bisulfites",
+        "cas": "NA"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye_oxidation",
+          "productTypePt": "Corantes capilares oxidantes",
+          "maxConcentration": "0,67%",
+          "calculationBasis": "expressos em SO2 livre",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "hair_straightening",
+          "productTypePt": "Produtos para alisamento do cabelo",
+          "maxConcentration": "6,7%",
+          "calculationBasis": "expressos em SO2 livre",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "self_tanner_face",
+          "productTypePt": "Produtos autobronzeadores para o rosto",
+          "maxConcentration": "0,45%",
+          "calculationBasis": "expressos em SO2 livre",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "self_tanner_other",
+          "productTypePt": "Outros produtos autobronzeadores",
+          "maxConcentration": "0,40%",
+          "calculationBasis": "expressos em SO2 livre",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "93 | Sulfitos/bissulfitos inorgânicos | a) Corantes oxidantes: 0,67% SO2 | b) Alisamento: 6,7% SO2 | c) Autobronzeador rosto: 0,45% SO2 | d) Outros autobronzeadores: 0,40% SO2"
+    },
+    {
+      "ruleId": "BR-RDC530-94",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "94",
+        "pageInSource": 19,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Triclocarban (CAS 101-20-2)",
+        "inciNameEn": "Triclocarban (CAS 101-20-2)",
+        "cas": "101-20-2"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "rinse_off",
+          "productTypePt": "Produtos destinados a serem enxaguados",
+          "maxConcentration": "1,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Critérios de pureza: 3,3',4,4'-Tetracloroazobenzeno menor ou igual a 1ppm",
+            "3,3',4,4'-Tetracloroazoxibenzeno menor ou igual a 1ppm"
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "94 | Triclocarban | Produtos enxaguados: 1,5% | Pureza: tetracloroazobenzeno ≤1ppm, tetracloroazoxibenzeno ≤1ppm"
+    },
+    {
+      "ruleId": "BR-RDC530-95",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "95",
+        "pageInSource": 19,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Tolueno (CAS 108-88-3)",
+        "inciNameEn": "Toluene (CAS 108-88-3)",
+        "cas": "108-88-3"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "nail",
+          "productTypePt": "Produtos para as unhas",
+          "maxConcentration": "25%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Manter fora do alcance das crianças",
+            "Usar somente em adultos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "95 | Tolueno | Produtos para unhas: 25% | Manter fora alcance, só adultos"
+    },
+    {
+      "ruleId": "BR-RDC530-96",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "96",
+        "pageInSource": 19,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "3-Óxido de 2,4-diaminopirimidina (CAS 74638-76-9)",
+        "inciNameEn": "3-Oxide of 2,4-diaminopyrimidine (CAS 74638-76-9)",
+        "cas": "74638-76-9"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_treatment",
+          "productTypePt": "Preparações para tratamentos capilares",
+          "maxConcentration": "1,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "96 | 3-Óxido de 2,4-diaminopirimidina | Tratamentos capilares: 1,5%"
+    },
+    {
+      "ruleId": "BR-RDC530-97",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "97",
+        "pageInSource": 19,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "1,1,2,3,3,6-Hexametilindan-5-il-metil cetona (CAS 15323-35-0)",
+        "inciNameEn": "1,1,2,3,3,6-Hexamethylindan-5-yl methyl ketone (CAS 15323-35-0)",
+        "cas": "15323-35-0"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "leave_on",
+          "productTypePt": "Produtos sem enxague",
+          "maxConcentration": "2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "rinse_off",
+          "productTypePt": "Produtos com enxague",
+          "maxConcentration": "2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "97 | Hexametilindan-5-il-metil cetona | a) Sem enxague: 2% | b) Com enxague: 2%"
+    },
+    {
+      "ruleId": "BR-RDC530-98",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "98",
+        "pageInSource": 19,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Óleo e extrato da fruta de Cuminum cyminum (CAS 84775-51-9)",
+        "inciNameEn": "Oil and extract of Cuminum cyminum fruit (CAS 84775-51-9)",
+        "cas": "84775-51-9"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "leave_on",
+          "productTypePt": "Produtos sem enxague",
+          "maxConcentration": "0,4% de óleo de cominho",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "rinse_off",
+          "productTypePt": "Produtos com enxágue",
+          "maxConcentration": "0,4% de óleo de cominho",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "98 | Óleo/extrato Cuminum cyminum | a) Sem enxague: 0,4% | b) Com enxágue: 0,4%"
+    },
+    {
+      "ruleId": "BR-RDC530-99",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "99",
+        "pageInSource": 19,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "(Z)-1-(2,6,6-Trimetil-2-ciclohexen-1-il)-2-buten-1-ona (CAS 23726-94-5)",
+        "inciNameEn": "(Z)-1-(2,6,6-Trimethyl-2-cyclohexen-1-yl)-2-buten-1-one (CAS 23726-94-5)",
+        "cas": "23726-94-5"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "oral_hygiene",
+          "productTypePt": "Produtos de higiene bucal",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "other",
+          "productTypePt": "Outros produtos",
+          "maxConcentration": "0,02%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "A soma dessas substâncias utilizadas em combinação não deve exceder os limites constantes da coluna d"
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "99 | (Z)-1-(2,6,6-Trimetil-2-ciclohexen-1-il)-2-buten-1-ona | Higiene bucal: permitido | Outros: 0,02% | Soma combinação ≤ limites"
+    },
+    {
+      "ruleId": "BR-RDC530-100",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "100",
+        "pageInSource": 19,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "p-Menta-1,8-dien-7-al (CAS 2111-75-3)",
+        "inciNameEn": "p-Mentha-1,8-dien-7-al (CAS 2111-75-3)",
+        "cas": "2111-75-3"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "oral_hygiene",
+          "productTypePt": "Produtos de higiene bucal",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "other",
+          "productTypePt": "Outros produtos",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "100 | p-Menta-1,8-dien-7-al | Higiene bucal: permitido | Outros: 0,1%"
+    },
+    {
+      "ruleId": "BR-RDC530-101",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "101",
+        "pageInSource": 20,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "1-(5,6,7,8-Tetrahidro-3,5,5,6,8,8-hexametil-2-naftil)etan-1-ona (CAS 21145-77-7 e 1506-02-1)",
+        "inciNameEn": "1-(5,6,7,8-Tetrahydro-3,5,5,6,8,8-hexamethyl-2-naphthyl)ethan-1-one (CAS 21145-77-7 and 1506-02-1)",
+        "cas": "21145-77-7; 1506-02-1"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "leave_on",
+          "productTypePt": "Produtos sem enxágue",
+          "maxConcentration": "0,1% (exceto hidroalcoólicos: 1%; fragrâncias finas: 2,5%; cremes perfumados: 0,5%)",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "rinse_off",
+          "productTypePt": "Produtos com enxágue",
+          "maxConcentration": "0,2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "101 | Hexametil-2-naftil etan-1-ona | Todos exceto higiene bucal | a) Sem enxágue: 0,1% (hidroalcoólicos 1%, fragrâncias 2,5%, cremes 0,5%) | b) Com enxágue: 0,2%"
+    },
+    {
+      "ruleId": "BR-RDC530-102",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "102",
+        "pageInSource": 20,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Dietilenoglicol (DEG) (CAS 111-46-6)",
+        "inciNameEn": "Diethylene glycol (DEG) (CAS 111-46-6)",
+        "cas": "111-46-6"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Como impureza (traços) em outros ingredientes cosméticos",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "102 | DEG | Como impureza em ingredientes cosméticos: 0,1%"
+    },
+    {
+      "ruleId": "BR-RDC530-103",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "103",
+        "pageInSource": 20,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Éter monobutílico de dietilenoglicol (DEGBE) (CAS 112-34-5)",
+        "inciNameEn": "Butyldiglycol (DEGBE) (CAS 112-34-5)",
+        "cas": "112-34-5"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye_solvent",
+          "productTypePt": "Solvente em tinturas capilares",
+          "maxConcentration": "9%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Não utilizar em sistemas pulverizáveis (aerossóis e sprays)"
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": [
+            "spray_systems",
+            "aerosols"
+          ]
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "103 | DEGBE | Solvente tinturas capilares: 9% | Proibido em pulverizáveis"
+    },
+    {
+      "ruleId": "BR-RDC530-104",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "104",
+        "pageInSource": 20,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Éter monobutílico de etilenoglicol (EGBE) (CAS 111-76-2)",
+        "inciNameEn": "2-Butoxyethanol (EGBE) (CAS 111-76-2)",
+        "cas": "111-76-2"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye_oxidation",
+          "productTypePt": "Solvente em produtos de coloração capilar oxidante",
+          "maxConcentration": "4%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Não utilizar em sistemas pulverizáveis (aerossóis e sprays)"
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": [
+            "spray_systems",
+            "aerosols"
+          ]
+        },
+        {
+          "productType": "hair_dye_non_oxidation",
+          "productTypePt": "Solvente em produtos de coloração capilar não-oxidante",
+          "maxConcentration": "2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Não utilizar em sistemas pulverizáveis (aerossóis e sprays)"
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": [
+            "spray_systems",
+            "aerosols"
+          ]
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "104 | EGBE | a) Coloração oxidante: 4% | b) Coloração não-oxidante: 2% | Proibido em pulverizáveis"
+    },
+    {
+      "ruleId": "BR-RDC530-105",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "105",
+        "pageInSource": 20,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "1-(4-clorofenoxi)-1-(1-Imidazolil)-3,3-dimetil-2-butanona (CLIMBAZOLE) (CAS 38083-17-9)",
+        "inciNameEn": "Climbazole (CAS 38083-17-9)",
+        "cas": "38083-17-9"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "shampoo_anti_dandruff",
+          "productTypePt": "Agente anticaspa em xampus com enxágue",
+          "maxConcentration": "2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "105 | Climbazole | Anti-caspa em xampus com enxágue: 2%"
+    }
+  ]
+}

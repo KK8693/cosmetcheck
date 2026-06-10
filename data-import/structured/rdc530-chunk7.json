@@ -1,0 +1,255 @@
+{
+  "chunkId": 7,
+  "document": {
+    "id": "RDC 530/2021",
+    "annex": "I",
+    "effectiveDate": "2021-08-11"
+  },
+  "rules": [
+    {
+      "ruleId": "BR-RDC530-73",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "73",
+        "pageInSource": 14,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Dihidrofluoreto de N,N',N'-tris(polioxietileno)-N-hexadecil propilenodiamina",
+        "inciNameEn": "Dihydrofluoride of N,N',N'-tris(polyoxyethylene)-N-hexadecyl propylenediamine",
+        "cas": "NA"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "toothpaste",
+          "productTypePt": "Dentifrício",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém dihidrofluoreto de N,N',N'-tris(polioxietileno)-N-hexadecil propilenodiamina",
+            "Para cremes dentais contendo de 0,1%-0,15% de flúr, exceto se já constar que é contra-indicado para crianças, deve constar obrigatoriamente: 'Crianças até 6 anos: Use uma quantidade do tamanho de uma ervilha, com supervisão de um adulto durante a escovação para minimizar a deglutição. Se estiver ingerindo flúr proveniente de outras fontes, consulte seu médico ou dentista.'"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "mouthwash",
+          "productTypePt": "Enxaguatório bucal",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém dihidrofluoreto de N,N',N'-tris(polioxietileno)-N-hexadecil propilenodiamina",
+            "Manter fora do alcance das crianças",
+            "Não usar em crianças menores de 6 anos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "73 | Dihidrofluoreto de N,N',N'-tris(polioxietileno)-N-hexadecil propilenodiamina | 0,15% F (total ≤0,15%) | Advertências padrão flúr"
+    },
+    {
+      "ruleId": "BR-RDC530-74",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "74",
+        "pageInSource": 15,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Hidrofluoridrato de nicometanol",
+        "inciNameEn": "Nicometamide hydrofluoride",
+        "cas": "NA"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "toothpaste",
+          "productTypePt": "Dentifrício",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém hidrofluoridrato de nicometanol",
+            "Para cremes dentais contendo de 0,1%-0,15% de flúr, exceto se já constar que é contra-indicado para crianças, deve constar obrigatoriamente: 'Crianças até 6 anos: Use uma quantidade do tamanho de uma ervilha, com supervisão de um adulto durante a escovação para minimizar a deglutição. Se estiver ingerindo flúr proveniente de outras fontes, consulte seu médico ou dentista.'"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "mouthwash",
+          "productTypePt": "Enxaguatório bucal",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém hidrofluoridrato de nicometanol",
+            "Manter fora do alcance das crianças",
+            "Não usar em crianças menores de 6 anos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "74 | Hidrofluoridrato de nicometanol | 0,15% F (total ≤0,15%) | Advertências padrão flúr"
+    },
+    {
+      "ruleId": "BR-RDC530-75",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "75",
+        "pageInSource": 15,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Fluoreto de octadecenil amônio",
+        "inciNameEn": "Oleylamine fluoride / Octadecenylammonium fluoride",
+        "cas": "NA"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "toothpaste",
+          "productTypePt": "Dentifrício",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém fluoreto de octadecenil amônio",
+            "Para cremes dentais contendo de 0,1%-0,15% de flúr, exceto se já constar que é contra-indicado para crianças, deve constar obrigatoriamente: 'Crianças até 6 anos: Use uma quantidade do tamanho de uma ervilha, com supervisão de um adulto durante a escovação para minimizar a deglutição. Se estiver ingerindo flúr proveniente de outras fontes, consulte seu médico ou dentista.'"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "mouthwash",
+          "productTypePt": "Enxaguatório bucal",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém fluoreto de octadecenil amônio",
+            "Manter fora do alcance das crianças",
+            "Não usar em crianças menores de 6 anos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "75 | Fluoreto de octadecenil amônio | 0,15% F (total ≤0,15%) | Advertências padrão flúr"
+    },
+    {
+      "ruleId": "BR-RDC530-76",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "76",
+        "pageInSource": 15,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Fluorsilicato de sódio",
+        "inciNameEn": "Sodium fluorosilicate",
+        "cas": "16893-85-9"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "toothpaste",
+          "productTypePt": "Dentifrício",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém fluorsilicato de sódio",
+            "Para cremes dentais contendo de 0,1%-0,15% de flúr, exceto se já constar que é contra-indicado para crianças, deve constar obrigatoriamente: 'Crianças até 6 anos: Use uma quantidade do tamanho de uma ervilha, com supervisão de um adulto durante a escovação para minimizar a deglutição. Se estiver ingerindo flúr proveniente de outras fontes, consulte seu médico ou dentista.'"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "mouthwash",
+          "productTypePt": "Enxaguatório bucal",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém fluorsilicato de sódio",
+            "Manter fora do alcance das crianças",
+            "Não usar em crianças menores de 6 anos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "76 | Fluorsilicato de sódio | 0,15% F (total ≤0,15%) | Advertências padrão flúr"
+    },
+    {
+      "ruleId": "BR-RDC530-77",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "77",
+        "pageInSource": 16,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Fluorsilicato de amônio",
+        "inciNameEn": "Ammonium fluorosilicate",
+        "cas": "16919-19-0"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "toothpaste",
+          "productTypePt": "Dentifrício",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém fluorsilicato de amônio",
+            "Para cremes dentais contendo de 0,1%-0,15% de flúr, exceto se já constar que é contra-indicado para crianças, deve constar obrigatoriamente: 'Crianças até 6 anos: Use uma quantidade do tamanho de uma ervilha, com supervisão de um adulto durante a escovação para minimizar a deglutição. Se estiver ingerindo flúr proveniente de outras fontes, consulte seu médico ou dentista.'"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "mouthwash",
+          "productTypePt": "Enxaguatório bucal",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém fluorsilicato de amônio",
+            "Manter fora do alcance das crianças",
+            "Não usar em crianças menores de 6 anos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "77 | Fluorsilicato de amônio | 0,15% F (total ≤0,15%) | Advertências padrão flúr"
+    }
+  ]
+}

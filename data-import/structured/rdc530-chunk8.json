@@ -1,0 +1,220 @@
+{
+  "chunkId": 8,
+  "document": {
+    "id": "RDC 530/2021",
+    "annex": "I",
+    "effectiveDate": "2021-08-11"
+  },
+  "rules": [
+    {
+      "ruleId": "BR-RDC530-78",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "78",
+        "pageInSource": 16,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Fluorsilicato de potássio",
+        "inciNameEn": "Potassium fluorosilicate",
+        "cas": "16871-90-2"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "toothpaste",
+          "productTypePt": "Dentifrício",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém fluorsilicato de potássio",
+            "Para cremes dentais contendo de 0,1%-0,15% de flúr, exceto se já constar que é contra-indicado para crianças, deve constar obrigatoriamente: 'Crianças até 6 anos: Use uma quantidade do tamanho de uma ervilha, com supervisão de um adulto durante a escovação para minimizar a deglutição. Se estiver ingerindo flúr proveniente de outras fontes, consulte seu médico ou dentista.'"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "mouthwash",
+          "productTypePt": "Enxaguatório bucal",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém fluorsilicato de potássio",
+            "Manter fora do alcance das crianças",
+            "Não usar em crianças menores de 6 anos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "78 | Fluorsilicato de potássio | 0,15% F (total ≤0,15%) | Advertências padrão flúr"
+    },
+    {
+      "ruleId": "BR-RDC530-79",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "79",
+        "pageInSource": 17,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Fluorsilicato de magnésio",
+        "inciNameEn": "Magnesium fluorosilicate",
+        "cas": "16949-65-8"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "toothpaste",
+          "productTypePt": "Dentifrício",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém fluorsilicato de magnésio",
+            "Para cremes dentais contendo de 0,1%-0,15% de flúr, exceto se já constar que é contra-indicado para crianças, deve constar obrigatoriamente: 'Crianças até 6 anos: Use uma quantidade do tamanho de uma ervilha, com supervisão de um adulto durante a escovação para minimizar a deglutição. Se estiver ingerindo flúr proveniente de outras fontes, consulte seu médico ou dentista.'"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "mouthwash",
+          "productTypePt": "Enxaguatório bucal",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém fluorsilicato de magnésio",
+            "Manter fora do alcance das crianças",
+            "Não usar em crianças menores de 6 anos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "79 | Fluorsilicato de magnésio | 0,15% F (total ≤0,15%) | Advertências padrão flúr"
+    },
+    {
+      "ruleId": "BR-RDC530-80",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "80",
+        "pageInSource": 17,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Hidróxido de Lítio",
+        "inciNameEn": "Lithium hydroxide",
+        "cas": "1310-65-2"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_straightener",
+          "productTypePt": "Alisante para cabelos",
+          "maxConcentration": "2% (uso geral) / 4,5% (uso profissional) em massa",
+          "calculationBasis": "calculada em peso de hidróxido de sódio. No caso de misturas, a soma não deve exceder a concentração máxima autorizada no produto final",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém álcali",
+            "Evitar contato com os olhos",
+            "Pode causar cegueira",
+            "Manter fora do alcance das crianças"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "depilatory_ph_adjust",
+          "productTypePt": "Para ajuste de pH em depilatórios",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": "Até pH 12,7",
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém álcali",
+            "Manter fora do alcance das crianças",
+            "Evitar contato com os olhos"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "other_ph_adjust",
+          "productTypePt": "Para ajuste de pH em outros produtos (apenas para produtos destinados a serem enxaguados)",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": "Até pH 11",
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém álcali",
+            "Manter fora do alcance das crianças",
+            "Evitar contato com os olhos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "80 | Hidróxido de Lítio | a) Alisante: 2% (geral) / 4,5% (profissional), como NaOH | b) Depilatórios pH: ≤12,7 | c) Outros pH (enxágue): ≤11 | Advertências: álcali, olhos, cegueira, fora alcance"
+    },
+    {
+      "ruleId": "BR-RDC530-81",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "81",
+        "pageInSource": 18,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Hidróxido de Cálcio",
+        "inciNameEn": "Calcium hydroxide",
+        "cas": "1305-62-0"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_straightener",
+          "productTypePt": "Alisante para cabelos contendo dois componentes: hidróxido de cálcio e um sal de guanidina",
+          "maxConcentration": "7% em peso como hidróxido de cálcio",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém álcali",
+            "Evitar contato com os olhos",
+            "Pode causar cegueira",
+            "Manter fora do alcance das crianças"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "depilatory_ph_adjust",
+          "productTypePt": "Para ajuste de pH em depilatórios",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": "Até pH 12,7",
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "81 | Hidróxido de Cálcio | a) Alisante (com sal de guanidina): 7% como Ca(OH)2 | b) Depilatórios pH: ≤12,7 | Advertências: álcali, olhos, cegueira, fora alcance"
+    }
+  ]
+}

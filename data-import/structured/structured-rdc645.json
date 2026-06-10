@@ -1,0 +1,198 @@
+{
+  "version": "1.0",
+  "description": "RDC 645/2022 精确规则数据 - 从葡语原文提取",
+  "document": {
+    "id": "RDC 645/2022",
+    "titlePt": "Dispõe sobre as condições de uso do acetato de chumbo, formaldeído, paraformaldeído e pirogalol",
+    "titleZh": "规定醋酸铅、甲醛、多聚甲醛和焦性没食子酸的使用条件",
+    "effectiveDate": "2022-05-02",
+    "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1",
+    "pagesInSource": 2
+  },
+  "rules": [
+    {
+      "ruleId": "BR-RDC645-001",
+      "status": "active",
+      "document": {
+        "id": "RDC 645/2022",
+        "annex": "Anexo",
+        "item": "1",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Acetato de chumbo",
+        "inciNameEn": "LEAD ACETATE",
+        "cas": "301-04-2"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintura Capilar",
+          "maxConcentration": "0.6%",
+          "calculationBasis": "calculados como chumbo (as lead)",
+          "phLimit": null,
+          "otherRequirements": [
+            "Pureza: acetato de chumbo 99% (Purity: lead acetate 99%)",
+            "Matéria insolúvel em água: não mais que 0.02% (Water insoluble matter: no more than 0.02%)",
+            "pH (solução 30% peso/volume a 25ºC): de 4,7 a 5,8",
+            "Concentração máxima de impurezas:",
+            "  I) Arsênico (expresso em As): 3 ppm",
+            "  II) Mercúrio (expresso em Hg): 1 ppm"
+          ],
+          "labelWarnings": [
+            "Manter fora do alcance de crianças (Keep out of reach of children)",
+            "Evitar contato com os olhos (Avoid contact with eyes)",
+            "Não utilizar durante a gravidez (Do not use during pregnancy)",
+            "Lavar bem as mãos após o uso (Wash hands thoroughly after use)",
+            "Contém acetato de chumbo (Contains lead acetate)",
+            "Não usar para tingir os cílios, sobrancelhas e bigodes (Do not use to dye eyelashes, eyebrows, or beard)",
+            "Em caso de irritação suspender o uso e procurar orientação médica (In case of irritation, discontinue use and seek medical advice)",
+            "Não usar caso o couro cabeludo esteja irritado ou ferido (Do not use if scalp is irritated or injured)",
+            "Leia atentamente e siga corretamente as instruções de uso (Read and follow the instructions carefully)",
+            "É recomendável o uso de luvas durante a aplicação (Use of gloves during application is recommended)"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2022-05-02",
+      "notes": [
+        "A coluna com as nomenclaturas internacionais de ingredientes cosméticos (INCI) das substâncias, disposta no Anexo, não contempla todas as nomenclaturas INCI existentes, podendo existir outras que não constam nesta Resolução.",
+        "O valor de casas decimais não expressas para concentrações e pH presentes nesta Resolução é 'zero'."
+      ],
+      "sourceText": "Acetato de chumbo | LEAD ACETATE | Tintura Capilar | 0,6%, calculados como chumbo | a) Pureza: acetato de chumbo 99%. b) Matéria insolúvel em água: não mais que 0,02%. c) pH (solução 30% peso/volume a 25ºC): de 4,7 a 5,8 d) Concentração máxima de impurezas: I) Arsênico (expresso em As): 3 ppm. II) Mercúrio (expresso em Hg): 1 ppm."
+    },
+    {
+      "ruleId": "BR-RDC645-002",
+      "status": "active",
+      "document": {
+        "id": "RDC 645/2022",
+        "annex": "Anexo",
+        "item": "2",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Formaldeído e paraformaldeído",
+        "inciNameEn": "FORMALDEHYDE and PARAFORMALDEHYDE",
+        "cas": "50-00-0 (formaldehyde); 30525-89-4 (paraformaldehyde)"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "oral_hygiene",
+          "productTypePt": "Produtos de higiene oral",
+          "maxConcentration": "0.1%",
+          "calculationBasis": "expresso como formaldeído livre (as free formaldehyde)",
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em sistemas pulverizáveis (como aerossóis e sprays)"
+          ],
+          "labelWarnings": [
+            "Contém formaldeído (somente para concentrações superiores a 0,05% no produto final) - Contains formaldehyde (only for concentrations above 0.05% in the final product)"
+          ],
+          "prohibitedIn": [
+            "spray_systems",
+            "aerosols"
+          ]
+        },
+        {
+          "productType": "other_non_oral",
+          "productTypePt": "Outros produtos não destinados à higiene oral",
+          "maxConcentration": "0.2%",
+          "calculationBasis": "expresso como formaldeído livre (as free formaldehyde)",
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em sistemas pulverizáveis (como aerossóis e sprays)"
+          ],
+          "labelWarnings": [
+            "Contém formaldeído (somente para concentrações superiores a 0,05% no produto final)"
+          ],
+          "prohibitedIn": [
+            "spray_systems",
+            "aerosols"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-05-02",
+      "notes": [],
+      "sourceText": "Formaldeído e paraformaldeído | FORMALDEHYDE e PARAFORMALDEHYDE | Conservante | 0,1% (em produtos de higiene oral), 0,2% (outros produtos não destinados à higiene oral) (expresso como formaldeído livre) | Proibido em sistemas pulverizáveis (como aerossóis e sprays). | Contém formaldeído (somente para concentrações superiores a 0,05% no produto final)."
+    },
+    {
+      "ruleId": "BR-RDC645-003",
+      "status": "active",
+      "document": {
+        "id": "RDC 645/2022",
+        "annex": "Anexo",
+        "item": "3",
+        "pageInSource": 2,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Formaldeído",
+        "inciNameEn": "FORMALDEHYDE",
+        "cas": "50-00-0"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "nail_hardening",
+          "productTypePt": "Produtos para endurecer as unhas",
+          "maxConcentration": "5%",
+          "calculationBasis": "calculados como formaldeído (as formaldehyde)",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Proteger as cutículas com óleos (Protect cuticles with oils)",
+            "Contém formaldeído (somente para concentrações superiores a 0,05% no produto final)"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2022-05-02",
+      "notes": [],
+      "sourceText": "Formaldeído | FORMALDEHYDE | Produtos para endurecer as unhas | 5% calculados como formaldeído | 1) Proteger as cutículas com óleos. 2) Contém formaldeído (somente para concentrações superiores a 0,05% no produto final)."
+    },
+    {
+      "ruleId": "BR-RDC645-004",
+      "status": "active",
+      "document": {
+        "id": "RDC 645/2022",
+        "annex": "Anexo",
+        "item": "4",
+        "pageInSource": 2,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Pirogalol",
+        "inciNameEn": "PYROGALLOL",
+        "cas": "87-66-1"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_straightening_dyeing",
+          "productTypePt": "Produtos para alisar e tingir os cabelos",
+          "maxConcentration": "3%",
+          "calculationBasis": null,
+          "phLimit": "até pH 3,5 (up to pH 3.5)",
+          "otherRequirements": [],
+          "labelWarnings": [
+            "No MODO DE USO deve constar, logo após o tempo de pausa do produto nos cabelos, a etapa: -Enxágue com água em abundância até a remoção completa do produto. (Usage instructions must include, immediately after the product's pause time on hair: Rinse with plenty of water until complete removal.)",
+            "Este produto pode causar irritação ou alergia (This product may cause irritation or allergy)",
+            "Contém Pirogalol (Contains Pyrogallol)",
+            "Não utilizar nos cílios, sobrancelhas e buço (Do not use on eyelashes, eyebrows, and upper lip)",
+            "Manter fora do alcance das crianças (Keep out of reach of children)",
+            "Usar luvas adequadas (Use suitable gloves)",
+            "Alisa e tinge os cabelos (Straightens and dyes hair)"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2022-05-02",
+      "notes": [],
+      "sourceText": "Pirogalol | PYROGALLOL | Produtos para alisar e tingir os cabelos. | 3%, até pH 3,5 | No MODO DE USO deve constar, logo após o tempo de pausa do produto nos cabelos, a etapa: -Enxágue com água em abundância até a remoção completa do produto. Outras advertências: 1) Este produto pode causar irritação ou alergia. 2) Contém Pirogalol. 3) Não utilizar nos cílios, sobrancelhas e buço. 4) Manter fora do alcance das crianças. 5) Usar luvas adequadas. 6) Alisa e tinge os cabelos."
+    }
+  ]
+}

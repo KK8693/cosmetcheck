@@ -1,0 +1,515 @@
+{
+  "chunkId": 4,
+  "document": {
+    "id": "RDC 530/2021",
+    "annex": "I",
+    "effectiveDate": "2021-08-11"
+  },
+  "rules": [
+    {
+      "ruleId": "BR-RDC530-41",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "41",
+        "pageInSource": 7,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Trialquilaminas, trialcanolaminas e seus sais",
+        "inciNameEn": "Trialkylamines, trialkanolamines and their salts",
+        "cas": "NA"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "leave_on",
+          "productTypePt": "Produtos sem enxágue",
+          "maxConcentration": "2,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Pureza mínima: 99%",
+            "Teor máximo de aminas secundárias em matérias-primas: 0,5%",
+            "Teor máximo de nitrosaminas: 50 mg/kg",
+            "Embalar/conservar em recipientes livres de nitritos"
+          ],
+          "labelWarnings": [
+            "Não usar com sistemas nitrosantes"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "other",
+          "productTypePt": "Outros produtos",
+          "maxConcentration": "2,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Pureza mínima: 99%",
+            "Teor máximo de aminas secundárias em matérias-primas: 0,5%",
+            "Teor máximo de nitrosaminas: 50 mg/kg",
+            "Embalar/conservar em recipientes livres de nitritos"
+          ],
+          "labelWarnings": [
+            "Não usar com sistemas nitrosantes"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "41 | Trialquilaminas/trialcanolaminas | a) Sem enxágue: 2,5% | b) Outros: 2,5% | Pureza ≥99%, aminas sec ≤0,5%, nitrosaminas ≤50mg/kg, sem nitritos | Não usar com nitrosantes"
+    },
+    {
+      "ruleId": "BR-RDC530-42",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "42",
+        "pageInSource": 8,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Hidróxido de estrôncio",
+        "inciNameEn": "Strontium hydroxide",
+        "cas": "18480-07-4"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "depilatory",
+          "productTypePt": "Para ajuste de pH em depilatórios",
+          "maxConcentration": "3,5%",
+          "calculationBasis": "calculado como estrôncio",
+          "phLimit": "Até pH 12,7",
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Manter fora do alcance das crianças",
+            "Evitar contato com os olhos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "42 | Hidróxido de estrôncio | Depilatórios pH: 3,5% como Sr, até pH 12,7 | Manter fora alcance, evitar olhos"
+    },
+    {
+      "ruleId": "BR-RDC530-43",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "43",
+        "pageInSource": 8,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Peróxido de estrôncio",
+        "inciNameEn": "Strontium peroxide",
+        "cas": "1314-18-7"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_treatment_professional",
+          "productTypePt": "Produtos de uso profissional para tratamento capilar com enxágue",
+          "maxConcentration": "4,5%",
+          "calculationBasis": "calculado como estrôncio no produto pronto para uso",
+          "phLimit": null,
+          "otherRequirements": [
+            "Todos os produtos devem atender as exigências relativas ao peróxido de hidrogênio"
+          ],
+          "labelWarnings": [
+            "Evitar contato com os olhos",
+            "Lavar imediatamente os olhos caso o produto entre em contato com os mesmos",
+            "Só para uso profissional",
+            "Usar luvas adequadas"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "43 | Peróxido de estrôncio | Profissional tratamento capilar com enxágue: 4,5% Sr pronto uso | Atender exigências H2O2 | Evitar olhos, luvas, só profissional"
+    },
+    {
+      "ruleId": "BR-RDC530-44",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "44",
+        "pageInSource": 8,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Enxofre",
+        "inciNameEn": "Sulfur",
+        "cas": "7704-34-9"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "anti_dandruff",
+          "productTypePt": "Produtos para combater a caspa",
+          "maxConcentration": "5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Para uso externo apenas (For external use only)",
+            "Em caso de irritação interromper o uso e consultar um médico (In case of irritation discontinue use and consult a doctor)",
+            "Aplicar apenas na área afetada (Apply only to affected area)"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "anti_acne",
+          "productTypePt": "Produtos para combater a acne",
+          "maxConcentration": "10%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Para uso externo apenas",
+            "Em caso de irritação interromper o uso e consultar um médico",
+            "Aplicar apenas na área afetada"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "44 | Enxofre | a) Anti-caspa: 5% | b) Anti-acne: 10% | Uso externo apenas, interromper em caso de irritação, aplicar área afetada"
+    },
+    {
+      "ruleId": "BR-RDC530-45",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "45",
+        "pageInSource": 8,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido undecilênico e seus sais de zinco, amidas, monoetanolamidas e sulfosuccinatos",
+        "inciNameEn": "Undecylenic acid and its zinc salts, amides, monoethanolamides and sulfosuccinates",
+        "cas": "112-38-9"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "anti_dandruff",
+          "productTypePt": "Produtos para combater a caspa",
+          "maxConcentration": "2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "45 | Ácido undecilênico e derivados | Anti-caspa: 2%"
+    },
+    {
+      "ruleId": "BR-RDC530-46",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "46",
+        "pageInSource": 8,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Cetoconazol",
+        "inciNameEn": "Ketoconazole",
+        "cas": "65277-42-1"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "anti_dandruff",
+          "productTypePt": "Produtos para combater a caspa",
+          "maxConcentration": "1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "46 | Cetoconazol | Anti-caspa: 1%"
+    },
+    {
+      "ruleId": "BR-RDC530-49",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "49",
+        "pageInSource": 8,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Piritionato de Zinco (ZINC PYRITHIONE) (CAS 13463-41-7)",
+        "inciNameEn": "Zinc pyrithione",
+        "cas": "13463-41-7"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_anti_dandruff_rinse",
+          "productTypePt": "Agente anticaspa em produtos para o cabelo que se enxáguem",
+          "maxConcentration": "1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "49 | Piritionato de Zinco | Anti-caspa cabelo com enxágue: 1%"
+    },
+    {
+      "ruleId": "BR-RDC530-51",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "51",
+        "pageInSource": 8,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido salicílico",
+        "inciNameEn": "Salicylic acid",
+        "cas": "69-72-7"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_rinse",
+          "productTypePt": "Produtos capilares que se enxágue",
+          "maxConcentration": "3%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Para produtos de uso adulto: 'Não usar em crianças'",
+            "Para produtos destinados ao público infantil: 'Não usar em crianças menores de 3 anos'"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "other",
+          "productTypePt": "Outros produtos",
+          "maxConcentration": "2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Não deve ser usado em produtos para crianças menores de 3 anos, exceto para shampoos (Should not be used in products for children under 3, except shampoos)"
+          ],
+          "labelWarnings": [
+            "Para produtos de uso adulto: 'Não usar em crianças'",
+            "Para produtos destinados ao público infantil: 'Não usar em crianças menores de 3 anos'"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "51 | Ácido salicílico | a) Capilares enxágue: 3% | b) Outros: 2% | Não usar em crianças <3 anos (exceto shampoos) | Advertências adulto/infantil"
+    },
+    {
+      "ruleId": "BR-RDC530-58",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "58",
+        "pageInSource": 8,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Metanol",
+        "inciNameEn": "Methanol",
+        "cas": "67-56-1"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "denaturant",
+          "productTypePt": "Desnaturante para etanol e isopropanol",
+          "maxConcentration": "5%",
+          "calculationBasis": "calculado como porcentagem de etanol e isopropanol",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "58 | Metanol | Desnaturante etanol/isopropanol: 5% como % de etanol/isopropanol"
+    },
+    {
+      "ruleId": "BR-RDC530-60",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "60",
+        "pageInSource": 8,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Monofluorfosfato de amônio",
+        "inciNameEn": "Ammonium monofluorophosphate",
+        "cas": "37809-19-1"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "toothpaste",
+          "productTypePt": "Dentifrício",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém monofluorfosfato de amônio",
+            "Para cremes dentais contendo de 0,1%-0,15% de flúr, exceto se já constar que é contra-indicado para crianças, deve constar obrigatoriamente: 'Crianças até 6 anos: Use uma quantidade do tamanho de uma ervilha, com supervisão de um adulto para minimizar a deglutição. Se estiver ingerindo flúr proveniente de outras fontes, consulte seu médico ou dentista.'"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "mouthwash",
+          "productTypePt": "Enxaguatório bucal",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém monofluorfosfato de amônio",
+            "Manter fora do alcance das crianças",
+            "Não usar em crianças menores de 6 anos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "60 | Monofluorfosfato de amônio | a) Dentifrício: 0,15% F (total ≤0,15%) | b) Enxaguatório: 0,15% F | Dentifrício: advertência crianças 6 anos | Enxaguatório: fora alcance, não usar <6 anos"
+    },
+    {
+      "ruleId": "BR-RDC530-61",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "61",
+        "pageInSource": 8,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Monofluorfosfato de cálcio",
+        "inciNameEn": "Calcium monofluorophosphate",
+        "cas": "7789-74-4"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "toothpaste",
+          "productTypePt": "Dentifrício",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém monofluorfosfato de cálcio",
+            "Para cremes dentais contendo de 0,1%-0,15% de flúr: 'Crianças até 6 anos: Use uma quantidade do tamanho de uma ervilha, com supervisão de um adulto durante a escovação para minimizar a deglutição. Se estiver ingerindo flúr proveniente de outras fontes, consulte seu médico ou dentista.'"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "mouthwash",
+          "productTypePt": "Enxaguatório bucal",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém monofluorfosfato de cálcio",
+            "Manter fora do alcance das crianças",
+            "Não usar em crianças menores de 6 anos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "61 | Monofluorfosfato de cálcio | a) Dentifrício: 0,15% F | b) Enxaguatório: 0,15% F | Advertências similares ao item 60"
+    },
+    {
+      "ruleId": "BR-RDC530-62",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "62",
+        "pageInSource": 9,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Monofluorfosfato de potássio",
+        "inciNameEn": "Potassium monofluorophosphate",
+        "cas": "14104-20-2"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "toothpaste",
+          "productTypePt": "Dentifrício",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém monofluorfosfato de potássio",
+            "Para cremes dentais contendo de 0,1%-0,15% de flúr: 'Crianças até 6 anos: Use uma quantidade do tamanho de uma ervilha, com supervisão de um adulto durante a escovação para minimizar a deglutição. Se estiver ingerindo flúr proveniente de outras fontes, consulte seu médico ou dentista.'"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "mouthwash",
+          "productTypePt": "Enxaguatório bucal",
+          "maxConcentration": "0,15% expresso como flúr",
+          "calculationBasis": "Em caso de mistura com outros compostos fluorados permitidos, a concentração máxima total de flúr não excederá 0,15%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém monofluorfosfato de potássio",
+            "Manter fora do alcance das crianças",
+            "Não usar em crianças menores de 6 anos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "62 | Monofluorfosfato de potássio | a) Dentifrício: 0,15% F | b) Enxaguatório: 0,15% F | Advertências similares"
+    }
+  ]
+}

@@ -1,0 +1,1168 @@
+规则库第一批：巴西 ANVISA 核心禁用成分（RDC 907/2024）
+{
+  "source": "ANVISA",
+  "documentId": "RDC 907/2024",
+  "version": "2024-12",
+  "description": "巴西化妆品基本法规 - 禁用成分清单",
+  "rules": [
+    {
+      "ruleId": "BR-BAN-001",
+      "category": "banned",
+      "target": "Hydroquinone",
+      "aliases": ["Hidroquinona", "1,4-Benzenediol", "HQ"],
+      "cas": "123-31-9",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "氢醌是巴西ANVISA明确禁用的美白成分，绝对禁用",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-002",
+      "category": "banned",
+      "target": "Mercury",
+      "aliases": ["Mercúrio", "Hydrargyrum", "Hg", "汞"],
+      "cas": "7439-97-6",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "汞及其化合物是巴西绝对禁用的重金属，违规将面临R$10,000+罚款",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-003",
+      "category": "banned",
+      "target": "Mercury compounds",
+      "aliases": ["Compostos de Mercúrio", "Mercuric", "Mercurous"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "所有汞化合物均禁用，包括氯化汞、氧化汞等",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-004",
+      "category": "banned",
+      "target": "Tretinoin",
+      "aliases": ["Tretinoína", "Retinoic Acid", "Ácido Retinoico", "Vitamin A Acid", "维A酸"],
+      "cas": "302-79-4",
+      "severity": "critical",
+      "condition": "药品级成分 - 化妆品禁用",
+      "message": "维A酸是巴西药品级成分，化妆品禁止使用，违者视为药品销售处罚",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-005",
+      "category": "banned",
+      "target": "Retinoic Acid",
+      "aliases": ["Ácido Retinoico", "All-trans-retinoic acid", "ATRA"],
+      "cas": "302-79-4",
+      "severity": "critical",
+      "condition": "药品级成分 - 化妆品禁用",
+      "message": "维A酸是药品级成分，需经ANVISA注册为药品后方可销售",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-006",
+      "category": "banned",
+      "target": "Arsenic",
+      "aliases": ["Arsênio", "As", "砷"],
+      "cas": "7440-38-2",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "砷及其化合物是绝对禁用成分，重金属超标将导致海关扣留",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-007",
+      "category": "banned",
+      "target": "Lead",
+      "aliases": ["Chumbo", "Pb", "铅"],
+      "cas": "7439-92-1",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "铅是绝对禁用成分，重金属检测是海关查验重点",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-008",
+      "category": "banned",
+      "target": "Cadmium",
+      "aliases": ["Cádmio", "Cd", "镉"],
+      "cas": "7440-43-9",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "镉是绝对禁用成分，重金属检测是海关查验重点",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-009",
+      "category": "banned",
+      "target": "Phenacetin",
+      "aliases": ["Fenacetina", "Acetophenetidin"],
+      "cas": "62-44-2",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "非那西汀是禁用成分，具有肾毒性",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-010",
+      "category": "banned",
+      "target": "Mequinol",
+      "aliases": ["4-Methoxyphenol", "4-Metoxifenol", "对苯二酚甲醚"],
+      "cas": "150-76-5",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "对苯二酚甲醚是禁用美白成分",
+"sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-011",
+      "category": "banned",
+      "target": "4-Methoxyphenol",
+      "aliases": ["4-MP", "Mequinol"],
+      "cas": "150-76-5",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "4-甲氧基苯酚是禁用成分",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-012",
+      "category": "banned",
+      "target": "Bithionol",
+      "aliases": ["Bitionol", "2,2'-Thiobis(4,6-dichlorophenol)"],
+      "cas": "97-18-7",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "硫双二氯酚是禁用防腐剂",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-013",
+      "category": "banned",
+      "target": "Hexachlorophene",
+      "aliases": ["Hexaclorofeno", "HCP", "六氯酚"],
+      "cas": "70-30-4",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "六氯酚是禁用抗菌成分，具有神经毒性",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-014",
+      "category": "banned",
+      "target": "Clorofene",
+      "aliases": ["Clorofeno", "2-Benzyl-4-chlorophenol"],
+      "cas": "95-32-9",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "氯苯酚是禁用成分",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-015",
+      "category": "banned",
+      "target": "Cloroxylenol",
+      "aliases": ["Cloroxilenol", "4-Chloro-3,5-xylenol", "PCMX"],
+      "cas": "88-04-0",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "氯二甲苯酚是禁用成分",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-016",
+      "category": "banned",
+      "target": "Chloramphenicol",
+      "aliases": ["Cloranfenicol", "氯霉素"],
+      "cas": "56-75-7",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "氯霉素是禁用抗生素成分",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-017",
+      "category": "banned",
+      "target": "Corticosteroids",
+      "aliases": ["Corticosteroides", "糖皮质激素", "可的松"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "糖皮质激素是禁用成分，长期使用会导致皮肤萎缩",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-018",
+      "category": "banned",
+      "target": "Hydrocortisone",
+      "aliases": ["Hidrocortisona", "氢化可的松"],
+      "cas": "50-23-7",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "氢化可的松是禁用激素成分",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-019",
+      "category": "banned",
+      "target": "Betamethasone",
+      "aliases": ["Betametasona", "倍他米松"],
+      "cas": "378-44-9",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "倍他米松是禁用激素成分",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-BAN-020",
+      "category": "banned",
+      "target": "Thallium",
+      "aliases": ["Tálio", "Tl", "铊"],
+      "cas": "7440-28-0",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "铊是绝对禁用重金属",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    }
+  ]
+}
+规则库第二批：巴西限制使用成分（RDC 907/2024 配套法规）
+{
+  "source": "ANVISA",
+  "documentId": "RDC 907/2024 + RDC 529/2021 + RDC 530/2021",
+  "version": "2024-12",
+  "description": "巴西化妆品限制使用成分清单",
+  "rules": [
+    {
+      "ruleId": "BR-RES-001",
+"category": "restricted",
+      "target": "Alpha Arbutin",
+      "aliases": ["α-Arbutin", "α-熊果苷", "4-Hydroxyphenyl alpha-D-glucopyranoside"],
+      "cas": "4193-55-9",
+      "severity": "warning",
+      "condition": "面部产品 ≤2%, 身体产品 ≤5%",
+      "message": "α-熊果苷有限制使用要求，需标注警示语",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-002",
+      "category": "restricted",
+      "target": "Kojic Acid",
+      "aliases": ["Ácido Kojico", "曲酸", "5-Hydroxy-2-hydroxymethyl-4-pyrone"],
+      "cas": "501-30-4",
+      "severity": "warning",
+      "condition": " ≤1% (面部), ≤3% (身体)",
+      "message": "曲酸有限制浓度要求，超标会刺激皮肤",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-003",
+      "category": "restricted",
+      "target": "Salicylic Acid",
+      "aliases": ["Ácido Salicílico", "水杨酸", "BHA"],
+      "cas": "69-72-7",
+      "severity": "warning",
+      "condition": " ≤2% (驻留型), ≤3% (冲洗型)",
+      "message": "水杨酸有限制浓度要求，孕妇禁用",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-004",
+      "category": "restricted",
+      "target": "Glycolic Acid",
+      "aliases": ["Ácido Glicólico", "乙醇酸", "AHA", "羟基乙酸"],
+      "cas": "79-14-1",
+      "severity": "warning",
+      "condition": " ≤10% (pH≥3.5)",
+      "message": "乙醇酸有限制浓度要求，需控制pH值",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-005",
+      "category": "restricted",
+      "target": "Lactic Acid",
+      "aliases": ["Ácido Lático", "乳酸", "AHA"],
+      "cas": "50-21-5",
+      "severity": "warning",
+      "condition": " ≤10% (pH≥3.5)",
+      "message": "乳酸有限制浓度要求",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-006",
+      "category": "restricted",
+      "target": "Retinol",
+      "aliases": ["Retinol", "维生素A醇", "Vitamin A"],
+      "cas": "68-26-8",
+      "severity": "warning",
+      "condition": " ≤0.5% (驻留型), 需标注孕妇警告",
+      "message": "视黄醇有限制浓度要求，孕妇禁用，需标注警示",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-007",
+      "category": "restricted",
+      "target": "Benzoyl Peroxide",
+      "aliases": ["Peróxido de Benzoíla", "过氧化苯甲酰", "BPO"],
+      "cas": "94-36-0",
+      "severity": "warning",
+      "condition": " ≤5% (非处方), 需标注刺激性警告",
+      "message": "过氧化苯甲酰有限制浓度要求，可能刺激皮肤",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-008",
+      "category": "restricted",
+      "target": "Niacinamide",
+      "aliases": ["Niacinamida", "烟酰胺", "Vitamin B3", "Nicotinamide"],
+      "cas": "98-92-0",
+      "severity": "info",
+      "condition": " ≤5% (美白宣称)",
+      "message": "烟酰胺作为美白成分使用有浓度限制",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-009",
+      "category": "restricted",
+      "target": "Vitamin C",
+      "aliases": ["Ácido Ascórbico", "Ascorbic Acid", "维生素C"],
+      "cas": "50-81-7",
+      "severity": "info",
+      "condition": " ≤15% (L-ascorbic acid)",
+      "message": "维生素C有限制浓度要求，L-抗坏血酸稳定性较差",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-010",
+      "category": "restricted",
+      "target": "Benzophenone-3",
+      "aliases": ["Benzofenona-3", "Oxybenzone", "防晒剂"],
+      "cas": "131-57-7",
+      "severity": "warning",
+      "condition": " ≤6%",
+      "message": "二苯酮-3是限制使用的防晒剂",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-011",
+      "category": "restricted",
+      "target": "Homosalate",
+      "aliases": ["Homosalato", "防晒剂"],
+      "cas": "76-21-3",
+"severity": "warning",
+      "condition": " ≤10%",
+      "message": "胡莫柳酯是限制使用的防晒剂",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-012",
+      "category": "restricted",
+      "target": "Octinoxate",
+      "aliases": ["Octinoxato", "Ethylhexyl Methoxycinnamate", "OMC"],
+      "cas": "5466-77-3",
+      "severity": "warning",
+      "condition": " ≤10%",
+      "message": "甲氧基肉桂酸辛酯是限制使用的防晒剂",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-013",
+      "category": "restricted",
+      "target": "Phenoxyethanol",
+      "aliases": ["Fenooxietanol", "苯氧乙醇", "2-Phenoxyethanol"],
+      "cas": "122-99-6",
+      "severity": "info",
+      "condition": " ≤1% (单用), ≤0.8% (与氯咪巴唑共用)",
+      "message": "苯氧乙醇是限制使用的防腐剂",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-014",
+      "category": "restricted",
+      "target": "Triclosan",
+      "aliases": ["Triclosano", "三氯生", "2,4,4'-Trichloro-2'-hydroxydiphenyl ether"],
+      "cas": "3380-34-5",
+      "severity": "warning",
+      "condition": " ≤0.3% (冲洗型), 禁用于驻留型",
+      "message": "三氯生有限制使用范围，冲洗型产品可用，驻留型禁用",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-RES-015",
+      "category": "restricted",
+      "target": "Chlorhexidine",
+      "aliases": ["Clorexidina", "洗必泰", "葡萄糖酸氯己定"],
+      "cas": "55-56-1",
+      "severity": "warning",
+      "condition": " ≤4% (冲洗型), 禁用于唇部产品",
+      "message": "氯己定有限制使用范围，唇部产品禁用",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    }
+  ]
+}
+
+
+src/data/regulations/mexico/banned.json        # NOM-141 禁用成分
+  
+规则库第三批：墨西哥 COFEPRIS 禁用成分（NOM-141）
+{
+  "source": "COFEPRIS",
+  "documentId": "NOM-141-SSA1-2012",
+  "version": "2012-12",
+  "description": "墨西哥化妆品标签和成分法规 - 禁用成分清单",
+  "rules": [
+    {
+      "ruleId": "MX-BAN-001",
+      "category": "banned",
+      "target": "Mercury",
+      "aliases": ["Mercurio", "Hydrargyrum", "Hg", "汞", "水银"],
+      "cas": "7439-97-6",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "汞及其化合物是墨西哥NOM-141明确禁止的成分，海关查验重金属超标将扣留货物",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-BAN-002",
+      "category": "banned",
+      "target": "Mercury compounds",
+      "aliases": ["Compuestos de Mercurio", "Mercuric Chloride", "Mercuric Oxide"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "所有汞化合物均禁用",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-BAN-003",
+      "category": "banned",
+      "target": "Lead",
+      "aliases": ["Plomo", "Pb", "铅"],
+      "cas": "7439-92-1",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "铅是墨西哥化妆品禁令中的重金属之一",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-BAN-004",
+      "category": "banned",
+      "target": "Arsenic",
+      "aliases": ["Arsénico", "As", "砷"],
+      "cas": "7440-38-2",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "砷是墨西哥禁用重金属成分",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-BAN-005",
+      "category": "banned",
+      "target": "Cadmium",
+      "aliases": ["Cadmio", "Cd", "镉"],
+      "cas": "7440-43-9",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "镉是墨西哥禁用重金属成分",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-BAN-006",
+      "category": "banned",
+      "target": "Hydroquinone",
+      "aliases": ["Hidroquinona", "1,4-Benzenediol", "HQ", "对苯二酚"],
+      "cas": "123-31-9",
+"severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "氢醌是墨西哥禁用的美白成分",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-BAN-007",
+      "category": "banned",
+      "target": "Tretinoin",
+      "aliases": ["Tretinoína", "Retinoic Acid", "Ácido Retinoico", "维A酸"],
+      "cas": "302-79-4",
+      "severity": "critical",
+      "condition": "药品级成分 - 化妆品禁用",
+      "message": "维A酸在墨西哥是药品级成分，化妆品禁用",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-BAN-008",
+      "category": "banned",
+      "target": "Retinoic Acid",
+      "aliases": ["Ácido Retinoico", "Vitamin A Acid"],
+      "cas": "302-79-4",
+      "severity": "critical",
+      "condition": "药品级成分 - 化妆品禁用",
+      "message": "视黄酸在墨西哥是药品成分，化妆品禁用",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-BAN-009",
+      "category": "banned",
+      "target": "Hexachlorophene",
+      "aliases": ["Hexaclorofeno", "HCP", "六氯酚"],
+      "cas": "70-30-4",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "六氯酚是墨西哥禁用成分",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-BAN-010",
+      "category": "banned",
+      "target": "Bithionol",
+      "aliases": ["Bitionol", "2,2'-Thiobis(4,6-dichlorophenol)"],
+      "cas": "97-18-7",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "硫双二氯酚是墨西哥禁用成分",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-BAN-011",
+      "category": "banned",
+      "target": "Cloroxylenol",
+      "aliases": ["Cloroxilenol", "4-Chloro-3,5-xylenol", "PCMX"],
+      "cas": "88-04-0",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "氯二甲苯酚是墨西哥禁用成分",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-BAN-012",
+      "category": "banned",
+      "target": "Mequinol",
+      "aliases": ["4-Methoxyphenol", "4-Metoxifenol", "对苯二酚甲醚"],
+      "cas": "150-76-5",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "对苯二酚甲醚是墨西哥禁用美白成分",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-BAN-013",
+      "category": "banned",
+      "target": "Corticosteroids",
+      "aliases": ["Corticosteroides", "糖皮质激素"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "糖皮质激素在墨西哥化妆品中禁用",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-BAN-014",
+      "category": "banned",
+      "target": "Hydrocortisone",
+      "aliases": ["Hidrocortisona", "氢化可的松"],
+      "cas": "50-23-7",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "氢化可的松是墨西哥禁用激素成分",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-BAN-015",
+      "category": "banned",
+      "target": "Betamethasone",
+      "aliases": ["Betametasona", "倍他米松"],
+      "cas": "378-44-9",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "倍他米松是墨西哥禁用激素成分",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-BAN-016",
+      "category": "banned",
+      "target": "Chloramphenicol",
+      "aliases": ["Cloranfenicol", "氯霉素"],
+      "cas": "56-75-7",
+      "severity": "critical",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "氯霉素是墨西哥禁用抗生素成分",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    }
+  ]
+}
+
+
+
+src/data/regulations/ mexico/label.json         # NOM-141 标签法规
+
+规则库第四批：墨西哥标签法规（NOM-141 标签要求 + 防晒SPF）
+{
+  "source": "COFEPRIS",
+"documentId": "NOM-141-SSA1-2012",
+  "version": "2012-12",
+  "description": "墨西哥化妆品标签法规 - SPF标识要求",
+  "rules": [
+    {
+      "ruleId": "MX-LABEL-001",
+      "category": "label",
+      "target": "SPF value",
+      "aliases": ["Factor de Protección Solar", "FPS", "防晒系数"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "防晒产品必须标注SPF值",
+      "message": "根据NOM-141-SSA1，防晒产品必须在标签上明确标注SPF值，否则墨西哥海关将扣留产品",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-002",
+      "category": "label",
+      "target": "SPF label",
+      "aliases": ["Protector Solar", "Bloqueador Solar", "防晒"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "标注'SPF'后必须附带数值",
+      "message": "防晒产品不能只写'防晒'，必须标注具体SPF数值",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-003",
+      "category": "label",
+      "target": "PA rating",
+      "aliases": ["Protección UVA", "PA+", "PA++", "PA+++"],
+      "cas": "NA",
+      "severity": "warning",
+      "condition": "建议标注UVA防护等级",
+      "message": "建议标注PA值或Broad Spectrum表示UVA防护",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-004",
+      "category": "label",
+      "target": "Manufacturer info",
+      "aliases": ["Datos del fabricante", "Fabricante", "制造商信息"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "必须标注制造商或进口商名称和地址",
+      "message": "根据NOM-141，必须在标签上标注制造商或进口商的名称和地址",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-005",
+      "category": "label",
+      "target": "Country of origin",
+      "aliases": ["País de origen", "Origen", "原产国"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "必须标注原产国",
+      "message": "进口化妆品必须标注原产国",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-006",
+      "category": "label",
+      "target": "Spanish language",
+      "aliases": ["Español", "Spanish label", "西班牙语标签"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "标签必须使用西班牙语",
+      "message": "在墨西哥销售的化妆品标签必须使用西班牙语",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-007",
+      "category": "label",
+      "target": "Net content",
+      "aliases": ["Contenido neto", "Net wt", "净含量"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "必须标注净含量（重量或体积）",
+      "message": "必须标注产品净含量，使用公制单位（g, mL）",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-008",
+      "category": "label",
+      "target": "Batch number",
+      "aliases": ["Número de lote", "Lote", "批号"],
+      "cas": "NA",
+      "severity": "warning",
+      "condition": "必须标注生产批号",
+      "message": "必须标注生产批号以便追溯",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-LABEL-009",
+      "category": "label",
+      "target": "Expiration date",
+      "aliases": ["Fecha de caducidad", "Exp date", "有效期"],
+      "cas": "NA",
+      "severity": "critical",
+      "condition": "必须标注有效期（开盖后使用期限）",
+      "message": "必须标注有效期或开盖后使用期限（PAO）",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325949&fecha=05/12/2012"
+    }
+  ]
+}
+
+
+
+
+src/data/regulations/
+├── brazil/
+│   ├
+│   ├
+│   ├── claims.json        # 功效宣称法规
+
+规则库第五批：巴西功效宣称法规（ANVISA）
+{
+  "source": "ANVISA",
+  "documentId": "RDC 907/2024 + RDC 55/2010",
+  "version": "2024-12",
+  "description": "巴西化妆品功效宣称限制 - 禁止药品功效用语",
+  "rules": [
+    {
+      "ruleId": "BR-CLAIM-001",
+      "category": "claim",
+      "target": "治疗",
+      "aliases": ["Tratar", "治疗", "tratamiento", "curar", "治愈"],
+      "severity": "critical",
+      "condition": "禁止使用治疗疾病相关宣称",
+      "message": "化妆品不得宣称具有治疗疾病的效果，如'治疗痤疮'、'治疗湿疹'等",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-002",
+      "category": "claim",
+      "target": "抗皱/去皱",
+      "aliases": ["Anti-wrinkle", "Antiarrugas", "抗皱", "去皱", "消除皱纹"],
+      "severity": "warning",
+      "condition": "可使用但需符合规定",
+      "message": "抗皱宣称需有科学依据，不可使用'立即祛皱'等绝对化用语",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-003",
+      "category": "claim",
+      "target": "美白/淡斑",
+      "aliases": ["Whitening", "Branqueamento", "美白", "淡斑", "提亮肤色"],
+      "severity": "warning",
+      "condition": "可使用但不可暗示疗效",
+      "message": "美白宣称需注意不可使用'彻底祛斑'等绝对化用语",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-004",
+      "category": "claim",
+      "target": "防晒伤",
+      "aliases": ["Sunburn treatment", "Tratamento de queimadura solar", "晒伤治疗"],
+      "severity": "critical",
+      "condition": "禁止宣称治疗晒伤",
+      "message": "化妆品不得宣称可以治疗或修复晒伤皮肤",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-005",
+      "category": "claim",
+      "target": "生发/增发",
+      "aliases": ["Hair growth", "Crescimento capilar", "生发", "增发", "防止脱发"],
+      "severity": "critical",
+      "condition": "禁止宣称生发效果",
+      "message": "化妆品不得宣称具有生发或防止脱发效果，这是药品功效",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-006",
+      "category": "claim",
+      "target": "减肥/瘦身",
+      "aliases": ["Weight loss", "Emagrecimento", "减肥", "瘦身", "燃脂"],
+      "severity": "critical",
+      "condition": "禁止宣称减肥效果",
+      "message": "化妆品不得宣称具有减肥或瘦身效果",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-007",
+      "category": "claim",
+      "target": "去妊娠纹",
+      "aliases": ["Stretch mark removal", "Remoção de estrias", "祛妊娠纹"],
+      "severity": "warning",
+      "condition": "可使用但需谨慎",
+      "message": "去妊娠纹宣称需有科学依据，不可使用'完全消除'等绝对化用语",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-008",
+      "category": "claim",
+      "target": "立即见效",
+      "aliases": ["Immediate results", "Resultados imediatos", "立即", "即刻"],
+      "severity": "warning",
+      "condition": "禁止使用绝对化用语",
+      "message": "禁止使用'立即'、'即刻'、'瞬间'等绝对化宣称",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-009",
+      "category": "claim",
+      "target": "100%有效",
+      "aliases": ["100% effective", "100% eficaz", "100%", "彻底根治"],
+      "severity": "warning",
+      "condition": "禁止使用绝对化宣称",
+      "message": "禁止使用'100%'、'彻底'、'根治'等绝对化用语",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-010",
+      "category": "claim",
+      "target": "医疗级",
+      "aliases": ["Medical grade", "Grau médico", "医疗级", "医药级"],
+      "severity": "warning",
+      "condition": "禁止误导性宣称",
+      "message": "禁止使用'医疗级'、'医药级'等可能误导消费者的宣称",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-011",
+      "category": "claim",
+      "target": "抗菌/杀菌",
+      "aliases": ["Antibacterial", "Antibacteriano", "抗菌", "杀菌", "消毒"],
+"severity": "warning",
+      "condition": "有限制",
+      "message": "抗菌宣称需要符合特定规定，部分产品需按药品注册",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-CLAIM-012",
+      "category": "claim",
+      "target": "除臭",
+      "aliases": ["Deodorant", "Antitranspirante", "止汗", "除臭"],
+      "severity": "info",
+      "condition": "需明确区分",
+      "message": "止汗剂和除臭剂是不同的产品类别，需按对应规定注册",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    }
+  ]
+}
+
+src/data/regulations/
+│
+└── mexico/
+    └── claims.json        # NOM-259 功效文案
+
+ 规则库第六批：墨西哥功效宣称法规（NOM-259 + 广告法）
+{
+  "source": "COFEPRIS",
+  "documentId": "NOM-259-SSA1-2012 + LFPUB",
+  "version": "2012-12",
+  "description": "墨西哥化妆品功效宣称和广告法规",
+  "rules": [
+    {
+      "ruleId": "MX-CLAIM-001",
+      "category": "claim",
+      "target": "治疗痤疮",
+      "aliases": ["Treat acne", "Tratar acne", "祛痘", "治疗青春痘"],
+      "severity": "critical",
+      "condition": "禁止宣称治疗痤疮",
+      "message": "化妆品不得宣称可以治疗痤疮，这是药品功效",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-002",
+      "category": "claim",
+      "target": "抗衰老",
+      "aliases": ["Anti-aging", "Anti-envejecimiento", "抗衰老", "逆龄"],
+      "severity": "warning",
+      "condition": "可使用但需科学依据",
+      "message": "抗衰老宣称需有科学依据支持",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-003",
+      "category": "claim",
+      "target": "生发",
+      "aliases": ["Hair regrowth", "Crecimiento capilar", "生发", "增发"],
+      "severity": "critical",
+      "condition": "禁止宣称生发效果",
+      "message": "化妆品不得宣称具有生发效果",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-004",
+      "category": "claim",
+      "target": "减肥",
+      "aliases": ["Weight loss", "Perder peso", "减肥", "瘦身"],
+      "severity": "critical",
+      "condition": "禁止宣称减肥效果",
+      "message": "化妆品不得宣称具有减肥效果",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-005",
+      "category": "claim",
+      "target": "立即见效",
+      "aliases": ["Immediate results", "Resultados inmediatos", "立即", "即刻"],
+      "severity": "warning",
+      "condition": "禁止绝对化宣称",
+      "message": "禁止使用'立即'、'即刻'等绝对化用语",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-006",
+      "category": "claim",
+      "target": "FDA批准",
+      "aliases": ["FDA approved", "Aprobado por FDA", "美国FDA认证"],
+      "severity": "warning",
+      "condition": "禁止误导性宣称",
+      "message": "禁止误导消费者使用FDA批准标识，墨西哥产品需符合COFEPRIS规定",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-007",
+      "category": "claim",
+      "target": " dermatologist tested",
+      "aliases": ["Dermatologist tested", "Testeado por dermatólogo", "皮肤科医生测试"],
+      "severity": "info",
+      "condition": "需真实有效",
+      "message": "如宣城 dermatologist tested，需有实际测试报告支持",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-008",
+      "category": "claim",
+      "target": "hypoallergenic",
+      "aliases": ["Hippoalergénico", "低致敏", "无过敏"],
+      "severity": "warning",
+      "condition": "需有测试支持",
+      "message": "低致敏宣称需有临床测试支持，不可滥用",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-009",
+      "category": "claim",
+      "target": "no animal testing",
+      "aliases": ["No tested on animals", "Sin pruebas en animales", "无动物测试"],
+      "severity": "info",
+      "condition": "需有证明文件",
+      "message": "无动物测试宣称需有供应链证明文件",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-010",
+"category": "claim",
+      "target": "治愈",
+      "aliases": ["Cure", "Curar", "治愈", "根治"],
+      "severity": "critical",
+      "condition": "禁止任何治愈宣称",
+      "message": "化妆品不得使用任何'治愈'、'根治'等医疗用语",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-011",
+      "category": "claim",
+      "target": "去除脂肪团",
+      "aliases": ["Cellulite removal", "Eliminación de celulitis", "去橘皮", "燃脂"],
+      "severity": "critical",
+      "condition": "禁止宣称去除脂肪团",
+      "message": "化妆品不得宣称可以去除脂肪团（橘皮组织）",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    },
+    {
+      "ruleId": "MX-CLAIM-012",
+      "category": "claim",
+      "target": "丰胸",
+      "aliases": ["Breast enlargement", "Aumento de senos", "隆胸", "丰乳"],
+      "severity": "critical",
+      "condition": "禁止任何丰乳宣称",
+      "message": "化妆品不得宣称具有丰胸或改变胸部大小的效果",
+      "sourceUrl": "https://www.dof.gob.mx/nota_detalle.php?codigo=5325961&fecha=05/12/2012"
+    }
+  ]
+}
+
+src/data/regulations/
+├── brazil/
+│   ├── label.json         # RDC 169/2024 标签
+│   └
+规则库第七批：巴西标签法规（RDC 169/2024）
+{
+  "source": "ANVISA",
+  "documentId": "RDC 169/2024",
+  "version": "2024-06",
+  "description": "巴西化妆品标签法规 - 强制标识要求",
+  "rules": [
+    {
+      "ruleId": "BR-LABEL-001",
+      "category": "label",
+      "target": "Product name in Portuguese",
+      "aliases": ["Nome em português", "葡萄牙语产品名", "名称葡语化"],
+      "severity": "critical",
+      "condition": "产品名称必须翻译为葡萄牙语",
+      "message": "根据RDC 169/2024，在巴西销售的产品名称必须使用葡萄牙语",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-002",
+      "category": "label",
+      "target": "INCI name",
+      "aliases": ["Nome INCI", "INCI命名", "国际成分命名"],
+      "severity": "critical",
+      "condition": "成分表必须使用INCI国际命名",
+      "message": "成分表必须使用INCI（国际化妆品成分命名）标准",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-003",
+      "category": "label",
+      "target": "Manufacturer info",
+      "aliases": ["Dados do fabricante", "制造商信息"],
+      "severity": "critical",
+      "condition": "必须标注制造商或进口商信息",
+      "message": "必须标注制造商或进口商的名称、地址和CNPJ",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-004",
+      "category": "label",
+      "target": "Country of origin",
+      "aliases": ["País de origem", "原产国"],
+      "severity": "critical",
+      "condition": "必须标注原产国",
+      "message": "进口产品必须标注原产国",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-005",
+      "category": "label",
+      "target": "Net content",
+      "aliases": ["Conteúdo líquido", "净含量"],
+      "severity": "critical",
+      "condition": "必须标注净含量",
+      "message": "必须标注产品净含量，使用公制单位（g, mL）",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-006",
+      "category": "label",
+      "target": "Batch number",
+      "aliases": ["Número do lote", "批号"],
+      "severity": "warning",
+      "condition": "必须标注生产批号",
+      "message": "必须标注生产批号以便产品追溯",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-007",
+      "category": "label",
+      "target": "Expiration date",
+      "aliases": ["Data de validade", "有效期"],
+      "severity": "critical",
+      "condition": "必须标注有效期",
+      "message": "必须标注有效期（日期或开盖后使用期限PAO）",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-008",
+      "category": "label",
+      "target": "Storage conditions",
+      "aliases": ["Condições de armazenamento", "储存条件"],
+      "severity": "info",
+      "condition": "建议标注",
+      "message": "建议标注储存条件（如'避光保存'、'室温保存'）",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+{
+      "ruleId": "BR-LABEL-009",
+      "category": "label",
+      "target": "Registration number",
+      "aliases": ["Número de registro", "注册编号"],
+      "severity": "critical",
+      "condition": "必须标注ANVISA注册编号",
+      "message": "必须标注ANVISA注册编号（除非是豁免注册的产品）",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-LABEL-010",
+      "category": "label",
+      "target": "Consumer service",
+      "aliases": ["SAC", "Serviço de Atendimento ao Consumidor", "客服电话"],
+      "severity": "critical",
+      "condition": "必须标注客服联系方式",
+      "message": "必须标注消费者服务电话或邮箱",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    }
+  ]
+}
+
+
+src/data/regulations/
+├── brazil/
+│   └── registration.json  # RDC 48/2023 备案
+ 规则库第八批：巴西备案规则（RDC 48/2023）
+{
+  "source": "ANVISA",
+  "documentId": "RDC 48/2023",
+  "version": "2023-10",
+  "description": "巴西化妆品备案规则 - 进口产品预先备案要求",
+  "rules": [
+    {
+      "ruleId": "BR-REG-001",
+      "category": "registration",
+      "target": "Import registration",
+      "aliases": ["Registro de importação", "进口备案"],
+      "severity": "critical",
+      "condition": "进口化妆品必须预先备案",
+      "message": "根据RDC 48/2023，进口化妆品必须在ANVISA预先备案",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-REG-002",
+      "category": "registration",
+      "target": "Registration number on package",
+      "aliases": ["Número de registro na embalagem", "注册编号标注"],
+      "severity": "critical",
+      "condition": "包装上必须标注ANVISA注册编号",
+      "message": "产品包装上必须清楚标注ANVISA注册编号",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-REG-003",
+      "category": "registration",
+      "target": "Import license",
+      "aliases": ["Licença de importação", "进口许可证"],
+      "severity": "critical",
+      "condition": "必须持有有效的ANVISA进口许可",
+      "message": "进口商必须持有有效的ANVISA进口许可证",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-REG-004",
+      "category": "registration",
+      "target": "Responsible technician",
+      "aliases": ["Técnico responsável", "技术负责人"],
+      "severity": "critical",
+      "condition": "必须有注册的巴西技术负责人",
+      "message": "必须有在ANVISA注册的技术负责人（RT）",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-REG-005",
+      "category": "registration",
+      "target": "Product notification",
+      "aliases": ["Notificação de produto", "产品通报"],
+      "severity": "warning",
+      "condition": "部分产品只需通报，无需注册",
+      "message": "部分低风险产品只需通报（Notificação），无需完整注册",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    },
+    {
+      "ruleId": "BR-REG-006",
+      "category": "registration",
+      "target": "Expiration monitoring",
+      "aliases": ["Monitoramento de validade", "有效期监控"],
+      "severity": "info",
+      "condition": "需监控产品有效期",
+      "message": "进口商需监控系统中的产品有效期",
+      "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1"
+    }
+  ]
+}
+

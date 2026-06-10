@@ -1,0 +1,598 @@
+{
+  "chunkId": 3,
+  "document": {
+    "id": "RDC 530/2021",
+    "annex": "I",
+    "effectiveDate": "2021-08-11"
+  },
+  "rules": [
+    {
+      "ruleId": "BR-RDC530-26",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "26",
+        "pageInSource": 5,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Dissulfeto de selênio",
+        "inciNameEn": "Selenium disulfide",
+        "cas": "7488-56-4"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "anti_dandruff",
+          "productTypePt": "Produtos para combater a caspa",
+          "maxConcentration": "1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém dissulfeto de selênio (Contains selenium disulfide)",
+            "Evitar contato com os olhos ou pele lesionada ou irritada. Caso isto ocorra, lavar com água em abundância (Avoid contact with eyes or damaged/irritated skin. If this occurs, wash with plenty of water)"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "26 | Dissulfeto de selênio | Produtos anti-caspa: 1% | Contém dissulfeto de selênio, evitar olhos/pele lesionada"
+    },
+    {
+      "ruleId": "BR-RDC530-27",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "27",
+        "pageInSource": 5,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Complexos de hidroxicloretos de alumínio e zircônio AlxZr(OH)yClz e seus complexos com glicina",
+        "inciNameEn": "Aluminum zirconium hydroxychloride complexes and their complexes with glycine",
+        "cas": "NA"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "antiperspirant",
+          "productTypePt": "Antitranspirantes",
+          "maxConcentration": "20% hidroxicloreto de alumínio e de zircônio anidro (5,4% como zircônio)",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "A relação entre o número de átomos de alumínio e de zircônio deve estar compreendida entre 2 e 10",
+            "A relação entre a soma dos átomos de alumínio e zircônio (Al+Zr) e o número de átomos de cloro deve estar compreendida entre 0,9 e 2,1",
+            "Não utilizar em sistemas pulverizáveis (aerossóis e sprays)"
+          ],
+          "labelWarnings": [
+            "Não aplicar na pele irritada ou lesionada (Do not apply to irritated or damaged skin)",
+            "Suspender o uso em caso de irritação (Discontinue use if irritation occurs)"
+          ],
+          "prohibitedIn": [
+            "spray_systems",
+            "aerosols"
+          ]
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "27 | Complexos hidroxicloretos Al-Zr | Antitranspirantes: 20% anidro (5,4% Zr) | Al/Zr ratio 2-10, (Al+Zr)/Cl ratio 0.9-2.1 | Proibido em pulverizáveis | Não aplicar pele irritada"
+    },
+    {
+      "ruleId": "BR-RDC530-28",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "28",
+        "pageInSource": 5,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Cloridróxido de alumínio, seus sais e complexos",
+        "inciNameEn": "Aluminum chlorohydrate, its salts and complexes",
+        "cas": "12042-91-0"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "antiperspirant",
+          "productTypePt": "Antitranspirantes",
+          "maxConcentration": "25% base anidra",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Poderá ser usada com outras funções desde que cientificamente comprovado (May be used for other functions if scientifically proven)"
+          ],
+          "labelWarnings": [
+            "Não aplicar sobre a pele irritada ou lesionada",
+            "Suspender o uso em caso de irritação"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "28 | Cloridróxido de alumínio | Antitranspirantes: 25% base anidra | Pode ter outras funções se comprovado | Não aplicar pele irritada"
+    },
+    {
+      "ruleId": "BR-RDC530-29",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "29",
+        "pageInSource": 6,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Dicloridróxido de alumínio, seus sais e complexos",
+        "inciNameEn": "Aluminum dichlorohydrate, its salts and complexes",
+        "cas": "NA"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "antiperspirant",
+          "productTypePt": "Antitranspirantes",
+          "maxConcentration": "25% base anidra",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Não aplicar sobre a pele irritada ou lesionada",
+            "Suspender o uso em caso de irritação"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "29 | Dicloridróxido de alumínio | Antitranspirantes: 25% base anidra | Não aplicar pele irritada"
+    },
+    {
+      "ruleId": "BR-RDC530-30",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "30",
+        "pageInSource": 6,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Sesquicloridróxido de alumínio, seus sais e complexos",
+        "inciNameEn": "Aluminum sesquichlorohydrate, its salts and complexes",
+        "cas": "NA"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "antiperspirant",
+          "productTypePt": "Antitranspirantes",
+          "maxConcentration": "25% base anidra",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Não aplicar sobre a pele irritada ou lesionada",
+            "Suspender o uso em caso de irritação"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "30 | Sesquicloridróxido de alumínio | Antitranspirantes: 25% base anidra | Não aplicar pele irritada"
+    },
+    {
+      "ruleId": "BR-RDC530-31",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "31",
+        "pageInSource": 6,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Cloreto de alumínio",
+        "inciNameEn": "Aluminum chloride",
+        "cas": "7446-70-0"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "antiperspirant",
+          "productTypePt": "Antitranspirantes",
+          "maxConcentration": "15% base anidra",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Não utilizar em sistemas pulverizáveis (aerossóis e sprays)"
+          ],
+          "labelWarnings": [
+            "Não aplicar sobre a pele irritada ou lesionada",
+            "Suspender o uso em caso de irritação"
+          ],
+          "prohibitedIn": [
+            "spray_systems",
+            "aerosols"
+          ]
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "31 | Cloreto de alumínio | Antitranspirantes: 15% base anidra | Proibido em pulverizáveis | Não aplicar pele irritada"
+    },
+    {
+      "ruleId": "BR-RDC530-32",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "32",
+        "pageInSource": 6,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Sulfato de alumínio tamponado",
+        "inciNameEn": "Buffered aluminum sulfate",
+        "cas": "NA"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "antiperspirant",
+          "productTypePt": "Antitranspirantes",
+          "maxConcentration": "8% como sulfato de alumínio tamponado com 8% de lactato de alumínio",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Não utilizar em sistemas pulverizáveis (aerossóis e sprays)"
+          ],
+          "labelWarnings": [
+            "Não aplicar sobre a pele irritada ou lesionada",
+            "Suspender o uso em caso de irritação"
+          ],
+          "prohibitedIn": [
+            "spray_systems",
+            "aerosols"
+          ]
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "32 | Sulfato de alumínio tamponado | Antitranspirantes: 8% como sulfato tamponado com 8% lactato | Proibido em pulverizáveis | Não aplicar pele irritada"
+    },
+    {
+      "ruleId": "BR-RDC530-33",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "33",
+        "pageInSource": 6,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "8-Quinolinol e sulfato de 8-hidroxiquinolínio",
+        "inciNameEn": "8-Quinolinol and 8-hydroxyquinoline sulfate",
+        "cas": "148-24-3"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_treatment_rinse",
+          "productTypePt": "Agente estabilizador de peróxido de hidrogênio em produtos para tratamento dos cabelos com enxágue",
+          "maxConcentration": "0,3%",
+          "calculationBasis": "calculado como base",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "hair_treatment_leave_in",
+          "productTypePt": "Agente estabilizador de peróxido de hidrogênio em produtos para tratamento dos cabelos sem enxágue",
+          "maxConcentration": "0,03%",
+          "calculationBasis": "calculado como base",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "33 | 8-Quinolinol | a) Tratamento capilar com enxágue: 0,3% como base | b) Sem enxágue: 0,03% como base"
+    },
+    {
+      "ruleId": "BR-RDC530-34",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "34",
+        "pageInSource": 6,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido etidrônico e seus sais (Ácido 1-hidroxietilenodifosfônico) e seus sais",
+        "inciNameEn": "Etidronic acid and its salts (1-Hydroxyethylidene-1,1-diphosphonic acid)",
+        "cas": "2809-21-4"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_treatment",
+          "productTypePt": "Produtos para tratamento dos cabelos",
+          "maxConcentration": "1,5%",
+          "calculationBasis": "calculados como ácido etidrônico",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "soap",
+          "productTypePt": "Sabonetes",
+          "maxConcentration": "0,2%",
+          "calculationBasis": "calculados como ácido etidrônico",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "34 | Ácido etidrônico | a) Tratamento capilar: 1,5% | b) Sabonetes: 0,2%"
+    },
+    {
+      "ruleId": "BR-RDC530-35",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "35",
+        "pageInSource": 6,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "1-Fenoxipropano-2-ol",
+        "inciNameEn": "1-Phenoxypropan-2-ol",
+        "cas": "770-35-4"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "rinse_off",
+          "productTypePt": "Somente em produtos com enxágue",
+          "maxConcentration": "2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": [
+            "oral_hygiene"
+          ]
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [
+        "Proibido o uso em produtos para higiene bucal"
+      ],
+      "sourceText": "35 | 1-Fenoxipropano-2-ol | Somente produtos com enxágue: 2% | Proibido em higiene bucal"
+    },
+    {
+      "ruleId": "BR-RDC530-36",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "36",
+        "pageInSource": 6,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Cloreto de estrôncio hexahidratado",
+        "inciNameEn": "Strontium chloride hexahydrate",
+        "cas": "10025-70-4"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "toothpaste",
+          "productTypePt": "Dentifrícios",
+          "maxConcentration": "3,5%",
+          "calculationBasis": "calculado como estrôncio. Quando misturado com outras substâncias permitidas que contenham estrôncio, o conteúdo total de estrôncio não deve ser superior a 3,5%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém cloreto de estrôncio",
+            "Não é recomendado o uso em crianças (Not recommended for children)"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "shampoo_facial",
+          "productTypePt": "Xampus e produtos para cuidado facial",
+          "maxConcentration": "2,1%",
+          "calculationBasis": "calculado em estrôncio. Quando misturado com outras substâncias permitidas que contenham estrôncio, o conteúdo total de estrôncio não deve ser superior a 2,1%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém cloreto de estrôncio",
+            "Não é recomendado o uso em crianças"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "36 | Cloreto de estrôncio hexahidratado | a) Dentifrícios: 3,5% Sr (total ≤3,5%) | b) Xampus/facial: 2,1% Sr (total ≤2,1%) | Contém estrôncio, não recomendado para crianças"
+    },
+    {
+      "ruleId": "BR-RDC530-37",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "37",
+        "pageInSource": 7,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Acetato de estrôncio semi-hidratado",
+        "inciNameEn": "Strontium acetate semi-hydrate",
+        "cas": "14637-33-3"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "toothpaste",
+          "productTypePt": "Dentifrício",
+          "maxConcentration": "3,5%",
+          "calculationBasis": "calculado como estrôncio. Quando misturado com outras substâncias permitidas que contenham estrôncio, o conteúdo total de estrôncio não deve ser superior a 3,5%",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém acetato de estrôncio",
+            "Não é recomendado o uso em crianças"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "37 | Acetato de estrôncio semi-hidratado | Dentifrício: 3,5% Sr (total ≤3,5%) | Contém estrôncio, não recomendado para crianças"
+    },
+    {
+      "ruleId": "BR-RDC530-38",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "38",
+        "pageInSource": 7,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Talco: Silicato de magnésio hidratado",
+        "inciNameEn": "Talc: Hydrated magnesium silicate",
+        "cas": "14807-96-6"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "baby_powder",
+          "productTypePt": "Produto em pó para crianças com menos de 3 anos",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Manter o pó afastado do nariz e da boca da criança (Keep powder away from child's nose and mouth)"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "other",
+          "productTypePt": "Outros produtos",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "38 | Talco | a) Pó infantil <3 anos: manter afastado do nariz/boca | b) Outros produtos"
+    },
+    {
+      "ruleId": "BR-RDC530-39",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "39",
+        "pageInSource": 7,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Dialquilamidas e dialcanolamidas de ácidos graxos",
+        "inciNameEn": "Dialkylamides and dialkanolamides of fatty acids",
+        "cas": "NA"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Todos os produtos",
+          "maxConcentration": null,
+          "calculationBasis": "Teor máximo de aminas secundárias: 0,5%",
+          "phLimit": null,
+          "otherRequirements": [
+            "Teor máximo de aminas secundárias em matérias-primas: 5%",
+            "Teor máximo de nitrosaminas: 50 mg/kg",
+            "Embalar/conservar em recipientes livres de nitritos"
+          ],
+          "labelWarnings": [
+            "Não usar com sistemas nitrosantes (Do not use with nitrosating systems)"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "39 | Dialquilamidas/dialcanolamidas ácidos graxos | Aminas secundárias ≤0,5% | MP ≤5%, nitrosaminas ≤50mg/kg, recipientes sem nitritos | Não usar com nitrosantes"
+    },
+    {
+      "ruleId": "BR-RDC530-40",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "40",
+        "pageInSource": 7,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Monoalquilaminas, monoalcanolaminas e seus sais",
+        "inciNameEn": "Monoalkylamines, monoalkanolamines and their salts",
+        "cas": "NA"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Todos os produtos",
+          "maxConcentration": null,
+          "calculationBasis": "Teor máximo de aminas secundárias: 0,5%",
+          "phLimit": null,
+          "otherRequirements": [
+            "Pureza mínima: 99%",
+            "Teor máximo de aminas secundárias em matérias-primas: 0,5%",
+            "Teor máximo de nitrosaminas: 50 mg/kg",
+            "Embalar/conservar em recipientes livres de nitritos"
+          ],
+          "labelWarnings": [
+            "Não usar com sistemas nitrosantes"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "40 | Monoalquilaminas/monoalcanolaminas | Aminas secundárias ≤0,5% | Pureza ≥99%, MP ≤0,5%, nitrosaminas ≤50mg/kg, sem nitritos | Não usar com nitrosantes"
+    }
+  ]
+}

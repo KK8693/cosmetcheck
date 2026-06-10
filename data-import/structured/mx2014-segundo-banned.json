@@ -1,0 +1,607 @@
+{
+  "document": {
+    "id": "MX-2014 SEGUNDO (Amendment)",
+    "titleEs": "Sustancias prohibidas - adiciones 2014",
+    "titleZh": "墨西哥化妆品禁用成分清单 - 2014年新增",
+    "sourceUrl": "https://diariooficial.segob.gob.mx/",
+    "effectiveDate": "2014-03-11",
+    "language": "es"
+  },
+  "totalRules": 27,
+  "rules": [
+    {
+      "ruleId": "MX-2014-BAN-11_bis",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "11 bis",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Acido 3,4-diaminobenzoico y sus sales",
+        "inciNameEn": "3,4-Diaminobenzoic acid and its salts",
+        "cas": "619-05-6"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited in all cosmetic products."
+      ],
+      "sourceText": "11 bis | Acido 3,4-diaminobenzoico y sus sales"
+    },
+    {
+      "ruleId": "MX-2014-BAN-13_bis_1",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "13 bis 1",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "2-Amino fenol y sus sales (o- Aminofenol)",
+        "inciNameEn": "2-Aminophenol and its salts (o-Aminophenol)",
+        "cas": "95-55-6"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited in all cosmetic products."
+      ],
+      "sourceText": "13 bis 1 | 2-Amino fenol y sus sales (o- Aminofenol)"
+    },
+    {
+      "ruleId": "MX-2014-BAN-13_bis_2",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "13 bis 2",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "2-Aminometil-p-aminofenol y sus sales",
+        "inciNameEn": "2-Aminomethyl-p-aminophenol and its salts",
+        "cas": "NA"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited in all cosmetic products."
+      ],
+      "sourceText": "13 bis 2 | 2-Aminometil-p-aminofenol y sus sales"
+    },
+    {
+      "ruleId": "MX-2014-BAN-20_bis",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "20 bis",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Anaranjado o naranja ácido 24",
+        "inciNameEn": "Orange or acid orange 24",
+        "cas": "1320-07-6"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited in all cosmetic products."
+      ],
+      "sourceText": "20 bis | Anaranjado o naranja ácido 24"
+    },
+    {
+      "ruleId": "MX-2014-BAN-31_bis",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "31 bis",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Clorhidrato de 2-metoximetil-p-aminofenol, cuando se emplee en tintes para el cabello",
+        "inciNameEn": "2-Methoxymethyl-p-aminophenol hydrochloride, when used in hair dyes",
+        "cas": "NA"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited when used in hair_dyes."
+      ],
+      "sourceText": "31 bis | Clorhidrato de 2-metoximetil-p-aminofenol, cuando se emplee en tintes para el cabello"
+    },
+    {
+      "ruleId": "MX-2014-BAN-37_bis_1",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "37 bis 1",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Diclorhidrato de 4,5-diamino-1-metilpirazol",
+        "inciNameEn": "4,5-Diamino-1-methylpyrazole dihydrochloride",
+        "cas": "NA"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited in all cosmetic products."
+      ],
+      "sourceText": "37 bis 1 | Diclorhidrato de 4,5-diamino-1-metilpirazol"
+    },
+    {
+      "ruleId": "MX-2014-BAN-37_bis_2",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "37 bis 2",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Diclorhidrato de 2,6-Bis(2-hidroxietoxi)-3,5-piridindiamina",
+        "inciNameEn": "2,6-Bis(2-hydroxyethoxy)-3,5-pyridinediamine dihydrochloride",
+        "cas": "NA"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited in all cosmetic products."
+      ],
+      "sourceText": "37 bis 2 | Diclorhidrato de 2,6-Bis(2-hidroxietoxi)-3,5-piridindiamina"
+    },
+    {
+      "ruleId": "MX-2014-BAN-37_bis_3",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "37 bis 3",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "2,4-Diamino-5-metilfenetol",
+        "inciNameEn": "2,4-Diamino-5-methylphenetole",
+        "cas": "NA"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited in all cosmetic products."
+      ],
+      "sourceText": "37 bis 3 | 2,4-Diamino-5-metilfenetol"
+    },
+    {
+      "ruleId": "MX-2014-BAN-45_bis",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "45 bis",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "m-Fenilendiamina y sus sales",
+        "inciNameEn": "m-Phenylenediamine and its salts",
+        "cas": "108-45-2"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited in all cosmetic products."
+      ],
+      "sourceText": "45 bis | m-Fenilendiamina y sus sales"
+    },
+    {
+      "ruleId": "MX-2014-BAN-51_bis",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "51 bis",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "4-Hidroxiindol",
+        "inciNameEn": "4-Hydroxyindole",
+        "cas": "2380-94-1"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited in all cosmetic products."
+      ],
+      "sourceText": "51 bis | 4-Hidroxiindol"
+    },
+    {
+      "ruleId": "MX-2014-BAN-66_bis",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "66 bis",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "1,7-Naftalenodiol y sus sales",
+        "inciNameEn": "1,7-Naphthalenediol and its salts",
+        "cas": "575-38-2"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited in all cosmetic products."
+      ],
+      "sourceText": "66 bis | 1,7-Naftalenodiol y sus sales"
+    },
+    {
+      "ruleId": "MX-2014-BAN-70_bis",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "70 bis",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "N-(2-nitro-4-aminofenil)-alilamina (HC rojo No. 16) y sus sales",
+        "inciNameEn": "N-(2-nitro-4-aminophenyl)-allylamine (HC Red No. 16) and its salts",
+        "cas": "NA"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited in all cosmetic products."
+      ],
+      "sourceText": "70 bis | N-(2-nitro-4-aminofenil)-alilamina (HC rojo No. 16) y sus sales"
+    },
+    {
+      "ruleId": "MX-2014-BAN-77_bis_1",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "77 bis 1",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rojo solvente 1",
+        "inciNameEn": "Solvent Red 1",
+        "cas": "1229-55-6"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited in all cosmetic products."
+      ],
+      "sourceText": "77 bis 1 | Rojo solvente 1"
+    },
+    {
+      "ruleId": "MX-2014-BAN-77_bis_2",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "77 bis 2",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rojo ácido 73",
+        "inciNameEn": "Acid Red 73",
+        "cas": "5413-75-2"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited in all cosmetic products."
+      ],
+      "sourceText": "77 bis 2 | Rojo ácido 73"
+    },
+    {
+      "ruleId": "MX-2014-BAN-88_bis_1",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "88 bis 1",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "N,N-Dimetil-2,6-piridindiamina y su sal HCl, cuando se emplee en tintes para el cabello",
+        "inciNameEn": "N,N-Dimethyl-2,6-pyridinediamine and its HCl salt, when used in hair dyes",
+        "cas": "NA"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited when used in hair_dyes."
+      ],
+      "sourceText": "88 bis 1 | N,N-Dimetil-2,6-piridindiamina y su sal HCl, cuando se emplee en tintes para el cabello"
+    },
+    {
+      "ruleId": "MX-2014-BAN-88_bis_2",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "88 bis 2",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "6-Metoxi-2,3-piridindiamina y su sal HCl, cuando se emplee en tintes para el cabello",
+        "inciNameEn": "6-Methoxy-2,3-pyridinediamine and its HCl salt, when used in hair dyes",
+        "cas": "NA"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited when used in hair_dyes."
+      ],
+      "sourceText": "88 bis 2 | 6-Metoxi-2,3-piridindiamina y su sal HCl, cuando se emplee en tintes para el cabello"
+    },
+    {
+      "ruleId": "MX-2014-BAN-88_bis_3",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "88 bis 3",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "2,3-Naftalendiol cuando se emplee en tintes para el cabello",
+        "inciNameEn": "2,3-Naphthalenediol when used in hair dyes",
+        "cas": "92-44-4"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited when used in hair_dyes."
+      ],
+      "sourceText": "88 bis 3 | 2,3-Naftalendiol cuando se emplee en tintes para el cabello"
+    },
+    {
+      "ruleId": "MX-2014-BAN-88_bis_4",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "88 bis 4",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "2,4-Diaminodifenilamina, cuando se emplee en tintes para el cabello",
+        "inciNameEn": "2,4-Diaminodiphenylamine when used in hair dyes",
+        "cas": "NA"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited when used in hair_dyes."
+      ],
+      "sourceText": "88 bis 4 | 2,4-Diaminodifenilamina, cuando se emplee en tintes para el cabello"
+    },
+    {
+      "ruleId": "MX-2014-BAN-88_bis_5",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "88 bis 5",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "4,5-Diamino-1-((4-clorofenil)metil)-1H-pirazol sulfato, cuando se emplee en tintes para el cabello",
+        "inciNameEn": "4,5-Diamino-1-((4-chlorophenyl)methyl)-1H-pyrazole sulfate when used in hair dyes",
+        "cas": "NA"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited when used in hair_dyes."
+      ],
+      "sourceText": "88 bis 5 | 4,5-Diamino-1-((4-clorofenil)metil)-1H-pirazol sulfato, cuando se emplee en tintes para el cabello"
+    },
+    {
+      "ruleId": "MX-2014-BAN-88_bis_6",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "88 bis 6",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "4-Cloro-2-aminofenol, cuando se emplee en tintes para el cabello",
+        "inciNameEn": "4-Chloro-2-aminophenol when used in hair dyes",
+        "cas": "95-85-2"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited when used in hair_dyes."
+      ],
+      "sourceText": "88 bis 6 | 4-Cloro-2-aminofenol, cuando se emplee en tintes para el cabello"
+    },
+    {
+      "ruleId": "MX-2014-BAN-88_bis_7",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "88 bis 7",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "4-Metoxitolueno-2,5-diamina y su sal HCl, cuando se emplee en tintes para el cabello",
+        "inciNameEn": "4-Methoxytoluene-2,5-diamine and its HCl salt when used in hair dyes",
+        "cas": "NA"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited when used in hair_dyes."
+      ],
+      "sourceText": "88 bis 7 | 4-Metoxitolueno-2,5-diamina y su sal HCl, cuando se emplee en tintes para el cabello"
+    },
+    {
+      "ruleId": "MX-2014-BAN-88_bis_8",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "88 bis 8",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "5-Amino-4-fluoro-2-metilfenol sulfato, cuando se emplee en tintes para el cabello",
+        "inciNameEn": "5-Amino-4-fluoro-2-methylphenol sulfate when used in hair dyes",
+        "cas": "NA"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited when used in hair_dyes."
+      ],
+      "sourceText": "88 bis 8 | 5-Amino-4-fluoro-2-metilfenol sulfato, cuando se emplee en tintes para el cabello"
+    },
+    {
+      "ruleId": "MX-2014-BAN-88_bis_9",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "88 bis 9",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "N,N-dietil-m-aminofenol, cuando se emplee en tintes para el cabello",
+        "inciNameEn": "N,N-diethyl-m-aminophenol when used in hair dyes",
+        "cas": "NA"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited when used in hair_dyes."
+      ],
+      "sourceText": "88 bis 9 | N,N-dietil-m-aminofenol, cuando se emplee en tintes para el cabello"
+    },
+    {
+      "ruleId": "MX-2014-BAN-88_bis_10",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "88 bis 10",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "N-ciclopentil-m-aminofenol, cuando se emplee en tintes para el cabello",
+        "inciNameEn": "N-cyclopentyl-m-aminophenol when used in hair dyes",
+        "cas": "NA"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited when used in hair_dyes."
+      ],
+      "sourceText": "88 bis 10 | N-ciclopentil-m-aminofenol, cuando se emplee en tintes para el cabello"
+    },
+    {
+      "ruleId": "MX-2014-BAN-88_bis_11",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "88 bis 11",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "N-(2-metoximetil)-p-fenilendiamina y su sal HCl, cuando se emplee en tintes para el cabello",
+        "inciNameEn": "N-(2-methoxymethyl)-p-phenylenediamine and its HCl salt when used in hair dyes",
+        "cas": "NA"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited when used in hair_dyes."
+      ],
+      "sourceText": "88 bis 11 | N-(2-metoximetil)-p-fenilendiamina y su sal HCl, cuando se emplee en tintes para el cabello"
+    },
+    {
+      "ruleId": "MX-2014-BAN-94_bis",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "94 bis",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Aceite de Sabina (Juniperus sabina L.)",
+        "inciNameEn": "Sabina oil (Juniperus sabina L.)",
+        "cas": "8013-98-1"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited in all cosmetic products."
+      ],
+      "sourceText": "94 bis | Aceite de Sabina (Juniperus sabina L.)"
+    },
+    {
+      "ruleId": "MX-2014-BAN-125_bis",
+      "status": "active",
+      "document": {
+        "id": "NOM-2014 Acuerdo SEGUNDO",
+        "item": "125 bis",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Safrol, Isosafrol, dihidrosafrol",
+        "inciNameEn": "Safrole, Isosafrole, dihydrosafrole",
+        "cas": "94-59-7; 120-58-1; 94-58-6"
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Added by 2014 amendment. Prohibited in all cosmetic products."
+      ],
+      "sourceText": "125 bis | Safrol, Isosafrol, dihidrosafrol"
+    }
+  ]
+}

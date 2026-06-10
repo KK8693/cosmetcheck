@@ -1,0 +1,965 @@
+--- Page 1 ---
+26/05/2026	00:50:36
+MINISTÉRIO	DA	SAÚDE
+AGÊNCIA	NACIONAL	DE	VIGILÂNCIA	SANITÁRIA
+DIRETORIA	COLEGIADA
+RESOLUÇÃO	-	RDC	Nº	48,	DE	25	DE	OUTUBRO	DE	2013
+Aprova	o	Regulamento	Técnico	de	Boas	Práticas	de	Fabricação	para
+Produtos	de	Higiene	Pessoal,	Cosméticos	e	Perfumes,	e	dá	outras
+providências.
+A	Diretoria	Colegiada	da	Agência	Nacional	de	Vigilância	Sanitária,	no	uso	das	atribuições	que	lhe	conferem	os	
+incisos	III	e	IV,	do	art.	15	da	Lei	n.º
+9.782,	de	26	de	janeiro	de	1999
+,	o	
+inciso	II,	e	§§	1°	e	3°	do	art.	54	do	Regimento	Interno
+	aprovado	nos	termos	do	Anexo	I	da	
+Portaria	nº	354	da
+ANVISA,	de	11	de	agosto	de	2006
+,	republicada	no	DOU	de	21	de	agosto	de	2006,	e	suas	atualizações,	tendo	em	vista	o	disposto	nos	
+incisos	III,	do
+art.	2º
+,	
+III	e	IV,	do	art.	7º	da	Lei	n.º	9.782,	de	1999
+,	e	o	Programa	de	Melhoria	do	Processo	de	Regulamentação	da	Agência,	instituído	por	meio	da
+Portaria	nº	422,	de	16	de	abril	de	2008
+,	na	Reunião	Ordinária	nº	27/2013,	realizada	em	19	de	setembro	de	2013,	adota	a	seguinte	Resolução	da
+Diretoria	Colegiada	e	eu,	Diretor-Presidente,	determino	a	sua	publicação:
+Art.	1º	Fica	aprovado	o	Regulamento	Técnico	de	Boas	Práticas	de	Fabricação	para	Produtos	de	Higiene	Pessoal,	Cosméticos	e	Perfumes,	nos	termos
+dos	Anexos	desta	Resolução.
+Art.	2º	Esta	Resolução	incorpora	ao	ordenamento	jurídico	nacional	a	Resolução	GMC	MERCOSUL	nº	19/11,	que	aprovou	o	"Regulamento	Técnico	de
+Boas	Práticas	de	Fabricação	para	produtos	de	Higiene	Pessoal,	Cosméticos	e	Perfumes	(revogação	das	Res.GMC	nº	92/94	e	66/96)".
+Art.	3º	Revogam-se	as	disposições	em	contrário,	em	especial	a	
+Portaria	nº	348,	de	18	de	agosto	de	1997
+.
+Art.	4º	Fica	instituído	o	prazo	máximo	de	3	(três)	anos	para	conclusão	dos	estudos	de	validação	a	partir	da	publicação	desta	Resolução.
+§	1º	No	prazo	de	1	(um)	ano,	a	empresa	deve	ter	elaborado	todos	os	protocolos	e	outros	documentos	necessários	para	a	validação	de	limpeza,
+metodologia	analítica,	sistemas	informatizados	e	sistema	de	água	de	processo	que	já	se	encontrem	instalados.
+§	2º	Para	metodologia	analítica,	a	elaboração	dos	protocolos	e	a	validação	do	método	deve	ser	realizada	apenas	quando	se	tratar	de	metodologias
+não	codificadas	em	normas	ou	bibliografia	conhecida.
+§	3º	Para	os	sistemas,	métodos	ou	equipamentos	adquiridos	a	partir	da	data	de	publicação	desta	instrução	normativa,	a	validação	deverá	ser
+realizada	antes	do	seu	uso	rotineiro.
+Art.	5º	O	descumprimento	das	disposições	contidas	nesta	Resolução	e	no	regulamento	por	ela	aprovado	constitui	infração	sanitária,	nos	termos	da
+Lei	n.	6.437,	de	20	de	agosto	de	1977
+,	sem	prejuízo	das	responsabilidades	civil,	administrativa	e	penal	cabíveis.
+Art.	6º	Esta	Resolução	entra	em	vigor	na	data	de	sua	publicação.
+DIRCEU	BRÁS	APARECIDO	BARBANO
+Diretor-Presidente
+ANEXO	I
+MERCOSUL/GMC/RES.	Nº	19/11
+REGULAMENTO	TÉCNICO	MERCOSUL	DE	BOAS	PRÁTICAS	DE	FABRICAÇÃO	PARA	PRODUTOS	DE	HIGIENE	PESSOAL,	COSMÉTICOS	E	PERFUMES
+(REVOGAÇÃO	DAS	RES.	GMC	Nº	92/94	e	66/96)
+TENDO	EM	VISTA:	O	Tratado	de	Assunção,	o	Protocolo	de	Ouro	Preto	e	as	Resoluções	Nº	92/94,	110/94,	66/96	e	56/02	do	Grupo	Mercado	Comum.
+CONSIDERANDO:
+Que	os	produtos	de	higiene	pessoal,	cosméticos	e	perfumes	devem	ser	seguros	nas	condições	normais	ou	previsíveis	de	uso.
+Que	a	fiscalização	dos	estabelecimentos	produtores	e	importadores	de	produtos	de	higiene	pessoal,	cosméticos	e	perfumes,	através	de	inspeções
+técnicas,	é	um	mecanismo	idôneo	que	contribui	para	garantir	a	qualidade	com	que	chegam	ao	mercado	os	produtos	que	são	fabricados,	embalados
+e	importados	por	esses	estabelecimentos.
+Que	a	fiscalização	deve	contemplar	os	aspectos	relativos	às	condições	de	funcionamento	e	sistemas	de	controle	de	qualidade	utilizados	pelos
+estabelecimentos.
+Que	existe	a	necessidade	de	estabelecer	procedimentos	comuns	a	serem	aplicados	nos	Estados	Partes,	com	uniformidade	de	critérios	para	a
+avaliação	dos	estabelecimentos	de	produtores	e	importadores	desses	produtos.
+Que	as	ações	de	controle	são	de	responsabilidade	dos	organismos	nacionais	competentes,	que	devem	contar	com	um	modelo	que	assegure	o
+controle	das	indústrias	com	uniformidade	de	critérios,	bem	como	a	neutralidade,	simetria	e	reciprocidade	no	tratamento	e	aplicação	das	normas	de
+regulação.
+Que	as	Boas	Práticas	de	Fabricação	devem	refletir	os	requisitos	mínimos	necessários	a	serem	cumpridos	pelas	indústrias	na	fabricação,	embalagem
+e	armazenamento	e	controle	de	qualidade	dos	referidos	produtos.
+Que	devido	aos	avanços	tecnológicos	é	necessário	atualizar	e	adotar	novos	requisitos	sobre	Boas	Práticas	de	Fabricação.
+O	GRUPO	MERCADO	COMUM	RESOLVE:
+Art.	1°	-	Aprovar	o	"Regulamento	Técnico	MERCOSUL	de	Boas	Práticas	de	Fabricação	Para	Produtos	de	Higiene	Pessoal,	Cosméticos	e	Perfumes",
+que	consta	como	Anexo	e	faz	parte	da	presente	Resolução.
+Art.	2°	-	Os	organismos	nacionais	competentes	para	a	implementação	da	presente	Resolução	são:
+Argentina:	Administración	Nacional	de	Medicamentos,	Alimentos	y	Tecnología	Médica	(ANMAT)	Brasil:	Agência	Nacional	de	Vigilância	Sanitária
+(ANVISA/	MS)	Paraguai:	Dirección	Nacional	de	Vigilancia	Sanitaria,	Ministerio	de	Salud	Pública	y	Bienestar	Social	(MSPyBS)	Uruguai:	Ministerio	de
+Salud	Pública	(MSP)
+Art.	3°	-	A	presente	Resolução	será	aplicada	no	território	dos	Estados	Partes,	ao	comércio	entre	eles	e	às	importações	extrazona.
+Art.	4º	-	Revogar	as	Resoluções	GMC	Nº	92/94	e	66/96.
+Art.	5º	-	Esta	Resolução	deverá	ser	incorporada	ao	ordenamento	jurídico	dos	Estados	Partes	antes	de	31/V/2012.
+
+--- Page 2 ---
+LXXXVI	GMC	-	Montevidéu,	18/XI/11.
+ANEXO	II
+REGULAMENTO	TÉCNICO	MERCOSUL	DE	BOAS	PRÁTICAS	DE	FABRICAÇÃO	PARA	PRODUTOS	DE	HIGIENE	PESSOAL,	COSMÉTICOS	E	PERFUMES
+Conteúdo
+1.	Considerações	Gerais
+2.	Definições
+3.	Gestão	da	Qualidade
+4.	Requisitos	básicos	de	Boas	Práticas	de	Fabricação	(BPF)
+5.	Saúde,	Sanitização,	Higiene,	Vestuário	e	Conduta
+6.	Reclamações
+7.	Recolhimento	de	Produtos
+8.	Devolução
+9.	Auto-Inspeção
+10.	Documentação	e	Registros
+11.	Pessoal
+12.	Instalações
+13.	Sistemas	e	Instalações	de	Água
+14.	Áreas	Auxiliares
+15.	Recebimento	e	Armazenamento
+16.	Amostragem	de	Materiais
+17.	Produção
+18.	Controle	da	Qualidade
+19.	Amostras	de	Retenção
+1.	CONSIDERAÇÕES	GERAIS
+1.1.	Os	produtos	de	higiene	pessoal,	cosméticos	e	perfumes	destinados	à	comercialização	devem	estar	devidamente	regularizados	e	fabricados	por
+indústrias	habilitadas,	regularmente	inspecionadas	pela	autoridade	sanitária	competente.
+1.2	Este	Regulamento	estabelece	os	procedimentos	e	as	práticas	que	o	fabricante	deve	aplicar	para	assegurar	que	as	instalações,	métodos,
+processos,	sistemas	e	controles	usados	para	a	fabricação	de	produtos	de	higiene	pessoal,	cosméticos	e	perfumes	sejam	adequados	de	modo	a
+garantir	qualidade	desses	produtos.
+1.3.	Os	fabricantes	de	produtos	de	higiene	pessoal,	cosméticos	e	perfumes	devem	assegurar	que	esses	produtos	são	adequados	para	o	uso
+pretendido	e	estejam	de	acordo	com	os	requisitos	de	qualidade	pré-estabelecidos.
+1.4	Os	aspectos	de	segurança	para	o	pessoal	envolvido	na	fabricação	e	de	proteção	ambiental	estão	regulamentados	por	legislação	específica	e	os
+estabelecimentos	devem	cumprir	com	os	requisitos	aplicáveis	a	cada	uma	das	áreas.
+1.5	O	detentor	do	Registro	ou	Notificação	ou	Admissão	é	responsável	pela	qualidade	do	produto	de	higiene	pessoal,	cosméticos	e	perfumes.
+2.	DEFINIÇÕES
+As	definições	dadas	a	seguir	se	aplicam	aos	termos	utilizados	neste	Regulamento	Técnico,	estas	podem	ter	significados	diferentes	em	outros
+contextos.
+Amostragem:	conjunto	de	operações	de	retirada	e	preparação	de	amostras.
+Aprovado:	condição	em	que	se	encontram	os	materiais,	insumos	ou	produtos	que,	após	verificação,	cumprem	com	as	especificações	estabelecidas.
+Área	Dedicada:	setor	de	uso	exclusivo	para	uma	determinada	atividade	ou	processo.
+Área	Definida:	é	o	setor	marcado	ou	delimitado	para	a	realização	de	alguma	atividade	específica.
+Auditoria:	avaliação	sistemática	e	independente	para	determinar	que	as	atividades	ligadas	à	qualidade	encontram-se	efetivamente	implementadas.
+Deve	ser	executada	por	pessoal	qualificado.
+Auto-Inspeção/Auditoria	Interna:	avaliação	do	cumprimento	de	Boas	Práticas	em	todos	os	aspectos	dos	processos	de	fabricação	/	manufatura,
+realizada	por	pessoal	interno	e/ou	externo	qualificado.
+Boas	Práticas	de	Fabricação:	são	requisitos	gerais	que	o	fabricante	de	produto	deve	aplicar	às	operações	de	Fabricação	de	Produtos	de	Higiene
+Pessoal,	Cosméticos	e	Perfumes	de	modo	a	garantir	a	qualidade	e	segurança	dos	mesmos.
+Calibração:	conjunto	de	operações	de	verificação	e	ajuste	de	instrumentos	ou	sistemas	de	medição	segundo	normas	reconhecidas,	para	que
+funcionem	dentro	de	seus	limites	de	precisão	e	exatidão.
+Contaminação:	 introdução	 indesejada	 de	 impurezas	 de	 natureza	 física,	 química	 e/ou	 microbiológica	 na	 matéria-prima,	 material	 de
+embalagem/envase,	produto	intermediário,	e/ou	produto	acabado	durante	a	fabricação.
+Contaminação	cruzada:	contaminação	de	uma	matéria-prima,	produto	intermediário	ou	acabado	com	outra	matéria-prima,	produto	intermediário	ou
+acabado	durante	a	fabricação.
+Controle	em	Processo:	verificações	realizadas	durante	a	elaboração	para	monitorar	e,	se	necessário,	ajustar	o	processo	para	assegurar	que	o
+produto	cumpra	com	suas	especificações.
+Controle	de	Qualidade:	operações	usadas	para	verificar	o	cumprimento	dos	requisitos	técnicos	de	acordo	com	as	especificações	previamente
+definidas.
+Elaboração:	operações	que	permitem	que	matérias-primas	preparadas	através	de	um	processo	definido	resultem	na	obtenção	de	um	produto	a
+
+--- Page 3 ---
+granel.
+Envasar/embalar:	conjunto	de	operações	pelas	quais,	a	partir	do	produto	a	granel	e	do	material	de	embalagem	(incluindo	rótulo),	chega-se	ao
+produto	acabado.
+Especificação:	documento	que	descreve	em	detalhes	os	requisitos	a	que	devem	atender	os	produtos	ou	materiais	usados	ou	obtidos	durante	a
+fabricação.
+Estabelecimento:	unidade	da	empresa	onde	se	realizam	atividades	previstas	pela	legislação	sanitária	vigente.
+Fabricação/Manufatura:	todas	as	operações	de	produção	e	controle	relacionados	que	se	fizerem	necessárias	à	obtenção	dos	produtos.
+Fabricante:	empresa	que	possui	Autorização	de	Funcionamento	para	a	fabricação	de	produtos	de	higiene	pessoal,	cosméticos	e	perfumes.
+Fórmula	Padrão/Fórmula	Mestra:	documento	ou	conjunto	de	documentos	que	especificam	as	matérias-primas	com	as	suas	quantidades	em
+conformidade	com	a	fórmula	declarada	junto	à	autoridade	sanitária	e	os	materiais	de	embalagem,	juntamente	com	a	descrição	dos	procedimentos
+e	precauções	necessárias	para	a	fabricação	do	produto.
+Garantia	da	Qualidade:	todas	as	ações	sistemáticas	necessárias	para	prover	segurança	de	que	um	produto	ou	serviço	irá	satisfazer	os
+requerimentos	de	qualidade	estabelecidos.
+Gestão	da	Qualidade:	atividades	coordenadas	para	dirigir	e	controlar	uma	organização,	no	que	diz	respeito	à	qualidade.
+Inspeção:	atividades	tais	como	medição,	teste,	exame,	de	uma	ou	mais	características	de	uma	entidade,	produto	ou	serviço,	comparando	os
+resultados	com	requisitos	específicos	para	estabelecer	se	a	conformidade	de	uma	característica	é	atingida.
+Lote:	quantidade	definida	de	matéria-prima,	material	de	embalagem	ou	produto	terminado	fabricado	em	um	único	processo	ou	série	de	processos,
+cuja	característica	essencial	é	a	homogeneidade	e	qualidade	dentro	dos	limites	especificados.	Na	fabricação	contínua,	o	lote	corresponde	a	uma
+fração	definida	da	produção.
+Materiais	de	Embalagem:	materiais	utilizados	para	o	acondicionamento	do	produto	final.	Podem	ser	classificados	como	primários	ou	secundários	de
+um	produto,	mas	excluindo	qualquer	outra	embalagem	externa	usada	no	transporte.
+Matéria-Prima:	qualquer	substância	envolvida	na	obtenção	de	um	produto	a	granel	que	faça	parte	deste	na	sua	forma	original	ou	modificada.
+Número	de	Lote:	referência	numérica,	alfabética	ou	alfanumérica	que	identifique	um	determinado	lote.
+Ordem	de	Fabricação:	documento	de	referência	para	a	fabricação	de	um	lote	de	determinado	produto	que	contemple	as	informações	da	fórmula
+padrão/fórmula	mestre.
+Procedimento	Operacional	Padrão:	procedimento	escrito	e	aprovado	que	fornece	instruções	detalhadas	para	a	realização	de	atividades	específicas.
+Produção:	etapa	da	fabricação	que	compreende	desde	a	recepção,	armazenamento	e	pesagem	de	materiais	até	a	elaboração	do	granel,	o	envase	e
+o	acondicionamento	do	produto	acabado.
+Produto	acabado/terminado:	produto	que	tenha	passado	por	todas	as	fases	de	produção,	pronto	para	venda/consumo	final.
+Produto	a	granel:	qualquer	produto	que	tenha	passado	por	todas	as	etapas	de	produção,	sem	incluir	o	processo	de	embalagem.
+Produto	devolvido:	produto	que	já	foi	expedido	e	que	retorna	ao	fabricante	ou	importador.
+Produto	recolhido:	produto	expedido	que	retorna	ao	fabricante	ou	importador	por	iniciativa	própria	e/ou	determinação	de	órgão	sanitário
+competente.
+Produto	semi-acabado/semi-terminado:	produto	que	necessita	de	pelo	menos	uma	operação	posterior	antes	de	ser	considerado	produto
+terminado/acabado.
+Produto	semi-elaborado/intermediário:	substância	ou	mistura	de	substâncias	que	requeiram	posteriores	processos	de	produção	a	fim	de	converter-
+se	em	produtos	a	granel.
+Qualificação:	procedimento	que	garante	que	equipamentos	e	instalações	estejam	adequados	ao	uso	pretendido	de	acordo	com	o	plano	de	testes
+pré-determinados	e	critérios	de	aceitação	definidos.
+Quarentena:	retenção	temporária	de	matéria-prima,	material	de	embalagem,	produtos	intermediários,	semi-acabados,	a	granel	ou	acabados,
+enquanto	aguardam	decisão	de	liberação,	rejeição,	reprocessamento.
+Reanálise:	ensaio	realizado	em	materiais,	previamente	aprovados,	para	confirmar	a	manutenção	das	especificações	estabelecidas,	dentro	do	seu
+prazo	de	validade.
+Reclamação:	notificação	externa	que	pode	ser	indicativo	de	possíveis	desvios	de	qualidade.
+Recolhimento	de	produto:	procedimento	executado	pela	empresa	de	retirada	de	um	produto	do	mercado.	Pode	ser	espontâneo	ou	determinado	pelo
+órgão	sanitário	competente.
+Registro	de	Lote:	toda	documentação	relativa	a	um	lote	de	um	produto	específico.
+Reprocessamento:	retrabalho	de	uma	ou	mais	etapas	de	produção	de	todo	ou	parte	de	um	lote	de	produto	fora	de	um	ou	mais	parâmetros	de
+qualidade	estabelecidos,	a	partir	de	uma	etapa	definida	de	produção,	de	forma	que	sua	qualidade	possa	tornar-se	aceitável	através	de	uma	ou	mais
+operações	adicionais.
+Sanitização:	processo	utilizado	para	redução	do	número	de	microrganismos	viáveis	a	níveis	aceitáveis	em	uma	superfície	limpa.
+Terceirização:	é	a	contratação	de	serviços	de	terceiros	para	a	execução	de	etapas	da	fabricação	ou	fabricação	total	de	Produtos	de	Higiene	Pessoal,
+Cosméticos	e	Perfumes.
+Validação:	ação	documentada,	conduzida	para	estabelecer	e	demonstrar	que	um	processo	ou	procedimento	conduz	necessária	e	efetivamente	ao
+objetivo	requerido.
+3.	GESTÃO	DA	QUALIDADE
+3.1	Os	conceitos	de	Garantia	da	Qualidade,	de	Boas	Práticas	de	Fabricação	(BPF)	e	de	Controle	de	Qualidade	são	aspectos	interrelacionados	da
+gestão	da	qualidade.	Estão	descritos	neste	Regulamento	de	forma	que	sejam	enfatizadas	as	suas	relações	e	a	fundamental	importância	para	a
+fabricação	dos	produtos	regidos	pelo	mesmo.
+3.2	Princípios
+3.2.1.	A	qualidade	deve	ser	de	responsabilidade	de	todo	o	pessoal	da	empresa	tendo	como	referência	a	política	estabelecida,	com
+comprometimento	da	alta	gerência.
+
+--- Page 4 ---
+3.2.2.	A	empresa	deve	estabelecer,	documentar,	implementar	e	manter	um	sistema	eficaz	para	a	gestão	da	qualidade,	com	a	participação	ativa	de
+todo	pessoal	envolvido	na	fabricação.
+3.2.3.	O	sistema	para	a	gestão	da	qualidade	deve	abranger	a	estrutura	organizacional,	os	procedimentos,	os	processos,	os	recursos,	a
+documentação	e	as	atividades	necessárias	para	assegurar	que	o	produto	esteja	em	conformidade	com	as	especificações	pretendidas	de	qualidade.
+3.2.4.	Todas	as	atividades	relacionadas	à	qualidade	devem	ser	documentadas.
+3.3	Garantia	da	Qualidade
+3.3.1.	O	fabricante	deve	manter	um	Sistema	de	Garantia	da	Qualidade.
+3.3.2.	O	fabricante	deve	assegurar	a	qualidade,	segurança	e	eficácia	dos	produtos,	devendo	atender	aos	requisitos	estabelecidos	na	legislação
+sanitária	vigente.
+3.3.3.	O	sistema	de	Garantia	da	Qualidade	deve	ser	constituído	por	instalações	e	equipamentos	adequados,	compatíveis	com	as	atividades
+desenvolvidas	e	conduzidas	por	pessoal	competente	e	habilitado.
+3.3.4.	Um	sistema	apropriado	de	Garantia	da	Qualidade	deve	assegurar	que:
+a)	as	operações	de	produção	e	controle	estejam	claramente	especificadas	por	escrito	e	as	exigências	de	BPF	cumpridas
+b)	as	responsabilidades	gerenciais	de	cada	área	estejam	claramente	definidas	e	documentadas
+c)	sejam	realizados	os	controles	estabelecidos	como	necessários	nas	matérias-primas,	materiais	de	embalagem,	produtos	semielaborados,	produtos
+a	granel,	produtos	semiterminados/semi-acabados,	produtos	acabados/terminados,	e	os	relativos	a	controle	em	processo,	calibrações,	qualificações
+e	validações,	quando	aplicável
+d)	os	produtos	não	sejam	vendidos	ou	entregues	a	consumo	antes	que	sejam	realizadas	todas	as	etapas	de	controle	e	liberação
+e)	sejam	fornecidas	instruções	para	garantir	que	os	produtos	sejam	manuseados	e	armazenados	de	forma	que	a	qualidade	dos	mesmos	seja
+mantida	por	todo	o	prazo	de	validade
+f)	haja	procedimento	de	Auto-Inspeção	de	qualidade	que	avalie	regularmente	a	efetividade	e	a	aplicação	do	Sistema	de	Garantia	da	Qualidade
+g)	os	desvios	sejam	reportados,	investigados	e	registrados.
+Quando	necessário,	ações	corretivas	devem	ser	implementadas
+h)	os	procedimentos,	especificações	e	instruções	que	possam	ter	influência	na	qualidade	dos	produtos	sejam	periodicamente	revistos	e	mantidos	os
+respectivos	históricos
+i)	a	estabilidade	de	um	produto	seja	determinada	antes	da	comercialização	e	que	os	estudos	sejam	repetidos	após	quaisquer	mudanças
+significativas	nos	processos	de	produção,	formulação,	equipamentos	ou	materiais	de	embalagem.
+3.3.5.	Devem	existir	critérios	definidos	para	qualificação	de	fornecedores,	os	quais	poderão	incluir:	avaliação	do	histórico	de	fornecimento,
+avaliação	preliminar	através	de	questionário	e/ou	auditorias	de	qualidade.
+3.4	Validação
+3.4.1.	A	empresa	deve	conhecer	seus	processos	a	fim	de	estabelecer	critérios	para	identificar	a	necessidade	ou	não	de	validação	dos	mesmos.
+Quando	as	validações	forem	aplicáveis	deve	ser	estabelecido	um	protocolo	de	validação	que	especifique	como	o	processo	será	conduzido.	O
+protocolo	deve	ser	aprovado	pela	Garantia	da	Qualidade.
+3.4.2.	Para	os	produtos/processos	que	não	serão	validados,	a	empresa	deve	estabelecer	todos	os	controles	operacionais	necessários	para	garantir	o
+cumprimento	dos	requisitos	preestabelecidos	ou	especificados.
+3.4.3.	O	protocolo	de	validação	deve	especificar,	no	mínimo:
+a)	descrição	dos	equipamentos
+b)	amostras	a	serem	coletadas
+c)	características	e	variáveis	a	serem	monitorados,	especificando	os	métodos	analíticos	e	limites	de	aceitação
+d)	critérios	de	aceitação.
+3.4.4.	É	recomendável	a	validação	de	limpeza,	metodologia	analítica	(quando	se	tratarem	de	metodologias	que	não	se	encontrem	codificadas	em
+Normas	e	outras	bibliografia	internacional	de	referência),	sistemas	informatizados,	sistema	de	água	de	processos.
+3.4.5.	O	relatório	de	validação	deve	fazer	referência	ao	protocolo	e	ser	elaborado	contemplando	resultados	obtidos,	desvios,	conclusões,	mudanças
+e	recomendações.
+3.4.6.	Qualquer	desvio	do	protocolo	de	validação	deve	ser	documentado,	investigado	e	justificado.
+3.4.7.	O	processo	de	validação	é	satisfatório	quando	os	resultados	são	aceitáveis.	Caso	contrário	deve-se	analisar	a	origem	dos	desvios	encontrados
+e	determinar	as	alterações	necessárias,	até	que	o	mesmo	apresente	resultados	aceitáveis.
+3.4.8.	Devem	ser	estabelecidos	os	critérios	de	qualificação	de	acordo	com	a	complexidade	dos	equipamentos,	processos	e	sistemas	críticos.	A
+qualificação	é	pré-requisito	para	validação.
+3.5	Revalidação
+3.5.1.	No	caso	de	processos	ou	sistemas	validados,	a	empresa	deverá	determinar	a	necessidade	de	sua	revalidação	considerando	o	histórico	dos
+resultados,	verificando	que	o	processo	se	encontra	consistente	com	a	última	validação.
+3.5.2.	Cada	mudança	deve	ser	avaliada	pela	Garantia	da	Qualidade,	para	determinação	da	necessidade	ou	não	de	revalidação,	considerando	o
+impacto	sobre	os	processos	e	sistemas	já	validados	.
+3.5.3.	A	extensão	da	revalidação	depende	da	natureza	das	mudanças	e	de	como	elas	afetam	os	diferentes	aspectos	dos	processos	e	sistemas,
+previamente	validados.
+3.5.4.	A	empresa	deve	definir	a	periodicidade	da	revalidação.
+3.6	Estabilidade	3.6.1.	A	empresa,	durante	o	processo	de	desenvolvimento,	deve	estabelecer	estudo	de	estabilidade	dos	produtos	contemplando	os
+procedimentos	e	registros	com:	resultados	dos	testes,	metodologias	analíticas,	condições	de	conservação	da	amostra,	periodicidade	de	análise	e
+data	de	vencimento.
+3.6.2.	Devem	ser	mantidos	registros	das	análises	efetuadas	e	dos	estudos	de	estabilidade	realizados.
+
+--- Page 5 ---
+4.	REQUISITOS	BÁSICOS	DE	BOAS	PRÁTICAS	DE	FABRICAÇÃO	(BPF)
+4.1	As	BPF	determinam	que:
+a)	os	processos	de	fabricação	devem	ser	claramente	definidos,	sistematicamente	revisados,	e	mostrar	que	são	capazes	de	fabricar	produtos	dentro
+dos	padrões	de	qualidade	exigidos,	atendendo	às	respectivas	especificações
+b)	as	etapas	críticas	dos	processos	de	fabricação	e	quaisquer	modificações	significativas	devem	ser	sistematicamente	controladas	e	quando
+possível,	validadas
+c)	as	áreas	de	fabricação	devem	ser	providas	de	infra-estrutura	necessária	para	realização	das	atividades,	incluindo:
+I.	pessoal	treinado	e	qualificado
+II.	instalações	e	espaços	adequados
+III.	serviços	e	equipamentos	apropriados
+IV.	rótulos,	embalagens	e	materiais	apropriados
+V.	instruções	e	procedimentos	aprovados
+VI.	depósitos	apropriados
+VII.	pessoal,	laboratório	e	equipamentos	adequados	para	o	controle	de	qualidade.
+d)	as	instruções	e	os	procedimentos	devem	ser	escritos	em	linguagem	clara	e	objetiva	e	serem	aplicáveis	às	atividades	realizadas
+e)	os	funcionários	devem	ser	treinados	para	desempenharem	corretamente	os	procedimentos
+f)	devem	ser	feitos	registros	durante	a	produção	para	demonstrar	que	todas	as	etapas	constantes	nos	procedimentos	e	instruções	foram	seguidas	e
+que	a	quantidade	e	a	qualidade	do	produto	obtido	estão	em	conformidade	com	o	esperado.	Qualquer	desvio	significativo	deve	ser	registrado	e
+investigado
+g)	os	registros	referentes	à	fabricação	devem	estar	arquivados	de	maneira	organizada	e	de	fácil	acesso,	permitindo	rastreabilidade
+h)	esteja	implantado	um	procedimento	para	recolhimento	de	qualquer	lote,	após	sua	distribuição
+i)	o	armazenamento	adequado	dos	produtos	devem	minimizar	qualquer	risco	de	desvio	à	sua	qualidade
+j)	toda	reclamação	sobre	produto	comercializado	deve	ser	registrada	e	examinada.	As	causas	dos	desvios	de	qualidade	devem	ser	investigadas	e
+documentadas.	Devem	ser	tomadas	medidas	com	relação	aos	produtos	com	desvio	de	qualidade	e	adotadas	as	providências	no	sentido	de	prevenir
+reincidências.
+5.	SAÚDE,	SANITIZAÇÃO,	HIGIENE,	VESTUÁRIO	E	CONDUTA
+5.1.	As	atividades	de	sanitização	e	higiene	devem	abranger	pessoal,	instalações,	equipamentos	e	aparelhos,	materiais	de	produção	e	recipientes,
+produtos	para	limpeza	e	desinfecção	e	qualquer	outro	aspecto	que	possa	constituir	fonte	de	contaminação	para	o	produto.
+As	fontes	potenciais	de	contaminação	devem	ser	eliminadas	através	de	um	adequado	programa	de	sanitização	e	higiene.
+5.2.	Todo	o	pessoal	deve	ser	submetido	a	exames	de	saúde	para	admissão	e	posteriormente	a	exames	periódicos,	necessários	às	atividades
+desempenhadas,	de	acordo	com	procedimentos	estabelecidos.
+5.3.	Todo	o	pessoal	deve	ser	treinado	nas	práticas	de	higiene	pessoal.	Todas	as	pessoas	envolvidas	nos	processos	de	fabricação	devem	cumprir
+com	as	normas	de	higiene	pessoal	conforme	procedimentos	internos.
+5.4.	As	pessoas	com	suspeita	ou	confirmação	de	enfermidade	ou	lesão	exposta	que	possa	afetar	de	forma	adversa	à	qualidade	dos	produtos,	não
+devem	manusear	matérias-primas,	materiais	de	embalagem,	produtos	semi-elaborados	e	a	granel	ou	produtos	terminados	até	que	sua	condição	de
+saúde	não	represente	risco	ao	produto.
+5.5.	Todos	os	funcionários	devem	ser	instruídos	e	incentivados	a	relatar	a	seu	supervisor	imediato	quaisquer	situações	adversas,	relativas	à
+produção,	ao	equipamento	e	ao	pessoal,	que	considerem	que	possam	interferir	nos	produtos.
+5.6.	A	empresa	deve	assegurar	que	as	matérias-primas,	materiais	de	embalagem,	produtos	semi-acabados	e	a	granel	sejam	manuseados	de	forma
+a	garantir	a	proteção	dos	materiais	contra	contaminações.
+5.7.	A	empresa	deve	assegurar	que	os	funcionários	utilizem	paramentação	limpa	e	adequada	a	cada	área	e	atividade	para	garantir	a	proteção	do
+produto	contra	contaminações.
+5.8.	Para	que	seja	assegurada	a	proteção	dos	funcionários,	o	fabricante	deve	disponibilizar	Equipamento	de	Proteção	Coletiva	(EPC)	e	Equipamento
+de	Proteção	Individual	(EPI)	de	acordo	com	as	atividades	desenvolvidas	conforme	legislação	específica	vigente.
+5.9.	Deve-se	proibir	fumar,	comer,	beber,	mascar	ou	manter	plantas,	alimentos,	bebidas,	fumo	e	medicamentos	pessoais	nas	áreas	de	produção,	do
+laboratório	de	controle	de	qualidade	e	de	armazenamento	ou	em	quaisquer	outras	áreas	em	que	tais	ações	possam	influir	adversamente	na
+qualidade	do	produto.
+5.10.	A	localização	dos	bebedouros	deve	ser	restrita	a	corredores	ou	locais	específicos,	de	modo	a	evitar	contaminação	do	produto	e/ou	risco	a
+saúde	do	trabalhador.
+5.11.	Visitantes	e	pessoas	não	treinadas	só	poderão	acessar	as	áreas	de	produção	após	orientação	sobre	normas	de	higiene,	utilizando
+paramentação	adequada	e	acompanhadas	por	profissional	designado.
+6.	RECLAMAÇÕES
+6.1.	As	reclamações	e	demais	informações	referentes	a	produtos	com	possíveis	desvios	de	qualidade	devem	ser	cuidadosamente	investigadas	e
+registradas	de	acordo	com	procedimentos	escritos.	A	gestão	destas	investigações	deve	ser	realizada	por	pessoal	autorizado	com	participação	do
+Controle	de	Qualidade	e	demais	áreas	envolvidas.
+6.2.	Caso	seja	necessário,	a	verificação	deverá	ser	estendida	a	outros	lotes	vizinhos	para	verificar	se	podem	ter	sido	afetados.
+6.3.	Deve	ser	designada	pessoa	ou	setor	responsável	para	o	recebimento	das	reclamações	e	pelas	medidas	a	serem	adotadas.
+6.4.	Deve	existir	procedimento	escrito	que	descreva	as	ações	a	serem	adotadas	em	caso	de	reclamação	de	possíveis	desvios	de	qualidade	de	um
+produto,	incluindo	a	necessidade	de	realizar	um	provável	recolhimento	do	produto	do	mercado.
+6.5.	Quando	necessário,	devem	ser	adotadas	providências	adequadas	de	acompanhamento	após	a	investigação	e	a	avaliação	da	reclamação.
+6.6.	Os	registros	de	reclamações	devem	ser	regularmente	revisados	com	a	finalidade	de	detectar	qualquer	indício	de	problemas	específicos	ou
+
+--- Page 6 ---
+recorrentes	e	que	exijam	maior	atenção.
+6.7.	As	empresas	fabricantes	ou	importadoras	devem	possuir	um	sistema	de	cosmetovigilância	conforme	legislação	vigente.
+7.	RECOLHIMENTO	DE	PRODUTOS	DO	MERCADO
+7.1.	Deve	haver	um	sistema	que	retire	imediata	e	efetivamente	do	mercado	os	produtos	que	apresentem	desvios	de	qualidade	que	possam	oferecer
+risco	ao	usuário	.
+7.2.	Deve	ser	designada	uma	pessoa	responsável	pelas	medidas	a	serem	adotadas	e	pela	coordenação	do	recolhimento	do	produto	no	mercado.	O
+responsável	técnico	deve	ser	informado	sobre	as	ações	efetuadas	e	o	Controle	de	Qualidade	e/ou	Garantia	da	Qualidade	deve	acompanhar	o
+processo.
+7.3.	Devem	existir	procedimentos	escritos,	regularmente	conferidos	e	atualizados,	para	proceder	a	qualquer	atividade	de	recolhimento.
+Os	procedimentos	devem	contemplar	o	destino	dado	aos	produtos	recolhidos,	a	investigação	e	o	registro	de	todas	as	ações	tomadas.
+7.4.	As	autoridades	sanitárias	competentes	nacionais	e	dos	países	para	os	quais	o	produto	tenha	sido	enviado	devem	ser	imediatamente
+informadas	sobre	a	decisão	de	recolhimento	de	produto	do	mercado	.
+7.5.	O	processo	de	recolhimento	deve	ser	registrado,	incluindo	a	reconciliação	entre	as	quantidades	distribuídas	e	as	quantidades	resgatadas	do
+produto	em	questão,	com	emissão	de	um	relatório	final.
+7.6.	Os	produtos	recolhidos	devem	ser	identificados	e	armazenados	em	área	segregada	e	segura	até	a	decisão	sobre	o	seu	destino.
+8.	DEVOLUÇÃO
+8.1.	Deve	ser	designada	uma	pessoa	ou	setor	responsável	para	o	recebimento	das	devoluções.
+8.2.	Deve	existir	procedimento	para	o	recebimento,	armazenamento	e	investigação	das	causas	de	devoluções	de	produtos.
+8.3.	Os	produtos	devolvidos	devem	ser	inspecionados	e/ou	analisados	antes	de	ser	definido	seu	destino	final.
+8.4.	Devem	existir	registros	dos	resultados	da	inspeção	e/ou	análise	dos	produtos	devolvidos	incluindo	os	destinos	finais.
+8.5.	Após	a	inspeção	e/ou	análise	dos	produtos	devolvidos	devem	ser	tomadas	medidas	cabíveis,	incluindo	a	possibilidade	de	recolhimento	do
+produto.
+9.	AUTO-INSPEÇÃO/AUDITORIA	INTERNA
+9.1.	O	objetivo	da	auto-inspeção/auditoria	interna	é	avaliar	o	cumprimento	das	BPF	em	todos	os	aspectos	da	fabricação.	O	programa	de	auto-
+inspeção/	auditoria	interna	deve	ser	projetado	de	forma	a	detectar	quaisquer	deficiências	na	implementação	das	BPF	e	de	recomendar	as	ações
+corretivas	necessárias.
+9.2.	Devem	ser	elaborados	procedimentos	escritos	sobre	auto-	inspeção/auditoria	interna.	O	programa	de	auto-inspeção/auditoria	interna	deve
+englobar	pelo	menos	os	seguintes	aspectos:
+a)	pessoal
+b)	instalações
+c)	manutenção	de	prédios	e	equipamentos
+d)	armazenamento	de	matéria-prima,	material	de	embalagem,	produto	semi-elaborado,	produto	a	granel,	produto	semi-acabado	e	produto	acabado
+e)	equipamentos
+f)	produção	e	controle	em	processo
+g)	controle	de	Qualidade
+h)	documentação
+i)	sanitização	e	higiene
+j)	programas	de	validação	e	revalidação	quando	aplicável
+k)	calibração	de	instrumentos	e	de	sistemas	de	medidas
+l)	recolhimento	de	produto	do	mercado
+m)	reclamações
+n)	gerenciamento	de	resíduos
+o)	resultados	das	auto-inspeções/auditorias	internas	anteriores	e	quaisquer	ações	corretivas	adotadas.
+9.3.	A	equipe	de	auto-inspeção/auditoria	interna	deve	ser	formada	por	profissionais	qualificados,	com	conhecimento	em	BPF.
+Os	membros	da	equipe	podem	ser	profissionais	da	própria	empresa	ou	especialistas	externos.
+9.4.	As	auto-inspeções/auditorias	internas	devem	ser	realizadas	com	freqüência	de	pelo	menos	uma	vez	ao	ano.
+9.5.	Deve	ser	elaborado	um	relatório	após	o	término	da	autoinspeção/	auditoria	interna,	que	deve	conter:
+a)	os	resultados	da	auto-inspeção/auditoria	interna
+b)	avaliações	e	conclusões
+c)	as	ações	corretivas,	quando	aplicável
+d)	os	prazos	para	adequação.
+9.6.	As	ações	corretivas	para	as	não-conformidades	reportadas	no	relatório	de	auto-inspeção/auditoria	interna	devem	ser	implementadas,	e
+acompanhadas	conforme	o	plano	de	ação.
+10.	DOCUMENTAÇÃO	E	REGISTROS
+A	empresa	deve	estabelecer	sistema	de	documentação	de	acordo	com	sua	estrutura	organizacional	e	seus	produtos.
+10.1.	A	documentação	constitui	parte	essencial	do	sistema	de	Garantia	da	Qualidade	e,	deve	estar	relacionada	com	todos	os	aspectos	das	Boas
+Práticas	de	Fabricação.	Tem	como	objetivo	definir	as	especificações	de	todos	os	materiais	e	produtos,	os	procedimentos	de	todas	as	etapas
+
+--- Page 7 ---
+relacionadas	com	a	fabricação	e	controle	de	produtos,	assegurar	a	uniformidade	de	interpretação,	evitar	confusões	e	erros,	com	a	finalidade	de
+garantir	informações	necessárias	para	liberação	ou	não	de	lotes	de	produtos	que	atendam	os	pré-requisitos	de	qualidade	estabelecidos,
+assegurando	existência	de	registros	que	permitam	a	rastreabilidade.
+10.2.	Os	dados	devem	ser	registrados	por	meios	que	ofereçam	segurança	das	informações.	Todos	os	dados	devem	estar	disponíveis	durante	o
+período	de	retenção	estabelecido	neste	Regulamento.
+10.3.	Deve	haver	registro	das	alterações	realizadas.
+10.4.	Toda	a	documentação	relacionada	às	Boas	Práticas	de	Fabricação	deve	ser	elaborada,	aprovada,	atualizada	e	distribuída	de	acordo	com	os
+procedimentos	escritos.	Deve	estar	disponível	e	ser	arquivada	de	forma	segura.	O	título,	a	natureza	e	propósito	dos	documentos	devem	ser
+definidos.	A	emissão,	revisão,	substituição,	retirada	e	distribuição	dos	documentos	devem	ser	controladas	e	registradas	de	forma	segura.
+10.5.	Os	registros	alterados	devem	possibilitar	a	identificação	do	dado	anterior,	estar	assinados	e	datados	pelo	responsável	designado.
+Nenhum	documento	deve	ser	modificado	sem	autorização	prévia.
+10.6.	Os	documentos	e	registros	devem	ter	um	período	de	retenção	estabelecido	em	procedimentos	de	tal	forma	que	todas	as	atividades
+significativas	referentes	à	fabricação	de	produtos	de	higiene	pessoal,	cosméticos	e	perfumes,	possam	ser	rastreadas.
+10.7.	Todos	os	registros	de	produção	e	controle	devem	ser	retidos	por	no	mínimo	1	(um)	ano	após	o	vencimento	do	lote	de	produto	fabricado.
+10.7.1.	A	empresa	deve	assegurar	que	os	dados	permaneçam	íntegros	e	acessíveis	durante	seu	período	de	vigência.	Deve	haver	registro	das
+alterações	realizadas	conforme	procedimento	de	controle	de	documentos	e	registros.
+10.8.	A	empresa	deve	manter	registros	de	uso,	limpeza,	sanitização	e	manutenção	dos	equipamentos	contendo	a	data,	o	horário	e	responsável	pela
+realização	da	tarefa.	Quando	aplicável	deve	manter	outras	informações	tais	como:	produto	anterior,	produto	atual,	número	de	lote	do	produto
+processado,	fase	do	processo,	status	de	"aprovação,	quarentena	ou	reprovação".
+10.9.	Fórmulas	Padrão/Mestra.
+10.9.1.	Deve	existir	uma	fórmula	padrão/mestra	para	cada	produto.
+10.9.2	A	fórmula	padrão/mestra	deve	incluir:
+a)	o	nome	e/ou	código	interno	de	referência	do	produto
+b)	descrição	da	forma	cosmética	do	produto
+c)	lista	de	todas	as	matérias-primas,	com	as	respectivas	quantidades	percentuais,	em	conformidade	com	a	fórmula	declarada	no
+registro/notificação/admissão
+d)	lista	completa	de	todos	os	materiais	de	envase	e	embalagem	requeridos	para	um	tamanho	padrão	de	lote,	incluindo	quantidades,	tamanhos	e
+tipos,	com	código	ou	número	de	referência	relativos	às	especificações	para	cada	material	de	acondicionamento
+e)	os	equipamentos	de	produção	a	serem	utilizados
+f)	procedimento	de	fabricação	com	as	instruções	detalhadas
+g)	especificação	dos	controles	em	processo,	com	suas	respectivas	metodologias
+h)	especificação	dos	controles	do	processo	de	envase/acondicionamento	e	do	produto	terminado	e,	quando	necessário,	condições	especiais	de
+armazenamento	devem	ser	definidas
+i)	quaisquer	precauções	especiais	a	serem	observadas.
+10.10.	Registros	dos	lotes	de	produção:
+10.10.1.	Deve	ser	mantido	um	registro	de	produção	de	cada	lote	elaborado.	O	registro	deve	se	basear	na	fórmula	padrão/mestre	aprovada	vigente.
+10.10.2.	Antes	do	início	da	produção	deve	ser	verificado	que	os	equipamentos	e	estações	de	trabalho	estejam	isentos	de	produtos	prévios,
+documentos	ou	materiais	não	requeridos	para	a	produção	planejada	e	que	os	equipamentos	estejam	limpos	e	adequados	para	o	uso.	Esta
+verificação	deve	ser	registrada.
+10.10.3.	Durante	o	processo	de	produção,	todas	as	etapas	que	requeiram	controles	descritos	no	procedimento	de	elaboração	devem	ser
+registradas.	As	seguintes	informações	devem	estar	disponíveis	para	rastreabilidade	da	produção:
+a)	nome	do	produto	e/ou	código	interno	do	produto
+b)	lote	do	granel	e/ou	produto
+c)	registro	das	principais	etapas	de	produção,	incluindo	datas	e	horários	do	início	e	término,	quando	requerido	no	procedimento	de	elaboração
+d)	identificação	do(s)	operador(es)	das	etapas	de	produção
+e)	número	dos	lotes	e	a	quantidade	de	cada	matéria	prima	e	materiais	utilizados.
+f)	qualquer	ocorrência	relevante	observada	na	produção.
+g)	os	principais	equipamentos	utilizados.
+h)	controles	em	processo	realizados,	identificação	da	pessoa	que	os	tenha	executado	e	os	resultados	obtidos.
+i)	observações	sobre	problemas	especiais,	incluindo	detalhes	como	a	autorização	assinada	para	cada	alteração	da	fórmula	de	fabricação	ou
+instruções	de	produção.
+10.11.	Procedimentos	Operacionais	Padrão	(POPs)	e	seus	registros.
+10.11.1.	Devem	existir	procedimentos	e	registros	para:
+a)	recebimento	de	matérias-primas,	material	de	embalagem	e	de	granel
+b)	a	identificação	das	matérias-primas,	produtos	semi-elaborados,	produtos	a	granel,	produtos	semi-acabados,	produtos	terminados/	acabados	e
+materiais	de	embalagem	armazenados	em	quarentena,	aprovados	ou	reprovados
+c)	a	amostragem	das	matérias-primas,	materiais	de	embalagem,	produtos	semi-elaborados,	produtos	a	granel,	produtos	semiacabados	e	produtos
+acabados
+d)	definição	da	numeração	de	lote	específica	para	matériasprimas,	materiais	de	embalagem	e	produtos	terminados/acabados
+
+--- Page 8 ---
+e)	ensaios	de	controle	de	qualidade	realizados,	descrevendo	os	métodos	e	os	equipamentos	a	serem	utilizados
+f)	aprovação	ou	reprovação	de	materiais	e	produtos	e	definição	da	pessoa	ou	setor	responsável
+g)	as	atividades	de	limpeza	e	sanitização	de	materiais,	utensílios,	equipamentos	e	áreas,	incluindo	as	freqüências,	os	métodos	e	os	materiais	de
+limpeza	a	serem	utilizados
+h)	armazenamento	e	expedição	dos	produtos
+i)	calibração,	verificação	e	manutenção	de	equipamentos
+j)	controle	de	pragas,	contemplando	métodos	e	materiais	empregados
+k)	procedimento	referente	à	manutenção	dos	equipamentos	de	prevenção	e	combate	a	incêndio.
+11.	PESSOAL
+11.1.	A	empresa	deve	ter	um	organograma	atualizado	e	as	responsabilidades	atribuídas.	As	responsabilidades	funcionais	devem	estar	estabelecidas
+e	documentadas	e	ser	claramente	compreendidas	por	todos	os	envolvidos.
+11.2.	O	fabricante	deve	ter	um	número	suficiente	de	pessoas	treinadas	e	qualificadas.
+11.3.	O	fabricante	deve,	mediante	um	programa	escrito	e	definido,	treinar	as	pessoas	envolvidas	nas	áreas	de	produção,	nos	laboratórios	de
+controle	de	qualidade,	bem	como	todo	pessoal	cujas	atividades	possam	interferir	na	qualidade	do	produto.
+11.4.	Além	de	treinamento	básico	sobre	as	BPF,	o	pessoal	recentemente	contratado	deve	participar	do	programa	de	integração	e	receber
+treinamento	apropriado	quanto	às	suas	atribuições	e	ser	treinado	e	avaliado	continuamente.
+O	programa	de	treinamento	deve	ser	aprovado,	quando	aplicável,	pelos	responsáveis	da	Produção,	do	Controle	de	Qualidade	e	da	Garantia	da
+Qualidade,	sendo	mantidos	registros.
+11.5.	O	pessoal	que	trabalha	em	áreas	onde	são	manipulados	materiais	tóxicos	e	inflamáveis	deve	receber	treinamento	específico.
+11.6.	Deve	existir	planejamento	dos	treinamentos	de	pessoal,	bem	como	o	registro	dos	treinamentos	realizados.
+11.7.	O	conceito	de	Garantia	da	Qualidade	e	todas	as	medidas	capazes	de	melhorar	sua	compreensão	e	sua	implementação	devem	ser	amplamente
+discutidos	durante	o	treinamento.
+11.8.	Os	responsáveis	pela	produção	e	controle	de	qualidade	devem	ser	independentes	um	do	outro.
+11.9.	A	responsabilidade	técnica	deve	ser	exercida	por	profissional	devidamente	habilitado.	Na	ausência	do	Responsável	Técnico,	essa	função	deve
+ser	exercida	por	pessoa	qualificada	previamente	designada.
+11.10.	Deverão	ser	estabelecidas	as	responsabilidades	funcionais	para	as	seguintes	atividades:
+a)	autorização	dos	procedimentos	e	documentos,	inclusive	suas	atualizações
+b)	monitoramento	e	o	controle	do	ambiente	de	fabricação
+c)	higiene
+d)	calibração	de	instrumentos	analíticos
+e)	treinamento,	incluindo	a	aplicação	dos	princípios	de	garantia	da	qualidade
+f)	a	aprovação	e	o	monitoramento	de	fornecedores	de	materiais
+g)	aprovação	e	o	monitoramento	dos	fabricantes	contratados
+h)	especificações	e	o	monitoramento	das	condições	de	armazenamento	de	materiais	e	produtos
+i)	arquivo	de	documentos/registros
+j)	monitoramento	do	cumprimento	das	BPF
+k)	inspeção,	investigação	e	amostragem,	de	modo	a	monitorar	fatores	que	possam	afetar	a	qualidade	do	produto
+l)	assegurar	que	sejam	realizadas	as	validações	quando	necessárias.
+11.11.	Devem	também	ser	estabelecidas	as	responsabilidades	funcionais	para	a	produção:
+a)	assegurar	que	os	produtos	sejam	produzidos	e	armazenados	de	acordo	com	os	procedimentos	apropriados,	com	a	qualidade	exigida
+b)	aprovar	e	assegurar	a	implementação	das	instruções	relativas	às	operações	de	produção,	inclusive	os	controles	em	processo
+c)	assegurar	que	os	registros	de	produção	sejam	avaliados	e	assinados	por	pessoal	designado,	antes	que	sejam	colocados	à	disposição	do	Controle
+de	Qualidade/Garantia	da	Qualidade
+d)	verificar	a	manutenção	das	instalações	e	dos	equipamentos
+e)	assegurar	que	as	calibrações	e	controle	dos	equipamentos	sejam	executados	e	registrados	e	que	os	relatórios	estejam	disponíveis
+f)	assegurar	que	seja	realizado	treinamento	inicial	e	contínuo	do	pessoal	da	área	de	produção	e	que	o	mesmo	seja	adequado	às	necessidades
+11.12.	O	responsável	pelo	Controle	de	Qualidade	e/ou	Garantia	da	Qualidade	possui	as	seguintes	responsabilidades:
+a)	aprovar	ou	rejeitar	as	matérias-primas,	os	materiais	de	embalagem,	produtos	semi-elaborados,	a	granel	e	terminados
+b)	avaliar	os	registros	dos	lotes
+c)	assegurar	que	sejam	realizados	todos	os	ensaios	necessários
+d)	aprovar	as	instruções	e	os	procedimentos	da	qualidade
+e)	aprovar	e	monitorar	os	ensaios	realizados	por	terceiros,	previstos	em	contrato
+f)	monitorar	a	manutenção	das	instalações	e	dos	equipamentos
+g)	assegurar	que	sejam	feitas	as	calibrações	dos	equipamentos	de	controle
+h)	assegurar	que	sejam	realizados	treinamentos	iniciais	e	contínuos	do	pessoal	da	área	de	Controle	de	Qualidade,	de	acordo	com	as	necessidades
+do	setor
+
+--- Page 9 ---
+i)	assegurar	que	as	metodologias	analíticas	sejam	validadas	quando	necessário
+j)	manter	registros	completos	dos	ensaios	e	resultados	de	cada	lote	de	material	analisado	de	forma	a	emitir	um	laudo	analítico	sempre	que
+necessário
+k)	participar	da	investigação	das	reclamações	dos	produtos	acabados
+l)	assegurar	a	correta	identificação	dos	reagentes	e	materiais
+m)	Investigar	os	resultados	fora	de	especificação,	de	acordo	com	procedimentos
+n)	certificar-se	da	execução	da	qualificação	dos	equipamentos	do	laboratório,	quando	necessária
+o)	garantir	a	rastreabilidade	de	todos	os	processos	relativos	à	fabricação	do	produto.
+12.	INSTALAÇÕES
+12.1.	A	empresa	deve	ser	construída	em	local	compatível	com	as	atividades	desempenhadas	e	dispor	de	planta	arquitetônica	aprovada	pela
+autoridade	sanitária	competente,	com	informações	necessárias	tais	como,	área	do	terreno,	área	construída,	tipo	de	construção	e	instalações
+destinadas	à	fabricação	dos	produtos.
+12.2.	As	instalações	devem	ser	localizadas,	projetadas,	construídas,	adaptadas	e	mantidas	de	forma	que	sejam	adequadas	às	operações	a	serem
+executadas.	Seu	projeto	deve	minimizar	o	risco	de	erros	e	possibilitar	a	limpeza	e	manutenção,	de	modo	a	evitar	a	contaminação	cruzada,	o
+acúmulo	de	poeira	e	sujeira	ou	qualquer	efeito	adverso	que	possa	afetar	a	qualidade	dos	produtos.
+12.3.	A	limpeza	e/ou	sanitização	das	áreas	deve	ser	realizada	conforme	procedimentos	e	devem	ser	mantidos	os	registros	correspondentes;
+12.4.	As	instalações	devem	ser	mantidas	em	bom	estado	de	conservação,	higiene	e	limpeza.
+12.5.	Deve	ser	assegurado	que	as	operações	de	manutenção	e	reparo	não	representem	risco	à	qualidade	dos	produtos.
+12.6.	Os	arredores	dos	edifícios	devem	estar	limpos	e	em	bom	estado	de	conservação.
+12.7.	O	fornecimento	de	energia	elétrica,	iluminação,	ar	acondicionado	e/ou	ventilação,	devem	ser	apropriados,	de	modo	a	não	afetar	direta	ou
+indiretamente	os	produtos	durante	os	processos	de	fabricação	e	armazenamento	ou	o	funcionamento	adequado	dos	equipamentos.
+12.8.	As	instalações	devem	ser	projetadas	e	equipadas	de	forma	a	permitirem	a	proteção	contra	a	entrada	de	insetos	e	outros	animais,	mantendo
+um	programa	de	prevenção	e	combate	dos	mesmos,	com	registros.
+12.9.	Devem	existir	instalações	de	segurança	contra	incêndio.
+A	quantidade	de	extintores	e	mangueiras	contra	incêndio	deve	ser	suficiente.	Os	extintores	e	mangueiras	devem	estar	bem	localizados	com	acesso
+livre	para	uso.
+12.10.	Os	produtos	raticidas,	inseticidas,	agentes	fumigantes	e	materiais	sanitizantes	devem	ser	utilizados	de	maneira	a	não	contaminar
+equipamentos,	matérias-primas,	materiais	de	embalagem,	materiais	em	processo	e	os	produtos	terminados.
+12.11.	Os	ralos	devem	ser	adequados,	projetados	de	forma	a	prevenir	refluxo.	Sempre	que	possível,	os	canais	abertos	devem	ser	evitados,	porém,
+caso	sejam	necessários,	devem	ser	de	fácil	limpeza.
+13.	SISTEMAS	E	INSTALAÇÕES	DE	ÁGUA
+13.1.	A	fonte	de	provimento	de	água	deve	garantir	o	abastecimento	com	quantidade	e	qualidade	adequadas.
+13.2.	A	empresa	deve	definir	claramente	as	especificações	físico-químicas	e	microbiológicas	da	água	utilizada	na	fabricação	dos	produtos	de
+Higiene	Pessoal,	Cosméticos	e	Perfumes,	devendo	atender	no	mínimo	aos	padrões	microbiológicos	de	potabilidade.
+13.2.1.	Somente	água	dentro	das	especificações	estabelecidas	deve	ser	utilizada	na	fabricação	dos	produtos	de	higiene	pessoal,	cosméticos	e
+perfumes.
+13.3.	As	tubulações	utilizadas	para	o	transporte	de	água	devem	apresentar	um	bom	estado	de	conservação	e	limpeza.
+13.4.	Se	necessário,	deve	ser	realizado	tratamento	da	água	previamente	ao	armazenamento,	de	forma	a	atender	às	especificações	estabelecidas.
+13.5.	Devem	existir	procedimentos	e	registros	da	operação,	limpeza,	sanitização,	manutenção	do	sistema	de	tratamento	e	distribuição	da	água;
+13.6.	Devem	existir	procedimentos	e	registros	do	monitoramento	da	qualidade	da	água.	O	monitoramento	deve	ser	periódico	nos	pontos	críticos	do
+sistema	de	água;
+13.7.	Caso	sejam	necessários	padrões	de	qualidade	específicos,	definidos	de	acordo	com	as	finalidades	de	uso	de	cada	produto,	a	água	deve	ser
+tratada	de	forma	a	atendê-los.
+13.7.1.	Devem	existir	investigações,	ações	corretivas	e	preventivas	para	resultados	de	monitoramento	de	água	fora	das	especificações
+estabelecidas.	Devem	ser	mantidos	registros	das	investigações	e	ações	adotadas.
+13.8.	A	circulação	da	água	deve	ser	efetuada	por	tubulação	ou	outro	meio	que	ofereça	segurança	quanto	à	manutenção	dos	padrões	estabelecidos
+de	qualidade	da	água.
+13.9.	No	caso	de	armazenamento	da	água	devem	existir	dispositivos	ou	tratamentos	que	evitem	a	contaminação	microbiológica.
+13.10.	Recomenda-se	que	o	sistema	de	tratamento	de	água	seja	validado.
+14.	ÁREAS	AUXILIARES
+14.1.	As	salas	de	descanso,	refeitório,	vestiários,	sanitários	e	áreas	de	manutenção	devem	ser	separadas	das	áreas	de	produção.
+14.2.	Os	vestiários,	lavatórios	e	os	sanitários	devem	ser	de	fácil	acesso	e	em	quantidade	suficiente	para	o	número	de	usuários,	em	condições	de
+higiene	apropriada,	providos	com	sabonete	e	toalhas	ou	secadores.	Os	sanitários	não	devem	ter	comunicação	direta	com	as	áreas	de	produção	e
+armazenamento.
+14.3.	As	áreas	de	manutenção	devem	estar	situadas	em	locais	separados	das	áreas	de	produção.	Se	as	ferramentas	e	peças	de	reposição	são
+mantidas	nas	áreas	de	produção,	as	mesmas	devem	estar	em	salas	ou	armários	ou	espaços	reservados	para	este	fim.
+14.4.	As	tubulações	de	água,	vapor,	gás,	ar	comprimido	e	eletricidade	devem	estar	identificados	conforme	legislação	vigente.
+14.5.	Caso	existam	biotérios,	as	instalações	devem	ser	isoladas	de	outras	áreas	com	entradas	e	instalações	de	ar	independentes.
+15.	ARMAZENAMENTO
+15.1.	As	áreas	de	armazenamento	devem	ter	capacidade	suficiente	para	possibilitar	o	estoque	ordenado	de	várias	categorias	de	materiais	e
+
+--- Page 10 ---
+produtos:	matérias-primas;	materiais	de	embalagem;	produtos	intermediários;	a	granel	e	produtos	acabados,	em	sua	condição	de	quarentena,
+aprovado,	reprovado,	devolvido	ou	recolhido	do	mercado.
+15.2.	As	áreas	de	armazenamento	devem	ser	projetadas	de	forma	que	assegurem	condições	ideais	de	estocagem.	Devem	ser	limpas,	secas	e
+mantidas	em	temperaturas	compatíveis	com	os	materiais	armazenados.	Quando	forem	exigidas	condições	especiais	de	armazenamento,
+temperatura	e	umidade,	tais	condições	devem	ser	providenciadas,	verificadas,	monitoradas	e	registradas.
+15.3.	Os	pisos,	paredes	e	tetos	devem	ser	de	fácil	limpeza,	de	material	resistente	e	devem	estar	em	bom	estado	de	conservação.
+15.4.	As	instalações	dos	almoxarifados	devem	estar	protegidas	contra	a	entrada	de	roedores,	insetos,	aves	e	outros	animais,	devendo	existir	um
+sistema	de	combate	aos	mesmos.
+15.5.	No	caso	de	desvios	em	relação	aos	parâmetros	estabelecidos	deve	ser	feita	investigação	para	apurar	as	causas,	devendo	ser	tomadas	ações
+preventivas	e/ou	corretivas	em	relação	às	causas	identificadas,	sendo	estas	registradas.
+15.6.	Todas	as	atividades	executadas	nas	áreas	do	almoxarifado	devem	atender	aos	procedimentos	previamente	definidos,	com	registro	das
+operações	críticas.
+15.7.	As	balanças	devem	ser	calibradas	periodicamente,	e	mantidos	os	registros.	Deve	ser	estabelecida	a	periodicidade	das	verificações.
+15.8.	Deve	existir	uma	área/sistema	que	delimite	ou	restrinja	o	uso	dos	materiais/produtos	respeitando-se	o	"status"	previamente	definido	para
+quarentena	e	aprovado.
+15.9.	Os	materiais	e	produtos	reprovados,	recolhidos	e	devolvidos	devem	estar	identificados	como	tal	e	armazenados	separadamente	em	área
+restrita	ou	segregada.	Qualquer	outro	sistema	que	substitua	a	identificação	através	de	etiquetas	ou	a	segregação	deve	oferecer	segurança.
+15.10.	O	sistema	de	registro	e	controle	de	armazenamento	dos	produtos	intermediários	e	a	granel	deve	incluir	o	tempo	máximo	de	estocagem
+permitido	antes	de	sua	embalagem.
+15.11.	O	sistema	de	registro	e	controle	da	expedição	deve	observar	a	correspondente	relação	seqüencial	de	lotes	e/ou	prazo	de	validade,	quando
+aplicável.
+15.12.	Os	materiais	que	apresentam	riscos	de	incêndio	ou	explosão	e	outras	substâncias	perigosas	devem	ser	estocadas	em	áreas	seguras	e
+protegidas,	devidamente	segregados	e	identificados,	de	acordo	com	legislação	especifica	vigente.
+15.13.	Os	materiais	devem	ser	armazenados	sob	condições	e	períodos	adequados	de	modo	a	preservar	a	sua	integridade	e	identidade.
+O	estoque	deve	ser	controlado	para	que	a	rotatividade	obedeça	à	regra:	primeiro	que	expira,	primeiro	que	sai	(PEPS),	quando	aplicável.
+15.14.	Deve	existir	um	sistema	para	o	controle	do	estoque.
+Caso	sejam	utilizados	sistemas	informatizados	para	gerenciamento	de	materiais	e	produtos,	a	empresa	deve	comprovar	a	segurança	do	sistema.
+15.15.	A	empresa	deve	realizar	inventários	periódicos,	mantendo	registros	dos	mesmos.
+15.16.	Os	materiais	e	produtos	armazenados	devem	estar	isolados	do	piso	e	afastados	das	paredes,	para	facilitar	a	limpeza	e	conservação.
+15.17.	Os	materiais	e	produtos	devem	estar	identificados	corretamente	pelo	seu	fabricante/fornecedor.	O	rótulo	ou	etiqueta	de	identificação	deve
+estar	devidamente	aderido	ao	corpo	do	recipiente	que	a	contém.
+15.18.	Quando	do	seu	recebimento,	cada	lote	de	materiais	e	produtos	devem	receber	um	número	de	registro,	o	qual	deve	ser	utilizado	para
+identificá-los	até	o	final	de	sua	utilização.
+15.19.	Os	materiais	e	produtos	devem	permanecer	em	quarentena	devidamente	identificados	como	tal,	antes	de	sua	liberação	pelo	controle	de
+qualidade.	No	caso	de	estoques	controlados	por	sistema	informatizado,	o	seu	uso	deve	ser	bloqueado	até	estarem	liberados	pela	pessoa	autorizada.
+15.20.	Os	rótulos,	etiquetas	ou	controles	por	sistema	eletrônico	dos	materiais	e	produtos	devem	permitir	sua	identificação	correta	e	visualização	do
+status.
+15.21.	As	etiquetas	ou	sistemas	de	identificação	devem	conter	as	seguintes	informações:
+a)	nome	do	material	ou	produto	e/ou	respectivo	código	interno	de	referência
+b)	número	do	lote	atribuído	pelo	fornecedor	e	o	número	dado	pela	empresa	quando	do	recebimento
+c)	situação	dos	materiais:	quarentena,	em	análise,	aprovado,	rejeitado	e	devolvido
+d)	data	de	validade
+e)	Nome	do	fornecedor.
+15.22.	Somente	as	matérias-primas	liberadas	pelo	Controle	de	Qualidade	podem	ser	usadas	para	a	fabricação	de	Produtos	de	Higiene	Pessoal,
+Cosméticos	e	Perfumes.
+15.23.	Deve	ser	respeitado	o	prazo	de	validade	estabelecido	pelo	fabricante	das	matérias-primas.	A	reanálise	das	matérias-primas	em	estoque
+serve	apenas	para	confirmação	da	manutenção	de	suas	especificações	e	não	pode	ser	usada	para	estender	o	prazo	de	validade.
+15.24.	O	armazenamento	deve	ser	realizado	com	a	devida	ordem	e	segurança,	evitando	possíveis	misturas	no	seu	controle	e	expedição,	assim
+como	acidentes	no	seu	manuseio.
+15.25.	Os	produtos	devem	estar	empilhados	com	segurança.
+15.26.	A	empresa	deve	possuir	procedimentos/sistema	para	assegurar	que	materiais	e	produto	acabado	não	sejam	utilizados	com	seu	prazo	de
+validade	expirado.
+15.27.	A	empresa	deve	possuir	procedimento	de	verificação	e	inspeção	dos	materiais	e	produtos	de	forma	a	garantir	o	recebimento	de	materiais	e
+produtos	dentro	dos	requerimentos	definidos.
+15.28.	Se	uma	única	remessa	de	materiais	e	produto	contiver	lotes	distintos,	cada	lote	deve	ser	considerado	separadamente	para	amostragem	e
+ensaios	de	liberação.
+15.29.	Todas	as	matérias-primas	devem	ser	recebidas	com	os	respectivos	laudos	de	analise	do	fabricante/fornecedor.
+15.30.	Nas	áreas	de	recepção	e	expedição	os	materiais	devem	ser	protegidos	das	variações	climáticas	que	coloquem	em	risco	a	integridades	dos
+materiais	manuseados.
+15.31.	As	áreas	de	recebimento	devem	ser	projetadas	e	equipadas	de	forma	a	permitir	que	os	recipientes	de	materiais	recebidos	sejam	limpos
+externamente	antes	de	serem	estocados.
+
+--- Page 11 ---
+16.	AMOSTRAGEM	DE	MATERIAIS
+16.1.	A	amostragem	deve	ser	realizada	em	área	definida,	por	pessoas	autorizadas,	de	modo	a	evitar	qualquer	tipo	de	contaminação	microbiológica
+ou	cruzada;
+16.2.	As	amostras	devem	ser	representativas	do	lote	do	material	recebido,	no	caso	de	recebimento	de	mais	de	um	lote	do	mesmo	material,	os
+mesmos	devem	ser	amostrados	separadamente;
+16.3.	O	número	dos	recipientes	amostrados	e	o	tamanho	de	amostra	devem	ser	baseados	em	um	plano	de	amostragem.
+16.4.	A	amostragem	deve	ser	conduzida	obedecendo	a	procedimentos	aprovados	de	forma	a	garantir	a	proteção	das	amostras	de	contaminações.
+16.5.	Todos	os	equipamentos	(instrumentos,	recipientes,	utensílios)	utilizados	no	processo	de	amostragem	que	entrarem	em	contato	com	os
+materiais	devem	estar	limpos,	sanitizados,	quando	aplicável,	e	guardados	em	locais	apropriados,	devidamente	identificados.
+16.6.	As	etiquetas	ou	sistema	de	identificação	devem	disponibilizar	as	seguintes	informações:
+a)	nome	e/ou	código	interno	do	material	amostrado
+b)	número	do	lote
+c)	identificação	da	pessoa	que	coletou	a	amostra
+d)	data	em	que	a	amostra	foi	coletada.
+16.7.	Os	recipientes	dos	quais	foram	retiradas	as	amostras	devem	ser	identificados.
+16.8.	Os	Procedimentos	Operacionais	Padrões	relativos	à	amostragem	devem	incluir,	no	mínimo:
+a)	identificação	da	função/cargo	designado	a	coletar	a	amostra
+b)	método	ou	critério	de	amostragem:
+Número	de	recipientes
+Parte	no	recipiente	a	ser	amostrado
+Quantidade	de	material
+Instrumentos	utilizados	para	a	amostragem.
+c)	equipamento	a	ser	usado	para	amostragem	e	o	EPI	(equipamento	proteção	individual),	quando	necessário
+d)	o	tipo	de	embalagem	para	a	amostra,	condição	de	amostragem	(se	asséptico	ou	não)	e	rótulo
+e)	qualquer	precaução	especial	a	ser	observada
+f)	instruções	para	limpeza	e	armazenamento	dos	equipamentos	de	amostragem
+g)	condição	de	armazenamento	das	amostras
+h)	destino	da	sobra	da	amostragem
+i)	condições	ambientais	do	local	de	amostragem	(luz,	temperatura	e	umidade),	quando	aplicável
+j)	período	de	retenção	das	amostras
+k)	identificação	da	amostra
+l)	instruções	para	qualquer	subdivisão	da	amostra	que	seja	necessário.
+17.	PRODUÇÃO/ELABORAÇÃO
+17.1	A	empresa	deve	estabelecer	procedimentos	de	segurança	para	as	instalações	nas	áreas	de	produção.
+17.2.	As	condições	externas	e	as	áreas	destinadas	à	produção	de	produtos	de	higiene	pessoal,	cosméticos	e	perfumes	devem	permitir	adequada
+limpeza	e	manutenção	durante	o	processamento	dos	produtos.
+17.3.	As	áreas	de	produção	devem	ser	providas	de	infraestrutura	necessária,	o	que	inclui	espaço,	instalações,	equipamentos,	materiais	adequados,
+pessoal	qualificado	e	devidamente	treinado	para	execução	das	atividades,	procedimentos	operacionais	e	instruções	de	trabalho	aprovadas,	além	de
+pessoal	qualificado	e	equipamentos	adequados	para	a	realização	do	controle	em	processo.
+17.4	A	distribuição	das	áreas	de	produção	deve	ser	ordenada	e	racional.	As	instalações	físicas	devem	estar	dispostas	de	modo	que	assegurem	a
+integridade	e	qualidade	de	materiais	e	produtos.
+17.5	As	áreas	produtivas	devem	ser	de	tamanho	compatível	com	o	volume	de	operações	realizadas.	Devem	existir	áreas	separadas	para	elaborar	e
+envasar	produtos	que	por	suas	características	possam	provocar	riscos	ou	contaminações	cruzadas.	Toda	a	área	de	circulação	deve	estar	livre	de
+obstáculos.
+17.6.	Os	setores	devem	ser	distribuídos	de	maneira	que	permita	que	a	produção	ocorra	de	forma	adequada,	evitando	misturas	ou	contaminação
+cruzada.
+17.7.	As	tubulações,	luminárias,	pontos	de	ventilação	e	outras	instalações,	devem	ser	projetadas	e	instaladas	de	modo	a	facilitar	a	limpeza	e
+manutenção.	Sempre	que	possível	o	acesso	para	manutenção	deve	estar	localizado	externamente	as	áreas	de	produção.
+Quando	não	for	possível	o	acesso	externo	para	os	serviços,	os	procedimentos	de	manutenção	deverão	ser	executados	de	forma	a	minimizar	o	risco
+de	contaminação	e/ou	comprometimento	da	qualidade	do	produto.
+17.8.	A	iluminação	e	ventilação	devem	ser	suficientes	e	adequadas	à	execução	dos	processos	produtivos	e	devem	estar	de	acordo	com	a	legislação
+vigente.
+17.9.	A	temperatura	e	umidade	devem	ser	monitoradas,	registradas	e	controladas,	quando	necessário,	e	devem	ser	compatíveis	às	condições	de
+estabilidade	dos	materiais	e	produtos	acabados.
+17.10.	Quando	necessário	as	áreas	devem	possuir	sistemas	de	exaustão	adequados	e	que	garantam	a	proteção	contra	a	contaminação	cruzada.
+17.11.	A	empresa	deve	dispor	de	procedimentos	para	a	limpeza,	e	sanitização	quando	aplicável,	das	áreas	de	produção	e	dos	equipamentos,	e
+registros.	Deve	existir	local	destinado	para	a	guarda	dos	materiais	utilizados	na	limpeza	e	manutenção.
+17.12.	Os	ralos	devem	ser	sifonados,	desinfetados	freqüentemente	e	mantidos	fechados.	Devem	ser	rasos	para	facilitar	a	limpeza	e	a	desinfecção.
+
+--- Page 12 ---
+17.13.	As	lixeiras	devem	ser	identificadas,	fechadas	e	esvaziadas	com	freqüência.
+17.14.	Nas	áreas	produtivas	devem	estar	disponíveis	equipamentos	de	proteção	individual	e	coletiva	(EPI	/	EPC).
+17.15.	Antes	de	iniciar	um	processo	de	produção,	deve	ser	verificado	se	os	equipamentos	e	o	local	de	trabalho	estão	livres	de	produtos
+anteriormente	produzidos,	assim	como	devem	estar	disponíveis	os	documentos	e	materiais	necessários	para	o	processo	planejado.
+Além	disso,	deve	ser	verificado	se	os	equipamentos	estão	limpos	e	adequados	para	uso.	As	verificações	desses	itens	devem	ser	registradas.
+17.16.	As	janelas	das	áreas	de	produção	ou	envase	devem	ser	mantidas	de	modo	a	evitar	possibilidade	de	contaminação.
+17.17.	Área	de	pesagens	e	medidas
+17.17.1.	A	empresa	deve	possuir	área	dedicada	para	as	atividades	de	pesagem	e	medidas	de	matérias-primas	destinadas	à	produção	de	produtos
+que	trata	este	regulamento.
+17.17.2.	A	empresa	deve	possuir	área	separada	fisicamente	das	demais	dependências,	quando	o	processo	assim	o	exigir.
+17.17.3.	As	áreas	destinadas	a	medidas,	quando	aplicável,	e	à	pesagem	das	matérias-primas	podem	estar	localizadas	no	almoxarifado	ou	na	área
+de	produção,	devendo	as	mesmas	ser	projetadas	e	separadas	para	esse	fim,	possuindo	sistema	de	exaustão	adequado,	que	evite	a	ocorrência	de
+contaminação	cruzada	e	ambiental.
+17.17.4.	As	balanças	e	recipientes	de	medidas	devem	ser	calibrados	regularmente,	de	acordo	com	um	programa	de	calibração	pré-estabelecido	e
+apresentar	registros	das	calibrações.	Deve	ser	estabelecida	a	periodicidade	das	verificações.
+17.17.5.	As	áreas	de	pesagem	e	medidas	devem	estar	constantemente	limpas.
+17.17.6.	As	operações	de	pesagem	devem	ocorrer	de	acordo	com	a	ordem	de	produção,	segundo	procedimento	específico.
+17.17.7.	Os	recipientes	ou	embalagens	externas	das	matériasprimas	a	serem	pesadas	e/ou	medidas	devem	ser	limpos	antes	de	entrarem	nas	áreas
+de	pesagem.	Após	a	pesagem	ou	medida,	esses	recipientes	devem	ser	mantidos	fechados.
+17.17.8.	Os	materiais	pesados	e/ou	medidos	devem	ser	imediatamente	identificados	por	meio	de	etiquetas	ou	sistemas	de	identificação	contendo	o
+nome,	código	interno	e	lote	da	matéria-prima	e	a	quantidade	pesada	ou	medida,	a	fim	de	evitar	misturas.
+17.17.9.	Os	materiais	medidos	ou	pesados	devem	ser	segregados	fisicamente	por	lote	ou	ordem	de	fabricação.
+17.17.10.	Os	utensílios	de	pesagens	e	medidas	devem	estar	limpos,	identificados	quanto	ao	seu	status	de	limpeza,	e	guardados	em	local	que
+assegure	sua	integridade.
+17.17.11.	Deve	haver	conferência	da	operação	de	pesagem	e/ou	medidas	das	matérias-primas,	por	pessoal	treinado,	distinto	do	que	realizou	a
+pesagem	e/ou	medida	ou	por	sistema	adequado.	Todas	as	atividades	de	pesagem,	verificação,	calibração,	conferência	e	manutenção	devem	ser
+registradas.
+17.17.12.	O	recipiente	de	matéria-prima	que	tenha	sido	pesada	e	que	por	não	ser	utilizada	retornará	ao	depósito,	deve	ser	fechado	e	identificado
+adequadamente.
+17.18	Equipamentos
+17.18.1.	As	balanças	e	instrumentos	de	medida	das	áreas	de	produção	e	de	controle	de	qualidade	devem	ter	a	capacidade	e	a	precisão	requeridas.
+17.18.2.	As	balanças	e	demais	equipamentos	de	precisão	e	medida	utilizados	na	área	de	produção	devem	estar	calibrados.	Devem	ser	conduzidas
+calibrações	periódicas,	de	acordo	com	um	programa	de	calibração	pré-estabelecido.
+17.18.3.	Os	equipamentos	devem	ser	projetados,	construídos,	adaptados,	instalados,	localizados	e	mantidos	de	forma	a	facilitar	as	operações	a
+serem	realizadas.	Os	equipamentos	não	devem	apresentar	riscos	para	a	qualidade	dos	produtos.	As	partes	que	entram	em	contato	com	o	produto
+não	devem	ser	reativas,	aditivas	ou	absortivas	de	forma	a	influir	na	qualidade	do	produto.
+17.18.4.	O	projeto	e	a	localização	dos	equipamentos	devem	minimizar	os	riscos	de	erros	e	permitir	limpeza	e	manutenção	adequadas	de	maneira	a
+evitar	a	contaminação	cruzada,	acúmulo	de	poeira	e	sujeira	e,	em	geral,	evitar	todo	efeito	que	possa	influir	negativamente	na	qualidade	e
+segurança	dos	produtos.
+17.18.5.	As	áreas	de	circulação	entre	os	equipamentos	devem	ser	mantidas	livres.	Os	processos	de	limpeza	e	lavagem	dos	equipamentos	não
+devem	constituir	fonte	de	contaminação	ao	produto,	e	devem	ser	registrados.
+17.18.6.	Todo	equipamento	em	desuso	ou	com	defeito	deve	ser	retirado	das	áreas	de	produção,	caso	contrário,	deve	estar	devidamente
+identificado.
+17.18.7.	Todos	os	equipamentos	devem	estar	devidamente	identificados	e	submetidos	à	limpeza	e	sanitização,	segundo	procedimento.
+17.18.8.	A	empresa	deve	estabelecer	um	programa	de	manutenção	preventiva	dos	equipamentos.	As	atividades	de	manutenção	devem	ser
+registradas.
+17.18.9.	As	tubulações	fixas	devem	ser	claramente	identificadas	quanto	ao	conteúdo	e,	onde	aplicável,	a	direção	do	fluxo.
+17.18.10.	As	tubulações,	conexões,	dispositivos	ou	adaptadores	para	gases	ou	líquidos	perigosos	devem	estar	identificados	e	não	devem	ser
+intercambiáveis.
+17.19.	Área	de	elaboração	/processos
+17.19.1.	Os	processos	produtivos	devem	ser	executados	a	partir	de	um	planejamento	de	produção.	Todos	os	lotes	produzidos	devem	seguir	a	uma
+ordem	de	fabricação	e	esta	corresponder	à	Fórmula	Padrão/Mestra	do	produto.
+17.19.2.	É	recomendável	que	os	uniformes	utilizados	na	área	de	produção	sejam	de	uso	exclusivo	deste	setor,	não	sendo	recomendável	a	circulação
+por	outras	dependências	da	fábrica	com	estes	uniformes.
+17.19.3.	Antes	de	iniciar	qualquer	operação	de	produção,	deve-se	assegurar	que:
+a)	toda	documentação	pertinente	esteja	disponível.
+b)	todas	as	matérias-primas	estejam	disponíveis	e	aprovadas.
+c)	os	equipamentos	estejam	disponíveis,	em	condições	operacionais.
+Os	equipamentos	utilizados	na	preparação	dos	produtos	devem	estar	devidamente	identificados	com	o	nome	e/ou	codificação	e	lote	do	produto	que
+está	sendo	fabricado.	No	caso	de	processos	contínuos	e	equipamentos	dedicados,	a	identificação	com	o	nome	e/ou	codificação	e	lote	do	produto
+pode	estar	disponível	nos	registros	de	fabricação.
+
+--- Page 13 ---
+d)	a	área	de	produção	esteja	liberada	de	acordo	com	procedimento	estabelecido	para	evitar	misturas	com	materiais	de	operações	anteriores	.
+17.19.4.	O	número	de	lote	deve	ser	atribuído	para	cada	partida	de	produção	do	granel.	Esse	não	precisa	ser	necessariamente	o	número	que	se
+inclui	no	rótulo	do	produto	acabado,	desde	que	se	defina	claramente	a	vinculação	entre	ambos.
+17.19.5.	A	terceirização	de	etapas	produtivas	ou	de	controle	de	qualidade	deve	ser	registrada	e	ocorrer	de	acordo	com	a	legislação	vigente.
+17.19.6.	Todas	as	etapas	de	produção	devem	ser	registradas	pelo	operador,	no	momento	de	realização	da	atividade,	e	as	etapas	críticas	devem	ser
+monitoradas	ou	verificadas	de	acordo	com	procedimento	estabelecido.
+17.19.7.	A	identificação	dos	produtos	a	granel	deve	incluir:
+a)	o	nome	ou	código	de	identificação.
+b)	o	número	da	partida	ou	lote.
+c)	as	condições	de	armazenamento	quando	forem	críticas	para	assegurar	a	qualidade	do	produto.
+17.19.8.	Todos	os	controles	de	processos	e	os	correspondentes	limites	de	aceitação	devem	estar	definidos.	Os	mesmos	devem	ser	executados	de
+acordo	com	o	estabelecido	em	procedimentos	escritos.
+Cada	resultado	que	estiver	fora	do	limite	segundo	o	critério	de	aceitação,	deve	ser	informado	e	investigado.
+17.19.9.	O	reprocessamento	de	produtos	somente	pode	ser	permitido	se	a	qualidade	do	produto	terminado	não	for	afetada,	se	as	especificações
+forem	atendidas	e	se	a	operação	for	realizada	de	acordo	com	procedimentos	autorizados	e	definidos	após	a	avaliação	dos	riscos	envolvidos.	Deve
+ser	mantido	registro	do	reprocessamento.
+Qualquer	lote	reprocessado	deve	receber	identificação	que	permita	sua	rastreabilidade.
+17.19.10.	Quando	o	processo	não	for	contínuo,	deve	haver	uma	área	definida	para	armazenamento	de	produtos	semi-elaborados	ou	a	granel,	com
+condições	condizentes	com	as	especificações	do	produto	e	procedimento	que	define	o	tempo	máximo	de	estocagem.
+17.19.11.	A	introdução	da	totalidade	ou	de	parte	de	lotes	anteriores	produzidos	que	atendam	aos	padrões	de	qualidade	exigidos,	a	outro	lote	do
+mesmo	produto,	em	determinado	estágio	da	fabricação,	deve	ser	previamente	autorizada	e	realizada	de	acordo	com	procedimentos	definidos,	após
+a	avaliação	dos	riscos	envolvidos,	inclusive	qualquer	possível	efeito	sobre	o	prazo	de	validade.	O	processo	deve	ser	registrado.
+17.19.12.	Deve	ser	efetuada	a	limpeza	dos	equipamentos	após	cada	produto	fabricado.	A	elaboração	seqüencial	de	diversos	lotes	de	um	mesmo
+produto	sem	a	limpeza	dos	equipamentos	(produção	em	campanha)	somente	poderá	ser	realizada	de	acordo	com	procedimento	descrito	que
+determine	os	controles	em	processo	lote	a	lote	e	o	número	máximo	de	lotes	seqüenciais	permitidos.
+17.20.	Área	de	envase/embalagem/rotulagem
+17.20.1.	Deve	existir	área	apropriada	ou	local	específico	para	o	envase/embalagem	de	produtos.	A	distribuição	dos	equipamentos	deve	ser
+ordenada	e	racional.
+17.20.2.	As	instalações	físicas	para	o	envase/embalagem	dos	produtos	devem	ser	projetadas	de	forma	a	evitar	misturas	entre	diferentes	produtos	e
+lotes.
+17.20.3.	Antes	do	início	de	operações	de	embalagem,	devese	assegurar	que	a	área	de	trabalho,	as	linhas	de	embalagem,	impressoras	e
+equipamentos	estejam	limpos	e	isentos	de	produtos,	materiais	ou	documentos	de	operações	anteriores.	A	liberação	da	área	deve	ser	realizada	de
+acordo	com	procedimento	escrito	e	uma	lista	de	verificação	com	registros.
+17.20.4.	Os	rótulos	devem	ser	inspecionados	antes	de	serem	entregues	à	linha	de	embalagem.	No	processo	de	rotulagem	deve	ser	verificado	se	os
+rótulos	se	referem	ao	produto.
+17.20.5.	O	produto	a	granel	deve	ser	mantido	fechado	durante	o	processo	de	envase,	sendo	aberto	somente	quando	necessário.
+Deve	existir	identificação	do	produto	(nome	e/ou	codificação	e	lote)	de	forma	visível	nos	equipamentos	e	em	cada	linha	de	envase.
+17.20.6.	É	recomendável	a	verificação	da	relação	entre	o	rendimento	teórico	e	o	real	e	se	houver	discrepância	com	os	parâmetros	estabelecidos,
+justificar	por	escrito.
+17.20.7.	Ao	final	do	processo	de	embalagem	deve	ser	verificado	se	o	produto	contém	o	número	de	lote	e	a	data	de	validade.
+17.20.8.	Quando	aplicável	e	conforme	procedimento	interno,	os	produtos	após	envase/embalagem	devem	aguardar	em	quarentena	a	liberação	pelo
+Controle	de	Qualidade/Garantia	da	Qualidade,	devidamente	identificados	quanto	ao	seu	status.	O	material	não	codificado	remanescente	do
+envase/embalagem	deve	ser	devolvido	ao	almoxarifado.
+17.20.9	O	material	codificado	remanescente	do	envase\embalagem	deve	ser	destruído,	com	registros.
+17.20.10	Todos	os	controles	de	processos	e	os	correspondentes	limites	de	aceitação	devem	estar	definidos.	Os	mesmos	devem	ser	executados	de
+acordo	com	o	estabelecido	em	procedimentos	escritos.
+Cada	resultado	que	estiver	fora	do	limite	segundo	o	critério	de	aceitação,	deve	ser	informado	e	investigado.
+17.20.11.	Todos	os	materiais	de	embalagem	que	não	tenham	sido	utilizados	e	que	sejam	reenviados	ao	almoxarifado	devem	estar	identificados.
+17.20.12.	Nos	casos	em	que	o	envase	e	a	rotulagem	não	sejam	contínuos,	devem	ser	adotadas	medidas	de	identificação	e	segregação	para	evitar
+misturas	ou	erros	de	rotulagem.
+17.21.	Gerenciamento	de	Resíduos
+17.21.1.	Devem	existir	procedimentos	escritos	para	o	destino	de	resíduos	de	acordo	com	a	legislação	vigente,	os	quais	devem	ser	de	conhecimento
+prévio	do	pessoal	responsável	pela	coleta	e	destinação.
+17.21.2	Os	efluentes	e	resíduos	resultantes	da	fabricação,	dos	edifícios	e	das	áreas	circunvizinhas	devem	estar	dispostos	de	maneira	segura	e
+sanitária	até	a	sua	destinação.	Os	recipientes	e	as	tubulações	para	o	material	de	descarte	devem	estar	identificados.
+17.21.3.	Os	efluentes	e	resíduos	devem	ser	identificados	e	classificados	segundo	a	sua	natureza.	Devem	ser	estabelecidas	as	destinações,	os
+controles	efetuados	e	o	local	de	disposição	final	dos	resíduos	e	efluentes	tratados.	Devem	ser	registrados	os	controles	realizados	e	sua	freqüência.
+17.21.4.	O	manuseio	e	a	disposição	de	resíduos	não	devem	impactar	as	operações	de	produção	ou	a	qualidade	dos	produtos.
+18.	CONTROLE	DA	QUALIDADE/	GARANTIA	DA	QUALIDADE
+18.1.	A	empresa	deve	possuir	laboratório	de	Controle	da	Qualidade,	integrante	da	Garantia	de	Qualidade,	próprio	e	independente	da	produção.	Para
+os	casos	de	terceirização	de	ensaios	de	Controle	de	Qualidade,	a	empresa	deve	seguir	a	legislação	vigente.
+
+--- Page 14 ---
+18.2.	Os	requisitos	mínimos	para	o	Controle	da	Qualidade/	Garantia	da	Qualidade	são	os	seguintes:
+a)	as	análises	devem	ser	executadas	de	acordo	com	procedimentos	escritos
+b)	os	instrumentos	de	precisão	devem	ser	calibrados	em	intervalos	definidos
+c)	possuir	equipamentos	adequados	aos	procedimentos	de	ensaios	previstos	e	em	número	suficiente	ao	volume	das	operações	a	serem	realizadas
+d)	pessoal	qualificado	e	treinado
+e)	devem	existir	registros	de	modo	a	demonstrar	que	todos	os	procedimentos	tenham	sido	realmente	executados	e	que	os	desvios	tenham	sido
+investigados	e	documentados
+f)	devem	ser	registrados	os	resultados	dos	ensaios	de	controle	de	matérias-primas,	materiais	de	embalagem	e	produtos	acabados.
+18.3.	As	responsabilidades	principais	do	Controle	da	Qualidade/	Garantia	da	Qualidade	não	devem	ser	delegadas.	Estas	responsabilidades	devem
+ser	definidas	e	documentadas	contemplando	no	mínimo	as	seguintes	atividades:
+a)	participar	da	elaboração,	atualização	e/ou	revisão	de:
+especificações	e	métodos	analíticos	para	matérias-primas,	materiais	de	embalagem,	controles	em	processo,	produtos	acabados
+procedimentos	de	amostragem
+procedimentos	para	monitoramento	ambiental	das	áreas	produtivas
+procedimentos	para	avaliar	e	armazenar	os	padrões	de	referência
+b)	aprovar	ou	reprovar	matérias-primas,	materiais	de	embalagem,	semi-elaborados,	a	granel	e	produtos	acabados
+c)	manter	registros	completos	dos	ensaios	e	resultados	de	cada	lote	de	material	analisado	de	forma	a	emitir	um	laudo	analítico	sempre	que
+necessário
+d)	assegurar	que	todos	os	ensaios	necessários	sejam	efetuados
+e)	participar	da	investigação	das	reclamações	e	devoluções	dos	produtos	acabados
+f)	assegurar	a	correta	identificação	dos	reagentes	e	materiais
+g)	participar	da	investigação	dos	resultados	fora	de	especificação
+h)	verificar	a	manutenção	das	instalações	e	dos	equipamentos
+i)	certificar-se	da	execução	da	qualificação	dos	equipamentos	do	laboratório,	quando	necessária
+j)	garantir	a	rastreabilidade	dos	processos	realizados	sob	sua	responsabilidade
+k)	coordenar	treinamentos	iniciais	e	contínuos	dos	funcionários.
+18.4.	Os	laboratórios	de	controle	de	qualidade	devem	ser	separados	das	áreas	de	produção.	As	áreas	onde	forem	realizados	os	ensaios
+microbiológicos	devem	contar	com	instalações	independentes.
+18.5.	Os	laboratórios	de	Controle	da	Qualidade	devem	dispor	de	espaço	suficiente,	áreas	apropriadas	e	serem	projetados	de	acordo	com	a	lógica
+das	operações	neles	realizadas.
+18.6.	O	laboratório	deve	ser	projetado	considerando	a	utilização	de	materiais	de	construção	adequados	à	atividade	que	será	desenvolvida,	e	deve
+possuir	conjunto	de	dispositivos	que	assegurem	as	condições	ambientais	para	a	realização	dos	ensaios	e	a	proteção	da	saúde	das	pessoas.
+18.7.	Se	necessário,	devem	ser	utilizadas	salas	e	equipamentos	separados	para	proteger	determinados	instrumentos	de	interferências	elétricas,
+vibrações,	contato	excessivo	com	umidade	e	outros	fatores	externos.
+18.8.	Os	procedimentos	dos	ensaios	devem	ser	aprovados	pela	Garantia	da	Qualidade	e	estar	disponíveis	nos	setores	responsáveis	pela	execução
+dos	mesmos.
+18.9.	As	especificações	devem	ser	estabelecidas	pela	empresa,	e	estar	devidamente	autorizadas	e	datadas,	em	relação	aos	ensaios	das	matérias-
+primas,	incluindo	água,	materiais	de	envase	e	embalagem,	granel,	produtos	semiacabados	e	produtos	acabados.
+Além	disso,	devem	ser	realizados	ensaios	nos	produtos	semi-elaborados	e	no	produto	a	granel,	quando	necessário.
+18.10.	Devem	ser	realizadas	revisões	periódicas	das	especificações.
+18.11.	As	literaturas,	os	manuais	dos	equipamentos,	os	padrões	de	referência	e	outros	materiais	necessários	devem	estar	à	disposição	do
+laboratório	de	Controle	da	Qualidade.
+18.12.	O	Controle	da	Qualidade	deve	ter	facilmente	disponível	no	setor:
+a)	especificações
+b)	procedimentos	de	amostragem
+c)	métodos	de	ensaio	e	registros	(incluindo	folhas	analíticas	e/ou	caderno	de	anotações	e/ou	registros	eletrônicos	seguros);
+d)	boletins	e/ou	certificados	analíticos
+e)	registros	de	monitoramento	ambiental,	quando	especificado
+18.13.	Os	registros	de	ensaio	devem	incluir,	pelo	menos,	os	seguintes	dados:
+a)	o	nome	e/ou	codificação	do	material	ou	produto	e,	quando	aplicável,	a	forma	cosmética
+b)	lote	e	nome	do	fabricante	e/ou	fornecedor
+c)	referências	para	procedimentos	de	análise
+d)	resultados	analíticos,	incluindo	cálculos,	observações	(se	necessárias)	e	os	limites	de	especificações
+e)	data	dos	ensaios
+f)	identificação	dos	responsáveis	pela	execução	dos	ensaios
+g)	data	e	identificação	dos	responsáveis	pela	verificação	das	análises	e	dos	cálculos	quando	aplicável
+
+--- Page 15 ---
+h)	resultado	de	aprovação	ou	reprovação	do	material	ou	produto	acabado	liberado	por	pessoa	autorizada.
+18.14.	No	laudo	de	análise	devem	constar	no	mínimo:
+a)	nome	e/ou	codificação	da	matéria-prima	ou	do	produto
+b)	lote
+c)	data	de	fabricação
+d)	data	de	validade,	quando	aplicável
+e)	cada	teste	executado,	incluindo	os	limites	de	aceitação	e	os	resultados	obtidos	e,	quando	aplicável,	referências	da	metodologia	analítica	utilizada
+f)	data	da	emissão	do	laudo,	identificação	e	assinatura	por	pessoa	autorizada
+g)	identificação	do	fabricante,	quando	aplicável.
+18.15.	O	Controle	de	Qualidade/Garantia	da	Qualidade	é	responsável	por	assegurar	que	sejam	executados	os	controles	necessários	para	a
+amostragem	e	ensaio,	para	que	todos	os	materiais	e	produtos	acabados	sejam	liberados	somente	se	cumprirem	todos	os	requisitos	dos	critérios	de
+aceitação	especificados.	Esses	controles	incluem	revisão	da	documentação	de	lote,	amostras	de	retenção,	avaliação	e	armazenamento	de	padrões
+de	referência,	revisão	de	especificações	de	materiais	e	produtos,	podendo	também	incluir	o	monitoramento	ambiental.
+18.16.	O	laboratório	de	controle	de	qualidade	deve	realizar	todos	os	ensaios	necessários	para	confirmar	que	as	matérias-primas,	materiais	de
+envase	e	embalagem,	granel,	semielaborado	e	os	produtos	acabados	cumpram	com	os	critérios	de	aceitação	estabelecidos.
+18.17.	As	soluções	reagentes	e	volumétricas	adquiridas	e/ou	preparadas	devem	estar	identificadas	e	de	acordo	com	a	especificação.
+Os	procedimentos	de	preparação	de	reagentes	devem	definir	a	validade	de	uso	das	mesmas.
+18.18.	Em	caso	de	ensaios	de	pureza	e	identificação	uma	substância	química	de	referência	ou	outro	padrão	deve	estar	disponível.
+18.19.	As	substâncias	químicas	de	referência	devem	ser	apropriadas	para	a	realização	dos	ensaios	dos	produtos	acabados,	com	origem
+documentada	e	as	mesmas	mantidas	nas	condições	de	armazenamento	recomendadas	pelo	fabricante.
+18.20.	Quando	uma	substância	química	de	referência	não	estiver	disponível,	outro	padrão	deve	ser	estabelecido.	Testes	de	identificação	e	pureza
+para	este	padrão	devem	ser	realizados.	A	documentação	dos	testes	deve	ser	mantida.
+18.21.	As	soluções	reagentes	devem	ser	devidamente	identificadas	devendo	conter	em	sua	rotulagem	no	mínimo	as	seguintes	informações:	nome,
+concentração,	data	de	validade	e/ou	períodos	de	armazenamento	recomendados,	data	de	preparação,	identificação	do	técnico	responsável	pela
+preparação	e,	quando	aplicável,	fator	de	correção.
+18.22.	Todos	os	resultados	dos	controles	devem	ser	revisados	e	decidida	a	situação	do	material	quanto	à	aprovação,	rejeição	ou	pendência.
+18.23	Especificações	para	materiais	e	produtos
+18.23.1.	Todos	os	ensaios	devem	seguir	as	instruções	estabelecidas	pelos	procedimentos	escritos	e	aprovadas	para	cada	material	ou	produto.
+18.23.2.	As	especificações	das	matérias-primas,	dos	materiais	de	embalagem	primária	e	dos	materiais	impressos,	devem	possuir	uma	descrição,
+incluindo,	no	mínimo:
+a)	nome	químico	da	matéria-prima
+b)	nome	e/ou	o	código	interno	de	referência
+c)	referência	das	literaturas	reconhecidas,	quando	aplicável
+d)	requisitos	quantitativos	e	qualitativos	com	os	respectivos	limites	de	aceitação
+e)	modelo	do	material	impresso,	quando	aplicável.
+18.23.3.	Os	materiais	de	embalagem	devem	atender	às	especificações.
+Os	materiais	devem	ser	examinados	com	relação	a	defeitos	físicos	visíveis	e	críticos,	bem	como	quanto	às	especificações	requeridas.
+18.23.4.	As	especificações	dos	produtos	intermediários	e	a	granel	devem	estar	disponíveis	sempre	que	estes	materiais	forem	adquiridos	ou
+expedidos,	ou	se	os	dados	sobre	os	produtos	intermediários	tiverem	de	ser	utilizados	na	avaliação	do	produto	final.
+18.23.5.	Devem	ser	estabelecidas	especificações	para	produtos	acabados	de	acordo	com	padrões	de	aceitação	e	devem	ser	consistentes	com	o
+processo	de	fabricação.
+18.23.6.	Para	os	produtos	terminados/acabados	que	tenham	uma	especificação	microbiológica,	os	limites	de	aceitação	para	contagem	total	de
+microorganismos	e	microorganismos	patógenos	devem	estar	em	conformidade	com	a	legislação	vigente.
+18.24.	Análise	de	materiais	e	produtos
+18.24.1.	Antes	que	os	materiais	e	produtos	sejam	liberados	para	uso,	o	Controle	de	Qualidade	deve	garantir	que	os	mesmos	sejam	testados	quanto
+à	conformidade	com	as	especificações.
+18.24.2.	Somente	as	matérias-primas	liberadas	pelo	controle	de	qualidade	e	que	estejam	dentro	dos	respectivos	prazos	de	validade	devem	ser
+utilizadas.
+18.24.3	Os	produtos	que	não	atenderem	às	especificações	estabelecidas	devem	ser	reprovados.	Se	viável,	podem	ser	reprocessados,	devendo	ser
+previamente	autorizado	e	realizado	de	acordo	com	procedimentos	definidos.	Os	produtos	reprocessados	devem	atender	a	todas	as	especificações	e
+critérios	de	qualidade	antes	de	serem	aprovados	e	liberados.
+18.24.4.	Devem	existir	equipamentos	de	segurança	disponíveis,	os	quais	devem	ser	verificados/testados	regularmente.
+18.25.	Laboratório	Microbiológico
+18.25.1.	Quando	aplicável,	testes	microbiológicos	devem	ser	conduzidos	em	cada	lote	do	produto	acabado,	respeitando	os	limites	de	aceitação
+presentes	na	legislação	vigente.
+18.25.2.	Deve	existir	um	programa	de	limpeza	definido	e	registrado	para	o	laboratório	microbiológico,	considerando	o	resultado	do	monitoramento
+ambiental	e	a	possibilidade	de	contaminação.
+18.25.3.	A	empresa	deve	garantir	a	segurança	de	manuseio	e	descarte	de	materiais	de	risco	biológico	e	manter	procedimentos	e	registros
+adequados.
+18.25.4.	Os	processos	de	descontaminação	e	esterilização	devem	ser	controlados	e	documentados	de	forma	a	garantir	a	segurança	e	eficácia	dos
+
+--- Page 16 ---
+diferentes	processos.
+18.25.5.	As	autoclaves	devem	ser	qualificadas.	Para	cada	ciclo	operacional	e	cada	tipo	de	carga	usado	na(s)	autoclave(s)	devem	ser	conduzidos
+estudos	de	qualificação	de	desempenho	e	mantidos	os	registros	correspondentes.
+18.25.6.	Os	meios	de	cultura	devem	ser	preparados	e	registrados	segundo	procedimentos	escritos	devidamente	aprovados,	tendo	como	referência
+as	recomendações	do	fabricante.
+18.25.7.	Os	meios	de	cultura	devem	ser	testados	quanto	à	viabilidade	de	crescimento	nas	condições	requeridas.
+18.25.8.	As	soluções	reagentes	(incluindo	soluções	estoque),	meios,	diluentes	entre	outros	devem	ser	identificados	e	para	permitir	a	rastreabilidade
+desses	materiais	as	seguintes	informações	devem	estar	disponíveis:	nome,	concentração	(quando	aplicável),	data	de	validade	e/ou	período	de
+armazenamento	recomendado,	data	de	preparação	e	responsável	pela	preparação.
+18.25.9.	As	culturas	de	referência	devem	ser	adquiridas	de	fontes	reconhecidas,	com	apresentação	dos	respectivos	certificados.
+18.25.10.	Devem	existir	procedimentos	escritos	para	a	preparação	e	conservação	de	sub-culturas	para	uso	como	estoques	de	referência,	sendo
+realizados	testes	de	identificação	e	caracterização	das	cepas	e	das	sub-culturas.
+18.25.11.	A	coleta	e	manuseio	de	amostras	devem	ser	realizados	de	acordo	com	procedimentos	escritos	de	forma	a	evitar	contaminação	do
+material.
+18.26.	O	setor	de	Controle	de	Qualidade	do	detentor	do	registro	do	produto	deve	ser	responsável	por	aprovar	ou	reprovar	análises	que	estejam	sob
+contratos	com	terceiros.
+19.	AMOSTRAS	DE	RETENÇÃO
+19.1.	As	amostras	de	produtos	acabados	devem	ser	retidas	nas	embalagens	originais.	Se	for	necessário,	em	virtude	da	capacidade	das
+apresentações	de	venda,	poderá	ser	retido	produto	fracionado	em	embalagem	equivalente	ao	material	de	comercialização,	a	fim	de	facilitar	o
+armazenamento	e	a	realização	dos	ensaios.	Em	todos	os	casos	as	amostras	devem	ser	armazenadas	nas	condições	especificadas,	em	quantidade
+suficiente	para	permitir,	no	mínimo,	duas	análises	completas.
+19.1.1.	Nos	casos	de	produtos	sujeitos	à	contaminação	microbiológica,	deve-se	manter	ao	menos	uma	amostra	na	sua	embalagem	original.
+19.2.	As	amostras	de	retenção	devem	possuir	rótulo	contendo	identificação,	lote	e	data	de	validade.
+19.3	Tempo	de	armazenamento	das	amostras	de	retenção:
+(a)	as	amostras	de	matérias-primas,	quando	aplicável,	devem	ser	retidas	até	o	vencimento	do	seu	prazo	de	validade
+(b)	as	amostras	de	produtos	acabados	devem	ser	retidas	por	1	(um)	ano	após	o	vencimento	do	seu	prazo	de	validade.
+PUB	D.O.U.,	28/10/2013	-	Seção	1
+Este	texto	não	substitui	a	Publicação	Oficial.

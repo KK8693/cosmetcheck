@@ -1,0 +1,3545 @@
+{
+  "document": {
+    "id": "BR-RDC628-2022",
+    "titlePt": "Lista de Substâncias Corantes Permitidas",
+    "titleZh": "巴西允许色素清单 (RDC 628/2022)",
+    "effectiveDate": "2022-04-01"
+  },
+  "totalRules": 145,
+  "rules": [
+    {
+      "ruleId": "BR-RDC628-10006",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "10006",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERDE",
+        "inciNameEn": null,
+        "ciNumber": "10006",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 10006 - VERDE",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 10006 VERDE"
+    },
+    {
+      "ruleId": "BR-RDC628-10020",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "10020",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERDE",
+        "inciNameEn": null,
+        "ciNumber": "10020",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 10020 - VERDE",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 10020 VERDE"
+    },
+    {
+      "ruleId": "BR-RDC628-10316",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "10316",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "10316",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 10316 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 10316 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-11680",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "11680",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "11680",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 11680 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 11680 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-11710",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "11710",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "11710",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 11710 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 11710 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-11725",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "11725",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "11725",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 11725 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 11725 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-11920",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "11920",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "11920",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 11920 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 11920 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-12010",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "12010",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "12010",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 12010 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 12010 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-12085",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "12085",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "12085",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [
+        {
+          "otherRequirements": [
+            "Concentração máxima no"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 12085 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 12085 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-12120",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "12120",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "12120",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 12120 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 12120 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-12370",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "12370",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "12370",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 12370 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 12370 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-12420",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "12420",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "12420",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 12420 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 12420 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-12480",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "12480",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "MARROM",
+        "inciNameEn": null,
+        "ciNumber": "12480",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 12480 - MARROM",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 12480 MARROM"
+    },
+    {
+      "ruleId": "BR-RDC628-12490",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "12490",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "12490",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 12490 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 12490 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-12700",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "12700",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "12700",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 12700 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 12700 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-13015",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "13015",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "13015",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 13015 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 13015 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-14270",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "14270",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "14270",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 14270 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 14270 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-14700",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "14700",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "14700",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 14700 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 14700 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-14720",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "14720",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "14720",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 14720 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 14720 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-14815",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "14815",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "14815",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 14815 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 14815 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-15510",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "15510",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "15510",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 15510 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 15510 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-15525",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "15525",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "15525",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 15525 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 15525 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-15580",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "15580",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "15580",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 15580 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 15580 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-15620",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "15620",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "15620",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 15620 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 15620 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-15630",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "15630",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "15630",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [
+        {
+          "otherRequirements": [
+            "Concentração máxima no"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 15630 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 15630 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-15800",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "15800",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "15800",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 15800 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 15800 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-15850",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "15850",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "15850",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 15850 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 15850 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-15865",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "15865",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "15865",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 15865 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 15865 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-15880",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "15880",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "15880",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 15880 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 15880 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-15980",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "15980",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "15980",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 15980 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 15980 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-15985",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "15985",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "15985",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 15985 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 15985 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-16035",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "16035",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "16035",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 16035 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 16035 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-16185",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "16185",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "16185",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 16185 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 16185 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-16230",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "16230",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "16230",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 16230 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 16230 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-16255",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "16255",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "16255",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 16255 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 16255 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-16290",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "16290",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "16290",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 16290 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 16290 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-17200",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "17200",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "17200",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 17200 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 17200 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-18050",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "18050",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "18050",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 18050 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 18050 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-18130",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "18130",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "18130",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 18130 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 18130 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-18690",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "18690",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "18690",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 18690 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 18690 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-18736",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "18736",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "18736",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 18736 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 18736 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-18820",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "18820",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "18820",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 18820 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 18820 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-18965",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "18965",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "18965",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 18965 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 18965 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-19140",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "19140",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "19140",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 19140 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 19140 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-20040",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "20040",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "20040",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [
+        {
+          "otherRequirements": [
+            "Concentração máxima de"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 20040 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 20040 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-20470",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "20470",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "PRETO",
+        "inciNameEn": null,
+        "ciNumber": "20470",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 20470 - PRETO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 20470 PRETO"
+    },
+    {
+      "ruleId": "BR-RDC628-21100",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "21100",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "21100",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [
+        {
+          "otherRequirements": [
+            "Concentração máxima de"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 21100 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 21100 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-21108",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "21108",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "21108",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [
+        {
+          "otherRequirements": [
+            "Concentração máxima de"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 21108 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 21108 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-21230",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "21230",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "21230",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 21230 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 21230 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-24790",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "24790",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "24790",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 24790 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 24790 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-26100",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "26100",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "26100",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 26100 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 26100 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-27755",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "27755",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "PRETO",
+        "inciNameEn": null,
+        "ciNumber": "27755",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 27755 - PRETO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 27755 PRETO"
+    },
+    {
+      "ruleId": "BR-RDC628-28440",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "28440",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "PRETO",
+        "inciNameEn": null,
+        "ciNumber": "28440",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 28440 - PRETO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 28440 PRETO"
+    },
+    {
+      "ruleId": "BR-RDC628-40215",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "40215",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "40215",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 40215 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 40215 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-40800",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "40800",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "40800",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 40800 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 40800 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-40820",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "40820",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "40820",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 40820 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 40820 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-40825",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "40825",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "40825",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 40825 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 40825 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-40850",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "40850",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "40850",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 40850 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 40850 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-42045",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "42045",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "42045",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 42045 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 42045 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-42051",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "42051",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "42051",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 42051 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 42051 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-42053",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "42053",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERDE",
+        "inciNameEn": null,
+        "ciNumber": "42053",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 42053 - VERDE",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 42053 VERDE"
+    },
+    {
+      "ruleId": "BR-RDC628-42080",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "42080",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "42080",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 42080 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 42080 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-42090",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "42090",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "42090",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 42090 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 42090 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-42100",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "42100",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERDE",
+        "inciNameEn": null,
+        "ciNumber": "42100",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 42100 - VERDE",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 42100 VERDE"
+    },
+    {
+      "ruleId": "BR-RDC628-42170",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "42170",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERDE",
+        "inciNameEn": null,
+        "ciNumber": "42170",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 42170 - VERDE",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 42170 VERDE"
+    },
+    {
+      "ruleId": "BR-RDC628-42510",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "42510",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VIOLETA",
+        "inciNameEn": null,
+        "ciNumber": "42510",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 42510 - VIOLETA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 42510 VIOLETA"
+    },
+    {
+      "ruleId": "BR-RDC628-42520",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "42520",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VIOLETA",
+        "inciNameEn": null,
+        "ciNumber": "42520",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [
+        {
+          "otherRequirements": [
+            "Concentração máxima no"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 42520 - VIOLETA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 42520 VIOLETA"
+    },
+    {
+      "ruleId": "BR-RDC628-42735",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "42735",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "42735",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 42735 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 42735 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-44045",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "44045",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "44045",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 44045 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 44045 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-44090",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "44090",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERDE",
+        "inciNameEn": null,
+        "ciNumber": "44090",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 44090 - VERDE",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 44090 VERDE"
+    },
+    {
+      "ruleId": "BR-RDC628-45100",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "45100",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "45100",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 45100 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 45100 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-45190",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "45190",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VIOLETA",
+        "inciNameEn": null,
+        "ciNumber": "45190",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 45190 - VIOLETA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 45190 VIOLETA"
+    },
+    {
+      "ruleId": "BR-RDC628-45220",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "45220",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "45220",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 45220 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 45220 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-45350",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "45350",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "45350",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [
+        {
+          "otherRequirements": [
+            "Concentração máxima no"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 45350 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 45350 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-45370",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "45370",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "45370",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 45370 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 45370 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-45380",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "45380",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "45380",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 45380 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 45380 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-45396",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "45396",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "45396",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [
+        {
+          "otherRequirements": [
+            "Concentração máxima em"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 45396 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 45396 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-45405",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "45405",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "45405",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 45405 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 45405 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-45410",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "45410",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "45410",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 45410 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 45410 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-45425",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "45425",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "45425",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 45425 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 45425 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-45430",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "45430",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "45430",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 45430 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 45430 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-47000",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "47000",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "47000",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 47000 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 47000 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-47005",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "47005",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "47005",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 47005 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 47005 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-50325",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "50325",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VIOLETA",
+        "inciNameEn": null,
+        "ciNumber": "50325",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 50325 - VIOLETA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 50325 VIOLETA"
+    },
+    {
+      "ruleId": "BR-RDC628-50420",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "50420",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "PRETO",
+        "inciNameEn": null,
+        "ciNumber": "50420",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 50420 - PRETO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 50420 PRETO"
+    },
+    {
+      "ruleId": "BR-RDC628-51319",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "51319",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VIOLETA",
+        "inciNameEn": null,
+        "ciNumber": "51319",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 51319 - VIOLETA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 51319 VIOLETA"
+    },
+    {
+      "ruleId": "BR-RDC628-58000",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "58000",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "58000",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 58000 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 58000 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-59040",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "59040",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERDE",
+        "inciNameEn": null,
+        "ciNumber": "59040",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 59040 - VERDE",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 59040 VERDE"
+    },
+    {
+      "ruleId": "BR-RDC628-60724",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "60724",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VIOLETA",
+        "inciNameEn": null,
+        "ciNumber": "60724",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 60724 - VIOLETA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 60724 VIOLETA"
+    },
+    {
+      "ruleId": "BR-RDC628-60725",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "60725",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VIOLETA",
+        "inciNameEn": null,
+        "ciNumber": "60725",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 60725 - VIOLETA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 60725 VIOLETA"
+    },
+    {
+      "ruleId": "BR-RDC628-60730",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "60730",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VIOLETA",
+        "inciNameEn": null,
+        "ciNumber": "60730",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 60730 - VIOLETA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 60730 VIOLETA"
+    },
+    {
+      "ruleId": "BR-RDC628-61565",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "61565",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERDE",
+        "inciNameEn": null,
+        "ciNumber": "61565",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 61565 - VERDE",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 61565 VERDE"
+    },
+    {
+      "ruleId": "BR-RDC628-61570",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "61570",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERDE",
+        "inciNameEn": null,
+        "ciNumber": "61570",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 61570 - VERDE",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 61570 VERDE"
+    },
+    {
+      "ruleId": "BR-RDC628-61585",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "61585",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "61585",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 61585 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 61585 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-62045",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "62045",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "62045",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 62045 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 62045 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-69800",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "69800",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "69800",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 69800 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 69800 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-69825",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "69825",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "69825",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 69825 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 69825 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-71105",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "71105",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "71105",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 71105 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 71105 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-73000",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "73000",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "73000",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 73000 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 73000 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-73015",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "73015",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "73015",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 73015 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 73015 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-73360",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "73360",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "73360",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 73360 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 73360 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-73385",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "73385",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VIOLETA",
+        "inciNameEn": null,
+        "ciNumber": "73385",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 73385 - VIOLETA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 73385 VIOLETA"
+    },
+    {
+      "ruleId": "BR-RDC628-73900",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "73900",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VIOLETA",
+        "inciNameEn": null,
+        "ciNumber": "73900",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 73900 - VIOLETA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 73900 VIOLETA"
+    },
+    {
+      "ruleId": "BR-RDC628-73915",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "73915",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "73915",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 73915 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 73915 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-74100",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "74100",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "74100",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 74100 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 74100 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-74160",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "74160",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "74160",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 74160 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 74160 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-74180",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "74180",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "74180",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 74180 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 74180 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-74260",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "74260",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERDE",
+        "inciNameEn": null,
+        "ciNumber": "74260",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 74260 - VERDE",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 74260 VERDE"
+    },
+    {
+      "ruleId": "BR-RDC628-75100",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "75100",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "75100",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 75100 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 75100 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-75120",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "75120",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "75120",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 75120 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 75120 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-75125",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "75125",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "75125",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 75125 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 75125 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-75130",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "75130",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "75130",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 75130 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 75130 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-75135",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "75135",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "75135",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 75135 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 75135 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-75170",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "75170",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "BRANCO",
+        "inciNameEn": null,
+        "ciNumber": "75170",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 75170 - BRANCO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 75170 BRANCO"
+    },
+    {
+      "ruleId": "BR-RDC628-75300",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "75300",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "75300",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 75300 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 75300 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-75470",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "75470",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "75470",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 75470 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 75470 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-75810",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "75810",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERDE",
+        "inciNameEn": null,
+        "ciNumber": "75810",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [
+        {
+          "otherRequirements": [
+            "Concentração máxima em"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 75810 - VERDE",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 75810 VERDE"
+    },
+    {
+      "ruleId": "BR-RDC628-77000",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77000",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "BRANCO",
+        "inciNameEn": null,
+        "ciNumber": "77000",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77000 - BRANCO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77000 BRANCO"
+    },
+    {
+      "ruleId": "BR-RDC628-77002",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77002",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "BRANCO",
+        "inciNameEn": null,
+        "ciNumber": "77002",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77002 - BRANCO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77002 BRANCO"
+    },
+    {
+      "ruleId": "BR-RDC628-77004",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77004",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "BRANCO",
+        "inciNameEn": null,
+        "ciNumber": "77004",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77004 - BRANCO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77004 BRANCO"
+    },
+    {
+      "ruleId": "BR-RDC628-77007",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77007",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "77007",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77007 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77007 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-77013",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77013",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "77013",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77013 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77013 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-77015",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77015",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "BRANCO",
+        "inciNameEn": null,
+        "ciNumber": "77015",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77015 - BRANCO",
+        "列标记: 2X"
+      ],
+      "sourceText": "CI 77015 BRANCO"
+    },
+    {
+      "ruleId": "BR-RDC628-77120",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77120",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "BRANCO",
+        "inciNameEn": null,
+        "ciNumber": "77120",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77120 - BRANCO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77120 BRANCO"
+    },
+    {
+      "ruleId": "BR-RDC628-77163",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77163",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "BRANCO",
+        "inciNameEn": null,
+        "ciNumber": "77163",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77163 - BRANCO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77163 BRANCO"
+    },
+    {
+      "ruleId": "BR-RDC628-77220",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77220",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "BRANCO",
+        "inciNameEn": null,
+        "ciNumber": "77220",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77220 - BRANCO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77220 BRANCO"
+    },
+    {
+      "ruleId": "BR-RDC628-77231",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77231",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "BRANCO",
+        "inciNameEn": null,
+        "ciNumber": "77231",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77231 - BRANCO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77231 BRANCO"
+    },
+    {
+      "ruleId": "BR-RDC628-77266",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77266",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "PRETO",
+        "inciNameEn": null,
+        "ciNumber": "77266",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77266 - PRETO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77266 PRETO"
+    },
+    {
+      "ruleId": "BR-RDC628-77267",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77267",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "PRETO",
+        "inciNameEn": null,
+        "ciNumber": "77267",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77267 - PRETO",
+        "列标记: 2X"
+      ],
+      "sourceText": "CI 77267 PRETO"
+    },
+    {
+      "ruleId": "BR-RDC628-77288",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77288",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERDE",
+        "inciNameEn": null,
+        "ciNumber": "77288",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77288 - VERDE",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77288 VERDE"
+    },
+    {
+      "ruleId": "BR-RDC628-77289",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77289",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERDE",
+        "inciNameEn": null,
+        "ciNumber": "77289",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77289 - VERDE",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77289 VERDE"
+    },
+    {
+      "ruleId": "BR-RDC628-77346",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77346",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERDE",
+        "inciNameEn": null,
+        "ciNumber": "77346",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77346 - VERDE",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77346 VERDE"
+    },
+    {
+      "ruleId": "BR-RDC628-77400",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77400",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "MARROM",
+        "inciNameEn": null,
+        "ciNumber": "77400",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77400 - MARROM",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77400 MARROM"
+    },
+    {
+      "ruleId": "BR-RDC628-77480",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77480",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "MARROM",
+        "inciNameEn": null,
+        "ciNumber": "77480",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77480 - MARROM",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77480 MARROM"
+    },
+    {
+      "ruleId": "BR-RDC628-77489",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77489",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "LARANJA",
+        "inciNameEn": null,
+        "ciNumber": "77489",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77489 - LARANJA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77489 LARANJA"
+    },
+    {
+      "ruleId": "BR-RDC628-77491",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77491",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "77491",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77491 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77491 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-77492",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77492",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AMARELO",
+        "inciNameEn": null,
+        "ciNumber": "77492",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77492 - AMARELO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77492 AMARELO"
+    },
+    {
+      "ruleId": "BR-RDC628-77499",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77499",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "PRETO",
+        "inciNameEn": null,
+        "ciNumber": "77499",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77499 - PRETO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77499 PRETO"
+    },
+    {
+      "ruleId": "BR-RDC628-77510",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77510",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "AZUL",
+        "inciNameEn": null,
+        "ciNumber": "77510",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77510 - AZUL",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77510 AZUL"
+    },
+    {
+      "ruleId": "BR-RDC628-77713",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77713",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "BRANCO",
+        "inciNameEn": null,
+        "ciNumber": "77713",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77713 - BRANCO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77713 BRANCO"
+    },
+    {
+      "ruleId": "BR-RDC628-77742",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77742",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VIOLETA",
+        "inciNameEn": null,
+        "ciNumber": "77742",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77742 - VIOLETA",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77742 VIOLETA"
+    },
+    {
+      "ruleId": "BR-RDC628-77745",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77745",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "VERMELHO",
+        "inciNameEn": null,
+        "ciNumber": "77745",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77745 - VERMELHO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77745 VERMELHO"
+    },
+    {
+      "ruleId": "BR-RDC628-77820",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77820",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "BRANCO",
+        "inciNameEn": null,
+        "ciNumber": "77820",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77820 - BRANCO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77820 BRANCO"
+    },
+    {
+      "ruleId": "BR-RDC628-77891",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77891",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "BRANCO",
+        "inciNameEn": null,
+        "ciNumber": "77891",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77891 - BRANCO",
+        "列标记: 1X"
+      ],
+      "sourceText": "CI 77891 BRANCO"
+    },
+    {
+      "ruleId": "BR-RDC628-77947",
+      "status": "active",
+      "document": {
+        "id": "RDC 628/2022",
+        "item": "77947",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "PYROPHYLLITE",
+        "inciNameEn": null,
+        "ciNumber": "77947",
+        "cas": null
+      },
+      "category": "positive",
+      "restrictions": [],
+      "effectiveDate": "2022-04-01",
+      "notes": [
+        "CI 77947 - PYROPHYLLITE",
+        "列标记: 13X"
+      ],
+      "sourceText": "CI 77947 PYROPHYLLITE"
+    }
+  ]
+}

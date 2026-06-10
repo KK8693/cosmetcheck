@@ -1,0 +1,469 @@
+{
+  "chunkId": 1,
+  "document": {
+    "id": "RDC 530/2021",
+    "titlePt": "Lista de substâncias que os produtos de higiene pessoal, cosméticos e perfumes não devem conter exceto nas condições e com as restrições estabelecidas",
+    "titleZh": "个人卫生、化妆品和香水产品禁用或限用成分清单",
+    "annex": "I",
+    "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1",
+    "effectiveDate": "2021-08-11"
+  },
+  "rules": [
+    {
+      "ruleId": "BR-RDC530-1a",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "1a",
+        "pageInSource": 2,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido bórico, boratos e tetraboratos",
+        "inciNameEn": "Boric acid, borates and tetraborates",
+        "cas": "10043-35-3"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "talc",
+          "productTypePt": "Talcos",
+          "maxConcentration": "5%",
+          "calculationBasis": "m/m calculado como ácido bórico (m/m calculated as boric acid)",
+          "phLimit": null,
+          "otherRequirements": [
+            "Não utilizar em produtos para crianças menores de 3 anos (Do not use in products for children under 3 years)",
+            "Não usar em pele lesionada ou irritada se o teor de boratos solúveis livre exceder 1,5% (m/m calculado como ácido bórico)"
+          ],
+          "labelWarnings": [
+            "Para produtos de uso adulto: 'Não usar em crianças' (For adult use products: 'Not for use in children')",
+            "Para produtos destinados ao público infantil: 'Não usar em crianças menores de 3 anos' (For products intended for children: 'Not for use in children under 3 years')"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "oral_hygiene",
+          "productTypePt": "Produtos para higiene bucal",
+          "maxConcentration": "0.1%",
+          "calculationBasis": "m/m calculado como ácido bórico",
+          "phLimit": null,
+          "otherRequirements": [
+            "Não utilizar em produtos para crianças menores de 3 anos"
+          ],
+          "labelWarnings": [
+            "Para produtos de uso adulto: 'Não usar em crianças'",
+            "Para produtos destinados ao público infantil: 'Não usar em crianças menores de 3 anos'",
+            "Não ingerir (Do not ingest)"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "other_except_bath_perm",
+          "productTypePt": "Outros produtos (com exceção dos produtos para banho e para ondulação dos cabelos)",
+          "maxConcentration": "3%",
+          "calculationBasis": "m/m calculado como ácido bórico",
+          "phLimit": null,
+          "otherRequirements": [
+            "Não utilizar em produtos para crianças menores de 3 anos",
+            "Não usar em pele lesionada ou irritada se o teor de boratos solúveis livre exceder 1,5% (m/m calculado como ácido bórico)"
+          ],
+          "labelWarnings": [
+            "Para produtos de uso adulto: 'Não usar em crianças'",
+            "Para produtos destinados ao público infantil: 'Não usar em crianças menores de 3 anos'",
+            "Não usar em pele lesionada ou irritada (Do not use on damaged or irritated skin)"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [
+        "O valor de casas decimais não expressas para concentrações e pH presentes nesta Resolução é 'zero'."
+      ],
+      "sourceText": "1a | Ácido bórico, boratos e tetraboratos | a) Talcos: 5% (m/m como ácido bórico) | b) Higiene bucal: 0,1% | c) Outros (exceto banho e ondulação): 3% | a) Não usar em crianças <3 anos, não usar em pele lesionada se boratos solúveis >1,5% | b) Não usar em crianças <3 anos | c) Não usar em crianças <3 anos, não usar em pele lesionada se boratos >1,5% | Advertências conforme produto adulto/infantil"
+    },
+    {
+      "ruleId": "BR-RDC530-1b",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "1b",
+        "pageInSource": 2,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Tetraboratos",
+        "inciNameEn": "Tetraborates",
+        "cas": "1303-96-4"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "bath",
+          "productTypePt": "Produtos para banho",
+          "maxConcentration": "18%",
+          "calculationBasis": "m/m calculado como ácido bórico",
+          "phLimit": null,
+          "otherRequirements": [
+            "Não utilizar em produtos para crianças menores de 3 anos"
+          ],
+          "labelWarnings": [
+            "Para produtos de uso adulto: 'Não usar em crianças'",
+            "Para produtos destinados ao público infantil: 'Não usar em crianças menores de 3 anos'"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "hair_perm",
+          "productTypePt": "Produtos para ondulação dos cabelos",
+          "maxConcentration": "8%",
+          "calculationBasis": "m/m calculado como ácido bórico",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Enxaguar abundantemente (Rinse abundantly)"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "1b | Tetraboratos | a) Banho: 18% (m/m como ácido bórico) | b) Ondulação: 8% | a) Não usar em crianças <3 anos | Advertências conforme adulto/infantil + enxaguar abundantemente"
+    },
+    {
+      "ruleId": "BR-RDC530-2a",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "2a",
+        "pageInSource": 2,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido tioglicólico e seus sais",
+        "inciNameEn": "Thioglycolic acid and its salts",
+        "cas": "68-11-1"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_straightening_perm",
+          "productTypePt": "Produtos para alisar ou ondular os cabelos",
+          "maxConcentration": "8% (uso geral) / 11% (uso profissional)",
+          "calculationBasis": "pronto para uso, porcentagens calculadas como ácido tioglicólico (ready to use, calculated as thioglycolic acid)",
+          "phLimit": "pH 7 a 9,5",
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Evitar contato com os olhos. Em caso de contato, enxaguar com água imediata e abundantemente e procurar um médico (Avoid contact with eyes. In case of contact, rinse immediately with plenty of water and seek medical attention)",
+            "Usar luvas adequadas (Use suitable gloves)",
+            "Contém sais de ácido tioglicólico (Contains thioglycolic acid salts)",
+            "Seguir as instruções de uso (Follow usage instructions)",
+            "Manter fora do alcance das crianças (Keep out of reach of children)",
+            "Só para uso profissional (quando for o caso) (For professional use only when applicable)"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "depilatory",
+          "productTypePt": "Depilatórios",
+          "maxConcentration": "5%",
+          "calculationBasis": "pronto para uso, calculado como ácido tioglicólico",
+          "phLimit": "pH 7 a 12,7",
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Evitar contato com os olhos",
+            "Usar luvas adequadas",
+            "Contém sais de ácido tioglicólico",
+            "Seguir as instruções de uso",
+            "Manter fora do alcance das crianças"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "hair_treatment_rinse_off",
+          "productTypePt": "Outros produtos para tratamento dos cabelos que são removidos após a aplicação",
+          "maxConcentration": "2%",
+          "calculationBasis": "pronto para uso, calculado como ácido tioglicólico",
+          "phLimit": "pH 7 a 9,5",
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Evitar contato com os olhos",
+            "Usar luvas adequadas",
+            "Contém sais de ácido tioglicólico",
+            "Seguir as instruções de uso",
+            "Manter fora do alcance das crianças"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "2a | Ácido tioglicólico e seus sais | a) Alisar/ondular: 8% (geral) / 11% (profissional), pH 7-9.5 | b) Depilatórios: 5%, pH 7-12.7 | c) Tratamento capilar removido: 2%, pH 7-9.5 | Advertências: evitar olhos, luvas, contém sais, seguir instruções, fora do alcance, só profissional"
+    },
+    {
+      "ruleId": "BR-RDC530-2b",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "2b",
+        "pageInSource": 2,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ésteres do ácido tioglicólico",
+        "inciNameEn": "Thioglycolic acid esters",
+        "cas": "NA"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_straightening_perm",
+          "productTypePt": "Produtos para alisar ou ondular os cabelos",
+          "maxConcentration": "8% (uso geral) / 11% (uso profissional)",
+          "calculationBasis": "pronto para uso, calculado como ácido tioglicólico",
+          "phLimit": "pH 6 a 9,5",
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Pode causar sensibilização por contato com a pele (May cause skin contact sensitization)",
+            "Evitar o contato com os olhos",
+            "No caso de contato com os olhos, lavar com água imediata e abundantemente e consultar um médico",
+            "Usar luvas adequadas",
+            "Contém ésteres de ácido tioglicólico (Contains thioglycolic acid esters)",
+            "Seguir as instruções de uso",
+            "Manter fora do alcance das crianças",
+            "Só para uso profissional (quando for o caso)"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "2b | Ésteres do ácido tioglicólico | Alisar/ondular: 8% (geral) / 11% (profissional), pH 6-9.5 | Advertências: sensibilização, evitar olhos, luvas, contém ésteres, seguir instruções, fora alcance, só profissional"
+    },
+    {
+      "ruleId": "BR-RDC530-3",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "3",
+        "pageInSource": 3,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido oxálico, seus ésteres e sais alcalinos",
+        "inciNameEn": "Oxalic acid, its esters and alkaline salts",
+        "cas": "144-62-7"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_treatment_professional",
+          "productTypePt": "Produtos de uso profissional para tratamento dos cabelos",
+          "maxConcentration": "5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Só para uso profissional (For professional use only)"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "3 | Ácido oxálico, seus ésteres e sais alcalinos | Produtos de uso profissional para tratamento dos cabelos | 5% | Só para uso profissional"
+    },
+    {
+      "ruleId": "BR-RDC530-4",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "4",
+        "pageInSource": 3,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Amônia",
+        "inciNameEn": "Ammonia",
+        "cas": "7664-41-7"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Todos os produtos",
+          "maxConcentration": "6%",
+          "calculationBasis": "calculados como NH3",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Acima de 2%: contém amônia (Above 2%: contains ammonia)"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "4 | Amônia | 6% calculados como NH3 | Acima de 2%: contém amônia"
+    },
+    {
+      "ruleId": "BR-RDC530-5",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "5",
+        "pageInSource": 3,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Tosilcloramida sódica (*)",
+        "inciNameEn": "Sodium tosylchloramide",
+        "cas": "127-65-1"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Todos os produtos",
+          "maxConcentration": "0.2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "5 | Tosilcloramida sódica (*) | 0,2%"
+    },
+    {
+      "ruleId": "BR-RDC530-6",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "6",
+        "pageInSource": 3,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Cloratos de metais alcalinos",
+        "inciNameEn": "Alkali metal chlorates",
+        "cas": "NA"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "toothpaste",
+          "productTypePt": "Dentifrícios",
+          "maxConcentration": "5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "other",
+          "productTypePt": "Outros usos",
+          "maxConcentration": "3%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "6 | Cloratos de metais alcalinos | a) Dentifrícios: 5% | b) Outros usos: 3%"
+    },
+    {
+      "ruleId": "BR-RDC530-8",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "8",
+        "pageInSource": 3,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "p-fenilenodiaminas, e seus derivados N-substituídos e seus sais; derivados de N-substituídos da o-fenilenodiamino (#)",
+        "inciNameEn": "p-Phenylenediamines, their N-substituted derivatives and salts; N-substituted o-phenylenediamine derivatives",
+        "cas": "106-50-3"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye_oxidation",
+          "productTypePt": "Corantes de oxidação para a coloração de cabelos",
+          "maxConcentration": "6%",
+          "calculationBasis": "calculados como base livre (calculated as free base)",
+          "phLimit": null,
+          "otherRequirements": [
+            "Com exceção dos derivados citados em outras posições desta lista (Except derivatives listed elsewhere in this list)"
+          ],
+          "labelWarnings": [
+            "Pode causar reação alérgica (May cause allergic reaction)",
+            "'Contém fenilenodiaminas' ('Contains phenylenediamines')",
+            "Não usar em cílios ou sobrancelhas (Do not use on eyelashes or eyebrows)"
+          ],
+          "prohibitedIn": [
+            "eyelashes",
+            "eyebrows"
+          ]
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [
+        "Uso geral e uso profissional com mesma concentração máxima (6%), mas advertências diferem. Uso profissional adicionalmente requer luvas."
+      ],
+      "sourceText": "8 | p-fenilenodiaminas e derivados N-substituídos | Corantes de oxidação capilar | 6% como base livre | Exceto derivados citados em outras posições | Pode causar alergia, contém fenilenodiaminas, não usar em cílios/sobrancelhas"
+    },
+    {
+      "ruleId": "BR-RDC530-9",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "9",
+        "pageInSource": 3,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Metilfenilenodiaminas e respectivos derivados N-substituidos e seus sais (#)",
+        "inciNameEn": "Methylphenylenediamines and their N-substituted derivatives and salts",
+        "cas": "NA"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye_oxidation",
+          "productTypePt": "Corantes de oxidação para a coloração de cabelos",
+          "maxConcentration": "10%",
+          "calculationBasis": "calculados como base livre",
+          "phLimit": null,
+          "otherRequirements": [
+            "Com exceção da 4-metil-m-fenilenodiaminas e seus sais"
+          ],
+          "labelWarnings": [
+            "Pode causar reação alérgica",
+            "Contém metilfenilenodiaminas"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "9 | Metilfenilenodiaminas e derivados N-substituidos | Corantes de oxidação capilar | 10% como base livre | Exceto 4-metil-m-fenilenodiaminas | Pode causar reação alérgica"
+    }
+  ]
+}

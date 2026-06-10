@@ -1,0 +1,2531 @@
+{
+  "document": {
+    "id": "MX-2010-SEGUNDO",
+    "titleEs": "Sustancias Prohibidas (Acuerdo 2010)",
+    "titleZh": "墨西哥2010年禁用成分清单",
+    "effectiveDate": "2010-05-21"
+  },
+  "totalRules": 126,
+  "rules": [
+    {
+      "ruleId": "MX-2010-SEGUNDO-1",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "1",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Aceite de antraceno",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "1. Aceite de antraceno"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-2",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "2",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Aceite esencial de epazote (Chenopodium ambrosioides)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "2. Aceite esencial de epazote (Chenopodium ambrosioides)"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-3",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "3",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Aceite esencial, hojas y preparaciones de Juniperus sabina",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "3. Aceite esencial, hojas y preparaciones de Juniperus sabina"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-4",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "4",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Acetil isovalerilo",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "4. Acetil isovalerilo"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-5",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "5",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Acetil etil tetrametil tetralina (AETT, Versalide)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "5. Acetil etil tetrametil tetralina (AETT, Versalide)"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-6",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "6",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Acetonitrilo",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "6. Acetonitrilo"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-7",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "7",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Acido 4-aminosalicílico y sus sales",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "7. Acido 4-aminosalicílico y sus sales"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-8",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "8",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Acido aminocaproico y sus sales",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "8. Acido aminocaproico y sus sales"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-9",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "9",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Acido cianhídrico y sus sales",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "9. Acido cianhídrico y sus sales"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-10",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "10",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Acido crisofánico y sus compuestos",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "10. Acido crisofánico y sus compuestos"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-11",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "11",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Acido retinoico y sus sales",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "11. Acido retinoico y sus sales"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-12",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "12",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Acido tricoloroacético",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "12. Acido tricoloroacético"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-13",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "13",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Alquilaminas y alcanolaminas secundarias y sus sales",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "13. Alquilaminas y alcanolaminas secundarias y sus sales"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-14",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "14",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "2-Amino-4-nitrofenol",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "14. 2-Amino-4-nitrofenol"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-15",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "15",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "2-Amino-5-nitrofenol",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "15. 2-Amino-5-nitrofenol"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-16",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "16",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "4-Amino-2-nitrofenol",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "16. 4-Amino-2-nitrofenol"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-17",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "17",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Acido 4-aminobenzoico PABA",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "17. Acido 4-aminobenzoico PABA"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-18",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "18",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Aminobenceno y sus sales y derivados halogenados y sulfonados",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "18. Aminobenceno y sus sales y derivados halogenados y sulfonados"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-19",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "19",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Aminotolueno y sus sales y derivados halogenados y sulfonados",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "19. Aminotolueno y sus sales y derivados halogenados y sulfonados"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-20",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "20",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Aminoxilenos y sus sales y derivados halogenados y sulfonados",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "20. Aminoxilenos y sus sales y derivados halogenados y sulfonados"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-21",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "21",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Anestésicos locales",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "21. Anestésicos locales"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-22",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "22",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Anisiliden acetona",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "22. Anisiliden acetona"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-23",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "23",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Antimonio y sus compuestos",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "23. Antimonio y sus compuestos"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-24",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "24",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Arsénico y sus compuestos",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "24. Arsénico y sus compuestos"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-25",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "25",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Benceno",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "25. Benceno"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-26",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "26",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Benciliden acetona",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "26. Benciliden acetona"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-27",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "27",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Bitionol (2,2 tio bis[4-6 dicloro fenol])",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "27. Bitionol (2,2 tio bis[4-6 dicloro fenol])"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-28",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "28",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Bromo metaloide",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "28. Bromo metaloide"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-29",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "29",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "p-ter-Butilfenol",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "29. p-ter-Butilfenol"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-30",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "30",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Cadmio y sus compuestos.",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "30. Cadmio y sus compuestos."
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-31",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "31",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Catalasa",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "31. Catalasa"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-32",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "32",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Cloro Elemental",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "32. Cloro Elemental"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-33",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "33",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Cloroformo",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "33. Cloroformo"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-34",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "34",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Cloruro de vinilo monómero",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "34. Cloruro de vinilo monómero"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-35",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "35",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Crisarobina y sus compuestos",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "35. Crisarobina y sus compuestos"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-36",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "36",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Crotonato de metilo",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "36. Crotonato de metilo"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-37",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "37",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Dibromosalicilanilida",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "37. Dibromosalicilanilida"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-38",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "38",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Dicloroetano",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "38. Dicloroetano"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-39",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "39",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Diclorofenol",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "39. Diclorofenol"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-40",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "40",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Dimetilamina",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "40. Dimetilamina"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-41",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "41",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Dimetilsulfóxido",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "41. Dimetilsulfóxido"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-42",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "42",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Dioxano",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "42. Dioxano"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-43",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "43",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Disulfuro de carbono (Sulfuro de carbono)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "43. Disulfuro de carbono (Sulfuro de carbono)"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-44",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "44",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Eter etílico",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "44. Eter etílico"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-45",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "45",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Fenilacetona",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "45. Fenilacetona"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-46",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "46",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Fenol",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "46. Fenol"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-47",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "47",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Fósforo y fosfuros metálicos",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "47. Fósforo y fosfuros metálicos"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-48",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "48",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Hexaclorofeno",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "48. Hexaclorofeno"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-49",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "49",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Hexacloroetano",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "49. Hexacloroetano"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-50",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "50",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Hexahidrocumarina",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "50. Hexahidrocumarina"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-51",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "51",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Hidrocarburos halogenados utilizados como propelentes",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "51. Hidrocarburos halogenados utilizados como propelentes"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-52",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "52",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Isotiocianato de alilo",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "52. Isotiocianato de alilo"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-53",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "53",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Lactato de estroncio",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "53. Lactato de estroncio"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-54",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "54",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Mercurio y sus compuestos, excepto los listados en conservadores",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "54. Mercurio y sus compuestos, excepto los listados en conservadores"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-55",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "55",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Metaldehído (poliacetaldehído)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "55. Metaldehído (poliacetaldehído)"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-56",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "56",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Metacrilato de metilo",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "56. Metacrilato de metilo"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-57",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "57",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Monobencil éter de hidroquinona",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "57. Monobencil éter de hidroquinona"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-58",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "58",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Monoetil éter de etilenglicol y su acetato",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "58. Monoetil éter de etilenglicol y su acetato"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-59",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "59",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Monoetil éter de hidroquinona",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "59. Monoetil éter de hidroquinona"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-60",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "60",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Monometil éter de etilenglicol y su acetato",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "60. Monometil éter de etilenglicol y su acetato"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-61",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "61",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Monometil éter de hidroquinona",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "61. Monometil éter de hidroquinona"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-62",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "62",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Musk alfa (1,3-dibromo-4-metoxi-2-metil-5-nitrobenceno)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "62. Musk alfa (1,3-dibromo-4-metoxi-2-metil-5-nitrobenceno)"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-63",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "63",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Musk ambrette",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "63. Musk ambrette"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-64",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "64",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Musk KS (1,3-dibromo-2-metoxi-4-metil-5-nitrobenceno) (2,6-dibromo-3-metil-4- nitroanisol)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "64. Musk KS (1,3-dibromo-2-metoxi-4-metil-5-nitrobenceno) (2,6-dibromo-3-metil-4- nitroanisol)"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-65",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "65",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Musk moskene",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "65. Musk moskene"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-66",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "66",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Musk tibetene",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "66. Musk tibetene"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-67",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "67",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Nicotina",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "67. Nicotina"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-68",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "68",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Nitrato de estroncio",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "68. Nitrato de estroncio"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-69",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "69",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Nitrobenceno",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "69. Nitrobenceno"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-70",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "70",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Nitrosaminas",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "70. Nitrosaminas"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-71",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "71",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Oxido de etileno",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "71. Oxido de etileno"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-72",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "72",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Pirocatecol (catecol)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "72. Pirocatecol (catecol)"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-73",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "73",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Pirogalol",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "73. Pirogalol"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-74",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "74",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Plomo y sus compuestos",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "74. Plomo y sus compuestos"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-75",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "75",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Policarboxilato de estroncio",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "75. Policarboxilato de estroncio"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-76",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "76",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Pseudoionona",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "76. Pseudoionona"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-77",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "77",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Pseudometiliononas",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "77. Pseudometiliononas"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-78",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "78",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Sales de cromo y ácido crómico",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "78. Sales de cromo y ácido crómico"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-79",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "79",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Sales de oro",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "79. Sales de oro"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-80",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "80",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Selenio y sus compuestos, excepto disulfuro de selenio",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "80. Selenio y sus compuestos, excepto disulfuro de selenio"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-81",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "81",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Tetrabromo salicilanilida",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "81. Tetrabromo salicilanilida"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-82",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "82",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Tetracloroetileno",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "82. Tetracloroetileno"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-83",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "83",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Tetracloro salicilanilida",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "83. Tetracloro salicilanilida"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-84",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "84",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Tetracloruro de carbono",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "84. Tetracloruro de carbono"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-85",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "85",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Uranio y sus compuestos",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "85. Uranio y sus compuestos"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-86",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "86",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Vitamina D2 (Ergocalciferol)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "86. Vitamina D2 (Ergocalciferol)"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-87",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "87",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Vitamina D3 (Colecalciferol) y",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "87. Vitamina D3 (Colecalciferol) y"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-88",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "88",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Yodo o yodo metaloide",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "88. Yodo o yodo metaloide"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-89",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "89",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Absoluto de hojas de té (Camelia sinensis)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "89. Absoluto de hojas de té (Camelia sinensis)"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-90",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "90",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Aceite absoluto y concreto de la raíz de costus (Saussurea lappa clarke)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "90. Aceite absoluto y concreto de la raíz de costus (Saussurea lappa clarke)"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-91",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "91",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Aceite de corteza de massoia y lactona de massoia (Cryptocaryo massoia)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "91. Aceite de corteza de massoia y lactona de massoia (Cryptocaryo massoia)"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-92",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "92",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Aceite de elecampane (Inula helenium)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "92. Aceite de elecampane (Inula helenium)"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-93",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "93",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Aceite de hojas de higo (Ficus carica)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "93. Aceite de hojas de higo (Ficus carica)"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-94",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "94",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Aceite de melisa (Melissa officinalis)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "94. Aceite de melisa (Melissa officinalis)"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-95",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "95",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Aceite de verbena (Lippia citriodora Kunth)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "95. Aceite de verbena (Lippia citriodora Kunth)"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-96",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "96",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Acrilato de etilo",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "96. Acrilato de etilo"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-97",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "97",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Alcohol de ciclamen",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "97. Alcohol de ciclamen"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-98",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "98",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Alcohol hidroabietílico (abietol)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "98. Alcohol hidroabietílico (abietol)"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-99",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "99",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Bromoestireno",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "99. Bromoestireno"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-100",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "100",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "3-bromo-1,7,7-trimetilbiciclo[2.2.1]-heptan-2-ona",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "100. 3-bromo-1,7,7-trimetilbiciclo[2.2.1]-heptan-2-ona"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-101",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "101",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Cianuro de bencilo",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "101. Cianuro de bencilo"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-102",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "102",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Cinamiliden acetona",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "102. Cinamiliden acetona"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-103",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "103",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Citraconato de dimetilo",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "103. Citraconato de dimetilo"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-104",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "104",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Colofonia",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "104. Colofonia"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-105",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "105",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "2,2-dicloro-1-metilciclopropilbenceno",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "105. 2,2-dicloro-1-metilciclopropilbenceno"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-106",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "106",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Dietilacetal del trans-2-hexenal",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "106. Dietilacetal del trans-2-hexenal"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-107",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "107",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Difenilamina",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "107. Difenilamina"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-108",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "108",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Dihidrocumarina",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "108. Dihidrocumarina"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-109",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "109",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "2,4-Dihidroxi-3-metil benzaldehído",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "109. 2,4-Dihidroxi-3-metil benzaldehído"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-110",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "110",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "3, 7-Dimetil-2-octen-1-ol",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "110. 3, 7-Dimetil-2-octen-1-ol"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-111",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "111",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Dimetilacetal del trans-2-hexenal",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "111. Dimetilacetal del trans-2-hexenal"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-112",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "112",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "4,6-Dimetil-8-terbutilcumarina",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "112. 4,6-Dimetil-8-terbutilcumarina"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-113",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "113",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Esteres del ácido 2-octinoico, excepto metil y alil heptino carbonato",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "113. Esteres del ácido 2-octinoico, excepto metil y alil heptino carbonato"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-114",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "114",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Esteres del ácido 2-noninoico, excepto metil octino carbonato",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "114. Esteres del ácido 2-noninoico, excepto metil octino carbonato"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-115",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "115",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Fenilbenzoato",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "115. Fenilbenzoato"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-116",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "116",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Furfuriliden acetona",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "116. Furfuriliden acetona"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-117",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "117",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "6-Isopropil-2-decalol",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "117. 6-Isopropil-2-decalol"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-118",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "118",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Isofurona",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "118. Isofurona"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-119",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "119",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Maleato de dietilo",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "119. Maleato de dietilo"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-120",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "120",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "-Metil anisilidenacetona",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "120. -Metil anisilidenacetona"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-121",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "121",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "6-Metilcumarina",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "121. 6-Metilcumarina"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-122",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "122",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "7-Metilcumarina",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "122. 7-Metilcumarina"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-123",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "123",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "4-Metil-7-etoxicumarina",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "123. 4-Metil-7-etoxicumarina"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-124",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "124",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "7-Metoxicumarina",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "124. 7-Metoxicumarina"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-125",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "125",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "2- Pentilidenciclohexan-1-ona o Pentiliden ciclohexanona",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "125. 2- Pentilidenciclohexan-1-ona o Pentiliden ciclohexanona"
+    },
+    {
+      "ruleId": "MX-2010-SEGUNDO-126",
+      "status": "active",
+      "document": {
+        "id": "MX Acuerdo 2010 SEGUNDO",
+        "item": "126",
+        "pageInSource": 1,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Trans-2-Heptenal",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "banned",
+      "restrictions": [],
+      "effectiveDate": "2010-05-21",
+      "notes": [],
+      "sourceText": "126. Trans-2-Heptenal"
+    }
+  ]
+}

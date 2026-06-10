@@ -1,0 +1,1034 @@
+{
+  "document": {
+    "id": "BR-RDC600-2022",
+    "titlePt": "Lista de Filtros Ultravioletas Permitidos",
+    "titleZh": "巴西批准防晞剂清单 (RDC 600/2022)",
+    "effectiveDate": "2022-02-09"
+  },
+  "totalRules": 36,
+  "rules": [
+    {
+      "ruleId": "BR-RDC600-1",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "1",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Sulfato de Metila de N, N, N- trimetil - 4-(2,oxoborn - 3 - ilidenometil) anilínio",
+        "inciNameEn": "CAMPHOR BENZALKONIUM METHOSULFATE",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "6%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "1. Sulfato\tde\tMetila\tde\tN,\tN,\tN-\ttrimetil\t-\t4-(2,oxoborn\t-\t3\t-\tilidenometil)\tanilínio | 6%"
+    },
+    {
+      "ruleId": "BR-RDC600-2",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "2",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "3, 3' - (1, 4 - fenilenodimetileno)bis (ácido 7, 7 - dimetil - 2 - oxo - biciclo - (2.2.1) 1-heptilmetanosulfônico e seus sais TEREPHTHALYLIDENE DICAMPHOR SULFONIC ACID (&",
+        "inciNameEn": "SALTS)",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "10%  (expresso",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": [
+            "como ácido)"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "2. 3,\t3'\t-\t(1,\t4\t-\tfenilenodimetileno)bis\t(ácido\t7,\t7\t-\tdimetil\t-\t2\t-\toxo\t-\tbiciclo\t-\t(2.2.1) 1-heptilmetanosulfônico\te\tseus\tsais\tTEREPHTHALYLIDENE\tDICAMPHOR\tSULFONIC\tACID\t(& | 10%\t (expresso"
+    },
+    {
+      "ruleId": "BR-RDC600-3",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "3",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "1  -(4  -  terc  -  butilfenil)  -  3  -  (4  -metoxifenil)  propano  -  1,  3  -  diona  BUTYL",
+        "inciNameEn": "METHOXYDIBENZOYLMETHAN E",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "5%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "3. 1\t -(4\t -\t terc\t -\t butilfenil)\t -\t 3\t -\t (4\t -metoxifenil)\t propano\t -\t 1,\t 3\t -\t diona\t BUTYL | 5%"
+    },
+    {
+      "ruleId": "BR-RDC600-4",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "4",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido alfa - (2 - oxoborn - 3 -ilideno) tolueno - 4 - sulfônico e seus sais de potássio, sódio e trietanolamina",
+        "inciNameEn": "BENZYLIDENE CAMPHOR SULFONIC ACID & SALTS",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "6%  (expresso",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": [
+            "como ácido)"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "4. Ácido\talfa\t-\t(2\t-\toxoborn\t-\t3\t-ilideno)\ttolueno\t-\t4\t-\tsulfônico\te\tseus\tsais\tde\tpotássio,\tsódio\te trietanolamina | 6%\t (expresso"
+    },
+    {
+      "ruleId": "BR-RDC600-5",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "5",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "2 - Ciano - 3, 3'- difenilacrilato de 2 - etilexila",
+        "inciNameEn": "OCTOCRYLENE",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "10%  (expresso",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": [
+            "como ácido)"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "5. 2\t-\tCiano\t-\t3,\t3'-\tdifenilacrilato\tde\t2\t-\tetilexila | 10%\t (expresso"
+    },
+    {
+      "ruleId": "BR-RDC600-6",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "6",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "4 - Metoxicinamato de 2 - etoxietila CINOXATE",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "3%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "6. 4\t-\tMetoxicinamato\tde\t2\t-\tetoxietila\tCINOXATE | 3%"
+    },
+    {
+      "ruleId": "BR-RDC600-7",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "7",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "2, 2' - dihidroxi - 4 - metoxibenzofenona BENZOPHENONE-8",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "3%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "7. 2,\t2'\t-\tdihidroxi\t-\t4\t-\tmetoxibenzofenona\tBENZOPHENONE-8 | 3%"
+    },
+    {
+      "ruleId": "BR-RDC600-8",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "8",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Antranilato de mentila",
+        "inciNameEn": "MENTHYL ANTHRANILATE",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "5%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "8. Antranilato\tde\tmentila | 5%"
+    },
+    {
+      "ruleId": "BR-RDC600-9",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "9",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Salicilato de trietanolamina",
+        "inciNameEn": "TEA-SALICYLATE",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "12%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "9. Salicilato\tde\ttrietanolamina | 12%"
+    },
+    {
+      "ruleId": "BR-RDC600-10",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "10",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido 2 - fenilbenzimidazol - 5 - sulfônico e seus sais de potássio, sódio e trietanolamina 8%  (expresso",
+        "inciNameEn": "PHENYLBENZIMIDAZOLE SULFONIC ACID (& SODIUM, POTASSIUM ,TEA SALTS )",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "10. Ácido\t2\t-\tfenilbenzimidazol\t-\t5\t-\tsulfônico\te\tseus\tsais\tde\tpotássio,\tsódio\te\ttrietanolamina 8%\t (expresso | "
+    },
+    {
+      "ruleId": "BR-RDC600-11",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "11",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "4 - Metoxicinamato de 2 - etilhexila ETHYLHEXYL METHOXYCINNAMATE",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "10%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "11. 4\t-\tMetoxicinamato\tde\t2\t-\tetilhexila\tETHYLHEXYL\tMETHOXYCINNAMATE | 10%"
+    },
+    {
+      "ruleId": "BR-RDC600-12",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "12",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "2 - Hidroxi - 4 - metoxibenzofenona BENZOPHENONE-3",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "10% maiores  que  0,5%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": [
+            "Para  concentrações",
+            "incluir advertência na",
+            "rotulagem:  \"contém",
+            "Benzophenone-3\"."
+          ]
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "12. 2\t-\tHidroxi\t-\t4\t-\tmetoxibenzofenona\tBENZOPHENONE-3 | 10% maiores\t que\t 0,5%"
+    },
+    {
+      "ruleId": "BR-RDC600-13",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "13",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido 2 - hidroxi - 4 - metoxibenzofenona - 5 - sulfônico BENZOPHENONE-4 (ACID)",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "10%  (expresso",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": [
+            "como ácido)"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "13. Ácido\t2\t-\thidroxi\t-\t4\t-\tmetoxibenzofenona\t-\t5\t-\tsulfônico\tBENZOPHENONE-4\t(ACID) | 10%\t (expresso"
+    },
+    {
+      "ruleId": "BR-RDC600-14",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "14",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Sal sódico do ácido 2 - hidroxi - 4 - metoxibenzofenona - 5 - sulfônico BENZOPHENONE-5",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "5%  (expresso",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": [
+            "como ácido)"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "14. Sal\tsódico\tdo\tácido\t2\t-\thidroxi\t-\t4\t-\tmetoxibenzofenona\t-\t5\t-\tsulfônico\tBENZOPHENONE-5 | 5%\t (expresso"
+    },
+    {
+      "ruleId": "BR-RDC600-15",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "15",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido 4 - aminobenzóico",
+        "inciNameEn": "PABA",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "15%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "15. Ácido\t4\t-\taminobenzóico | 15%"
+    },
+    {
+      "ruleId": "BR-RDC600-16",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "16",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Salicilato de homomentila HOMOSALATE",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "15%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "16. Salicilato\tde\thomomentila\tHOMOSALATE | 15%"
+    },
+    {
+      "ruleId": "BR-RDC600-17",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "17",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Polímero  de  N  -  {(2  e  4)[(2  -  oxoborn  -  3  -ilideno)  metil]  benzil}  acrilamida",
+        "inciNameEn": "POLYACRYLAMIDOMETHYL BENZYLIDENE CAMPHOR",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "6%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "17. Polímero\t de\t N\t -\t {(2\t e\t 4)[(2\t -\t oxoborn\t -\t 3\t -ilideno)\t metil]\t benzil}\t acrilamida | 6%"
+    },
+    {
+      "ruleId": "BR-RDC600-18",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "18",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Dióxido de titânio",
+        "inciNameEn": "TITANIUM DIOXIDE",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "25%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "18. Dióxido\tde\ttitânio | 25%"
+    },
+    {
+      "ruleId": "BR-RDC600-19",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "19",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "N - Etoxi - 4 - aminobenzoato de etila PEG-25 PABA",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "10%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "19. N\t-\tEtoxi\t-\t4\t-\taminobenzoato\tde\tetila PEG-25\tPABA | 10%"
+    },
+    {
+      "ruleId": "BR-RDC600-20",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "20",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "4 - Dimetil-aminobenzoato de 2 -etilhexila",
+        "inciNameEn": "ETHYLHEXYL DIMETHYL PABA",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "8%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "20. 4\t-\tDimetil-aminobenzoato\tde\t2\t-etilhexila | 8%"
+    },
+    {
+      "ruleId": "BR-RDC600-21",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "21",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Salicilato de 2- etilhexila",
+        "inciNameEn": "ETHYLHEXYL SALICYLATE",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "5%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "21. Salicilato\tde\t2-\tetilhexila | 5%"
+    },
+    {
+      "ruleId": "BR-RDC600-22",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "22",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "4 - Metoxicinamato de isopentila ISOAMYL p-METHOXYCINNAMATE",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "10%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "22. 4\t-\tMetoxicinamato\tde\tisopentila ISOAMYL\tp-METHOXYCINNAMATE | 10%"
+    },
+    {
+      "ruleId": "BR-RDC600-23",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "23",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "3 - (4' - metilbenzilideno) - d - l -cânfora 4-METHYL BENZYLIDENE CAMPHOR",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "4%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "23. 3\t-\t(4'\t-\tmetilbenzilideno)\t-\td\t-\tl\t-cânfora 4-METHYL\tBENZYLIDENE\tCAMPHOR | 4%"
+    },
+    {
+      "ruleId": "BR-RDC600-24",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "24",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "3 - Benzilideno cânfora 3-BENZYLIDENE CAMPHOR",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "2%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "24. 3\t-\tBenzilideno\tcânfora 3-BENZYLIDENE\tCAMPHOR | 2%"
+    },
+    {
+      "ruleId": "BR-RDC600-25",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "25",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "2, 4, 6 - Trianilin - (p - carbo - 2'- etil -hexil - 1' - oxi) - 1, 3, 5 - triazina",
+        "inciNameEn": "ETHYLHEXYL TRIAZONE",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "5%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "25. 2,\t4,\t6\t-\tTrianilin\t-\t(p\t-\tcarbo\t-\t2'-\tetil\t-hexil\t-\t1'\t-\toxi)\t-\t1,\t3,\t5\t-\ttriazina | 5%"
+    },
+    {
+      "ruleId": "BR-RDC600-26",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "26",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Óxido de zinco",
+        "inciNameEn": "ZINC OXIDE",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "25%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "26. Óxido\tde\tzinco | 25%"
+    },
+    {
+      "ruleId": "BR-RDC600-27",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "27",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "2-(2H-benzotriazol-2-il)-4-metil-6-{2  -metil-3-(1,3,3,3,-tetrametil-1-((trimet  ilsilil)oxi)- disiloxanil)propil}fenol DROMETRIZOLE TRISILOXANE",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "15%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "27. 2-(2H-benzotriazol-2-il)-4-metil-6-{2\t -metil-3-(1,3,3,3,-tetrametil-1-((trimet\t ilsilil)oxi)- disiloxanil)propil}fenol\tDROMETRIZOLE\tTRISILOXANE | 15%"
+    },
+    {
+      "ruleId": "BR-RDC600-28",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "28",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido benzóico, 4,4'-[[6-[[4-[[(1,1-dimetil-etil)amino]carbonil]fenil]amino]-1,3,5-t riazina- 2,4-diil]diimino]bis-,bis(2-etil hexil)éster",
+        "inciNameEn": "DIETHYLHEXYL BUTAMIDO TRIAZONE",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "10%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "28. Ácido\tbenzóico,\t4,4'-[[6-[[4-[[(1,1-dimetil-etil)amino]carbonil]fenil]amino]-1,3,5-t\triazina- 2,4-diil]diimino]bis-,bis(2-etil\thexil)éster | 10%"
+    },
+    {
+      "ruleId": "BR-RDC600-29",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "29",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "2,2'-metileno-bis-6-(2H-benzotriazol2-il)-4-(tetrametil-butil)-1,1,3,3-fenol",
+        "inciNameEn": "METHYLENE BIS-BENZOTRIAZOLYL TETRAMETHYLBUTYLPHENOL",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "10%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "29. 2,2'-metileno-bis-6-(2H-benzotriazol2-il)-4-(tetrametil-butil)-1,1,3,3-fenol | 10%"
+    },
+    {
+      "ruleId": "BR-RDC600-30",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "30",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Sal monosódico do ácido 2,2'-bis-(1,4-fenileno)- 1H-benzimidazol-4,6-dissulfônico",
+        "inciNameEn": "DISODIUM PHENYL DIBENZIMIDAZOLE TETRASULFONATE",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "10%  (expresso",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": [
+            "em ácido)"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "30. Sal\tmonosódico\tdo\tácido\t2,2'-bis-(1,4-fenileno)-\t1H-benzimidazol-4,6-dissulfônico | 10%\t (expresso"
+    },
+    {
+      "ruleId": "BR-RDC600-31",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "31",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "(1,3,5)-triazina-2,4-bis{[4-(2-etil-hexi loxi)-2-hidróxi]-fenil}-6-(4-metoxifen il)",
+        "inciNameEn": "BIS-ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "10%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "31. (1,3,5)-triazina-2,4-bis{[4-(2-etil-hexi\tloxi)-2-hidróxi]-fenil}-6-(4-metoxifen\til) | 10%"
+    },
+    {
+      "ruleId": "BR-RDC600-32",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "32",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Dimeticodietilbenzalmalonato",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "10%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": [
+            "POLYSILICONE-15"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "32. Dimeticodietilbenzalmalonato | 10%"
+    },
+    {
+      "ruleId": "BR-RDC600-33",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "33",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Éster hexílico do ácido 2-[4-(dietilamino)-2-hidroxibenzoil]-, benzóico",
+        "inciNameEn": "DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "10%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": []
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "33. Éster\thexílico\tdo\tácido\t2-[4-(dietilamino)-2-hidroxibenzoil]-,\tbenzóico | 10%"
+    },
+    {
+      "ruleId": "BR-RDC600-34",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "34",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "1,3,5-Triazina, 2,4,6-Tris([1,1'-Bifenil]-4-il)-",
+        "inciNameEn": "TRIS-BIPHENYL TRIAZINE",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "10% - Pureza ≥ 98% e não",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": [
+            "a) Proibido seu uso em",
+            "sistemas  pulverizáveis",
+            "(que  dispersam",
+            "partículas no ar).",
+            "b) O nanomaterial deve",
+            "ter  as  seguintes",
+            "características:",
+            "-Tamanho  médio  da",
+            "partícula",
+            "primária>80nm;",
+            "revestida"
+          ]
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "34. 1,3,5-Triazina,\t2,4,6-Tris([1,1'-Bifenil]-4-il)- | 10% -\tPureza\t≥\t98%\te\tnão"
+    },
+    {
+      "ruleId": "BR-RDC600-35",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "35",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Phenylene Bis-Diphenyltriazine",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "5%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": [
+            "a)  Proibido  em",
+            "produtos cuja aplicação",
+            "possa  conduzir  à",
+            "exposição por inalação.",
+            "b) A concentração das",
+            "impurezas  methyl-",
+            "pyrrolidone e hidrazine",
+            "deve ser mantida em",
+            "um nível de traço."
+          ]
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "35. Phenylene\tBis-Diphenyltriazine | 5%"
+    },
+    {
+      "ruleId": "BR-RDC600-36",
+      "status": "active",
+      "document": {
+        "id": "RDC 600/2022",
+        "item": "36",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Methoxypropylamino Cyclohexenylidene Ethoxyethylcyanoacetate",
+        "inciNameEn": null,
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "maxConcentration": "3%",
+          "productTypePt": "Produtos de proteção solar",
+          "productType": "Sunscreen products",
+          "otherRequirements": [
+            "a)  Proibido  em",
+            "produtos cuja aplicação",
+            "possa  conduzir  à",
+            "exposição por inalação.",
+            "b)  Não  usar  com",
+            "agentes nitrosantes.",
+            "c)  Teor  máximo  de",
+            "nitrosaminas: 50",
+            "µ",
+            "g/kg.",
+            "d)Embalar/conservar",
+            "em  recipientes  livres",
+            "de nitritos.",
+            "RET., 02/03/2022 - Seção 1",
+            "PUB D.O.U., 16/02/2022 - Seção 1",
+            "Este texto não substitui a Publicação Oficial."
+          ]
+        }
+      ],
+      "effectiveDate": "2022-02-09",
+      "notes": [],
+      "sourceText": "36. Methoxypropylamino\tCyclohexenylidene\tEthoxyethylcyanoacetate | 3%"
+    }
+  ]
+}

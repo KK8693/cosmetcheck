@@ -41,7 +41,30 @@ function addSecurityHeaders(response: NextResponse) {
   return response
 }
 
+// Unlocalized path prefixes that should NOT get locale redirects
+const unlocalizedPrefixes = [
+  '/ingredients',
+  '/ingredient',
+  '/category',
+  '/status',
+  '/regulation',
+  '/products',
+  '/platforms',
+]
+
+function isUnlocalizedPath(pathname: string): boolean {
+  return unlocalizedPrefixes.some((prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`))
+}
+
 export default function middleware(request: NextRequest) {
+  const pathname = request.nextUrl.pathname
+
+  // 0. Skip locale handling for unlocalized paths (products, ingredients, platforms, etc.)
+  if (isUnlocalizedPath(pathname)) {
+    const response = NextResponse.next()
+    return addSecurityHeaders(response)
+  }
+
   // 1. Force HTTPS via 301 redirect
   const httpsRedirect = enforceHttps(request)
   if (httpsRedirect) return httpsRedirect

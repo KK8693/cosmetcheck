@@ -1,0 +1,2035 @@
+{
+  "document": {
+    "id": "BR-RDC528-2021",
+    "titlePt": "Lista de Substâncias de Ação Conservante Permitidas",
+    "titleZh": "巴西化妆品防腐剂正面清单 (RDC 528/2021)",
+    "sourceUrl": "https://www.in.gov.br/",
+    "effectiveDate": "2021-08-04",
+    "language": "pt"
+  },
+  "totalRules": 61,
+  "activeRules": 55,
+  "repealedRules": 6,
+  "rules": [
+    {
+      "ruleId": "BR-RDC528-1",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "1",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido benzoico e respectivo sal de sódio",
+        "inciNameEn": "BENZOIC ACID/SODIUM BENZOATE",
+        "cas": "65-85-0/532-32-1",
+        "multipurpose": true
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "a) 2,5% (expresso como ácido) em produtos que se enxáguem, exceto bucal. b) 1,7% (expresso como ácido) em produtos para uso bucal. c) 0,5% (expresso como ácido) em produtos que não se enxáguem.",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Produtos que se enxáguem, bucal, não enxáguem"
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "1 | Ácido benzoico e respectivo sal de sódio | a) 2,5% (expresso como ácido) em produtos que se enxáguem, exceto bucal. b) 1,7% (expresso como ácido) em produtos para uso bucal. c) 0,5% (expresso como ácido) em produtos que não se enxáguem. | Produtos que se enxáguem, bucal, não enxáguem"
+    },
+    {
+      "ruleId": "BR-RDC528-2",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "2",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Sais de ácido benzoico não inclusos no número de ordem 1 e ésteres de ácido benzoico",
+        "inciNameEn": "AMMONIUM/BUTYL/CALCIUM/ETHYL/ISOBUTYL/ISOPROPYL/MAGNESIUM/MEA/METHYL/PHENYL/POTASSIUM/PROPYL BENZOATE",
+        "cas": "1863-63-4/2090-05-3/582-25-2/553-70-8/4337-66-0/93-58-3/93-89-0/2315-68-6/136-60-7/1205-50-3/939-48-0/93-99-2",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,5% (expresso como ácido)",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "2 | Sais de ácido benzoico não inclusos no número de ordem 1 e ésteres de ácido benzoico | 0,5% (expresso como ácido) | "
+    },
+    {
+      "ruleId": "BR-RDC528-3",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "3",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido propiônico e seus sais",
+        "inciNameEn": "PROPIONIC ACID/AMMONIUM/CALCIUM/MAGNESIUM/POTASSIUM/SODIUM PROPIONATE",
+        "cas": "79-09-4/17496-08-1/4075-81-4/557-27-7/327-62-8/137-40-6",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "2,0% (expresso como ácido)",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "3 | Ácido propiônico e seus sais | 2,0% (expresso como ácido) | "
+    },
+    {
+      "ruleId": "BR-RDC528-4",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "4",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido salicílico e seus sais",
+        "inciNameEn": "SALICYLIC ACID/CALCIUM/MAGNESIUM/MEA/SODIUM/POTASSIUM/TEA SALICYLATE",
+        "cas": "69-72-7/824-35-1/18917-89-0/59866-70-5/54-21-7/578-36-9/2174-16-5",
+        "multipurpose": true
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,5% (expresso como ácido)",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "a) Proibido em produtos para crianças menores de 3 anos. Proibido em produtos para uso bucal. Proibido em produtos cuja aplicação possa conduzir à exposição pela via de inalação. b) Proibido em produtos para crianças menores de 3 anos, com exceção dos xampus com enxágue."
+          ],
+          "labelWarnings": [
+            "Não usar em crianças",
+            "Não usar em crianças menores de 3 anos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "4 | Ácido salicílico e seus sais | 0,5% (expresso como ácido) | a) Proibido em produtos para crianças menores de 3 anos. Proibido em produtos para uso bucal. Proibi"
+    },
+    {
+      "ruleId": "BR-RDC528-5",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "5",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido sórbico e seus sais",
+        "inciNameEn": "SORBIC ACID/CALCIUM/SODIUM/POTASSIUM SORBATE",
+        "cas": "110-44-1/7492-55-9/7757-81-5/24634-61-5",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,6% (expresso como ácido)",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "5 | Ácido sórbico e seus sais | 0,6% (expresso como ácido) | "
+    },
+    {
+      "ruleId": "BR-RDC528-6",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "6",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Sorbato de Trietanolamina",
+        "inciNameEn": "TEA-SORBATE",
+        "cas": null,
+        "multipurpose": true
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,6% (expresso como ácido)",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "6 | Sorbato de Trietanolamina | 0,6% (expresso como ácido) | "
+    },
+    {
+      "ruleId": "BR-RDC528-7",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "7",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Bifenil-2-ol (o-fenilfenol)",
+        "inciNameEn": "O-PHENYLPHENOL",
+        "cas": "90-43-7",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "a) 0,2% (expresso como fenol) em produtos que se enxáguem. b) 0,15% (expresso como fenol) em produtos que não se enxáguem.",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibidos os sais de o-phenylphenol."
+          ],
+          "labelWarnings": [
+            "Evitar contato com os olhos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "7 | Bifenil-2-ol (o-fenilfenol) | a) 0,2% (expresso como fenol) em produtos que se enxáguem. b) 0,15% (expresso como fenol) em produtos que não se enxáguem. | Proibidos os sais de o-phenylphenol."
+    },
+    {
+      "ruleId": "BR-RDC528-8",
+      "status": "repealed",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "8",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Excluído",
+        "inciNameEn": null,
+        "cas": null,
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "8 | EXCLUÍDO | N/A | "
+    },
+    {
+      "ruleId": "BR-RDC528-9",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "9",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Sulfitos e Bisulfitos inorgânicos",
+        "inciNameEn": "SODIUM SULFITE/AMMONIUM BISULFITE/AMMONIUM SULFITE/POTASSIUM SULFITE/POTASSIUM HYDROGEN SULFITE/SODIUM BISULFITE/SODIUM METABISULFITE/POTASSIUM METABISULFITE",
+        "cas": "7757-83-7/10192-30-0/10196-04-0/10117-38-1/7773-03-7/7631-90-5/7681-57-4/16731-55-8",
+        "multipurpose": true
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,2% (expresso como SO2 livre)",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "9 | Sulfitos e Bisulfitos inorgânicos | 0,2% (expresso como SO2 livre) | "
+    },
+    {
+      "ruleId": "BR-RDC528-10",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "10",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "1,1,1-Tricloro-2-metilpropanol-2 (clorobutanol)",
+        "inciNameEn": "CHLOROBUTANOL",
+        "cas": "57-15-8",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em sistemas pulverizáveis (como aerossóis e sprays)."
+          ],
+          "labelWarnings": [
+            "Contém clorobutanol"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "10 | 1,1,1-Tricloro-2-metilpropanol-2 (clorobutanol) | 0,5% | Proibido em sistemas pulverizáveis (como aerossóis e sprays)."
+    },
+    {
+      "ruleId": "BR-RDC528-11",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "11",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido 4-hidroxibenzóico, seus ésteres de metil e etilo, e seus sais",
+        "inciNameEn": "4-HYDROXYBENZOIC ACID/METHYLPARABEN/POTASSIUM ETHYLPARABEN/POTASSIUM PARABEN/SODIUM METHYLPARABEN/SODIUM ETHYLPARABEN/ETHYLPARABEN/SODIUM PARABEN/POTASSIUM METHYLPARABEN/CALCIUM PARABEN",
+        "cas": "99-96-7/99-76-3/36457-19-9/16782-08-4/5026-62-0/35285-68-8/120-47-8/114-63-6/26112-0-2/69959-44-0",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,4% (expresso como ácido) individual / 0,8% (expresso como ácido) soma",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibidos: isopropilparabeno, isobutilparabeno, fenilparabeno, benzilparabeno e pentilparabeno."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "11 | Ácido 4-hidroxibenzóico, seus ésteres de metil e etilo, e seus sais | 0,4% (expresso como ácido) individual / 0,8% (expresso como ácido) soma | Proibidos: isopropilparabeno, isobutilparabeno, fenilparabeno, benzilparabeno e pentilparabeno."
+    },
+    {
+      "ruleId": "BR-RDC528-11-A",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "11-A",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "4-hidroxibenzoato de butilo e propilo e seus sais",
+        "inciNameEn": "BUTYLPARABEN/PROPYLPARABEN/SODIUM PROPYLPARABEN/SODIUM BUTYLPARABEN/POTASSIUM BUTYLPARABEN/POTASSIUM PROPYLPARABEN",
+        "cas": "94-26-8/94-13-3/35285-69-9/36457-20-2/38566-94-8/84930-16-5",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,14% (expresso como ácido) soma butil+propil / 0,8% (expresso como ácido) soma com item 11",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Não usar em produtos que não se enxáguem destinados à área de fraldas em crianças menores de 3 anos."
+          ],
+          "labelWarnings": [
+            "Não usar nas áreas das fraldas"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "11-A | 4-hidroxibenzoato de butilo e propilo e seus sais | 0,14% (expresso como ácido) soma butil+propil / 0,8% (expresso como ácido) soma com item 11 | Não usar em produtos que não se enxáguem destinados à área de fraldas em crianças menores de 3 anos."
+    },
+    {
+      "ruleId": "BR-RDC528-12",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "12",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido dehidroacético e seus sais",
+        "inciNameEn": "DEHYDROACETIC ACID/SODIUM DEHYDROACETATE",
+        "cas": "520-45-6/4418-26-2/16807-48-0",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,6% (expresso como ácido)",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em sistemas pulverizáveis (como aerossóis e sprays)."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "12 | Ácido dehidroacético e seus sais | 0,6% (expresso como ácido) | Proibido em sistemas pulverizáveis (como aerossóis e sprays)."
+    },
+    {
+      "ruleId": "BR-RDC528-13",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "13",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido fórmico e seu sal sódico",
+        "inciNameEn": "FORMIC ACID/SODIUM FORMATE",
+        "cas": "64-18-6/141-53-7",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,5% (expresso como ácido)",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "13 | Ácido fórmico e seu sal sódico | 0,5% (expresso como ácido) | "
+    },
+    {
+      "ruleId": "BR-RDC528-14",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "14",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "3,3'-Dibromo-4,4' hexametilenodioxidibenzamidina (dibromohexamidina) e seus sais",
+        "inciNameEn": "DIBROMOHEXAMIDINE ISETHIONATE",
+        "cas": "93856-83-8",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "14 | 3,3'-Dibromo-4,4' hexametilenodioxidibenzamidina (dibromohexamidina) e seus sais | 0,1% | "
+    },
+    {
+      "ruleId": "BR-RDC528-15",
+      "status": "repealed",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "15",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Excluído",
+        "inciNameEn": null,
+        "cas": null,
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "15 | EXCLUÍDO | N/A | "
+    },
+    {
+      "ruleId": "BR-RDC528-16",
+      "status": "repealed",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "16",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Excluído",
+        "inciNameEn": null,
+        "cas": null,
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "16 | EXCLUÍDO | N/A | "
+    },
+    {
+      "ruleId": "BR-RDC528-17",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "17",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido undecanóico-10-eno (undecilênico), seus sais, ésteres, aminas e sulfosuccinato",
+        "inciNameEn": "UNDECYLENIC ACID/POTASSIUM/SODIUM/CALCIUM/MEA/TEA UNDECYLENATE",
+        "cas": "112-38-9/6159-41-7/3398-33-2/1322-14-1/84471-25-0/56532-40-2",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,2% (expresso como ácido)",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "17 | Ácido undecanóico-10-eno (undecilênico), seus sais, ésteres, aminas e sulfosuccinato | 0,2% (expresso como ácido) | "
+    },
+    {
+      "ruleId": "BR-RDC528-18",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "18",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Amino-5-bis(etil-2-hexil)-1,3 metil-5-perhidropirimidina",
+        "inciNameEn": "HEXETIDINE",
+        "cas": "141-94-6",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "18 | Amino-5-bis(etil-2-hexil)-1,3 metil-5-perhidropirimidina | 0,1% | "
+    },
+    {
+      "ruleId": "BR-RDC528-19",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "19",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "5-bromo-5-nitro-1,3 dioxano",
+        "inciNameEn": "5-BROMO-5-NITRO-1,3-DIOXANE",
+        "cas": "30007-47-7",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em produtos que não se enxáguem. Evitar formação de nitrosaminas."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "19 | 5-bromo-5-nitro-1,3 dioxano | 0,1% | Proibido em produtos que não se enxáguem. Evitar formação de nitrosaminas."
+    },
+    {
+      "ruleId": "BR-RDC528-20",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "20",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "2-bromo-2-nitropropano-1,3-diol (Bronopol)",
+        "inciNameEn": "2-BROMO-2-NITROPROPANE-1,3-DIOL",
+        "cas": "52-51-7",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Evitar formação de nitrosaminas."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "20 | 2-bromo-2-nitropropano-1,3-diol (Bronopol) | 0,1% | Evitar formação de nitrosaminas."
+    },
+    {
+      "ruleId": "BR-RDC528-21",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "21",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "3,4,4'-triclorocarbanilida",
+        "inciNameEn": "TRICLOCARBAN",
+        "cas": "101-20-2",
+        "multipurpose": true
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Critério de pureza: 3,3',4,4'-Tetracloro-azobenzeno < 1 ppm e 3,3',4,4'-Tetracloro-azoxibenzeno < 1 ppm."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "21 | 3,4,4'-triclorocarbanilida | 0,2% | Critério de pureza: 3,3',4,4'-Tetracloro-azobenzeno < 1 ppm e 3,3',4,4'-Tetracloro-azoxibenzeno < 1 "
+    },
+    {
+      "ruleId": "BR-RDC528-22",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "22",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "p-cloro-metacresol",
+        "inciNameEn": "P-CHLORO-M-CRESOL",
+        "cas": "59-50-7",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em produtos destinados a entrar em contato com as mucosas."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "22 | p-cloro-metacresol | 0,2% | Proibido em produtos destinados a entrar em contato com as mucosas."
+    },
+    {
+      "ruleId": "BR-RDC528-23",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "23",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "p-cloro-metaxilenol",
+        "inciNameEn": "CHLOROXYLENOL",
+        "cas": "88-04-0/1321-23-9",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "23 | p-cloro-metaxilenol | 0,5% | "
+    },
+    {
+      "ruleId": "BR-RDC528-24",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "24",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Imidazolidinil ureia",
+        "inciNameEn": "IMIDAZOLIDINYL UREA",
+        "cas": "39236-46-9",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,6%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "24 | Imidazolidinil ureia | 0,6% | "
+    },
+    {
+      "ruleId": "BR-RDC528-25",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "25",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Cloridrato de polihexametileno biguanida",
+        "inciNameEn": "POLYAMINOPROPYL BIGUANIDE",
+        "cas": "32289-58-0/27083-27-8/28757-47-3/133029-32-0",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em produtos cuja aplicação possa conduzir à exposição pela via de inalação."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "25 | Cloridrato de polihexametileno biguanida | 0,1% | Proibido em produtos cuja aplicação possa conduzir à exposição pela via de inalação."
+    },
+    {
+      "ruleId": "BR-RDC528-26",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "26",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "2-Fenoxietanol",
+        "inciNameEn": "PHENOXYETHANOL",
+        "cas": "122-99-6",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "1,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "26 | 2-Fenoxietanol | 1,0% | "
+    },
+    {
+      "ruleId": "BR-RDC528-27",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "27",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "6-Clorotimol",
+        "inciNameEn": "CHLOROTHYMOL",
+        "cas": "89-68-9",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em produtos infantis."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "27 | 6-Clorotimol | 0,1% | Proibido em produtos infantis."
+    },
+    {
+      "ruleId": "BR-RDC528-28",
+      "status": "repealed",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "28",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Excluído",
+        "inciNameEn": null,
+        "cas": null,
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "28 | EXCLUÍDO | N/A | "
+    },
+    {
+      "ruleId": "BR-RDC528-29",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "29",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "1-(4-clorofenoxi)-1-(1-Imidazolil)-3,3-dimetil-2-butanona",
+        "inciNameEn": "CLIMBAZOLE",
+        "cas": "38083-17-9",
+        "multipurpose": true
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "a) 0,5% em xampus com enxágue. b) 0,2% em cremes faciais, loções capilares e produtos para os pés.",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "29 | 1-(4-clorofenoxi)-1-(1-Imidazolil)-3,3-dimetil-2-butanona | a) 0,5% em xampus com enxágue. b) 0,2% em cremes faciais, loções capilares e produtos para os pés. | "
+    },
+    {
+      "ruleId": "BR-RDC528-30",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "30",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "1,3-Dimetilol-5,5-dimetil hidantoína",
+        "inciNameEn": "DMDM HYDANTOIN",
+        "cas": "6440-58-0",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,6%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "30 | 1,3-Dimetilol-5,5-dimetil hidantoína | 0,6% | "
+    },
+    {
+      "ruleId": "BR-RDC528-31",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "31",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "2-Feniletanol",
+        "inciNameEn": "PHENETHYL ALCOHOL",
+        "cas": "60-12-8",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "1,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "31 | 2-Feniletanol | 1,0% | "
+    },
+    {
+      "ruleId": "BR-RDC528-32",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "32",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Álcool benzílico",
+        "inciNameEn": "BENZYL ALCOHOL",
+        "cas": "100-51-6",
+        "multipurpose": true
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "1,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "32 | Álcool benzílico | 1,0% | "
+    },
+    {
+      "ruleId": "BR-RDC528-33",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "33",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "1-hidroxi-4-metil-6-(2,4,4-trimetilpentil)-2-piridona e seus sais de monoetanolamina (Octopirox)",
+        "inciNameEn": "PIROCTONE OLAMINE",
+        "cas": "50650-76-5/68890-66-4",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "a) 1% em produtos que se enxáguem. b) 0,5% em produtos que não se enxáguem.",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "33 | 1-hidroxi-4-metil-6-(2,4,4-trimetilpentil)-2-piridona e seus sais de monoetanolamina (Octopirox) | a) 1% em produtos que se enxáguem. b) 0,5% em produtos que não se enxáguem. | "
+    },
+    {
+      "ruleId": "BR-RDC528-34",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "34",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "4-Isopropil-m-cresol",
+        "inciNameEn": "O-CYMEN-5-OL",
+        "cas": "3228-02-2/39660-61-2",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "34 | 4-Isopropil-m-cresol | 0,1% | "
+    },
+    {
+      "ruleId": "BR-RDC528-35",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "35",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Mistura de 5-cloro-2-metil-4-isotiazolina-3-ona e 2-metil-4-isotiazolina-3-ona com cloreto de magnésio e nitrato de magnésio (3:1)",
+        "inciNameEn": "METHYLCHLOROISOTHIAZOLINONE e METHYLISOTHIAZOLINONE",
+        "cas": "26172-55-4/2682-20-4/55965-84-9",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,0015% (mistura 3:1) em produtos que se enxáguem.",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em produtos que não se enxáguem (incluindo lenços umedecidos). A utilização da mistura é incompatível com a utilização de methylisothiazolinone sozinha em um mesmo produto."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "35 | Mistura de 5-cloro-2-metil-4-isotiazolina-3-ona e 2-metil-4-isotiazolina-3-ona com cloreto de magnésio e nitrato de magnésio (3:1) | 0,0015% (mistura 3:1) em produtos que se enxáguem. | Proibido em produtos que não se enxáguem (incluindo lenços umedecidos). A utilização da mistura é in"
+    },
+    {
+      "ruleId": "BR-RDC528-36",
+      "status": "repealed",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "36",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Excluído",
+        "inciNameEn": null,
+        "cas": null,
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "36 | EXCLUÍDO | N/A | "
+    },
+    {
+      "ruleId": "BR-RDC528-37",
+      "status": "repealed",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "37",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Excluído",
+        "inciNameEn": null,
+        "cas": null,
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "37 | EXCLUÍDO | N/A | "
+    },
+    {
+      "ruleId": "BR-RDC528-38",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "38",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Bis-(p-clorofenildiguanida)-1,6-hexano e seus acetato, gluconato e cloridrato",
+        "inciNameEn": "CHLORHEXIDINE/CHLORHEXIDINE DIACETATE/CHLORHEXIDINE DIGLUCONATE/CHLORHEXIDINE DIHYDROCHLORIDE",
+        "cas": "55-56-1/56-95-1/18472-51-0/3697-42-5",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,3% (expresso como clorexidina)",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "38 | Bis-(p-clorofenildiguanida)-1,6-hexano e seus acetato, gluconato e cloridrato | 0,3% (expresso como clorexidina) | "
+    },
+    {
+      "ruleId": "BR-RDC528-39",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "39",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "1-Fenoxi-2-propanol",
+        "inciNameEn": "PHENOXYISOPROPANOL",
+        "cas": "770-35-4",
+        "multipurpose": true
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "1,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em produtos que não se enxáguem."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "39 | 1-Fenoxi-2-propanol | 1,0% | Proibido em produtos que não se enxáguem."
+    },
+    {
+      "ruleId": "BR-RDC528-40",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "40",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "4,4-Dimetil-1,3-oxazolidina",
+        "inciNameEn": "DIMETHYL OXAZOLIDINE",
+        "cas": "51200-87-4",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em produtos com pH igual ou inferior a 6."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "40 | 4,4-Dimetil-1,3-oxazolidina | 0,1% | Proibido em produtos com pH igual ou inferior a 6."
+    },
+    {
+      "ruleId": "BR-RDC528-41",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "41",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "N-(hidroximetil)-N-(dihidroximetil-1,3-dioxo-2,5-imidazolidinil-4)-N'(hidroximetil)urea",
+        "inciNameEn": "DIAZOLIDINYL UREA",
+        "cas": "78491-02-8",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "41 | N-(hidroximetil)-N-(dihidroximetil-1,3-dioxo-2,5-imidazolidinil-4)-N'(hidroximetil)urea | 0,5% | "
+    },
+    {
+      "ruleId": "BR-RDC528-42",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "42",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Glutaraldeído",
+        "inciNameEn": "GLUTARAL",
+        "cas": "111-30-8",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em sistemas pulverizáveis (como aerossóis e sprays). Contém glutaraldeído (somente para concentrações superiores a 0,05% no produto acabado)."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "42 | Glutaraldeído | 0,1% | Proibido em sistemas pulverizáveis (como aerossóis e sprays). Contém glutaraldeído (somente para con"
+    },
+    {
+      "ruleId": "BR-RDC528-43",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "43",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "5-Etil-3,7-dioxa-1-azabiciclo(3.3.0)octano",
+        "inciNameEn": "7-ETHYLBICYCLOOXAZOLIDINE",
+        "cas": "7747-35-5",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,3%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em produtos para uso bucal e em produtos que entram em contato com mucosas."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "43 | 5-Etil-3,7-dioxa-1-azabiciclo(3.3.0)octano | 0,3% | Proibido em produtos para uso bucal e em produtos que entram em contato com mucosas."
+    },
+    {
+      "ruleId": "BR-RDC528-44",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "44",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "6,6-dibromo-4,4-dicloro-2,2'-metilenodifenol",
+        "inciNameEn": "BROMOCHLOROPHENE",
+        "cas": "15435-29-7",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "44 | 6,6-dibromo-4,4-dicloro-2,2'-metilenodifenol | 0,1% | "
+    },
+    {
+      "ruleId": "BR-RDC528-45",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "45",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Álcool 2,4-Diclorobenzílico",
+        "inciNameEn": "DICHLOROBENZYL ALCOHOL",
+        "cas": "1777-82-8",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,15%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "45 | Álcool 2,4-Diclorobenzílico | 0,15% | "
+    },
+    {
+      "ruleId": "BR-RDC528-46",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "46",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Tricloro-2,4,4' hidroxi-2' difenileter (Triclosan)",
+        "inciNameEn": "TRICLOSAN",
+        "cas": "3380-34-5",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "a) 0,3% em dentifrícios, sabonetes para mãos/corpo, desodorantes axilas/pés, pós/corretivos faciais, higiene unhas. b) 0,2% em enxaguatórios bucais.",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em sistemas pulverizáveis. Proibido o uso em outros produtos que não foram detalhados."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "46 | Tricloro-2,4,4' hidroxi-2' difenileter (Triclosan) | a) 0,3% em dentifrícios, sabonetes para mãos/corpo, desodorantes axilas/pés, pós/corretivos faciais, higiene unhas. b) 0,2% em enxaguatórios bucais. | Proibido em sistemas pulverizáveis. Proibido o uso em outros produtos que não foram detalhados."
+    },
+    {
+      "ruleId": "BR-RDC528-47",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "47",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Hexametilenotetramina",
+        "inciNameEn": "METHENAMINE",
+        "cas": "100-97-0",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,15%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "47 | Hexametilenotetramina | 0,15% | "
+    },
+    {
+      "ruleId": "BR-RDC528-48",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "48",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Brometo e Cloreto de Alquil (C12-C22) trimetilamônio",
+        "inciNameEn": "BEHENTRIMONIUM CHLORIDE/CETRIMONIUM BROMIDE/CETRIMONIUM CHLORIDE/LAURTRIMONIUM BROMIDE/LAURTRIMONIUM CHLORIDE/STEARTRIMONIUM BROMIDE/STEARTRIMONIUM CHLORIDE",
+        "cas": "17301-53-0/57-09-0/112-02-7/1119-94-4/112-00-5/1120-02-1/112-03-8",
+        "multipurpose": true
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "48 | Brometo e Cloreto de Alquil (C12-C22) trimetilamônio | 0,1% | "
+    },
+    {
+      "ruleId": "BR-RDC528-49",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "49",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "1,6-di-(4-amidinofenoxi)-n-hexano e seus sais",
+        "inciNameEn": "HEXAMIDINE/HEXAMIDINE DIISETHIONATE/HEXAMIDINE DIPARABEN/HEXAMIDINE PARABEN",
+        "cas": "3811-75-4/659-40-5/93841-83-9",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "49 | 1,6-di-(4-amidinofenoxi)-n-hexano e seus sais | 0,1% | "
+    },
+    {
+      "ruleId": "BR-RDC528-50",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "50",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "3-(p-clorofenoxi)-propano-1,2-diol",
+        "inciNameEn": "CHLORPHENESIN",
+        "cas": "104-29-0",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,3%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "50 | 3-(p-clorofenoxi)-propano-1,2-diol | 0,3% | "
+    },
+    {
+      "ruleId": "BR-RDC528-51",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "51",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Hidroximetilaminoacetato de sódio",
+        "inciNameEn": "SODIUM HYDROXYMETHYLGLYCINATE",
+        "cas": "70161-44-3",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "51 | Hidroximetilaminoacetato de sódio | 0,5% | "
+    },
+    {
+      "ruleId": "BR-RDC528-52",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "52",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Cloreto de prata depositado sobre dióxido de titânio",
+        "inciNameEn": "SILVER CHLORIDE",
+        "cas": "7783-90-6",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,004% (expresso como cloreto de prata). 20% AgCl (p/p) em TiO2.",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em produtos para crianças menores de 3 anos, produtos para uso bucal, área dos olhos e lábios."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "52 | Cloreto de prata depositado sobre dióxido de titânio | 0,004% (expresso como cloreto de prata). 20% AgCl (p/p) em TiO2. | Proibido em produtos para crianças menores de 3 anos, produtos para uso bucal, área dos olhos e lábi"
+    },
+    {
+      "ruleId": "BR-RDC528-53",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "53",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Cloreto, brometo e sacarinato de alquil(C8-C18) dimetilbenzilamônio",
+        "inciNameEn": "BENZALKONIUM CHLORIDE/BENZALKONIUM BROMIDE/BENZALKONIUM SACCHARINATE",
+        "cas": "8001-54-5/63449-41-2/91080-29-4/68989-01-5/68424-85-1/68391-01-5/61789-71-7/85409-22-9",
+        "multipurpose": true
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,1% (expresso como cloreto de benzalcônio)",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Evitar o contato com os olhos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "53 | Cloreto, brometo e sacarinato de alquil(C8-C18) dimetilbenzilamônio | 0,1% (expresso como cloreto de benzalcônio) | "
+    },
+    {
+      "ruleId": "BR-RDC528-54",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "54",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Benzilhemiformal",
+        "inciNameEn": "BENZYLHEMIFORMAL",
+        "cas": "14548-60-8",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,15%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em produtos que não se enxáguem."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "54 | Benzilhemiformal | 0,15% | Proibido em produtos que não se enxáguem."
+    },
+    {
+      "ruleId": "BR-RDC528-55",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "55",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "3-iodo-2-propinilbutilcarbamato",
+        "inciNameEn": "IODOPROPYNYL BUTYLCARBAMATE",
+        "cas": "55406-53-6",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "a) 0,02% em produtos que se enxáguem. b) 0,01% em produtos que não se enxáguem, exceto desodorantes/antitranspirantes. c) 0,0075% em desodorantes/antitranspirantes.",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em produtos para uso bucal e lábios. Proibido em produtos para crianças menores de 3 anos (com exceções). Proibido em loções/cremes corporais de grande extensão."
+          ],
+          "labelWarnings": [
+            "Não usar em crianças",
+            "Não usar em crianças menores de 3 anos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "55 | 3-iodo-2-propinilbutilcarbamato | a) 0,02% em produtos que se enxáguem. b) 0,01% em produtos que não se enxáguem, exceto desodorantes/antitranspirantes. c) 0,0075% em desodorantes/antitranspirantes. | Proibido em produtos para uso bucal e lábios. Proibido em produtos para crianças menores de 3 anos ("
+    },
+    {
+      "ruleId": "BR-RDC528-56",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "56",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Cloreto de Diisobutil fenoxietoxietil-dimetil-benzilamônio",
+        "inciNameEn": "BENZETHONIUM CHLORIDE",
+        "cas": "121-54-0",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,1%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em produtos para uso bucal que não se enxáguem."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "56 | Cloreto de Diisobutil fenoxietoxietil-dimetil-benzilamônio | 0,1% | Proibido em produtos para uso bucal que não se enxáguem."
+    },
+    {
+      "ruleId": "BR-RDC528-57",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "57",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "2-metil-4-isotiazolina-3-ona",
+        "inciNameEn": "METHYLISOTHIAZOLINONE",
+        "cas": "2682-20-4",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,0015% em produtos que se enxáguem.",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em produtos que não se enxáguem (incluindo lenços umedecidos). Incompatível com a mistura methylchloroisothiazolinone + methylisothiazolinone no mesmo produto."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "57 | 2-metil-4-isotiazolina-3-ona | 0,0015% em produtos que se enxáguem. | Proibido em produtos que não se enxáguem (incluindo lenços umedecidos). Incompatível com a mistura m"
+    },
+    {
+      "ruleId": "BR-RDC528-58",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "58",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Cloridrato de etil-N-α-dodecanoil-L-arginato",
+        "inciNameEn": "ETHYL LAUROYL ARGINATE HCl",
+        "cas": "60372-77-2",
+        "multipurpose": true
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "a) 0,15% em enxaguatórios bucais. b) 0,4% em outros produtos.",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "a) Proibido em produtos para crianças. b) Proibido em produtos para os lábios, bucal (exceto enxaguatórios) e sistemas pulverizáveis."
+          ],
+          "labelWarnings": [
+            "Não usar em crianças"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "58 | Cloridrato de etil-N-α-dodecanoil-L-arginato | a) 0,15% em enxaguatórios bucais. b) 0,4% em outros produtos. | a) Proibido em produtos para crianças. b) Proibido em produtos para os lábios, bucal (exceto enxagua"
+    },
+    {
+      "ruleId": "BR-RDC528-59",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "59",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Ácido 1,2,3-propanotricarboxílico, 2-hidroxi- e seu sal de prata",
+        "inciNameEn": "CITRIC ACID e SILVER CITRATE",
+        "cas": null,
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,2%, correspondente a 0,0024% de prata.",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Proibido em produtos para uso bucal e área dos olhos."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "59 | Ácido 1,2,3-propanotricarboxílico, 2-hidroxi- e seu sal de prata | 0,2%, correspondente a 0,0024% de prata. | Proibido em produtos para uso bucal e área dos olhos."
+    },
+    {
+      "ruleId": "BR-RDC528-60",
+      "status": "active",
+      "document": {
+        "id": "RDC-528/2021",
+        "item": "60",
+        "pageInSource": 1,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "4-(3-etoxi-4-hidroxifenil)butan-2-ona",
+        "inciNameEn": "HYDROXYETHOXYPHENYL BUTANONE",
+        "cas": "569646-79-3",
+        "multipurpose": false
+      },
+      "category": "preservative",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Condições conforme tipo de produto",
+          "maxConcentration": "0,7%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-04",
+      "notes": [],
+      "sourceText": "60 | 4-(3-etoxi-4-hidroxifenil)butan-2-ona | 0,7% | "
+    }
+  ]
+}

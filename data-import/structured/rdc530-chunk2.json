@@ -1,0 +1,544 @@
+{
+  "chunkId": 2,
+  "document": {
+    "id": "RDC 530/2021",
+    "annex": "I",
+    "sourceUrl": "https://www.gov.br/anvisa/pt-br/assuntos/cosmeticos/legislacao-vigente-1",
+    "effectiveDate": "2021-08-11"
+  },
+  "rules": [
+    {
+      "ruleId": "BR-RDC530-11",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "11",
+        "pageInSource": 3,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Diclorofeno (*)",
+        "inciNameEn": "Dichlorophenol",
+        "cas": "97-23-4"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Todos os produtos",
+          "maxConcentration": "0.5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém diclorofeno (Contains dichlorophenol)"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "11 | Diclorofeno (*) | 0,5% | Contém diclorofeno."
+    },
+    {
+      "ruleId": "BR-RDC530-12",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "12",
+        "pageInSource": 3,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Peróxido de hidrogênio (água oxigenada) e outras substâncias, misturas ou compostos que liberem peróxido de hidrogênio, incluindo peróxido de carbamida e peróxido de zinco",
+        "inciNameEn": "Hydrogen peroxide and other substances, mixtures or compounds that release hydrogen peroxide, including carbamide peroxide and zinc peroxide",
+        "cas": "7722-84-1"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_treatment",
+          "productTypePt": "Produtos para tratamento dos cabelos",
+          "maxConcentration": "12% H2O2 (40 volumes)",
+          "calculationBasis": "presente ou liberada",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém peróxido de hidrogênio",
+            "Evitar contato com os olhos. Em caso de contato, enxaguar com água abundantemente",
+            "Usar luvas adequadas"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "skin_care",
+          "productTypePt": "Produtos para cuidado da pele",
+          "maxConcentration": "4% H2O2",
+          "calculationBasis": "presente ou liberada",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém peróxido de hidrogênio",
+            "Evitar contato com os olhos. Em caso de contato, enxaguar com água abundantemente"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "nail_care",
+          "productTypePt": "Produtos para endurecer unhas",
+          "maxConcentration": "2% H2O2",
+          "calculationBasis": "presente ou liberada",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém peróxido de hidrogênio",
+            "Evitar contato com os olhos. Em caso de contato, enxaguar com água abundantemente"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "oral_hygiene",
+          "productTypePt": "Produtos para higiene bucal",
+          "maxConcentration": "0.1% H2O2",
+          "calculationBasis": "presente ou liberada",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém álcali (Contains alkali)"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "12 | Peróxido de hidrogênio e liberadores | a) Tratamento capilar: 12% H2O2 (40 vol) | b) Cuidado da pele: 4% | c) Unhas: 2% | d) Higiene bucal: 0,1% | a) Contém H2O2, evitar olhos, luvas | b/c) Contém H2O2, evitar olhos | d) Contém álcali"
+    },
+    {
+      "ruleId": "BR-RDC530-15",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "15",
+        "pageInSource": 4,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Hidróxido de sódio ou potássio (#)",
+        "inciNameEn": "Sodium or potassium hydroxide",
+        "cas": "1310-73-2 (NaOH); 1310-58-3 (KOH)"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "cuticle_remover",
+          "productTypePt": "Removedores de cutículas",
+          "maxConcentration": "5% em massa",
+          "calculationBasis": "em massa como hidróxido de sódio",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Evitar contato com os olhos",
+            "Pode causar cegueira (May cause blindness)",
+            "Manter fora do alcance das crianças"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "hair_straightener",
+          "productTypePt": "Alisantes para cabelos",
+          "maxConcentration": "2% (uso geral) / 4,5% (uso profissional) em massa",
+          "calculationBasis": "A soma dos hidróxidos é calculada em massa como hidróxido de sódio",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém álcali",
+            "Evitar contato com os olhos",
+            "Pode causar cegueira",
+            "Manter fora do alcance das crianças",
+            "Só para uso profissional (quando for o caso)"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "depilatory_ph_adjust",
+          "productTypePt": "Para ajuste de pH em depilatórios",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": "Até pH 12,7",
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Manter fora do alcance das crianças",
+            "Evitar contato com os olhos"
+          ],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "other_ph_adjust",
+          "productTypePt": "Para ajuste de pH em outros produtos",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": "Até pH 11",
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "15 | Hidróxido de sódio ou potássio (#) | a) Removedores cutículas: 5% em massa | b) Alisantes: 2% (geral) / 4,5% (profissional), soma como NaOH | c) Depilatórios pH: até pH 12,7 | d) Outros pH: até pH 11 | Advertências: evitar olhos, cegueira, fora alcance, álcali, só profissional"
+    },
+    {
+      "ruleId": "BR-RDC530-16",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "16",
+        "pageInSource": 4,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "1-naftol (CAS Nº 90-15-3) e seus sais",
+        "inciNameEn": "1-Naphthol and its salts",
+        "cas": "90-15-3"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye_oxidation",
+          "productTypePt": "Corante de oxidação para a coloração dos cabelos",
+          "maxConcentration": "2% (1% quando combinado com peróxido de hidrogênio no produto pronto para uso)",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Em combinação com peróxido de hidrogênio a concentração máxima no produto pronto para uso é de 1%"
+          ],
+          "labelWarnings": [
+            "Pode provocar reação alérgica (May cause allergic reaction)"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "16 | 1-naftol e seus sais | Corante oxidação capilar | 2% (1% com H2O2 no produto pronto) | Pode provocar reação alérgica"
+    },
+    {
+      "ruleId": "BR-RDC530-17",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "17",
+        "pageInSource": 4,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Nitrito de sódio",
+        "inciNameEn": "Sodium nitrite",
+        "cas": "7632-00-0"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "corrosion_inhibitor",
+          "productTypePt": "Inibidor de corrosão",
+          "maxConcentration": "0.2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Não usar com aminas secundárias e/ou terciárias ou outras substâncias que formem nitrosaminas (Do not use with secondary/tertiary amines or other nitrosamine-forming substances)"
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "17 | Nitrito de sódio | Inibidor de corrosão | 0,2% | Não usar com aminas secundárias/terciárias ou formadoras de nitrosaminas"
+    },
+    {
+      "ruleId": "BR-RDC530-18",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "18",
+        "pageInSource": 4,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Nitrometano",
+        "inciNameEn": "Nitromethane",
+        "cas": "75-52-5"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "corrosion_inhibitor",
+          "productTypePt": "Inibidor de corrosão",
+          "maxConcentration": "0.3%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "18 | Nitrometano | Inibidor de corrosão | 0,3%"
+    },
+    {
+      "ruleId": "BR-RDC530-20",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "20",
+        "pageInSource": 4,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Quinino e seus sais",
+        "inciNameEn": "Quinine and its salts",
+        "cas": "130-95-0"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "shampoo",
+          "productTypePt": "Shampoos",
+          "maxConcentration": "0.5%",
+          "calculationBasis": "calculado como quinino",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        },
+        {
+          "productType": "hair_lotion",
+          "productTypePt": "Loções para cabelos",
+          "maxConcentration": "0.2%",
+          "calculationBasis": "calculado como quinino",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "20 | Quinino e seus sais | a) Shampoos: 0,5% como quinino | b) Loções capilares: 0,2% como quinino"
+    },
+    {
+      "ruleId": "BR-RDC530-21",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "21",
+        "pageInSource": 4,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Resorcinol (#)",
+        "inciNameEn": "Resorcinol",
+        "cas": "108-46-3"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye_oxidation",
+          "productTypePt": "Corante de oxidação para a coloração dos cabelos",
+          "maxConcentration": "5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém resorcinol",
+            "Enxaguar bem os cabelos após a aplicação (Rinse hair thoroughly after application)",
+            "Não usar em cílios ou sobrancelhas (Do not use on eyelashes or eyebrows)",
+            "Lavar imediatamente os olhos caso o produto entre em contato com os mesmos (Wash eyes immediately if product contacts them)"
+          ],
+          "prohibitedIn": [
+            "eyelashes",
+            "eyebrows"
+          ]
+        },
+        {
+          "productType": "shampoo_hair_lotion",
+          "productTypePt": "Shampoos e loções para cabelos",
+          "maxConcentration": "0.5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém resorcinol"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [
+        "Uso geral e profissional para coloração capilar com mesma concentração (5%), mas advertências diferem. Profissional adicionalmente requer luvas e 'só para uso profissional'."
+      ],
+      "sourceText": "21 | Resorcinol (#) | a) Corante oxidação capilar: 5% | b) Shampoos/loções: 0,5% | a) Contém resorcinol, enxaguar bem, não usar cílios/sobrancelhas, lavar olhos | b) Contém resorcinol"
+    },
+    {
+      "ruleId": "BR-RDC530-22",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "22",
+        "pageInSource": 5,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "a) Sulfetos alcalinos b) Sulfetos alcalinos terrosos",
+        "inciNameEn": "a) Alkaline sulfides b) Alkaline earth sulfides",
+        "cas": "NA"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "depilatory",
+          "productTypePt": "Depilatórios",
+          "maxConcentration": "2% (a) / 6% (b)",
+          "calculationBasis": "calculados como enxofre (calculated as sulfur)",
+          "phLimit": "pH até 12,7",
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Manter fora do alcance das crianças",
+            "Evitar contato com os olhos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "22 | Sulfetos alcalinos / Sulfetos alcalinos terrosos | Depilatórios | a) 2% como enxofre, pH ≤12,7 | b) 6% como enxofre, pH ≤12,7 | Manter fora alcance, evitar olhos"
+    },
+    {
+      "ruleId": "BR-RDC530-23",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "23",
+        "pageInSource": 5,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "Sais de zinco solúveis em água com exceção do fenolsulfonato de zinco (4-hidroxi-benzenossulfonato de zinco) e do piritionato de zinco",
+        "inciNameEn": "Water-soluble zinc salts except zinc phenolsulfonate and zinc pyrithione",
+        "cas": "NA"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Todos os produtos",
+          "maxConcentration": "1%",
+          "calculationBasis": "calculado como zinco (calculated as zinc)",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "23 | Sais de zinco solúveis (exceto fenolsulfonato e piritionato) | 1% como zinco"
+    },
+    {
+      "ruleId": "BR-RDC530-24",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "24",
+        "pageInSource": 5,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "4-hidroxi-benzenossulfonato de zinco (fenolsulfonato de zinco)",
+        "inciNameEn": "Zinc 4-hydroxybenzenesulfonate (zinc phenolsulfonate)",
+        "cas": "127-82-2"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "deodorant_antiperspirant",
+          "productTypePt": "Desodorantes, antitranspirantes e loções adstringentes",
+          "maxConcentration": "6%",
+          "calculationBasis": "calculados como substância anidra (calculated as anhydrous substance)",
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Evitar contato com os olhos"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "24 | Fenolsulfonato de zinco | Desodorantes/antitranspirantes/loções adstringentes | 6% como substância anidra | Evitar contato com os olhos"
+    },
+    {
+      "ruleId": "BR-RDC530-25",
+      "status": "active",
+      "document": {
+        "id": "RDC 530/2021",
+        "annex": "I",
+        "item": "25",
+        "pageInSource": 5,
+        "language": "pt"
+      },
+      "substance": {
+        "inciNamePt": "1,3-Bis(hidroximetil)imidazolidina-2-tiona",
+        "inciNameEn": "1,3-Bis(hydroxymethyl)imidazolidine-2-thione",
+        "cas": "39236-46-9"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_treatment",
+          "productTypePt": "Produtos para tratamento dos cabelos",
+          "maxConcentration": "2%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Não utilizar em sistemas pulverizáveis (aerossóis e sprays)"
+          ],
+          "labelWarnings": [
+            "Contém 1,3-Bis(hidroximetil)imidazolidina-2-tiona"
+          ],
+          "prohibitedIn": [
+            "spray_systems",
+            "aerosols"
+          ]
+        },
+        {
+          "productType": "nail_care",
+          "productTypePt": "Produtos para cuidados das unhas",
+          "maxConcentration": "2%",
+          "calculationBasis": null,
+          "phLimit": "O pH do produto pronto para uso deve ser menor que 4",
+          "otherRequirements": [],
+          "labelWarnings": [
+            "Contém 1,3-Bis(hidroximetil)imidazolidina-2-tiona"
+          ],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2021-08-11",
+      "notes": [],
+      "sourceText": "25 | 1,3-Bis(hidroximetil)imidazolidina-2-tiona | a) Tratamento capilar: 2%, proibido em pulverizáveis | b) Cuidados unhas: 2%, pH < 4 | Contém 1,3-Bis(hidroximetil)imidazolidina-2-tiona"
+    }
+  ]
+}

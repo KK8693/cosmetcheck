@@ -1,0 +1,4633 @@
+[
+  {
+    "slug": "2-amino-4-nitrofenol",
+    "name": "2-Amino-4-nitrofenol",
+    "inci": "2-Amino-4-nitrofenol",
+    "cas": "99-57-0",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2-Amino-4-nitrofenol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": {
+      "status": "banned",
+      "regulation": "NOM-141-SSA1",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2-Amino-4-nitrofenol是墨西哥化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "aliases": [],
+    "score": 5
+  },
+  {
+    "slug": "2-amino-5-nitrofenol",
+    "name": "2-Amino-5-nitrofenol",
+    "inci": "2-Amino-5-nitrofenol",
+    "cas": "121-88-0",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2-Amino-5-nitrofenol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": {
+      "status": "banned",
+      "regulation": "NOM-141-SSA1",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2-Amino-5-nitrofenol是墨西哥化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "aliases": [],
+    "score": 5
+  },
+  {
+    "slug": "4-amino-2-nitrofenol",
+    "name": "4-Amino-2-nitrofenol",
+    "inci": "4-Amino-2-nitrofenol",
+    "cas": "119-34-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "4-amino-2-nitrofenol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": {
+      "status": "banned",
+      "regulation": "NOM-141-SSA1",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "4-Amino-2-nitrofenol是墨西哥化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "aliases": [],
+    "score": 5
+  },
+  {
+    "slug": "acetonitrilo",
+    "name": "Acetonitrilo",
+    "inci": "Acetonitrilo",
+    "cas": "75-05-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Acetonitrilo是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": {
+      "status": "banned",
+      "regulation": "NOM-141-SSA1",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Acetonitrilo是墨西哥化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "aliases": [],
+    "score": 5
+  },
+  {
+    "slug": "dimetilamina",
+    "name": "Dimetilamina",
+    "inci": "Dimetilamina",
+    "cas": "124-40-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Dimetilamina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": {
+      "status": "banned",
+      "regulation": "NOM-141-SSA1",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Dimetilamina是墨西哥化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "aliases": [],
+    "score": 5
+  },
+  {
+    "slug": "dimetilsulf-xido",
+    "name": "Dimetilsulfóxido",
+    "inci": "Dimetilsulfóxido",
+    "cas": "67-68-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Dimetilsulfóxido*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": {
+      "status": "banned",
+      "regulation": "NOM-141-SSA1",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Dimetilsulfóxido是墨西哥化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "aliases": [],
+    "score": 5
+  },
+  {
+    "slug": "fenol",
+    "name": "Fenol",
+    "inci": "Fenol",
+    "cas": "108-95-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fenol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": {
+      "status": "banned",
+      "regulation": "NOM-141-SSA1",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fenol是墨西哥化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "aliases": [],
+    "score": 5
+  },
+  {
+    "slug": "hexacloroetano",
+    "name": "Hexacloroetano",
+    "inci": "Hexacloroetano",
+    "cas": "67-72-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Hexacloroetano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": {
+      "status": "banned",
+      "regulation": "NOM-141-SSA1",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Hexacloroetano是墨西哥化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "aliases": [],
+    "score": 5
+  },
+  {
+    "slug": "tetracloroetileno",
+    "name": "Tetracloroetileno",
+    "inci": "Tetracloroetileno",
+    "cas": "127-18-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Tetracloroetileno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": {
+      "status": "banned",
+      "regulation": "NOM-141-SSA1",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Tetracloroetileno是墨西哥化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "aliases": [],
+    "score": 5
+  },
+  {
+    "slug": "3-clorofenil-4-metoxi-3-nitrofenil-metanona",
+    "name": "(3-clorofenil)-(4-metoxi-3-nitrofenil)metanona",
+    "inci": "(3-clorofenil)-(4-metoxi-3-nitrofenil)metanona",
+    "cas": "66938-41-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "(3-clorofenil)-(4-metoxi-3-nitrofenil)metanona是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "epoxietil-benzeno",
+    "name": "(Epoxietil)benzeno",
+    "inci": "(Epoxietil)benzeno",
+    "cas": "96-09-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "(Epoxietil)benzeno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "r-1-cloro-2-3-epoxipropano",
+    "name": "(R)-1-cloro-2,3-epoxipropano",
+    "inci": "(R)-1-cloro-2,3-epoxipropano",
+    "cas": "51594-55-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "(R)-1-cloro-2,3-epoxipropano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "1-2-dibromo-3-cloropropano",
+    "name": "1,2-Dibromo-3-cloropropano",
+    "inci": "1,2-Dibromo-3-cloropropano",
+    "cas": "96-12-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "1,2-Dibromo-3-cloropropano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "1-2-dibromoetano",
+    "name": "1,2-Dibromoetano",
+    "inci": "1,2-Dibromoetano",
+    "cas": "106-93-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "1,2-Dibromoetano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "1-2-epoxi-3-fenoxipropano",
+    "name": "1,2-Epoxi-3-fenoxipropano",
+    "inci": "1,2-Epoxi-3-fenoxipropano",
+    "cas": "122-60-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "1,2-Epoxi-3-fenoxipropano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "1-2-epoxibutano",
+    "name": "1,2-Epoxibutano",
+    "inci": "1,2-Epoxibutano",
+    "cas": "106-88-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "1,2-Epoxibutano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "1-3-bis-hydroxymethyl-imidazolidine-2-thione",
+    "name": "1,3-Bis(hydroxymethyl)imidazolidine-2-thione",
+    "inci": "1,3-Bis(hydroxymethyl)imidazolidine-2-thione",
+    "cas": "39236-46-9",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Produtos para tratamento dos cabelos: 2% | Não utilizar em sistemas pulverizáveis (aerossóis e sprays) | Produtos para cuidados das unhas: 2% | pH O pH do produto pronto para uso deve ser menor que 4",
+      "message": "1,3-Bis(hydroxymethyl)imidazolidine-2-thione在巴西市场属于限用成分，最大允许浓度为2%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "1,3-Bis(hidroximetil)imidazolidina-2-tiona"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "1-3-dicloropropano-2-ol",
+    "name": "1,3-Dicloropropano-2-ol",
+    "inci": "1,3-Dicloropropano-2-ol",
+    "cas": "96-23-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "1,3-Dicloropropano-2-ol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "1-3-propanossultona",
+    "name": "1,3-Propanossultona",
+    "inci": "1,3-Propanossultona",
+    "cas": "1120-71-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "1,3-Propanossultona是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "1-3-bis-vinilsulfonilacetamido-propano",
+    "name": "1,3-bis(vinilsulfonilacetamido)-propano",
+    "inci": "1,3-bis(vinilsulfonilacetamido)-propano",
+    "cas": "93629-90-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "1,3-bis(vinilsulfonilacetamido)-propano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "1-3-butadieno",
+    "name": "1,3-butadieno",
+    "inci": "1,3-butadieno",
+    "cas": "106-99-0",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "1,3-butadieno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "1-3-difenilguanidina",
+    "name": "1,3-difenilguanidina",
+    "inci": "1,3-difenilguanidina",
+    "cas": "102-06-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "1,3-difenilguanidina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "1-4-diclorobut-2-eno",
+    "name": "1,4-Diclorobut-2-eno",
+    "inci": "1,4-Diclorobut-2-eno",
+    "cas": "764-41-0",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "1,4-Diclorobut-2-eno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "1-4-diclorobenzeno",
+    "name": "1,4-diclorobenzeno",
+    "inci": "1,4-diclorobenzeno",
+    "cas": "106-46-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "1,4-diclorobenzeno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "1-cloro-2-3-epoxipropano",
+    "name": "1-Cloro-2,3-epoxipropano",
+    "inci": "1-Cloro-2,3-epoxipropano",
+    "cas": "106-89-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "1-Cloro-2,3-epoxipropano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "1-phenoxypropan-2-ol",
+    "name": "1-Phenoxypropan-2-ol",
+    "inci": "1-Phenoxypropan-2-ol",
+    "cas": "770-35-4",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Somente em produtos com enxágue: 2%",
+      "message": "1-Phenoxypropan-2-ol在巴西市场属于限用成分，最大允许浓度为2%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "1-Fenoxipropano-2-ol"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "1-bromopropano",
+    "name": "1-bromopropano",
+    "inci": "1-bromopropano",
+    "cas": "106-94-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "1-bromopropano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "1-cloro-4-nitrobenzeno",
+    "name": "1-cloro-4-nitrobenzeno",
+    "inci": "1-cloro-4-nitrobenzeno",
+    "cas": "100-00-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "1-cloro-4-nitrobenzeno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "1-metil-3-nitro-1-nitrosoguanidina",
+    "name": "1-metil-3-nitro-1-nitrosoguanidina",
+    "inci": "1-metil-3-nitro-1-nitrosoguanidina",
+    "cas": "70-25-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "1-metil-3-nitro-1-nitrosoguanidina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "1-vinil-2-pirrolidona",
+    "name": "1-vinil-2-pirrolidona",
+    "inci": "1-vinil-2-pirrolidona",
+    "cas": "88-12-0",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "1-vinil-2-pirrolidona是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-2-nitrosoimino-bisetanol",
+    "name": "2,2'-(nitrosoimino)bisetanol",
+    "inci": "2,2'-(nitrosoimino)bisetanol",
+    "cas": "1116-54-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2,2'-(nitrosoimino)bisetanol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-2-bioxirano",
+    "name": "2,2'-Bioxirano",
+    "inci": "2,2'-Bioxirano",
+    "cas": "1464-53-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2,2'-Bioxirano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-2-dibromo-2-nitroetanol",
+    "name": "2,2-dibromo-2-nitroetanol",
+    "inci": "2,2-dibromo-2-nitroetanol",
+    "cas": "69094-18-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2,2-dibromo-2-nitroetanol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-3-dibromopropano-1-ol",
+    "name": "2,3-Dibromopropano-1-ol",
+    "inci": "2,3-Dibromopropano-1-ol",
+    "cas": "96-13-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2,3-Dibromopropano-1-ol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-3-epoxipropano-1-ol",
+    "name": "2,3-Epoxipropano-1-ol",
+    "inci": "2,3-Epoxipropano-1-ol",
+    "cas": "556-52-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2,3-Epoxipropano-1-ol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-3-naphthalenediol-when-used-in-hair-dyes",
+    "name": "2,3-Naphthalenediol when used in hair dyes",
+    "inci": "2,3-Naphthalenediol when used in hair dyes",
+    "cas": "92-44-4",
+    "category": "other",
+    "brazil": null,
+    "mexico": {
+      "status": "banned",
+      "regulation": "NOM-141-SSA1",
+      "condition": "88 bis 3 | 2,3-Naftalendiol cuando se emplee en tintes para el cabello",
+      "message": "2,3-Naphthalenediol when used in hair dyes是墨西哥化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-3-dicloropropeno",
+    "name": "2,3-dicloropropeno",
+    "inci": "2,3-dicloropropeno",
+    "cas": "78-88-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2,3-dicloropropeno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-3-dinitrotolueno",
+    "name": "2,3-dinitrotolueno",
+    "inci": "2,3-dinitrotolueno",
+    "cas": "602-01-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2,3-dinitrotolueno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-5-dinitrotolueno",
+    "name": "2,5-dinitrotolueno",
+    "inci": "2,5-dinitrotolueno",
+    "cas": "619-15-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2,5-dinitrotolueno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-6-dinitrotolueno",
+    "name": "2,6-dinitrotolueno",
+    "inci": "2,6-dinitrotolueno",
+    "cas": "606-20-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2,6-dinitrotolueno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-2-metoxietoxi-etanol",
+    "name": "2-(2-metoxietoxi)etanol",
+    "inci": "2-(2-metoxietoxi)etanol",
+    "cas": "111-77-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2-(2-metoxietoxi)etanol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-4-terc-butilfenil-etanol",
+    "name": "2-(4-terc-butilfenil)etanol",
+    "inci": "2-(4-terc-butilfenil)etanol",
+    "cas": "5406-86-0",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2-(4-terc-butilfenil)etanol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-bromo-2-nitropropane-1-3-diol",
+    "name": "2-BROMO-2-NITROPROPANE-1,3-DIOL",
+    "inci": "2-BROMO-2-NITROPROPANE-1,3-DIOL",
+    "cas": "52-51-7",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,1% | Evitar formação de nitrosaminas.",
+      "message": "2-BROMO-2-NITROPROPANE-1,3-DIOL是巴西批准的防腐剂，最大允许浓度为0,1%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "2-bromo-2-nitropropano-1,3-diol (Bronopol)"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "2-bromopropano",
+    "name": "2-Bromopropano",
+    "inci": "2-Bromopropano",
+    "cas": "75-26-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2-Bromopropano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-butanona-oxima",
+    "name": "2-Butanona-oxima",
+    "inci": "2-Butanona-oxima",
+    "cas": "96-29-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2-Butanona-oxima是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-butoxyethanol-egbe-cas-111-76-2",
+    "name": "2-Butoxyethanol (EGBE) (CAS 111-76-2)",
+    "inci": "2-Butoxyethanol (EGBE) (CAS 111-76-2)",
+    "cas": "111-76-2",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Solvente em produtos de coloração capilar oxidante: 4% | Não utilizar em sistemas pulverizáveis (aerossóis e sprays) | Solvente em produtos de coloração capilar não-oxidante: 2% | Não utilizar em sistemas pulverizáveis (aerossóis e sprays)",
+      "message": "2-Butoxyethanol (EGBE) (CAS 111-76-2)在巴西市场属于限用成分，最大允许浓度为4%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Éter monobutílico de etilenoglicol (EGBE) (CAS 111-76-2)"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "2-metil-m-fenilenodiamina",
+    "name": "2-Metil-m-fenilenodiamina",
+    "inci": "2-Metil-m-fenilenodiamina",
+    "cas": "823-40-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2-Metil-m-fenilenodiamina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-metilaziridina",
+    "name": "2-Metilaziridina",
+    "inci": "2-Metilaziridina",
+    "cas": "75-55-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2-Metilaziridina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-metoxipropanol",
+    "name": "2-Metoxipropanol",
+    "inci": "2-Metoxipropanol",
+    "cas": "1589-47-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2-Metoxipropanol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-bifenilamina",
+    "name": "2-bifenilamina",
+    "inci": "2-bifenilamina",
+    "cas": "90-41-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2-bifenilamina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-nitroanisol",
+    "name": "2-nitroanisol",
+    "inci": "2-nitroanisol",
+    "cas": "91-23-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2-nitroanisol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-nitronaftaleno",
+    "name": "2-nitronaftaleno",
+    "inci": "2-nitronaftaleno",
+    "cas": "581-89-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2-nitronaftaleno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-nitropropano",
+    "name": "2-nitropropano",
+    "inci": "2-nitropropano",
+    "cas": "79-46-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2-nitropropano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "2-nitrotolueno",
+    "name": "2-nitrotolueno",
+    "inci": "2-nitrotolueno",
+    "cas": "88-72-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "2-nitrotolueno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "3-3-diclorobenzidina",
+    "name": "3,3'-diclorobenzidina",
+    "inci": "3,3'-diclorobenzidina",
+    "cas": "91-94-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "3,3'-diclorobenzidina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "3-3-dimetoxibenzidina",
+    "name": "3,3'-dimetoxibenzidina",
+    "inci": "3,3'-dimetoxibenzidina",
+    "cas": "119-90-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "3,3'-dimetoxibenzidina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "3-4-dinitrotolueno",
+    "name": "3,4-dinitrotolueno",
+    "inci": "3,4-dinitrotolueno",
+    "cas": "610-39-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "3,4-dinitrotolueno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "3-5-dibromo-4-hidroxibenzonitrila",
+    "name": "3,5-dibromo-4-hidroxibenzonitrila",
+    "inci": "3,5-dibromo-4-hidroxibenzonitrila",
+    "cas": "1689-84-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "3,5-dibromo-4-hidroxibenzonitrila是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "3-5-dinitrotolueno",
+    "name": "3,5-dinitrotolueno",
+    "inci": "3,5-dinitrotolueno",
+    "cas": "618-85-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "3,5-dinitrotolueno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "3-4-isopropilfenil-1-1-dimetilur-ia",
+    "name": "3-(4-isopropilfenil)-1,1-dimetiluréia",
+    "inci": "3-(4-isopropilfenil)-1,1-dimetiluréia",
+    "cas": "34123-59-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "3-(4-isopropilfenil)-1,1-dimetiluréia是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "3-oxide-of-2-4-diaminopyrimidine-cas-74638-76-9",
+    "name": "3-Oxide of 2,4-diaminopyrimidine (CAS 74638-76-9)",
+    "inci": "3-Oxide of 2,4-diaminopyrimidine (CAS 74638-76-9)",
+    "cas": "74638-76-9",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Preparações para tratamentos capilares: 1,5%",
+      "message": "3-Oxide of 2,4-diaminopyrimidine (CAS 74638-76-9)在巴西市场属于限用成分，最大允许浓度为1,5%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "3-Óxido de 2,4-diaminopirimidina (CAS 74638-76-9)"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "3-etil-2-metil-2-3-metilbutil-1-3-oxazolidina",
+    "name": "3-etil-2-metil-2-(3-metilbutil)-1,3-oxazolidina",
+    "inci": "3-etil-2-metil-2-(3-metilbutil)-1,3-oxazolidina",
+    "cas": "143860-04-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "3-etil-2-metil-2-(3-metilbutil)-1,3-oxazolidina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "4-etoxi-2-benzimidazole-anilida",
+    "name": "4'-etoxi-2-benzimidazole-anilida",
+    "inci": "4'-etoxi-2-benzimidazole-anilida",
+    "cas": "120187-29-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "4'-etoxi-2-benzimidazole-anilida是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "4-4-metilenodianilina",
+    "name": "4,4'-Metilenodianilina",
+    "inci": "4,4'-Metilenodianilina",
+    "cas": "101-77-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "4,4'-Metilenodianilina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "4-4-bi-o-toluidina",
+    "name": "4,4'-bi-o-toluidina",
+    "inci": "4,4'-bi-o-toluidina",
+    "cas": "119-93-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "4,4'-bi-o-toluidina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "4-4-bis-dimetilamino-benzofenona",
+    "name": "4,4'-bis(dimetilamino)benzofenona",
+    "inci": "4,4'-bis(dimetilamino)benzofenona",
+    "cas": "90-94-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "4,4'-bis(dimetilamino)benzofenona是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "4-4-isobutiletilidenodifenol",
+    "name": "4,4'-isobutiletilidenodifenol",
+    "inci": "4,4'-isobutiletilidenodifenol",
+    "cas": "6807-17-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "4,4'-isobutiletilidenodifenol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "4-4-metilenobis-2-etilanilina",
+    "name": "4,4'-metilenobis(2-etilanilina)",
+    "inci": "4,4'-metilenobis(2-etilanilina)",
+    "cas": "19900-65-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "4,4'-metilenobis(2-etilanilina)是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "4-4-metilenodi-o-toluidina",
+    "name": "4,4'-metilenodi-o-toluidina",
+    "inci": "4,4'-metilenodi-o-toluidina",
+    "cas": "838-88-0",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "4,4'-metilenodi-o-toluidina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "4-chloro-2-aminophenol-when-used-in-hair-dyes",
+    "name": "4-Chloro-2-aminophenol when used in hair dyes",
+    "inci": "4-Chloro-2-aminophenol when used in hair dyes",
+    "cas": "95-85-2",
+    "category": "other",
+    "brazil": null,
+    "mexico": {
+      "status": "banned",
+      "regulation": "NOM-141-SSA1",
+      "condition": "88 bis 6 | 4-Cloro-2-aminofenol, cuando se emplee en tintes para el cabello",
+      "message": "4-Chloro-2-aminophenol when used in hair dyes是墨西哥化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "4-hydroxyindole",
+    "name": "4-Hydroxyindole",
+    "inci": "4-Hydroxyindole",
+    "cas": "2380-94-1",
+    "category": "other",
+    "brazil": null,
+    "mexico": {
+      "status": "banned",
+      "regulation": "NOM-141-SSA1",
+      "condition": "51 bis | 4-Hidroxiindol",
+      "message": "4-Hydroxyindole是墨西哥化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "4-amino-3-fluorofenol",
+    "name": "4-amino-3-fluorofenol",
+    "inci": "4-amino-3-fluorofenol",
+    "cas": "399-95-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "4-amino-3-fluorofenol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "4-aminoazobenzeno",
+    "name": "4-aminoazobenzeno",
+    "inci": "4-aminoazobenzeno",
+    "cas": "60-09-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "4-aminoazobenzeno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "4-nitrobifenila",
+    "name": "4-nitrobifenila",
+    "inci": "4-nitrobifenila",
+    "cas": "92-93-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "4-nitrobifenila是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "4-nitrosofenol",
+    "name": "4-nitrosofenol",
+    "inci": "4-nitrosofenol",
+    "cas": "104-91-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "4-nitrosofenol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "4-o-tolilazo-o-toluidina",
+    "name": "4-o-tolilazo-o-toluidina",
+    "inci": "4-o-tolilazo-o-toluidina",
+    "cas": "97-56-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "4-o-tolilazo-o-toluidina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "5-bromo-5-nitro-1-3-dioxane",
+    "name": "5-BROMO-5-NITRO-1,3-DIOXANE",
+    "inci": "5-BROMO-5-NITRO-1,3-DIOXANE",
+    "cas": "30007-47-7",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,1% | Proibido em produtos que não se enxáguem. Evitar formação de",
+      "message": "5-BROMO-5-NITRO-1,3-DIOXANE是巴西批准的防腐剂，最大允许浓度为0,1%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "5-bromo-5-nitro-1,3 dioxano"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "5-cloro-1-3-dihidro-2h-indole-2-ona",
+    "name": "5-Cloro-1,3-dihidro-2H-indole-2-ona",
+    "inci": "5-Cloro-1,3-dihidro-2H-indole-2-ona",
+    "cas": "17630-75-0",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "5-Cloro-1,3-dihidro-2H-indole-2-ona是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "5-nitroacenafteno",
+    "name": "5-nitroacenafteno",
+    "inci": "5-nitroacenafteno",
+    "cas": "602-87-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "5-nitroacenafteno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "6-methylcoumarin",
+    "name": "6-Methylcoumarin",
+    "inci": "6-Methylcoumarin",
+    "cas": "92-48-8",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Produtos de higiene bucal: 0,003%",
+      "message": "6-Methylcoumarin在巴西市场属于限用成分，最大允许浓度为0,003%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "6-metil-coumarina"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "6-metoxi-m-toluidina",
+    "name": "6-metoxi-m-toluidina",
+    "inci": "6-metoxi-m-toluidina",
+    "cas": "120-71-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "6-metoxi-m-toluidina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "6-nitro-o-toluidina",
+    "name": "6-nitro-o-toluidina",
+    "inci": "6-nitro-o-toluidina",
+    "cas": "570-24-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "6-nitro-o-toluidina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "7-ethylbicyclooxazolidine",
+    "name": "7-ETHYLBICYCLOOXAZOLIDINE",
+    "inci": "7-ETHYLBICYCLOOXAZOLIDINE",
+    "cas": "7747-35-5",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,3% | Proibido em produtos para uso bucal e em produtos que entram",
+      "message": "7-ETHYLBICYCLOOXAZOLIDINE是巴西批准的防腐剂，最大允许浓度为0,3%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "5-Etil-3,7-dioxa-1-azabiciclo(3.3.0)octano"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "9-vinilcarbazol",
+    "name": "9-vinilcarbazol",
+    "inci": "9-vinilcarbazol",
+    "cas": "1484-13-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "9-vinilcarbazol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "acenocumarol",
+    "name": "Acenocumarol*",
+    "inci": "Acenocumarol*",
+    "cas": "152-72-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Acenocumarol*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "acetamida",
+    "name": "Acetamida",
+    "inci": "Acetamida",
+    "cas": "60-35-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Acetamida是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "acid-red-73",
+    "name": "Acid Red 73",
+    "inci": "Acid Red 73",
+    "cas": "5413-75-2",
+    "category": "other",
+    "brazil": null,
+    "mexico": {
+      "status": "banned",
+      "regulation": "NOM-141-SSA1",
+      "condition": "77 bis 2 | Rojo ácido 73",
+      "message": "Acid Red 73是墨西哥化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "acrilonitrila",
+    "name": "Acrilonitrila",
+    "inci": "Acrilonitrila",
+    "cas": "107-13-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Acrilonitrila是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "alacloro",
+    "name": "Alacloro",
+    "inci": "Alacloro",
+    "cas": "15972-60-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Alacloro是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "aldrina",
+    "name": "Aldrina",
+    "inci": "Aldrina",
+    "cas": "309-00-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Aldrina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "aluminum-chloride",
+    "name": "Aluminum chloride",
+    "inci": "Aluminum chloride",
+    "cas": "7446-70-0",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Antitranspirantes: 15% base anidra | Não utilizar em sistemas pulverizáveis (aerossóis e sprays)",
+      "message": "Aluminum chloride在巴西市场属于限用成分，最大允许浓度为15% base anidra，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Cloreto de alumínio"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "aluminum-fluoride",
+    "name": "Aluminum fluoride",
+    "inci": "Aluminum fluoride",
+    "cas": "7784-18-1",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Dentifrício: 0,15% expresso como flúr | Enxaguatório bucal: 0,15% expresso como flúr",
+      "message": "Aluminum fluoride在巴西市场属于限用成分，最大允许浓度为0,15% expresso como flúr，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Fluoreto de alumínio"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "amianto",
+    "name": "Amianto",
+    "inci": "Amianto",
+    "cas": "12001-28-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Amianto是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "amitrol",
+    "name": "Amitrol",
+    "inci": "Amitrol",
+    "cas": "61-82-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Amitrol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "ammonium-fluoride",
+    "name": "Ammonium fluoride",
+    "inci": "Ammonium fluoride",
+    "cas": "12125-01-8",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Dentifrício: 0,15% expresso como flúr | Enxaguatório bucal: 0,15% expresso como flúr",
+      "message": "Ammonium fluoride在巴西市场属于限用成分，最大允许浓度为0,15% expresso como flúr，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Fluoreto de amônio"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "ammonium-fluorosilicate",
+    "name": "Ammonium fluorosilicate",
+    "inci": "Ammonium fluorosilicate",
+    "cas": "16919-19-0",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Dentifrício: 0,15% expresso como flúr | Enxaguatório bucal: 0,15% expresso como flúr",
+      "message": "Ammonium fluorosilicate在巴西市场属于限用成分，最大允许浓度为0,15% expresso como flúr，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Fluorsilicato de amônio"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "ammonium-monofluorophosphate",
+    "name": "Ammonium monofluorophosphate",
+    "inci": "Ammonium monofluorophosphate",
+    "cas": "37809-19-1",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Dentifrício: 0,15% expresso como flúr | Enxaguatório bucal: 0,15% expresso como flúr",
+      "message": "Ammonium monofluorophosphate在巴西市场属于限用成分，最大允许浓度为0,15% expresso como flúr，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Monofluorfosfato de amônio"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "antibi-ticos",
+    "name": "Antibióticos - -",
+    "inci": "Antibióticos - -",
+    "cas": "40",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Antibióticos - -是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "arecolina",
+    "name": "Arecolina",
+    "inci": "Arecolina",
+    "cas": "63-75-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Arecolina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "azafenidina",
+    "name": "Azafenidina",
+    "inci": "Azafenidina",
+    "cas": "68049-83-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Azafenidina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "aziridina",
+    "name": "Aziridina",
+    "inci": "Aziridina",
+    "cas": "151-56-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Aziridina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "azobenzeno",
+    "name": "Azobenzeno",
+    "inci": "Azobenzeno",
+    "cas": "103-33-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Azobenzeno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "benzethonium-chloride",
+    "name": "BENZETHONIUM CHLORIDE",
+    "inci": "BENZETHONIUM CHLORIDE",
+    "cas": "121-54-0",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,1% | Proibido em produtos para uso bucal que não se enxáguem.",
+      "message": "BENZETHONIUM CHLORIDE是巴西批准的防腐剂，最大允许浓度为0,1%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Cloreto de Diisobutil fenoxietoxietil-dimetil-benzilamônio"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "benzoic-acid-sodium-benzoate",
+    "name": "BENZOIC ACID/SODIUM BENZOATE",
+    "inci": "BENZOIC ACID/SODIUM BENZOATE",
+    "cas": "65-85-0/532-32-1",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: a) 2,5% (expresso como ácido) em produtos que se enxáguem, exceto bucal. b) 1,7% (expresso como ácido) em produtos para uso bucal. c) 0,5% (expresso como ácido) em produtos que não se enxáguem. | Produtos que se enxáguem, bucal, não enxáguem",
+      "message": "BENZOIC ACID/SODIUM BENZOATE是巴西批准的防腐剂，最大允许浓度为a) 2,5% (expresso como ácido) em produtos que se enxáguem, exceto bucal. b) 1,7% (expresso como ácido) em produtos para uso bucal. c) 0,5% (expresso como ácido) em produtos que não se enxáguem.，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Ácido benzoico e respectivo sal de sódio"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "benzyl-alcohol",
+    "name": "BENZYL ALCOHOL",
+    "inci": "BENZYL ALCOHOL",
+    "cas": "100-51-6",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 1,0%",
+      "message": "BENZYL ALCOHOL是巴西批准的防腐剂，最大允许浓度为1,0%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Álcool benzílico"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "benzylhemiformal",
+    "name": "BENZYLHEMIFORMAL",
+    "inci": "BENZYLHEMIFORMAL",
+    "cas": "14548-60-8",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,15% | Proibido em produtos que não se enxáguem.",
+      "message": "BENZYLHEMIFORMAL是巴西批准的防腐剂，最大允许浓度为0,15%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Benzilhemiformal"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "bromochlorophene",
+    "name": "BROMOCHLOROPHENE",
+    "inci": "BROMOCHLOROPHENE",
+    "cas": "15435-29-7",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,1%",
+      "message": "BROMOCHLOROPHENE是巴西批准的防腐剂，最大允许浓度为0,1%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "6,6-dibromo-4,4-dicloro-2,2'-metilenodifenol"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "barbit-ricos",
+    "name": "Barbitúricos - -",
+    "inci": "Barbitúricos - -",
+    "cas": "221",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Barbitúricos - -是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "benactizina",
+    "name": "Benactizina*",
+    "inci": "Benactizina*",
+    "cas": "302-40-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Benactizina*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "benomila",
+    "name": "Benomila",
+    "inci": "Benomila",
+    "cas": "17804-35-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Benomila是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "benzidina",
+    "name": "Benzidina",
+    "inci": "Benzidina",
+    "cas": "92-87-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Benzidina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "benzimidazolona",
+    "name": "Benzimidazolona",
+    "inci": "Benzimidazolona",
+    "cas": "615-16-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Benzimidazolona是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "benzo-k-fluoranteno",
+    "name": "Benzo(k)fluoranteno",
+    "inci": "Benzo(k)fluoranteno",
+    "cas": "207-08-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Benzo(k)fluoranteno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "benzo-a-antraceno",
+    "name": "Benzo[a]antraceno",
+    "inci": "Benzo[a]antraceno",
+    "cas": "56-55-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Benzo[a]antraceno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "benzo-e-pireno",
+    "name": "Benzo[e]pireno",
+    "inci": "Benzo[e]pireno",
+    "cas": "192-97-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Benzo[e]pireno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "benzo-j-fluoranteno",
+    "name": "Benzo[j]fluoranteno",
+    "inci": "Benzo[j]fluoranteno",
+    "cas": "205-82-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Benzo[j]fluoranteno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "bietamiverina",
+    "name": "Bietamiverina*",
+    "inci": "Bietamiverina*",
+    "cas": "479-81-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Bietamiverina*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "binapacrilo",
+    "name": "Binapacrilo",
+    "inci": "Binapacrilo",
+    "cas": "485-31-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Binapacrilo是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "bitionol",
+    "name": "Bitionol*",
+    "inci": "Bitionol*",
+    "cas": "97-18-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Bitionol*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "bromisoval",
+    "name": "Bromisoval*",
+    "inci": "Bromisoval*",
+    "cas": "496-67-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Bromisoval*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "bromoetano",
+    "name": "Bromoetano",
+    "inci": "Bromoetano",
+    "cas": "74-96-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Bromoetano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "bromoetileno",
+    "name": "Bromoetileno",
+    "inci": "Bromoetileno",
+    "cas": "593-60-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Bromoetileno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "bromometano",
+    "name": "Bromometano",
+    "inci": "Bromometano",
+    "cas": "74-83-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Bromometano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "brucina",
+    "name": "Brucina",
+    "inci": "Brucina",
+    "cas": "357-57-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Brucina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "butyldiglycol-degbe-cas-112-34-5",
+    "name": "Butyldiglycol (DEGBE) (CAS 112-34-5)",
+    "inci": "Butyldiglycol (DEGBE) (CAS 112-34-5)",
+    "cas": "112-34-5",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Solvente em tinturas capilares: 9% | Não utilizar em sistemas pulverizáveis (aerossóis e sprays)",
+      "message": "Butyldiglycol (DEGBE) (CAS 112-34-5)在巴西市场属于限用成分，最大允许浓度为9%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Éter monobutílico de dietilenoglicol (DEGBE) (CAS 112-34-5)"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "chlorobutanol",
+    "name": "CHLOROBUTANOL",
+    "inci": "CHLOROBUTANOL",
+    "cas": "57-15-8",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,5% | Proibido em sistemas pulverizáveis (como aerossóis e sprays)",
+      "message": "CHLOROBUTANOL是巴西批准的防腐剂，最大允许浓度为0,5%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "1,1,1-Tricloro-2-metilpropanol-2 (clorobutanol)"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "chlorothymol",
+    "name": "CHLOROTHYMOL",
+    "inci": "CHLOROTHYMOL",
+    "cas": "89-68-9",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,1% | Proibido em produtos infantis.",
+      "message": "CHLOROTHYMOL是巴西批准的防腐剂，最大允许浓度为0,1%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "6-Clorotimol"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "chloroxylenol",
+    "name": "CHLOROXYLENOL",
+    "inci": "CHLOROXYLENOL",
+    "cas": "88-04-0/1321-23-9",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,5%",
+      "message": "CHLOROXYLENOL是巴西批准的防腐剂，最大允许浓度为0,5%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "p-cloro-metaxilenol"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "chlorphenesin",
+    "name": "CHLORPHENESIN",
+    "inci": "CHLORPHENESIN",
+    "cas": "104-29-0",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,3%",
+      "message": "CHLORPHENESIN是巴西批准的防腐剂，最大允许浓度为0,3%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "3-(p-clorofenoxi)-propano-1,2-diol"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "climbazole",
+    "name": "CLIMBAZOLE",
+    "inci": "CLIMBAZOLE",
+    "cas": "38083-17-9",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: a) 0,5% em xampus com enxágue. b) 0,2% em cremes faciais, loções capilares e produtos para os pés.",
+      "message": "CLIMBAZOLE是巴西批准的防腐剂，最大允许浓度为a) 0,5% em xampus com enxágue. b) 0,2% em cremes faciais, loções capilares e produtos para os pés.，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "1-(4-clorofenoxi)-1-(1-Imidazolil)-3,3-dimetil-2-butanona"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "calcium-fluoride",
+    "name": "Calcium fluoride",
+    "inci": "Calcium fluoride",
+    "cas": "7789-75-5",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Dentifrício: 0,15% expresso como flúr | Enxaguatório bucal: 0,15% expresso como flúr",
+      "message": "Calcium fluoride在巴西市场属于限用成分，最大允许浓度为0,15% expresso como flúr，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Fluoreto de cálcio"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "calcium-hydroxide",
+    "name": "Calcium hydroxide",
+    "inci": "Calcium hydroxide",
+    "cas": "1305-62-0",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "7%  em  peso",
+      "message": "CALCIUM HYDROXIDE是巴西头发拉直/卷发产品允许使用的成分，最大允许浓度为7%  em  peso，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Hidróxido de Cálcio"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "calcium-monofluorophosphate",
+    "name": "Calcium monofluorophosphate",
+    "inci": "Calcium monofluorophosphate",
+    "cas": "7789-74-4",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Dentifrício: 0,15% expresso como flúr | Enxaguatório bucal: 0,15% expresso como flúr",
+      "message": "Calcium monofluorophosphate在巴西市场属于限用成分，最大允许浓度为0,15% expresso como flúr，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Monofluorfosfato de cálcio"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "cantaridina",
+    "name": "Cantaridina",
+    "inci": "Cantaridina",
+    "cas": "56-25-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Cantaridina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "captafol",
+    "name": "Captafol",
+    "inci": "Captafol",
+    "cas": "2425-06-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Captafol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "captodiamo",
+    "name": "Captodiamo*",
+    "inci": "Captodiamo*",
+    "cas": "486-17-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Captodiamo*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "carbadox",
+    "name": "Carbadox",
+    "inci": "Carbadox",
+    "cas": "6804-07-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Carbadox是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "carbarilo",
+    "name": "Carbarilo",
+    "inci": "Carbarilo",
+    "cas": "63-25-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Carbarilo是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "carbendazima",
+    "name": "Carbendazima",
+    "inci": "Carbendazima",
+    "cas": "10605-21-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Carbendazima是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "carbromal",
+    "name": "Carbromal*",
+    "inci": "Carbromal*",
+    "cas": "77-65-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Carbromal*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "carbutamida",
+    "name": "Carbutamida*",
+    "inci": "Carbutamida*",
+    "cas": "339-43-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Carbutamida*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "carisoprodol",
+    "name": "Carisoprodol*",
+    "inci": "Carisoprodol*",
+    "cas": "78-44-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Carisoprodol*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "catalase",
+    "name": "Catalase",
+    "inci": "Catalase",
+    "cas": "9001-05-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Catalase是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "cetylamine-fluoride",
+    "name": "Cetylamine fluoride",
+    "inci": "Cetylamine fluoride",
+    "cas": "3151-59-5",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Dentifrício: 0,15% expresso como flúr | Enxaguatório bucal: 0,15% expresso como flúr",
+      "message": "Cetylamine fluoride在巴西市场属于限用成分，最大允许浓度为0,15% expresso como flúr，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Fluoreto de hexadecilamônio"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "ciclarbamato",
+    "name": "Ciclarbamato*",
+    "inci": "Ciclarbamato*",
+    "cas": "5779-54-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Ciclarbamato*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "cicloheximida",
+    "name": "Cicloheximida",
+    "inci": "Cicloheximida",
+    "cas": "66-81-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Cicloheximida是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "climbazole-cas-38083-17-9",
+    "name": "Climbazole (CAS 38083-17-9)",
+    "inci": "Climbazole (CAS 38083-17-9)",
+    "cas": "38083-17-9",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Agente anticaspa em xampus com enxágue: 2%",
+      "message": "Climbazole (CAS 38083-17-9)在巴西市场属于限用成分，最大允许浓度为2%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "1-(4-clorofenoxi)-1-(1-Imidazolil)-3,3-dimetil-2-butanona (CLIMBAZOLE) (CAS 38083-17-9)"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "clofenamida",
+    "name": "Clofenamida*",
+    "inci": "Clofenamida*",
+    "cas": "671-95-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Clofenamida*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "clordecona",
+    "name": "Clordecona",
+    "inci": "Clordecona",
+    "cas": "143-50-0",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Clordecona是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "clordimeforme",
+    "name": "Clordimeforme",
+    "inci": "Clordimeforme",
+    "cas": "6164-98-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Clordimeforme是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "cloroacetalde-do",
+    "name": "Cloroacetaldeído",
+    "inci": "Cloroacetaldeído",
+    "cas": "107-20-0",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Cloroacetaldeído是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "clorofenoxamina",
+    "name": "Clorofenoxamina*",
+    "inci": "Clorofenoxamina*",
+    "cas": "77-38-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Clorofenoxamina*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "clorof-rmio",
+    "name": "Clorofórmio",
+    "inci": "Clorofórmio",
+    "cas": "67-66-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Clorofórmio是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "clorometano",
+    "name": "Clorometano",
+    "inci": "Clorometano",
+    "cas": "74-87-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Clorometano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "cloromezanona",
+    "name": "Cloromezanona*",
+    "inci": "Cloromezanona*",
+    "cas": "80-77-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Cloromezanona*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "cloropreno",
+    "name": "Cloropreno",
+    "inci": "Cloropreno",
+    "cas": "126-99-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Cloropreno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "clorotalonila",
+    "name": "Clorotalonila",
+    "inci": "Clorotalonila",
+    "cas": "1897-45-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Clorotalonila是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "clorpropamida",
+    "name": "Clorpropamida*",
+    "inci": "Clorpropamida*",
+    "cas": "94-20-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Clorpropamida*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "clortalidona",
+    "name": "Clortalidona*",
+    "inci": "Clortalidona*",
+    "cas": "77-36-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Clortalidona*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "clorzoxazona",
+    "name": "Clorzoxazona*",
+    "inci": "Clorzoxazona*",
+    "cas": "95-25-0",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Clorzoxazona*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "clozolinato",
+    "name": "Clozolinato",
+    "inci": "Clozolinato",
+    "cas": "84332-86-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Clozolinato是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "coni-na",
+    "name": "Coniína",
+    "inci": "Coniína",
+    "cas": "458-88-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Coniína是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "convalatoxina",
+    "name": "Convalatoxina",
+    "inci": "Convalatoxina",
+    "cas": "508-75-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Convalatoxina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "cresoxime-metila",
+    "name": "Cresoxime-metila",
+    "inci": "Cresoxime-metila",
+    "cas": "143390-89-0",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Cresoxime-metila是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "criseno",
+    "name": "Criseno",
+    "inci": "Criseno",
+    "cas": "218-01-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Criseno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "crotonalde-do",
+    "name": "Crotonaldeído",
+    "inci": "Crotonaldeído",
+    "cas": "4170-30-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Crotonaldeído是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "cumetarol",
+    "name": "Cumetarol*",
+    "inci": "Cumetarol*",
+    "cas": "4366-18-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Cumetarol*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "dehydroacetic-acid-sodium-dehydroacetate",
+    "name": "DEHYDROACETIC ACID/SODIUM DEHYDROACETATE",
+    "inci": "DEHYDROACETIC ACID/SODIUM DEHYDROACETATE",
+    "cas": "520-45-6/4418-26-2/16807-48-0",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,6% (expresso como ácido) | Proibido em sistemas pulverizáveis (como aerossóis e sprays)",
+      "message": "DEHYDROACETIC ACID/SODIUM DEHYDROACETATE是巴西批准的防腐剂，最大允许浓度为0,6% (expresso como ácido)，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Ácido dehidroacético e seus sais"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "dibromohexamidine-isethionate",
+    "name": "DIBROMOHEXAMIDINE ISETHIONATE",
+    "inci": "DIBROMOHEXAMIDINE ISETHIONATE",
+    "cas": "93856-83-8",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,1%",
+      "message": "DIBROMOHEXAMIDINE ISETHIONATE是巴西批准的防腐剂，最大允许浓度为0,1%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "3,3'-Dibromo-4,4' hexametilenodioxidibenzamidina (dibromohexamidina) e seus sais"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "dichlorobenzyl-alcohol",
+    "name": "DICHLOROBENZYL ALCOHOL",
+    "inci": "DICHLOROBENZYL ALCOHOL",
+    "cas": "1777-82-8",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,15%",
+      "message": "DICHLOROBENZYL ALCOHOL是巴西批准的防腐剂，最大允许浓度为0,15%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Álcool 2,4-Diclorobenzílico"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "dimethyl-oxazolidine",
+    "name": "DIMETHYL OXAZOLIDINE",
+    "inci": "DIMETHYL OXAZOLIDINE",
+    "cas": "51200-87-4",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,1% | Proibido em produtos com pH igual ou inferior a 6.",
+      "message": "DIMETHYL OXAZOLIDINE是巴西批准的防腐剂，最大允许浓度为0,1%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "4,4-Dimetil-1,3-oxazolidina"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "daminozida",
+    "name": "Daminozida",
+    "inci": "Daminozida",
+    "cas": "1596-84-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Daminozida是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "dextropropoxifeno",
+    "name": "Dextropropoxifeno*",
+    "inci": "Dextropropoxifeno*",
+    "cas": "469-62-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Dextropropoxifeno*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "dialato",
+    "name": "Dialato",
+    "inci": "Dialato",
+    "cas": "2303-16-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Dialato是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "diazometano",
+    "name": "Diazometano",
+    "inci": "Diazometano",
+    "cas": "334-88-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Diazometano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "dibenze-a-h-antraceno",
+    "name": "Dibenze[a,h]antraceno",
+    "inci": "Dibenze[a,h]antraceno",
+    "cas": "53-70-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Dibenze[a,h]antraceno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "dichlorophenol",
+    "name": "Dichlorophenol",
+    "inci": "Dichlorophenol",
+    "cas": "97-23-4",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Todos os produtos: 0.5%",
+      "message": "Dichlorophenol在巴西市场属于限用成分，最大允许浓度为0.5%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Diclorofeno (*)"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "dicumarol",
+    "name": "Dicumarol*",
+    "inci": "Dicumarol*",
+    "cas": "66-76-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Dicumarol*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "dieldrina",
+    "name": "Dieldrina",
+    "inci": "Dieldrina",
+    "cas": "60-57-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Dieldrina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "diethylene-glycol-deg-cas-111-46-6",
+    "name": "Diethylene glycol (DEG) (CAS 111-46-6)",
+    "inci": "Diethylene glycol (DEG) (CAS 111-46-6)",
+    "cas": "111-46-6",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Como impureza (traços) em outros ingredientes cosméticos: 0,1%",
+      "message": "Diethylene glycol (DEG) (CAS 111-46-6)在巴西市场属于限用成分，最大允许浓度为0,1%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Dietilenoglicol (DEG) (CAS 111-46-6)"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "difencloxazina",
+    "name": "Difencloxazina*",
+    "inci": "Difencloxazina*",
+    "cas": "5617-26-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Difencloxazina*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "dihidrotaquisterol",
+    "name": "Dihidrotaquisterol*",
+    "inci": "Dihidrotaquisterol*",
+    "cas": "67-96-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Dihidrotaquisterol*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "dimetilnitrosoamina",
+    "name": "Dimetilnitrosoamina",
+    "inci": "Dimetilnitrosoamina",
+    "cas": "62-75-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Dimetilnitrosoamina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "dinitrotolueno",
+    "name": "Dinitrotolueno",
+    "inci": "Dinitrotolueno",
+    "cas": "25321-14-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Dinitrotolueno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "dinocape",
+    "name": "Dinocape",
+    "inci": "Dinocape",
+    "cas": "39300-45-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Dinocape是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "dioxana",
+    "name": "Dioxana",
+    "inci": "Dioxana",
+    "cas": "123-91-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Dioxana是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "diur-o",
+    "name": "Diurão",
+    "inci": "Diurão",
+    "cas": "330-54-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Diurão是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "ethyl-lauroyl-arginate-hcl",
+    "name": "ETHYL LAUROYL ARGINATE HCl",
+    "inci": "ETHYL LAUROYL ARGINATE HCl",
+    "cas": "60372-77-2",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: a) 0,15% em enxaguatórios bucais. b) 0,4% em outros produtos. | a) Proibido em produtos para crianças. b) Proibido em produt",
+      "message": "ETHYL LAUROYL ARGINATE HCl是巴西批准的防腐剂，最大允许浓度为a) 0,15% em enxaguatórios bucais. b) 0,4% em outros produtos.，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Cloridrato de etil-N-α-dodecanoil-L-arginato"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "epinefrina",
+    "name": "Epinefrina*",
+    "inci": "Epinefrina*",
+    "cas": "51-43-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Epinefrina*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "erionita",
+    "name": "Erionita",
+    "inci": "Erionita",
+    "cas": "12510-42-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Erionita是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "espironolactona",
+    "name": "Espironolactona*",
+    "inci": "Espironolactona*",
+    "cas": "52-01-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Espironolactona*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "estr-genos",
+    "name": "Estrógenos - -",
+    "inci": "Estrógenos - -",
+    "cas": "261",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Estrógenos - -是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "etionamida",
+    "name": "Etionamida*",
+    "inci": "Etionamida*",
+    "cas": "536-33-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Etionamida*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "formic-acid-sodium-formate",
+    "name": "FORMIC ACID/SODIUM FORMATE",
+    "inci": "FORMIC ACID/SODIUM FORMATE",
+    "cas": "64-18-6/141-53-7",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,5% (expresso como ácido)",
+      "message": "FORMIC ACID/SODIUM FORMATE是巴西批准的防腐剂，最大允许浓度为0,5% (expresso como ácido)，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Ácido fórmico e seu sal sódico"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "fenacemida",
+    "name": "Fenacemida*",
+    "inci": "Fenacemida*",
+    "cas": "63-98-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fenacemida*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "fenaglicodol",
+    "name": "Fenaglicodol*",
+    "inci": "Fenaglicodol*",
+    "cas": "79-93-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fenaglicodol*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "fenarimol",
+    "name": "Fenarimol",
+    "inci": "Fenarimol",
+    "cas": "60168-88-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fenarimol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "fenepropimorfe",
+    "name": "Fenepropimorfe",
+    "inci": "Fenepropimorfe",
+    "cas": "67564-91-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fenepropimorfe是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "fenilbutazona",
+    "name": "Fenilbutazona*",
+    "inci": "Fenilbutazona*",
+    "cas": "50-33-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fenilbutazona*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "feniramidol",
+    "name": "Feniramidol*",
+    "inci": "Feniramidol*",
+    "cas": "553-69-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Feniramidol*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "fenozolona",
+    "name": "Fenozolona*",
+    "inci": "Fenozolona*",
+    "cas": "15302-16-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fenozolona*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "fenprobamato",
+    "name": "Fenprobamato*",
+    "inci": "Fenprobamato*",
+    "cas": "673-31-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fenprobamato*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "fenprocumona",
+    "name": "Fenprocumona*",
+    "inci": "Fenprocumona*",
+    "cas": "435-97-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fenprocumona*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "fenti-o",
+    "name": "Fentião",
+    "inci": "Fentião",
+    "cas": "55-38-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fentião是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "fluanisona",
+    "name": "Fluanisona*",
+    "inci": "Fluanisona*",
+    "cas": "1480-19-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fluanisona*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "fluazifope-butila",
+    "name": "Fluazifope-butila",
+    "inci": "Fluazifope-butila",
+    "cas": "69806-50-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fluazifope-butila是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "fluazifope-p-butila",
+    "name": "Fluazifope-p-butila",
+    "inci": "Fluazifope-p-butila",
+    "cas": "79241-46-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fluazifope-p-butila是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "flumioxazina",
+    "name": "Flumioxazina",
+    "inci": "Flumioxazina",
+    "cas": "103361-09-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Flumioxazina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "fluoresona",
+    "name": "Fluoresona*",
+    "inci": "Fluoresona*",
+    "cas": "2924-67-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fluoresona*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "fluorouracil",
+    "name": "Fluorouracil*",
+    "inci": "Fluorouracil*",
+    "cas": "51-21-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fluorouracil*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "flusilazol",
+    "name": "Flusilazol",
+    "inci": "Flusilazol",
+    "cas": "85509-19-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Flusilazol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "formamida",
+    "name": "Formamida",
+    "inci": "Formamida",
+    "cas": "75-12-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Formamida是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "fosfamidi-o",
+    "name": "Fosfamidião",
+    "inci": "Fosfamidião",
+    "cas": "13171-21-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Fosfamidião是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "furano",
+    "name": "Furano",
+    "inci": "Furano",
+    "cas": "110-00-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Furano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "furazolidona",
+    "name": "Furazolidona*",
+    "inci": "Furazolidona*",
+    "cas": "67-45-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Furazolidona*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "glutaral",
+    "name": "GLUTARAL",
+    "inci": "GLUTARAL",
+    "cas": "111-30-8",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,1% | Proibido em sistemas pulverizáveis (como aerossóis e sprays)",
+      "message": "GLUTARAL是巴西批准的防腐剂，最大允许浓度为0,1%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Glutaraldeído"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "galantamina",
+    "name": "Galantamina*",
+    "inci": "Galantamina*",
+    "cas": "357-70-0",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Galantamina*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "gliciclamida",
+    "name": "Gliciclamida*",
+    "inci": "Gliciclamida*",
+    "cas": "664-95-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Gliciclamida*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "glicocortic-ides",
+    "name": "Glicocorticóides - -",
+    "inci": "Glicocorticóides - -",
+    "cas": "301",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Glicocorticóides - -是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "glyoxal-cas-107-22-2",
+    "name": "Glyoxal (CAS 107-22-2)",
+    "inci": "Glyoxal (CAS 107-22-2)",
+    "cas": "107-22-2",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Todos os produtos: 100 mg/kg",
+      "message": "Glyoxal (CAS 107-22-2)在巴西市场属于限用成分，最大允许浓度为100 mg/kg，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Glioxal (CAS 107-22-2)"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "guaifenesina",
+    "name": "Guaifenesina*",
+    "inci": "Guaifenesina*",
+    "cas": "93-14-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Guaifenesina*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "hexetidine",
+    "name": "HEXETIDINE",
+    "inci": "HEXETIDINE",
+    "cas": "141-94-6",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,1%",
+      "message": "HEXETIDINE是巴西批准的防腐剂，最大允许浓度为0,1%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Amino-5-bis(etil-2-hexil)-1,3 metil-5-perhidropirimidina"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "hydroxyethoxyphenyl-butanone",
+    "name": "HYDROXYETHOXYPHENYL BUTANONE",
+    "inci": "HYDROXYETHOXYPHENYL BUTANONE",
+    "cas": "569646-79-3",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,7%",
+      "message": "HYDROXYETHOXYPHENYL BUTANONE是巴西批准的防腐剂，最大允许浓度为0,7%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "4-(3-etoxi-4-hidroxifenil)butan-2-ona"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "haloperidol",
+    "name": "Haloperidol*",
+    "inci": "Haloperidol*",
+    "cas": "52-86-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Haloperidol*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "heptacloro",
+    "name": "Heptacloro",
+    "inci": "Heptacloro",
+    "cas": "76-44-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Heptacloro是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "hexaclorobenzeno",
+    "name": "Hexaclorobenzeno",
+    "inci": "Hexaclorobenzeno",
+    "cas": "118-74-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Hexaclorobenzeno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "hexano",
+    "name": "Hexano",
+    "inci": "Hexano",
+    "cas": "110-54-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Hexano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "hexano-2-ona",
+    "name": "Hexano-2-ona",
+    "inci": "Hexano-2-ona",
+    "cas": "591-78-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Hexano-2-ona是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "hexapropimato",
+    "name": "Hexapropimato*",
+    "inci": "Hexapropimato*",
+    "cas": "358-52-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Hexapropimato*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "hidroxizina",
+    "name": "Hidroxizina*",
+    "inci": "Hidroxizina*",
+    "cas": "68-88-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Hidroxizina*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "iodopropynyl-butylcarbamate",
+    "name": "IODOPROPYNYL BUTYLCARBAMATE",
+    "inci": "IODOPROPYNYL BUTYLCARBAMATE",
+    "cas": "55406-53-6",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: a) 0,02% em produtos que se enxáguem. b) 0,01% em produtos que não se enxáguem, exceto desodorantes/antitranspirantes. c) 0,0075% em desodorantes/antitranspirantes. | Proibido em produtos para uso bucal e lábios. Proibido em pr",
+      "message": "IODOPROPYNYL BUTYLCARBAMATE是巴西批准的防腐剂，最大允许浓度为a) 0,02% em produtos que se enxáguem. b) 0,01% em produtos que não se enxáguem, exceto desodorantes/antitranspirantes. c) 0,0075% em desodorantes/antitranspirantes.，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "3-iodo-2-propinilbutilcarbamato"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "imidazolidina-2-tiona",
+    "name": "Imidazolidina-2-tiona",
+    "inci": "Imidazolidina-2-tiona",
+    "cas": "96-45-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Imidazolidina-2-tiona是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "inproquona",
+    "name": "Inproquona*",
+    "inci": "Inproquona*",
+    "cas": "436-40-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Inproquona*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "iodometano",
+    "name": "Iodometano",
+    "inci": "Iodometano",
+    "cas": "74-88-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Iodometano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "ioxinil",
+    "name": "Ioxinil",
+    "inci": "Ioxinil",
+    "cas": "1689-83-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Ioxinil是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "iprodiona",
+    "name": "Iprodiona",
+    "inci": "Iprodiona",
+    "cas": "36734-19-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Iprodiona是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "isocarboxazida",
+    "name": "Isocarboxazida*",
+    "inci": "Isocarboxazida*",
+    "cas": "59-63-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Isocarboxazida*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "isoprenalina",
+    "name": "Isoprenalina*",
+    "inci": "Isoprenalina*",
+    "cas": "7683-59-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Isoprenalina*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "isopreno",
+    "name": "Isopreno",
+    "inci": "Isopreno",
+    "cas": "78-79-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Isopreno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "isoxaflutol",
+    "name": "Isoxaflutol",
+    "inci": "Isoxaflutol",
+    "cas": "141112-29-0",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Isoxaflutol是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "ketoconazole",
+    "name": "Ketoconazole",
+    "inci": "Ketoconazole",
+    "cas": "65277-42-1",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Produtos para combater a caspa: 1%",
+      "message": "Ketoconazole在巴西市场属于限用成分，最大允许浓度为1%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Cetoconazol"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "lead-acetate",
+    "name": "LEAD ACETATE",
+    "inci": "LEAD ACETATE",
+    "cas": "301-04-2",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Tintura Capilar: 0.6% | Pureza: acetato de chumbo 99% (Purity: lead acetate 99%)",
+      "message": "LEAD ACETATE在巴西市场属于限用成分，最大允许浓度为0.6%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Acetato de chumbo"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "lidoca-na",
+    "name": "Lidocaína",
+    "inci": "Lidocaína",
+    "cas": "137-58-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Lidocaína是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "linur-o",
+    "name": "Linurão",
+    "inci": "Linurão",
+    "cas": "330-55-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Linurão是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "lithium-hydroxide",
+    "name": "Lithium hydroxide",
+    "inci": "Lithium hydroxide",
+    "cas": "1310-65-2",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "1-Uso geral: 2% 4,5% em massa.",
+      "message": "LITHIUM HYDROXIDE是巴西头发拉直/卷发产品允许使用的成分，最大允许浓度为1-Uso geral: 2% 4,5% em massa.，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Hidróxido de Lítio"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "methenamine",
+    "name": "METHENAMINE",
+    "inci": "METHENAMINE",
+    "cas": "100-97-0",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Condições conforme tipo de produto: 0,15%",
+      "message": "METHENAMINE是巴西批准的防腐剂，最大允许浓度为0,15%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Hexametilenotetramina"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "magnesium-fluoride",
+    "name": "Magnesium fluoride",
+    "inci": "Magnesium fluoride",
+    "cas": "7783-40-6",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Dentifrício: 0,15% expresso como flúr | Enxaguatório bucal: 0,15% expresso como flúr",
+      "message": "Magnesium fluoride在巴西市场属于限用成分，最大允许浓度为0,15% expresso como flúr，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Fluoreto de magnésio"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "magnesium-fluorosilicate",
+    "name": "Magnesium fluorosilicate",
+    "inci": "Magnesium fluorosilicate",
+    "cas": "16949-65-8",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Dentifrício: 0,15% expresso como flúr | Enxaguatório bucal: 0,15% expresso como flúr",
+      "message": "Magnesium fluorosilicate在巴西市场属于限用成分，最大允许浓度为0,15% expresso como flúr，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Fluorsilicato de magnésio"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "malononitrila",
+    "name": "Malononitrila",
+    "inci": "Malononitrila",
+    "cas": "109-77-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Malononitrila是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "mecamilamina",
+    "name": "Mecamilamina*",
+    "inci": "Mecamilamina*",
+    "cas": "60-40-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Mecamilamina*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "meprobamato",
+    "name": "Meprobamato*",
+    "inci": "Meprobamato*",
+    "cas": "57-53-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Meprobamato*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "metalde-do",
+    "name": "Metaldeído",
+    "inci": "Metaldeído",
+    "cas": "9002-91-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Metaldeído是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "methanol",
+    "name": "Methanol",
+    "inci": "Methanol",
+    "cas": "67-56-1",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Desnaturante para etanol e isopropanol: 5%",
+      "message": "Methanol在巴西市场属于限用成分，最大允许浓度为5%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Metanol"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "methylene-chloride",
+    "name": "Methylene chloride",
+    "inci": "Methylene chloride",
+    "cas": "75-09-2",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Todos os produtos: 35% (quando se encontra misturado com outras substâncias a concentração total não deve ser superior a 35%). 0,2% como máximo conteúdo de impureza.",
+      "message": "Methylene chloride在巴西市场属于限用成分，最大允许浓度为35% (quando se encontra misturado com outras substâncias a concentração total não deve ser superior a 35%). 0,2% como máximo conteúdo de impureza.，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Cloreto de Metileno"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "metiloxirano",
+    "name": "Metiloxirano",
+    "inci": "Metiloxirano",
+    "cas": "75-56-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Metiloxirano是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "metiltiofanato",
+    "name": "Metiltiofanato",
+    "inci": "Metiltiofanato",
+    "cas": "23564-05-8",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Metiltiofanato是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "metirapona",
+    "name": "Metirapona*",
+    "inci": "Metirapona*",
+    "cas": "54-36-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Metirapona*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "metocarbamol",
+    "name": "Metocarbamol*",
+    "inci": "Metocarbamol*",
+    "cas": "532-03-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Metocarbamol*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "metotrexato",
+    "name": "Metotrexato*",
+    "inci": "Metotrexato*",
+    "cas": "59-05-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Metotrexato*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "mofebutazona",
+    "name": "Mofebutazona*",
+    "inci": "Mofebutazona*",
+    "cas": "2210-63-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Mofebutazona*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "molinato",
+    "name": "Molinato",
+    "inci": "Molinato",
+    "cas": "2212-67-1",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Molinato是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "monocrotofos",
+    "name": "Monocrotofos",
+    "inci": "Monocrotofos",
+    "cas": "6923-22-4",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Monocrotofos是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "monur-o",
+    "name": "Monurão",
+    "inci": "Monurão",
+    "cas": "150-68-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Monurão是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "musk-ketone-cas-81-14-1",
+    "name": "Musk ketone (CAS 81-14-1)",
+    "inci": "Musk ketone (CAS 81-14-1)",
+    "cas": "81-14-1",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Todos os produtos exceto os produtos para higiene bucal: 1,4% em fragrâncias finas / 0,56% em colônias / 0,042% em outros produtos",
+      "message": "Musk ketone (CAS 81-14-1)在巴西市场属于限用成分，最大允许浓度为1,4% em fragrâncias finas / 0,56% em colônias / 0,042% em outros produtos，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Almizcle cetona (CAS 81-14-1)"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "musk-xylene-cas-81-15-2",
+    "name": "Musk xylene (CAS 81-15-2)",
+    "inci": "Musk xylene (CAS 81-15-2)",
+    "cas": "81-15-2",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Todos os produtos, exceto os produtos para higiene bucal: 1% em fragrâncias finas / 0,4% em colônias / 0,03% em outros produtos",
+      "message": "Musk xylene (CAS 81-15-2)在巴西市场属于限用成分，最大允许浓度为1% em fragrâncias finas / 0,4% em colônias / 0,03% em outros produtos，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Almizcle xileno (CAS 81-15-2)"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "n-n-dimetilacetamida",
+    "name": "N,N-dimetilacetamida",
+    "inci": "N,N-dimetilacetamida",
+    "cas": "127-19-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "N,N-dimetilacetamida是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "n-n-dimetilanilina",
+    "name": "N,N-dimetilanilina",
+    "inci": "N,N-dimetilanilina",
+    "cas": "121-69-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "N,N-dimetilanilina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "n-n-dimetilformamida",
+    "name": "N,N-dimetilformamida",
+    "inci": "N,N-dimetilformamida",
+    "cas": "68-12-2",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "N,N-dimetilformamida是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "n-triclorometiltio-ftalimida",
+    "name": "N-(triclorometiltio)ftalimida",
+    "inci": "N-(triclorometiltio)ftalimida",
+    "cas": "133-07-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "N-(triclorometiltio)ftalimida是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "n-2-naftilanilina",
+    "name": "N-2-naftilanilina",
+    "inci": "N-2-naftilanilina",
+    "cas": "135-88-6",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "N-2-naftilanilina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "n-metilacetamida",
+    "name": "N-metilacetamida",
+    "inci": "N-metilacetamida",
+    "cas": "79-16-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "N-metilacetamida是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "n-metilformamida",
+    "name": "N-metilformamida",
+    "inci": "N-metilformamida",
+    "cas": "123-39-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "N-metilformamida是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "naftaleno",
+    "name": "Naftaleno",
+    "inci": "Naftaleno",
+    "cas": "91-20-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Naftaleno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "nitrobenzeno",
+    "name": "Nitrobenzeno",
+    "inci": "Nitrobenzeno",
+    "cas": "98-95-3",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Nitrobenzeno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "nitrofeno",
+    "name": "Nitrofeno",
+    "inci": "Nitrofeno",
+    "cas": "1836-75-5",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Nitrofeno是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "nitrofuranto-na",
+    "name": "Nitrofurantoína*",
+    "inci": "Nitrofurantoína*",
+    "cas": "67-20-9",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Nitrofurantoína*是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "nitroglicerina",
+    "name": "Nitroglicerina",
+    "inci": "Nitroglicerina",
+    "cas": "55-63-0",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Nitroglicerina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "nitromethane",
+    "name": "Nitromethane",
+    "inci": "Nitromethane",
+    "cas": "75-52-5",
+    "category": "other",
+    "brazil": {
+      "status": "restricted",
+      "regulation": "RDC 529/2021",
+      "condition": "Inibidor de corrosão: 0.3%",
+      "message": "Nitromethane在巴西市场属于限用成分，最大允许浓度为0.3%，请确认产品类型匹配"
+    },
+    "mexico": null,
+    "aliases": [
+      "Nitrometano"
+    ],
+    "score": 4
+  },
+  {
+    "slug": "nitrosodipropilamina",
+    "name": "Nitrosodipropilamina",
+    "inci": "Nitrosodipropilamina",
+    "cas": "621-64-7",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Nitrosodipropilamina是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  },
+  {
+    "slug": "n-quel",
+    "name": "Níquel",
+    "inci": "Níquel",
+    "cas": "7440-02-0",
+    "category": "other",
+    "brazil": {
+      "status": "banned",
+      "regulation": "RDC 907/2024",
+      "condition": "0% - 任何浓度均禁止",
+      "message": "Níquel是巴西化妆品法规明确禁用的成分，任何浓度均不得使用"
+    },
+    "mexico": null,
+    "aliases": [],
+    "score": 4
+  }
+]

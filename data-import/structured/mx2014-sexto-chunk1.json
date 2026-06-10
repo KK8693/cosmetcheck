@@ -1,0 +1,578 @@
+{
+  "chunkId": 1,
+  "document": {
+    "id": "MX-2014 SEXTO",
+    "effectiveDate": "2014-03-11"
+  },
+  "rules": [
+    {
+      "ruleId": "MX-2014-SEXTO-1_2",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "1-2",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 1-2",
+        "inciNameEn": "Range 1-2",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "1. a 2."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-3",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "3",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Amarillo ácido No. 1",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "10316"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Amarillo naftol S\nAmarillo 7\nExt. amarillo 7\nExt. amarillo No. 7\nExt. D&C Amarillo 7\nAmarillo 403\nSal disódica del ácido 8-hidroxi-\n5,7-dinitro-2-naftalen sulfónico\n5,7-Dinitro-8-óxido-2-naftaleno-\nsulfonato de disodio\nSin restricción para todo\ntipo de productos,\nexcepto en productos\nque se apliquen..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "3. 10316 Amarillo ácido No. 1\n \nAmarillo naftol S\nAmarillo 7\nExt. amarillo 7\nExt. amarillo No. 7\nExt. D&C Amarillo 7\nAmarillo 403\nSal disódica del ácido 8-hidroxi-\n5,7-dinitro-2-naftalen sulfónico\n5,7-Dinitro-8-óxido-2-naftaleno-\nsulfonato de disodio\nSin restricción para todo\ntipo de productos,\nexcepto en productos\nque se apliquen cerca\ndel área de los ojos, y\nen específico en los\nproductos para maquillar\ny desmaquillar.\nSólo para tintes\ncapilares oxidantes,\ndespués de mezclarse\nen condiciones\no"
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-4_11",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "4-11",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 4-11",
+        "inciNameEn": "Range 4-11",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "4. a 11."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-13_48",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "13-48",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 13-48",
+        "inciNameEn": "Range 13-48",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "13. a 48."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-49",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "49",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rojo alimentos 17 y sus",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "16035"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,4%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "lacas\nRojo curry\nFD&C Rojo No. 40\nRojo allura\nRojo 40\nSal disódica de ácido 5-hidroxi-\n[(2-metoxi-5-metil-4-sulfofenil)azo]\n-2-naftalensulfónico\n6-Hidroxi-5-[(2-metoxi-4-\nsulfonato-m-tolil)azo]naftaleno\n-2-sulfonato de disodio\n \nSin restricción para todo\ntipo de productos.\nPara tintes capilares no\no..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "49. 16035 Rojo alimentos 17 y sus\nlacas\nRojo curry\nFD&C Rojo No. 40\nRojo allura\nRojo 40\nSal disódica de ácido 5-hidroxi-\n[(2-metoxi-5-metil-4-sulfofenil)azo]\n-2-naftalensulfónico\n6-Hidroxi-5-[(2-metoxi-4-\nsulfonato-m-tolil)azo]naftaleno\n-2-sulfonato de disodio\n \nSin restricción para todo\ntipo de productos.\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado no debe\nexceder de 0,4%."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-50_51",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "50-51",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 50-51",
+        "inciNameEn": "Range 50-51",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "50. a 51."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-52",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "52",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rojo ácido 18 y sus lacas Ponceau 4R",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "16255"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Rojo No. 14\nRojo No. 102\nRojo alimentos 7\nRojo cochinilla A\nSal trisódica del ácido 7-hidroxi-8-\n[(4 sulfo-1-naftalenil) azo]\n-1,3-naftalénsulfónico\n1-(1-Naftilazo)-2-hidroxinaftaleno-\n4',6,8-trisulfonato de trisodio\ny su laca de aluminio\n \nSin restricción para todo\ntipo de productos.\nPara tintes ca..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "52. 16255 Rojo ácido 18 y sus lacas Ponceau 4R\nRojo No. 14\nRojo No. 102\nRojo alimentos 7\nRojo cochinilla A\nSal trisódica del ácido 7-hidroxi-8-\n[(4 sulfo-1-naftalenil) azo]\n-1,3-naftalénsulfónico\n1-(1-Naftilazo)-2-hidroxinaftaleno-\n4',6,8-trisulfonato de trisodio\ny su laca de aluminio\n \nSin restricción para todo\ntipo de productos.\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado no debe\nexceder de 0,5%.\n53.\n \n... ... ... ..."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-54",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "54",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rojo ácido 33 y sus",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "17200"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "lacas\n5-Amino-4-hidroxi-3-(fenilazo)\nNaftaleno-2,7-disulfonato de\ndisodio\nD&C Rojo 33\nRojo Naftaleno B4\nRojo fucsia\nRojo 33\nRojo No. 33\nSin restricción para todo\ntipo de productos.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el producto\nterminado 0,5%.\n2026/5/13 12:23 DOF - Diario ..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "54. 17200 Rojo ácido 33 y sus\nlacas\n5-Amino-4-hidroxi-3-(fenilazo)\nNaftaleno-2,7-disulfonato de\ndisodio\nD&C Rojo 33\nRojo Naftaleno B4\nRojo fucsia\nRojo 33\nRojo No. 33\nSin restricción para todo\ntipo de productos.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen el producto\nterminado 0,5%.\n2026/5/13 12:23 DOF - Diario Oficial de la Federación\nhttps://diariooficial.segob.gob.mx/nota_detalle.php?codigo=5335505&fecha=11/03/2014&print=true 4/20\n\n--- Page 5 ---\nRojo alimentos 12\n "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-55_60",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "55-60",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 55-60",
+        "inciNameEn": "Range 55-60",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "55. a 60."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-61",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "61",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Amarillo ácido 23 y su laca",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "19140"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "de aluminio\nAmarillo 5\nAmarillo 5 laca\nAmarillo No. 5\nAmarillo alimentos 4\nAmarillo laca 5\nFD&C amarillo 5\nSal trisódica del ácido 4,5\n-dihidro-5-oxo-(1-4-sulfofenil)\n-4-[(4-sulfofenil)azo]-1H-pirazol-3-\ncarboxílico-5-Hidroxi-1-(4-\nulfofenil)-4-(4-\nsulfofenilazo)pirazol-3-carboxilato\nde trisodio y s..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "61. 19140 Amarillo ácido 23 y su laca\nde aluminio\nAmarillo 5\nAmarillo 5 laca\nAmarillo No. 5\nAmarillo alimentos 4\nAmarillo laca 5\nFD&C amarillo 5\nSal trisódica del ácido 4,5\n-dihidro-5-oxo-(1-4-sulfofenil)\n-4-[(4-sulfofenil)azo]-1H-pirazol-3-\ncarboxílico-5-Hidroxi-1-(4-\nulfofenil)-4-(4-\nsulfofenilazo)pirazol-3-carboxilato\nde trisodio y su laca de aluminio\nTartrazina\n \nSin restricción para todo\ntipo de productos.\nPara tintes capilares no\noxidantes, la\nconcentración máxima\nen el producto\nterminado "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-64_69",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "64-69",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 64-69",
+        "inciNameEn": "Range 64-69",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "64. a 69."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-71_84",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "71-84",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 71-84",
+        "inciNameEn": "Range 71-84",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "71. a 84."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-85",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "85",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Azul ácido 9 y sus sales Azul 1",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "42090"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "0,5%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Azul No. 1\nAzul brillante FCF\nFD&C Azul 1\nFD&C Azul No. 4\nAzul 4\nAzul No. 4\nSal disódica y diamónica\ndel hidróxido de N-etil-N-\n[4-[[4-[etil[(3-sulfofenil)metil]amino]\nfenil](2-sulfofenil)metilen]-2,5-\nciclohexadien-1-iliden]-3-\nsulfobencenmetanaminio\nBencenometanaminio, N-etil-N-[4-\n[[4-[etil[(3-su..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "85. 42090 Azul ácido 9 y sus sales Azul 1\nAzul No. 1\nAzul brillante FCF\nFD&C Azul 1\nFD&C Azul No. 4\nAzul 4\nAzul No. 4\nSal disódica y diamónica\ndel hidróxido de N-etil-N-\n[4-[[4-[etil[(3-sulfofenil)metil]amino]\nfenil](2-sulfofenil)metilen]-2,5-\nciclohexadien-1-iliden]-3-\nsulfobencenmetanaminio\nBencenometanaminio, N-etil-N-[4-\n[[4-[etil[(3-sulfofenil) metil]amino]\nfenil](2-sulfofenil)metilen]-2,5-\nciclohexadien-1-iliden]-3-sulfo, sal\ninterna, sal disódica y sus sales\nde amonio y aluminio\nSin restr"
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-86_88",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "86-88",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 86-88",
+        "inciNameEn": "Range 86-88",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "86. a 88."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-89",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "89",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Violeta básico 2 Monoclorhidrato de 4-[(4-amino",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "42520"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": "1,0%",
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "-m-tolil)(4-imino-3-metilciclohexa-\n2,5-dien-1-iliden)metil]-o-toluidina\n \nSólo en productos\ndestinados a entrar en\ncontacto breve con la\npiel, la concentración\nmáxima en el producto\nterminado no debe\nexceder de 5,0 ppm.\nPara tintes capilares\noxidantes la\nconcentración máxima\nen producto terminado\nn..."
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "89. 42520 Violeta básico 2 Monoclorhidrato de 4-[(4-amino\n-m-tolil)(4-imino-3-metilciclohexa-\n2,5-dien-1-iliden)metil]-o-toluidina\n \nSólo en productos\ndestinados a entrar en\ncontacto breve con la\npiel, la concentración\nmáxima en el producto\nterminado no debe\nexceder de 5,0 ppm.\nPara tintes capilares\noxidantes la\nconcentración máxima\nen producto terminado\nno debe exceder de\n1,0%.\nPara tintes capilares no\noxidantes la\nconcentración máxima\nen producto terminado\nno debe exceder de\n0,5%.\n \n "
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-90_93",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "90-93",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rango 90-93",
+        "inciNameEn": "Range 90-93",
+        "cas": null
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "all",
+          "productTypePt": "Ver regulación original",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [
+        "Rango de colorantes/sustancias referenciado. Ver texto original para detalles."
+      ],
+      "sourceText": "90. a 93."
+    },
+    {
+      "ruleId": "MX-2014-SEXTO-94",
+      "status": "active",
+      "document": {
+        "id": "MX-2014 SEXTO",
+        "item": "94",
+        "pageInSource": 13,
+        "language": "es"
+      },
+      "substance": {
+        "inciNameEs": "Rojo ácido 52 Rojo ácido 106",
+        "inciNameEn": null,
+        "cas": null,
+        "ciNumber": "45100"
+      },
+      "category": "restricted",
+      "restrictions": [
+        {
+          "productType": "hair_dye",
+          "productTypePt": "Tintes capilares (condiciones según texto)",
+          "maxConcentration": null,
+          "calculationBasis": null,
+          "phLimit": null,
+          "otherRequirements": [
+            "Rojo No. 106\nSal sódica de 3,6-Bis(dietilamino)\n-9-(2,4-disulfonatofenil)xantilio"
+          ],
+          "labelWarnings": [],
+          "prohibitedIn": []
+        }
+      ],
+      "effectiveDate": "2014-03-11",
+      "notes": [],
+      "sourceText": "94. 45100 Rojo ácido 52 Rojo ácido 106\nRojo No. 106\nSal sódica de 3,6-Bis(dietilamino)\n-9-(2,4-disulfonatofenil)xantilio\n"
+    }
+  ]
+}

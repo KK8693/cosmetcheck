@@ -1,0 +1,60 @@
+{
+  "document": "RDC 530/2021 Anexo I",
+  "totalChunks": 9,
+  "chunks": [
+    {
+      "chunkId": 1,
+      "startLine": 114,
+      "endLine": 363,
+      "charCount": 4077
+    },
+    {
+      "chunkId": 2,
+      "startLine": 364,
+      "endLine": 613,
+      "charCount": 3793
+    },
+    {
+      "chunkId": 3,
+      "startLine": 614,
+      "endLine": 863,
+      "charCount": 4292
+    },
+    {
+      "chunkId": 4,
+      "startLine": 864,
+      "endLine": 1113,
+      "charCount": 4257
+    },
+    {
+      "chunkId": 5,
+      "startLine": 1114,
+      "endLine": 1363,
+      "charCount": 4443
+    },
+    {
+      "chunkId": 6,
+      "startLine": 1364,
+      "endLine": 1613,
+      "charCount": 4462
+    },
+    {
+      "chunkId": 7,
+      "startLine": 1614,
+      "endLine": 1863,
+      "charCount": 4497
+    },
+    {
+      "chunkId": 8,
+      "startLine": 1864,
+      "endLine": 2113,
+      "charCount": 4279
+    },
+    {
+      "chunkId": 9,
+      "startLine": 2114,
+      "endLine": 2331,
+      "charCount": 3156
+    }
+  ]
+}
