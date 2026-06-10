@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import { blogPosts } from '@/lib/blog-data'
 import { translatedPosts } from '@/lib/blog-translated'
 import { getAllSlugs } from '@/lib/ingredient-data'
+import { getAllProductTypeSlugs } from '@/data/product-types'
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cosmetcheck.com'
 const locales = ['zh', 'en', 'pt-BR', 'es-MX']
@@ -33,6 +34,7 @@ const localizedRoutes = [
 // Routes that ONLY exist without locale prefix (no [locale] versions)
 const unlocalizedRoutes = [
   { path: '/ingredients', priority: 0.9, freq: 'weekly' as const },
+  { path: '/products', priority: 0.8, freq: 'weekly' as const },
   { path: '/category/actives', priority: 0.75, freq: 'weekly' as const },
   { path: '/category/preservative', priority: 0.75, freq: 'weekly' as const },
   { path: '/category/skin_lightening', priority: 0.75, freq: 'weekly' as const },
@@ -112,6 +114,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     })
+  }
+
+  // ── Product type × country pages (no locale versions) ──
+  const productTypeSlugs = getAllProductTypeSlugs()
+  const productCountries = ['brazil', 'mexico']
+  for (const typeSlug of productTypeSlugs) {
+    for (const pc of productCountries) {
+      entries.push({
+        url: `${baseUrl}/products/${typeSlug}/${pc}`,
+        lastModified: currentDate,
+        changeFrequency: 'monthly',
+        priority: 0.7,
+      })
+    }
   }
 
   // ── Blog posts: group by slug to build proper alternates ──
