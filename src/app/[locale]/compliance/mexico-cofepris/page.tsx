@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'es-MX': 'https://cosmetcheck.com/es-MX/compliance/mexico-cofepris',
         'pt-BR': 'https://cosmetcheck.com/pt-BR/compliance/mexico-cofepris',
         'en': 'https://cosmetcheck.com/en/compliance/mexico-cofepris',
+        'x-default': 'https://cosmetcheck.com/en',
       },
     },
   }

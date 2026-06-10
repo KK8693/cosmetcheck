@@ -23,6 +23,7 @@ export async function generateMetadata({
         'zh-CN': `/zh/batch`,
         'pt-BR': `/pt-BR/batch`,
         'es-MX': `/es-MX/batch`,
+        'x-default': '/en',
       },
     },
     title: messages.batch?.title || 'Batch Detection',

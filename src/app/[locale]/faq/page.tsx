@@ -20,6 +20,7 @@ export async function generateMetadata({
         'zh-CN': `/zh/faq`,
         'pt-BR': `/pt-BR/faq`,
         'es-MX': `/es-MX/faq`,
+        'x-default': '/en',
       },
     },
     title: messages.faq?.title || 'FAQ',

@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'pt-BR': 'https://cosmetcheck.com/pt-BR/compliance/brazil-anvisa',
         'es-MX': 'https://cosmetcheck.com/es-MX/compliance/brazil-anvisa',
         'en': 'https://cosmetcheck.com/en/compliance/brazil-anvisa',
+        'x-default': 'https://cosmetcheck.com/en',
       },
     },
   }

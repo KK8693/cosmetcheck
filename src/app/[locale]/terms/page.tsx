@@ -18,6 +18,7 @@ export async function generateMetadata({
         'zh-CN': `/zh/terms`,
         'pt-BR': `/pt-BR/terms`,
         'es-MX': `/es-MX/terms`,
+        'x-default': '/en',
       },
     },
     title: messages.legal.terms.title,

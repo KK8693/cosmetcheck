@@ -34,6 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'pt-BR': 'https://cosmetcheck.com/pt-BR/guides/sell-cosmetics-latam',
         'es-MX': 'https://cosmetcheck.com/es-MX/guides/sell-cosmetics-latam',
         'en': 'https://cosmetcheck.com/en/guides/sell-cosmetics-latam',
+        'x-default': 'https://cosmetcheck.com/en',
       },
     },
   }

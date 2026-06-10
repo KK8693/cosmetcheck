@@ -20,6 +20,7 @@ export async function generateMetadata({
         'zh-CN': `/zh/about`,
         'pt-BR': `/pt-BR/about`,
         'es-MX': `/es-MX/about`,
+        'x-default': '/en',
       },
     },
     title: messages.about?.title || 'About Us',

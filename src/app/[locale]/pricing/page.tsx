@@ -20,6 +20,7 @@ export async function generateMetadata({
         'zh-CN': `/zh/pricing`,
         'pt-BR': `/pt-BR/pricing`,
         'es-MX': `/es-MX/pricing`,
+        'x-default': '/en',
       },
     },
     title: messages.pricingPage?.hero?.title || 'Pricing',

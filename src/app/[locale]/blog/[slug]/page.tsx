@@ -58,6 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'pt-BR': `https://cosmetcheck.com/pt-BR/blog/${slug}`,
         'es-MX': `https://cosmetcheck.com/es-MX/blog/${slug}`,
         'en': `https://cosmetcheck.com/en/blog/${slug}`,
+        'x-default': 'https://cosmetcheck.com/en',
       },
     },
   }

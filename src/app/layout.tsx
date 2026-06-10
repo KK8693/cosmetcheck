@@ -64,15 +64,6 @@ export const metadata: Metadata = {
     description: 'One-click compliance check for Brazil, Mexico and 4 other countries. AI auto-generates high-converting Listings.',
     images: ['/og-image.png'],
   },
-  alternates: {
-    canonical: '/',
-    languages: {
-      'zh-CN': '/zh',
-      'en': '/en',
-      'pt-BR': '/pt-BR',
-      'es-MX': '/es-MX',
-    },
-  },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
   },

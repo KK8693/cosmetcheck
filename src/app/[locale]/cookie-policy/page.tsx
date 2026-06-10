@@ -18,6 +18,7 @@ export async function generateMetadata({
         'zh-CN': `/zh/cookie-policy`,
         'pt-BR': `/pt-BR/cookie-policy`,
         'es-MX': `/es-MX/cookie-policy`,
+        'x-default': '/en',
       },
     },
     title: messages.legal['cookie-policy'].title,

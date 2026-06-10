@@ -18,6 +18,7 @@ export async function generateMetadata({
         'zh-CN': `/zh/refund`,
         'pt-BR': `/pt-BR/refund`,
         'es-MX': `/es-MX/refund`,
+        'x-default': '/en',
       },
     },
     title: messages.legal.refund.title,

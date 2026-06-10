@@ -18,6 +18,7 @@ export async function generateMetadata({
         'zh-CN': `/zh/privacy`,
         'pt-BR': `/pt-BR/privacy`,
         'es-MX': `/es-MX/privacy`,
+        'x-default': '/en',
       },
     },
     title: messages.legal.privacy.title,

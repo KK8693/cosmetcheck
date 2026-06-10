@@ -18,6 +18,7 @@ export async function generateMetadata({
         'zh-CN': `/zh/disclaimer`,
         'pt-BR': `/pt-BR/disclaimer`,
         'es-MX': `/es-MX/disclaimer`,
+        'x-default': '/en',
       },
     },
     title: messages.legal.disclaimer.title,

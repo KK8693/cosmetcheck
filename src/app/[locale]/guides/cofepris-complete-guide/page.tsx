@@ -34,6 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'pt-BR': 'https://cosmetcheck.com/pt-BR/guides/cofepris-complete-guide',
         'es-MX': 'https://cosmetcheck.com/es-MX/guides/cofepris-complete-guide',
         'en': 'https://cosmetcheck.com/en/guides/cofepris-complete-guide',
+        'x-default': 'https://cosmetcheck.com/en',
       },
     },
   }
