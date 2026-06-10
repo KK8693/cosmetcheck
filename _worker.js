@@ -54,6 +54,19 @@ export default {
     }
 
     // Pass through to Next.js worker
-    return fetch(request)
+    const response = await fetch(request)
+
+    // Cache product type pages for 1 hour with 24h stale-while-revalidate
+    // Match both /products/* and /:locale/products/* patterns
+    const isProductPage = pathname.startsWith('/products/') ||
+      (locales.includes(firstSegment) && pathname.startsWith(`/${firstSegment}/products/`))
+
+    if (isProductPage) {
+      const cachedResponse = new Response(response.body, response)
+      cachedResponse.headers.set('Cache-Control', 'public, max-age=3600, stale-while-revalidate=86400')
+      return cachedResponse
+    }
+
+    return response
   }
 }
